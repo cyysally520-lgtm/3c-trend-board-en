@@ -78,7 +78,16 @@ export default function App() {
                 setNewsData(newsItems);
               }
               if (Array.isArray(st.items)) setStartupData(st.items);
+              // 加载投资项目数据
+              try {
+                const invRes = await fetch(`/data/${date}/investments.json`);
+                if (invRes.ok) {
+                  const inv = await invRes.json();
+                  if (Array.isArray(inv.items)) setInvestData(inv.items);
+                }
+              } catch { /* investments 不存在时静默跳过 */ }
               setLastUpdated(`已更新 ${date}`);
+              loaded = true;
               loaded = true;
             }
           }
@@ -112,6 +121,12 @@ export default function App() {
   // Launch Scraper Task
   const runScraper = async () => {
     if (scraping) return;
+    // 密码验证：只有输入正确密码才能触发爬虫
+    const pwd = window.prompt('请输入管理员密码以启动爬虫：');
+    if (pwd !== 'c3trend2026') {
+      if (pwd !== null) alert('密码错误，无权限启动爬虫。');
+      return;
+    }
     setScraping(true);
     setShowScrapeConsole(true);
     setScrapeLogs([
