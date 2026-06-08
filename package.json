@@ -11,6 +11,9 @@
     "lint": "tsc --noEmit",
     "scrape": "tsx scraper/index.ts",
     "scrape:crowdsupply": "tsx scraper/sources/crowdsupply.ts",
+    "scrape:kickstarter": "tsx scraper/sources/kickstarter.ts",
+    "scrape:indiegogo": "tsx scraper/sources/indiegogo.ts",
+    "scrape:makuake": "tsx scraper/sources/makuake.ts",
     "scrape:gizchina": "tsx scraper/sources/gizchina.ts",
     "scrape:yc": "tsx scraper/sources/ycombinator.ts"
   },

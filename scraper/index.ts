@@ -16,6 +16,9 @@ import { log } from './lib/logger';
 import { saveSnapshot, updateManifest, pruneOldSnapshots } from './lib/storage';
 import { closeBrowser } from './lib/browser';
 import { scrapeCrowdSupply } from './sources/crowdsupply';
+import { scrapeKickstarter } from './sources/kickstarter';
+import { scrapeIndiegogo } from './sources/indiegogo';
+import { scrapeMakuake } from './sources/makuake';
 import { scrapeGizchina } from './sources/gizchina';
 import { scrapeYCombinator } from './sources/ycombinator';
 import { scrapeNextbanker } from './sources/nextbanker';
@@ -26,6 +29,9 @@ type Runner = () => Promise<ScrapeResult<any>>;
 // 注册表：name → (kind, runner)
 const REGISTRY: Record<string, { kind: 'crowdfunding' | 'news' | 'startups' | 'investments'; run: Runner }> = {
   crowdsupply: { kind: 'crowdfunding',  run: () => scrapeCrowdSupply(100) },
+  kickstarter: { kind: 'crowdfunding',  run: () => scrapeKickstarter(30) },
+  indiegogo:   { kind: 'crowdfunding',  run: () => scrapeIndiegogo(30) },
+  makuake:     { kind: 'crowdfunding',  run: () => scrapeMakuake(30) },
   gizchina:    { kind: 'news',          run: () => scrapeGizchina(50) },
   ycombinator: { kind: 'startups',      run: () => scrapeYCombinator(200) },
   nextbanker:  { kind: 'investments',   run: () => scrapeNextbanker(96) },
