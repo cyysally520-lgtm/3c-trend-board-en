@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>3C 科技产品趋势看板 · Demo</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; }
+  .platform-badge { font-size: 10px; padding: 2px 6px; border-radius: 4px; font-weight: 600; }
+  .ks { background:#05CE78; color:#fff; } .igg { background:#E41472; color:#fff; }
+  .mkk { background:#EA1B23; color:#fff; } .cs  { background:#000; color:#fff; }
+  .progress-bar { height: 4px; background:#e5e7eb; border-radius: 2px; overflow:hidden; }
+  .progress-fill { height: 100%; background:#05CE78; transition: width .3s; }
+  .tag { display:inline-block; padding:2px 8px; border-radius: 9999px; font-size: 11px; background:#f3f4f6; color:#374151; margin-right:4px; }
+  .tag-trend { background:#ecfdf5; color:#065f46; }
+  .card-hover { transition: transform .2s, box-shadow .2s; }
+  .card-hover:hover { transform: translateY(-2px); box-shadow: 0 10px 25px -5px rgba(0,0,0,.1); }
+  .verge-card { border-bottom: 1px solid #e5e7eb; }
+  .source-the-verge { background:#5200FF; color:#fff; }
+  .source-techcrunch { background:#0a9e01; color:#fff; }
+  .source-gizchina { background:#ff6600; color:#fff; }
+  .source-ventureburn { background:#1d4ed8; color:#fff; }
+  .source-yc { background:#ff6600; color:#fff; }
+  .source-a16z { background:#000; color:#fff; }
+  .source-crunchbase { background:#146aff; color:#fff; }
+  .heat-bar { height:6px; background:#e5e7eb; border-radius:3px; overflow:hidden; }
+  .heat-fill{ height:100%; background:linear-gradient(90deg,#fbbf24,#ef4444); }
+  .dim-bar { height: 16px; border-radius: 4px; display:flex; overflow:hidden; }
+  .line-clamp-2{ display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden; }
+</style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+<header class="bg-white border-b sticky top-0 z-50 shadow-sm">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <div class="w-9 h-9 bg-gradient-to-br from-emerald-500 to-cyan-500 rounded-lg flex items-center justify-center text-white font-bold">3C</div>
+      <h1 class="text-xl font-bold">3C 科技产品趋势看板</h1>
+      <span class="text-xs text-gray-400 ml-2">Demo · v0.1</span>
+    </div>
+    <div class="text-sm text-gray-500">数据更新时间：<span id="updateTime"></span></div>
+  </div>
+  <nav class="max-w-7xl mx-auto px-6 flex gap-1">
+    <button data-tab="crowd"   class="tab-btn px-5 py-3 text-sm font-medium border-b-2 border-emerald-500 text-emerald-600">① 产品众筹</button>
+    <button data-tab="news"    class="tab-btn px-5 py-3 text-sm font-medium border-b-2 border-transparent text-gray-500 hover:text-gray-800">② 产品资讯</button>
+    <button data-tab="startup" class="tab-btn px-5 py-3 text-sm font-medium border-b-2 border-transparent text-gray-500 hover:text-gray-800">③ 创企资讯</button>
+    <button data-tab="social"  class="tab-btn px-5 py-3 text-sm font-medium border-b-2 border-transparent text-gray-500 hover:text-gray-800">④ 社媒热度</button>
+  </nav>
+</header>
+
+<main class="max-w-7xl mx-auto px-6 py-6">
+
+  <section id="tab-crowd" class="tab-panel">
+    <div class="flex flex-wrap items-center gap-3 mb-4">
+      <div class="flex gap-1 bg-white rounded-lg p-1 border">
+        <button data-platform="all" class="platform-btn px-3 py-1.5 text-xs rounded-md bg-emerald-500 text-white">综合</button>
+        <button data-platform="ks"  class="platform-btn px-3 py-1.5 text-xs rounded-md text-gray-600 hover:bg-gray-100">Kickstarter</button>
+        <button data-platform="igg" class="platform-btn px-3 py-1.5 text-xs rounded-md text-gray-600 hover:bg-gray-100">Indiegogo</button>
+        <button data-platform="mkk" class="platform-btn px-3 py-1.5 text-xs rounded-md text-gray-600 hover:bg-gray-100">Makuake</button>
+        <button data-platform="cs"  class="platform-btn px-3 py-1.5 text-xs rounded-md text-gray-600 hover:bg-gray-100">Crowd Supply</button>
+      </div>
+      <div class="flex gap-1 bg-white rounded-lg p-1 border">
+        <button data-sort="hot"    class="sort-btn px-3 py-1.5 text-xs rounded-md bg-orange-500 text-white">🔥 最热门</button>
+        <button data-sort="new"    class="sort-btn px-3 py-1.5 text-xs rounded-md text-gray-600 hover:bg-gray-100">🆕 最新</button>
+        <button data-sort="trend"  class="sort-btn px-3 py-1.5 text-xs rounded-md text-gray-600 hover:bg-gray-100">📈 飙升最快</button>
+        <button data-sort="raised" class="sort-btn px-3 py-1.5 text-xs rounded-md text-gray-600 hover:bg-gray-100">💰 筹资最高</button>
+      </div>
+      <select id="categoryFilter" class="ml-auto bg-white border rounded-lg px-3 py-1.5 text-sm">
+        <option value="all">全部品类</option>
+        <option value="AI眼镜">AI 眼镜</option>
+        <option value="智能穿戴">智能穿戴</option>
+        <option value="AI硬件">AI 硬件</option>
+        <option value="3D打印">3D 打印</option>
+        <option value="CNC">CNC / 雕刻</option>
+        <option value="影音娱乐">影音娱乐</option>
+        <option value="智能家居">智能家居</option>
+        <option value="计算极客">计算极客</option>
+      </select>
+    </div>
+    <div class="text-sm text-gray-500 mb-3">探索 <span class="text-emerald-600 font-semibold" id="crowdCount">0</span> 个 3C 项目</div>
+    <div id="crowdGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5"></div>
+  </section>
+
+  <section id="tab-news" class="tab-panel hidden">
+    <div class="flex flex-wrap items-center gap-3 mb-4">
+      <div class="flex gap-1 bg-white rounded-lg p-1 border flex-wrap">
+        <span class="px-2 py-1 text-xs text-gray-500">来源：</span>
+        <label class="news-src px-2 py-1 text-xs rounded cursor-pointer bg-purple-100 text-purple-700"><input type="checkbox" value="The Verge" checked class="hidden">The Verge</label>
+        <label class="news-src px-2 py-1 text-xs rounded cursor-pointer bg-green-100 text-green-700"><input type="checkbox" value="TechCrunch" checked class="hidden">TechCrunch</label>
+        <label class="news-src px-2 py-1 text-xs rounded cursor-pointer bg-orange-100 text-orange-700"><input type="checkbox" value="Gizchina" checked class="hidden">Gizchina</label>
+        <label class="news-src px-2 py-1 text-xs rounded cursor-pointer bg-blue-100 text-blue-700"><input type="checkbox" value="Ventureburn" checked class="hidden">Ventureburn</label>
+      </div>
+      <select id="newsCategory" class="ml-auto bg-white border rounded-lg px-3 py-1.5 text-sm">
+        <option value="all">全部品类</option>
+        <option value="AI眼镜">AI 眼镜</option><option value="智能穿戴">智能穿戴</option>
+        <option value="AI硬件">AI 硬件</option><option value="3D打印">3D 打印</option>
+        <option value="影音娱乐">影音娱乐</option><option value="智能家居">智能家居</option>
+      </select>
+    </div>
+    <div id="newsList" class="bg-white rounded-xl border"></div>
+  </section>
+
+  <section id="tab-startup" class="tab-panel hidden">
+    <div class="flex flex-wrap items-center gap-3 mb-4">
+      <div class="flex gap-1 bg-white rounded-lg p-1 border">
+        <span class="px-2 py-1 text-xs text-gray-500">来源：</span>
+        <button class="px-2 py-1 text-xs rounded bg-orange-100 text-orange-700">Y Combinator</button>
+        <button class="px-2 py-1 text-xs rounded bg-gray-100 text-gray-700">a16z</button>
+        <button class="px-2 py-1 text-xs rounded bg-blue-100 text-blue-700">Crunchbase</button>
+      </div>
+      <select id="startupRound" class="bg-white border rounded-lg px-3 py-1.5 text-sm">
+        <option value="all">全部轮次</option><option value="Seed">种子轮</option>
+        <option value="Series A">A 轮</option><option value="Series B">B 轮</option>
+        <option value="Series C+">C+ 轮</option>
+      </select>
+      <select id="startupCategory" class="ml-auto bg-white border rounded-lg px-3 py-1.5 text-sm">
+        <option value="all">全部品类</option><option value="AI眼镜">AI 眼镜</option>
+        <option value="AI硬件">AI 硬件</option><option value="智能穿戴">智能穿戴</option>
+        <option value="3D打印">3D 打印</option><option value="机器人">机器人</option>
+      </select>
+    </div>
+    <div id="startupGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"></div>
+  </section>
+
+  <section id="tab-social" class="tab-panel hidden">
+    <div class="flex flex-wrap items-center gap-3 mb-4">
+      <select id="socialCategory" class="bg-white border rounded-lg px-3 py-1.5 text-sm">
+        <option value="all">全部品类</option><option value="AI眼镜">AI 眼镜</option>
+        <option value="智能穿戴">智能穿戴</option><option value="AI硬件">AI 硬件</option>
+        <option value="3D打印">3D 打印</option>
+      </select>
+      <div class="flex gap-1 bg-white rounded-lg p-1 border">
+        <button class="px-3 py-1.5 text-xs rounded-md bg-red-500 text-white">🔥 总热度</button>
+        <button class="px-3 py-1.5 text-xs rounded-md text-gray-600 hover:bg-gray-100">📈 24h 增速</button>
+        <button class="px-3 py-1.5 text-xs rounded-md text-gray-600 hover:bg-gray-100">💬 讨论量</button>
+      </div>
+    </div>
+    <div id="socialList" class="space-y-4"></div>
+  </section>
+
+</main>
+
+<footer class="text-center text-xs text-gray-400 py-8">
+  3C 科技产品趋势看板 Demo · 数据为模拟示例，仅用于产品原型演示
+</footer>
+
+<script>
+const PLATFORM_LABEL = { ks:{name:'Kickstarter',cls:'ks'}, igg:{name:'Indiegogo',cls:'igg'}, mkk:{name:'Makuake',cls:'mkk'}, cs:{name:'Crowd Supply',cls:'cs'} };
+const IMG = (seed, w=600, h=400) => `https://picsum.photos/seed/${seed}/${w}/${h}`;
+
+const CROWD_PRODUCTS = [
+  { id:'p1', platform:'ks', image:IMG('halliday'), name:'Halliday Smart Glasses · 智能 AI 眼镜', creator:'Halliday Inc.', highlights:['DigiWindow 私密显示','AI 实时翻译 40+ 语言','离线助手'], startedAt:'2025-01-12', raised:1287650, goal:200000, progress:643, backers:8920, price:489, delivery:'2025-09', trendingScore:98, hotScore:95, tags:['AI眼镜','智能穿戴'], campaignUrl:'https://www.kickstarter.com/', officialUrl:'#' },
+  { id:'p2', platform:'igg', image:IMG('bambu'), name:'Bambu Lab Mini · 桌面级 3D 打印机', creator:'Bambu Lab', highlights:['多色打印','AI 故障检测','一键校准'], startedAt:'2025-02-05', raised:2350000, goal:500000, progress:470, backers:5240, price:399, delivery:'2025-08', trendingScore:92, hotScore:91, tags:['3D打印','数字制造'], campaignUrl:'https://www.indiegogo.com/', officialUrl:'#' },
+  { id:'p3', platform:'cs', image:IMG('plumerai'), name:'Plumerai NPU Dev Kit · 边缘 AI 开发板', creator:'Plumerai', highlights:['超低功耗 NPU','TinyML 优化','开源工具链'], startedAt:'2025-02-20', raised:186400, goal:80000, progress:233, backers:1240, price:129, delivery:'2025-07', trendingScore:78, hotScore:72, tags:['AI硬件','计算极客'], campaignUrl:'https://www.crowdsupply.com/', officialUrl:'#' },
+  { id:'p4', platform:'mkk', image:IMG('aura'), name:'AURA Ring · 健康监测智能戒指', creator:'TechRing Japan', highlights:['ECG 心电监测','睡眠分析','5 天续航'], startedAt:'2025-01-28', raised:892000, goal:300000, progress:297, backers:3680, price:259, delivery:'2025-10', trendingScore:85, hotScore:88, tags:['智能穿戴'], campaignUrl:'https://www.makuake.com/', officialUrl:'#' },
+  { id:'p5', platform:'ks', image:IMG('voyager'), name:'Voyager AI Recorder · AI 录音笔', creator:'Voyager Audio', highlights:['实时转录 + 摘要','说话人分离','本地化模型'], startedAt:'2025-02-15', raised:456000, goal:100000, progress:456, backers:2890, price:199, delivery:'2025-08', trendingScore:89, hotScore:84, tags:['AI硬件'], campaignUrl:'https://www.kickstarter.com/', officialUrl:'#' },
+  { id:'p6', platform:'igg', image:IMG('xtool'), name:'xTool F2 · 桌面激光雕刻 + CNC', creator:'xTool', highlights:['激光/CNC 二合一','AI 路径优化','30 分钟上手'], startedAt:'2025-01-30', raised:3120000, goal:800000, progress:390, backers:6520, price:1299, delivery:'2025-09', trendingScore:81, hotScore:90, tags:['CNC','数字制造'], campaignUrl:'https://www.indiegogo.com/', officialUrl:'#' },
+  { id:'p7', platform:'ks', image:IMG('looking'), name:'Looking Glass Go · 便携裸眼 3D 显示器', creator:'Looking Glass', highlights:['100 视角全息','口袋大小','AI 图像 → 3D'], startedAt:'2025-02-10', raised:1850000, goal:250000, progress:740, backers:7350, price:299, delivery:'2025-08', trendingScore:94, hotScore:93, tags:['影音娱乐','AI硬件'], campaignUrl:'https://www.kickstarter.com/', officialUrl:'#' },
+  { id:'p8', platform:'cs', image:IMG('mnt'), name:'MNT Pocket Reform · 开源迷你笔电', creator:'MNT Research', highlights:['完全开源','可换 CPU 模块','机械键盘'], startedAt:'2025-01-18', raised:680000, goal:200000, progress:340, backers:1820, price:899, delivery:'2025-11', trendingScore:65, hotScore:70, tags:['计算极客'], campaignUrl:'https://www.crowdsupply.com/', officialUrl:'#' },
+  { id:'p9', platform:'mkk', image:IMG('aion'), name:'AION Home Hub · AI 智能家居中枢', creator:'AION Japan', highlights:['Matter 协议','本地大模型','语音控制全屋'], startedAt:'2025-02-22', raised:520000, goal:150000, progress:347, backers:2100, price:329, delivery:'2025-10', trendingScore:73, hotScore:76, tags:['智能家居','AI硬件'], campaignUrl:'https://www.makuake.com/', officialUrl:'#' },
+  { id:'p10', platform:'ks', image:IMG('echo'), name:'EchoBuds Pro · 主动降噪 AI 翻译耳机', creator:'EchoTech', highlights:['实时同传 30 语','骨传导技术','40h 续航'], startedAt:'2025-02-28', raised:980000, goal:200000, progress:490, backers:4250, price:249, delivery:'2025-09', trendingScore:96, hotScore:86, tags:['影音娱乐','AI硬件'], campaignUrl:'https://www.kickstarter.com/', officialUrl:'#' },
+  { id:'p11', platform:'igg', image:IMG('snap'), name:'Snapmaker Artisan · 三合一桌面工厂', creator:'Snapmaker', highlights:['3D 打印 + 激光 + CNC','工业级精度','模块化'], startedAt:'2025-01-05', raised:4200000, goal:1000000, progress:420, backers:3120, price:2999, delivery:'2025-09', trendingScore:70, hotScore:89, tags:['3D打印','CNC','数字制造'], campaignUrl:'https://www.indiegogo.com/', officialUrl:'#' },
+  { id:'p12', platform:'cs', image:IMG('pine'), name:'PineCube AI Camera · 开源 AI 摄像头', creator:'Pine64', highlights:['本地人脸识别','RISC-V 架构','完全开源'], startedAt:'2025-02-25', raised:124000, goal:50000, progress:248, backers:980, price:79, delivery:'2025-08', trendingScore:88, hotScore:65, tags:['AI硬件','智能家居'], campaignUrl:'https://www.crowdsupply.com/', officialUrl:'#' },
+];
+
+const NEWS_LIST = [
+  { id:'n1', source:'The Verge', sourceCls:'source-the-verge', timeAgo:'2 小时前', category:'AI眼镜', title:'Meta 与 Ray-Ban 推出新一代 AI 眼镜，搭载实时视觉理解', summary:'新款眼镜内置摄像头与 Meta AI，可识别物体、翻译路牌并实时回答用户问题，续航延长至 8 小时。', image:IMG('rayban',400,260), views:'24.5k', comments:189, url:'https://www.theverge.com/' },
+  { id:'n2', source:'TechCrunch', sourceCls:'source-techcrunch', timeAgo:'4 小时前', category:'AI硬件', title:'Humane AI Pin 二代曝光：取消激光投影，改用柔性屏幕', summary:'据知情人士透露，Humane 正在重新设计 AI Pin，新版本将放弃手掌投影方案。', image:IMG('humane',400,260), views:'18.2k', comments:142, url:'https://techcrunch.com/' },
+  { id:'n3', source:'Gizchina', sourceCls:'source-gizchina', timeAgo:'6 小时前', category:'智能穿戴', title:'小米发布 Watch S4：钛合金表壳 + 蓝宝石玻璃', summary:'小米 Watch S4 售价 1499 元起，搭载 HyperOS 2.0，支持双频 GPS 与离线音乐。', image:IMG('miwatch',400,260), views:'12.8k', comments:96, url:'https://www.gizchina.com/' },
+  { id:'n4', source:'Ventureburn', sourceCls:'source-ventureburn', timeAgo:'8 小时前', category:'AI硬件', title:'非洲创企 Roam Electric 推出本土化 AI 电动车控制器', summary:'肯尼亚电动车公司 Roam Electric 将本地路况数据训练入车机系统，提升续航 17%。', image:IMG('roam',400,260), views:'5.6k', comments:34, url:'https://ventureburn.com/' },
+  { id:'n5', source:'The Verge', sourceCls:'source-the-verge', timeAgo:'12 小时前', category:'3D打印', title:'Bambu Lab 推出 H2D：双喷头 + AI 缺陷检测', summary:'新机型主打多材料同时打印，AI 模型可实时识别 12 种打印缺陷并自动暂停。', image:IMG('h2d',400,260), views:'9.4k', comments:78, url:'https://www.theverge.com/' },
+  { id:'n6', source:'TechCrunch', sourceCls:'source-techcrunch', timeAgo:'1 天前', category:'AI眼镜', title:'OpenAI 与 LoveFrom 合作打造 AI 硬件设备，估值达 50 亿美元', summary:'Jony Ive 主导的设备团队已超过 50 人，目标是"屏幕之后下一种交互方式"。', image:IMG('openai',400,260), views:'48.2k', comments:412, url:'https://techcrunch.com/' },
+  { id:'n7', source:'Gizchina', sourceCls:'source-gizchina', timeAgo:'1 天前', category:'影音娱乐', title:'DJI Osmo Pocket 4 实拍曝光：1 英寸传感器 + 4K/120fps', summary:'最新爆料图显示握把更大、屏幕翻倍，支持自动跟随和 AI 构图建议。', image:IMG('dji',400,260), views:'15.7k', comments:103, url:'https://www.gizchina.com/' },
+  { id:'n8', source:'Ventureburn', sourceCls:'source-ventureburn', timeAgo:'2 天前', category:'智能家居', title:'南非智能家居创企 Yoco Home 获 1200 万美元 A 轮融资', summary:'Yoco Home 主打非洲市场的低带宽智能家居解决方案，本轮由 A16Z 领投。', image:IMG('yoco',400,260), views:'4.2k', comments:21, url:'https://ventureburn.com/' },
+];
+
+const STARTUPS = [
+  { id:'s1', name:'Halliday', logo:'H', logoColor:'bg-emerald-500', source:'Y Combinator', sourceCls:'source-yc', desc:'打造下一代 AI 眼镜，私密显示与语音助手深度融合。', foundedYear:2023, founders:['Carter Hou','Patrick Yang'], round:'Series A', amount:'$32M', investors:['a16z','Tiger Global'], location:'San Francisco', category:'AI眼镜', sourceUrl:'https://www.ycombinator.com/', officialUrl:'#' },
+  { id:'s2', name:'Bambu Lab', logo:'B', logoColor:'bg-orange-500', source:'Crunchbase', sourceCls:'source-crunchbase', desc:'消费级高速 3D 打印机厂商，AI 故障检测与自动调平为核心技术。', foundedYear:2020, founders:['Tao Ye'], round:'Series B', amount:'$70M', investors:['Sequoia China','GSR Ventures'], location:'Shenzhen', category:'3D打印', sourceUrl:'https://www.crunchbase.com/', officialUrl:'#' },
+  { id:'s3', name:'Plumerai', logo:'P', logoColor:'bg-purple-500', source:'a16z', sourceCls:'source-a16z', desc:'专注于边缘设备的 TinyML 模型与 NPU 工具链。', foundedYear:2021, founders:['Roeland Nusselder'], round:'Seed', amount:'$8M', investors:['a16z','Mango Capital'], location:'Amsterdam', category:'AI硬件', sourceUrl:'https://a16z.com/', officialUrl:'#' },
+  { id:'s4', name:'Figure AI', logo:'F', logoColor:'bg-black', source:'Crunchbase', sourceCls:'source-crunchbase', desc:'人形机器人公司，已与 BMW 合作部署工厂场景。', foundedYear:2022, founders:['Brett Adcock'], round:'Series C+', amount:'$675M', investors:['Microsoft','NVIDIA','OpenAI'], location:'Sunnyvale', category:'机器人', sourceUrl:'https://www.crunchbase.com/', officialUrl:'#' },
+  { id:'s5', name:'EchoTech', logo:'E', logoColor:'bg-blue-500', source:'Y Combinator', sourceCls:'source-yc', desc:'AI 实时翻译耳机，端侧大模型部署。', foundedYear:2024, founders:['Linda Chen','Mark Liu'], round:'Seed', amount:'$5M', investors:['YC','SV Angel'], location:'Palo Alto', category:'AI硬件', sourceUrl:'https://www.ycombinator.com/', officialUrl:'#' },
+  { id:'s6', name:'TechRing', logo:'T', logoColor:'bg-pink-500', source:'Crunchbase', sourceCls:'source-crunchbase', desc:'智能戒指厂商，主打 ECG 与睡眠监测。', foundedYear:2022, founders:['Hiroshi Tanaka'], round:'Series A', amount:'$18M', investors:['SoftBank Ventures','JAFCO'], location:'Tokyo', category:'智能穿戴', sourceUrl:'https://www.crunchbase.com/', officialUrl:'#' },
+];
+
+const SOCIAL_BUZZ = [
+  { id:'b1', name:'Ray-Ban Meta Smart Glasses', image:IMG('rayban',200,200), category:'AI眼镜', heat:9820,
+    dims:[{name:'功能体验',pct:42,color:'#10b981'},{name:'外形设计',pct:31,color:'#3b82f6'},{name:'价格性价比',pct:18,color:'#f59e0b'},{name:'其他',pct:9,color:'#9ca3af'}],
+    platforms:[
+      {name:'小红书',count:'3.2k 笔记',sample:'戴了一周 AI 眼镜，真香！',metric:'1.2w 赞',url:'https://www.xiaohongshu.com/'},
+      {name:'B 站',count:'486 视频',sample:'深度评测：值不值得买',metric:'35w 播放',url:'https://www.bilibili.com/'},
+      {name:'抖音',count:'1.1k 视频',sample:'AI 眼镜实拍 vs 手机拍照',metric:'89w 播放',url:'https://www.douyin.com/'},
+      {name:'值得买',count:'78 文章',sample:'海淘攻略：港版 vs 国行',metric:'4.6k 收藏',url:'https://www.smzdm.com/'},
+    ]},
+  { id:'b2', name:'Bambu Lab H2D', image:IMG('h2d',200,200), category:'3D打印', heat:7640,
+    dims:[{name:'性能技术',pct:48,color:'#ef4444'},{name:'功能体验',pct:25,color:'#10b981'},{name:'价格性价比',pct:17,color:'#f59e0b'},{name:'外形设计',pct:10,color:'#3b82f6'}],
+    platforms:[
+      {name:'小红书',count:'1.8k 笔记',sample:'Bambu H2D 双喷头实测',metric:'8.4k 赞',url:'https://www.xiaohongshu.com/'},
+      {name:'B 站',count:'612 视频',sample:'24 小时打印挑战',metric:'42w 播放',url:'https://www.bilibili.com/'},
+      {name:'抖音',count:'430 视频',sample:'3D 打印小白入坑指南',metric:'56w 播放',url:'https://www.douyin.com/'},
+      {name:'值得买',count:'124 文章',sample:'618 优惠攻略',metric:'9.2k 收藏',url:'https://www.smzdm.com/'},
+    ]},
+  { id:'b3', name:'AURA 智能戒指', image:IMG('aura',200,200), category:'智能穿戴', heat:6210,
+    dims:[{name:'功能体验',pct:38,color:'#10b981'},{name:'外形设计',pct:30,color:'#3b82f6'},{name:'品控售后',pct:18,color:'#a855f7'},{name:'价格性价比',pct:14,color:'#f59e0b'}],
+    platforms:[
+      {name:'小红书',count:'2.4k 笔记',sample:'戴戒指睡觉真的舒服吗？',metric:'1.5w 赞',url:'https://www.xiaohongshu.com/'},
+      {name:'B 站',count:'180 视频',sample:'4 款智能戒指横评',metric:'28w 播放',url:'https://www.bilibili.com/'},
+      {name:'抖音',count:'680 视频',sample:'数据准不准？连测 7 天',metric:'62w 播放',url:'https://www.douyin.com/'},
+      {name:'值得买',count:'45 文章',sample:'Oura vs AURA 对比',metric:'3.1k 收藏',url:'https://www.smzdm.com/'},
+    ]},
+  { id:'b4', name:'Voyager AI Recorder', image:IMG('voyager',200,200), category:'AI硬件', heat:5430,
+    dims:[{name:'功能体验',pct:52,color:'#10b981'},{name:'性能技术',pct:22,color:'#ef4444'},{name:'价格性价比',pct:16,color:'#f59e0b'},{name:'外形设计',pct:10,color:'#3b82f6'}],
+    platforms:[
+      {name:'小红书',count:'960 笔记',sample:'打工人 AI 录音笔体验',metric:'6.2k 赞',url:'https://www.xiaohongshu.com/'},
+      {name:'B 站',count:'220 视频',sample:'记者评测：转录准确率',metric:'18w 播放',url:'https://www.bilibili.com/'},
+      {name:'抖音',count:'310 视频',sample:'会议神器 vs 苹果备忘录',metric:'34w 播放',url:'https://www.douyin.com/'},
+      {name:'值得买',count:'52 文章',sample:'录音笔选购指南 2025',metric:'2.8k 收藏',url:'https://www.smzdm.com/'},
+    ]},
+];
+
+const state = { tab:'crowd', platform:'all', sort:'hot', category:'all', newsCategory:'all', newsSources:['The Verge','TechCrunch','Gizchina','Ventureburn'], startupRound:'all', startupCategory:'all', socialCategory:'all' };
+const fmt = n => n.toLocaleString('zh-CN');
+const $ = s => document.querySelector(s);
+const $$ = s => document.querySelectorAll(s);
+document.getElementById('updateTime').textContent = new Date().toLocaleString('zh-CN',{hour12:false});
+
+$$('.tab-btn').forEach(btn => btn.addEventListener('click', () => {
+  state.tab = btn.dataset.tab;
+  $$('.tab-btn').forEach(b => { b.classList.remove('border-emerald-500','text-emerald-600'); b.classList.add('border-transparent','text-gray-500'); });
+  btn.classList.add('border-emerald-500','text-emerald-600'); btn.classList.remove('border-transparent','text-gray-500');
+  $$('.tab-panel').forEach(p => p.classList.add('hidden'));
+  $(`#tab-${state.tab}`).classList.remove('hidden');
+}));
+
+function renderCrowd() {
+  let list = [...CROWD_PRODUCTS];
+  if (state.platform!=='all') list = list.filter(p => p.platform===state.platform);
+  if (state.category!=='all') list = list.filter(p => p.tags.includes(state.category));
+  const key = {hot:'hotScore',trend:'trendingScore',raised:'raised',new:'startedAt'}[state.sort];
+  list.sort((a,b) => state.sort==='new' ? new Date(b.startedAt)-new Date(a.startedAt) : b[key]-a[key]);
+  $('#crowdCount').textContent = list.length;
+  $('#crowdGrid').innerHTML = list.map(p => {
+    const pl = PLATFORM_LABEL[p.platform];
+    return `<div class="bg-white rounded-xl border overflow-hidden card-hover">
+      <div class="relative"><img src="${p.image}" alt="${p.name}" class="w-full h-44 object-cover" /><span class="platform-badge ${pl.cls} absolute top-2 left-2">${pl.name}</span></div>
+      <div class="progress-bar"><div class="progress-fill" style="width:${Math.min(p.progress,100)}%"></div></div>
+      <div class="p-4">
+        <h3 class="font-semibold text-sm leading-snug line-clamp-2" style="min-height:40px">${p.name}</h3>
+        <p class="text-xs text-gray-500 mt-1">${p.creator}</p>
+        <div class="mt-2 text-xs text-gray-700 flex items-center gap-1"><span>🕐</span><span>已筹集 <b class="text-gray-900">¥${fmt(p.raised)}</b></span><span class="text-gray-300">·</span><span>进度 <b class="text-emerald-600">${p.progress}%</b></span></div>
+        <div class="mt-2 text-[11px] text-gray-500 flex gap-3"><span>👥 ${fmt(p.backers)} 支持者</span><span>💰 起步 ¥${p.price}</span></div>
+        <div class="mt-3 flex flex-wrap gap-1">${p.tags.map(t => `<span class="tag tag-trend">#${t}</span>`).join('')}</div>
+        <div class="mt-3 flex gap-2">
+          <a href="${p.campaignUrl}" target="_blank" class="flex-1 text-center text-xs py-1.5 rounded bg-emerald-500 text-white hover:bg-emerald-600">众筹页</a>
+          <a href="${p.officialUrl}" target="_blank" class="flex-1 text-center text-xs py-1.5 rounded border border-gray-300 hover:bg-gray-50">官网</a>
+        </div>
+      </div></div>`;
+  }).join('');
+}
+$$('.platform-btn').forEach(btn => btn.addEventListener('click', () => {
+  state.platform = btn.dataset.platform;
+  $$('.platform-btn').forEach(b => { b.classList.remove('bg-emerald-500','text-white'); b.classList.add('text-gray-600'); });
+  btn.classList.add('bg-emerald-500','text-white'); btn.classList.remove('text-gray-600');
+  renderCrowd();
+}));
+$$('.sort-btn').forEach(btn => btn.addEventListener('click', () => {
+  state.sort = btn.dataset.sort;
+  $$('.sort-btn').forEach(b => { b.classList.remove('bg-orange-500','text-white'); b.classList.add('text-gray-600'); });
+  btn.classList.add('bg-orange-500','text-white'); btn.classList.remove('text-gray-600');
+  renderCrowd();
+}));
+$('#categoryFilter').addEventListener('change', e => { state.category = e.target.value; renderCrowd(); });
+
+function renderNews() {
+  let list = NEWS_LIST.filter(n => state.newsSources.includes(n.source));
+  if (state.newsCategory!=='all') list = list.filter(n => n.category===state.newsCategory);
+  $('#newsList').innerHTML = list.map(n => `<article class="verge-card p-5 flex gap-5 hover:bg-gray-50 transition">
+    <img src="${n.image}" class="w-44 h-28 object-cover rounded-lg flex-shrink-0" />
+    <div class="flex-1 min-w-0">
+      <div class="flex items-center gap-2 text-xs mb-2"><span class="platform-badge ${n.sourceCls}">${n.source}</span><span class="text-gray-400">·</span><span class="text-gray-500">${n.timeAgo}</span><span class="text-gray-400">·</span><span class="tag tag-trend">#${n.category}</span></div>
+      <h3 class="text-lg font-bold leading-snug mb-1 line-clamp-2">${n.title}</h3>
+      <p class="text-sm text-gray-600 line-clamp-2">${n.summary}</p>
+      <div class="mt-2 flex items-center justify-between"><div class="text-xs text-gray-500 flex gap-3"><span>👁 ${n.views}</span><span>💬 ${n.comments}</span></div><a href="${n.url}" target="_blank" class="text-xs text-emerald-600 hover:underline">阅读原文 →</a></div>
+    </div></article>`).join('');
+}
+$$('.news-src').forEach(label => label.addEventListener('click', e => {
+  e.preventDefault();
+  const cb = label.querySelector('input');
+  cb.checked = !cb.checked;
+  if (cb.checked) { state.newsSources.push(cb.value); label.classList.remove('opacity-40'); }
+  else { state.newsSources = state.newsSources.filter(s => s!==cb.value); label.classList.add('opacity-40'); }
+  renderNews();
+}));
+$('#newsCategory').addEventListener('change', e => { state.newsCategory = e.target.value; renderNews(); });
+
+function renderStartups() {
+  let list = [...STARTUPS];
+  if (state.startupRound!=='all') list = list.filter(s => s.round===state.startupRound);
+  if (state.startupCategory!=='all') list = list.filter(s => s.category===state.startupCategory);
+  $('#startupGrid').innerHTML = list.map(s => `<div class="bg-white rounded-xl border p-5 card-hover">
+    <div class="flex items-start gap-3 mb-3">
+      <div class="w-12 h-12 ${s.logoColor} text-white rounded-lg flex items-center justify-center text-xl font-bold flex-shrink-0">${s.logo}</div>
+      <div class="flex-1 min-w-0"><div class="flex items-center gap-2 mb-1"><h3 class="font-bold text-base">${s.name}</h3><span class="platform-badge ${s.sourceCls}">${s.source}</span></div><div class="flex gap-1 flex-wrap"><span class="tag tag-trend">#${s.category}</span><span class="tag">${s.round}</span></div></div>
+    </div>
+    <p class="text-sm text-gray-600 mb-3 line-clamp-2">${s.desc}</p>
+    <div class="space-y-1.5 text-xs text-gray-700">
+      <div>📅 <span class="text-gray-500">成立：</span>${s.foundedYear}</div>
+      <div>👤 <span class="text-gray-500">创始人：</span>${s.founders.join(' · ')}</div>
+      <div>💰 <span class="text-gray-500">最新融资：</span><b class="text-orange-600">${s.amount}</b> · ${s.round}</div>
+      <div>🏦 <span class="text-gray-500">投资方：</span>${s.investors.join('，')}</div>
+      <div>📍 <span class="text-gray-500">总部：</span>${s.location}</div>
+    </div>
+    <div class="mt-4 flex gap-2"><a href="${s.sourceUrl}" target="_blank" class="flex-1 text-center text-xs py-1.5 rounded bg-gray-900 text-white hover:bg-black">来源原文 →</a><a href="${s.officialUrl}" target="_blank" class="flex-1 text-center text-xs py-1.5 rounded border border-gray-300 hover:bg-gray-50">访问官网</a></div>
+  </div>`).join('');
+}
+$('#startupRound').addEventListener('change', e => { state.startupRound = e.target.value; renderStartups(); });
+$('#startupCategory').addEventListener('change', e => { state.startupCategory = e.target.value; renderStartups(); });
+
+function renderSocial() {
+  let list = [...SOCIAL_BUZZ];
+  if (state.socialCategory!=='all') list = list.filter(b => b.category===state.socialCategory);
+  list.sort((a,b) => b.heat - a.heat);
+  const maxHeat = Math.max(...list.map(b => b.heat));
+  $('#socialList').innerHTML = list.map((b, idx) => `<div class="bg-white rounded-xl border p-5">
+    <div class="flex items-start gap-4">
+      <div class="flex-shrink-0 text-center"><div class="text-2xl font-bold text-gray-300">#${idx+1}</div><img src="${b.image}" class="w-20 h-20 object-cover rounded-lg mt-2" /></div>
+      <div class="flex-1 min-w-0">
+        <div class="flex items-center gap-2 mb-1"><h3 class="font-bold text-base">${b.name}</h3><span class="tag tag-trend">#${b.category}</span></div>
+        <div class="flex items-center gap-2 mb-2"><span class="text-xs text-gray-500">🔥 总热度</span><span class="text-sm font-bold text-red-500">${fmt(b.heat)}</span></div>
+        <div class="heat-bar mb-3"><div class="heat-fill" style="width:${(b.heat/maxHeat)*100}%"></div></div>
+        <div class="text-xs text-gray-500 mb-1">主要讨论维度：</div>
+        <div class="dim-bar mb-2">${b.dims.map(d => `<div style="width:${d.pct}%;background:${d.color}" title="${d.name} ${d.pct}%"></div>`).join('')}</div>
+        <div class="flex flex-wrap gap-3 text-xs mb-4">${b.dims.map(d => `<span class="flex items-center gap-1"><span class="inline-block w-2 h-2 rounded" style="background:${d.color}"></span>${d.name} <b>${d.pct}%</b></span>`).join('')}</div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-2">${b.platforms.map(p => `<a href="${p.url}" target="_blank" class="flex items-center justify-between px-3 py-2 rounded-lg bg-gray-50 hover:bg-gray-100 transition"><div class="min-w-0 flex-1"><div class="text-xs font-semibold text-gray-700">${p.name} · ${p.count}</div><div class="text-[11px] text-gray-500 truncate">「${p.sample}」 ${p.metric}</div></div><span class="text-emerald-600 text-xs ml-2">→</span></a>`).join('')}</div>
+      </div>
+    </div>
+  </div>`).join('');
+}
+$('#socialCategory').addEventListener('change', e => { state.socialCategory = e.target.value; renderSocial(); });
+
+renderCrowd(); renderNews(); renderStartups(); renderSocial();
+</script>
+</body>
+</html>

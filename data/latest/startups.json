@@ -1,0 +1,127 @@
+{
+  "date": "2026-06-08",
+  "kind": "startups",
+  "count": 8,
+  "items": [
+    {
+      "id": "yc-anoria",
+      "source": "Y Combinator",
+      "name": "ANORIA",
+      "name_zh": "ANORIA",
+      "intro": "The first wearable that reads your emotions to enhance your EQ. ",
+      "intro_zh": [
+        "The first wearable that reads your emotions to enhance your EQ. "
+      ],
+      "founders": "Unknown",
+      "location": "United States of America, America / Canada",
+      "batch": "Spring 2026",
+      "url": "https://www.anoria.com",
+      "scrapedAt": "2026-06-08T03:08:13.518Z"
+    },
+    {
+      "id": "yc-fort",
+      "source": "Y Combinator",
+      "name": "Fort",
+      "name_zh": "Fort",
+      "intro": "Strength Tracking Wearable",
+      "intro_zh": [
+        "Strength Tracking Wearable"
+      ],
+      "founders": "Unknown",
+      "location": "United States of America, America / Canada",
+      "batch": "Winter 2026",
+      "url": "https://fort.cx",
+      "scrapedAt": "2026-06-08T03:08:13.518Z"
+    },
+    {
+      "id": "yc-tornyol",
+      "source": "Y Combinator",
+      "name": "Tornyol",
+      "name_zh": "Tornyol",
+      "intro": "We build micro-drones that kill mosquitoes. ",
+      "intro_zh": [
+        "We build micro-drones that kill mosquitoes. "
+      ],
+      "founders": "Unknown",
+      "location": "France, Europe",
+      "batch": "Fall 2025",
+      "url": "https://tornyol.com/",
+      "scrapedAt": "2026-06-08T03:08:13.518Z"
+    },
+    {
+      "id": "yc-vassar-robotics",
+      "source": "Y Combinator",
+      "name": "Vassar Robotics",
+      "name_zh": "Vassar Robotics",
+      "intro": "Open-source semi-humanoid dev kit → home data → autonomy → 20h/wk",
+      "intro_zh": [
+        "Open-source semi-humanoid dev kit → home data → autonomy → 20h/wk"
+      ],
+      "founders": "Unknown",
+      "location": "United States of America, America / Canada",
+      "batch": "Spring 2025",
+      "url": "https://www.vassarrobotics.com",
+      "scrapedAt": "2026-06-08T03:08:13.518Z"
+    },
+    {
+      "id": "yc-pickle-2",
+      "source": "Y Combinator",
+      "name": "Pickle",
+      "name_zh": "Pickle",
+      "intro": "Where your life context becomes understanding.",
+      "intro_zh": [
+        "Where your life context becomes understanding."
+      ],
+      "founders": "Unknown",
+      "location": "United States of America, America / Canada",
+      "batch": "Winter 2025",
+      "url": "https://www.pickle.com",
+      "scrapedAt": "2026-06-08T03:08:13.518Z"
+    },
+    {
+      "id": "yc-innate",
+      "source": "Y Combinator",
+      "name": "Innate",
+      "name_zh": "Innate",
+      "intro": "Personal AI Robots",
+      "intro_zh": [
+        "Personal AI Robots"
+      ],
+      "founders": "Unknown",
+      "location": "United States of America, America / Canada",
+      "batch": "Fall 2024",
+      "url": "https://innate.bot",
+      "scrapedAt": "2026-06-08T03:08:13.518Z"
+    },
+    {
+      "id": "yc-k-scale-labs",
+      "source": "Y Combinator",
+      "name": "K-Scale Labs",
+      "name_zh": "K-Scale Labs",
+      "intro": "Open-source humanoid robots",
+      "intro_zh": [
+        "Open-source humanoid robots"
+      ],
+      "founders": "Unknown",
+      "location": "United States of America, America / Canada",
+      "batch": "Winter 2024",
+      "url": "https://kscale.dev/",
+      "scrapedAt": "2026-06-08T03:08:13.518Z"
+    },
+    {
+      "id": "yc-tuesday-lab",
+      "source": "Y Combinator",
+      "name": "Tuesday Lab",
+      "name_zh": "Tuesday Lab",
+      "intro": "Delightful robots",
+      "intro_zh": [
+        "Delightful robots"
+      ],
+      "founders": "Unknown",
+      "location": "United States of America, America / Canada",
+      "batch": "Winter 2024",
+      "url": "https://www.tuesdaylab.com",
+      "scrapedAt": "2026-06-08T03:08:13.518Z"
+    }
+  ]
+}

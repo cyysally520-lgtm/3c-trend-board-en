@@ -1,0 +1,6 @@
+{
+  "name": "3C 科技产品趋势看板",
+  "description": "一个汇集全网最新 3C 科技产品趋势的单页静态前端看板，包含产品众筹数据、产品资讯及创企动态的多维切换与筛选功能。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
