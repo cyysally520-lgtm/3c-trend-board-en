@@ -15,6 +15,7 @@ import pLimit from 'p-limit';
 import { log } from './lib/logger';
 import { saveSnapshot, updateManifest, pruneOldSnapshots } from './lib/storage';
 import { closeBrowser } from './lib/browser';
+import { translateCrowdNames, generateCrowdSummaries } from './lib/translate';
 import { scrapeCrowdSupply } from './sources/crowdsupply';
 import { scrapeKickstarter } from './sources/kickstarter';
 import { scrapeIndiegogo } from './sources/indiegogo';
@@ -63,6 +64,14 @@ async function main() {
   const byKind: Record<string, any[]> = { crowdfunding: [], news: [], startups: [], investments: [] };
   for (const { kind, result } of results) {
     byKind[kind].push(...result.items);
+  }
+
+  // AI 翻译：翻译众筹产品名称 + 生成中文摘要
+  if (byKind.crowdfunding.length > 0) {
+    log.info('translate', 'translating crowdfunding product names...');
+    await translateCrowdNames(byKind.crowdfunding);
+    log.info('translate', 'generating crowdfunding AI summaries...');
+    await generateCrowdSummaries(byKind.crowdfunding);
   }
 
   // 写盘

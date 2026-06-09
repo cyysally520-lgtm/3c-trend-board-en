@@ -66,10 +66,16 @@ export const CrowdCard: React.FC<CrowdCardProps> = ({ item }) => {
         
         {/* Title and Founder Area */}
         <div>
-          {/* Main Integrated Title (E.g., Snapmaker Artisan • 三合一桌面工厂) */}
+          {/* 产品英文名称 */}
           <h3 className="text-[15px] font-bold text-[#1e293b] leading-snug font-sans tracking-tight line-clamp-2 group-hover:text-emerald-700 transition-colors">
-            {item.name_zh.includes('•') ? item.name_zh : `${item.name} • ${item.name_zh}`}
+            {item.name}
           </h3>
+          {/* 中文翻译（如果有） */}
+          {item.name_zh && item.name_zh !== item.name && (
+            <p className="text-[13px] text-emerald-600 mt-0.5 font-medium line-clamp-1">
+              {item.name_zh}
+            </p>
+          )}
           
           {/* Founder and Location line inline */}
           <div className="text-[13px] text-slate-400 mt-1.5 flex items-center gap-1.5 font-medium flex-wrap">
