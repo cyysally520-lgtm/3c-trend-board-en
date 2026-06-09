@@ -91,8 +91,8 @@ export async function scrapeYCombinator(maxItems = 100): Promise<ScrapeResult<Ra
           intro: hit.one_liner || hit.long_description?.slice(0, 240) || '',
           intro_zh: [hit.one_liner || hit.long_description?.slice(0, 240) || ''],
           founders: (hit.founders_names || []).join(', ') || 'Unknown',
-          team_size: hit.team_size || '',
-          location: hit.location || (hit.regions || []).join(', ') || 'Unknown',
+          team_size: hit.team_size ? String(hit.team_size) : '',
+          location: hit.all_locations || (hit.regions || []).join(', ') || 'Unknown',
           batch: hit.batch || '',
           url: hit.website || `https://www.ycombinator.com/companies/${hit.slug || ''}`,
           scrapedAt: new Date().toISOString(),
@@ -124,7 +124,7 @@ interface YCHit {
   batch?: string;
   industries?: string[];
   regions?: string[];
-  location?: string;
+  all_locations?: string;
   founders_names?: string[];
-  team_size?: string;
+  team_size?: number;
 }
