@@ -100,7 +100,7 @@ export const StartupCard: React.FC<StartupCardProps> = ({ item }) => {
           <div className="space-y-0.5">
             <span className="text-slate-400 flex items-center gap-1">
               <MapPin className="w-3 h-3 text-slate-400" />
-              注册地 / 国家城市
+              注册地
             </span>
             <p className="font-semibold text-slate-700 truncate" title={item.location}>
               {item.location}
