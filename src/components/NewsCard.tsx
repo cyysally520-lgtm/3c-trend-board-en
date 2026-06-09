@@ -62,15 +62,10 @@ export const NewsCard: React.FC<NewsCardProps> = ({ item }) => {
             <span>发布于 {item.hoursAgo >= 24 ? `${Math.floor(item.hoursAgo / 24)}天前` : item.hoursAgo <= 1 ? '刚刚' : `${item.hoursAgo}小时前`}</span>
           </div>
 
-          {/* Integrated Multi languages Title */}
-          <div>
-            <h3 className="text-base font-bold text-slate-900 leading-snug line-clamp-2 select-none group-hover:text-emerald-700 transition-colors">
-              {item.title_zh}
-            </h3>
-            <p className="text-[13px] text-slate-400 mt-1 font-mono tracking-tight font-normal leading-snug line-clamp-1">
-              -{item.title}
-            </p>
-          </div>
+          {/* Title */}
+          <h3 className="text-base font-bold text-slate-900 leading-snug line-clamp-2 select-none group-hover:text-emerald-700 transition-colors">
+            {item.title_zh}
+          </h3>
 
           {/* Original snippet quote */}
           <p className="text-xs text-slate-400 italic line-clamp-2 leading-relaxed bg-slate-50/50 p-2 rounded-md border-l border-slate-200">
