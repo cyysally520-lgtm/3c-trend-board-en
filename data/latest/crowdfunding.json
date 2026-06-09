@@ -9,20 +9,20 @@
       "image": "https://www.crowdsupply.com/img/a9cc/3aa4466e-bd14-45d9-a0cc-ca4fd2eda9cc_aa-md.jpg",
       "name": "MiciMike Home Mini Drop-In PCB",
       "name_zh": "MiciMike Home Mini Drop-In PCB",
-      "founder": "Unknown",
-      "location": "Unknown",
-      "raised": 99150,
+      "founder": "MiciMike ReV Devices",
+      "location": "Bandon, co",
+      "raised": 99490,
       "currency": "USD",
       "currencySymbol": "$",
-      "progress_pct": 1239,
-      "backers": 468,
-      "price": "",
+      "progress_pct": 1243,
+      "backers": 469,
+      "price": "$85",
       "campaign_url": "https://www.crowdsupply.com/micimike-rev-devices/micimike-home-mini-drop-in-pcb",
       "category_tag_zh": "#硬件",
       "summary_zh": [
         "A fully local, open-source replacement board that brings Home Assistant voice to the 1st Gen Google Home Mini"
       ],
-      "scrapedAt": "2026-06-09T01:56:43.032Z"
+      "scrapedAt": "2026-06-09T02:51:18.747Z"
     },
     {
       "id": "cs-modos-tech-modos-flow",
@@ -30,20 +30,20 @@
       "image": "https://www.crowdsupply.com/img/4d47/d13c7a45-368d-45f8-9eb6-89bd51c04d47_aa-md.jpg",
       "name": "Modos Flow",
       "name_zh": "Modos Flow",
-      "founder": "Unknown",
-      "location": "Unknown",
+      "founder": "others.",
+      "location": "daily use",
       "raised": 56858,
       "currency": "USD",
       "currencySymbol": "$",
       "progress_pct": 100,
       "backers": 0,
-      "price": "",
+      "price": "$619",
       "campaign_url": "https://www.crowdsupply.com/modos-tech/modos-flow",
       "category_tag_zh": "#硬件",
       "summary_zh": [
         "A paper-like monitor for reading, writing, and focused work"
       ],
-      "scrapedAt": "2026-06-09T01:56:43.033Z"
+      "scrapedAt": "2026-06-09T02:51:18.748Z"
     },
     {
       "id": "cs-wafer-space-gf180mcu-run-2",
@@ -51,8 +51,8 @@
       "image": "https://www.crowdsupply.com/img/4944/87f2abdc-f041-4d4f-958c-11d447924944_aa-md.jpg",
       "name": "wafer.space GF180MCU Run 2",
       "name_zh": "wafer.space GF180MCU Run 2",
-      "founder": "Unknown",
-      "location": "Unknown",
+      "founder": "wafer.space",
+      "location": "Singapore",
       "raised": 77000,
       "currency": "USD",
       "currencySymbol": "$",
@@ -64,7 +64,7 @@
       "summary_zh": [
         "Fabricate 1,000 chips of your own design"
       ],
-      "scrapedAt": "2026-06-09T01:56:43.033Z"
+      "scrapedAt": "2026-06-09T02:51:18.749Z"
     },
     {
       "id": "cs-leafkvm-leafkvm",
@@ -72,20 +72,20 @@
       "image": "https://www.crowdsupply.com/img/f0b1/acb444da-2aa4-46f6-bdf8-a67784bff0b1_aa-md.jpg",
       "name": "LeafKVM",
       "name_zh": "LeafKVM",
-      "founder": "Unknown",
-      "location": "Unknown",
+      "founder": "our partners in China. We will handle final assembly, screen installation, and firmware flashing directly in our studio. Every LeafKVM unit will undergo extensive quality inspection before shipping.",
+      "location": "China",
       "raised": 56516,
       "currency": "USD",
       "currencySymbol": "$",
       "progress_pct": 565,
       "backers": 219,
-      "price": "",
+      "price": "$119",
       "campaign_url": "https://www.crowdsupply.com/leafkvm/leafkvm",
       "category_tag_zh": "#硬件",
       "summary_zh": [
         "A flexible KVM remote control with support for wireless connectivity"
       ],
-      "scrapedAt": "2026-06-09T01:56:43.034Z"
+      "scrapedAt": "2026-06-09T02:51:18.749Z"
     },
     {
       "id": "cs-meatpi-electronics-wican-pro",
@@ -93,20 +93,20 @@
       "image": "https://www.crowdsupply.com/img/77ee/1e1b8b19-5ea3-40ee-81e0-d394485f77ee_aa-md.jpg",
       "name": "WiCAN Pro",
       "name_zh": "WiCAN Pro",
-      "founder": "Unknown",
-      "location": "Unknown",
+      "founder": "MeatPi Electronics",
+      "location": "Melbourne, Australia",
       "raised": 172261,
       "currency": "USD",
       "currencySymbol": "$",
       "progress_pct": 100,
       "backers": 1739,
-      "price": "",
+      "price": "$89",
       "campaign_url": "https://www.crowdsupply.com/meatpi-electronics/wican-pro",
       "category_tag_zh": "#硬件",
       "summary_zh": [
         "Advanced OBD scanner for next-generation vehicle diagnostics and Home Assistant integration"
       ],
-      "scrapedAt": "2026-06-09T01:56:43.035Z"
+      "scrapedAt": "2026-06-09T02:51:18.750Z"
     },
     {
       "id": "cs-meatpi-electronics-ollie-v2",
@@ -114,20 +114,20 @@
       "image": "https://www.crowdsupply.com/img/bbdd/7e6b6f8f-8d52-42bc-9c29-f06b72abbbdd_aa-md.jpg",
       "name": "Ollie v2",
       "name_zh": "Ollie v2",
-      "founder": "Unknown",
-      "location": "Unknown",
+      "founder": "MeatPi Electronics",
+      "location": "Melbourne, Australia",
       "raised": 17480,
       "currency": "USD",
       "currencySymbol": "$",
       "progress_pct": 100,
       "backers": 209,
-      "price": "",
+      "price": "$62",
       "campaign_url": "https://www.crowdsupply.com/meatpi-electronics/ollie-v2",
       "category_tag_zh": "#硬件",
       "summary_zh": [
         "An even better all-in-one USB to isolated-UARTx2/CAN/RS485/RS232 converter"
       ],
-      "scrapedAt": "2026-06-09T01:56:43.035Z"
+      "scrapedAt": "2026-06-09T02:51:18.751Z"
     },
     {
       "id": "cs-meatpi-electronics-wican",
@@ -135,20 +135,20 @@
       "image": "https://www.crowdsupply.com/img/6d22/2941f95f-cee3-4b94-9a86-67a9abf16d22_aa-md.jpg",
       "name": "WiCAN",
       "name_zh": "WiCAN",
-      "founder": "Unknown",
-      "location": "Unknown",
+      "founder": "MeatPi Electronics",
+      "location": "Melbourne, Australia",
       "raised": 54643,
       "currency": "USD",
       "currencySymbol": "$",
       "progress_pct": 100,
       "backers": 1032,
-      "price": "",
+      "price": "$42",
       "campaign_url": "https://www.crowdsupply.com/meatpi-electronics/wican",
       "category_tag_zh": "#硬件",
       "summary_zh": [
         "Open source, ESP32-C3 CAN adapter with USB, Wi-Fi, and BLE support"
       ],
-      "scrapedAt": "2026-06-09T01:56:43.036Z"
+      "scrapedAt": "2026-06-09T02:51:18.751Z"
     },
     {
       "id": "cs-bela-bela-gem-stereo-and-multi",
@@ -156,20 +156,20 @@
       "image": "https://www.crowdsupply.com/img/02a6/fbfd23bf-9954-474a-8a2b-f6f4b3fc02a6_aa-md.jpg",
       "name": "Bela Gem Stereo and Multi",
       "name_zh": "Bela Gem Stereo and Multi",
-      "founder": "Unknown",
-      "location": "Unknown",
+      "founder": "Bela",
+      "location": "London, UK",
       "raised": 64748,
       "currency": "USD",
       "currencySymbol": "$",
       "progress_pct": 323,
       "backers": 315,
-      "price": "",
+      "price": "$75",
       "campaign_url": "https://www.crowdsupply.com/bela/bela-gem-stereo-and-multi",
       "category_tag_zh": "#硬件",
       "summary_zh": [
         "A high-performance audio and sensor system for the PocketBeagle 2"
       ],
-      "scrapedAt": "2026-06-09T01:56:43.036Z"
+      "scrapedAt": "2026-06-09T02:51:18.752Z"
     },
     {
       "id": "cs-sitron-labs-solder-ninja-pen",
@@ -177,20 +177,20 @@
       "image": "https://www.crowdsupply.com/img/f954/82192cf9-46db-4cb8-b268-8112cefff954_aa-md.jpg",
       "name": "Solder Ninja Pen",
       "name_zh": "Solder Ninja Pen",
-      "founder": "Unknown",
-      "location": "Unknown",
+      "founder": "local company",
+      "location": "the Press",
       "raised": 39699,
       "currency": "USD",
       "currencySymbol": "$",
       "progress_pct": 305,
       "backers": 159,
-      "price": "",
+      "price": "$169",
       "campaign_url": "https://www.crowdsupply.com/sitron-labs/solder-ninja-pen",
       "category_tag_zh": "#硬件",
       "summary_zh": [
         "A 45 W USB-powered soldering iron compatible with Weller RT Micro tips"
       ],
-      "scrapedAt": "2026-06-09T01:56:43.036Z"
+      "scrapedAt": "2026-06-09T02:51:18.752Z"
     },
     {
       "id": "cs-aerio-solutions-usb-insight-hub",
@@ -198,20 +198,20 @@
       "image": "https://www.crowdsupply.com/img/98b8/547758d3-7d12-4adc-b0e1-6d9a8c6098b8_aa-md.jpg",
       "name": "USB Insight Hub",
       "name_zh": "USB Insight Hub",
-      "founder": "Unknown",
-      "location": "Unknown",
+      "founder": "Aerio Solutions SAS",
+      "location": "Quito, Ecuador",
       "raised": 20519,
       "currency": "USD",
       "currencySymbol": "$",
       "progress_pct": 205,
       "backers": 105,
-      "price": "",
+      "price": "$139",
       "campaign_url": "https://www.crowdsupply.com/aerio-solutions/usb-insight-hub",
       "category_tag_zh": "#硬件",
       "summary_zh": [
         "A USB interfacing tool for developers & tech enthusiasts"
       ],
-      "scrapedAt": "2026-06-09T01:56:43.037Z"
+      "scrapedAt": "2026-06-09T02:51:18.752Z"
     },
     {
       "id": "cs-icy-electronics-icepi-zero",
@@ -219,20 +219,20 @@
       "image": "https://www.crowdsupply.com/img/e137/1639530e-e138-4460-b8dd-656a7bb6e137_aa-md.jpg",
       "name": "Icepi Zero",
       "name_zh": "Icepi Zero",
-      "founder": "Unknown",
-      "location": "Unknown",
+      "founder": "Icy Electronics",
+      "location": "Cannes, France",
       "raised": 25958,
       "currency": "USD",
       "currencySymbol": "$",
       "progress_pct": 519,
       "backers": 203,
-      "price": "",
+      "price": "$79",
       "campaign_url": "https://www.crowdsupply.com/icy-electronics/icepi-zero",
       "category_tag_zh": "#硬件",
       "summary_zh": [
         "A powerful FPGA dev board in a familiar, pint-sized package"
       ],
-      "scrapedAt": "2026-06-09T01:56:43.037Z"
+      "scrapedAt": "2026-06-09T02:51:18.753Z"
     },
     {
       "id": "cs-saraai-sarakit",
@@ -240,20 +240,20 @@
       "image": "https://www.crowdsupply.com/img/431c/99b3bc80-2a0b-4435-bed6-999a9c9d431c_aa-md.jpg",
       "name": "SaraKIT",
       "name_zh": "SaraKIT",
-      "founder": "Unknown",
-      "location": "Unknown",
+      "founder": "a phone playing an audible tone.",
+      "location": "the standard Raspberry Pi",
       "raised": 17820,
       "currency": "USD",
       "currencySymbol": "$",
       "progress_pct": 356,
       "backers": 87,
-      "price": "",
+      "price": "$109",
       "campaign_url": "https://www.crowdsupply.com/saraai/sarakit",
       "category_tag_zh": "#硬件",
       "summary_zh": [
         "Raspberry Pi CM4 expansion board with ChatGPT-based voice control, motor control, powerful sensors, and tons of tutorials"
       ],
-      "scrapedAt": "2026-06-09T01:56:43.037Z"
+      "scrapedAt": "2026-06-09T02:51:18.753Z"
     },
     {
       "id": "cs-apfaudio-tiliqua",
@@ -261,20 +261,20 @@
       "image": "https://www.crowdsupply.com/img/4f42/04bed5ae-404b-4b64-9ccd-aad5a8d24f42_aa-md.jpg",
       "name": "Tiliqua",
       "name_zh": "Tiliqua",
-      "founder": "Unknown",
-      "location": "Unknown",
+      "founder": "apf.audio",
+      "location": "Heidelberg, DE",
       "raised": 50176,
       "currency": "USD",
       "currencySymbol": "$",
       "progress_pct": 418,
       "backers": 91,
-      "price": "",
+      "price": "$99",
       "campaign_url": "https://www.crowdsupply.com/apfaudio/tiliqua",
       "category_tag_zh": "#硬件",
       "summary_zh": [
         "A powerful, hackable FPGA-based audio multitool for Eurorack"
       ],
-      "scrapedAt": "2026-06-09T01:56:43.038Z"
+      "scrapedAt": "2026-06-09T02:51:18.753Z"
     },
     {
       "id": "cs-silicognition-lifepo4wered-pi-plus",
@@ -282,20 +282,20 @@
       "image": "https://www.crowdsupply.com/img/ad17/1c06c6a9-348a-40af-a1f7-8adb0c0fad17_aa-md.jpg",
       "name": "LiFePO4wered/Pi+",
       "name_zh": "LiFePO4wered/Pi+",
-      "founder": "Unknown",
-      "location": "Unknown",
+      "founder": "Silicognition",
+      "location": "Longmont, Colorado",
       "raised": 73827,
       "currency": "USD",
       "currencySymbol": "$",
       "progress_pct": 1054,
       "backers": 791,
-      "price": "",
+      "price": "$53",
       "campaign_url": "https://www.crowdsupply.com/silicognition/lifepo4wered-pi-plus",
       "category_tag_zh": "#硬件",
       "summary_zh": [
         "A full-featured LiFePO4 battery, power manager, and UPS for the Raspberry Pi"
       ],
-      "scrapedAt": "2026-06-09T01:56:43.038Z"
+      "scrapedAt": "2026-06-09T02:51:18.754Z"
     },
     {
       "id": "cs-techxartisan-openterface-mini-kvm",
@@ -303,20 +303,20 @@
       "image": "https://www.crowdsupply.com/img/3b1b/252f7954-731b-42d8-a16a-5ad0403b3b1b_aa-md.jpg",
       "name": "Openterface Mini-KVM",
       "name_zh": "Openterface Mini-KVM",
-      "founder": "Unknown",
-      "location": "Unknown",
-      "raised": 517001,
+      "founder": "TechxArtisan",
+      "location": "Hong Kong",
+      "raised": 517125,
       "currency": "USD",
       "currencySymbol": "$",
-      "progress_pct": 4308,
-      "backers": 3856,
-      "price": "",
+      "progress_pct": 4309,
+      "backers": 3857,
+      "price": "$95",
       "campaign_url": "https://www.crowdsupply.com/techxartisan/openterface-mini-kvm",
       "category_tag_zh": "#硬件",
       "summary_zh": [
         "Your Laptop as a KVM Console"
       ],
-      "scrapedAt": "2026-06-09T01:56:43.038Z"
+      "scrapedAt": "2026-06-09T02:51:18.754Z"
     },
     {
       "id": "cs-mnt-pocket-reform",
@@ -324,20 +324,20 @@
       "image": "https://www.crowdsupply.com/img/e516/cb13c54e-2f6a-46fe-9c52-b5bacb68e516_aa-md.jpg",
       "name": "MNT Pocket Reform",
       "name_zh": "MNT Pocket Reform",
-      "founder": "Unknown",
-      "location": "Unknown",
+      "founder": "MNT Research",
+      "location": "Berlin, Germany",
       "raised": 632984,
       "currency": "USD",
       "currencySymbol": "$",
       "progress_pct": 468,
       "backers": 430,
-      "price": "",
+      "price": "$999",
       "campaign_url": "https://www.crowdsupply.com/mnt/pocket-reform",
       "category_tag_zh": "#硬件",
       "summary_zh": [
         "A newer, smaller, lighter, more-affordable, seven-inch mini Reform laptop that remains fully open source"
       ],
-      "scrapedAt": "2026-06-09T01:56:43.038Z"
+      "scrapedAt": "2026-06-09T02:51:18.755Z"
     },
     {
       "id": "cs-securinghw-tigard",
@@ -345,20 +345,20 @@
       "image": "https://www.crowdsupply.com/img/e6ba/fcd31117-5b0f-41ab-a7f8-f12a42c6e6ba_aa-md.jpg",
       "name": "Tigard",
       "name_zh": "Tigard",
-      "founder": "Unknown",
-      "location": "Unknown",
+      "founder": "SecuringHardware.com",
+      "location": "Portland, OR",
       "raised": 164599,
       "currency": "USD",
       "currencySymbol": "$",
       "progress_pct": 100,
       "backers": 1735,
-      "price": "",
+      "price": "$35",
       "campaign_url": "https://www.crowdsupply.com/securinghw/tigard",
       "category_tag_zh": "#硬件",
       "summary_zh": [
         "An open source FT2232H-based, multi-protocol, multi-voltage tool for hardware hacking"
       ],
-      "scrapedAt": "2026-06-09T01:56:43.039Z"
+      "scrapedAt": "2026-06-09T02:51:18.755Z"
     },
     {
       "id": "cs-newae-chipwhisperer-husky",
@@ -366,20 +366,20 @@
       "image": "https://www.crowdsupply.com/img/664a/eeb4a6bf-e844-4f20-9ef9-cda676b8664a_aa-md.jpg",
       "name": "ChipWhisperer-Husky",
       "name_zh": "ChipWhisperer-Husky",
-      "founder": "Unknown",
-      "location": "Unknown",
+      "founder": "us and subject to our quality-assurance process. This approach has allowed us to grow the company while keeping the educational tutorials and critical design pieces (such as the FPGA and firmware code) fully open source.",
+      "location": "the more expensive ChipWhisperer-Pro and supports the same innovative \"synchronous sampling\" technology that underpins our ChipWhisperer capture architecture, which allows you to analyze devices well beyond what its low cost would suggest",
       "raised": 522610,
       "currency": "USD",
       "currencySymbol": "$",
       "progress_pct": 100,
       "backers": 717,
-      "price": "",
+      "price": "$640",
       "campaign_url": "https://www.crowdsupply.com/newae/chipwhisperer-husky",
       "category_tag_zh": "#硬件",
       "summary_zh": [
         "The power-analysis and fault-injection tool you can hold in your paw"
       ],
-      "scrapedAt": "2026-06-09T01:56:43.039Z"
+      "scrapedAt": "2026-06-09T02:51:18.756Z"
     }
   ]
 }
