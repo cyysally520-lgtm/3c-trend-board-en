@@ -31,9 +31,6 @@ export const StartupCard: React.FC<StartupCardProps> = ({ item }) => {
                 {item.source === 'a16z' ? `a16z ${item.batch}` : `YC ${item.batch}`}
               </span>
             </div>
-            <p className="text-[13px] text-slate-500 font-semibold">
-              {item.name_zh}
-            </p>
           </div>
 
           {/* Source classic badge */}
