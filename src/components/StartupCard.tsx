@@ -110,7 +110,7 @@ export const StartupCard: React.FC<StartupCardProps> = ({ item }) => {
       </div>
 
       {/* Footer link to company profiles */}
-      <div className="mt-4 pt-3 border-t border-slate-50 flex items-center justify-end gap-3">
+      <div className="mt-4 pt-3 border-t border-slate-50 flex items-center justify-between">
         {item.source !== 'a16z' && (
           <a 
             href={`https://www.ycombinator.com/companies/${item.id.replace('yc-', '')}`}
