@@ -330,7 +330,7 @@ export default function App() {
       result = result.filter(item => selectedSources.includes(item.source));
     }
 
-    return result.sort((a, b) => a.hoursAgo - b.hoursAgo); // Newest hours format ascending
+    return result.sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()); // Newest first
   }, [newsSearch, newsCategory, selectedSources, newsData]);
 
   const toggleSource = (source: string) => {
