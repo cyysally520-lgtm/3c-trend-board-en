@@ -870,7 +870,7 @@ export default function App() {
               <Sparkles className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" />
               <div>
                 <p className="text-sm font-semibold text-emerald-800">AI 硬件高潜投资项目</p>
-                <p className="text-xs text-emerald-600 mt-0.5">数据来源：NextBanker ShadowGlow · AI硬件板块 · 每日更新 · 展开卡片可查看团队与融资详情</p>
+                <p className="text-xs text-emerald-600 mt-0.5">数据来源：100+家监控渠道 4000+家信源· AI硬件板块 · 每日更新 · 展开卡片可查看团队与融资详情</p>
               </div>
             </div>
             {investData.length > 0 ? (
