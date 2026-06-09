@@ -110,7 +110,18 @@ export const StartupCard: React.FC<StartupCardProps> = ({ item }) => {
       </div>
 
       {/* Footer link to company profiles */}
-      <div className="mt-4 pt-3 border-t border-slate-50 flex items-center justify-end">
+      <div className="mt-4 pt-3 border-t border-slate-50 flex items-center justify-end gap-3">
+        {item.source !== 'a16z' && (
+          <a 
+            href={`https://www.ycombinator.com/companies/${item.id.replace('yc-', '')}`}
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-xs font-bold hover:underline inline-flex items-center gap-0.5 cursor-pointer text-orange-600 hover:text-orange-700"
+          >
+            YC 产品介绍
+            <ArrowUpRight className="w-3.5 h-3.5" />
+          </a>
+        )}
         <a 
           href={item.url} 
           target="_blank" 
@@ -119,7 +130,7 @@ export const StartupCard: React.FC<StartupCardProps> = ({ item }) => {
             item.source === 'a16z' ? 'text-sky-600 hover:text-sky-700' : 'text-orange-600 hover:text-orange-700'
           }`}
         >
-          {item.source === 'a16z' ? '查看 a16z 官网详情' : '查看 YC 公司主页'}
+          {item.source === 'a16z' ? '查看 a16z 官网详情' : '公司官网'}
           <ArrowUpRight className="w-3.5 h-3.5" />
         </a>
       </div>
