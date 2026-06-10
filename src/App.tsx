@@ -34,6 +34,9 @@ export default function App() {
   const [isLoading, setIsLoading] = useState(false);
   const [lastUpdated, setLastUpdated] = useState<string>('当前就绪');
 
+  // --- INVESTMENTS SEARCH ---
+  const [investSearch, setInvestSearch] = useState('');
+
 
 
   // Hydrate data from back-end database
@@ -279,6 +282,27 @@ export default function App() {
     setSelectedBatch('');
   };
 
+  // --- INVESTMENTS FILTER ---
+  const filteredInvests = useMemo(() => {
+    let result = [...investData];
+
+    if (investSearch.trim()) {
+      const q = investSearch.toLowerCase();
+      result = result.filter(
+        item =>
+          item.name.toLowerCase().includes(q) ||
+          item.tagline.toLowerCase().includes(q) ||
+          item.tech.toLowerCase().includes(q) ||
+          item.business.toLowerCase().includes(q) ||
+          item.team.toLowerCase().includes(q) ||
+          item.funding.toLowerCase().includes(q) ||
+          item.category.toLowerCase().includes(q)
+      );
+    }
+
+    return result;
+  }, [investSearch, investData]);
+
   return (
     <div className="min-h-screen bg-[#f9fafb] text-slate-800 font-sans flex flex-col antialiased relative">
       
@@ -435,9 +459,26 @@ export default function App() {
                 </div>
               </div>
             </div>
-            {investData.length > 0 ? (
+
+            {/* 搜索框 */}
+            <div className="bg-white rounded-xl border border-slate-100 shadow-3xs p-4">
+              <div className="relative max-w-md">
+                <span className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                  <Search className="h-4 w-4 text-slate-400" />
+                </span>
+                <input
+                  type="text"
+                  value={investSearch}
+                  onChange={e => setInvestSearch(e.target.value)}
+                  placeholder="输入产品名称、技术关键词、团队名称..."
+                  className="block w-full pl-9 pr-4 py-2 border border-slate-200 rounded-lg text-xs bg-slate-50 placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-emerald-500 focus:border-emerald-500 focus:bg-white transition"
+                />
+              </div>
+            </div>
+
+            {filteredInvests.length > 0 ? (
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-                {investData.map(item => (
+                {filteredInvests.map(item => (
                   <InvestCard key={item.id} item={item} />
                 ))}
               </div>
