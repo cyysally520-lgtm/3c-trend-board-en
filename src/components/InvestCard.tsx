@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'motion/react';
 
 interface Props {
   item: InvestItem;
+  key?: React.Key;
 }
 
 export function InvestCard({ item }: Props) {
