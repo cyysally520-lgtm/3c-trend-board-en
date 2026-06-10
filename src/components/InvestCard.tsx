@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
-import { ChevronDown, ChevronUp, Clock, Tag, Cpu, TrendingUp, Users, BarChart2, Banknote, ExternalLink, Sparkles } from 'lucide-react';
+import React from 'react';
+import { Clock, Cpu, TrendingUp, Users, BarChart2, Banknote } from 'lucide-react';
 import { InvestItem } from '../types';
-import { motion, AnimatePresence } from 'motion/react';
 
 interface Props {
   item: InvestItem;
@@ -9,8 +8,6 @@ interface Props {
 }
 
 export function InvestCard({ item }: Props) {
-  const [expanded, setExpanded] = useState(false);
-
   // 分类颜色映射
   const getCategoryStyle = (category: string) => {
     const cat = category.toLowerCase();
@@ -51,7 +48,7 @@ export function InvestCard({ item }: Props) {
       <div className="h-[3px] bg-gradient-to-r from-violet-500 via-emerald-500 to-amber-500 w-full shrink-0"></div>
 
       {/* 卡片内容 */}
-      <div className="p-4 flex-grow flex flex-col justify-between gap-3">
+      <div className="p-4 flex-grow flex flex-col gap-3">
         {/* 头部区域 */}
         <div>
           {/* 序号 + 融资状态 + 分类标签 */}
@@ -67,17 +64,17 @@ export function InvestCard({ item }: Props) {
             </span>
           </div>
 
-          {/* 项目名称 - 黑色粗体 */}
+          {/* 项目名称 */}
           <h3 className="font-bold text-slate-900 text-sm leading-snug group-hover:text-emerald-700 transition-colors">
             {item.name}
           </h3>
-          {/* 标语 - 绿色小字 */}
+          {/* 标语 */}
           {item.tagline && (
             <p className="text-[12px] text-emerald-600 font-medium mt-0.5 leading-snug">{item.tagline}</p>
           )}
         </div>
 
-        {/* 技术与商业摘要 */}
+        {/* 1. 核心技术 */}
         {item.tech && (
           <div className="bg-violet-50/40 border border-violet-100/50 rounded-lg p-2.5 space-y-1">
             <div className="flex items-center gap-1.5">
@@ -88,13 +85,47 @@ export function InvestCard({ item }: Props) {
           </div>
         )}
 
-        {item.business && (
-          <div className="bg-amber-50/40 border border-amber-100/50 rounded-lg p-2.5 space-y-1">
+        {/* 2. 商业&运营 */}
+        {(item.business || item.operations) && (
+          <div className="bg-amber-50/40 border border-amber-100/50 rounded-lg p-2.5 space-y-2">
             <div className="flex items-center gap-1.5">
               <TrendingUp className="w-3 h-3 text-amber-500" />
-              <span className="text-[10px] font-bold text-amber-700">商业模式</span>
+              <span className="text-[10px] font-bold text-amber-700">商业&运营</span>
             </div>
-            <p className="text-xs text-slate-600 leading-relaxed">{item.business}</p>
+            {item.business && (
+              <p className="text-xs text-slate-600 leading-relaxed">{item.business}</p>
+            )}
+            {item.operations && (
+              <div className="flex gap-2 pt-1 border-t border-amber-100/50">
+                <BarChart2 className="w-3 h-3 text-amber-500 shrink-0 mt-0.5" />
+                <div>
+                  <p className="text-[10px] text-amber-600 font-bold mb-0.5">运营数据</p>
+                  <p className="text-xs text-slate-600">{item.operations}</p>
+                </div>
+              </div>
+            )}
+          </div>
+        )}
+
+        {/* 3. 团队介绍 */}
+        {item.team && (
+          <div className="bg-blue-50/40 border border-blue-100/50 rounded-lg p-2.5 space-y-1">
+            <div className="flex items-center gap-1.5">
+              <Users className="w-3 h-3 text-blue-500" />
+              <span className="text-[10px] font-bold text-blue-700">团队介绍</span>
+            </div>
+            <p className="text-xs text-slate-600 leading-relaxed">{item.team}</p>
+          </div>
+        )}
+
+        {/* 4. 融资情况 */}
+        {item.funding && (
+          <div className="bg-emerald-50/40 border border-emerald-100/50 rounded-lg p-2.5 space-y-1">
+            <div className="flex items-center gap-1.5">
+              <Banknote className="w-3 h-3 text-emerald-500" />
+              <span className="text-[10px] font-bold text-emerald-700">融资情况</span>
+            </div>
+            <p className="text-xs text-slate-600 leading-relaxed">{item.funding}</p>
           </div>
         )}
 
@@ -102,63 +133,6 @@ export function InvestCard({ item }: Props) {
         <div className="flex items-center gap-1.5 text-slate-400 font-mono text-[11px]">
           <Clock className="w-3 h-3 text-slate-400 shrink-0" />
           <span>{item.daysAgo === 0 ? '今日更新' : `${item.daysAgo}天前`}</span>
-        </div>
-
-        {/* 展开/收起详情 */}
-        <div className="border-t border-slate-100 pt-2 space-y-2">
-          <button
-            onClick={() => setExpanded(!expanded)}
-            className="w-full flex items-center justify-between text-xs px-2.5 py-1.5 rounded-lg bg-emerald-50/40 text-emerald-800 hover:bg-emerald-50 font-bold transition cursor-pointer select-none"
-          >
-            <span className="flex items-center gap-1.5">
-              <Sparkles className="w-3.5 h-3.5 text-[#10b981]" />
-              展开详情
-            </span>
-            {expanded ? <ChevronUp className="w-3.5 h-3.5" /> : <ChevronDown className="w-3.5 h-3.5" />}
-          </button>
-
-          <AnimatePresence initial={false}>
-            {expanded && (
-              <motion.div
-                initial={{ height: 0, opacity: 0 }}
-                animate={{ height: "auto", opacity: 1 }}
-                exit={{ height: 0, opacity: 0 }}
-                transition={{ duration: 0.2, ease: "easeOut" }}
-                className="overflow-hidden"
-              >
-                <div className="bg-gradient-to-br from-emerald-50/30 to-teal-50/10 border border-emerald-100/50 p-3 rounded-lg space-y-3">
-                  {item.team && (
-                    <div className="flex gap-2">
-                      <Users className="w-3.5 h-3.5 text-blue-500 shrink-0 mt-0.5" />
-                      <div>
-                        <p className="text-[10px] text-blue-600 font-bold mb-0.5">团队</p>
-                        <p className="text-xs text-slate-600">{item.team}</p>
-                      </div>
-                    </div>
-                  )}
-                  {item.operations && (
-                    <div className="flex gap-2">
-                      <BarChart2 className="w-3.5 h-3.5 text-amber-500 shrink-0 mt-0.5" />
-                      <div>
-                        <p className="text-[10px] text-amber-600 font-bold mb-0.5">运营数据</p>
-                        <p className="text-xs text-slate-600">{item.operations}</p>
-                      </div>
-                    </div>
-                  )}
-                  {item.funding && (
-                    <div className="flex gap-2">
-                      <Banknote className="w-3.5 h-3.5 text-emerald-500 shrink-0 mt-0.5" />
-                      <div>
-                        <p className="text-[10px] text-emerald-600 font-bold mb-0.5">融资状态</p>
-                        <p className="text-xs text-slate-600">{item.funding}</p>
-                      </div>
-                    </div>
-                  )}
-
-                </div>
-              </motion.div>
-            )}
-          </AnimatePresence>
         </div>
       </div>
     </div>
