@@ -1,0 +1,316 @@
+import json
+
+# 读取现有的众筹数据
+with open('data/latest/crowdfunding.json', 'r', encoding='utf-8') as f:
+    data = json.load(f)
+
+# 过滤掉旧的 Makuake 数据
+old_count = len(data['items'])
+data['items'] = [item for item in data['items'] if item.get('platform') != 'Makuake']
+filtered_count = len(data['items'])
+print(f"Removed {old_count - filtered_count} old Makuake items")
+
+# 新的 Makuake 数据（从爬虫输出手动整理）
+new_makuake_items = [
+    {
+        "id": "mk-tough-battery",
+        "platform": "Makuake",
+        "image": "",
+        "name": "【MIL-STD-810H規格】過酷な環境に強い、無敵のタフモバイルバッテリー",
+        "name_zh": "MIL-STD-810H规格 坚固耐用的移动电源",
+        "founder": "Unknown",
+        "location": "Japan",
+        "raised": 1856204,
+        "currency": "JPY",
+        "currencySymbol": "￥",
+        "progress_pct": 185,
+        "backers": 0,
+        "price": "￥1,856,204",
+        "campaign_url": "https://www.makuake.com/project/tough-battery",
+        "category_tag_zh": "#科技",
+        "summary_zh": [],
+        "scrapedAt": "2026-06-10T13:37:33.000Z"
+    },
+    {
+        "id": "mk-keychronk3-he-ultra",
+        "platform": "Makuake",
+        "image": "",
+        "name": "Keychron最新薄型キーボード 天然木デザイン×磁気スイッチ / 8KHz",
+        "name_zh": "Keychron超薄键盘 天然木设计×磁轴/8KHz",
+        "founder": "Keychron",
+        "location": "Japan",
+        "raised": 49444004,
+        "currency": "JPY",
+        "currencySymbol": "￥",
+        "progress_pct": 988,
+        "backers": 0,
+        "price": "￥49,444,004",
+        "campaign_url": "https://www.makuake.com/project/keychronk3-he-ultra",
+        "category_tag_zh": "#科技",
+        "summary_zh": [],
+        "scrapedAt": "2026-06-10T13:37:33.000Z"
+    },
+    {
+        "id": "mk-titanium-led",
+        "platform": "Makuake",
+        "image": "",
+        "name": "【純チタン99％×超軽量28g】圧倒的に明るく美しい。鍵より小さいLED懐中電灯",
+        "name_zh": "纯钛99%×超轻28g 超亮迷你LED手电筒",
+        "founder": "Unknown",
+        "location": "Japan",
+        "raised": 28892004,
+        "currency": "JPY",
+        "currencySymbol": "￥",
+        "progress_pct": 2889,
+        "backers": 0,
+        "price": "￥28,892,004",
+        "campaign_url": "https://www.makuake.com/project/titanium-led",
+        "category_tag_zh": "#科技",
+        "summary_zh": [],
+        "scrapedAt": "2026-06-10T13:37:33.000Z"
+    },
+    {
+        "id": "mk-digital-monocular",
+        "platform": "Makuake",
+        "image": "",
+        "name": "覗き込めばどこでも特等席！昼も夜も鮮明で、動画も写真も撮れる『デジタル単眼鏡』",
+        "name_zh": "随处享受特级视野！昼夜清晰，可拍视频照片的数字单筒望远镜",
+        "founder": "Unknown",
+        "location": "Japan",
+        "raised": 14672004,
+        "currency": "JPY",
+        "currencySymbol": "￥",
+        "progress_pct": 733,
+        "backers": 0,
+        "price": "￥14,672,004",
+        "campaign_url": "https://www.makuake.com/project/digital-monocular",
+        "category_tag_zh": "#科技",
+        "summary_zh": [],
+        "scrapedAt": "2026-06-10T13:37:33.000Z"
+    },
+    {
+        "id": "mk-jiffy75-lp",
+        "platform": "Makuake",
+        "image": "",
+        "name": "デスクが整う、姿勢が整う。完全無線分割キーボード Jiffy75 LP",
+        "name_zh": "整理桌面、改善姿势。完全无线分体键盘 Jiffy75 LP",
+        "founder": "Unknown",
+        "location": "Japan",
+        "raised": 60025241,
+        "currency": "JPY",
+        "currencySymbol": "￥",
+        "progress_pct": 6002,
+        "backers": 0,
+        "price": "￥60,025,241",
+        "campaign_url": "https://www.makuake.com/project/jiffy75-lp",
+        "category_tag_zh": "#科技",
+        "summary_zh": [],
+        "scrapedAt": "2026-06-10T13:37:33.000Z"
+    },
+    {
+        "id": "mk-dnsys-boostsuit-v2",
+        "platform": "Makuake",
+        "image": "",
+        "name": "もっと遠くへ、自分の脚で。軽量AIパワードスーツ｜Dnsys BOOSTSUIT",
+        "name_zh": "走得更远，靠自己的双腿。轻量化AI动力外骨骼｜Dnsys BOOSTSUIT",
+        "founder": "Dnsys",
+        "location": "Japan",
+        "raised": 237996004,
+        "currency": "JPY",
+        "currencySymbol": "￥",
+        "progress_pct": 2379,
+        "backers": 0,
+        "price": "￥237,996,004",
+        "campaign_url": "https://www.makuake.com/project/dnsys-boostsuit",
+        "category_tag_zh": "#科技",
+        "summary_zh": [],
+        "scrapedAt": "2026-06-10T13:37:33.000Z"
+    },
+    {
+        "id": "mk-edison-fan",
+        "platform": "Makuake",
+        "image": "",
+        "name": "エアコン効率アップ！工事不要、スマホや声で操るエジソンスマートのシーリングファン",
+        "name_zh": "提升空调效率！无需施工，手机/语音控制的Edison智能吊扇",
+        "founder": "Unknown",
+        "location": "Japan",
+        "raised": 64854833,
+        "currency": "JPY",
+        "currencySymbol": "￥",
+        "progress_pct": 3242,
+        "backers": 0,
+        "price": "￥64,854,833",
+        "campaign_url": "https://www.makuake.com/project/edison-fan",
+        "category_tag_zh": "#科技",
+        "summary_zh": [],
+        "scrapedAt": "2026-06-10T13:37:33.000Z"
+    },
+    {
+        "id": "mk-ai-glasses",
+        "platform": "Makuake",
+        "image": "",
+        "name": "【AI操作をメガネ一つで】撮影、翻訳、音楽もハンズフリー。多機能を手の届く価格で",
+        "name_zh": "一副眼镜实现AI操作】拍摄、翻译、音乐全免提。多功能亲民价格",
+        "founder": "Unknown",
+        "location": "Japan",
+        "raised": 8990604,
+        "currency": "JPY",
+        "currencySymbol": "￥",
+        "progress_pct": 899,
+        "backers": 0,
+        "price": "￥8,990,604",
+        "campaign_url": "https://www.makuake.com/project/ai-glasses",
+        "category_tag_zh": "#科技",
+        "summary_zh": [],
+        "scrapedAt": "2026-06-10T13:37:33.000Z"
+    },
+    {
+        "id": "mk-origami-stand",
+        "platform": "Makuake",
+        "image": "",
+        "name": "mmの紙1枚から机に変わる\"新世代\"オリガミスタンドを持ち歩く◎iPad・本も",
+        "name_zh": "从1mm纸张变成桌子。随身携带'新一代'折纸支架◎iPad·书本也可以使用",
+        "founder": "Unknown",
+        "location": "Japan",
+        "raised": 16651801,
+        "currency": "JPY",
+        "currencySymbol": "￥",
+        "progress_pct": 3330,
+        "backers": 0,
+        "price": "￥16,651,801",
+        "campaign_url": "https://www.makuake.com/project/origami-stand",
+        "category_tag_zh": "#科技",
+        "summary_zh": [],
+        "scrapedAt": "2026-06-10T13:37:33.000Z"
+    },
+    {
+        "id": "mk-maglin-station",
+        "platform": "Makuake",
+        "image": "",
+        "name": "もうキャップは口にくわえない。『マグリン ステーション』でプロの所作をスマートに",
+        "name_zh": "再也不用嘴咬瓶盖了。用'Maglin Station'智能完成专业动作",
+        "founder": "Unknown",
+        "location": "Japan",
+        "raised": 1762503,
+        "currency": "JPY",
+        "currencySymbol": "￥",
+        "progress_pct": 176,
+        "backers": 0,
+        "price": "￥1,762,503",
+        "campaign_url": "https://www.makuake.com/project/maglin-station",
+        "category_tag_zh": "#科技",
+        "summary_zh": [],
+        "scrapedAt": "2026-06-10T13:37:33.000Z"
+    },
+    {
+        "id": "mk-cool-battery",
+        "platform": "Makuake",
+        "image": "",
+        "name": "【発火リスクから解放へ】熱を持たずクールに急速充電。薄型軽量モバイルバッテリー",
+        "name_zh": "【告别起火风险】不发热冷速充电。超薄轻便移动电源",
+        "founder": "Unknown",
+        "location": "Japan",
+        "raised": 8560001,
+        "currency": "JPY",
+        "currencySymbol": "￥",
+        "progress_pct": 856,
+        "backers": 0,
+        "price": "￥8,560,001",
+        "campaign_url": "https://www.makuake.com/project/cool-battery",
+        "category_tag_zh": "#科技",
+        "summary_zh": [],
+        "scrapedAt": "2026-06-10T13:37:33.000Z"
+    },
+    {
+        "id": "mk-portable-oral",
+        "platform": "Makuake",
+        "image": "",
+        "name": "オートセンサー×高水圧120psi｜外でも使えるポータブル口腔ケア革命",
+        "name_zh": "自动感应×高压120psi｜户外可用的便携式口腔护理革命",
+        "founder": "Unknown",
+        "location": "Japan",
+        "raised": 12741804,
+        "currency": "JPY",
+        "currencySymbol": "￥",
+        "progress_pct": 1274,
+        "backers": 0,
+        "price": "￥12,741,804",
+        "campaign_url": "https://www.makuake.com/project/portable-oral",
+        "category_tag_zh": "#科技",
+        "summary_zh": [],
+        "scrapedAt": "2026-06-10T13:37:33.000Z"
+    },
+    {
+        "id": "mk-cio-cerberus-v2",
+        "platform": "Makuake",
+        "image": "",
+        "name": "monograph堀口さん発案。デスクからケーブルが消える「CIOケルベロス」",
+        "name_zh": "monograph堀口先生提案。让桌面线缆消失的'CIO Cerberus'",
+        "founder": "CIO",
+        "location": "Japan",
+        "raised": 322267203,
+        "currency": "JPY",
+        "currencySymbol": "￥",
+        "progress_pct": 10742,
+        "backers": 0,
+        "price": "￥322,267,203",
+        "campaign_url": "https://www.makuake.com/project/cio-cerberus",
+        "category_tag_zh": "#科技",
+        "summary_zh": [],
+        "scrapedAt": "2026-06-10T13:37:33.000Z"
+    },
+    {
+        "id": "mk-fuzozo",
+        "platform": "Makuake",
+        "image": "",
+        "name": "触れて、話して、個性が育つ｜手のひらサイズのぬいぐるみ型AIペット、Fuzozo",
+        "name_zh": "触摸、交谈、培养个性｜手掌大小的毛绒AI宠物Fuzozo",
+        "founder": "Unknown",
+        "location": "Japan",
+        "raised": 430281034,
+        "currency": "JPY",
+        "currencySymbol": "￥",
+        "progress_pct": 43028,
+        "backers": 0,
+        "price": "￥430,281,034",
+        "campaign_url": "https://www.makuake.com/project/fuzozo",
+        "category_tag_zh": "#科技",
+        "summary_zh": [],
+        "scrapedAt": "2026-06-10T13:37:33.000Z"
+    },
+    {
+        "id": "mk-x15-x16-case",
+        "platform": "Makuake",
+        "image": "",
+        "name": "ケースが、進化する。X15／X16スマートスクリーン搭載マグネット式ケース",
+        "name_zh": "手机壳，进化了。X15/X16搭载智能屏幕磁吸式手机壳",
+        "founder": "Unknown",
+        "location": "Japan",
+        "raised": 8577001,
+        "currency": "JPY",
+        "currencySymbol": "￥",
+        "progress_pct": 428,
+        "backers": 0,
+        "price": "￥8,577,001",
+        "campaign_url": "https://www.makuake.com/project/x15-x16-case",
+        "category_tag_zh": "#科技",
+        "summary_zh": [],
+        "scrapedAt": "2026-06-10T13:37:33.000Z"
+    }
+]
+
+# 添加新的 Makuake 数据
+data['items'].extend(new_makuake_items)
+data['count'] = len(data['items'])
+
+# 保存
+with open('data/latest/crowdfunding.json', 'w', encoding='utf-8') as f:
+    json.dump(data, f, ensure_ascii=False, indent=2)
+
+print(f"Added {len(new_makuake_items)} new Makuake items")
+print(f"Total items: {data['count']}")
+
+# 同时更新日期目录的文件
+with open('data/2026-06-10/crowdfunding.json', 'w', encoding='utf-8') as f:
+    json.dump(data, f, ensure_ascii=False, indent=2)
+print("Also updated data/2026-06-10/crowdfunding.json")
