@@ -6,15 +6,10 @@ import {
   Search, 
   RotateCcw, 
   Sparkles, 
-  Cpu, 
   Calendar, 
   FilterX,
   Languages,
-  BadgeAlert,
-  Loader2,
-  Terminal,
-  XSquare,
-  Play
+  BadgeAlert
 } from 'lucide-react';
 import { CROWDFUNDING_DATA, NEWS_DATA, STARTUP_DATA } from './data';
 import { CrowdCard } from './components/CrowdCard';
@@ -39,10 +34,7 @@ export default function App() {
   const [isLoading, setIsLoading] = useState(false);
   const [lastUpdated, setLastUpdated] = useState<string>('当前就绪');
 
-  // --- AUTOMATIC CRAWLER CONTROLLERS ---
-  const [scraping, setScraping] = useState(false);
-  const [showScrapeConsole, setShowScrapeConsole] = useState(false);
-  const [scrapeLogs, setScrapeLogs] = useState<string[]>([]);
+
 
   // Hydrate data from back-end database
   // NOTE: 每个数据源独立加载，一个失败不影响其他
@@ -139,113 +131,6 @@ export default function App() {
     refreshData();
   }, []);
 
-  // Launch Scraper Task — 通过 GitHub API 触发 Actions workflow
-  const runScraper = async () => {
-    if (scraping) return;
-    // 密码验证：只有管理员才能触发
-    const pwd = window.prompt('请输入管理员密码以启动爬虫：');
-    if (pwd !== 'c3trend2026') {
-      if (pwd !== null) alert('密码错误，无权限启动爬虫。');
-      return;
-    }
-    setScraping(true);
-    setShowScrapeConsole(true);
-    setScrapeLogs([
-      `[${new Date().toLocaleTimeString('zh-CN', { hour12: false })}] 📡 [SYSTEM] 正在通过 GitHub Actions 触发真实爬虫...`,
-    ]);
-
-    try {
-      // 调用 GitHub API 触发 workflow_dispatch
-      const res = await fetch(
-        'https://api.github.com/repos/cyysally520-lgtm/3c-trend-board/actions/workflows/daily-scrape.yml/dispatches',
-        {
-          method: 'POST',
-          headers: {
-            'Authorization': `token ${import.meta.env.VITE_GH_PAT ?? ''}`,
-            'Accept': 'application/vnd.github+json',
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({ ref: 'main' }),
-        }
-      );
-
-      if (res.status === 204) {
-        const triggerTime = new Date().toLocaleTimeString('zh-CN', { hour12: false });
-        setScrapeLogs(prev => [
-          ...prev,
-          `[${triggerTime}] ✓ GitHub Actions 已触发！爬虫正在云端运行中...`,
-          `[${triggerTime}] ℹ️ 爬取范围：Crowd Supply众筹 / Gizchina资讯(50条) / YC创企 / NextBanker深海掘金项目(96条)`,
-          `[${triggerTime}] ⏳ 预计 5-8 分钟后完成，完成后页面将自动刷新数据...`,
-        ]);
-
-        // 记录触发前的时间戳，用于检测数据更新
-        const beforeUpdate = lastUpdated;
-        let pollCount = 0;
-        const maxPolls = 20; // 最多轮询20次（约10分钟）
-
-        const pollTimer = setInterval(async () => {
-          pollCount++;
-          try {
-            const mRes = await fetch('/data/manifest.json?_=' + Date.now());
-            if (mRes.ok) {
-              const manifest = await mRes.json();
-              if (manifest.updatedAt) {
-                const d = new Date(new Date(manifest.updatedAt).getTime() + 8 * 3600000);
-                const y = d.getUTCFullYear();
-                const mo = String(d.getUTCMonth() + 1).padStart(2, '0');
-                const day = String(d.getUTCDate()).padStart(2, '0');
-                const hh = String(d.getUTCHours()).padStart(2, '0');
-                const mm = String(d.getUTCMinutes()).padStart(2, '0');
-                const newTime = `${y}/${mo}/${day} ${hh}:${mm}`;
-                if (newTime !== beforeUpdate) {
-                  // 检测到新数据，刷新
-                  clearInterval(pollTimer);
-                  setScrapeLogs(prev => [
-                    ...prev,
-                    `[${new Date().toLocaleTimeString('zh-CN', { hour12: false })}] 🎉 数据已更新！正在重新加载...`,
-                  ]);
-                  // 重新加载数据
-                  await refreshData(true);
-                  setScraping(false);
-                  return;
-                }
-              }
-            }
-          } catch { /* 轮询失败忽略 */ }
-
-          if (pollCount >= maxPolls) {
-            clearInterval(pollTimer);
-            setScrapeLogs(prev => [
-              ...prev,
-              `[${new Date().toLocaleTimeString('zh-CN', { hour12: false })}] ⚠️ 超时未检测到更新，请手动刷新页面查看最新数据。`,
-            ]);
-            setScraping(false);
-          } else {
-            const remaining = maxPolls - pollCount;
-            setScrapeLogs(prev => {
-              const newLogs = [...prev];
-              // 更新最后一行等待状态
-              const lastIdx = newLogs.length - 1;
-              if (newLogs[lastIdx]?.includes('等待')) {
-                newLogs[lastIdx] = `[${new Date().toLocaleTimeString('zh-CN', { hour12: false })}] ⏳ 等待数据更新... (还剩约 ${remaining * 30} 秒)`;
-              } else {
-                newLogs.push(`[${new Date().toLocaleTimeString('zh-CN', { hour12: false })}] ⏳ 等待数据更新... (还剩约 ${remaining * 30} 秒)`);
-              }
-              return newLogs;
-            });
-          }
-        }, 30000); // 每30秒检查一次
-
-      } else {
-        const errText = await res.text().catch(() => '');
-        setScrapeLogs(prev => [...prev, `❌ [ERROR] GitHub API 返回 ${res.status}: ${errText.slice(0, 200)}`]);
-        setScraping(false);
-      }
-    } catch (err: any) {
-      setScrapeLogs(prev => [...prev, `❌ [ERROR] 网络错误: ${err.message || err}`]);
-      setScraping(false);
-    }
-  };
 
 
   // --- CROWDFUNDING LIST STATE & FILTERS ---
@@ -413,53 +298,21 @@ export default function App() {
             </div>
           </div>
 
-          {/* 实时状态与自动爬虫指标 */}
-          <div className="flex flex-wrap items-center gap-3 text-xs w-full sm:w-auto justify-end">
-            
-            {/* 数据库状态标签 */}
-            <div className="flex items-center gap-2 bg-slate-50 border border-slate-100 rounded-lg px-3 py-1.5 shadow-3xs">
-              <span className="relative flex h-2 w-2">
-                {scraping || isLoading ? (
-                  <span className="animate-spin inline-flex h-2 w-2 rounded-full border border-emerald-500 border-t-transparent"></span>
-                ) : (
-                  <>
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-                  </>
-                )}
-              </span>
-              <span className="text-slate-500 font-medium">
-                数据状态: <span className="text-slate-700 font-semibold font-mono">{lastUpdated}</span>
-              </span>
-            </div>
-
-            {/* AI 爬虫按钮 */}
-            <button
-              onClick={runScraper}
-              disabled={scraping}
-              className={`inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg border text-xs font-semibold shadow-xs select-none transition cursor-pointer ${
-                scraping 
-                  ? 'bg-slate-100 border-slate-200 text-slate-400 cursor-not-allowed' 
-                  : 'bg-emerald-600 border-emerald-500 text-white hover:bg-emerald-700 hover:border-emerald-600'
-              }`}
-            >
-              {scraping ? (
-                <Loader2 className="w-3.5 h-3.5 animate-spin" />
+          {/* 数据状态 */}
+          <div className="flex items-center gap-2 bg-slate-50 border border-slate-100 rounded-lg px-3 py-1.5 shadow-3xs">
+            <span className="relative flex h-2 w-2">
+              {isLoading ? (
+                <span className="animate-spin inline-flex h-2 w-2 rounded-full border border-emerald-500 border-t-transparent"></span>
               ) : (
-                <Cpu className="w-3.5 h-3.5 text-emerald-100" />
+                <>
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                </>
               )}
-              {scraping ? '采集精化中...' : '启动 AI 趋势爬虫'}
-            </button>
-
-            {/* 控制台面板开关 */}
-            <button
-              onClick={() => setShowScrapeConsole(prev => !prev)}
-              className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg border border-slate-200 bg-white hover:bg-slate-50 text-slate-600 hover:text-slate-900 transition text-xs font-semibold shadow-3xs cursor-pointer"
-            >
-              <Terminal className="w-3.5 h-3.5 text-slate-400" />
-              <span>采集日志</span>
-            </button>
-
+            </span>
+            <span className="text-slate-500 font-medium">
+              更新已完成 · <span className="text-slate-700 font-semibold font-mono">{lastUpdated}</span>
+            </span>
           </div>
 
         </div>
@@ -922,75 +775,7 @@ export default function App() {
         </div>
       </footer>
 
-      {/* 浮动 AI 采集控制台终端 */}
-      <AnimatePresence>
-        {showScrapeConsole && (
-          <motion.div
-            initial={{ opacity: 0, y: 120, scale: 0.95 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: 120, scale: 0.95 }}
-            className="fixed bottom-4 right-4 z-50 w-full max-w-lg bg-[#0a0f1d] text-slate-200 rounded-xl border border-slate-800 shadow-2xl overflow-hidden font-mono text-xs flex flex-col"
-            style={{ maxHeight: '420px' }}
-          >
-            {/* Panel Header */}
-            <div className="bg-[#111827] px-4 py-3 border-b border-slate-800 flex items-center justify-between select-none">
-              <div className="flex items-center gap-2">
-                <span className="relative flex h-2.5 w-2.5">
-                  <span className={`absolute inline-flex h-full w-full rounded-full opacity-75 ${scraping ? 'animate-ping bg-emerald-400' : 'bg-slate-500'}`}></span>
-                  <span className={`relative inline-flex rounded-full h-2.5 w-2.5 ${scraping ? 'bg-emerald-500 animate-pulse' : 'bg-slate-500'}`}></span>
-                </span>
-                <span className="font-bold text-slate-300 font-mono tracking-tight">3C-TREND 采集系统终端 (AI Scraper Shell)</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <button
-                  onClick={runScraper}
-                  disabled={scraping}
-                  className="px-2 py-0.5 rounded bg-emerald-500 hover:bg-emerald-600 text-white font-semibold disabled:bg-slate-800 disabled:text-slate-500 transition cursor-pointer"
-                >
-                  {scraping ? '采集中...' : '启动重爬'}
-                </button>
-                <button
-                  onClick={() => setShowScrapeConsole(false)}
-                  className="text-slate-400 hover:text-white transition cursor-pointer"
-                  title="关闭控制台"
-                >
-                  <XSquare className="w-5 h-5" />
-                </button>
-              </div>
-            </div>
 
-            {/* Console Scroll Zone */}
-            <div className="p-4 overflow-y-auto flex-grow space-y-2 h-72 bg-[#020617]/95 leading-relaxed font-mono custom-scrollbar">
-              {scrapeLogs.map((log, index) => {
-                let colorClass = "text-slate-400";
-                if (log.includes('✓')) colorClass = "text-emerald-400 font-medium";
-                if (log.includes('❌') || log.includes('ERROR')) colorClass = "text-rose-400 font-bold";
-                if (log.includes('⚠️')) colorClass = "text-amber-400 font-semibold";
-                if (log.includes('📡') || log.includes('SYSTEM')) colorClass = "text-cyan-400";
-                if (log.includes('🎉')) colorClass = "text-yellow-400 font-bold";
-                
-                return (
-                  <div key={index} className={`whitespace-pre-wrap font-mono tracking-tight ${colorClass}`}>
-                    {log}
-                  </div>
-                );
-              })}
-              {scraping && (
-                <div className="flex items-center gap-2 text-cyan-400 animate-pulse mt-2 py-1">
-                  <Loader2 className="w-3.5 h-3.5 animate-spin" />
-                  <span className="font-semibold text-[11px]">全矩阵异步连线中, 正在召集 Gemini 3.5 分析翻译打标中...</span>
-                </div>
-              )}
-            </div>
-
-            {/* Footer Status */}
-            <div className="bg-slate-900 border-t border-slate-800 px-4 py-2 flex items-center justify-between text-[10px] text-slate-500 select-none">
-              <span>状态: {scraping ? '执行数据精化抓取中' : '全系统就绪'}</span>
-              <span>Node Node-3C-v2026-6</span>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
 
     </div>
   );
