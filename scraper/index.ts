@@ -74,13 +74,9 @@ async function main() {
     await generateCrowdSummaries(byKind.crowdfunding);
   }
 
-  // 写盘
+  // 写盘（即使本次某 kind 无新数据也调用 saveSnapshot，触发合并保留旧数据）
   for (const kind of ['crowdfunding', 'news', 'startups', 'investments'] as const) {
-    if (byKind[kind].length > 0) {
-      await saveSnapshot(kind, byKind[kind]);
-    } else {
-      log.warn('main', `no data for kind=${kind}, skip writing`);
-    }
+    await saveSnapshot(kind, byKind[kind]);
   }
 
   await updateManifest();

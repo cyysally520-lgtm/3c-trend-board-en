@@ -41,11 +41,63 @@ export async function saveSnapshot<T>(kind: DataKind, items: T[], date?: string)
   await ensureDir(dayDir);
   await ensureDir(latestDir);
 
-  const payload = JSON.stringify({ date: d, kind, count: items.length, items }, null, 2);
+  // ★ 合并策略：读取 latest/ 已有数据，按 id 去重合并
+  // 新抓到的条目覆盖同 id 旧条目，未抓到的旧条目保留不丢失
+  const merged = await mergeWithExisting(kind, items, latestDir);
+
+  const payload = JSON.stringify({ date: d, kind, count: merged.length, items: merged }, null, 2);
   await fs.writeFile(path.join(dayDir, `${kind}.json`), payload, 'utf8');
   await fs.writeFile(path.join(latestDir, `${kind}.json`), payload, 'utf8');
 
-  log.ok('storage', `saved ${kind} (${items.length} items) → ${d}`);
+  log.ok('storage', `saved ${kind} (${merged.length} items, merged from ${items.length} new) → ${d}`);
+}
+
+/**
+ * 将本次新抓取的 items 与 latest/ 已有数据按 id 合并
+ * - 同 id：新条目覆盖旧条目（数据更新）
+ * - 旧有但本次未抓到的条目：保留（防止部分源失败导致数据丢失）
+ */
+async function mergeWithExisting<T>(kind: DataKind, newItems: T[], latestDir: string): Promise<T[]> {
+  const filePath = path.join(latestDir, `${kind}.json`);
+  let existingItems: T[] = [];
+  try {
+    const raw = await fs.readFile(filePath, 'utf8');
+    const obj = JSON.parse(raw);
+    if (Array.isArray(obj?.items)) {
+      existingItems = obj.items;
+    }
+  } catch {
+    // 文件不存在或解析失败，视为无旧数据
+  }
+
+  if (existingItems.length === 0) return newItems;
+
+  // 按 id 建立旧数据索引
+  const mergedMap = new Map<string, T>();
+  for (const item of existingItems) {
+    const id = (item as any).id;
+    if (id) mergedMap.set(String(id), item);
+  }
+
+  // 新数据覆盖同 id 旧数据
+  let newCount = 0;
+  let updateCount = 0;
+  for (const item of newItems) {
+    const id = (item as any).id;
+    if (id) {
+      if (mergedMap.has(String(id))) {
+        updateCount++;
+      } else {
+        newCount++;
+      }
+      mergedMap.set(String(id), item);
+    }
+  }
+
+  const keptCount = mergedMap.size - newCount - updateCount;
+  log.info('storage', `merge ${kind}: ${existingItems.length} existing + ${newItems.length} new → ${mergedMap.size} merged (new=${newCount}, updated=${updateCount}, kept=${keptCount})`);
+
+  return Array.from(mergedMap.values());
 }
 
 export async function updateManifest(): Promise<Manifest> {
