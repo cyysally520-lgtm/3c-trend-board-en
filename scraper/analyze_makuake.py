@@ -1,22 +1,53 @@
 import re
 
-with open('scraper/test_makuake.html', 'r', encoding='utf-8') as f:
-    html = f.read()
+html = open('test_makuake.html', 'r', encoding='utf-8').read()
 
-# 查找项目链接
-project_links = re.findall(r'href="(/project/[^"]+)"', html)
-print(f'Found {len(project_links)} project links')
-for link in project_links[:10]:
-    print(link)
+# Search for API URLs in scripts
+api_patterns = [
+    r'https?://[^\s"\']+api[^\s"\']*',
+    r'https?://[^\s"\']+project[^\s"\']*',
+    r'https?://[^\s"\']+discover[^\s"\']*',
+]
 
-# 查找项目名称
-project_names = re.findall(r'project[^>]*>([^<]{10,100})</', html)
-print(f'\nFound {len(project_names)} project names')
-for name in project_names[:5]:
-    print(name.strip())
+for pattern in api_patterns:
+    matches = re.findall(pattern, html)
+    if matches:
+        print(f'Pattern found {len(matches)} matches:')
+        for m in list(set(matches))[:10]:
+            print('  ', m)
+        print()
 
-# 查找金额
-amounts = re.findall(r'￥([\d,]+)', html)
-print(f'\nFound {len(amounts)} amounts')
-for a in amounts[:10]:
-    print(a)
+# Search for JSON data
+print('--- Looking for JSON data ---')
+json_patterns = [
+    r'window\.__[A-Z_]+__\s*=\s*({.+?});',
+    r'"projects":\s*(\[.+?\])',
+    r'"items":\s*(\[.+?\])',
+]
+
+for pattern in json_patterns:
+    matches = re.findall(pattern, html, re.DOTALL)
+    if matches:
+        print(f'Found {len(matches)} matches for pattern')
+        for m in matches[:2]:
+            print(m[:200])
+            print('---')
+
+# Look for image URLs
+print('--- Looking for image URLs ---')
+img_patterns = [
+    r'https?://[^\s"\']+\.jpg',
+    r'https?://[^\s"\']+\.png',
+    r'https?://[^\s"\']+\.jpeg',
+    r'//[^\s"\']+\.jpg',
+    r'//[^\s"\']+\.png',
+]
+
+all_imgs = []
+for pattern in img_patterns:
+    matches = re.findall(pattern, html)
+    all_imgs.extend(matches)
+
+print(f'Total images found: {len(all_imgs)}')
+for img in list(set(all_imgs))[:20]:
+    print('  ', img)
