@@ -1,6 +1,7 @@
 {
-  "updatedAt": "2026-06-10T12:45:11.705Z",
+  "updatedAt": "2026-06-11T01:42:47.397Z",
   "dates": [
+    "2026-06-11",
     "2026-06-10",
     "2026-06-09",
     "2026-06-08"
@@ -12,8 +13,13 @@
     "investments"
   ],
   "counts": {
+    "2026-06-11": {
+      "crowdfunding": 49,
+      "news": 50,
+      "startups": 8
+    },
     "2026-06-10": {
-      "crowdfunding": 55,
+      "crowdfunding": 45,
       "news": 50,
       "startups": 8,
       "investments": 96
