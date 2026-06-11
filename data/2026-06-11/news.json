@@ -1,8 +1,760 @@
 {
   "date": "2026-06-11",
   "kind": "news",
-  "count": 100,
+  "count": 123,
   "items": [
+    {
+      "id": "tc-microsofts-open-source-tools-were-hacked-to-steal-",
+      "source": "TechCrunch",
+      "image": "",
+      "title": "Microsoft’s open source tools were hacked to steal passwords of AI developers",
+      "title_zh": "Microsoft’s open source tools were hacked to steal passwords of AI developers",
+      "publishedAt": "2026-06-11T06:15:38.263Z",
+      "snippet": "Microsoft’s open source tools were hacked to steal passwords of AI developers",
+      "snippet_zh": [
+        "Microsoft’s open source tools were hacked to steal passwords of AI developers"
+      ],
+      "url": "https://techcrunch.com/2026/06/08/microsofts-open-source-tools-were-hacked-to-steal-passwords-of-ai-developers/",
+      "category_tag_zh": "#AI应用",
+      "scrapedAt": "2026-06-11T06:15:38.263Z"
+    },
+    {
+      "id": "tc-google-will-pay-spacex-920m-per-month-for-compute",
+      "source": "TechCrunch",
+      "image": "",
+      "title": "Google will pay SpaceX $920M per month for compute",
+      "title_zh": "Google will pay SpaceX $920M per month for compute",
+      "publishedAt": "2026-06-11T06:15:38.263Z",
+      "snippet": "Google will pay SpaceX $920M per month for compute",
+      "snippet_zh": [
+        "Google will pay SpaceX $920M per month for compute"
+      ],
+      "url": "https://techcrunch.com/2026/06/05/google-will-pay-spacex-920m-per-month-for-compute/",
+      "category_tag_zh": "#AI应用",
+      "scrapedAt": "2026-06-11T06:15:38.263Z"
+    },
+    {
+      "id": "tc-mira-murati-steps-back-into-the-spotlight-carefull",
+      "source": "TechCrunch",
+      "image": "",
+      "title": "Mira Murati steps back into the spotlight, carefully",
+      "title_zh": "Mira Murati steps back into the spotlight, carefully",
+      "publishedAt": "2026-06-11T06:15:38.263Z",
+      "snippet": "Mira Murati steps back into the spotlight, carefully",
+      "snippet_zh": [
+        "Mira Murati steps back into the spotlight, carefully"
+      ],
+      "url": "https://techcrunch.com/2026/06/04/mira-murati-steps-back-into-the-spotlight-carefully/",
+      "category_tag_zh": "#AI应用",
+      "scrapedAt": "2026-06-11T06:15:38.263Z"
+    },
+    {
+      "id": "tc-opendoors-india-exit-is-fueling-a-bigger-conversat",
+      "source": "TechCrunch",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/06/opendoor.jpg?w=563",
+      "title": "Opendoor’s India exit is fueling a bigger conversation about AI and outsourcing",
+      "title_zh": "Opendoor’s India exit is fueling a bigger conversation about AI and outsourcing",
+      "publishedAt": "2026-06-11T04:02:19.000Z",
+      "snippet": "The decision comes as India emerges as the world’s largest GCC market.",
+      "snippet_zh": [
+        "The decision comes as India emerges as the world’s largest GCC market."
+      ],
+      "url": "https://techcrunch.com/2026/06/10/opendoors-india-exit-is-fueling-a-bigger-conversation-about-ai-and-outsourcing/",
+      "category_tag_zh": "#AI应用",
+      "scrapedAt": "2026-06-11T04:21:21.024Z"
+    },
+    {
+      "id": "tc-anthropics-dario-amodei-has-just-one-direct-report",
+      "source": "TechCrunch",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/06/Dario-2280291125.jpg?w=562",
+      "title": "Anthropic’s Dario Amodei has just one direct report",
+      "title_zh": "Anthropic’s Dario Amodei has just one direct report",
+      "publishedAt": "2026-06-11T03:53:06.000Z",
+      "snippet": "If you doubted his genius, doubt no more.",
+      "snippet_zh": [
+        "If you doubted his genius, doubt no more."
+      ],
+      "url": "https://techcrunch.com/2026/06/10/anthropics-dario-amodei-has-just-one-direct-report/",
+      "category_tag_zh": "#AI应用",
+      "scrapedAt": "2026-06-11T04:21:21.024Z"
+    },
+    {
+      "id": "vb-5-platforms-to-sell-amazon-and-ebay-gift-cards-for",
+      "source": "Ventureburn",
+      "image": "https://ventureburn.com/wp-content/uploads/2026/06/oavb11620261.jpg",
+      "title": "5 Platforms to Sell Amazon and eBay Gift Cards for Cash in Nigeria",
+      "title_zh": "5 Platforms to Sell Amazon and eBay Gift Cards for Cash in Nigeria",
+      "publishedAt": "2026-06-11T02:33:40.000Z",
+      "snippet": "You have an unused $100 Amazon gift card you want to urgently convert to cash to sort some bills. However, with so many gift card platforms claiming “high rates” and\nThe post 5 Platforms to Sell Amazon and eBay Gift Cards for Cash in Nigeria  appeared first on Ventureburn.",
+      "snippet_zh": [
+        "You have an unused $100 Amazon gift card you want to urgently convert to cash to sort some bills. However, with so many gift card platforms claiming “high rates” and\nThe post 5 Platforms to Sell Amazon and eBay Gift Cards for Cash in Nigeria  appeared first on Ventureburn."
+      ],
+      "url": "https://ventureburn.com/5-platforms-to-sell-amazon-and-ebay-gift-cards-for-cash-in-nigeria/",
+      "category_tag_zh": "#科技创投",
+      "scrapedAt": "2026-06-11T04:22:25.067Z"
+    },
+    {
+      "id": "tv-bluesky-communities-at-protocol-atmosphere-reddit",
+      "source": "The Verge",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/07/STK133_BLUESKY__C.webp?quality=90&strip=all&crop=0,0,100,100",
+      "title": "Bluesky is getting ‘communities’",
+      "title_zh": "Bluesky is getting ‘communities’",
+      "publishedAt": "2026-06-11T00:05:48.000Z",
+      "snippet": "Bluesky will be getting \"communities,\" which will function as smaller spaces where you can \"go deeper and hang out with people who care about the same stuff\" sometime this year, according to head of product Alex Benzer. They will be built on the decentralized AT Protocol that underpins Bluesky, with",
+      "snippet_zh": [
+        "Bluesky will be getting \"communities,\" which will function as smaller spaces where you can \"go deeper and hang out with people who care about the same stuff\" sometime this year, according to head of product Alex Benzer. They will be built on the decentralized AT Protocol that underpins Bluesky, with"
+      ],
+      "url": "https://www.theverge.com/tech/948215/bluesky-communities-at-protocol-atmosphere-reddit",
+      "category_tag_zh": "#科技前沿",
+      "scrapedAt": "2026-06-11T04:23:36.336Z"
+    },
+    {
+      "id": "vb-tensorwave-350m-ai-infrastructure",
+      "source": "Ventureburn",
+      "image": "https://ventureburn.com/wp-content/uploads/2026/06/TensorWave-Raises-350M-768x431.jpeg",
+      "title": "TensorWave Raises $350M to Expand AMD-Powered AI Cloud Infrastructure",
+      "title_zh": "TensorWave 融资3.5亿美元，打造无Nvidia架构AI云",
+      "publishedAt": "2026-06-11T00:00:00.000Z",
+      "snippet": "TensorWave raised $350M Series B at $1.55B valuation, building Nvidia-free AI cloud powered exclusively by AMD Instinct accelerators with 8000+ GPU liquid-cooled clusters.",
+      "snippet_zh": [
+        "TensorWave 完成3.5亿美元B轮融资，估值15.5亿美元，打造全球最大AMD液冷GPU训练集群。",
+        "完全摒弃Nvidia架构，独家采用AMD Instinct加速卡与ROCm开源软件栈构建AI云。",
+        "与TECfusions签署多阶段容量协议，目标实现1吉瓦级数据中心电力部署。"
+      ],
+      "url": "https://ventureburn.com/tensorwave-raises-350m-to-expand-ai-infrastructure/",
+      "category_tag_zh": "#AI基础设施",
+      "scrapedAt": "2026-06-11T06:00:00.000Z"
+    },
+    {
+      "id": "vb-cyera-600m-ai-trust-layer",
+      "source": "Ventureburn",
+      "image": "https://ventureburn.com/wp-content/uploads/2026/06/Cyera-Secures-600M-768x431.jpeg",
+      "title": "Cyera Secures $600 Million to Expand AI Trust Layer",
+      "title_zh": "Cyera 融资6亿美元，扩展AI信任安全层",
+      "publishedAt": "2026-06-11T00:00:00.000Z",
+      "snippet": "Cyera has secured $600 million in funding to expand its AI trust layer platform, strengthening data security and governance for enterprise AI deployments.",
+      "snippet_zh": [
+        "Cyera 获6亿美元融资，扩展AI信任层平台，强化企业AI部署的数据安全与治理能力。"
+      ],
+      "url": "https://ventureburn.com/cyera-secures-600-million-to-expand-ai-trust-layer/",
+      "category_tag_zh": "#AI安全",
+      "scrapedAt": "2026-06-11T06:00:00.000Z"
+    },
+    {
+      "id": "vb-alta-ares-50m-air-defence-ai",
+      "source": "Ventureburn",
+      "image": "https://ventureburn.com/wp-content/uploads/2026/06/Minerva-Raises-20M-3-768x431.png",
+      "title": "Alta Ares Raises €50M to Scale AI-Powered Air Defence Systems",
+      "title_zh": "Alta Ares 融资5000万欧元，扩展AI驱动防空拦截系统",
+      "publishedAt": "2026-06-11T00:00:00.000Z",
+      "snippet": "Alta Ares has raised €50M to scale its AI-powered interceptor system designed to counter drones and missile threats in defence and intelligence applications.",
+      "snippet_zh": [
+        "Alta Ares 获5000万欧元融资，扩展AI驱动拦截系统，应对无人机与导弹威胁。"
+      ],
+      "url": "https://ventureburn.com/alta-ares-raises-50m-air-defence-ai/",
+      "category_tag_zh": "#AI国防",
+      "scrapedAt": "2026-06-11T06:00:00.000Z"
+    },
+    {
+      "id": "vb-cameramatics-49m-ai-fleet",
+      "source": "Ventureburn",
+      "image": "https://ventureburn.com/wp-content/uploads/2026/06/Minerva-Raises-20M-768x431.png",
+      "title": "CameraMatics Raises €49M to Expand AI Fleet Intelligence Platform",
+      "title_zh": "CameraMatics 融资4900万欧元，扩展AI车队智能平台",
+      "publishedAt": "2026-06-11T00:00:00.000Z",
+      "snippet": "CameraMatics has raised €49M in funding to expand its AI-powered fleet intelligence platform for international markets, enhancing vehicle tracking and safety analytics.",
+      "snippet_zh": [
+        "CameraMatics 获4900万欧元融资，扩展AI驱动车队智能平台至国际市场，增强车辆追踪与安全分析。"
+      ],
+      "url": "https://ventureburn.com/cameramatics-raises-49m-ai-fleet-expansion/",
+      "category_tag_zh": "#AI车队",
+      "scrapedAt": "2026-06-11T06:00:00.000Z"
+    },
+    {
+      "id": "vb-f2-24m-ai-private-credit",
+      "source": "Ventureburn",
+      "image": "https://ventureburn.com/wp-content/uploads/2026/06/F2-Raises-24M-768x431.jpeg",
+      "title": "F2 Raises $24M to Expand AI for Private Credit",
+      "title_zh": "F2 融资2400万美元，AI赋能私人信贷分析",
+      "publishedAt": "2026-06-11T00:00:00.000Z",
+      "snippet": "F2 has raised $24M to expand its AI-powered platform for private credit analysis and decision-making, bringing automation to credit risk assessment.",
+      "snippet_zh": [
+        "F2 获2400万美元融资，扩展AI驱动的私人信贷分析与决策平台，自动化信贷风险评估。"
+      ],
+      "url": "https://ventureburn.com/f2-raises-24m-to-expand-ai-for-private-credit/",
+      "category_tag_zh": "#AI金融",
+      "scrapedAt": "2026-06-11T06:00:00.000Z"
+    },
+    {
+      "id": "tv-framework-laptop-13-pro-delay-shipment-july-august",
+      "source": "The Verge",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/DSC00210_71b030.webp?quality=90&strip=all&crop=0,0,100,100",
+      "title": "Framework delays its first Laptop 13 Pro shipments by a month",
+      "title_zh": "Framework delays its first Laptop 13 Pro shipments by a month",
+      "publishedAt": "2026-06-10T23:12:51.000Z",
+      "snippet": "The Framework Laptop 13 Pro is delayed. The new 13-inch Framework flagship was set to launch in June, but shipments from the first batch are now expected in July - and there's still a chance some shipments could slip to early August. If you're not in the first batch, your Laptop 13 Pro shifts from [",
+      "snippet_zh": [
+        "The Framework Laptop 13 Pro is delayed. The new 13-inch Framework flagship was set to launch in June, but shipments from the first batch are now expected in July - and there's still a chance some shipments could slip to early August. If you're not in the first batch, your Laptop 13 Pro shifts from ["
+      ],
+      "url": "https://www.theverge.com/gadgets/948044/framework-laptop-13-pro-delay-shipment-july-august",
+      "category_tag_zh": "#科技前沿",
+      "scrapedAt": "2026-06-11T04:23:36.337Z"
+    },
+    {
+      "id": "tv-apple-siri-ai-chatbot-personality",
+      "source": "The Verge",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/videoframe_13193.png?quality=90&strip=all&crop=0,0,100,100",
+      "title": "Apple’s new Siri AI knows when to shut up",
+      "title_zh": "Apple’s new Siri AI knows when to shut up",
+      "publishedAt": "2026-06-10T22:52:17.000Z",
+      "snippet": "Apple's new Siri AI is finally here, and so far, it seems like it works. I have access and have been messing around with it, and my biggest impression so far is that Siri AI is quite curt - which I mean as a compliment. Many AI chatbots are cheery and wordy. While a more […]",
+      "snippet_zh": [
+        "Apple's new Siri AI is finally here, and so far, it seems like it works. I have access and have been messing around with it, and my biggest impression so far is that Siri AI is quite curt - which I mean as a compliment. Many AI chatbots are cheery and wordy. While a more […]"
+      ],
+      "url": "https://www.theverge.com/tech/948155/apple-siri-ai-chatbot-personality",
+      "category_tag_zh": "#科技前沿",
+      "scrapedAt": "2026-06-11T04:23:36.338Z"
+    },
+    {
+      "id": "tc-xai-fired-an-engineer-who-raised-alarms-about-grok",
+      "source": "TechCrunch",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/03/grok-getty.jpg?w=563",
+      "title": "xAI fired an engineer who raised alarms about Grok safety, new lawsuit claims",
+      "title_zh": "xAI fired an engineer who raised alarms about Grok safety, new lawsuit claims",
+      "publishedAt": "2026-06-10T22:31:19.000Z",
+      "snippet": "A former xAI engineer is suing the company and SpaceX, alleging he was fired for raising AI safety concerns about Grok days before SpaceX's historic IPO.",
+      "snippet_zh": [
+        "A former xAI engineer is suing the company and SpaceX, alleging he was fired for raising AI safety concerns about Grok days before SpaceX's historic IPO."
+      ],
+      "url": "https://techcrunch.com/2026/06/10/xai-fired-an-engineer-who-raised-alarms-about-grok-safety-new-lawsuit-claims/",
+      "category_tag_zh": "#AI应用",
+      "scrapedAt": "2026-06-11T04:21:21.024Z"
+    },
+    {
+      "id": "tc-why-andrew-yang-is-building-instead-of-waiting-for",
+      "source": "TechCrunch",
+      "image": "",
+      "title": "Why Andrew Yang is building instead of waiting for Washington",
+      "title_zh": "Why Andrew Yang is building instead of waiting for Washington",
+      "publishedAt": "2026-06-10T22:24:12.000Z",
+      "snippet": "Andrew Yang’s 2020 presidential campaign was based on a warning that automation and AI would hollow out the labor market and concentrate wealth in the hands of a few. At the time, ideas like Universal Basic Income felt fringe. Now Dario Amodei, Sam Altman, and Bernie Sanders are all saying versions ",
+      "snippet_zh": [
+        "Andrew Yang’s 2020 presidential campaign was based on a warning that automation and AI would hollow out the labor market and concentrate wealth in the hands of a few. At the time, ideas like Universal Basic Income felt fringe. Now Dario Amodei, Sam Altman, and Bernie Sanders are all saying versions "
+      ],
+      "url": "https://techcrunch.com/video/why-andrew-yang-is-building-instead-of-waiting-for-washington/",
+      "category_tag_zh": "#AI创业",
+      "scrapedAt": "2026-06-11T04:21:21.025Z"
+    },
+    {
+      "id": "tv-passports-data-breach-cannabis-club-systems-nefos-",
+      "source": "The Verge",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25514575/passport_2040.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "title": "Nearly a million passports and photo IDs were left unprotected on the public internet",
+      "title_zh": "Nearly a million passports and photo IDs were left unprotected on the public internet",
+      "publishedAt": "2026-06-10T21:55:00.000Z",
+      "snippet": "Typing a few letters and numbers into my web browser, I find myself gaping at the identity documents of complete strangers. The passport of a young woman from Germany. The passport of a man from Spain with glasses resting on his head. The front and back of another man's driver's license, a stereotyp",
+      "snippet_zh": [
+        "Typing a few letters and numbers into my web browser, I find myself gaping at the identity documents of complete strangers. The passport of a young woman from Germany. The passport of a man from Spain with glasses resting on his head. The front and back of another man's driver's license, a stereotyp"
+      ],
+      "url": "https://www.theverge.com/tech/947157/passports-data-breach-cannabis-club-systems-nefos-puffpal",
+      "category_tag_zh": "#科技前沿",
+      "scrapedAt": "2026-06-11T04:23:36.339Z"
+    },
+    {
+      "id": "tc-cybercriminals-claim-breach-of-oracle-peoplesoft-s",
+      "source": "TechCrunch",
+      "image": "",
+      "title": "Cybercriminals claim breach of Oracle PeopleSoft servers at 100-plus organizations",
+      "title_zh": "Cybercriminals claim breach of Oracle PeopleSoft servers at 100-plus organizations",
+      "publishedAt": "2026-06-10T21:33:32.000Z",
+      "snippet": "The ShinyHunters hacking gang claims to have compromised the Oracle PeopleSoft servers of more than 100 organizations, including many universities.",
+      "snippet_zh": [
+        "The ShinyHunters hacking gang claims to have compromised the Oracle PeopleSoft servers of more than 100 organizations, including many universities."
+      ],
+      "url": "https://techcrunch.com/2026/06/10/cybercriminals-claim-breach-of-oracle-peoplesoft-servers-at-100-plus-organizations/",
+      "category_tag_zh": "#AI安全",
+      "scrapedAt": "2026-06-11T04:21:21.026Z"
+    },
+    {
+      "id": "tv-microsoft-xbox-layoffs-reset-asha-sharma",
+      "source": "The Verge",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25485118/STK048_XBOX2__C.png?quality=90&strip=all&crop=0,0,100,100",
+      "title": "Xbox warns of a &#8216;reset&#8217; as it prepares for layoffs",
+      "title_zh": "Xbox warns of a &#8216;reset&#8217; as it prepares for layoffs",
+      "publishedAt": "2026-06-10T21:28:53.000Z",
+      "snippet": "Microsoft's Xbox division will be hit with significant layoffs next month, according to people familiar with Microsoft's plans. The company has been preparing for the layoffs internally for weeks, with Xbox CEO Asha Sharma hinting about \"making hard choices\" last month. Sources suggest the cuts coul",
+      "snippet_zh": [
+        "Microsoft's Xbox division will be hit with significant layoffs next month, according to people familiar with Microsoft's plans. The company has been preparing for the layoffs internally for weeks, with Xbox CEO Asha Sharma hinting about \"making hard choices\" last month. Sources suggest the cuts coul"
+      ],
+      "url": "https://www.theverge.com/games/948142/microsoft-xbox-layoffs-reset-asha-sharma",
+      "category_tag_zh": "#科技前沿",
+      "scrapedAt": "2026-06-11T04:23:36.340Z"
+    },
+    {
+      "id": "vb-f2-raises-24m-to-expand-ai-for-private-credit",
+      "source": "Ventureburn",
+      "image": "https://ventureburn.com/wp-content/uploads/2026/06/F2.jpg",
+      "title": "F2 Raises $24M to Expand AI for Private Credit",
+      "title_zh": "F2 Raises $24M to Expand AI for Private Credit",
+      "publishedAt": "2026-06-10T20:42:12.000Z",
+      "snippet": "F2 has raised $24 million in total equity funding. The financing includes a fresh $14 million seed round specifically geared toward expanding the company’s LLM-agnostic operating system designed exclusively for\nThe post F2 Raises $24M to Expand AI for Private Credit appeared first on Ventureburn.",
+      "snippet_zh": [
+        "F2 has raised $24 million in total equity funding. The financing includes a fresh $14 million seed round specifically geared toward expanding the company’s LLM-agnostic operating system designed exclusively for\nThe post F2 Raises $24M to Expand AI for Private Credit appeared first on Ventureburn."
+      ],
+      "url": "https://ventureburn.com/f2-raises-24m-to-expand-ai-for-private-credit/",
+      "category_tag_zh": "#科技创投",
+      "scrapedAt": "2026-06-11T04:22:25.069Z"
+    },
+    {
+      "id": "tv-apple-google-add-support-for-thread-1-4",
+      "source": "The Verge",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/IMG_7137.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "title": "Apple, Google add support for Thread 1.4",
+      "title_zh": "Apple, Google add support for Thread 1.4",
+      "publishedAt": "2026-06-10T20:25:46.000Z",
+      "snippet": "Apple and Google are updating their smart home streaming devices to Thread 1.4. As first spotted by Matter Alpha and 9to5 Google, the latest spec has arrived on compatible Apple TVs in the tvOS 27 developer beta and the Google TV Streamer through a software update. This lays the groundwork for these",
+      "snippet_zh": [
+        "Apple and Google are updating their smart home streaming devices to Thread 1.4. As first spotted by Matter Alpha and 9to5 Google, the latest spec has arrived on compatible Apple TVs in the tvOS 27 developer beta and the Google TV Streamer through a software update. This lays the groundwork for these"
+      ],
+      "url": "https://www.theverge.com/tech/947888/apple-google-add-support-for-thread-1-4",
+      "category_tag_zh": "#科技前沿",
+      "scrapedAt": "2026-06-11T04:23:36.341Z"
+    },
+    {
+      "id": "tc-everyone-wants-a-piece-of-teslas-battery-business",
+      "source": "TechCrunch",
+      "image": "",
+      "title": "Everyone wants a piece of Tesla’s battery business",
+      "title_zh": "Everyone wants a piece of Tesla’s battery business",
+      "publishedAt": "2026-06-10T20:21:25.000Z",
+      "snippet": "Electricity demand from AI data centers is pushing everyone — including automakers like GM and Ford — into the energy storage business.",
+      "snippet_zh": [
+        "Electricity demand from AI data centers is pushing everyone — including automakers like GM and Ford — into the energy storage business."
+      ],
+      "url": "https://techcrunch.com/2026/06/10/everyone-wants-a-piece-of-teslas-battery-business/",
+      "category_tag_zh": "#清洁能源",
+      "scrapedAt": "2026-06-11T04:21:21.026Z"
+    },
+    {
+      "id": "tc-fresh-off-bond-sale-amazon-borrows-17-5-billion-fr",
+      "source": "TechCrunch",
+      "image": "https://techcrunch.com/wp-content/uploads/2025/06/GettyImages-2217247219.jpg?w=562",
+      "title": "Fresh off bond sale, Amazon borrows $17.5B from banks as AI spending continues",
+      "title_zh": "Fresh off bond sale, Amazon borrows $17.5B from banks as AI spending continues",
+      "publishedAt": "2026-06-10T20:19:31.000Z",
+      "snippet": "Companies are burning through exorbitant sums of money to keep pace in the AI arms race. Debt is climbing.",
+      "snippet_zh": [
+        "Companies are burning through exorbitant sums of money to keep pace in the AI arms race. Debt is climbing."
+      ],
+      "url": "https://techcrunch.com/2026/06/10/fresh-off-bond-sale-amazon-borrows-17-5-billion-from-banks-as-ai-spending-continues/",
+      "category_tag_zh": "#AI应用",
+      "scrapedAt": "2026-06-11T04:21:21.026Z"
+    },
+    {
+      "id": "tv-kalshi-prediction-markets-insider-trading",
+      "source": "The Verge",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/02/STKB383_KALSHI_D.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "title": "Kalshi adds required employment verification for some prediction market bets",
+      "title_zh": "Kalshi adds required employment verification for some prediction market bets",
+      "publishedAt": "2026-06-10T20:18:16.000Z",
+      "snippet": "The CFTC is considering its first regulation for prediction markets, as arrests over \"insider trading\" on everything from military operations to Google Search data continue to stack up. As CoinDesk reports, a notice of proposed rulemaking says \"the proposal would establish a structured framework for",
+      "snippet_zh": [
+        "The CFTC is considering its first regulation for prediction markets, as arrests over \"insider trading\" on everything from military operations to Google Search data continue to stack up. As CoinDesk reports, a notice of proposed rulemaking says \"the proposal would establish a structured framework for"
+      ],
+      "url": "https://www.theverge.com/business/948083/kalshi-prediction-markets-insider-trading",
+      "category_tag_zh": "#科技前沿",
+      "scrapedAt": "2026-06-11T04:23:36.342Z"
+    },
+    {
+      "id": "tc-north-koreans-behind-nearly-half-of-us-tech-indust",
+      "source": "TechCrunch",
+      "image": "",
+      "title": "North Koreans behind nearly half of US tech industry hacks, says CrowdStrike",
+      "title_zh": "North Koreans behind nearly half of US tech industry hacks, says CrowdStrike",
+      "publishedAt": "2026-06-10T19:57:04.000Z",
+      "snippet": "North Korean hackers posing as remote IT workers and recruiters remain a major threat to U.S., European, and Asian companies, accounting for about half of all attacks over the past 12 months.",
+      "snippet_zh": [
+        "North Korean hackers posing as remote IT workers and recruiters remain a major threat to U.S., European, and Asian companies, accounting for about half of all attacks over the past 12 months."
+      ],
+      "url": "https://techcrunch.com/2026/06/10/north-koreans-behind-nearly-half-of-us-tech-industry-hacks-says-crowdstrike/",
+      "category_tag_zh": "#AI安全",
+      "scrapedAt": "2026-06-11T04:21:21.027Z"
+    },
+    {
+      "id": "tc-wing-drone-delivery-might-not-be-a-novelty-anymore",
+      "source": "TechCrunch",
+      "image": "",
+      "title": "Wing drone delivery might not be a novelty anymore",
+      "title_zh": "Wing drone delivery might not be a novelty anymore",
+      "publishedAt": "2026-06-10T19:52:09.000Z",
+      "snippet": "Wing is expanding into seven more U.S. cities through its partnership with Walmart.",
+      "snippet_zh": [
+        "Wing is expanding into seven more U.S. cities through its partnership with Walmart."
+      ],
+      "url": "https://techcrunch.com/2026/06/10/wing-drone-delivery-might-not-be-a-novelty-anymore/",
+      "category_tag_zh": "#科技前沿",
+      "scrapedAt": "2026-06-11T04:21:21.027Z"
+    },
+    {
+      "id": "tv-fable-wont-answer-basic-biology-questions",
+      "source": "The Verge",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/STKB364_CLAUDE_2_A_3800fc.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "title": "Claude Fable won’t answer basic biology questions",
+      "title_zh": "Claude Fable won’t answer basic biology questions",
+      "publishedAt": "2026-06-10T18:43:34.000Z",
+      "snippet": "Anthropic just released Claude Fable 5, calling it the most powerful AI model it has ever made widely available and praising its skills in biology, among others. But the model won't answer basic biology questions - the kind you'd expect a high schooler to handle. Instead, it hands off the query to t",
+      "snippet_zh": [
+        "Anthropic just released Claude Fable 5, calling it the most powerful AI model it has ever made widely available and praising its skills in biology, among others. But the model won't answer basic biology questions - the kind you'd expect a high schooler to handle. Instead, it hands off the query to t"
+      ],
+      "url": "https://www.theverge.com/ai-artificial-intelligence/947973/fable-wont-answer-basic-biology-questions",
+      "category_tag_zh": "#AI应用",
+      "scrapedAt": "2026-06-11T04:23:36.342Z"
+    },
+    {
+      "id": "tv-college-speakers-booed-ai-microsoft",
+      "source": "The Verge",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/11/STK095_MICROSOFT_CVirginia_A.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "title": "Microsoft, like, totally gets why students are booing AI-pilled graduation speakers",
+      "title_zh": "Microsoft, like, totally gets why students are booing AI-pilled graduation speakers",
+      "publishedAt": "2026-06-10T17:45:11.000Z",
+      "snippet": "New college graduates around the country have been booing and heckling commencement speakers who hype up AI. Microsoft would like everyone to talk it out. In a blog post running more than 3,100 words, Microsoft vice chair and president Brad Smith addressed the recent spate of viral clips from gradua",
+      "snippet_zh": [
+        "New college graduates around the country have been booing and heckling commencement speakers who hype up AI. Microsoft would like everyone to talk it out. In a blog post running more than 3,100 words, Microsoft vice chair and president Brad Smith addressed the recent spate of viral clips from gradua"
+      ],
+      "url": "https://www.theverge.com/news/947831/college-speakers-booed-ai-microsoft",
+      "category_tag_zh": "#AI应用",
+      "scrapedAt": "2026-06-11T04:23:36.343Z"
+    },
+    {
+      "id": "tv-washington-ai-network-honors-2026-midterms",
+      "source": "The Verge",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/gettyimages-2279697530.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "title": "The future of AI regulation is courting the strangest, most anxious bedfellows",
+      "title_zh": "The future of AI regulation is courting the strangest, most anxious bedfellows",
+      "publishedAt": "2026-06-10T17:38:00.000Z",
+      "snippet": "Hello and welcome to Regulator, a newsletter for Verge subscribers about tech politics, tech influence, and tech shenanigans in Washington, DC. (If you're not a subscriber, you can get on board here.) We're back after a two-week hiatus, during most of which I was gallivanting in the Netherlands for ",
+      "snippet_zh": [
+        "Hello and welcome to Regulator, a newsletter for Verge subscribers about tech politics, tech influence, and tech shenanigans in Washington, DC. (If you're not a subscriber, you can get on board here.) We're back after a two-week hiatus, during most of which I was gallivanting in the Netherlands for "
+      ],
+      "url": "https://www.theverge.com/column/947838/washington-ai-network-honors-2026-midterms",
+      "category_tag_zh": "#AI应用",
+      "scrapedAt": "2026-06-11T04:23:36.343Z"
+    },
+    {
+      "id": "tc-netflix-expands-revamped-mobile-app-across-asia-an",
+      "source": "TechCrunch",
+      "image": "",
+      "title": "Netflix expands revamped mobile app across Asia and doubles down on kids’ gaming",
+      "title_zh": "Netflix expands revamped mobile app across Asia and doubles down on kids’ gaming",
+      "publishedAt": "2026-06-10T17:13:02.000Z",
+      "snippet": "The media giant is pushing to expand its mobile and gaming business.",
+      "snippet_zh": [
+        "The media giant is pushing to expand its mobile and gaming business."
+      ],
+      "url": "https://techcrunch.com/2026/06/10/netflix-expands-revamped-mobile-app-across-asia-and-doubles-down-on-kids-gaming/",
+      "category_tag_zh": "#AI应用",
+      "scrapedAt": "2026-06-11T04:21:21.027Z"
+    },
+    {
+      "id": "tc-ai-pilled-firms-spend-7500-per-employee-each-month",
+      "source": "TechCrunch",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/06/GettyImages-2253659638.jpg?w=426",
+      "title": "‘AI-pilled’ firms spend $7,500 per employee each month on AI",
+      "title_zh": "‘AI-pilled’ firms spend $7,500 per employee each month on AI",
+      "publishedAt": "2026-06-10T17:07:35.000Z",
+      "snippet": "The most AI-obsessed firms are spending roughly $7,500 monthly per employee on AI, per Ramp AI Index. That's not more than an engineer's salary — yet.",
+      "snippet_zh": [
+        "The most AI-obsessed firms are spending roughly $7,500 monthly per employee on AI, per Ramp AI Index. That's not more than an engineer's salary — yet."
+      ],
+      "url": "https://techcrunch.com/2026/06/10/ai-pilled-firms-spend-7500-per-employee-each-month-on-ai/",
+      "category_tag_zh": "#AI应用",
+      "scrapedAt": "2026-06-11T04:21:21.027Z"
+    },
+    {
+      "id": "tc-the-indian-government-got-cold-feet-on-starlink-ju",
+      "source": "TechCrunch",
+      "image": "",
+      "title": "The Indian government got cold feet on Starlink just before SpaceX’s IPO",
+      "title_zh": "The Indian government got cold feet on Starlink just before SpaceX’s IPO",
+      "publishedAt": "2026-06-10T16:43:11.000Z",
+      "snippet": "Problems with Starlink's India expansion could challenge SpaceX's IPO growth story.",
+      "snippet_zh": [
+        "Problems with Starlink's India expansion could challenge SpaceX's IPO growth story."
+      ],
+      "url": "https://techcrunch.com/2026/06/10/the-indian-government-got-cold-feet-on-starlink-just-before-spacexs-ipo/",
+      "category_tag_zh": "#太空AI",
+      "scrapedAt": "2026-06-11T04:21:21.028Z"
+    },
+    {
+      "id": "tc-how-memory-tools-can-make-ai-models-worse",
+      "source": "TechCrunch",
+      "image": "https://techcrunch.com/wp-content/uploads/2023/02/GettyImages-1240239605.jpg?w=562",
+      "title": "How memory tools can make AI models worse",
+      "title_zh": "How memory tools can make AI models worse",
+      "publishedAt": "2026-06-10T16:11:08.000Z",
+      "snippet": "New research suggests that AI memory systems can degrade model performance and encourage sycophantic tendencies.",
+      "snippet_zh": [
+        "New research suggests that AI memory systems can degrade model performance and encourage sycophantic tendencies."
+      ],
+      "url": "https://techcrunch.com/2026/06/10/how-memory-tools-can-make-ai-models-worse/",
+      "category_tag_zh": "#AI应用",
+      "scrapedAt": "2026-06-11T04:21:21.028Z"
+    },
+    {
+      "id": "tc-zest-launches-a-restaurant-discovery-app-powered-b",
+      "source": "TechCrunch",
+      "image": "",
+      "title": "Zest launches a restaurant discovery app powered by where people actually eat",
+      "title_zh": "Zest launches a restaurant discovery app powered by where people actually eat",
+      "publishedAt": "2026-06-10T15:53:07.000Z",
+      "snippet": "Backed by Alexis Ohanian’s 776 and Kindred Ventures, Zest uses transaction data and AI to generate restaurant recommendations based on users’ real dining habits and the places they frequent.",
+      "snippet_zh": [
+        "Backed by Alexis Ohanian’s 776 and Kindred Ventures, Zest uses transaction data and AI to generate restaurant recommendations based on users’ real dining habits and the places they frequent."
+      ],
+      "url": "https://techcrunch.com/2026/06/10/zest-launches-a-restaurant-discovery-app-powered-by-where-people-actually-eat/",
+      "category_tag_zh": "#AI应用",
+      "scrapedAt": "2026-06-11T04:21:21.028Z"
+    },
+    {
+      "id": "tc-cybersecurity-researchers-arent-happy-about-the-gu",
+      "source": "TechCrunch",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/06/anthropic-claude-fable.jpg?w=564",
+      "title": "Cybersecurity researchers aren’t happy about the guardrails on Anthropic’s Fable",
+      "title_zh": "Cybersecurity researchers aren’t happy about the guardrails on Anthropic’s Fable",
+      "publishedAt": "2026-06-10T15:41:22.000Z",
+      "snippet": "Cybersecurity researchers are complaining that Anthropic's new model Fable has guardrails that are too strict for any cybersecurity work.",
+      "snippet_zh": [
+        "Cybersecurity researchers are complaining that Anthropic's new model Fable has guardrails that are too strict for any cybersecurity work."
+      ],
+      "url": "https://techcrunch.com/2026/06/10/cybersecurity-researchers-arent-happy-about-the-guardrails-on-anthropics-fable/",
+      "category_tag_zh": "#AI应用",
+      "scrapedAt": "2026-06-11T04:21:21.029Z"
+    },
+    {
+      "id": "vb-ares-secures-12-7-billion-in-major-fundraising-pus",
+      "source": "Ventureburn",
+      "image": "https://ventureburn.com/wp-content/uploads/2026/06/coins-in-a-jar-2-1024x683.jpg",
+      "title": "Ares Secures $12.7 Billion in Major Fundraising Push",
+      "title_zh": "Ares Secures $12.7 Billion in Major Fundraising Push",
+      "publishedAt": "2026-06-10T15:28:50.000Z",
+      "snippet": "Ares Management Corporation (ARES) has successfully raised $12.7 billion over the last nine months for its asset-based finance strategy. The major focus of the fundraising is the first and final\nThe post Ares Secures $12.7 Billion in Major Fundraising Push appeared first on Ventureburn.",
+      "snippet_zh": [
+        "Ares Management Corporation (ARES) has successfully raised $12.7 billion over the last nine months for its asset-based finance strategy. The major focus of the fundraising is the first and final\nThe post Ares Secures $12.7 Billion in Major Fundraising Push appeared first on Ventureburn."
+      ],
+      "url": "https://ventureburn.com/ares-secures-12-7-billion-in-major-fundraising-push/",
+      "category_tag_zh": "#科技创投",
+      "scrapedAt": "2026-06-11T04:22:25.070Z"
+    },
+    {
+      "id": "tc-why-enterprise-ai-will-be-a-major-focus-at-vivatec",
+      "source": "TechCrunch",
+      "image": "",
+      "title": "Why enterprise AI will be a major focus at VivaTech 2026",
+      "title_zh": "Why enterprise AI will be a major focus at VivaTech 2026",
+      "publishedAt": "2026-06-10T15:16:00.000Z",
+      "snippet": "While Silicon Valley continues pushing aggressively into large language models and consumer-facing AI products, many European companies are focused on applying AI to complex systems already embedded into everyday life.",
+      "snippet_zh": [
+        "While Silicon Valley continues pushing aggressively into large language models and consumer-facing AI products, many European companies are focused on applying AI to complex systems already embedded into everyday life."
+      ],
+      "url": "https://techcrunch.com/2026/06/10/why-enterprise-ai-will-be-a-major-focus-at-vivatech-2026/",
+      "category_tag_zh": "#AI创业",
+      "scrapedAt": "2026-06-11T04:21:21.029Z"
+    },
+    {
+      "id": "tc-datadog-veterans-launch-ai-coding-startup-niteshif",
+      "source": "TechCrunch",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/06/sajid_conor_photo_niteshift_launch.jpg?w=464",
+      "title": "Datadog veterans launch AI coding startup Niteshift on a bet against Big AI lock-in",
+      "title_zh": "Datadog veterans launch AI coding startup Niteshift on a bet against Big AI lock-in",
+      "publishedAt": "2026-06-10T15:00:00.000Z",
+      "snippet": "AI coding agent startup Niteshift has raised a $7 million seed round from a who's who of angels. It's betting companies will want power over, not lock-in with model makers.",
+      "snippet_zh": [
+        "AI coding agent startup Niteshift has raised a $7 million seed round from a who's who of angels. It's betting companies will want power over, not lock-in with model makers."
+      ],
+      "url": "https://techcrunch.com/2026/06/10/datadog-veterans-launch-ai-coding-startup-niteshift-on-a-bet-against-big-ai-lock-in/",
+      "category_tag_zh": "#AI应用",
+      "scrapedAt": "2026-06-11T04:21:21.029Z"
+    },
+    {
+      "id": "tc-the-three-hard-tech-moonshots-fueling-spacexs-unbe",
+      "source": "TechCrunch",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/06/SpaceXAIsatrender.jpg?w=668",
+      "title": "The three hard-tech moonshots fueling SpaceX’s unbelievable IPO",
+      "title_zh": "The three hard-tech moonshots fueling SpaceX’s unbelievable IPO",
+      "publishedAt": "2026-06-10T14:48:01.000Z",
+      "snippet": "Most of the value in SpaceX's IPO is effectively a call option on the company's ambitious space data center plans.",
+      "snippet_zh": [
+        "Most of the value in SpaceX's IPO is effectively a call option on the company's ambitious space data center plans."
+      ],
+      "url": "https://techcrunch.com/2026/06/10/the-three-hard-tech-moonshots-fueling-spacexs-unbelievable-ipo/",
+      "category_tag_zh": "#AI应用",
+      "scrapedAt": "2026-06-11T04:21:21.029Z"
+    },
+    {
+      "id": "tc-pinterest-bets-on-creators-with-amazon-storefront-",
+      "source": "TechCrunch",
+      "image": "",
+      "title": "Pinterest bets on creators with Amazon Storefront integration",
+      "title_zh": "Pinterest bets on creators with Amazon Storefront integration",
+      "publishedAt": "2026-06-10T14:34:45.000Z",
+      "snippet": "Pinterest is adding support for Amazon Storefronts, allowing creators to earn affiliate commissions more easily while showcasing their product recommendations in one place.",
+      "snippet_zh": [
+        "Pinterest is adding support for Amazon Storefronts, allowing creators to earn affiliate commissions more easily while showcasing their product recommendations in one place."
+      ],
+      "url": "https://techcrunch.com/2026/06/10/pinterest-bets-on-creators-with-amazon-storefront-integration/",
+      "category_tag_zh": "#AI应用",
+      "scrapedAt": "2026-06-11T04:21:21.029Z"
+    },
+    {
+      "id": "tc-warner-music-acquires-ai-attribution-startup-suree",
+      "source": "TechCrunch",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/06/warner-music.jpg?w=562",
+      "title": "Warner Music acquires AI attribution startup Sureel AI",
+      "title_zh": "Warner Music acquires AI attribution startup Sureel AI",
+      "publishedAt": "2026-06-10T14:31:30.000Z",
+      "snippet": "Through the acquisition, WMG aims to better track when its artists' work is used in AI-generated content or for training AI models.",
+      "snippet_zh": [
+        "Through the acquisition, WMG aims to better track when its artists' work is used in AI-generated content or for training AI models."
+      ],
+      "url": "https://techcrunch.com/2026/06/10/warner-music-acquires-ai-attribution-startup-sureel-ai/",
+      "category_tag_zh": "#AI应用",
+      "scrapedAt": "2026-06-11T04:21:21.030Z"
+    },
+    {
+      "id": "vb-two-desperados-secures-20m-ua-financing",
+      "source": "Ventureburn",
+      "image": "https://ventureburn.com/wp-content/uploads/2026/06/a-futuristic-poster-showcases-a-vibrant-_0xUQXpKFUjaiYzRMUSj44Q_rQFGRW-8RLKofSdqKi4F-Q.png",
+      "title": "Two Desperados Secures $20M UA Financing to Scale Mobile Gaming Portfolio",
+      "title_zh": "Two Desperados Secures $20M UA Financing to Scale Mobile Gaming Portfolio",
+      "publishedAt": "2026-06-10T14:05:39.000Z",
+      "snippet": "Two Desperados Secures $20M to Accelerate Global User Growth Two Desperados has secured $20 million in user acquisition financing. PvX Partners is leading the investment. Two Desperados is a Belgrade-based\nThe post Two Desperados Secures $20M UA Financing to Scale Mobile Gaming Portfolio appeared fi",
+      "snippet_zh": [
+        "Two Desperados Secures $20M to Accelerate Global User Growth Two Desperados has secured $20 million in user acquisition financing. PvX Partners is leading the investment. Two Desperados is a Belgrade-based\nThe post Two Desperados Secures $20M UA Financing to Scale Mobile Gaming Portfolio appeared fi"
+      ],
+      "url": "https://ventureburn.com/two-desperados-secures-20m-ua-financing/",
+      "category_tag_zh": "#科技创投",
+      "scrapedAt": "2026-06-11T04:22:25.072Z"
+    },
+    {
+      "id": "vb-tensorwave-raises-350m-to-expand-ai-infrastructure",
+      "source": "Ventureburn",
+      "image": "https://ventureburn.com/wp-content/uploads/2026/06/AI-5-1024x576.jpg",
+      "title": "TensorWave Raises $350M to Expand AI Infrastructure",
+      "title_zh": "TensorWave Raises $350M to Expand AI Infrastructure",
+      "publishedAt": "2026-06-10T14:01:36.000Z",
+      "snippet": "TensorWave has successfully closed a $350 million Series B funding round. The investment, which values the three-year-old startup at $1.55 billion, signals a major market bet on AMD-powered infrastructure as\nThe post TensorWave Raises $350M to Expand AI Infrastructure appeared first on Ventureburn.",
+      "snippet_zh": [
+        "TensorWave has successfully closed a $350 million Series B funding round. The investment, which values the three-year-old startup at $1.55 billion, signals a major market bet on AMD-powered infrastructure as\nThe post TensorWave Raises $350M to Expand AI Infrastructure appeared first on Ventureburn."
+      ],
+      "url": "https://ventureburn.com/tensorwave-raises-350m-to-expand-ai-infrastructure/",
+      "category_tag_zh": "#科技创投",
+      "scrapedAt": "2026-06-11T04:22:25.073Z"
+    },
+    {
+      "id": "vb-evotrex-raises-30m-series-a-rv-development",
+      "source": "Ventureburn",
+      "image": "https://ventureburn.com/wp-content/uploads/2026/06/create-a-futuristic-neon-lit-poster-with_i_epItGwVh6xo1wm96JJ8g_ZLVFHnx0QBahCwZPZ_vKqQ_cover.png",
+      "title": "Evotrex Raises $30M Series A to Advance Power-Generating RV Development",
+      "title_zh": "Evotrex Raises $30M Series A to Advance Power-Generating RV Development",
+      "publishedAt": "2026-06-10T13:34:10.000Z",
+      "snippet": "Evotrex Raises $30M to Accelerate Hybrid RV Production Evotrex has raised $30 million in Series A funding. The round included GSR United Capital, Forebright Concerto Capital, Unique Capital, Pegasus Capital,\nThe post Evotrex Raises $30M Series A to Advance Power-Generating RV Development appeared fi",
+      "snippet_zh": [
+        "Evotrex Raises $30M to Accelerate Hybrid RV Production Evotrex has raised $30 million in Series A funding. The round included GSR United Capital, Forebright Concerto Capital, Unique Capital, Pegasus Capital,\nThe post Evotrex Raises $30M Series A to Advance Power-Generating RV Development appeared fi"
+      ],
+      "url": "https://ventureburn.com/evotrex-raises-30m-series-a-rv-development/",
+      "category_tag_zh": "#科技创投",
+      "scrapedAt": "2026-06-11T04:22:25.076Z"
+    },
+    {
+      "id": "tc-jedify-raises-24m-to-help-companies-arm-ai-agents-",
+      "source": "TechCrunch",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/06/Jedify-Co-founders.jpg?w=562",
+      "title": "Jedify raises $24M to help companies arm AI agents with context on their business",
+      "title_zh": "Jedify raises $24M to help companies arm AI agents with context on their business",
+      "publishedAt": "2026-06-10T13:33:09.000Z",
+      "snippet": "",
+      "snippet_zh": [
+        ""
+      ],
+      "url": "https://techcrunch.com/2026/06/10/jedify-raises-24m-to-help-companies-arm-ai-agents-with-context-on-their-business/",
+      "category_tag_zh": "#AI应用",
+      "scrapedAt": "2026-06-11T06:15:38.263Z"
+    },
+    {
+      "id": "vb-cyera-secures-600-million-to-expand-ai-trust-layer",
+      "source": "Ventureburn",
+      "image": "https://ventureburn.com/wp-content/uploads/2026/06/Cyera_Logo.jpg",
+      "title": "Cyera Secures $600 Million to Expand AI Trust Layer",
+      "title_zh": "Cyera Secures $600 Million to Expand AI Trust Layer",
+      "publishedAt": "2026-06-10T13:12:38.000Z",
+      "snippet": "Cyera, an enterprise data security company, announced a $600 million late-stage round to fund the expansion of its artificial intelligence security platform. The large investment pushed Cyera’s valuation to $12\nThe post Cyera Secures $600 Million to Expand AI Trust Layer appeared first on Venturebur",
+      "snippet_zh": [
+        "Cyera, an enterprise data security company, announced a $600 million late-stage round to fund the expansion of its artificial intelligence security platform. The large investment pushed Cyera’s valuation to $12\nThe post Cyera Secures $600 Million to Expand AI Trust Layer appeared first on Venturebur"
+      ],
+      "url": "https://ventureburn.com/cyera-secures-600-million-to-expand-ai-trust-layer/",
+      "category_tag_zh": "#科技创投",
+      "scrapedAt": "2026-06-11T04:22:25.078Z"
+    },
+    {
+      "id": "tc-decarts-new-world-model-can-simulate-hours-of-phot",
+      "source": "TechCrunch",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/06/Oasis-a.png?w=665",
+      "title": "Decart’s new world model can simulate hours of photorealistic driving — with some caveats",
+      "title_zh": "Decart’s new world model can simulate hours of photorealistic driving — with some caveats",
+      "publishedAt": "2026-06-10T13:07:56.000Z",
+      "snippet": "",
+      "snippet_zh": [
+        ""
+      ],
+      "url": "https://techcrunch.com/2026/06/10/decarts-new-world-model-can-simulate-hours-of-photorealistic-driving-with-some-caveats/",
+      "category_tag_zh": "#AI应用",
+      "scrapedAt": "2026-06-11T06:15:38.263Z"
+    },
+    {
+      "id": "vb-binance-xaut-trading-tournament-guide",
+      "source": "Ventureburn",
+      "image": "https://chainplay.gg/wp-content/uploads/2026/06/unnamed-48.jpg",
+      "title": "Binance XAUT Trading Tournament is Live: Join the Trading Tournament & Share in 400K USDC",
+      "title_zh": "Binance XAUT Trading Tournament is Live: Join the Trading Tournament & Share in 400K USDC",
+      "publishedAt": "2026-06-10T13:02:15.000Z",
+      "snippet": "Binance has launched a new trading competition for crypto users looking to trade gold-backed digital assets. The Binance XAUT Trading Tournament gives eligible participants a chance to share a massive\nThe post Binance XAUT Trading Tournament is Live: Join the Trading Tournament & Share in 400K USDC ",
+      "snippet_zh": [
+        "Binance has launched a new trading competition for crypto users looking to trade gold-backed digital assets. The Binance XAUT Trading Tournament gives eligible participants a chance to share a massive\nThe post Binance XAUT Trading Tournament is Live: Join the Trading Tournament & Share in 400K USDC "
+      ],
+      "url": "https://ventureburn.com/binance-xaut-trading-tournament-guide/",
+      "category_tag_zh": "#科技创投",
+      "scrapedAt": "2026-06-11T04:22:25.081Z"
+    },
+    {
+      "id": "vb-alta-ares-raises-50m-air-defence-ai",
+      "source": "Ventureburn",
+      "image": "https://ventureburn.com/wp-content/uploads/2026/06/create-a-futuristic-neon-lit-poster-with_W3o4vYxjXNakhCWhTGSiIw_RBKGGpKER_iAON73mv35tQ_cover.png",
+      "title": "Alta Ares Raises €50M to Scale AI-Powered Air Defence Systems",
+      "title_zh": "Alta Ares Raises €50M to Scale AI-Powered Air Defence Systems",
+      "publishedAt": "2026-06-10T12:23:17.000Z",
+      "snippet": "Alta Ares Raises €50M to Expand Defence Technology Production Alta Ares has announced raising $50 million. Air Street Capital led this round of financing with Cherry Ventures, OTB Ventures and\nThe post Alta Ares Raises €50M to Scale AI-Powered Air Defence Systems appeared first on Ventureburn.",
+      "snippet_zh": [
+        "Alta Ares Raises €50M to Expand Defence Technology Production Alta Ares has announced raising $50 million. Air Street Capital led this round of financing with Cherry Ventures, OTB Ventures and\nThe post Alta Ares Raises €50M to Scale AI-Powered Air Defence Systems appeared first on Ventureburn."
+      ],
+      "url": "https://ventureburn.com/alta-ares-raises-50m-air-defence-ai/",
+      "category_tag_zh": "#科技创投",
+      "scrapedAt": "2026-06-11T04:22:25.083Z"
+    },
+    {
+      "id": "vb-cameramatics-raises-49m-ai-fleet-expansion",
+      "source": "Ventureburn",
+      "image": "https://ventureburn.com/wp-content/uploads/2026/06/a-futuristic-poster-showcases-a-dynamic-_iGz8pJKBVruOCivb08VYxg_oTHUdPa_RLuRRu6mM9MI8w.png",
+      "title": "CameraMatics Raises €49M to Expand AI Fleet Intelligence Platform",
+      "title_zh": "CameraMatics Raises €49M to Expand AI Fleet Intelligence Platform",
+      "publishedAt": "2026-06-10T11:52:16.000Z",
+      "snippet": "CameraMatics Raises €49M to Accelerate Global Expansion CameraMatics has raised up to €49 million in new funding. The investment was led by Blume Equity. The Ireland Strategic Investment Fund and\nThe post CameraMatics Raises €49M to Expand AI Fleet Intelligence Platform appeared first on Ventureburn",
+      "snippet_zh": [
+        "CameraMatics Raises €49M to Accelerate Global Expansion CameraMatics has raised up to €49 million in new funding. The investment was led by Blume Equity. The Ireland Strategic Investment Fund and\nThe post CameraMatics Raises €49M to Expand AI Fleet Intelligence Platform appeared first on Ventureburn"
+      ],
+      "url": "https://ventureburn.com/cameramatics-raises-49m-ai-fleet-expansion/",
+      "category_tag_zh": "#科技创投",
+      "scrapedAt": "2026-06-11T04:22:25.083Z"
+    },
     {
       "id": "giz-realme-p4r-5g-launches-in-india-three-days-of-batt",
       "source": "Gizchina",
@@ -64,6 +816,21 @@
       "scrapedAt": "2026-06-11T03:51:46.566Z"
     },
     {
+      "id": "tc-meta-signs-first-ai-data-center-deal-in-india-with",
+      "source": "TechCrunch",
+      "image": "https://techcrunch.com/wp-content/uploads/2024/05/meta-getty.jpg?w=668",
+      "title": "Meta signs first AI data center deal in India with Reliance",
+      "title_zh": "Meta signs first AI data center deal in India with Reliance",
+      "publishedAt": "2026-06-10T07:05:26.000Z",
+      "snippet": "",
+      "snippet_zh": [
+        ""
+      ],
+      "url": "https://techcrunch.com/2026/06/10/meta-signs-first-ai-data-center-deal-in-india-with-reliance/",
+      "category_tag_zh": "#AI应用",
+      "scrapedAt": "2026-06-11T06:15:38.263Z"
+    },
+    {
       "id": "giz-google-ai-plus-is-now-499-a-month-and-you-get-doub",
       "source": "Gizchina",
       "image": "https://r.testifier.nl/Acbs8526SDKI/resizing_type:fill/width:1200/height:630/plain/https%3A%2F%2Fs3-newsifier.ams3.digitaloceanspaces.com%2Fgizchina.com%2Fimages%2F2026-06%2Fimage-1781071674973-6a290aaf5ab26.jpg",
@@ -77,6 +844,171 @@
       "url": "https://www.gizchina.com/ai/google-ai-plus-is-now-499-a-month-and-you-get-double-the-storage",
       "category_tag_zh": "#科技",
       "scrapedAt": "2026-06-11T03:51:48.935Z"
+    },
+    {
+      "id": "tc-google-just-fired-a-warning-shot-in-the-ai-subscri",
+      "source": "TechCrunch",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/01/ai-mode-google.jpg?w=563",
+      "title": "Google just fired a warning shot in the AI subscription price wars",
+      "title_zh": "Google just fired a warning shot in the AI subscription price wars",
+      "publishedAt": "2026-06-10T00:26:10.000Z",
+      "snippet": "",
+      "snippet_zh": [
+        ""
+      ],
+      "url": "https://techcrunch.com/2026/06/09/google-just-fired-a-warning-shot-in-the-ai-subscription-price-wars/",
+      "category_tag_zh": "#AI应用",
+      "scrapedAt": "2026-06-11T06:15:38.263Z"
+    },
+    {
+      "id": "tc-how-justin-ernest-invested-nearly-500m-into-hot-st",
+      "source": "TechCrunch",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/06/JustinErnest_TechCrunch.jpg?w=668",
+      "title": "How Justin Ernest invested nearly $500M into hot startups without a traditional VC fund",
+      "title_zh": "How Justin Ernest invested nearly $500M into hot startups without a traditional VC fund",
+      "publishedAt": "2026-06-09T23:17:51.000Z",
+      "snippet": "",
+      "snippet_zh": [
+        ""
+      ],
+      "url": "https://techcrunch.com/2026/06/09/how-justin-ernest-invested-nearly-500m-into-hot-startups-without-a-traditional-vc-fund/",
+      "category_tag_zh": "#AI应用",
+      "scrapedAt": "2026-06-11T06:15:38.263Z"
+    },
+    {
+      "id": "tc-hey-siri-heres-what-i-actually-want-from-ai",
+      "source": "TechCrunch",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/06/GettyImages-1139080118.jpg?w=562",
+      "title": "Hey, Siri, here’s what I actually want from AI",
+      "title_zh": "Hey, Siri, here’s what I actually want from AI",
+      "publishedAt": "2026-06-09T20:50:17.000Z",
+      "snippet": "",
+      "snippet_zh": [
+        ""
+      ],
+      "url": "https://techcrunch.com/2026/06/09/hey-siri-heres-what-i-actually-want-from-ai/",
+      "category_tag_zh": "#AI应用",
+      "scrapedAt": "2026-06-11T06:15:38.263Z"
+    },
+    {
+      "id": "tc-anthropics-fable-5-can-make-weirdly-fun-video-game",
+      "source": "TechCrunch",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/06/Screenshot-2026-06-09-at-11.40.18-AM.png?w=517",
+      "title": "Anthropic’s Fable 5 can make weirdly fun video games with the click of a button",
+      "title_zh": "Anthropic’s Fable 5 can make weirdly fun video games with the click of a button",
+      "publishedAt": "2026-06-09T20:37:49.000Z",
+      "snippet": "",
+      "snippet_zh": [
+        ""
+      ],
+      "url": "https://techcrunch.com/2026/06/09/anthropics-fable-5-can-make-weirdly-fun-video-games-with-the-click-of-a-button/",
+      "category_tag_zh": "#AI应用",
+      "scrapedAt": "2026-06-11T06:15:38.263Z"
+    },
+    {
+      "id": "tc-can-tech-companies-learn-to-love-cheaper-models",
+      "source": "TechCrunch",
+      "image": "https://techcrunch.com/wp-content/uploads/2023/08/GettyImages-1297856112.jpg?w=668",
+      "title": "Can tech companies learn to love cheaper AI models?",
+      "title_zh": "Can tech companies learn to love cheaper AI models?",
+      "publishedAt": "2026-06-09T18:56:09.000Z",
+      "snippet": "",
+      "snippet_zh": [
+        ""
+      ],
+      "url": "https://techcrunch.com/2026/06/09/can-tech-companies-learn-to-love-cheaper-models/",
+      "category_tag_zh": "#AI应用",
+      "scrapedAt": "2026-06-11T06:15:38.263Z"
+    },
+    {
+      "id": "tc-wwdc-2026-everything-announced-on-siri-ai-os-27-ap",
+      "source": "TechCrunch",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/06/apple-siri-ai-use-cases.png?w=662",
+      "title": "WWDC 2026: Everything announced on Siri AI, iOS 27, Apple Intelligence, and more",
+      "title_zh": "WWDC 2026: Everything announced on Siri AI, iOS 27, Apple Intelligence, and more",
+      "publishedAt": "2026-06-09T18:04:24.000Z",
+      "snippet": "",
+      "snippet_zh": [
+        ""
+      ],
+      "url": "https://techcrunch.com/2026/06/09/wwdc-2026-everything-announced-on-siri-ai-os-27-apple-intelligence-and-more/",
+      "category_tag_zh": "#AI应用",
+      "scrapedAt": "2026-06-11T06:15:38.263Z"
+    },
+    {
+      "id": "tc-anthropics-claude-fable-5-is-a-version-of-mythos-t",
+      "source": "TechCrunch",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/06/GettyImages-2279025960.jpg?w=562",
+      "title": "Anthropic’s Claude Fable 5 is a version of Mythos the public can access today",
+      "title_zh": "Anthropic’s Claude Fable 5 is a version of Mythos the public can access today",
+      "publishedAt": "2026-06-09T17:00:00.000Z",
+      "snippet": "",
+      "snippet_zh": [
+        ""
+      ],
+      "url": "https://techcrunch.com/2026/06/09/anthropics-claude-fable-5-is-a-version-of-mythos-the-public-can-access-today/",
+      "category_tag_zh": "#AI应用",
+      "scrapedAt": "2026-06-11T06:15:38.263Z"
+    },
+    {
+      "id": "tc-its-not-faang-anymore-its-mangos",
+      "source": "TechCrunch",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/06/Mango-crushing-fang.png?w=469",
+      "title": "It’s not FAANG anymore. It’s MANGOS.",
+      "title_zh": "It’s not FAANG anymore. It’s MANGOS.",
+      "publishedAt": "2026-06-09T16:09:14.000Z",
+      "snippet": "",
+      "snippet_zh": [
+        ""
+      ],
+      "url": "https://techcrunch.com/2026/06/09/its-not-faang-anymore-its-mangos/",
+      "category_tag_zh": "#AI应用",
+      "scrapedAt": "2026-06-11T06:15:38.263Z"
+    },
+    {
+      "id": "tc-sandstone-raises-30m-to-bring-ai-to-in-house-legal",
+      "source": "TechCrunch",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/06/image-6.png?w=563",
+      "title": "Sandstone raises $30M to bring AI to in-house legal teams",
+      "title_zh": "Sandstone raises $30M to bring AI to in-house legal teams",
+      "publishedAt": "2026-06-09T13:47:25.000Z",
+      "snippet": "",
+      "snippet_zh": [
+        ""
+      ],
+      "url": "https://techcrunch.com/2026/06/09/sandstone-raises-30m-to-bring-ai-to-in-house-legal-teams/",
+      "category_tag_zh": "#AI应用",
+      "scrapedAt": "2026-06-11T06:15:38.263Z"
+    },
+    {
+      "id": "tc-lovable-says-it-has-hit-500m-in-annualized-revenue",
+      "source": "TechCrunch",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/03/GettyImages-2245627953.jpg?w=562",
+      "title": "Lovable says it has hit $500M in annualized revenue, with 1 million new projects a week",
+      "title_zh": "Lovable says it has hit $500M in annualized revenue, with 1 million new projects a week",
+      "publishedAt": "2026-06-09T13:00:00.000Z",
+      "snippet": "",
+      "snippet_zh": [
+        ""
+      ],
+      "url": "https://techcrunch.com/2026/06/09/lovable-says-it-has-hit-500m-in-annualized-revenue-with-1-million-new-projects-a-week/",
+      "category_tag_zh": "#AI应用",
+      "scrapedAt": "2026-06-11T06:15:38.263Z"
+    },
+    {
+      "id": "tc-how-an-e-scooter-founder-raised-5-million-to-build",
+      "source": "TechCrunch",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/06/satellite.png?w=668",
+      "title": "How an e-scooter founder raised $5 million to build space data centers",
+      "title_zh": "How an e-scooter founder raised $5 million to build space data centers",
+      "publishedAt": "2026-06-09T12:00:00.000Z",
+      "snippet": "",
+      "snippet_zh": [
+        ""
+      ],
+      "url": "https://techcrunch.com/2026/06/09/how-an-e-scooter-founder-raised-5-million-to-build-space-data-centers/",
+      "category_tag_zh": "#AI应用",
+      "scrapedAt": "2026-06-11T06:15:38.263Z"
     },
     {
       "id": "giz-xiaomi-mimo-v25-pro-just-hit-1000-tokens-per-secon",
@@ -139,6 +1071,21 @@
       "scrapedAt": "2026-06-11T03:51:58.203Z"
     },
     {
+      "id": "tc-why-apples-slow-and-steady-ai-bet-is-starting-to-l",
+      "source": "TechCrunch",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/06/apple-siri-ai-use-cases.png?w=662",
+      "title": "Why Apple’s slow-and-steady AI bet is starting to look pretty smart",
+      "title_zh": "Why Apple’s slow-and-steady AI bet is starting to look pretty smart",
+      "publishedAt": "2026-06-09T01:56:48.000Z",
+      "snippet": "",
+      "snippet_zh": [
+        ""
+      ],
+      "url": "https://techcrunch.com/2026/06/08/why-apples-slow-and-steady-ai-bet-is-starting-to-look-pretty-smart/",
+      "category_tag_zh": "#AI应用",
+      "scrapedAt": "2026-06-11T06:15:38.263Z"
+    },
+    {
       "id": "giz-watchos-27-announced-with-dynamic-app-grid-new-ges",
       "source": "Gizchina",
       "image": "https://r.testifier.nl/Acbs8526SDKI/resizing_type:fill/width:1200/height:630/plain/https%3A%2F%2Fs3-newsifier.ams3.digitaloceanspaces.com%2Fgizchina.com%2Fimages%2F2026-06%2Fimage-2026-06-08-222122301-6a276adde1f70.png",
@@ -167,6 +1114,81 @@
       "url": "https://www.gizchina.com/apple/ios-27-and-ipados-27-announced-apple-unveils-new-siri-ai-and-the-biggest-apple-intelligence-upgrade-yet",
       "category_tag_zh": "#科技",
       "scrapedAt": "2026-06-11T03:52:03.026Z"
+    },
+    {
+      "id": "tc-mercors-brendan-foody-calls-out-sequoia-over-dual-",
+      "source": "TechCrunch",
+      "image": "https://techcrunch.com/wp-content/uploads/2024/11/GettyImages-1258486979.jpg?w=584",
+      "title": "Mercor’s Brendan Foody calls out Sequoia, accusing it of ‘dual-pricing’ valuation tricks",
+      "title_zh": "Mercor’s Brendan Foody calls out Sequoia, accusing it of ‘dual-pricing’ valuation tricks",
+      "publishedAt": "2026-06-09T00:45:56.000Z",
+      "snippet": "",
+      "snippet_zh": [
+        ""
+      ],
+      "url": "https://techcrunch.com/2026/06/08/mercors-brendan-foody-calls-out-sequoia-over-dual-pricing-valuation-tricks/",
+      "category_tag_zh": "#AI应用",
+      "scrapedAt": "2026-06-11T06:15:38.263Z"
+    },
+    {
+      "id": "tc-as-openai-files-for-ipo-sam-altmans-eye-scanning-c",
+      "source": "TechCrunch",
+      "image": "https://techcrunch.com/wp-content/uploads/2023/07/Worldcoin-Project-Co-founders-Alex-Blania-L-and-Sam-Altman-R.jpg?w=563",
+      "title": "As OpenAI files for IPO, Sam Altman’s eye-scanning company is doing layoffs, report says",
+      "title_zh": "As OpenAI files for IPO, Sam Altman’s eye-scanning company is doing layoffs, report says",
+      "publishedAt": "2026-06-08T22:41:45.000Z",
+      "snippet": "",
+      "snippet_zh": [
+        ""
+      ],
+      "url": "https://techcrunch.com/2026/06/08/as-openai-files-for-ipo-sam-altmans-eye-scanning-company-is-doing-layoffs-report-says/",
+      "category_tag_zh": "#AI应用",
+      "scrapedAt": "2026-06-11T06:15:38.263Z"
+    },
+    {
+      "id": "tc-apples-wwdc-ai-demos-looked-more-real-after-250m-f",
+      "source": "TechCrunch",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/06/Apple-iOS-27-demo.png?w=665",
+      "title": "Apple’s WWDC AI demos looked more real after $250M false ad settlement",
+      "title_zh": "Apple’s WWDC AI demos looked more real after $250M false ad settlement",
+      "publishedAt": "2026-06-08T22:39:57.000Z",
+      "snippet": "",
+      "snippet_zh": [
+        ""
+      ],
+      "url": "https://techcrunch.com/2026/06/08/apples-wwdc-ai-demos-looked-more-real-after-250m-false-ad-settlement/",
+      "category_tag_zh": "#AI应用",
+      "scrapedAt": "2026-06-11T06:15:38.263Z"
+    },
+    {
+      "id": "tc-following-anthropic-openai-files-confidentially-fo",
+      "source": "TechCrunch",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/02/modi-openai-anthropic-2261854815.jpg?w=563",
+      "title": "OpenAI files confidentially for IPO, following Anthropic",
+      "title_zh": "OpenAI files confidentially for IPO, following Anthropic",
+      "publishedAt": "2026-06-08T21:29:57.000Z",
+      "snippet": "",
+      "snippet_zh": [
+        ""
+      ],
+      "url": "https://techcrunch.com/2026/06/08/following-anthropic-openai-files-confidentially-for-ipo/",
+      "category_tag_zh": "#AI应用",
+      "scrapedAt": "2026-06-11T06:15:38.263Z"
+    },
+    {
+      "id": "tc-apple-plays-catch-up-at-wwdc",
+      "source": "TechCrunch",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/06/tim-cook-wwdc-2026.jpeg?w=664",
+      "title": "Apple plays catch-up at WWDC",
+      "title_zh": "Apple plays catch-up at WWDC",
+      "publishedAt": "2026-06-08T21:15:42.000Z",
+      "snippet": "",
+      "snippet_zh": [
+        ""
+      ],
+      "url": "https://techcrunch.com/2026/06/08/apple-plays-catch-up-at-wwdc/",
+      "category_tag_zh": "#AI应用",
+      "scrapedAt": "2026-06-11T06:15:38.263Z"
     },
     {
       "id": "giz-xbox-series-x25-limited-edition-is-official-and-it",
@@ -242,6 +1264,38 @@
       "url": "https://www.gizchina.com/vivo-phones/vivo-x-fold-6-just-showed-up-at-the-french-open",
       "category_tag_zh": "#科技",
       "scrapedAt": "2026-06-11T03:52:16.349Z"
+    },
+    {
+      "id": "vb-best-ai-tools-students-2026",
+      "source": "Ventureburn",
+      "image": "https://ventureburn.com/wp-content/uploads/2026/06/Collate-Raises-95M-1-1-768x431.jpeg",
+      "title": "10 Best AI Tools for Students to Boost Grades in 2026",
+      "title_zh": "2026年提升学业的10大AI工具盘点",
+      "publishedAt": "2026-06-08T00:00:00.000Z",
+      "snippet": "From NotebookLM to Speechify, the best AI tools for students in 2026 cover study notes, research, writing, coding, and presentations — 92% of students already use AI in their routines.",
+      "snippet_zh": [
+        "从NotebookLM到Speechify，2026年最强AI学习工具覆盖笔记、研究、写作、编程与演示全场景。",
+        "92%学生和84%教职人员已在教育流程中使用AI，超三分之二高校正在制定AI使用指南。",
+        "核心推荐：NotebookLM智能笔记、ScholarAI学术研究、Grammarly写作润色、AskCodi编程辅助。"
+      ],
+      "url": "https://ventureburn.com/best-ai-tools-for-students/",
+      "category_tag_zh": "#AI教育",
+      "scrapedAt": "2026-06-11T06:00:00.000Z"
+    },
+    {
+      "id": "vb-best-ai-music-generators-2026",
+      "source": "Ventureburn",
+      "image": "https://ventureburn.com/wp-content/uploads/2026/06/Collate-Raises-95M-1-1-768x431.jpeg",
+      "title": "10 Best AI Music Generators to Make Custom Tracks in 2026",
+      "title_zh": "2026年10大AI音乐生成器盘点",
+      "publishedAt": "2026-06-08T00:00:00.000Z",
+      "snippet": "In 2026, Suno v5 generates a complete song with vocals and instrumentation in under 30 seconds. The best AI music generators have moved from novelty to daily infrastructure for creators.",
+      "snippet_zh": [
+        "Suno v5可在30秒内生成包含人声和编曲的完整歌曲，AI音乐生成已从新奇玩具变为创作者日常基础设施。"
+      ],
+      "url": "https://ventureburn.com/best-ai-music-generators/",
+      "category_tag_zh": "#AI音乐",
+      "scrapedAt": "2026-06-11T06:00:00.000Z"
     },
     {
       "id": "giz-a-fourth-color-variant-of-the-samsung-galaxy-a27-j",
@@ -422,6 +1476,23 @@
       "url": "https://www.gizchina.com/vivo-phones/vivo-x-fold-6-battery-confirmed-at-6900mah-the-biggest-ever-in-a-vivo-foldable",
       "category_tag_zh": "#科技",
       "scrapedAt": "2026-06-11T03:52:46.756Z"
+    },
+    {
+      "id": "vb-developers-root-access-power-control",
+      "source": "Ventureburn",
+      "image": "https://ventureburn.com/wp-content/uploads/2026/06/oavb562026ft1-768x431.jpeg",
+      "title": "Why Developers Prefer Root Access: Power & Control",
+      "title_zh": "开发者为何钟爱Root权限：掌控力与自由度",
+      "publishedAt": "2026-06-05T00:00:00.000Z",
+      "snippet": "Having complete control over your server environment is a must-have for developers. VPS with root access enables custom software setups, advanced security control, and system-level performance tuning.",
+      "snippet_zh": [
+        "Root权限让开发者完全掌控服务器环境，自定义软件安装、防火墙规则与系统级性能调优。",
+        "Docker、Kubernetes部署与渗透测试工具运行均需Root级系统权限支撑。",
+        "现代开发中，VPS Root访问是开发者构建快速、可靠部署流程的关键配置。"
+      ],
+      "url": "https://ventureburn.com/why-developers-prefer-root-access-power-control/",
+      "category_tag_zh": "#开发者工具",
+      "scrapedAt": "2026-06-11T06:00:00.000Z"
     },
     {
       "id": "giz-honor-magic-v6-officially-launches-globally-pre-or",
@@ -752,732 +1823,6 @@
       "url": "https://www.gizchina.com/vivo-phones/vivo-x-fold-6-leaks-200mp-triple-camera-7000mah-battery-june-china-launch",
       "category_tag_zh": "#科技",
       "scrapedAt": "2026-06-11T03:53:42.416Z"
-    },
-    {
-      "id": "tc-opendoors-india-exit-is-fueling-a-bigger-conversat",
-      "source": "TechCrunch",
-      "image": "",
-      "title": "Opendoor’s India exit is fueling a bigger conversation about AI and outsourcing",
-      "title_zh": "Opendoor’s India exit is fueling a bigger conversation about AI and outsourcing",
-      "publishedAt": "2026-06-11T04:02:19.000Z",
-      "snippet": "The decision comes as India emerges as the world’s largest GCC market.",
-      "snippet_zh": [
-        "The decision comes as India emerges as the world’s largest GCC market."
-      ],
-      "url": "https://techcrunch.com/2026/06/10/opendoors-india-exit-is-fueling-a-bigger-conversation-about-ai-and-outsourcing/",
-      "category_tag_zh": "#AI应用",
-      "scrapedAt": "2026-06-11T04:21:21.024Z"
-    },
-    {
-      "id": "tc-anthropics-dario-amodei-has-just-one-direct-report",
-      "source": "TechCrunch",
-      "image": "",
-      "title": "Anthropic’s Dario Amodei has just one direct report",
-      "title_zh": "Anthropic’s Dario Amodei has just one direct report",
-      "publishedAt": "2026-06-11T03:53:06.000Z",
-      "snippet": "If you doubted his genius, doubt no more.",
-      "snippet_zh": [
-        "If you doubted his genius, doubt no more."
-      ],
-      "url": "https://techcrunch.com/2026/06/10/anthropics-dario-amodei-has-just-one-direct-report/",
-      "category_tag_zh": "#AI应用",
-      "scrapedAt": "2026-06-11T04:21:21.024Z"
-    },
-    {
-      "id": "tc-xai-fired-an-engineer-who-raised-alarms-about-grok",
-      "source": "TechCrunch",
-      "image": "",
-      "title": "xAI fired an engineer who raised alarms about Grok safety, new lawsuit claims",
-      "title_zh": "xAI fired an engineer who raised alarms about Grok safety, new lawsuit claims",
-      "publishedAt": "2026-06-10T22:31:19.000Z",
-      "snippet": "A former xAI engineer is suing the company and SpaceX, alleging he was fired for raising AI safety concerns about Grok days before SpaceX's historic IPO.",
-      "snippet_zh": [
-        "A former xAI engineer is suing the company and SpaceX, alleging he was fired for raising AI safety concerns about Grok days before SpaceX's historic IPO."
-      ],
-      "url": "https://techcrunch.com/2026/06/10/xai-fired-an-engineer-who-raised-alarms-about-grok-safety-new-lawsuit-claims/",
-      "category_tag_zh": "#AI应用",
-      "scrapedAt": "2026-06-11T04:21:21.024Z"
-    },
-    {
-      "id": "tc-why-andrew-yang-is-building-instead-of-waiting-for",
-      "source": "TechCrunch",
-      "image": "",
-      "title": "Why Andrew Yang is building instead of waiting for Washington",
-      "title_zh": "Why Andrew Yang is building instead of waiting for Washington",
-      "publishedAt": "2026-06-10T22:24:12.000Z",
-      "snippet": "Andrew Yang’s 2020 presidential campaign was based on a warning that automation and AI would hollow out the labor market and concentrate wealth in the hands of a few. At the time, ideas like Universal Basic Income felt fringe. Now Dario Amodei, Sam Altman, and Bernie Sanders are all saying versions ",
-      "snippet_zh": [
-        "Andrew Yang’s 2020 presidential campaign was based on a warning that automation and AI would hollow out the labor market and concentrate wealth in the hands of a few. At the time, ideas like Universal Basic Income felt fringe. Now Dario Amodei, Sam Altman, and Bernie Sanders are all saying versions "
-      ],
-      "url": "https://techcrunch.com/video/why-andrew-yang-is-building-instead-of-waiting-for-washington/",
-      "category_tag_zh": "#AI创业",
-      "scrapedAt": "2026-06-11T04:21:21.025Z"
-    },
-    {
-      "id": "tc-cybercriminals-claim-breach-of-oracle-peoplesoft-s",
-      "source": "TechCrunch",
-      "image": "",
-      "title": "Cybercriminals claim breach of Oracle PeopleSoft servers at 100-plus organizations",
-      "title_zh": "Cybercriminals claim breach of Oracle PeopleSoft servers at 100-plus organizations",
-      "publishedAt": "2026-06-10T21:33:32.000Z",
-      "snippet": "The ShinyHunters hacking gang claims to have compromised the Oracle PeopleSoft servers of more than 100 organizations, including many universities.",
-      "snippet_zh": [
-        "The ShinyHunters hacking gang claims to have compromised the Oracle PeopleSoft servers of more than 100 organizations, including many universities."
-      ],
-      "url": "https://techcrunch.com/2026/06/10/cybercriminals-claim-breach-of-oracle-peoplesoft-servers-at-100-plus-organizations/",
-      "category_tag_zh": "#AI安全",
-      "scrapedAt": "2026-06-11T04:21:21.026Z"
-    },
-    {
-      "id": "tc-everyone-wants-a-piece-of-teslas-battery-business",
-      "source": "TechCrunch",
-      "image": "",
-      "title": "Everyone wants a piece of Tesla’s battery business",
-      "title_zh": "Everyone wants a piece of Tesla’s battery business",
-      "publishedAt": "2026-06-10T20:21:25.000Z",
-      "snippet": "Electricity demand from AI data centers is pushing everyone — including automakers like GM and Ford — into the energy storage business.",
-      "snippet_zh": [
-        "Electricity demand from AI data centers is pushing everyone — including automakers like GM and Ford — into the energy storage business."
-      ],
-      "url": "https://techcrunch.com/2026/06/10/everyone-wants-a-piece-of-teslas-battery-business/",
-      "category_tag_zh": "#清洁能源",
-      "scrapedAt": "2026-06-11T04:21:21.026Z"
-    },
-    {
-      "id": "tc-fresh-off-bond-sale-amazon-borrows-17-5-billion-fr",
-      "source": "TechCrunch",
-      "image": "",
-      "title": "Fresh off bond sale, Amazon borrows $17.5B from banks as AI spending continues",
-      "title_zh": "Fresh off bond sale, Amazon borrows $17.5B from banks as AI spending continues",
-      "publishedAt": "2026-06-10T20:19:31.000Z",
-      "snippet": "Companies are burning through exorbitant sums of money to keep pace in the AI arms race. Debt is climbing.",
-      "snippet_zh": [
-        "Companies are burning through exorbitant sums of money to keep pace in the AI arms race. Debt is climbing."
-      ],
-      "url": "https://techcrunch.com/2026/06/10/fresh-off-bond-sale-amazon-borrows-17-5-billion-from-banks-as-ai-spending-continues/",
-      "category_tag_zh": "#AI应用",
-      "scrapedAt": "2026-06-11T04:21:21.026Z"
-    },
-    {
-      "id": "tc-north-koreans-behind-nearly-half-of-us-tech-indust",
-      "source": "TechCrunch",
-      "image": "",
-      "title": "North Koreans behind nearly half of US tech industry hacks, says CrowdStrike",
-      "title_zh": "North Koreans behind nearly half of US tech industry hacks, says CrowdStrike",
-      "publishedAt": "2026-06-10T19:57:04.000Z",
-      "snippet": "North Korean hackers posing as remote IT workers and recruiters remain a major threat to U.S., European, and Asian companies, accounting for about half of all attacks over the past 12 months.",
-      "snippet_zh": [
-        "North Korean hackers posing as remote IT workers and recruiters remain a major threat to U.S., European, and Asian companies, accounting for about half of all attacks over the past 12 months."
-      ],
-      "url": "https://techcrunch.com/2026/06/10/north-koreans-behind-nearly-half-of-us-tech-industry-hacks-says-crowdstrike/",
-      "category_tag_zh": "#AI安全",
-      "scrapedAt": "2026-06-11T04:21:21.027Z"
-    },
-    {
-      "id": "tc-wing-drone-delivery-might-not-be-a-novelty-anymore",
-      "source": "TechCrunch",
-      "image": "",
-      "title": "Wing drone delivery might not be a novelty anymore",
-      "title_zh": "Wing drone delivery might not be a novelty anymore",
-      "publishedAt": "2026-06-10T19:52:09.000Z",
-      "snippet": "Wing is expanding into seven more U.S. cities through its partnership with Walmart.",
-      "snippet_zh": [
-        "Wing is expanding into seven more U.S. cities through its partnership with Walmart."
-      ],
-      "url": "https://techcrunch.com/2026/06/10/wing-drone-delivery-might-not-be-a-novelty-anymore/",
-      "category_tag_zh": "#科技前沿",
-      "scrapedAt": "2026-06-11T04:21:21.027Z"
-    },
-    {
-      "id": "tc-netflix-expands-revamped-mobile-app-across-asia-an",
-      "source": "TechCrunch",
-      "image": "",
-      "title": "Netflix expands revamped mobile app across Asia and doubles down on kids’ gaming",
-      "title_zh": "Netflix expands revamped mobile app across Asia and doubles down on kids’ gaming",
-      "publishedAt": "2026-06-10T17:13:02.000Z",
-      "snippet": "The media giant is pushing to expand its mobile and gaming business.",
-      "snippet_zh": [
-        "The media giant is pushing to expand its mobile and gaming business."
-      ],
-      "url": "https://techcrunch.com/2026/06/10/netflix-expands-revamped-mobile-app-across-asia-and-doubles-down-on-kids-gaming/",
-      "category_tag_zh": "#AI应用",
-      "scrapedAt": "2026-06-11T04:21:21.027Z"
-    },
-    {
-      "id": "tc-ai-pilled-firms-spend-7500-per-employee-each-month",
-      "source": "TechCrunch",
-      "image": "",
-      "title": "‘AI-pilled’ firms spend $7,500 per employee each month on AI",
-      "title_zh": "‘AI-pilled’ firms spend $7,500 per employee each month on AI",
-      "publishedAt": "2026-06-10T17:07:35.000Z",
-      "snippet": "The most AI-obsessed firms are spending roughly $7,500 monthly per employee on AI, per Ramp AI Index. That's not more than an engineer's salary — yet.",
-      "snippet_zh": [
-        "The most AI-obsessed firms are spending roughly $7,500 monthly per employee on AI, per Ramp AI Index. That's not more than an engineer's salary — yet."
-      ],
-      "url": "https://techcrunch.com/2026/06/10/ai-pilled-firms-spend-7500-per-employee-each-month-on-ai/",
-      "category_tag_zh": "#AI应用",
-      "scrapedAt": "2026-06-11T04:21:21.027Z"
-    },
-    {
-      "id": "tc-the-indian-government-got-cold-feet-on-starlink-ju",
-      "source": "TechCrunch",
-      "image": "",
-      "title": "The Indian government got cold feet on Starlink just before SpaceX’s IPO",
-      "title_zh": "The Indian government got cold feet on Starlink just before SpaceX’s IPO",
-      "publishedAt": "2026-06-10T16:43:11.000Z",
-      "snippet": "Problems with Starlink's India expansion could challenge SpaceX's IPO growth story.",
-      "snippet_zh": [
-        "Problems with Starlink's India expansion could challenge SpaceX's IPO growth story."
-      ],
-      "url": "https://techcrunch.com/2026/06/10/the-indian-government-got-cold-feet-on-starlink-just-before-spacexs-ipo/",
-      "category_tag_zh": "#太空AI",
-      "scrapedAt": "2026-06-11T04:21:21.028Z"
-    },
-    {
-      "id": "tc-how-memory-tools-can-make-ai-models-worse",
-      "source": "TechCrunch",
-      "image": "",
-      "title": "How memory tools can make AI models worse",
-      "title_zh": "How memory tools can make AI models worse",
-      "publishedAt": "2026-06-10T16:11:08.000Z",
-      "snippet": "New research suggests that AI memory systems can degrade model performance and encourage sycophantic tendencies.",
-      "snippet_zh": [
-        "New research suggests that AI memory systems can degrade model performance and encourage sycophantic tendencies."
-      ],
-      "url": "https://techcrunch.com/2026/06/10/how-memory-tools-can-make-ai-models-worse/",
-      "category_tag_zh": "#AI应用",
-      "scrapedAt": "2026-06-11T04:21:21.028Z"
-    },
-    {
-      "id": "tc-zest-launches-a-restaurant-discovery-app-powered-b",
-      "source": "TechCrunch",
-      "image": "",
-      "title": "Zest launches a restaurant discovery app powered by where people actually eat",
-      "title_zh": "Zest launches a restaurant discovery app powered by where people actually eat",
-      "publishedAt": "2026-06-10T15:53:07.000Z",
-      "snippet": "Backed by Alexis Ohanian’s 776 and Kindred Ventures, Zest uses transaction data and AI to generate restaurant recommendations based on users’ real dining habits and the places they frequent.",
-      "snippet_zh": [
-        "Backed by Alexis Ohanian’s 776 and Kindred Ventures, Zest uses transaction data and AI to generate restaurant recommendations based on users’ real dining habits and the places they frequent."
-      ],
-      "url": "https://techcrunch.com/2026/06/10/zest-launches-a-restaurant-discovery-app-powered-by-where-people-actually-eat/",
-      "category_tag_zh": "#AI应用",
-      "scrapedAt": "2026-06-11T04:21:21.028Z"
-    },
-    {
-      "id": "tc-cybersecurity-researchers-arent-happy-about-the-gu",
-      "source": "TechCrunch",
-      "image": "",
-      "title": "Cybersecurity researchers aren’t happy about the guardrails on Anthropic’s Fable",
-      "title_zh": "Cybersecurity researchers aren’t happy about the guardrails on Anthropic’s Fable",
-      "publishedAt": "2026-06-10T15:41:22.000Z",
-      "snippet": "Cybersecurity researchers are complaining that Anthropic's new model Fable has guardrails that are too strict for any cybersecurity work.",
-      "snippet_zh": [
-        "Cybersecurity researchers are complaining that Anthropic's new model Fable has guardrails that are too strict for any cybersecurity work."
-      ],
-      "url": "https://techcrunch.com/2026/06/10/cybersecurity-researchers-arent-happy-about-the-guardrails-on-anthropics-fable/",
-      "category_tag_zh": "#AI应用",
-      "scrapedAt": "2026-06-11T04:21:21.029Z"
-    },
-    {
-      "id": "tc-why-enterprise-ai-will-be-a-major-focus-at-vivatec",
-      "source": "TechCrunch",
-      "image": "",
-      "title": "Why enterprise AI will be a major focus at VivaTech 2026",
-      "title_zh": "Why enterprise AI will be a major focus at VivaTech 2026",
-      "publishedAt": "2026-06-10T15:16:00.000Z",
-      "snippet": "While Silicon Valley continues pushing aggressively into large language models and consumer-facing AI products, many European companies are focused on applying AI to complex systems already embedded into everyday life.",
-      "snippet_zh": [
-        "While Silicon Valley continues pushing aggressively into large language models and consumer-facing AI products, many European companies are focused on applying AI to complex systems already embedded into everyday life."
-      ],
-      "url": "https://techcrunch.com/2026/06/10/why-enterprise-ai-will-be-a-major-focus-at-vivatech-2026/",
-      "category_tag_zh": "#AI创业",
-      "scrapedAt": "2026-06-11T04:21:21.029Z"
-    },
-    {
-      "id": "tc-datadog-veterans-launch-ai-coding-startup-niteshif",
-      "source": "TechCrunch",
-      "image": "",
-      "title": "Datadog veterans launch AI coding startup Niteshift on a bet against Big AI lock-in",
-      "title_zh": "Datadog veterans launch AI coding startup Niteshift on a bet against Big AI lock-in",
-      "publishedAt": "2026-06-10T15:00:00.000Z",
-      "snippet": "AI coding agent startup Niteshift has raised a $7 million seed round from a who's who of angels. It's betting companies will want power over, not lock-in with model makers.",
-      "snippet_zh": [
-        "AI coding agent startup Niteshift has raised a $7 million seed round from a who's who of angels. It's betting companies will want power over, not lock-in with model makers."
-      ],
-      "url": "https://techcrunch.com/2026/06/10/datadog-veterans-launch-ai-coding-startup-niteshift-on-a-bet-against-big-ai-lock-in/",
-      "category_tag_zh": "#AI应用",
-      "scrapedAt": "2026-06-11T04:21:21.029Z"
-    },
-    {
-      "id": "tc-the-three-hard-tech-moonshots-fueling-spacexs-unbe",
-      "source": "TechCrunch",
-      "image": "",
-      "title": "The three hard-tech moonshots fueling SpaceX’s unbelievable IPO",
-      "title_zh": "The three hard-tech moonshots fueling SpaceX’s unbelievable IPO",
-      "publishedAt": "2026-06-10T14:48:01.000Z",
-      "snippet": "Most of the value in SpaceX's IPO is effectively a call option on the company's ambitious space data center plans.",
-      "snippet_zh": [
-        "Most of the value in SpaceX's IPO is effectively a call option on the company's ambitious space data center plans."
-      ],
-      "url": "https://techcrunch.com/2026/06/10/the-three-hard-tech-moonshots-fueling-spacexs-unbelievable-ipo/",
-      "category_tag_zh": "#AI应用",
-      "scrapedAt": "2026-06-11T04:21:21.029Z"
-    },
-    {
-      "id": "tc-pinterest-bets-on-creators-with-amazon-storefront-",
-      "source": "TechCrunch",
-      "image": "",
-      "title": "Pinterest bets on creators with Amazon Storefront integration",
-      "title_zh": "Pinterest bets on creators with Amazon Storefront integration",
-      "publishedAt": "2026-06-10T14:34:45.000Z",
-      "snippet": "Pinterest is adding support for Amazon Storefronts, allowing creators to earn affiliate commissions more easily while showcasing their product recommendations in one place.",
-      "snippet_zh": [
-        "Pinterest is adding support for Amazon Storefronts, allowing creators to earn affiliate commissions more easily while showcasing their product recommendations in one place."
-      ],
-      "url": "https://techcrunch.com/2026/06/10/pinterest-bets-on-creators-with-amazon-storefront-integration/",
-      "category_tag_zh": "#AI应用",
-      "scrapedAt": "2026-06-11T04:21:21.029Z"
-    },
-    {
-      "id": "tc-warner-music-acquires-ai-attribution-startup-suree",
-      "source": "TechCrunch",
-      "image": "",
-      "title": "Warner Music acquires AI attribution startup Sureel AI",
-      "title_zh": "Warner Music acquires AI attribution startup Sureel AI",
-      "publishedAt": "2026-06-10T14:31:30.000Z",
-      "snippet": "Through the acquisition, WMG aims to better track when its artists' work is used in AI-generated content or for training AI models.",
-      "snippet_zh": [
-        "Through the acquisition, WMG aims to better track when its artists' work is used in AI-generated content or for training AI models."
-      ],
-      "url": "https://techcrunch.com/2026/06/10/warner-music-acquires-ai-attribution-startup-sureel-ai/",
-      "category_tag_zh": "#AI应用",
-      "scrapedAt": "2026-06-11T04:21:21.030Z"
-    },
-    {
-      "id": "vb-5-platforms-to-sell-amazon-and-ebay-gift-cards-for",
-      "source": "Ventureburn",
-      "image": "https://ventureburn.com/wp-content/uploads/2026/06/oavb11620261.jpg",
-      "title": "5 Platforms to Sell Amazon and eBay Gift Cards for Cash in Nigeria",
-      "title_zh": "5 Platforms to Sell Amazon and eBay Gift Cards for Cash in Nigeria",
-      "publishedAt": "2026-06-11T02:33:40.000Z",
-      "snippet": "You have an unused $100 Amazon gift card you want to urgently convert to cash to sort some bills. However, with so many gift card platforms claiming “high rates” and\nThe post 5 Platforms to Sell Amazon and eBay Gift Cards for Cash in Nigeria  appeared first on Ventureburn.",
-      "snippet_zh": [
-        "You have an unused $100 Amazon gift card you want to urgently convert to cash to sort some bills. However, with so many gift card platforms claiming “high rates” and\nThe post 5 Platforms to Sell Amazon and eBay Gift Cards for Cash in Nigeria  appeared first on Ventureburn."
-      ],
-      "url": "https://ventureburn.com/5-platforms-to-sell-amazon-and-ebay-gift-cards-for-cash-in-nigeria/",
-      "category_tag_zh": "#科技创投",
-      "scrapedAt": "2026-06-11T04:22:25.067Z"
-    },
-    {
-      "id": "vb-f2-raises-24m-to-expand-ai-for-private-credit",
-      "source": "Ventureburn",
-      "image": "https://ventureburn.com/wp-content/uploads/2026/06/F2.jpg",
-      "title": "F2 Raises $24M to Expand AI for Private Credit",
-      "title_zh": "F2 Raises $24M to Expand AI for Private Credit",
-      "publishedAt": "2026-06-10T20:42:12.000Z",
-      "snippet": "F2 has raised $24 million in total equity funding. The financing includes a fresh $14 million seed round specifically geared toward expanding the company’s LLM-agnostic operating system designed exclusively for\nThe post F2 Raises $24M to Expand AI for Private Credit appeared first on Ventureburn.",
-      "snippet_zh": [
-        "F2 has raised $24 million in total equity funding. The financing includes a fresh $14 million seed round specifically geared toward expanding the company’s LLM-agnostic operating system designed exclusively for\nThe post F2 Raises $24M to Expand AI for Private Credit appeared first on Ventureburn."
-      ],
-      "url": "https://ventureburn.com/f2-raises-24m-to-expand-ai-for-private-credit/",
-      "category_tag_zh": "#科技创投",
-      "scrapedAt": "2026-06-11T04:22:25.069Z"
-    },
-    {
-      "id": "vb-ares-secures-12-7-billion-in-major-fundraising-pus",
-      "source": "Ventureburn",
-      "image": "https://ventureburn.com/wp-content/uploads/2026/06/coins-in-a-jar-2-1024x683.jpg",
-      "title": "Ares Secures $12.7 Billion in Major Fundraising Push",
-      "title_zh": "Ares Secures $12.7 Billion in Major Fundraising Push",
-      "publishedAt": "2026-06-10T15:28:50.000Z",
-      "snippet": "Ares Management Corporation (ARES) has successfully raised $12.7 billion over the last nine months for its asset-based finance strategy. The major focus of the fundraising is the first and final\nThe post Ares Secures $12.7 Billion in Major Fundraising Push appeared first on Ventureburn.",
-      "snippet_zh": [
-        "Ares Management Corporation (ARES) has successfully raised $12.7 billion over the last nine months for its asset-based finance strategy. The major focus of the fundraising is the first and final\nThe post Ares Secures $12.7 Billion in Major Fundraising Push appeared first on Ventureburn."
-      ],
-      "url": "https://ventureburn.com/ares-secures-12-7-billion-in-major-fundraising-push/",
-      "category_tag_zh": "#科技创投",
-      "scrapedAt": "2026-06-11T04:22:25.070Z"
-    },
-    {
-      "id": "vb-two-desperados-secures-20m-ua-financing",
-      "source": "Ventureburn",
-      "image": "https://ventureburn.com/wp-content/uploads/2026/06/a-futuristic-poster-showcases-a-vibrant-_0xUQXpKFUjaiYzRMUSj44Q_rQFGRW-8RLKofSdqKi4F-Q.png",
-      "title": "Two Desperados Secures $20M UA Financing to Scale Mobile Gaming Portfolio",
-      "title_zh": "Two Desperados Secures $20M UA Financing to Scale Mobile Gaming Portfolio",
-      "publishedAt": "2026-06-10T14:05:39.000Z",
-      "snippet": "Two Desperados Secures $20M to Accelerate Global User Growth Two Desperados has secured $20 million in user acquisition financing. PvX Partners is leading the investment. Two Desperados is a Belgrade-based\nThe post Two Desperados Secures $20M UA Financing to Scale Mobile Gaming Portfolio appeared fi",
-      "snippet_zh": [
-        "Two Desperados Secures $20M to Accelerate Global User Growth Two Desperados has secured $20 million in user acquisition financing. PvX Partners is leading the investment. Two Desperados is a Belgrade-based\nThe post Two Desperados Secures $20M UA Financing to Scale Mobile Gaming Portfolio appeared fi"
-      ],
-      "url": "https://ventureburn.com/two-desperados-secures-20m-ua-financing/",
-      "category_tag_zh": "#科技创投",
-      "scrapedAt": "2026-06-11T04:22:25.072Z"
-    },
-    {
-      "id": "vb-tensorwave-raises-350m-to-expand-ai-infrastructure",
-      "source": "Ventureburn",
-      "image": "https://ventureburn.com/wp-content/uploads/2026/06/AI-5-1024x576.jpg",
-      "title": "TensorWave Raises $350M to Expand AI Infrastructure",
-      "title_zh": "TensorWave Raises $350M to Expand AI Infrastructure",
-      "publishedAt": "2026-06-10T14:01:36.000Z",
-      "snippet": "TensorWave has successfully closed a $350 million Series B funding round. The investment, which values the three-year-old startup at $1.55 billion, signals a major market bet on AMD-powered infrastructure as\nThe post TensorWave Raises $350M to Expand AI Infrastructure appeared first on Ventureburn.",
-      "snippet_zh": [
-        "TensorWave has successfully closed a $350 million Series B funding round. The investment, which values the three-year-old startup at $1.55 billion, signals a major market bet on AMD-powered infrastructure as\nThe post TensorWave Raises $350M to Expand AI Infrastructure appeared first on Ventureburn."
-      ],
-      "url": "https://ventureburn.com/tensorwave-raises-350m-to-expand-ai-infrastructure/",
-      "category_tag_zh": "#科技创投",
-      "scrapedAt": "2026-06-11T04:22:25.073Z"
-    },
-    {
-      "id": "vb-evotrex-raises-30m-series-a-rv-development",
-      "source": "Ventureburn",
-      "image": "https://ventureburn.com/wp-content/uploads/2026/06/create-a-futuristic-neon-lit-poster-with_i_epItGwVh6xo1wm96JJ8g_ZLVFHnx0QBahCwZPZ_vKqQ_cover.png",
-      "title": "Evotrex Raises $30M Series A to Advance Power-Generating RV Development",
-      "title_zh": "Evotrex Raises $30M Series A to Advance Power-Generating RV Development",
-      "publishedAt": "2026-06-10T13:34:10.000Z",
-      "snippet": "Evotrex Raises $30M to Accelerate Hybrid RV Production Evotrex has raised $30 million in Series A funding. The round included GSR United Capital, Forebright Concerto Capital, Unique Capital, Pegasus Capital,\nThe post Evotrex Raises $30M Series A to Advance Power-Generating RV Development appeared fi",
-      "snippet_zh": [
-        "Evotrex Raises $30M to Accelerate Hybrid RV Production Evotrex has raised $30 million in Series A funding. The round included GSR United Capital, Forebright Concerto Capital, Unique Capital, Pegasus Capital,\nThe post Evotrex Raises $30M Series A to Advance Power-Generating RV Development appeared fi"
-      ],
-      "url": "https://ventureburn.com/evotrex-raises-30m-series-a-rv-development/",
-      "category_tag_zh": "#科技创投",
-      "scrapedAt": "2026-06-11T04:22:25.076Z"
-    },
-    {
-      "id": "vb-cyera-secures-600-million-to-expand-ai-trust-layer",
-      "source": "Ventureburn",
-      "image": "https://ventureburn.com/wp-content/uploads/2026/06/Cyera_Logo.jpg",
-      "title": "Cyera Secures $600 Million to Expand AI Trust Layer",
-      "title_zh": "Cyera Secures $600 Million to Expand AI Trust Layer",
-      "publishedAt": "2026-06-10T13:12:38.000Z",
-      "snippet": "Cyera, an enterprise data security company, announced a $600 million late-stage round to fund the expansion of its artificial intelligence security platform. The large investment pushed Cyera’s valuation to $12\nThe post Cyera Secures $600 Million to Expand AI Trust Layer appeared first on Venturebur",
-      "snippet_zh": [
-        "Cyera, an enterprise data security company, announced a $600 million late-stage round to fund the expansion of its artificial intelligence security platform. The large investment pushed Cyera’s valuation to $12\nThe post Cyera Secures $600 Million to Expand AI Trust Layer appeared first on Venturebur"
-      ],
-      "url": "https://ventureburn.com/cyera-secures-600-million-to-expand-ai-trust-layer/",
-      "category_tag_zh": "#科技创投",
-      "scrapedAt": "2026-06-11T04:22:25.078Z"
-    },
-    {
-      "id": "vb-binance-xaut-trading-tournament-guide",
-      "source": "Ventureburn",
-      "image": "https://chainplay.gg/wp-content/uploads/2026/06/unnamed-48.jpg",
-      "title": "Binance XAUT Trading Tournament is Live: Join the Trading Tournament & Share in 400K USDC",
-      "title_zh": "Binance XAUT Trading Tournament is Live: Join the Trading Tournament & Share in 400K USDC",
-      "publishedAt": "2026-06-10T13:02:15.000Z",
-      "snippet": "Binance has launched a new trading competition for crypto users looking to trade gold-backed digital assets. The Binance XAUT Trading Tournament gives eligible participants a chance to share a massive\nThe post Binance XAUT Trading Tournament is Live: Join the Trading Tournament & Share in 400K USDC ",
-      "snippet_zh": [
-        "Binance has launched a new trading competition for crypto users looking to trade gold-backed digital assets. The Binance XAUT Trading Tournament gives eligible participants a chance to share a massive\nThe post Binance XAUT Trading Tournament is Live: Join the Trading Tournament & Share in 400K USDC "
-      ],
-      "url": "https://ventureburn.com/binance-xaut-trading-tournament-guide/",
-      "category_tag_zh": "#科技创投",
-      "scrapedAt": "2026-06-11T04:22:25.081Z"
-    },
-    {
-      "id": "vb-alta-ares-raises-50m-air-defence-ai",
-      "source": "Ventureburn",
-      "image": "https://ventureburn.com/wp-content/uploads/2026/06/create-a-futuristic-neon-lit-poster-with_W3o4vYxjXNakhCWhTGSiIw_RBKGGpKER_iAON73mv35tQ_cover.png",
-      "title": "Alta Ares Raises €50M to Scale AI-Powered Air Defence Systems",
-      "title_zh": "Alta Ares Raises €50M to Scale AI-Powered Air Defence Systems",
-      "publishedAt": "2026-06-10T12:23:17.000Z",
-      "snippet": "Alta Ares Raises €50M to Expand Defence Technology Production Alta Ares has announced raising $50 million. Air Street Capital led this round of financing with Cherry Ventures, OTB Ventures and\nThe post Alta Ares Raises €50M to Scale AI-Powered Air Defence Systems appeared first on Ventureburn.",
-      "snippet_zh": [
-        "Alta Ares Raises €50M to Expand Defence Technology Production Alta Ares has announced raising $50 million. Air Street Capital led this round of financing with Cherry Ventures, OTB Ventures and\nThe post Alta Ares Raises €50M to Scale AI-Powered Air Defence Systems appeared first on Ventureburn."
-      ],
-      "url": "https://ventureburn.com/alta-ares-raises-50m-air-defence-ai/",
-      "category_tag_zh": "#科技创投",
-      "scrapedAt": "2026-06-11T04:22:25.083Z"
-    },
-    {
-      "id": "vb-cameramatics-raises-49m-ai-fleet-expansion",
-      "source": "Ventureburn",
-      "image": "https://ventureburn.com/wp-content/uploads/2026/06/a-futuristic-poster-showcases-a-dynamic-_iGz8pJKBVruOCivb08VYxg_oTHUdPa_RLuRRu6mM9MI8w.png",
-      "title": "CameraMatics Raises €49M to Expand AI Fleet Intelligence Platform",
-      "title_zh": "CameraMatics Raises €49M to Expand AI Fleet Intelligence Platform",
-      "publishedAt": "2026-06-10T11:52:16.000Z",
-      "snippet": "CameraMatics Raises €49M to Accelerate Global Expansion CameraMatics has raised up to €49 million in new funding. The investment was led by Blume Equity. The Ireland Strategic Investment Fund and\nThe post CameraMatics Raises €49M to Expand AI Fleet Intelligence Platform appeared first on Ventureburn",
-      "snippet_zh": [
-        "CameraMatics Raises €49M to Accelerate Global Expansion CameraMatics has raised up to €49 million in new funding. The investment was led by Blume Equity. The Ireland Strategic Investment Fund and\nThe post CameraMatics Raises €49M to Expand AI Fleet Intelligence Platform appeared first on Ventureburn"
-      ],
-      "url": "https://ventureburn.com/cameramatics-raises-49m-ai-fleet-expansion/",
-      "category_tag_zh": "#科技创投",
-      "scrapedAt": "2026-06-11T04:22:25.083Z"
-    },
-    {
-      "id": "tv-bluesky-communities-at-protocol-atmosphere-reddit",
-      "source": "The Verge",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/07/STK133_BLUESKY__C.webp?quality=90&strip=all&crop=0,0,100,100",
-      "title": "Bluesky is getting ‘communities’",
-      "title_zh": "Bluesky is getting ‘communities’",
-      "publishedAt": "2026-06-11T00:05:48.000Z",
-      "snippet": "Bluesky will be getting \"communities,\" which will function as smaller spaces where you can \"go deeper and hang out with people who care about the same stuff\" sometime this year, according to head of product Alex Benzer. They will be built on the decentralized AT Protocol that underpins Bluesky, with",
-      "snippet_zh": [
-        "Bluesky will be getting \"communities,\" which will function as smaller spaces where you can \"go deeper and hang out with people who care about the same stuff\" sometime this year, according to head of product Alex Benzer. They will be built on the decentralized AT Protocol that underpins Bluesky, with"
-      ],
-      "url": "https://www.theverge.com/tech/948215/bluesky-communities-at-protocol-atmosphere-reddit",
-      "category_tag_zh": "#科技前沿",
-      "scrapedAt": "2026-06-11T04:23:36.336Z"
-    },
-    {
-      "id": "tv-framework-laptop-13-pro-delay-shipment-july-august",
-      "source": "The Verge",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/DSC00210_71b030.webp?quality=90&strip=all&crop=0,0,100,100",
-      "title": "Framework delays its first Laptop 13 Pro shipments by a month",
-      "title_zh": "Framework delays its first Laptop 13 Pro shipments by a month",
-      "publishedAt": "2026-06-10T23:12:51.000Z",
-      "snippet": "The Framework Laptop 13 Pro is delayed. The new 13-inch Framework flagship was set to launch in June, but shipments from the first batch are now expected in July - and there's still a chance some shipments could slip to early August. If you're not in the first batch, your Laptop 13 Pro shifts from [",
-      "snippet_zh": [
-        "The Framework Laptop 13 Pro is delayed. The new 13-inch Framework flagship was set to launch in June, but shipments from the first batch are now expected in July - and there's still a chance some shipments could slip to early August. If you're not in the first batch, your Laptop 13 Pro shifts from ["
-      ],
-      "url": "https://www.theverge.com/gadgets/948044/framework-laptop-13-pro-delay-shipment-july-august",
-      "category_tag_zh": "#科技前沿",
-      "scrapedAt": "2026-06-11T04:23:36.337Z"
-    },
-    {
-      "id": "tv-apple-siri-ai-chatbot-personality",
-      "source": "The Verge",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/videoframe_13193.png?quality=90&strip=all&crop=0,0,100,100",
-      "title": "Apple’s new Siri AI knows when to shut up",
-      "title_zh": "Apple’s new Siri AI knows when to shut up",
-      "publishedAt": "2026-06-10T22:52:17.000Z",
-      "snippet": "Apple's new Siri AI is finally here, and so far, it seems like it works. I have access and have been messing around with it, and my biggest impression so far is that Siri AI is quite curt - which I mean as a compliment. Many AI chatbots are cheery and wordy. While a more […]",
-      "snippet_zh": [
-        "Apple's new Siri AI is finally here, and so far, it seems like it works. I have access and have been messing around with it, and my biggest impression so far is that Siri AI is quite curt - which I mean as a compliment. Many AI chatbots are cheery and wordy. While a more […]"
-      ],
-      "url": "https://www.theverge.com/tech/948155/apple-siri-ai-chatbot-personality",
-      "category_tag_zh": "#科技前沿",
-      "scrapedAt": "2026-06-11T04:23:36.338Z"
-    },
-    {
-      "id": "tv-passports-data-breach-cannabis-club-systems-nefos-",
-      "source": "The Verge",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25514575/passport_2040.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "title": "Nearly a million passports and photo IDs were left unprotected on the public internet",
-      "title_zh": "Nearly a million passports and photo IDs were left unprotected on the public internet",
-      "publishedAt": "2026-06-10T21:55:00.000Z",
-      "snippet": "Typing a few letters and numbers into my web browser, I find myself gaping at the identity documents of complete strangers. The passport of a young woman from Germany. The passport of a man from Spain with glasses resting on his head. The front and back of another man's driver's license, a stereotyp",
-      "snippet_zh": [
-        "Typing a few letters and numbers into my web browser, I find myself gaping at the identity documents of complete strangers. The passport of a young woman from Germany. The passport of a man from Spain with glasses resting on his head. The front and back of another man's driver's license, a stereotyp"
-      ],
-      "url": "https://www.theverge.com/tech/947157/passports-data-breach-cannabis-club-systems-nefos-puffpal",
-      "category_tag_zh": "#科技前沿",
-      "scrapedAt": "2026-06-11T04:23:36.339Z"
-    },
-    {
-      "id": "tv-microsoft-xbox-layoffs-reset-asha-sharma",
-      "source": "The Verge",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25485118/STK048_XBOX2__C.png?quality=90&strip=all&crop=0,0,100,100",
-      "title": "Xbox warns of a &#8216;reset&#8217; as it prepares for layoffs",
-      "title_zh": "Xbox warns of a &#8216;reset&#8217; as it prepares for layoffs",
-      "publishedAt": "2026-06-10T21:28:53.000Z",
-      "snippet": "Microsoft's Xbox division will be hit with significant layoffs next month, according to people familiar with Microsoft's plans. The company has been preparing for the layoffs internally for weeks, with Xbox CEO Asha Sharma hinting about \"making hard choices\" last month. Sources suggest the cuts coul",
-      "snippet_zh": [
-        "Microsoft's Xbox division will be hit with significant layoffs next month, according to people familiar with Microsoft's plans. The company has been preparing for the layoffs internally for weeks, with Xbox CEO Asha Sharma hinting about \"making hard choices\" last month. Sources suggest the cuts coul"
-      ],
-      "url": "https://www.theverge.com/games/948142/microsoft-xbox-layoffs-reset-asha-sharma",
-      "category_tag_zh": "#科技前沿",
-      "scrapedAt": "2026-06-11T04:23:36.340Z"
-    },
-    {
-      "id": "tv-apple-google-add-support-for-thread-1-4",
-      "source": "The Verge",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/IMG_7137.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "title": "Apple, Google add support for Thread 1.4",
-      "title_zh": "Apple, Google add support for Thread 1.4",
-      "publishedAt": "2026-06-10T20:25:46.000Z",
-      "snippet": "Apple and Google are updating their smart home streaming devices to Thread 1.4. As first spotted by Matter Alpha and 9to5 Google, the latest spec has arrived on compatible Apple TVs in the tvOS 27 developer beta and the Google TV Streamer through a software update. This lays the groundwork for these",
-      "snippet_zh": [
-        "Apple and Google are updating their smart home streaming devices to Thread 1.4. As first spotted by Matter Alpha and 9to5 Google, the latest spec has arrived on compatible Apple TVs in the tvOS 27 developer beta and the Google TV Streamer through a software update. This lays the groundwork for these"
-      ],
-      "url": "https://www.theverge.com/tech/947888/apple-google-add-support-for-thread-1-4",
-      "category_tag_zh": "#科技前沿",
-      "scrapedAt": "2026-06-11T04:23:36.341Z"
-    },
-    {
-      "id": "tv-kalshi-prediction-markets-insider-trading",
-      "source": "The Verge",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/02/STKB383_KALSHI_D.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "title": "Kalshi adds required employment verification for some prediction market bets",
-      "title_zh": "Kalshi adds required employment verification for some prediction market bets",
-      "publishedAt": "2026-06-10T20:18:16.000Z",
-      "snippet": "The CFTC is considering its first regulation for prediction markets, as arrests over \"insider trading\" on everything from military operations to Google Search data continue to stack up. As CoinDesk reports, a notice of proposed rulemaking says \"the proposal would establish a structured framework for",
-      "snippet_zh": [
-        "The CFTC is considering its first regulation for prediction markets, as arrests over \"insider trading\" on everything from military operations to Google Search data continue to stack up. As CoinDesk reports, a notice of proposed rulemaking says \"the proposal would establish a structured framework for"
-      ],
-      "url": "https://www.theverge.com/business/948083/kalshi-prediction-markets-insider-trading",
-      "category_tag_zh": "#科技前沿",
-      "scrapedAt": "2026-06-11T04:23:36.342Z"
-    },
-    {
-      "id": "tv-fable-wont-answer-basic-biology-questions",
-      "source": "The Verge",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/STKB364_CLAUDE_2_A_3800fc.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "title": "Claude Fable won’t answer basic biology questions",
-      "title_zh": "Claude Fable won’t answer basic biology questions",
-      "publishedAt": "2026-06-10T18:43:34.000Z",
-      "snippet": "Anthropic just released Claude Fable 5, calling it the most powerful AI model it has ever made widely available and praising its skills in biology, among others. But the model won't answer basic biology questions - the kind you'd expect a high schooler to handle. Instead, it hands off the query to t",
-      "snippet_zh": [
-        "Anthropic just released Claude Fable 5, calling it the most powerful AI model it has ever made widely available and praising its skills in biology, among others. But the model won't answer basic biology questions - the kind you'd expect a high schooler to handle. Instead, it hands off the query to t"
-      ],
-      "url": "https://www.theverge.com/ai-artificial-intelligence/947973/fable-wont-answer-basic-biology-questions",
-      "category_tag_zh": "#AI应用",
-      "scrapedAt": "2026-06-11T04:23:36.342Z"
-    },
-    {
-      "id": "tv-college-speakers-booed-ai-microsoft",
-      "source": "The Verge",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/11/STK095_MICROSOFT_CVirginia_A.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "title": "Microsoft, like, totally gets why students are booing AI-pilled graduation speakers",
-      "title_zh": "Microsoft, like, totally gets why students are booing AI-pilled graduation speakers",
-      "publishedAt": "2026-06-10T17:45:11.000Z",
-      "snippet": "New college graduates around the country have been booing and heckling commencement speakers who hype up AI. Microsoft would like everyone to talk it out. In a blog post running more than 3,100 words, Microsoft vice chair and president Brad Smith addressed the recent spate of viral clips from gradua",
-      "snippet_zh": [
-        "New college graduates around the country have been booing and heckling commencement speakers who hype up AI. Microsoft would like everyone to talk it out. In a blog post running more than 3,100 words, Microsoft vice chair and president Brad Smith addressed the recent spate of viral clips from gradua"
-      ],
-      "url": "https://www.theverge.com/news/947831/college-speakers-booed-ai-microsoft",
-      "category_tag_zh": "#AI应用",
-      "scrapedAt": "2026-06-11T04:23:36.343Z"
-    },
-    {
-      "id": "tv-washington-ai-network-honors-2026-midterms",
-      "source": "The Verge",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/gettyimages-2279697530.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "title": "The future of AI regulation is courting the strangest, most anxious bedfellows",
-      "title_zh": "The future of AI regulation is courting the strangest, most anxious bedfellows",
-      "publishedAt": "2026-06-10T17:38:00.000Z",
-      "snippet": "Hello and welcome to Regulator, a newsletter for Verge subscribers about tech politics, tech influence, and tech shenanigans in Washington, DC. (If you're not a subscriber, you can get on board here.) We're back after a two-week hiatus, during most of which I was gallivanting in the Netherlands for ",
-      "snippet_zh": [
-        "Hello and welcome to Regulator, a newsletter for Verge subscribers about tech politics, tech influence, and tech shenanigans in Washington, DC. (If you're not a subscriber, you can get on board here.) We're back after a two-week hiatus, during most of which I was gallivanting in the Netherlands for "
-      ],
-      "url": "https://www.theverge.com/column/947838/washington-ai-network-honors-2026-midterms",
-      "category_tag_zh": "#AI应用",
-      "scrapedAt": "2026-06-11T04:23:36.343Z"
-    },
-    {
-      "id": "vb-tensorwave-350m-ai-infrastructure",
-      "source": "Ventureburn",
-      "image": "https://ventureburn.com/wp-content/uploads/2026/06/TensorWave-Raises-350M-768x431.jpeg",
-      "title": "TensorWave Raises $350M to Expand AMD-Powered AI Cloud Infrastructure",
-      "title_zh": "TensorWave 融资3.5亿美元，打造无Nvidia架构AI云",
-      "publishedAt": "2026-06-11T00:00:00.000Z",
-      "snippet": "TensorWave raised $350M Series B at $1.55B valuation, building Nvidia-free AI cloud powered exclusively by AMD Instinct accelerators with 8000+ GPU liquid-cooled clusters.",
-      "snippet_zh": [
-        "TensorWave 完成3.5亿美元B轮融资，估值15.5亿美元，打造全球最大AMD液冷GPU训练集群。",
-        "完全摒弃Nvidia架构，独家采用AMD Instinct加速卡与ROCm开源软件栈构建AI云。",
-        "与TECfusions签署多阶段容量协议，目标实现1吉瓦级数据中心电力部署。"
-      ],
-      "url": "https://ventureburn.com/tensorwave-raises-350m-to-expand-ai-infrastructure/",
-      "category_tag_zh": "#AI基础设施",
-      "scrapedAt": "2026-06-11T06:00:00.000Z"
-    },
-    {
-      "id": "vb-cyera-600m-ai-trust-layer",
-      "source": "Ventureburn",
-      "image": "https://ventureburn.com/wp-content/uploads/2026/06/Cyera-Secures-600M-768x431.jpeg",
-      "title": "Cyera Secures $600 Million to Expand AI Trust Layer",
-      "title_zh": "Cyera 融资6亿美元，扩展AI信任安全层",
-      "publishedAt": "2026-06-11T00:00:00.000Z",
-      "snippet": "Cyera has secured $600 million in funding to expand its AI trust layer platform, strengthening data security and governance for enterprise AI deployments.",
-      "snippet_zh": [
-        "Cyera 获6亿美元融资，扩展AI信任层平台，强化企业AI部署的数据安全与治理能力。"
-      ],
-      "url": "https://ventureburn.com/cyera-secures-600-million-to-expand-ai-trust-layer/",
-      "category_tag_zh": "#AI安全",
-      "scrapedAt": "2026-06-11T06:00:00.000Z"
-    },
-    {
-      "id": "vb-alta-ares-50m-air-defence-ai",
-      "source": "Ventureburn",
-      "image": "https://ventureburn.com/wp-content/uploads/2026/06/Minerva-Raises-20M-3-768x431.png",
-      "title": "Alta Ares Raises €50M to Scale AI-Powered Air Defence Systems",
-      "title_zh": "Alta Ares 融资5000万欧元，扩展AI驱动防空拦截系统",
-      "publishedAt": "2026-06-11T00:00:00.000Z",
-      "snippet": "Alta Ares has raised €50M to scale its AI-powered interceptor system designed to counter drones and missile threats in defence and intelligence applications.",
-      "snippet_zh": [
-        "Alta Ares 获5000万欧元融资，扩展AI驱动拦截系统，应对无人机与导弹威胁。"
-      ],
-      "url": "https://ventureburn.com/alta-ares-raises-50m-air-defence-ai/",
-      "category_tag_zh": "#AI国防",
-      "scrapedAt": "2026-06-11T06:00:00.000Z"
-    },
-    {
-      "id": "vb-cameramatics-49m-ai-fleet",
-      "source": "Ventureburn",
-      "image": "https://ventureburn.com/wp-content/uploads/2026/06/Minerva-Raises-20M-768x431.png",
-      "title": "CameraMatics Raises €49M to Expand AI Fleet Intelligence Platform",
-      "title_zh": "CameraMatics 融资4900万欧元，扩展AI车队智能平台",
-      "publishedAt": "2026-06-11T00:00:00.000Z",
-      "snippet": "CameraMatics has raised €49M in funding to expand its AI-powered fleet intelligence platform for international markets, enhancing vehicle tracking and safety analytics.",
-      "snippet_zh": [
-        "CameraMatics 获4900万欧元融资，扩展AI驱动车队智能平台至国际市场，增强车辆追踪与安全分析。"
-      ],
-      "url": "https://ventureburn.com/cameramatics-raises-49m-ai-fleet-expansion/",
-      "category_tag_zh": "#AI车队",
-      "scrapedAt": "2026-06-11T06:00:00.000Z"
-    },
-    {
-      "id": "vb-f2-24m-ai-private-credit",
-      "source": "Ventureburn",
-      "image": "https://ventureburn.com/wp-content/uploads/2026/06/F2-Raises-24M-768x431.jpeg",
-      "title": "F2 Raises $24M to Expand AI for Private Credit",
-      "title_zh": "F2 融资2400万美元，AI赋能私人信贷分析",
-      "publishedAt": "2026-06-11T00:00:00.000Z",
-      "snippet": "F2 has raised $24M to expand its AI-powered platform for private credit analysis and decision-making, bringing automation to credit risk assessment.",
-      "snippet_zh": [
-        "F2 获2400万美元融资，扩展AI驱动的私人信贷分析与决策平台，自动化信贷风险评估。"
-      ],
-      "url": "https://ventureburn.com/f2-raises-24m-to-expand-ai-for-private-credit/",
-      "category_tag_zh": "#AI金融",
-      "scrapedAt": "2026-06-11T06:00:00.000Z"
-    },
-    {
-      "id": "vb-best-ai-tools-students-2026",
-      "source": "Ventureburn",
-      "image": "https://ventureburn.com/wp-content/uploads/2026/06/Collate-Raises-95M-1-1-768x431.jpeg",
-      "title": "10 Best AI Tools for Students to Boost Grades in 2026",
-      "title_zh": "2026年提升学业的10大AI工具盘点",
-      "publishedAt": "2026-06-08T00:00:00.000Z",
-      "snippet": "From NotebookLM to Speechify, the best AI tools for students in 2026 cover study notes, research, writing, coding, and presentations — 92% of students already use AI in their routines.",
-      "snippet_zh": [
-        "从NotebookLM到Speechify，2026年最强AI学习工具覆盖笔记、研究、写作、编程与演示全场景。",
-        "92%学生和84%教职人员已在教育流程中使用AI，超三分之二高校正在制定AI使用指南。",
-        "核心推荐：NotebookLM智能笔记、ScholarAI学术研究、Grammarly写作润色、AskCodi编程辅助。"
-      ],
-      "url": "https://ventureburn.com/best-ai-tools-for-students/",
-      "category_tag_zh": "#AI教育",
-      "scrapedAt": "2026-06-11T06:00:00.000Z"
-    },
-    {
-      "id": "vb-best-ai-music-generators-2026",
-      "source": "Ventureburn",
-      "image": "https://ventureburn.com/wp-content/uploads/2026/06/Collate-Raises-95M-1-1-768x431.jpeg",
-      "title": "10 Best AI Music Generators to Make Custom Tracks in 2026",
-      "title_zh": "2026年10大AI音乐生成器盘点",
-      "publishedAt": "2026-06-08T00:00:00.000Z",
-      "snippet": "In 2026, Suno v5 generates a complete song with vocals and instrumentation in under 30 seconds. The best AI music generators have moved from novelty to daily infrastructure for creators.",
-      "snippet_zh": [
-        "Suno v5可在30秒内生成包含人声和编曲的完整歌曲，AI音乐生成已从新奇玩具变为创作者日常基础设施。"
-      ],
-      "url": "https://ventureburn.com/best-ai-music-generators/",
-      "category_tag_zh": "#AI音乐",
-      "scrapedAt": "2026-06-11T06:00:00.000Z"
-    },
-    {
-      "id": "vb-developers-root-access-power-control",
-      "source": "Ventureburn",
-      "image": "https://ventureburn.com/wp-content/uploads/2026/06/oavb562026ft1-768x431.jpeg",
-      "title": "Why Developers Prefer Root Access: Power & Control",
-      "title_zh": "开发者为何钟爱Root权限：掌控力与自由度",
-      "publishedAt": "2026-06-05T00:00:00.000Z",
-      "snippet": "Having complete control over your server environment is a must-have for developers. VPS with root access enables custom software setups, advanced security control, and system-level performance tuning.",
-      "snippet_zh": [
-        "Root权限让开发者完全掌控服务器环境，自定义软件安装、防火墙规则与系统级性能调优。",
-        "Docker、Kubernetes部署与渗透测试工具运行均需Root级系统权限支撑。",
-        "现代开发中，VPS Root访问是开发者构建快速、可靠部署流程的关键配置。"
-      ],
-      "url": "https://ventureburn.com/why-developers-prefer-root-access-power-control/",
-      "category_tag_zh": "#开发者工具",
-      "scrapedAt": "2026-06-11T06:00:00.000Z"
     },
     {
       "id": "vb-ai-statistic-2026-market-playbook",
