@@ -1,12 +1,12 @@
 {
   "date": "2026-06-11",
   "kind": "news",
-  "count": 110,
+  "count": 154,
   "items": [
     {
       "id": "tc-opendoors-india-exit-is-fueling-a-bigger-conversat",
       "source": "TechCrunch",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/06/opendoor.jpg?w=563",
+      "image": "",
       "title": "Opendoor’s India exit is fueling a bigger conversation about AI and outsourcing",
       "title_zh": "Opendoor’s India exit is fueling a bigger conversation about AI and outsourcing",
       "publishedAt": "2026-06-11T04:02:19.000Z",
@@ -16,12 +16,12 @@
       ],
       "url": "https://techcrunch.com/2026/06/10/opendoors-india-exit-is-fueling-a-bigger-conversation-about-ai-and-outsourcing/",
       "category_tag_zh": "#AI应用",
-      "scrapedAt": "2026-06-11T04:21:21.024Z"
+      "scrapedAt": "2026-06-11T13:08:10.556Z"
     },
     {
       "id": "tc-anthropics-dario-amodei-has-just-one-direct-report",
       "source": "TechCrunch",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/06/Dario-2280291125.jpg?w=562",
+      "image": "",
       "title": "Anthropic’s Dario Amodei has just one direct report",
       "title_zh": "Anthropic’s Dario Amodei has just one direct report",
       "publishedAt": "2026-06-11T03:53:06.000Z",
@@ -31,7 +31,7 @@
       ],
       "url": "https://techcrunch.com/2026/06/10/anthropics-dario-amodei-has-just-one-direct-report/",
       "category_tag_zh": "#AI应用",
-      "scrapedAt": "2026-06-11T04:21:21.024Z"
+      "scrapedAt": "2026-06-11T13:08:10.557Z"
     },
     {
       "id": "vb-5-platforms-to-sell-amazon-and-ebay-gift-cards-for",
@@ -46,7 +46,7 @@
       ],
       "url": "https://ventureburn.com/5-platforms-to-sell-amazon-and-ebay-gift-cards-for-cash-in-nigeria/",
       "category_tag_zh": "#科技创投",
-      "scrapedAt": "2026-06-11T04:22:25.067Z"
+      "scrapedAt": "2026-06-11T13:08:11.126Z"
     },
     {
       "id": "tv-bluesky-communities-at-protocol-atmosphere-reddit",
@@ -61,7 +61,7 @@
       ],
       "url": "https://www.theverge.com/tech/948215/bluesky-communities-at-protocol-atmosphere-reddit",
       "category_tag_zh": "#科技前沿",
-      "scrapedAt": "2026-06-11T04:23:36.336Z"
+      "scrapedAt": "2026-06-11T13:09:22.596Z"
     },
     {
       "id": "vb-tensorwave-350m-ai-infrastructure",
@@ -173,7 +173,7 @@
     {
       "id": "tc-xai-fired-an-engineer-who-raised-alarms-about-grok",
       "source": "TechCrunch",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/03/grok-getty.jpg?w=563",
+      "image": "",
       "title": "xAI fired an engineer who raised alarms about Grok safety, new lawsuit claims",
       "title_zh": "xAI fired an engineer who raised alarms about Grok safety, new lawsuit claims",
       "publishedAt": "2026-06-10T22:31:19.000Z",
@@ -183,7 +183,7 @@
       ],
       "url": "https://techcrunch.com/2026/06/10/xai-fired-an-engineer-who-raised-alarms-about-grok-safety-new-lawsuit-claims/",
       "category_tag_zh": "#AI应用",
-      "scrapedAt": "2026-06-11T04:21:21.024Z"
+      "scrapedAt": "2026-06-11T13:08:10.557Z"
     },
     {
       "id": "tv-passports-data-breach-cannabis-club-systems-nefos-",
@@ -228,7 +228,7 @@
       ],
       "url": "https://ventureburn.com/f2-raises-24m-to-expand-ai-for-private-credit/",
       "category_tag_zh": "#科技创投",
-      "scrapedAt": "2026-06-11T04:22:25.069Z"
+      "scrapedAt": "2026-06-11T13:08:11.157Z"
     },
     {
       "id": "tv-apple-google-add-support-for-thread-1-4",
@@ -248,7 +248,7 @@
     {
       "id": "tc-fresh-off-bond-sale-amazon-borrows-17-5-billion-fr",
       "source": "TechCrunch",
-      "image": "https://techcrunch.com/wp-content/uploads/2025/06/GettyImages-2217247219.jpg?w=562",
+      "image": "",
       "title": "Fresh off bond sale, Amazon borrows $17.5B from banks as AI spending continues",
       "title_zh": "Fresh off bond sale, Amazon borrows $17.5B from banks as AI spending continues",
       "publishedAt": "2026-06-10T20:19:31.000Z",
@@ -258,7 +258,7 @@
       ],
       "url": "https://techcrunch.com/2026/06/10/fresh-off-bond-sale-amazon-borrows-17-5-billion-from-banks-as-ai-spending-continues/",
       "category_tag_zh": "#AI应用",
-      "scrapedAt": "2026-06-11T04:21:21.026Z"
+      "scrapedAt": "2026-06-11T13:08:10.561Z"
     },
     {
       "id": "tv-kalshi-prediction-markets-insider-trading",
@@ -323,7 +323,7 @@
     {
       "id": "tc-ai-pilled-firms-spend-7500-per-employee-each-month",
       "source": "TechCrunch",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/06/GettyImages-2253659638.jpg?w=426",
+      "image": "",
       "title": "‘AI-pilled’ firms spend $7,500 per employee each month on AI",
       "title_zh": "‘AI-pilled’ firms spend $7,500 per employee each month on AI",
       "publishedAt": "2026-06-10T17:07:35.000Z",
@@ -333,12 +333,12 @@
       ],
       "url": "https://techcrunch.com/2026/06/10/ai-pilled-firms-spend-7500-per-employee-each-month-on-ai/",
       "category_tag_zh": "#AI应用",
-      "scrapedAt": "2026-06-11T04:21:21.027Z"
+      "scrapedAt": "2026-06-11T13:08:10.564Z"
     },
     {
       "id": "tc-how-memory-tools-can-make-ai-models-worse",
       "source": "TechCrunch",
-      "image": "https://techcrunch.com/wp-content/uploads/2023/02/GettyImages-1240239605.jpg?w=562",
+      "image": "",
       "title": "How memory tools can make AI models worse",
       "title_zh": "How memory tools can make AI models worse",
       "publishedAt": "2026-06-10T16:11:08.000Z",
@@ -348,12 +348,12 @@
       ],
       "url": "https://techcrunch.com/2026/06/10/how-memory-tools-can-make-ai-models-worse/",
       "category_tag_zh": "#AI应用",
-      "scrapedAt": "2026-06-11T04:21:21.028Z"
+      "scrapedAt": "2026-06-11T13:08:10.565Z"
     },
     {
       "id": "tc-cybersecurity-researchers-arent-happy-about-the-gu",
       "source": "TechCrunch",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/06/anthropic-claude-fable.jpg?w=564",
+      "image": "",
       "title": "Cybersecurity researchers aren’t happy about the guardrails on Anthropic’s Fable",
       "title_zh": "Cybersecurity researchers aren’t happy about the guardrails on Anthropic’s Fable",
       "publishedAt": "2026-06-10T15:41:22.000Z",
@@ -363,7 +363,7 @@
       ],
       "url": "https://techcrunch.com/2026/06/10/cybersecurity-researchers-arent-happy-about-the-guardrails-on-anthropics-fable/",
       "category_tag_zh": "#AI应用",
-      "scrapedAt": "2026-06-11T04:21:21.029Z"
+      "scrapedAt": "2026-06-11T13:08:10.567Z"
     },
     {
       "id": "vb-ares-secures-12-7-billion-in-major-fundraising-pus",
@@ -383,7 +383,7 @@
     {
       "id": "tc-datadog-veterans-launch-ai-coding-startup-niteshif",
       "source": "TechCrunch",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/06/sajid_conor_photo_niteshift_launch.jpg?w=464",
+      "image": "",
       "title": "Datadog veterans launch AI coding startup Niteshift on a bet against Big AI lock-in",
       "title_zh": "Datadog veterans launch AI coding startup Niteshift on a bet against Big AI lock-in",
       "publishedAt": "2026-06-10T15:00:00.000Z",
@@ -393,12 +393,12 @@
       ],
       "url": "https://techcrunch.com/2026/06/10/datadog-veterans-launch-ai-coding-startup-niteshift-on-a-bet-against-big-ai-lock-in/",
       "category_tag_zh": "#AI应用",
-      "scrapedAt": "2026-06-11T04:21:21.029Z"
+      "scrapedAt": "2026-06-11T13:08:10.569Z"
     },
     {
       "id": "tc-the-three-hard-tech-moonshots-fueling-spacexs-unbe",
       "source": "TechCrunch",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/06/SpaceXAIsatrender.jpg?w=668",
+      "image": "",
       "title": "The three hard-tech moonshots fueling SpaceX’s unbelievable IPO",
       "title_zh": "The three hard-tech moonshots fueling SpaceX’s unbelievable IPO",
       "publishedAt": "2026-06-10T14:48:01.000Z",
@@ -408,7 +408,7 @@
       ],
       "url": "https://techcrunch.com/2026/06/10/the-three-hard-tech-moonshots-fueling-spacexs-unbelievable-ipo/",
       "category_tag_zh": "#AI应用",
-      "scrapedAt": "2026-06-11T04:21:21.029Z"
+      "scrapedAt": "2026-06-11T13:08:10.569Z"
     },
     {
       "id": "tc-warner-music-acquires-ai-attribution-startup-suree",
@@ -573,7 +573,7 @@
       ],
       "url": "https://www.gizchina.com/realme-4/realme-p4r-5g-launches-in-india-three-days-of-battery-military-grade-durability",
       "category_tag_zh": "#科技",
-      "scrapedAt": "2026-06-11T03:51:39.214Z"
+      "scrapedAt": "2026-06-11T13:08:17.016Z"
     },
     {
       "id": "giz-oneplus-turbo-6x-and-turbo-6x-pro-launch-today-in-",
@@ -588,7 +588,7 @@
       ],
       "url": "https://www.gizchina.com/oneplus-phones/oneplus-turbo-6x-and-turbo-6x-pro-launch-today-in-china",
       "category_tag_zh": "#科技",
-      "scrapedAt": "2026-06-11T03:51:41.576Z"
+      "scrapedAt": "2026-06-11T13:08:18.822Z"
     },
     {
       "id": "giz-samsung-galaxy-a27-european-pricing-leaked-and-it-",
@@ -603,7 +603,7 @@
       ],
       "url": "https://www.gizchina.com/samsung/samsung-galaxy-a27-european-pricing-leaked-and-it-costs-more",
       "category_tag_zh": "#科技",
-      "scrapedAt": "2026-06-11T03:51:44.217Z"
+      "scrapedAt": "2026-06-11T13:08:20.599Z"
     },
     {
       "id": "giz-huawei-is-building-a-widescreen-candybar-flagship",
@@ -618,7 +618,7 @@
       ],
       "url": "https://www.gizchina.com/huawei/huawei-is-building-a-widescreen-candybar-flagship",
       "category_tag_zh": "#科技",
-      "scrapedAt": "2026-06-11T03:51:46.566Z"
+      "scrapedAt": "2026-06-11T13:08:22.333Z"
     },
     {
       "id": "tc-meta-signs-first-ai-data-center-deal-in-india-with",
@@ -648,7 +648,7 @@
       ],
       "url": "https://www.gizchina.com/ai/google-ai-plus-is-now-499-a-month-and-you-get-double-the-storage",
       "category_tag_zh": "#科技",
-      "scrapedAt": "2026-06-11T03:51:48.935Z"
+      "scrapedAt": "2026-06-11T13:08:24.357Z"
     },
     {
       "id": "tc-google-just-fired-a-warning-shot-in-the-ai-subscri",
@@ -828,7 +828,7 @@
       ],
       "url": "https://www.gizchina.com/xiaomi-phones/xiaomi-mimo-v25-pro-just-hit-1000-tokens-per-second",
       "category_tag_zh": "#科技",
-      "scrapedAt": "2026-06-11T03:51:51.279Z"
+      "scrapedAt": "2026-06-11T13:08:26.142Z"
     },
     {
       "id": "giz-android-17-is-almost-here-heres-when-your-pixel-ge",
@@ -843,7 +843,7 @@
       ],
       "url": "https://www.gizchina.com/android-devices/android-17-is-almost-here-heres-when-your-pixel-gets-it",
       "category_tag_zh": "#科技",
-      "scrapedAt": "2026-06-11T03:51:53.144Z"
+      "scrapedAt": "2026-06-11T13:08:27.907Z"
     },
     {
       "id": "giz-apple-carplay-gets-video-streaming-and-smarter-sir",
@@ -858,7 +858,7 @@
       ],
       "url": "https://www.gizchina.com/ios/apple-carplay-gets-video-streaming-and-smarter-siri-in-ios-27",
       "category_tag_zh": "#科技",
-      "scrapedAt": "2026-06-11T03:51:55.562Z"
+      "scrapedAt": "2026-06-11T13:08:29.629Z"
     },
     {
       "id": "giz-ios-27-leaves-very-little-to-the-imagination-about",
@@ -873,7 +873,7 @@
       ],
       "url": "https://www.gizchina.com/apple/ios-27-leaves-very-little-to-the-imagination-about-apples-foldable-iphone",
       "category_tag_zh": "#科技",
-      "scrapedAt": "2026-06-11T03:51:58.203Z"
+      "scrapedAt": "2026-06-11T13:08:31.362Z"
     },
     {
       "id": "tc-why-apples-slow-and-steady-ai-bet-is-starting-to-l",
@@ -903,7 +903,7 @@
       ],
       "url": "https://www.gizchina.com/apple/watchos-27-announced-with-dynamic-app-grid-new-gesture-controls-and-smarter-features",
       "category_tag_zh": "#科技",
-      "scrapedAt": "2026-06-11T03:52:00.663Z"
+      "scrapedAt": "2026-06-11T13:08:33.157Z"
     },
     {
       "id": "giz-ios-27-and-ipados-27-announced-apple-unveils-new-s",
@@ -918,7 +918,7 @@
       ],
       "url": "https://www.gizchina.com/apple/ios-27-and-ipados-27-announced-apple-unveils-new-siri-ai-and-the-biggest-apple-intelligence-upgrade-yet",
       "category_tag_zh": "#科技",
-      "scrapedAt": "2026-06-11T03:52:03.026Z"
+      "scrapedAt": "2026-06-11T13:08:35.238Z"
     },
     {
       "id": "tc-mercors-brendan-foody-calls-out-sequoia-over-dual-",
@@ -1008,7 +1008,7 @@
       ],
       "url": "https://www.gizchina.com/microsoft/xbox-series-x25-limited-edition-is-official-and-its-in-translucent-green",
       "category_tag_zh": "#科技",
-      "scrapedAt": "2026-06-11T03:52:06.083Z"
+      "scrapedAt": "2026-06-11T13:08:37.010Z"
     },
     {
       "id": "giz-infinix-hot-70-pro-5g-leaks-with-dot-matrix-displa",
@@ -1023,7 +1023,7 @@
       ],
       "url": "https://www.gizchina.com/infinix/infinix-hot-70-pro-5g-leaks-with-dot-matrix-display-dimensity-7100-6000mah-battery",
       "category_tag_zh": "#科技",
-      "scrapedAt": "2026-06-11T03:52:08.542Z"
+      "scrapedAt": "2026-06-11T13:08:38.857Z"
     },
     {
       "id": "giz-redmi-k100-pro-now-we-know-everything",
@@ -1038,7 +1038,7 @@
       ],
       "url": "https://www.gizchina.com/redmi-phones/redmi-k100-pro-now-we-know-everything",
       "category_tag_zh": "#科技",
-      "scrapedAt": "2026-06-11T03:52:10.669Z"
+      "scrapedAt": "2026-06-11T13:08:40.580Z"
     },
     {
       "id": "giz-oneplus-turbo-6x-series-official-2-phones-2-chipse",
@@ -1053,7 +1053,7 @@
       ],
       "url": "https://www.gizchina.com/oneplus-phones/oneplus-turbo-6x-series-official-2-phones-2-chipsets-2-batteries-both-under-150",
       "category_tag_zh": "#科技",
-      "scrapedAt": "2026-06-11T03:52:12.558Z"
+      "scrapedAt": "2026-06-11T13:08:42.473Z"
     },
     {
       "id": "giz-vivo-x-fold-6-just-showed-up-at-the-french-open",
@@ -1068,7 +1068,7 @@
       ],
       "url": "https://www.gizchina.com/vivo-phones/vivo-x-fold-6-just-showed-up-at-the-french-open",
       "category_tag_zh": "#科技",
-      "scrapedAt": "2026-06-11T03:52:16.349Z"
+      "scrapedAt": "2026-06-11T13:08:44.623Z"
     },
     {
       "id": "vb-best-ai-tools-students-2026",
@@ -1115,7 +1115,7 @@
       ],
       "url": "https://www.gizchina.com/samsung/a-fourth-color-variant-of-the-samsung-galaxy-a27-just-leaked",
       "category_tag_zh": "#科技",
-      "scrapedAt": "2026-06-11T03:52:19.135Z"
+      "scrapedAt": "2026-06-11T13:08:46.339Z"
     },
     {
       "id": "giz-valve-confirms-steam-machine-and-steam-frame-are-c",
@@ -1130,7 +1130,7 @@
       ],
       "url": "https://www.gizchina.com/steam/valve-confirms-steam-machine-and-steam-frame-are-coming-this-summer",
       "category_tag_zh": "#科技",
-      "scrapedAt": "2026-06-11T03:52:21.755Z"
+      "scrapedAt": "2026-06-11T13:08:48.142Z"
     },
     {
       "id": "giz-this-iqoo-neo-12-leak-can-prove-oneplus-so-wrong",
@@ -1145,7 +1145,7 @@
       ],
       "url": "https://www.gizchina.com/iqoo/this-iqoo-neo-12-leak-can-prove-oneplus-so-wrong",
       "category_tag_zh": "#科技",
-      "scrapedAt": "2026-06-11T03:52:24.219Z"
+      "scrapedAt": "2026-06-11T13:08:50.736Z"
     },
     {
       "id": "giz-imagen-ai-review-a-practical-ai-editing-assistant-",
@@ -1160,7 +1160,7 @@
       ],
       "url": "https://www.gizchina.com/sponsored/imagen-ai-review-a-practical-ai-editing-assistant-built-for-efficiency",
       "category_tag_zh": "#科技",
-      "scrapedAt": "2026-06-11T03:52:26.927Z"
+      "scrapedAt": "2026-06-11T13:08:52.711Z"
     },
     {
       "id": "giz-vivo-x500-ultra-drops-10x-zoom-plans",
@@ -1175,7 +1175,7 @@
       ],
       "url": "https://www.gizchina.com/vivo-phones/vivo-x500-ultra-drops-10x-zoom-plans",
       "category_tag_zh": "#科技",
-      "scrapedAt": "2026-06-11T03:52:29.271Z"
+      "scrapedAt": "2026-06-11T13:08:54.470Z"
     },
     {
       "id": "giz-galaxy-s27-pro-battery-leak-suggests-something-unt",
@@ -1190,7 +1190,7 @@
       ],
       "url": "https://www.gizchina.com/samsung/galaxy-s27-pro-battery-leak-suggests-something-unthinkable",
       "category_tag_zh": "#科技",
-      "scrapedAt": "2026-06-11T03:52:31.623Z"
+      "scrapedAt": "2026-06-11T13:08:56.658Z"
     },
     {
       "id": "giz-iphone-18-pro-dummy-units-surface-in-dark-cherry-l",
@@ -1205,7 +1205,7 @@
       ],
       "url": "https://www.gizchina.com/apple/iphone-18-pro-dummy-units-surface-in-dark-cherry-light-blue-black-and-silver",
       "category_tag_zh": "#科技",
-      "scrapedAt": "2026-06-11T03:52:34.058Z"
+      "scrapedAt": "2026-06-11T13:08:58.448Z"
     },
     {
       "id": "giz-oneplus-16-and-iqoo-16-both-launching-in-september",
@@ -1220,7 +1220,7 @@
       ],
       "url": "https://www.gizchina.com/oneplus-phones/oneplus-16-and-iqoo-16-both-launching-in-september",
       "category_tag_zh": "#科技",
-      "scrapedAt": "2026-06-11T03:52:36.435Z"
+      "scrapedAt": "2026-06-11T13:09:00.150Z"
     },
     {
       "id": "giz-redmagic-astra-2-just-cleared-chinese-certificatio",
@@ -1235,7 +1235,7 @@
       ],
       "url": "https://www.gizchina.com/red-magic/redmagic-astra-2-just-cleared-chinese-certification",
       "category_tag_zh": "#科技",
-      "scrapedAt": "2026-06-11T03:52:38.820Z"
+      "scrapedAt": "2026-06-11T13:09:01.993Z"
     },
     {
       "id": "giz-google-just-brought-ai-to-phones-with-2gb-of-ram",
@@ -1250,7 +1250,7 @@
       ],
       "url": "https://www.gizchina.com/google-ai/google-just-brought-ai-to-phones-with-2gb-of-ram",
       "category_tag_zh": "#科技",
-      "scrapedAt": "2026-06-11T03:52:41.360Z"
+      "scrapedAt": "2026-06-11T13:09:03.947Z"
     },
     {
       "id": "giz-xiaomi-17t-series-returns-to-china-on-june-8",
@@ -1265,7 +1265,7 @@
       ],
       "url": "https://www.gizchina.com/xiaomi-phones/xiaomi-17t-series-returns-to-china-on-june-8",
       "category_tag_zh": "#科技",
-      "scrapedAt": "2026-06-11T03:52:44.247Z"
+      "scrapedAt": "2026-06-11T13:09:06.461Z"
     },
     {
       "id": "giz-vivo-x-fold-6-battery-confirmed-at-6900mah-the-big",
@@ -1280,7 +1280,7 @@
       ],
       "url": "https://www.gizchina.com/vivo-phones/vivo-x-fold-6-battery-confirmed-at-6900mah-the-biggest-ever-in-a-vivo-foldable",
       "category_tag_zh": "#科技",
-      "scrapedAt": "2026-06-11T03:52:46.756Z"
+      "scrapedAt": "2026-06-11T13:09:08.182Z"
     },
     {
       "id": "vb-developers-root-access-power-control",
@@ -1312,7 +1312,7 @@
       ],
       "url": "https://www.gizchina.com/honor/honor-magic-v6-officially-launches-globally-pre-orders-open-in-first-markets",
       "category_tag_zh": "#科技",
-      "scrapedAt": "2026-06-11T03:52:49.518Z"
+      "scrapedAt": "2026-06-11T13:09:09.940Z"
     },
     {
       "id": "giz-oppo-and-vivo-are-both-building-200mp-pocket-camer",
@@ -1327,7 +1327,7 @@
       ],
       "url": "https://www.gizchina.com/oppo-phones-2/oppo-and-vivo-are-both-building-200mp-pocket-cameras-dji-could-be-in-trouble",
       "category_tag_zh": "#科技",
-      "scrapedAt": "2026-06-11T03:52:52.285Z"
+      "scrapedAt": "2026-06-11T13:09:12.625Z"
     },
     {
       "id": "giz-motorola-edge-70-pro-launches-with-periscope-camer",
@@ -1342,7 +1342,7 @@
       ],
       "url": "https://www.gizchina.com/motorola-2/motorola-edge-70-pro-launches-with-periscope-camera-50x-zoom-and-6500mah-battery",
       "category_tag_zh": "#科技",
-      "scrapedAt": "2026-06-11T03:52:54.907Z"
+      "scrapedAt": "2026-06-11T13:09:14.650Z"
     },
     {
       "id": "giz-amazfit-balance-3-is-official-21-day-battery-and-a",
@@ -1357,7 +1357,7 @@
       ],
       "url": "https://www.gizchina.com/amazfit-2/amazfit-balance-3-is-official-21-day-battery-and-a-3000-nits-display",
       "category_tag_zh": "#科技",
-      "scrapedAt": "2026-06-11T03:52:57.466Z"
+      "scrapedAt": "2026-06-11T13:09:16.406Z"
     },
     {
       "id": "giz-oneplus-turbo-6x-is-launching-before-june-18-price",
@@ -1372,7 +1372,7 @@
       ],
       "url": "https://www.gizchina.com/oneplus-phones/oneplus-turbo-6x-is-launching-before-june-18-priced-just-under-150",
       "category_tag_zh": "#科技",
-      "scrapedAt": "2026-06-11T03:52:59.819Z"
+      "scrapedAt": "2026-06-11T13:09:18.537Z"
     },
     {
       "id": "giz-realmes-new-beast-is-here-3-days-of-battery-on-one",
@@ -1387,7 +1387,7 @@
       ],
       "url": "https://www.gizchina.com/realme-4/realmes-new-beast-is-here-3-days-of-battery-on-one-charge",
       "category_tag_zh": "#科技",
-      "scrapedAt": "2026-06-11T03:53:02.161Z"
+      "scrapedAt": "2026-06-11T13:09:20.133Z"
     },
     {
       "id": "giz-wps-office-review-2026-a-solid-office-replacement-",
@@ -1402,7 +1402,7 @@
       ],
       "url": "https://www.gizchina.com/sponsored-2/wps-office-review-2026-a-solid-office-replacement-with-ai-features-that-dont-feel-exaggerated",
       "category_tag_zh": "#科技",
-      "scrapedAt": "2026-06-11T03:53:04.623Z"
+      "scrapedAt": "2026-06-11T13:09:22.355Z"
     },
     {
       "id": "giz-red-magic-11s-pro-sets-a-new-antutu-record",
@@ -1417,7 +1417,7 @@
       ],
       "url": "https://www.gizchina.com/red-magic/red-magic-11s-pro-sets-a-new-antutu-record",
       "category_tag_zh": "#科技",
-      "scrapedAt": "2026-06-11T03:53:07.372Z"
+      "scrapedAt": "2026-06-11T13:09:24.532Z"
     },
     {
       "id": "giz-honor-x7e-arrives-quietly-with-a-7500mah-silicon-c",
@@ -1432,7 +1432,7 @@
       ],
       "url": "https://www.gizchina.com/honor/honor-x7e-arrives-quietly-with-a-7500mah-silicon-carbon-battery-at-225",
       "category_tag_zh": "#科技",
-      "scrapedAt": "2026-06-11T03:53:09.694Z"
+      "scrapedAt": "2026-06-11T13:09:27.378Z"
     },
     {
       "id": "giz-samsung-galaxy-z-fold-8-ultra-leaks-three-upgrades",
@@ -1447,7 +1447,7 @@
       ],
       "url": "https://www.gizchina.com/samsung/samsung-galaxy-z-fold-8-ultra-leaks-three-upgrades-same-weight",
       "category_tag_zh": "#科技",
-      "scrapedAt": "2026-06-11T03:53:12.004Z"
+      "scrapedAt": "2026-06-11T13:09:29.395Z"
     },
     {
       "id": "giz-three-flagship-lineups-are-racing-to-september-but",
@@ -1462,7 +1462,7 @@
       ],
       "url": "https://www.gizchina.com/xiaomi-phones/three-flagship-lineups-are-racing-to-september-but-not-all-of-them-will-make-it",
       "category_tag_zh": "#科技",
-      "scrapedAt": "2026-06-11T03:53:14.575Z"
+      "scrapedAt": "2026-06-11T13:09:31.243Z"
     },
     {
       "id": "giz-two-foldables-under-205-grams-one-book-style-one-c",
@@ -1477,7 +1477,7 @@
       ],
       "url": "https://www.gizchina.com/samsung/two-foldables-under-205-grams-one-book-style-one-clamshell",
       "category_tag_zh": "#科技",
-      "scrapedAt": "2026-06-11T03:53:17.162Z"
+      "scrapedAt": "2026-06-11T13:09:33.015Z"
     },
     {
       "id": "giz-huaweis-nova-16-series-pushes-nearlink-into-the-ma",
@@ -1492,7 +1492,7 @@
       ],
       "url": "https://www.gizchina.com/huawei/huaweis-nova-16-series-pushes-nearlink-into-the-mainstream",
       "category_tag_zh": "#科技",
-      "scrapedAt": "2026-06-11T03:53:19.831Z"
+      "scrapedAt": "2026-06-11T13:09:35.950Z"
     },
     {
       "id": "giz-rivian-rejects-apple-carplay-and-android-auto-inst",
@@ -1507,7 +1507,7 @@
       ],
       "url": "https://www.gizchina.com/ai/rivian-rejects-apple-carplay-and-android-auto-instead-chooses-ai-as-the-real-dashboard",
       "category_tag_zh": "#科技",
-      "scrapedAt": "2026-06-11T03:53:22.389Z"
+      "scrapedAt": "2026-06-11T13:09:38.497Z"
     },
     {
       "id": "giz-oppos-10000mah-phone-could-redefine-mid-range-batt",
@@ -1522,7 +1522,7 @@
       ],
       "url": "https://www.gizchina.com/oppo-phones-2/oppos-10000mah-phone-could-redefine-mid-range-battery-life",
       "category_tag_zh": "#科技",
-      "scrapedAt": "2026-06-11T03:53:25.026Z"
+      "scrapedAt": "2026-06-11T13:09:40.771Z"
     },
     {
       "id": "giz-iphone-18-pro-leaks-point-to-a-major-hardware-shif",
@@ -1537,7 +1537,7 @@
       ],
       "url": "https://www.gizchina.com/apple/iphone-18-pro-leaks-point-to-a-major-hardware-shift",
       "category_tag_zh": "#科技",
-      "scrapedAt": "2026-06-11T03:53:26.928Z"
+      "scrapedAt": "2026-06-11T13:09:42.908Z"
     },
     {
       "id": "giz-tesla-fsd-enters-china-at-last",
@@ -1660,6 +1660,666 @@
       "url": "https://ventureburn.com/best-ai-for-coding/",
       "category_tag_zh": "#AI编程",
       "scrapedAt": "2026-06-11T06:00:00.000Z"
+    },
+    {
+      "id": "tc-anthropic-taps-tcs-to-scale-its-enterprise-ai-depl",
+      "source": "TechCrunch",
+      "image": "",
+      "title": "Anthropic taps TCS to scale its enterprise AI deployments",
+      "title_zh": "Anthropic taps TCS to scale its enterprise AI deployments",
+      "publishedAt": "2026-06-11T11:48:55.000Z",
+      "snippet": "The partnership will see TCS creating a business unit focused on deploying Anthropic's AI models to its customers.",
+      "snippet_zh": [
+        "The partnership will see TCS creating a business unit focused on deploying Anthropic's AI models to its customers."
+      ],
+      "url": "https://techcrunch.com/2026/06/11/anthropic-taps-tcs-to-scale-its-enterprise-ai-deployments/",
+      "category_tag_zh": "#AI应用",
+      "scrapedAt": "2026-06-11T13:08:10.556Z"
+    },
+    {
+      "id": "tc-why-andrew-yang-is-building-instead-of-waiting-for",
+      "source": "TechCrunch",
+      "image": "",
+      "title": "Why Andrew Yang is building instead of waiting for Washington",
+      "title_zh": "Why Andrew Yang is building instead of waiting for Washington",
+      "publishedAt": "2026-06-10T22:24:12.000Z",
+      "snippet": "Andrew Yang’s 2020 presidential campaign was based on a warning that automation and AI would hollow out the labor market and concentrate wealth in the hands of a few. At the time, ideas like Universal Basic Income felt fringe. Now Dario Amodei, Sam Altman, and Bernie Sanders are all saying versions ",
+      "snippet_zh": [
+        "Andrew Yang’s 2020 presidential campaign was based on a warning that automation and AI would hollow out the labor market and concentrate wealth in the hands of a few. At the time, ideas like Universal Basic Income felt fringe. Now Dario Amodei, Sam Altman, and Bernie Sanders are all saying versions "
+      ],
+      "url": "https://techcrunch.com/video/why-andrew-yang-is-building-instead-of-waiting-for-washington/",
+      "category_tag_zh": "#AI创业",
+      "scrapedAt": "2026-06-11T13:08:10.558Z"
+    },
+    {
+      "id": "tc-cybercriminals-claim-breach-of-oracle-peoplesoft-s",
+      "source": "TechCrunch",
+      "image": "",
+      "title": "Cybercriminals claim breach of Oracle PeopleSoft servers at 100-plus organizations",
+      "title_zh": "Cybercriminals claim breach of Oracle PeopleSoft servers at 100-plus organizations",
+      "publishedAt": "2026-06-10T21:33:32.000Z",
+      "snippet": "The ShinyHunters hacking gang claims to have compromised the Oracle PeopleSoft servers of more than 100 organizations, including many universities.",
+      "snippet_zh": [
+        "The ShinyHunters hacking gang claims to have compromised the Oracle PeopleSoft servers of more than 100 organizations, including many universities."
+      ],
+      "url": "https://techcrunch.com/2026/06/10/cybercriminals-claim-breach-of-oracle-peoplesoft-servers-at-100-plus-organizations/",
+      "category_tag_zh": "#AI安全",
+      "scrapedAt": "2026-06-11T13:08:10.560Z"
+    },
+    {
+      "id": "tc-everyone-wants-a-piece-of-teslas-battery-business",
+      "source": "TechCrunch",
+      "image": "",
+      "title": "Everyone wants a piece of Tesla’s battery business",
+      "title_zh": "Everyone wants a piece of Tesla’s battery business",
+      "publishedAt": "2026-06-10T20:21:25.000Z",
+      "snippet": "Electricity demand from AI data centers is pushing everyone — including automakers like GM and Ford — into the energy storage business.",
+      "snippet_zh": [
+        "Electricity demand from AI data centers is pushing everyone — including automakers like GM and Ford — into the energy storage business."
+      ],
+      "url": "https://techcrunch.com/2026/06/10/everyone-wants-a-piece-of-teslas-battery-business/",
+      "category_tag_zh": "#清洁能源",
+      "scrapedAt": "2026-06-11T13:08:10.560Z"
+    },
+    {
+      "id": "tc-north-koreans-behind-nearly-half-of-us-tech-indust",
+      "source": "TechCrunch",
+      "image": "",
+      "title": "North Koreans behind nearly half of US tech industry hacks, says CrowdStrike",
+      "title_zh": "North Koreans behind nearly half of US tech industry hacks, says CrowdStrike",
+      "publishedAt": "2026-06-10T19:57:04.000Z",
+      "snippet": "North Korean hackers posing as remote IT workers and recruiters remain a major threat to U.S., European, and Asian companies, accounting for about half of all attacks over the past 12 months.",
+      "snippet_zh": [
+        "North Korean hackers posing as remote IT workers and recruiters remain a major threat to U.S., European, and Asian companies, accounting for about half of all attacks over the past 12 months."
+      ],
+      "url": "https://techcrunch.com/2026/06/10/north-koreans-behind-nearly-half-of-us-tech-industry-hacks-says-crowdstrike/",
+      "category_tag_zh": "#AI安全",
+      "scrapedAt": "2026-06-11T13:08:10.562Z"
+    },
+    {
+      "id": "tc-wing-drone-delivery-might-not-be-a-novelty-anymore",
+      "source": "TechCrunch",
+      "image": "",
+      "title": "Wing drone delivery might not be a novelty anymore",
+      "title_zh": "Wing drone delivery might not be a novelty anymore",
+      "publishedAt": "2026-06-10T19:52:09.000Z",
+      "snippet": "Wing is expanding into seven more U.S. cities through its partnership with Walmart.",
+      "snippet_zh": [
+        "Wing is expanding into seven more U.S. cities through its partnership with Walmart."
+      ],
+      "url": "https://techcrunch.com/2026/06/10/wing-drone-delivery-might-not-be-a-novelty-anymore/",
+      "category_tag_zh": "#科技前沿",
+      "scrapedAt": "2026-06-11T13:08:10.562Z"
+    },
+    {
+      "id": "tc-netflix-expands-revamped-mobile-app-across-asia-an",
+      "source": "TechCrunch",
+      "image": "",
+      "title": "Netflix expands revamped mobile app across Asia and doubles down on kids’ gaming",
+      "title_zh": "Netflix expands revamped mobile app across Asia and doubles down on kids’ gaming",
+      "publishedAt": "2026-06-10T17:13:02.000Z",
+      "snippet": "The media giant is pushing to expand its mobile and gaming business.",
+      "snippet_zh": [
+        "The media giant is pushing to expand its mobile and gaming business."
+      ],
+      "url": "https://techcrunch.com/2026/06/10/netflix-expands-revamped-mobile-app-across-asia-and-doubles-down-on-kids-gaming/",
+      "category_tag_zh": "#AI应用",
+      "scrapedAt": "2026-06-11T13:08:10.563Z"
+    },
+    {
+      "id": "tc-the-indian-government-got-cold-feet-on-starlink-ju",
+      "source": "TechCrunch",
+      "image": "",
+      "title": "The Indian government got cold feet on Starlink just before SpaceX’s IPO",
+      "title_zh": "The Indian government got cold feet on Starlink just before SpaceX’s IPO",
+      "publishedAt": "2026-06-10T16:43:11.000Z",
+      "snippet": "Problems with Starlink's India expansion could challenge SpaceX's IPO growth story.",
+      "snippet_zh": [
+        "Problems with Starlink's India expansion could challenge SpaceX's IPO growth story."
+      ],
+      "url": "https://techcrunch.com/2026/06/10/the-indian-government-got-cold-feet-on-starlink-just-before-spacexs-ipo/",
+      "category_tag_zh": "#太空AI",
+      "scrapedAt": "2026-06-11T13:08:10.564Z"
+    },
+    {
+      "id": "tc-zest-launches-a-restaurant-discovery-app-powered-b",
+      "source": "TechCrunch",
+      "image": "",
+      "title": "Zest launches a restaurant discovery app powered by where people actually eat",
+      "title_zh": "Zest launches a restaurant discovery app powered by where people actually eat",
+      "publishedAt": "2026-06-10T15:53:07.000Z",
+      "snippet": "Backed by Alexis Ohanian’s 776 and Kindred Ventures, Zest uses transaction data and AI to generate restaurant recommendations based on users’ real dining habits and the places they frequent.",
+      "snippet_zh": [
+        "Backed by Alexis Ohanian’s 776 and Kindred Ventures, Zest uses transaction data and AI to generate restaurant recommendations based on users’ real dining habits and the places they frequent."
+      ],
+      "url": "https://techcrunch.com/2026/06/10/zest-launches-a-restaurant-discovery-app-powered-by-where-people-actually-eat/",
+      "category_tag_zh": "#AI应用",
+      "scrapedAt": "2026-06-11T13:08:10.566Z"
+    },
+    {
+      "id": "tc-why-enterprise-ai-will-be-a-major-focus-at-vivatec",
+      "source": "TechCrunch",
+      "image": "",
+      "title": "Why enterprise AI will be a major focus at VivaTech 2026",
+      "title_zh": "Why enterprise AI will be a major focus at VivaTech 2026",
+      "publishedAt": "2026-06-10T15:16:00.000Z",
+      "snippet": "While Silicon Valley continues pushing aggressively into large language models and consumer-facing AI products, many European companies are focused on applying AI to complex systems already embedded into everyday life.",
+      "snippet_zh": [
+        "While Silicon Valley continues pushing aggressively into large language models and consumer-facing AI products, many European companies are focused on applying AI to complex systems already embedded into everyday life."
+      ],
+      "url": "https://techcrunch.com/2026/06/10/why-enterprise-ai-will-be-a-major-focus-at-vivatech-2026/",
+      "category_tag_zh": "#AI创业",
+      "scrapedAt": "2026-06-11T13:08:10.568Z"
+    },
+    {
+      "id": "tc-pinterest-bets-on-creators-with-amazon-storefront-",
+      "source": "TechCrunch",
+      "image": "",
+      "title": "Pinterest bets on creators with Amazon Storefront integration",
+      "title_zh": "Pinterest bets on creators with Amazon Storefront integration",
+      "publishedAt": "2026-06-10T14:34:45.000Z",
+      "snippet": "Pinterest is adding support for Amazon Storefronts, allowing creators to earn affiliate commissions more easily while showcasing their product recommendations in one place.",
+      "snippet_zh": [
+        "Pinterest is adding support for Amazon Storefronts, allowing creators to earn affiliate commissions more easily while showcasing their product recommendations in one place."
+      ],
+      "url": "https://techcrunch.com/2026/06/10/pinterest-bets-on-creators-with-amazon-storefront-integration/",
+      "category_tag_zh": "#AI应用",
+      "scrapedAt": "2026-06-11T13:08:10.570Z"
+    },
+    {
+      "id": "vb-best-ai-tools-for-students",
+      "source": "Ventureburn",
+      "image": "https://ventureburn.com/wp-content/uploads/2026/06/Collate-Raises-95M-1-1-768x431.jpeg",
+      "title": "10 Best AI Tools for Students to Boost Grades in 2026",
+      "title_zh": "10 Best AI Tools for Students to Boost Grades in 2026",
+      "publishedAt": "2026-06-11T13:08:10.748Z",
+      "snippet": "A struggle every student has to go through is finding tools they can use to boost their grades. Luckily, students in 2026 are alive in the most intelligent era in",
+      "snippet_zh": [
+        "A struggle every student has to go through is finding tools they can use to boost their grades. Luckily, students in 2026 are alive in the most intelligent era in"
+      ],
+      "url": "https://ventureburn.com/best-ai-tools-for-students/",
+      "category_tag_zh": "#AI应用",
+      "scrapedAt": "2026-06-11T13:08:10.748Z"
+    },
+    {
+      "id": "vb-best-ai-music-generators",
+      "source": "Ventureburn",
+      "image": "data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20768%20431%22%3E%3C/svg%3E",
+      "title": "10 Best AI Music Generators to Make Custom Tracks in 2026",
+      "title_zh": "10 Best AI Music Generators to Make Custom Tracks in 2026",
+      "publishedAt": "2026-06-11T13:08:10.748Z",
+      "snippet": "In 2026, Suno v5 generates a complete song with vocals and instrumentation in under 30 seconds. The best AI music generators have moved from novelty to daily infrastructure for creators,",
+      "snippet_zh": [
+        "In 2026, Suno v5 generates a complete song with vocals and instrumentation in under 30 seconds. The best AI music generators have moved from novelty to daily infrastructure for creators,"
+      ],
+      "url": "https://ventureburn.com/best-ai-music-generators/",
+      "category_tag_zh": "#AI应用",
+      "scrapedAt": "2026-06-11T13:08:10.748Z"
+    },
+    {
+      "id": "vb-opal-security-raises-23m-ai-access-governance",
+      "source": "Ventureburn",
+      "image": "data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20768%20431%22%3E%3C/svg%3E",
+      "title": "Opal Security Raises $23M to Expand AI-Native Access Governance Platform",
+      "title_zh": "Opal Security Raises $23M to Expand AI-Native Access Governance Platform",
+      "publishedAt": "2026-06-11T13:08:10.748Z",
+      "snippet": "Opal Security Raises $23M to Scale Identity Governance Opal Security has raised $23 million in new funding to fuel rapid growth. The round was led by Greylock and Battery Ventures,",
+      "snippet_zh": [
+        "Opal Security Raises $23M to Scale Identity Governance Opal Security has raised $23 million in new funding to fuel rapid growth. The round was led by Greylock and Battery Ventures,"
+      ],
+      "url": "https://ventureburn.com/opal-security-raises-23m-ai-access-governance/",
+      "category_tag_zh": "#AI应用",
+      "scrapedAt": "2026-06-11T13:08:10.748Z"
+    },
+    {
+      "id": "vb-supabase-raises-500m-series-f-ai-infrastructure",
+      "source": "Ventureburn",
+      "image": "data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20768%20431%22%3E%3C/svg%3E",
+      "title": "Supabase Raises $500M Series F to Expand AI Database Infrastructure",
+      "title_zh": "Supabase Raises $500M Series F to Expand AI Database Infrastructure",
+      "publishedAt": "2026-06-11T13:08:10.748Z",
+      "snippet": "Supabase Raised $500M Series F at $10.5B Valuation Supabase has raised a massive $500M round of Series F funding at a $10.5B post-money valuation. This round was led by Singapore’s",
+      "snippet_zh": [
+        "Supabase Raised $500M Series F at $10.5B Valuation Supabase has raised a massive $500M round of Series F funding at a $10.5B post-money valuation. This round was led by Singapore’s"
+      ],
+      "url": "https://ventureburn.com/supabase-raises-500m-series-f-ai-infrastructure/",
+      "category_tag_zh": "#AI应用",
+      "scrapedAt": "2026-06-11T13:08:10.748Z"
+    },
+    {
+      "id": "vb-why-developers-prefer-root-access-power-control",
+      "source": "Ventureburn",
+      "image": "data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20768%20431%22%3E%3C/svg%3E",
+      "title": "Why Developers Prefer Root Access: Power & Control",
+      "title_zh": "Why Developers Prefer Root Access: Power & Control",
+      "publishedAt": "2026-06-11T13:08:10.748Z",
+      "snippet": "Anyone who has screamed at a server for not allowing editing of a config file can attest to the need for root access. Having complete control over your environment is",
+      "snippet_zh": [
+        "Anyone who has screamed at a server for not allowing editing of a config file can attest to the need for root access. Having complete control over your environment is"
+      ],
+      "url": "https://ventureburn.com/why-developers-prefer-root-access-power-control/",
+      "category_tag_zh": "#AI应用",
+      "scrapedAt": "2026-06-11T13:08:10.748Z"
+    },
+    {
+      "id": "vb-suno-raises-400m-series-d-to-scale-ai-music-creati",
+      "source": "Ventureburn",
+      "image": "data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20768%20431%22%3E%3C/svg%3E",
+      "title": "Suno Raises $400M Series D to Scale AI Music Creation Platform",
+      "title_zh": "Suno Raises $400M Series D to Scale AI Music Creation Platform",
+      "publishedAt": "2026-06-11T13:08:10.748Z",
+      "snippet": "Series D Funding Fuels Suno’s Rapid Global Expansion Suno has raised $400 million in Series D funding. Bond Capital led the round. The company is based in Cambridge, Massachusetts. The",
+      "snippet_zh": [
+        "Series D Funding Fuels Suno’s Rapid Global Expansion Suno has raised $400 million in Series D funding. Bond Capital led the round. The company is based in Cambridge, Massachusetts. The"
+      ],
+      "url": "https://ventureburn.com/suno-raises-400m-series-d-to-scale-ai-music-creation-platform/",
+      "category_tag_zh": "#AI应用",
+      "scrapedAt": "2026-06-11T13:08:10.748Z"
+    },
+    {
+      "id": "vb-best-ai-etfs",
+      "source": "Ventureburn",
+      "image": "data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20768%20431%22%3E%3C/svg%3E",
+      "title": "10 Best AI ETFs to Buy in 2026 (Performance & Reviews)",
+      "title_zh": "10 Best AI ETFs to Buy in 2026 (Performance & Reviews)",
+      "publishedAt": "2026-06-11T13:08:10.748Z",
+      "snippet": "Exchange-traded funds (ETFs) tracking artificial intelligence (AI) products have exploded recently. In 2026, best AI ETFs have pulled in more than $20 billion in net inflows. These ETFs have been",
+      "snippet_zh": [
+        "Exchange-traded funds (ETFs) tracking artificial intelligence (AI) products have exploded recently. In 2026, best AI ETFs have pulled in more than $20 billion in net inflows. These ETFs have been"
+      ],
+      "url": "https://ventureburn.com/best-ai-etfs/",
+      "category_tag_zh": "#AI应用",
+      "scrapedAt": "2026-06-11T13:08:10.748Z"
+    },
+    {
+      "id": "vb-best-ai-resume-builder",
+      "source": "Ventureburn",
+      "image": "data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20768%20431%22%3E%3C/svg%3E",
+      "title": "10 Best AI Resume Builder Tools in 2026 (Tested & Compared)",
+      "title_zh": "10 Best AI Resume Builder Tools in 2026 (Tested & Compared)",
+      "publishedAt": "2026-06-11T13:08:10.748Z",
+      "snippet": "ATS systems now screen out over 80% of resumes before a human ever sees them, according to Qwyse’s 2026 AI resume builder guide. These resume optimization tools don’t just make",
+      "snippet_zh": [
+        "ATS systems now screen out over 80% of resumes before a human ever sees them, according to Qwyse’s 2026 AI resume builder guide. These resume optimization tools don’t just make"
+      ],
+      "url": "https://ventureburn.com/best-ai-resume-builder/",
+      "category_tag_zh": "#AI应用",
+      "scrapedAt": "2026-06-11T13:08:10.748Z"
+    },
+    {
+      "id": "vb-airspeed-raises-20m-series-a-revenue-execution",
+      "source": "Ventureburn",
+      "image": "data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20768%20431%22%3E%3C/svg%3E",
+      "title": "Airspeed Raises $20M Series A to Scale Agent-Native Revenue Execution Platform",
+      "title_zh": "Airspeed Raises $20M Series A to Scale Agent-Native Revenue Execution Platform",
+      "publishedAt": "2026-06-11T13:08:10.749Z",
+      "snippet": "Series A Funding Accelerates Airspeed’s Global Expansion Airspeed has raised $20 million in Series A funding led by DN Capital. The company runs between London and New York, zeroing in",
+      "snippet_zh": [
+        "Series A Funding Accelerates Airspeed’s Global Expansion Airspeed has raised $20 million in Series A funding led by DN Capital. The company runs between London and New York, zeroing in"
+      ],
+      "url": "https://ventureburn.com/airspeed-raises-20m-series-a-revenue-execution/",
+      "category_tag_zh": "#AI应用",
+      "scrapedAt": "2026-06-11T13:08:10.749Z"
+    },
+    {
+      "id": "vb-lassie-raises-35m-ai-small-business-automation",
+      "source": "Ventureburn",
+      "image": "data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20768%20431%22%3E%3C/svg%3E",
+      "title": "Lassie Raises $35M to Expand Autonomous AI for Small Businesses",
+      "title_zh": "Lassie Raises $35M to Expand Autonomous AI for Small Businesses",
+      "publishedAt": "2026-06-11T13:08:10.749Z",
+      "snippet": "Funding Supports Growth and Product Expansion Lassie has raised $35M in a Series A round to scale its autonomous business operations platform, now with $47M in total funding. The round",
+      "snippet_zh": [
+        "Funding Supports Growth and Product Expansion Lassie has raised $35M in a Series A round to scale its autonomous business operations platform, now with $47M in total funding. The round"
+      ],
+      "url": "https://ventureburn.com/lassie-raises-35m-ai-small-business-automation/",
+      "category_tag_zh": "#AI应用",
+      "scrapedAt": "2026-06-11T13:08:10.749Z"
+    },
+    {
+      "id": "vb-neura-robotics-raises-record-1-4b-in-funding-round",
+      "source": "Ventureburn",
+      "image": "https://ventureburn.com/wp-content/uploads/2026/06/robot-hand-1024x737.jpg",
+      "title": "Neura Robotics Raises Record $1.4B in Funding Round",
+      "title_zh": "Neura Robotics Raises Record $1.4B in Funding Round",
+      "publishedAt": "2026-06-11T12:06:52.000Z",
+      "snippet": "Neura Robotics, a leading designer and manufacturer of cognitive robotic systems, has finished a groundbreaking Series C financing of up to $1.4 billion. The significant funding round was the biggest\nThe post Neura Robotics Raises Record $1.4B in Funding Round appeared first on Ventureburn.",
+      "snippet_zh": [
+        "Neura Robotics, a leading designer and manufacturer of cognitive robotic systems, has finished a groundbreaking Series C financing of up to $1.4 billion. The significant funding round was the biggest\nThe post Neura Robotics Raises Record $1.4B in Funding Round appeared first on Ventureburn."
+      ],
+      "url": "https://ventureburn.com/neura-robotics-raises-record-1-4b-in-funding-round/",
+      "category_tag_zh": "#科技创投",
+      "scrapedAt": "2026-06-11T13:08:11.119Z"
+    },
+    {
+      "id": "vb-the-crypto-market-is-changing-faster-than-anyone-e",
+      "source": "Ventureburn",
+      "image": "",
+      "title": "The Crypto Market Is Changing Faster Than Anyone Expected",
+      "title_zh": "The Crypto Market Is Changing Faster Than Anyone Expected",
+      "publishedAt": "2026-06-11T11:44:56.000Z",
+      "snippet": "Few industries evolve as rapidly as cryptocurrency. Investors who regularly follow market analysis on platforms such as Coinspot have witnessed dramatic changes in recent years, but even experienced observers are\nThe post The Crypto Market Is Changing Faster Than Anyone Expected appeared first on Ve",
+      "snippet_zh": [
+        "Few industries evolve as rapidly as cryptocurrency. Investors who regularly follow market analysis on platforms such as Coinspot have witnessed dramatic changes in recent years, but even experienced observers are\nThe post The Crypto Market Is Changing Faster Than Anyone Expected appeared first on Ve"
+      ],
+      "url": "https://ventureburn.com/the-crypto-market-is-changing-faster-than-anyone-expected/",
+      "category_tag_zh": "#科技创投",
+      "scrapedAt": "2026-06-11T13:08:11.122Z"
+    },
+    {
+      "id": "vb-nesto-raises-302m-in-series-e-at-1-47b-valuation",
+      "source": "Ventureburn",
+      "image": "https://ventureburn.com/wp-content/uploads/2026/06/nesto.jpg",
+      "title": "Nesto Raises $302M in Series E at $1.47B Valuation",
+      "title_zh": "Nesto Raises $302M in Series E at $1.47B Valuation",
+      "publishedAt": "2026-06-11T11:32:50.000Z",
+      "snippet": "Nesto, Canada’s fast-expanding digital mortgage lending platform, has completed a huge $302 million Series E funding round. This latest financing will give the fintech firm an enterprise valuation of $1.47\nThe post Nesto Raises $302M in Series E at $1.47B Valuation appeared first on Ventureburn.",
+      "snippet_zh": [
+        "Nesto, Canada’s fast-expanding digital mortgage lending platform, has completed a huge $302 million Series E funding round. This latest financing will give the fintech firm an enterprise valuation of $1.47\nThe post Nesto Raises $302M in Series E at $1.47B Valuation appeared first on Ventureburn."
+      ],
+      "url": "https://ventureburn.com/nesto-raises-302m-in-series-e-at-1-47b-valuation/",
+      "category_tag_zh": "#科技创投",
+      "scrapedAt": "2026-06-11T13:08:11.123Z"
+    },
+    {
+      "id": "vb-best-crypto-lending-platform",
+      "source": "Ventureburn",
+      "image": "https://ventureburn.com/wp-content/uploads/2026/03/Image-from-Nexo-scaled.jpg",
+      "title": "10 Best Crypto Lending Platform Options in 2026 (Ranked)",
+      "title_zh": "10 Best Crypto Lending Platform Options in 2026 (Ranked)",
+      "publishedAt": "2026-06-10T22:00:58.000Z",
+      "snippet": "Finding the best crypto lending platform requires careful daily market research. Many investors seek instant liquidity without selling their precious assets. Users can unlock capital utilising various decentralised and centralised\nThe post 10 Best Crypto Lending Platform Options in 2026 (Ranked) app",
+      "snippet_zh": [
+        "Finding the best crypto lending platform requires careful daily market research. Many investors seek instant liquidity without selling their precious assets. Users can unlock capital utilising various decentralised and centralised\nThe post 10 Best Crypto Lending Platform Options in 2026 (Ranked) app"
+      ],
+      "url": "https://ventureburn.com/best-crypto-lending-platform/",
+      "category_tag_zh": "#科技创投",
+      "scrapedAt": "2026-06-11T13:08:11.131Z"
+    },
+    {
+      "id": "vb-best-crypto-podcasts",
+      "source": "Ventureburn",
+      "image": "https://ventureburn.com/wp-content/uploads/2026/03/best-crypto-podcasts-1.jpeg",
+      "title": "10 Best Crypto Podcasts for News, Trading & Beginners in 2026",
+      "title_zh": "10 Best Crypto Podcasts for News, Trading & Beginners in 2026",
+      "publishedAt": "2026-06-10T22:00:54.000Z",
+      "snippet": "Navigating the fast-paced world of cryptocurrency can feel overwhelming, but tuning into the best crypto podcasts is one of the easiest ways to stay ahead of the curve. Whether you\nThe post 10 Best Crypto Podcasts for News, Trading & Beginners in 2026 appeared first on Ventureburn.",
+      "snippet_zh": [
+        "Navigating the fast-paced world of cryptocurrency can feel overwhelming, but tuning into the best crypto podcasts is one of the easiest ways to stay ahead of the curve. Whether you\nThe post 10 Best Crypto Podcasts for News, Trading & Beginners in 2026 appeared first on Ventureburn."
+      ],
+      "url": "https://ventureburn.com/best-crypto-podcasts/",
+      "category_tag_zh": "#科技创投",
+      "scrapedAt": "2026-06-11T13:08:11.142Z"
+    },
+    {
+      "id": "vb-best-crypto-card",
+      "source": "Ventureburn",
+      "image": "https://ventureburn.com/wp-content/uploads/2026/03/Crypto.com_.jpg",
+      "title": "13 Best Crypto Card Options in 2026: Debit & Credit Ranked",
+      "title_zh": "13 Best Crypto Card Options in 2026: Debit & Credit Ranked",
+      "publishedAt": "2026-06-10T22:00:38.000Z",
+      "snippet": "Crypto isn’t just an investment anymore. Thanks to the rise of the best crypto card in 2026, spending Bitcoin or other coins is almost as easy as using cash or\nThe post 13 Best Crypto Card Options in 2026: Debit & Credit Ranked appeared first on Ventureburn.",
+      "snippet_zh": [
+        "Crypto isn’t just an investment anymore. Thanks to the rise of the best crypto card in 2026, spending Bitcoin or other coins is almost as easy as using cash or\nThe post 13 Best Crypto Card Options in 2026: Debit & Credit Ranked appeared first on Ventureburn."
+      ],
+      "url": "https://ventureburn.com/best-crypto-card/",
+      "category_tag_zh": "#科技创投",
+      "scrapedAt": "2026-06-11T13:08:11.150Z"
+    },
+    {
+      "id": "vb-best-crypto-trading-indicators",
+      "source": "Ventureburn",
+      "image": "https://ventureburn.com/wp-content/uploads/2026/03/RSI.jpg",
+      "title": "10 Best Indicators for Crypto Trading to Maximize Profits in 2026",
+      "title_zh": "10 Best Indicators for Crypto Trading to Maximize Profits in 2026",
+      "publishedAt": "2026-06-10T22:00:31.000Z",
+      "snippet": "Mastering the best indicators for crypto trading can be your secret weapon in the wild crypto market of 2026. Traders can use the indicators to analyze the direction of the\nThe post 10 Best Indicators for Crypto Trading to Maximize Profits in 2026 appeared first on Ventureburn.",
+      "snippet_zh": [
+        "Mastering the best indicators for crypto trading can be your secret weapon in the wild crypto market of 2026. Traders can use the indicators to analyze the direction of the\nThe post 10 Best Indicators for Crypto Trading to Maximize Profits in 2026 appeared first on Ventureburn."
+      ],
+      "url": "https://ventureburn.com/best-crypto-trading-indicators/",
+      "category_tag_zh": "#科技创投",
+      "scrapedAt": "2026-06-11T13:08:11.153Z"
+    },
+    {
+      "id": "vb-midjourney-review",
+      "source": "Ventureburn",
+      "image": "https://ventureburn.com/wp-content/uploads/2026/03/Image-from-MidJourney-1-scaled.jpg",
+      "title": "Midjourney Review 2026: Is It A Good Video & Image AI Generator?",
+      "title_zh": "Midjourney Review 2026: Is It A Good Video & Image AI Generator?",
+      "publishedAt": "2026-06-10T22:00:07.000Z",
+      "snippet": "In this MidJourney review, users frequently wonder, ” How much does MidJourney cost annually today? Answering exactly what is MidJourney? requires looking at core technology. The base MidJourney cost per\nThe post Midjourney Review 2026: Is It A Good Video & Image AI Generator? appeared first on Vent",
+      "snippet_zh": [
+        "In this MidJourney review, users frequently wonder, ” How much does MidJourney cost annually today? Answering exactly what is MidJourney? requires looking at core technology. The base MidJourney cost per\nThe post Midjourney Review 2026: Is It A Good Video & Image AI Generator? appeared first on Vent"
+      ],
+      "url": "https://ventureburn.com/midjourney-review/",
+      "category_tag_zh": "#科技创投",
+      "scrapedAt": "2026-06-11T13:08:11.156Z"
+    },
+    {
+      "id": "tv-cash-app-mobile",
+      "source": "The Verge",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/01_ProductScreen_CashApp_Products.png?quality=90&strip=all&crop=0,0,100,100",
+      "title": "Cash App’s launching a phone service",
+      "title_zh": "Cash App’s launching a phone service",
+      "publishedAt": "2026-06-11T13:00:00.000Z",
+      "snippet": "Cash App's AT&T-based MVNO will offer an unlimited 5G data plan for $40 per month including taxes and fees. The new mobile service is powered by Gigs, the same firm behind the Klarna mobile service that launched last year with the same pricing and is \"rolling out to select users, with broader availa",
+      "snippet_zh": [
+        "Cash App's AT&T-based MVNO will offer an unlimited 5G data plan for $40 per month including taxes and fees. The new mobile service is powered by Gigs, the same firm behind the Klarna mobile service that launched last year with the same pricing and is \"rolling out to select users, with broader availa"
+      ],
+      "url": "https://www.theverge.com/tech/948181/cash-app-mobile",
+      "category_tag_zh": "#科技前沿",
+      "scrapedAt": "2026-06-11T13:09:22.591Z"
+    },
+    {
+      "id": "tv-ikape-cera-portable-espresso-review",
+      "source": "The Verge",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/268530_SUMMER_UPGRADE_WEEK__COFFEE_ADemidova.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "title": "I went to the woods to drink surprisingly great espresso",
+      "title_zh": "I went to the woods to drink surprisingly great espresso",
+      "publishedAt": "2026-06-11T12:30:00.000Z",
+      "snippet": "As summer returns, I'm again reminded of my limits as I head into the great outdoors: I can put up with a heavy, uncomfortable backpack, bug bites, mud, and even bland dehydrated food, but I will not forsake my morning brew. I've tried every imaginable coffee gadget in my half-century of camping. Th",
+      "snippet_zh": [
+        "As summer returns, I'm again reminded of my limits as I head into the great outdoors: I can put up with a heavy, uncomfortable backpack, bug bites, mud, and even bland dehydrated food, but I will not forsake my morning brew. I've tried every imaginable coffee gadget in my half-century of camping. Th"
+      ],
+      "url": "https://www.theverge.com/tech/942873/ikape-cera-portable-espresso-review",
+      "category_tag_zh": "#科技前沿",
+      "scrapedAt": "2026-06-11T13:09:22.591Z"
+    },
+    {
+      "id": "tv-boox-onyx-go-6-gen-ii-android-11-e-reader-google-p",
+      "source": "The Verge",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/booxgo1.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "title": "Boox’s new e-reader could replace your Kindle, Kobo, and digital notepad",
+      "title_zh": "Boox’s new e-reader could replace your Kindle, Kobo, and digital notepad",
+      "publishedAt": "2026-06-11T12:00:00.000Z",
+      "snippet": "Boox has announced a new version of its smallest e-reader that expands the Go 6's functionality to now include note-taking. The new Go 6 (Gen II) sticks with a 6-inch, 300PPI E Ink screen like its predecessor but gets a bump from 2GB to 3GB of RAM and now supports Boox's InkSense Plus stylus, which ",
+      "snippet_zh": [
+        "Boox has announced a new version of its smallest e-reader that expands the Go 6's functionality to now include note-taking. The new Go 6 (Gen II) sticks with a 6-inch, 300PPI E Ink screen like its predecessor but gets a bump from 2GB to 3GB of RAM and now supports Boox's InkSense Plus stylus, which "
+      ],
+      "url": "https://www.theverge.com/tech/947769/boox-onyx-go-6-gen-ii-android-11-e-reader-google-play",
+      "category_tag_zh": "#科技前沿",
+      "scrapedAt": "2026-06-11T13:09:22.592Z"
+    },
+    {
+      "id": "tv-anthropic-claude-fable-invisible-distillation-guar",
+      "source": "The Verge",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/STKB364_CLAUDE_D.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "title": "Anthropic apologizes for invisible Claude Fable guardrails",
+      "title_zh": "Anthropic apologizes for invisible Claude Fable guardrails",
+      "publishedAt": "2026-06-11T11:40:43.000Z",
+      "snippet": "Anthropic has apologized for stealthily throttling its new AI model, Claude Fable 5, with hidden guardrails that undermine both researchers and rivals using it to develop competing systems. The company says it is reversing course and will be more transparent about when the restrictions kick in, even",
+      "snippet_zh": [
+        "Anthropic has apologized for stealthily throttling its new AI model, Claude Fable 5, with hidden guardrails that undermine both researchers and rivals using it to develop competing systems. The company says it is reversing course and will be more transparent about when the restrictions kick in, even"
+      ],
+      "url": "https://www.theverge.com/ai-artificial-intelligence/948280/anthropic-claude-fable-invisible-distillation-guardrail",
+      "category_tag_zh": "#AI应用",
+      "scrapedAt": "2026-06-11T13:09:22.593Z"
+    },
+    {
+      "id": "tv-library-ebook-borrowing-stream-tv-movies-hoopla-ka",
+      "source": "The Verge",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/268530_SUMMER_UPGRADE_WEEK__LIBRARY_ADemidova.png?quality=90&strip=all&crop=0,0,100,100",
+      "title": "The library rules (and so do library streaming services)",
+      "title_zh": "The library rules (and so do library streaming services)",
+      "publishedAt": "2026-06-11T11:30:00.000Z",
+      "snippet": "Summer is almost here, and that means getting outside, having fun in the sun, and touching grass. But if you need to cool down for a bit, allow me to sing the praises of the library. If your local library system is anything like mine, it probably offers a lot of great things for you […]",
+      "snippet_zh": [
+        "Summer is almost here, and that means getting outside, having fun in the sun, and touching grass. But if you need to cool down for a bit, allow me to sing the praises of the library. If your local library system is anything like mine, it probably offers a lot of great things for you […]"
+      ],
+      "url": "https://www.theverge.com/tech/942657/library-ebook-borrowing-stream-tv-movies-hoopla-kanopy-overdrive",
+      "category_tag_zh": "#科技前沿",
+      "scrapedAt": "2026-06-11T13:09:22.594Z"
+    },
+    {
+      "id": "tv-trump-phone-t1-ifixit-teardown-htc-u24-pro",
+      "source": "The Verge",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/trump-mobile-t1-phone-redesign-website-2026.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "title": "iFixit Trump phone teardown confirms it’s an HTC dupe",
+      "title_zh": "iFixit Trump phone teardown confirms it’s an HTC dupe",
+      "publishedAt": "2026-06-11T10:40:21.000Z",
+      "snippet": "After getting its hands on a Trump phone and tearing it apart, iFixit has confirmed what I first reported back in February: the T1 Phone is an almost exact duplicate of the HTC U24 Pro. iFixit partnered with NBC to get hold of the network's media sample of the Trump phone, along with a U24 […]",
+      "snippet_zh": [
+        "After getting its hands on a Trump phone and tearing it apart, iFixit has confirmed what I first reported back in February: the T1 Phone is an almost exact duplicate of the HTC U24 Pro. iFixit partnered with NBC to get hold of the network's media sample of the Trump phone, along with a U24 […]"
+      ],
+      "url": "https://www.theverge.com/gadgets/948262/trump-phone-t1-ifixit-teardown-htc-u24-pro",
+      "category_tag_zh": "#科技前沿",
+      "scrapedAt": "2026-06-11T13:09:22.594Z"
+    },
+    {
+      "id": "tv-youtube-brings-back-private-messaging-feature-avai",
+      "source": "The Verge",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/23986637/acastro_STK092_01.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "title": "YouTube is introducing DMs (again)",
+      "title_zh": "YouTube is introducing DMs (again)",
+      "publishedAt": "2026-06-11T10:08:24.000Z",
+      "snippet": "YouTube is reintroducing private messaging after testing new ways for users to share videos and \"have conversations about them\" last year. In an announcement on its official blog, YouTube says it's now starting to expand the in-app video sharing and messaging feature to users in the US and \"other gl",
+      "snippet_zh": [
+        "YouTube is reintroducing private messaging after testing new ways for users to share videos and \"have conversations about them\" last year. In an announcement on its official blog, YouTube says it's now starting to expand the in-app video sharing and messaging feature to users in the US and \"other gl"
+      ],
+      "url": "https://www.theverge.com/streaming/948256/youtube-brings-back-private-messaging-feature-availability",
+      "category_tag_zh": "#科技前沿",
+      "scrapedAt": "2026-06-11T13:09:22.595Z"
+    },
+    {
+      "id": "tv-ryanair-cma-probe-parents-child-seating-fee",
+      "source": "The Verge",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/gettyimages-2275626011.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "title": "Ryanair is under investigation over charging parents to sit with their kids",
+      "title_zh": "Ryanair is under investigation over charging parents to sit with their kids",
+      "publishedAt": "2026-06-11T08:59:16.000Z",
+      "snippet": "European economy airline Ryanair is under investigation in the UK for charging parents mandatory fees to sit with their children. The Competition and Markets Authority (CMA) said it was looking into whether the seating fees, which may be charging parents for the airline to meet its child safety and ",
+      "snippet_zh": [
+        "European economy airline Ryanair is under investigation in the UK for charging parents mandatory fees to sit with their children. The Competition and Markets Authority (CMA) said it was looking into whether the seating fees, which may be charging parents for the airline to meet its child safety and "
+      ],
+      "url": "https://www.theverge.com/transportation/948244/ryanair-cma-probe-parents-child-seating-fee",
+      "category_tag_zh": "#科技前沿",
+      "scrapedAt": "2026-06-11T13:09:22.595Z"
+    },
+    {
+      "id": "tv-deezer-ai-music-detector-spotify-apple",
+      "source": "The Verge",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/NEW_1200-x-580-pixel-SI-logo-1240x600-1.jpeg?quality=90&strip=all&crop=0,0,100,100",
+      "title": "Deezer launches an AI music detector for other streaming services",
+      "title_zh": "Deezer launches an AI music detector for other streaming services",
+      "publishedAt": "2026-06-11T08:00:00.000Z",
+      "snippet": "Deezer will now scan your playlists on other streaming platforms to detect AI-generated music. Deezer was the first of the big streaming services to start labeling AI-generated music. It even offered its tech to other platforms, but it doesn't seem like it had many buyers. Qobuz launched its own det",
+      "snippet_zh": [
+        "Deezer will now scan your playlists on other streaming platforms to detect AI-generated music. Deezer was the first of the big streaming services to start labeling AI-generated music. It even offered its tech to other platforms, but it doesn't seem like it had many buyers. Qobuz launched its own det"
+      ],
+      "url": "https://www.theverge.com/ai-artificial-intelligence/948153/deezer-ai-music-detector-spotify-apple",
+      "category_tag_zh": "#AI应用",
+      "scrapedAt": "2026-06-11T13:09:22.596Z"
+    },
+    {
+      "id": "giz-honor-magic-v6-is-heading-to-europe-with-a-7-year-",
+      "source": "Gizchina",
+      "image": "https://r.testifier.nl/Acbs8526SDKI/resizing_type:fill/width:1200/height:630/plain/https%3A%2F%2Fs3-newsifier.ams3.digitaloceanspaces.com%2Fgizchina.com%2Fimages%2F2026-03%2Fhonor-magic-v6-69a3f4146ebca.jpg",
+      "title": "Honor Magic V6 Is Heading to Europe — With a 7-Year Update Promise Attached",
+      "title_zh": "Honor Magic V6 Is Heading to Europe — With a 7-Year Update Promise Attached",
+      "publishedAt": "2026-06-11T09:19:00.000Z",
+      "snippet": "Why does Honor's 7-year update promise only apply in the EU and UK? The regulatory answer — and what it means for Magic V6 buyers everywhere else — explained here.",
+      "snippet_zh": [
+        "Why does Honor's 7-year update promise only apply in the EU and UK? The regulatory answer — and what it means for Magic V6 buyers everywhere else — explained here."
+      ],
+      "url": "https://www.gizchina.com/honor-2/honor-magic-v6-is-heading-to-europe-with-a-7-year-update-promise-attached",
+      "category_tag_zh": "#科技",
+      "scrapedAt": "2026-06-11T13:08:05.960Z"
+    },
+    {
+      "id": "giz-insta360-luna-ultra-is-official-dual-leica-lenses-",
+      "source": "Gizchina",
+      "image": "https://r.testifier.nl/Acbs8526SDKI/resizing_type:fill/width:1200/height:630/plain/https%3A%2F%2Fs3-newsifier.ams3.digitaloceanspaces.com%2Fgizchina.com%2Fimages%2F2026-06%2Fimage-1781165109504-6a2a6c70165cc.jpg",
+      "title": "Insta360 Luna Ultra Is Official: Dual Leica Lenses, 8K Video, and a Detachable OLED Screen for $769",
+      "title_zh": "Insta360 Luna Ultra Is Official: Dual Leica Lenses, 8K Video, and a Detachable OLED Screen for $769",
+      "publishedAt": "2026-06-11T07:58:00.000Z",
+      "snippet": "Insta360 Luna Ultra launches June 10 at $769.99 — dual Leica Summicron lenses, 1-inch 8K sensor, detachable OLED remote screen, and 3-axis stabilization in one pocket camera.",
+      "snippet_zh": [
+        "Insta360 Luna Ultra launches June 10 at $769.99 — dual Leica Summicron lenses, 1-inch 8K sensor, detachable OLED remote screen, and 3-axis stabilization in one pocket camera."
+      ],
+      "url": "https://www.gizchina.com/tech/insta360-luna-ultra-is-official-dual-leica-lenses-8k-video-and-a-detachable-oled-screen-for-769",
+      "category_tag_zh": "#科技",
+      "scrapedAt": "2026-06-11T13:08:07.936Z"
+    },
+    {
+      "id": "giz-xiaomi-mix-fold-5-leaks-xring-o3-at-4ghz-and-a-pri",
+      "source": "Gizchina",
+      "image": "https://r.testifier.nl/Acbs8526SDKI/resizing_type:fill/width:1200/height:630/plain/https%3A%2F%2Fs3-newsifier.ams3.digitaloceanspaces.com%2Fgizchina.com%2Fimages%2F2026-06%2Fimage-1781164344923-6a2a693c388e9.jpg",
+      "title": "Xiaomi Mix Fold 5 Leaks: Xring O3 at 4GHz and a price you won't believe",
+      "title_zh": "Xiaomi Mix Fold 5 Leaks: Xring O3 at 4GHz and a price you won't believe",
+      "publishedAt": "2026-06-11T07:47:00.000Z",
+      "snippet": "Xiaomi Mix Fold 5 leaks: CNY 10,000 price, Xring O3 at 4GHz, 200MP camera, 6,000mAh battery, and an August 2026 China-only launch. Here's everything confirmed so far.",
+      "snippet_zh": [
+        "Xiaomi Mix Fold 5 leaks: CNY 10,000 price, Xring O3 at 4GHz, 200MP camera, 6,000mAh battery, and an August 2026 China-only launch. Here's everything confirmed so far."
+      ],
+      "url": "https://www.gizchina.com/xiaomi-phones/xiaomi-mix-fold-5-leaks-xring-o3-at-4ghz-and-a-price-you-wont-believe",
+      "category_tag_zh": "#科技",
+      "scrapedAt": "2026-06-11T13:08:09.672Z"
+    },
+    {
+      "id": "giz-every-realme-phone-expected-to-get-android-17-and-",
+      "source": "Gizchina",
+      "image": "https://r.testifier.nl/Acbs8526SDKI/resizing_type:fill/width:1200/height:630/plain/https%3A%2F%2Fs3-newsifier.ams3.digitaloceanspaces.com%2Fgizchina.com%2Fimages%2F2026-06%2Fimage-1781163335150-6a2a654d1eaa3.jpg",
+      "title": "Every Realme Phone Expected to Get Android 17 and Realme UI 8.0 — The Full List",
+      "title_zh": "Every Realme Phone Expected to Get Android 17 and Realme UI 8.0 — The Full List",
+      "publishedAt": "2026-06-11T07:31:00.000Z",
+      "snippet": "Realme UI 8.0 based on Android 17 arrives around November 2026. The GT 8 Pro is already in beta. Here's every GT, Number, P, C, and Narzo model expected to qualify.",
+      "snippet_zh": [
+        "Realme UI 8.0 based on Android 17 arrives around November 2026. The GT 8 Pro is already in beta. Here's every GT, Number, P, C, and Narzo model expected to qualify."
+      ],
+      "url": "https://www.gizchina.com/realme-4/every-realme-phone-expected-to-get-android-17-and-realme-ui-80-the-full-list",
+      "category_tag_zh": "#科技",
+      "scrapedAt": "2026-06-11T13:08:11.522Z"
+    },
+    {
+      "id": "giz-vivo-x500e-leaks-7500mah-flagship-with-a-dimensity",
+      "source": "Gizchina",
+      "image": "https://r.testifier.nl/Acbs8526SDKI/resizing_type:fill/width:1200/height:630/plain/https%3A%2F%2Fs3-newsifier.ams3.digitaloceanspaces.com%2Fgizchina.com%2Fimages%2F2026-06%2Fvivo-x500-series-makes-first-appearance-with-three-1781162840320-6a2a63663fe24.jpg",
+      "title": "Vivo X500e Leaks: 7,500mAh Flagship With a Dimensity 9500 and a 64MP Periscope",
+      "title_zh": "Vivo X500e Leaks: 7,500mAh Flagship With a Dimensity 9500 and a 64MP Periscope",
+      "publishedAt": "2026-06-11T07:23:00.000Z",
+      "snippet": "Vivo X500e leaks confirm 6.59-inch 1.5K LTPO OLED, Dimensity 9500, 7,500mAh battery, and 64MP periscope — the entry point to Vivo's entire 7,000mAh+ flagship lineup.",
+      "snippet_zh": [
+        "Vivo X500e leaks confirm 6.59-inch 1.5K LTPO OLED, Dimensity 9500, 7,500mAh battery, and 64MP periscope — the entry point to Vivo's entire 7,000mAh+ flagship lineup."
+      ],
+      "url": "https://www.gizchina.com/vivo-phones/vivo-x500e-leaks-7500mah-flagship-with-a-dimensity-9500-and-a-64mp-periscope",
+      "category_tag_zh": "#科技",
+      "scrapedAt": "2026-06-11T13:08:13.330Z"
+    },
+    {
+      "id": "giz-arm-unveils-neural-dawn-a-technical-showcase-for-n",
+      "source": "Gizchina",
+      "image": "https://r.testifier.nl/Acbs8526SDKI/resizing_type:fill/width:1200/height:630/plain/https%3A%2F%2Fs3-newsifier.ams3.digitaloceanspaces.com%2Fgizchina.com%2Fimages%2F2026-06%2Fimage-2026-06-11-011921091-6a2a3755841f5.png",
+      "title": "ARM Unveils Neural Dawn: A Technical Showcase for Next-Generation Mobile GPU Capabilities",
+      "title_zh": "ARM Unveils Neural Dawn: A Technical Showcase for Next-Generation Mobile GPU Capabilities",
+      "publishedAt": "2026-06-11T04:25:00.000Z",
+      "snippet": "Arm announces Neural Dawn, a 2026 Unreal Engine 5.6.1 mobile showcase with MegaLights, neural graphics, and next-gen Mali GPU tech for Android devices.",
+      "snippet_zh": [
+        "Arm announces Neural Dawn, a 2026 Unreal Engine 5.6.1 mobile showcase with MegaLights, neural graphics, and next-gen Mali GPU tech for Android devices."
+      ],
+      "url": "https://www.gizchina.com/arm/arm-unveils-neural-dawn-a-technical-showcase-for-next-generation-mobile-gpu-capabilities",
+      "category_tag_zh": "#科技",
+      "scrapedAt": "2026-06-11T13:08:15.215Z"
     }
   ]
 }
