@@ -100,7 +100,7 @@ export default function App() {
         loadData('startups', setStartupData),
       ]);
 
-      // 深海掘金项目独立加载（之前就在 try-catch 里）
+      // AI 潜在项目独立加载（之前就在 try-catch 里）
       const invLoaded = await loadData('investments', setInvestData);
 
       anyLoaded = cfLoaded || nLoaded || stLoaded || invLoaded;
@@ -359,7 +359,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex space-x-8 overflow-x-auto scrollbar-none py-1">
             
-            {/* Tab 1: 深海掘金项目 */}
+            {/* Tab 1: AI 潜在项目 */}
             <button 
               onClick={() => setCurrentTab('investments')}
               className={`flex items-center gap-2 py-3 px-1 border-b-2 font-semibold text-sm whitespace-nowrap transition-all duration-200 cursor-pointer ${
@@ -369,7 +369,7 @@ export default function App() {
               }`}
             >
               <Sparkles className="w-4 h-4" />
-              深海掘金项目
+              AI 潜在项目
               <span className={`text-[10px] font-mono font-bold px-2 py-0.5 rounded-full transition-colors ${
                 currentTab === 'investments' ? 'bg-emerald-50 text-emerald-600' : 'bg-slate-100 text-slate-500'
               }`}>
@@ -377,7 +377,7 @@ export default function App() {
               </span>
             </button>
 
-            {/* Tab 2: 全球众筹启航 */}
+            {/* Tab 2: 众筹产品发掘 */}
             <button 
               onClick={() => setCurrentTab('crowdfunding')}
               className={`flex items-center gap-2 py-3 px-1 border-b-2 font-semibold text-sm whitespace-nowrap transition-all duration-200 cursor-pointer ${
@@ -387,7 +387,7 @@ export default function App() {
               }`}
             >
               <Rocket className="w-4 h-4" />
-              全球众筹启航
+              众筹产品发掘
               <span className={`text-[10px] font-mono font-bold px-2 py-0.5 rounded-full transition-colors ${
                 currentTab === 'crowdfunding' ? 'bg-emerald-50 text-emerald-600' : 'bg-slate-100 text-slate-500'
               }`}>
@@ -395,7 +395,7 @@ export default function App() {
               </span>
             </button>
 
-            {/* Tab 3: 新锐科技独角 */}
+            {/* Tab 3: YC 独角兽 */}
             <button 
               onClick={() => setCurrentTab('startups')}
               className={`flex items-center gap-2 py-3 px-1 border-b-2 font-semibold text-sm whitespace-nowrap transition-all duration-200 cursor-pointer ${
@@ -405,7 +405,7 @@ export default function App() {
               }`}
             >
               <Building2 className="w-4 h-4" />
-              新锐科技独角
+              YC 独角兽
               <span className={`text-[10px] font-mono font-bold px-2 py-0.5 rounded-full transition-colors ${
                 currentTab === 'startups' ? 'bg-emerald-50 text-emerald-600' : 'bg-slate-100 text-slate-500'
               }`}>
@@ -413,7 +413,7 @@ export default function App() {
               </span>
             </button>
 
-            {/* Tab 4: 硅谷前沿浪潮 */}
+            {/* Tab 4: 硅谷前沿声音 */}
             <button 
               onClick={() => setCurrentTab('news')}
               className={`flex items-center gap-2 py-3 px-1 border-b-2 font-semibold text-sm whitespace-nowrap transition-all duration-200 cursor-pointer ${
@@ -423,7 +423,7 @@ export default function App() {
               }`}
             >
               <Newspaper className="w-4 h-4" />
-              硅谷前沿浪潮
+              硅谷前沿声音
               <span className={`text-[10px] font-mono font-bold px-2 py-0.5 rounded-full transition-colors ${
                 currentTab === 'news' ? 'bg-emerald-50 text-emerald-600' : 'bg-slate-100 text-slate-500'
               }`}>
@@ -438,7 +438,7 @@ export default function App() {
       {/* 主要渲染区域 */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex-grow w-full">
         
-        {/* ===================== TAB 1: 深海掘金项目 ===================== */}
+        {/* ===================== TAB 1: AI 潜在项目 ===================== */}
         {currentTab === 'investments' && (
           <motion.div
             initial={{ opacity: 0, y: 5 }}
@@ -497,14 +497,14 @@ export default function App() {
             ) : (
               <div className="bg-white rounded-xl border border-slate-150 p-12 text-center max-w-lg mx-auto shadow-3xs">
                 <Sparkles className="mx-auto h-12 w-12 text-slate-300" />
-                <h3 className="mt-4 text-sm font-semibold text-slate-900">深海掘金项目数据加载中</h3>
+                <h3 className="mt-4 text-sm font-semibold text-slate-900">AI 潜在项目数据加载中</h3>
                 <p className="mt-1 text-xs text-slate-400">数据需要首次运行爬虫后才能显示，请等待每日自动更新。</p>
               </div>
             )}
           </motion.div>
         )}
 
-        {/* ===================== TAB 2: 全球众筹启航 ===================== */}
+        {/* ===================== TAB 2: 众筹产品发掘 ===================== */}
         {currentTab === 'crowdfunding' && (
           <motion.div 
             initial={{ opacity: 0, y: 5 }} 
@@ -629,7 +629,7 @@ export default function App() {
         )}
 
 
-        {/* ===================== TAB 2: 硅谷前沿浪潮 ===================== */}
+        {/* ===================== TAB 2: 硅谷前沿声音 ===================== */}
         {currentTab === 'news' && (
           <motion.div 
             initial={{ opacity: 0, y: 5 }} 
@@ -737,7 +737,7 @@ export default function App() {
         )}
 
 
-        {/* ===================== TAB 3: 新锐科技独角 ===================== */}
+        {/* ===================== TAB 3: YC 独角兽 ===================== */}
         {currentTab === 'startups' && (
           <motion.div 
             initial={{ opacity: 0, y: 5 }} 
