@@ -60,9 +60,22 @@ export async function scrapeTheVerge(maxItems = 30): Promise<ScrapeResult<RawNew
           const title = titleEl?.textContent?.trim() || '';
           if (!title || title.length < 10) continue;
 
-          // 找图片
+          // 找图片（处理懒加载占位：优先 data-src/srcset，跳过 data:image SVG 占位）
           const imgEl = card.querySelector('img');
-          const image = imgEl?.src || imgEl?.getAttribute('data-src') || '';
+          const isPh = (s: string | null | undefined) =>
+            !s || s.startsWith('data:image/svg') || s.includes('placeholder') || s.length < 20;
+          const srcsetLast = (() => {
+            const ss = imgEl?.getAttribute('srcset') || imgEl?.getAttribute('data-srcset');
+            if (!ss) return null;
+            const last = ss.split(',').pop()?.trim().split(' ')[0];
+            return last || null;
+          })();
+          const image =
+            (!isPh(imgEl?.getAttribute('data-src')) && imgEl?.getAttribute('data-src')) ||
+            (!isPh(imgEl?.getAttribute('data-lazy-src')) && imgEl?.getAttribute('data-lazy-src')) ||
+            (!isPh(srcsetLast) && srcsetLast) ||
+            (!isPh(imgEl?.src) && imgEl?.src) ||
+            '';
 
           // 找摘要
           const snippetEl = card.querySelector('p, [class*="excerpt"], [class*="summary"], [class*="dek"]');

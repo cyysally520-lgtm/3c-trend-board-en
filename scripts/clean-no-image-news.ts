@@ -1,16 +1,29 @@
 /**
- * 一次性清洗脚本：扫 data/ 下所有 news.json，删除 image 为空的条目
+ * 一次性清洗脚本：扫 data/ 下所有 news.json，删除无有效图片的条目
  * 用法：npx tsx scripts/clean-no-image-news.ts
  *
- * 跑完会原地修改：
- *   - data/latest/news.json
- *   - data/YYYY-MM-DD/news.json (每个日期归档)
- * 并打印每个文件清洗前后的条数对比。
+ * 「无效图片」定义：
+ *   - 字段为空
+ *   - data:image/svg... 这种懒加载占位 SVG（Ventureburn / TheVerge 常见）
+ *   - URL 包含 placeholder 字样
+ *   - URL 长度 < 20（明显异常）
+ *
+ * 跑完会原地修改：data/latest/news.json + data/YYYY-MM-DD/news.json
  */
 import { promises as fs } from 'fs';
 import path from 'path';
 
 const ROOT = path.resolve(process.cwd(), 'data');
+
+function isValidImage(s: string | undefined | null): boolean {
+  if (!s) return false;
+  const v = String(s).trim();
+  if (!v) return false;
+  if (v.startsWith('data:image/svg')) return false; // 懒加载占位
+  if (v.includes('placeholder')) return false;
+  if (v.length < 20) return false;
+  return true;
+}
 
 async function cleanFile(filePath: string): Promise<{ before: number; after: number } | null> {
   let raw: string;
@@ -28,7 +41,7 @@ async function cleanFile(filePath: string): Promise<{ before: number; after: num
   if (!Array.isArray(obj?.items)) return null;
 
   const before = obj.items.length;
-  obj.items = obj.items.filter((it: any) => it && it.image && String(it.image).trim());
+  obj.items = obj.items.filter((it: any) => it && isValidImage(it.image));
   obj.count = obj.items.length;
   const after = obj.items.length;
 

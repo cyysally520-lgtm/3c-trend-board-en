@@ -84,13 +84,22 @@ async function main() {
     await generateCrowdSummaries(byKind.crowdfunding);
   }
 
-  // 新闻：丢弃没图片的条目（参考目标站做法，无图卡片视觉空洞）
+  // 新闻：丢弃没图片或图片是占位的条目（Ventureburn/TheVerge 懒加载占位 SVG）
   if (byKind.news.length > 0) {
     const before = byKind.news.length;
-    byKind.news = byKind.news.filter((it: any) => it.image && String(it.image).trim());
+    const isValid = (s: any) => {
+      if (!s) return false;
+      const v = String(s).trim();
+      if (!v) return false;
+      if (v.startsWith('data:image/svg')) return false;
+      if (v.includes('placeholder')) return false;
+      if (v.length < 20) return false;
+      return true;
+    };
+    byKind.news = byKind.news.filter((it: any) => isValid(it.image));
     const dropped = before - byKind.news.length;
     if (dropped > 0) {
-      log.info('main', `news: dropped ${dropped} item(s) without image, ${byKind.news.length} remaining`);
+      log.info('main', `news: dropped ${dropped} item(s) without valid image, ${byKind.news.length} remaining`);
     }
   }
 

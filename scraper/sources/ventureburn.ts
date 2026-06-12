@@ -50,7 +50,7 @@ export async function scrapeVentureburn(maxItems = 30): Promise<ScrapeResult<Raw
         if (!title) continue;
 
         const snippet = $(el).find('p, .entry-summary, .td-excerpt, .elementor-post__excerpt').first().text().trim().slice(0, 300);
-        const image = $(el).find('img').first().attr('src') || $(el).find('img').first().attr('data-src') || '';
+        const image = pickRealImage($, $(el).find('img').first());
 
         seenUrls.add(link);
 
@@ -164,6 +164,30 @@ function mapCategory(cat: string): string {
 
 function hashUrl(u: string): string {
   return u.split('/').filter(Boolean).pop()?.slice(0, 50) || Math.random().toString(36).slice(2, 8);
+}
+
+/**
+ * 从懒加载 <img> 取真实图片 URL
+ * Ventureburn 用 lazy-load 占位 SVG（src 是 data:image/svg+xml...）
+ * 真图存在 data-src / data-lazy-src / srcset
+ */
+function pickRealImage($: cheerio.CheerioAPI, img: cheerio.Cheerio<any>): string {
+  if (!img.length) return '';
+  const isPlaceholder = (s: string) =>
+    !s || s.startsWith('data:image/svg') || s.includes('placeholder') || s.length < 20;
+
+  const candidates = [
+    img.attr('data-src'),
+    img.attr('data-lazy-src'),
+    img.attr('data-original'),
+    img.attr('srcset')?.split(',').pop()?.trim().split(' ')[0], // srcset 末尾通常最大尺寸
+    img.attr('data-srcset')?.split(',').pop()?.trim().split(' ')[0],
+    img.attr('src'),
+  ];
+  for (const c of candidates) {
+    if (c && !isPlaceholder(c)) return c;
+  }
+  return '';
 }
 
 if (import.meta.url === `file://${process.argv[1]?.replace(/\\/g, '/')}`) {
