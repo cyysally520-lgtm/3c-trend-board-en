@@ -369,7 +369,7 @@ export default function App() {
               }`}
             >
               <Sparkles className="w-4 h-4" />
-              AI 潜在项目
+              AI 高潜
               <span className={`text-[10px] font-mono font-bold px-2 py-0.5 rounded-full transition-colors ${
                 currentTab === 'investments' ? 'bg-emerald-50 text-emerald-600' : 'bg-slate-100 text-slate-500'
               }`}>
@@ -387,7 +387,7 @@ export default function App() {
               }`}
             >
               <Rocket className="w-4 h-4" />
-              众筹产品发掘
+              众筹热门
               <span className={`text-[10px] font-mono font-bold px-2 py-0.5 rounded-full transition-colors ${
                 currentTab === 'crowdfunding' ? 'bg-emerald-50 text-emerald-600' : 'bg-slate-100 text-slate-500'
               }`}>
@@ -405,7 +405,7 @@ export default function App() {
               }`}
             >
               <Building2 className="w-4 h-4" />
-              YC 独角兽
+              海外孵化
               <span className={`text-[10px] font-mono font-bold px-2 py-0.5 rounded-full transition-colors ${
                 currentTab === 'startups' ? 'bg-emerald-50 text-emerald-600' : 'bg-slate-100 text-slate-500'
               }`}>
@@ -423,7 +423,7 @@ export default function App() {
               }`}
             >
               <Newspaper className="w-4 h-4" />
-              硅谷前沿声音
+              硅谷听见
               <span className={`text-[10px] font-mono font-bold px-2 py-0.5 rounded-full transition-colors ${
                 currentTab === 'news' ? 'bg-emerald-50 text-emerald-600' : 'bg-slate-100 text-slate-500'
               }`}>
