@@ -30,21 +30,21 @@ import type { ScrapeResult } from './lib/types';
 
 type Runner = () => Promise<ScrapeResult<any>>;
 
-// 不限制数量：传 MAX_SAFE_INTEGER 给各 source 内部的 maxItems / slice
-// 实际能抓多少受站点本身可见条目 / API 单页上限制约（如 YC Algolia 单页 ≤1000）
+// 各源默认上限 200 条；nextbanker 不限（多板块需要全量）
+const PER_SOURCE_LIMIT = 200;
 const NO_LIMIT = Number.MAX_SAFE_INTEGER;
 
 // 注册表：name → (kind, runner)
 const REGISTRY: Record<string, { kind: 'crowdfunding' | 'news' | 'startups' | 'investments'; run: Runner }> = {
-  crowdsupply: { kind: 'crowdfunding',  run: () => scrapeCrowdSupply(NO_LIMIT) },
-  kickstarter: { kind: 'crowdfunding',  run: () => scrapeKickstarter(NO_LIMIT) },
-  indiegogo:   { kind: 'crowdfunding',  run: () => scrapeIndiegogo(NO_LIMIT) },
-  makuake:     { kind: 'crowdfunding',  run: () => scrapeMakuake(NO_LIMIT) },
-  gizchina:    { kind: 'news',          run: () => scrapeGizchina(NO_LIMIT) },
-  techcrunch:  { kind: 'news',          run: () => scrapeTechCrunch(NO_LIMIT) },
-  ventureburn: { kind: 'news',          run: () => scrapeVentureburn(NO_LIMIT) },
-  theverge:    { kind: 'news',          run: () => scrapeTheVerge(NO_LIMIT) },
-  ycombinator: { kind: 'startups',      run: () => scrapeYCombinator(200) },
+  crowdsupply: { kind: 'crowdfunding',  run: () => scrapeCrowdSupply(PER_SOURCE_LIMIT) },
+  kickstarter: { kind: 'crowdfunding',  run: () => scrapeKickstarter(PER_SOURCE_LIMIT) },
+  indiegogo:   { kind: 'crowdfunding',  run: () => scrapeIndiegogo(PER_SOURCE_LIMIT) },
+  makuake:     { kind: 'crowdfunding',  run: () => scrapeMakuake(PER_SOURCE_LIMIT) },
+  gizchina:    { kind: 'news',          run: () => scrapeGizchina(PER_SOURCE_LIMIT) },
+  techcrunch:  { kind: 'news',          run: () => scrapeTechCrunch(PER_SOURCE_LIMIT) },
+  ventureburn: { kind: 'news',          run: () => scrapeVentureburn(PER_SOURCE_LIMIT) },
+  theverge:    { kind: 'news',          run: () => scrapeTheVerge(PER_SOURCE_LIMIT) },
+  ycombinator: { kind: 'startups',      run: () => scrapeYCombinator(PER_SOURCE_LIMIT) },
   nextbanker:  { kind: 'investments',   run: () => scrapeNextbanker(NO_LIMIT) },
 };
 
