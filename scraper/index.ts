@@ -15,7 +15,7 @@ import pLimit from 'p-limit';
 import { log } from './lib/logger';
 import { saveSnapshot, updateManifest, pruneOldSnapshots } from './lib/storage';
 import { closeBrowser } from './lib/browser';
-import { translateCrowdNames, generateCrowdSummaries, translateNewsTitles } from './lib/translate';
+import { translateCrowdNames, generateCrowdSummaries, translateNewsTitles, translateStartupIntros } from './lib/translate';
 import { scrapeCrowdSupply } from './sources/crowdsupply';
 import { scrapeKickstarter } from './sources/kickstarter';
 import { scrapeIndiegogo } from './sources/indiegogo';
@@ -107,6 +107,13 @@ async function main() {
   if (byKind.news.length > 0) {
     log.info('translate', 'translating news titles...');
     await translateNewsTitles(byKind.news);
+  }
+
+  // AI 翻译：YC / a16z 创业公司英文 intro → 中文要点 bullets
+  // 参考目标站「海外孵化」的「AI 独角兽企业分析」
+  if (byKind.startups.length > 0) {
+    log.info('translate', 'generating startup analysis (Chinese)...');
+    await translateStartupIntros(byKind.startups);
   }
 
   // 写盘（即使本次某 kind 无新数据也调用 saveSnapshot，触发合并保留旧数据）
