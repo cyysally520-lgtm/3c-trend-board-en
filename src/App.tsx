@@ -446,29 +446,17 @@ export default function App() {
             transition={{ duration: 0.2 }}
             className="space-y-6"
           >
-            <div className="bg-slate-900 rounded-xl border border-slate-700 p-5 flex items-center justify-between gap-4">
-              <div className="flex items-start gap-3">
-                <Sparkles className="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" />
-                <div>
-                  <p className="text-base font-semibold text-white">AI 驱动的水下高潜项目线索发现引擎</p>
-                  <p className="text-xs text-slate-400 mt-0.5">让天下的洞见都能找到伯乐</p>
+            <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-slate-950 via-slate-900 to-slate-900 border border-emerald-500/25 px-6 py-7 sm:px-10 sm:py-9 shadow-md">
+              <div className="absolute -top-16 -right-16 w-56 h-56 rounded-full bg-emerald-500/15 blur-3xl pointer-events-none"></div>
+              <div className="absolute -bottom-16 -left-16 w-56 h-56 rounded-full bg-emerald-500/15 blur-3xl pointer-events-none"></div>
+              <div className="relative flex flex-col items-center text-center gap-2 mx-auto max-w-3xl">
+                <div className="inline-flex items-center gap-1.5 text-[10.5px] font-semibold text-emerald-300 bg-emerald-500/10 border border-emerald-400/30 rounded-full px-2.5 py-0.5 tracking-wider font-mono">
+                  <Sparkles className="w-3 h-3" />
+                  Aidol · Deep-Sea Intelligence
                 </div>
-              </div>
-              <div className="flex items-center gap-6 shrink-0">
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-amber-400">100<span className="text-lg">+</span></div>
-                  <div className="text-[10px] text-slate-400 mt-0.5">渠道</div>
-                </div>
-                <div className="w-px h-8 bg-slate-700"></div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-amber-400">4,320</div>
-                  <div className="text-[10px] text-slate-400 mt-0.5">信源</div>
-                </div>
-                <div className="w-px h-8 bg-slate-700"></div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-amber-400">862</div>
-                  <div className="text-[10px] text-slate-400 mt-0.5">高潜标的</div>
-                </div>
+                <h2 className="text-xl sm:text-2xl font-bold text-white leading-snug">
+                  AI 驱动的水下高潜项目线索发现引擎
+                </h2>
               </div>
             </div>
 
