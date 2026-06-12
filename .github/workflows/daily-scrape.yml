@@ -11,7 +11,8 @@ on:
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    # 全量抓 8 源 + Gemini 翻译 + 多个动态站 Playwright，30 分钟不够
+    timeout-minutes: 120
 
     steps:
       - name: Debug info
@@ -26,7 +27,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '24'
           cache: 'npm'
 
       - name: Install dependencies
@@ -65,13 +66,4 @@ jobs:
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Trigger Vercel Redeploy
-        if: steps.git-check.outputs.changed == 'true'
-        run: |
-          if [ -n "${{ secrets.VERCEL_DEPLOY_HOOK }}" ]; then
-            curl -X POST "${{ secrets.VERCEL_DEPLOY_HOOK }}"
-            echo "Vercel deploy hook triggered"
-          else
-            echo "No VERCEL_DEPLOY_HOOK configured, skipping redeploy"
-          fi
+        # Railway 监听 main 分支，commit push 后会自动重新部署，无需额外 webhook
