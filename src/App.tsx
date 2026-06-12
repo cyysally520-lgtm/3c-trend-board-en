@@ -295,8 +295,26 @@ export default function App() {
   };
 
   // --- INVESTMENTS FILTER ---
+  const [investCategory, setInvestCategory] = useState('');
+
+  // 赛道列表（按出现频次倒序）
+  const investCategories = useMemo(() => {
+    const counter = new Map<string, number>();
+    for (const it of investData) {
+      const c = it.category || '其它';
+      counter.set(c, (counter.get(c) ?? 0) + 1);
+    }
+    return Array.from(counter.entries())
+      .sort((a, b) => b[1] - a[1])
+      .map(([name, count]) => ({ name, count }));
+  }, [investData]);
+
   const filteredInvests = useMemo(() => {
     let result = [...investData];
+
+    if (investCategory) {
+      result = result.filter((item) => (item.category || '其它') === investCategory);
+    }
 
     if (investSearch.trim()) {
       const q = investSearch.toLowerCase();
@@ -313,7 +331,7 @@ export default function App() {
     }
 
     return result;
-  }, [investSearch, investData]);
+  }, [investSearch, investCategory, investData]);
 
   return (
     <div className="min-h-screen bg-[#f9fafb] text-slate-800 font-sans flex flex-col antialiased relative">
@@ -460,20 +478,60 @@ export default function App() {
               </div>
             </div>
 
-            {/* 搜索框 */}
-            <div className="bg-white rounded-xl border border-slate-100 shadow-3xs p-4">
-              <div className="relative max-w-md">
-                <span className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                  <Search className="h-4 w-4 text-slate-400" />
-                </span>
-                <input
-                  type="text"
-                  value={investSearch}
-                  onChange={e => setInvestSearch(e.target.value)}
-                  placeholder="输入产品名称、技术关键词、团队名称..."
-                  className="block w-full pl-9 pr-4 py-2 border border-slate-200 rounded-lg text-xs bg-slate-50 placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-emerald-500 focus:border-emerald-500 focus:bg-white transition"
-                />
+            {/* 搜索 + 赛道筛选（参考目标站「Aidol」搜索栏） */}
+            <div className="bg-white rounded-xl border border-slate-300 ring-1 ring-slate-900/5 shadow-md p-4 sm:p-5 space-y-4">
+              {/* 第一行：搜索框 + 计数 */}
+              <div className="flex flex-col lg:flex-row lg:items-center gap-3">
+                <div className="relative flex-1">
+                  <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-slate-400" />
+                  <input
+                    type="text"
+                    value={investSearch}
+                    onChange={(e) => setInvestSearch(e.target.value)}
+                    placeholder="搜索项目名/标签/技术/团队/商业模式..."
+                    className="block w-full pl-9 pr-4 py-2 border border-slate-200 rounded-lg text-xs bg-slate-50 placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-emerald-500 focus:border-emerald-500 focus:bg-white transition"
+                  />
+                </div>
+                <div className="text-xs text-slate-500 whitespace-nowrap">
+                  共 <span className="font-bold text-slate-800 font-mono">{filteredInvests.length}</span>
+                  {' / '}
+                  <span className="font-mono">{investData.length}</span> 项
+                </div>
               </div>
+
+              {/* 第二行：赛道药丸 */}
+              {investCategories.length > 0 && (
+                <div className="border-t border-slate-100 pt-4 flex flex-col sm:flex-row sm:items-center gap-3">
+                  <span className="text-[11px] text-slate-400 font-medium whitespace-nowrap shrink-0">赛道:</span>
+                  <div className="flex flex-wrap items-center gap-2">
+                    <button
+                      onClick={() => setInvestCategory('')}
+                      className={`text-xs inline-flex items-center gap-1.5 px-3 py-1 rounded-full border cursor-pointer select-none transition ${
+                        investCategory === ''
+                          ? 'bg-emerald-50 border-emerald-300 text-emerald-700 font-semibold'
+                          : 'bg-slate-50 border-slate-200 text-slate-600 hover:bg-slate-100'
+                      }`}
+                    >
+                      全部
+                      <span className="text-[10px] font-mono text-slate-400">{investData.length}</span>
+                    </button>
+                    {investCategories.map((c) => (
+                      <button
+                        key={c.name}
+                        onClick={() => setInvestCategory(c.name === investCategory ? '' : c.name)}
+                        className={`text-xs inline-flex items-center gap-1.5 px-3 py-1 rounded-full border cursor-pointer select-none transition ${
+                          investCategory === c.name
+                            ? 'bg-emerald-50 border-emerald-300 text-emerald-700 font-semibold'
+                            : 'bg-slate-50 border-slate-200 text-slate-600 hover:bg-slate-100'
+                        }`}
+                      >
+                        {c.name}
+                        <span className="text-[10px] font-mono text-slate-400">{c.count}</span>
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
 
             {filteredInvests.length > 0 ? (
