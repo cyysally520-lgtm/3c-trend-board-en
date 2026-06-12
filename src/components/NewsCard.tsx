@@ -77,15 +77,17 @@ export const NewsCard: React.FC<NewsCardProps> = ({ item }) => {
             <span>发布于 {relativeTime}</span>
           </div>
 
-          {/* Title */}
+          {/* Title (中文翻译) */}
           <h3 className="text-base font-bold text-slate-900 leading-snug line-clamp-2 select-none group-hover:text-emerald-700 transition-colors">
-            {item.title_zh}
+            {item.title_zh || item.title}
           </h3>
 
-          {/* Original snippet quote */}
-          <p className="text-xs text-slate-400 italic line-clamp-2 leading-relaxed bg-slate-50/50 p-2 rounded-md border-l border-slate-200">
-            "{item.snippet}"
-          </p>
+          {/* English original title — 仅当有中文翻译时显示 */}
+          {item.title_zh && item.title_zh !== item.title && (
+            <p className="text-xs text-slate-400 italic line-clamp-2 leading-relaxed">
+              -{item.title}
+            </p>
+          )}
         </div>
 
         {/* AI Insight bullets list with solid emerald layout */}
