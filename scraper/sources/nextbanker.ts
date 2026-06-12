@@ -1,18 +1,25 @@
 /**
  * NextBanker 爬虫
- * 入口：https://nextbanker.cn/  （多板块）
- * 策略：Playwright 渲染（HTML 静态阶段缺项目卡，需要 hydrate 后才出现）
+ * 入口：https://nextbanker.cn/
+ * 策略：Playwright 渲染（项目卡片是 <project-card> Web Component，需要 hydrate）
  *
- * 页面结构（渲染后）：
- *   <h3>板块名</h3>          ← 顶级板块标题
- *   <div class="rh-sub">     ← 板块描述（无项目）
- *   <h4>项目名 tagline</h4>  ← 项目卡片标题
- *   <p>**技术：** ... **商业：** ... ...</p>
- *   <h4>下一个项目</h4>
- *   ...
- *   <h3>下一个板块</h3>
+ * 渲染后页面结构：
+ *   <h3>板块名</h3>          ← 顶级板块标题（AI硬件/具身智能/AI Agent/...）
+ *   <div class="rh-sub">     ← 板块描述
+ *   <project-card>           ← 该板块下的项目卡（多个）
+ *     <div class="pc">
+ *       <div class="pc-main">
+ *         <div class="pc-body">
+ *           <div><h4>项目名 <span class="stag">来源徽章</span></h4></div>
+ *           <div class="tl">简介 <span class="pc-time">N天前</span></div>
+ *           <div class="fd"><strong>技术</strong><span>内容</span></div>
+ *           <div class="fd"><strong>商业</strong><span>内容</span></div>
+ *           <div class="fd"><strong>团队</strong><span>内容</span></div>
+ *           <div class="fd"><strong>运营</strong><span>内容</span></div>
+ *           <div class="fd"><strong>融资</strong><span>内容</span></div>
+ *           <div class="pc-stamp">来源 | 日期</div>
  *
- * h3 / h4 是兄弟节点（不是父子）。按 sibling 链遍历，遇到 h3 切换板块状态。
+ * 板块归属：用「文档顺序中卡片之前最近的 h3」做映射。
  */
 import { newContext, gotoSafe } from '../lib/browser';
 import { log } from '../lib/logger';
@@ -20,8 +27,8 @@ import type { RawInvestItem, ScrapeResult } from '../lib/types';
 
 const BASE_URL = 'https://nextbanker.cn/';
 
-// 白名单：只爬这些板块（对齐目标站「AI 高潜」tab 用到的赛道）
-// 注意：nextbanker 上"银发科技"= 目标站口径"银发经济"
+// 白名单：只保留这些 nextbanker 板块（对齐目标站「AI 高潜」赛道）
+// 注意 nextbanker 上是"银发科技"，会归一为"银发经济"
 const ALLOWED_SECTIONS = [
   'AI硬件',
   '具身智能',
@@ -30,13 +37,6 @@ const ALLOWED_SECTIONS = [
   '银发科技',
   'AI医疗',
 ];
-
-interface RawNbCard {
-  section: string;
-  name: string;
-  tagline: string;
-  contentText: string;
-}
 
 export async function scrapeNextbanker(maxItems = 1000): Promise<ScrapeResult<RawInvestItem>> {
   const t0 = Date.now();
@@ -54,97 +54,122 @@ export async function scrapeNextbanker(maxItems = 1000): Promise<ScrapeResult<Ra
   try {
     log.info('nextbanker', `loading: ${BASE_URL}`);
     await gotoSafe(page, BASE_URL, { timeoutMs: 60000, waitUntil: 'networkidle' });
-    // 给前端一点 hydrate 时间
     await page.waitForTimeout(2500);
 
-    // 在浏览器侧用 sibling 链遍历，按板块归类项目
+    // 页面侧解析：每张 project-card 抓 name / tagline / 5 字段，并通过文档顺序找最近的 h3 当 section
     const cards = await page.evaluate((allowedSections: string[]) => {
-      const out: Array<{ section: string; name: string; tagline: string; contentText: string }> = [];
-      const all = Array.from(document.querySelectorAll('h3, h4, p, div'));
-      let inAllowed = false;
-      let currentSection = '';
-      let pendingName = '';
-      let pendingTagline = '';
-      let pendingParts: string[] = [];
+      const out: Array<{
+        section: string;
+        name: string;
+        sourceBadge: string;
+        summary: string;
+        time: string;
+        tech: string;
+        business: string;
+        team: string;
+        operations: string;
+        funding: string;
+        stamp: string;
+        projectId: string;
+      }> = [];
 
-      const sourceMarkers = /(XHS|GitHub|HF|Twitter|HN|YC|TC|VCx?|清华|北大|新闻|发现|官网|抖音|B站|HuggingFace|校长杯)/;
+      // 把 h3 和 project-card 按文档顺序拉出来
+      const all = Array.from(document.querySelectorAll('h3, project-card'));
+      let currentSection = '';
+      let inAllowed = false;
 
       for (const el of all) {
-        const tag = el.tagName.toLowerCase();
-        if (tag === 'h3') {
-          // flush pending
-          if (pendingName && currentSection) {
-            out.push({ section: currentSection, name: pendingName, tagline: pendingTagline, contentText: pendingParts.join('\n') });
-          }
-          pendingName = ''; pendingTagline = ''; pendingParts = [];
-
-          const text = (el.textContent || '').trim();
-          const matched = allowedSections.find((s) => text === s || text.startsWith(s));
+        if (el.tagName === 'H3') {
+          const t = (el.textContent || '').trim();
+          const matched = allowedSections.find((s) => t === s || t.startsWith(s));
           inAllowed = !!matched;
-          currentSection = matched ?? text;
-        } else if (tag === 'h4') {
-          // flush pending
-          if (pendingName && currentSection) {
-            out.push({ section: currentSection, name: pendingName, tagline: pendingTagline, contentText: pendingParts.join('\n') });
-          }
-          pendingName = ''; pendingTagline = ''; pendingParts = [];
-
-          if (!inAllowed) continue;
-          const fullText = (el.textContent || '').trim().replace(/^\d+\s*/, '');
-          const m = fullText.match(new RegExp(`^(.+?)\\s+(${sourceMarkers.source}.*)$`));
-          if (m) {
-            pendingName = m[1].trim();
-            pendingTagline = m[2].trim();
-          } else {
-            pendingName = fullText;
-            pendingTagline = '';
-          }
-        } else if (tag === 'p') {
-          if (pendingName) {
-            pendingParts.push((el.textContent || '').trim());
-          }
+          currentSection = matched ?? t;
+          continue;
         }
-      }
-      // final flush
-      if (pendingName && currentSection) {
-        out.push({ section: currentSection, name: pendingName, tagline: pendingTagline, contentText: pendingParts.join('\n') });
+        // project-card
+        if (!inAllowed) continue;
+
+        const pc = el.querySelector('.pc');
+        if (!pc) continue;
+        const pcBody = pc.querySelector('.pc-body');
+        if (!pcBody) continue;
+
+        const h4 = pcBody.querySelector('h4');
+        const nameEl = h4?.querySelector('.pc-name-link') || h4;
+        const stagEl = h4?.querySelector('.stag');
+        const tlEl = pcBody.querySelector('.tl');
+        const timeEl = tlEl?.querySelector('.pc-time');
+        const stampEl = pcBody.querySelector('.pc-stamp');
+
+        // .tl 的简介：克隆一份去掉 .pc-time 拿剩下纯文本
+        let summary = '';
+        if (tlEl) {
+          const clone = tlEl.cloneNode(true) as Element;
+          clone.querySelectorAll('.pc-time').forEach((x) => x.remove());
+          summary = (clone.textContent || '').trim();
+        }
+
+        const fields: Record<string, string> = {};
+        pcBody.querySelectorAll('.fd').forEach((fd) => {
+          const label = fd.querySelector('strong')?.textContent?.trim() || '';
+          const span = fd.querySelector(':scope > span');
+          if (label && span) {
+            // 去掉 .ind-tip（hover 提示），保留主体
+            const cl = span.cloneNode(true) as Element;
+            cl.querySelectorAll('.ind-tip').forEach((x) => x.remove());
+            fields[label] = (cl.textContent || '').trim();
+          }
+        });
+
+        const name = (nameEl?.textContent || '').trim();
+        if (!name) continue;
+
+        out.push({
+          section: currentSection,
+          name,
+          sourceBadge: (stagEl?.textContent || '').trim(),
+          summary,
+          time: (timeEl?.textContent || '').trim(),
+          tech: fields['技术'] || '',
+          business: fields['商业'] || '',
+          team: fields['团队'] || '',
+          operations: fields['运营'] || '',
+          funding: fields['融资'] || '',
+          stamp: (stampEl?.textContent || '').trim(),
+          projectId: pc.getAttribute('data-project-id') || '',
+        });
       }
       return out;
     }, ALLOWED_SECTIONS);
 
-    log.info('nextbanker', `extracted ${cards.length} raw cards from rendered DOM`);
+    log.info('nextbanker', `extracted ${cards.length} cards from rendered DOM`);
 
     // 转成 RawInvestItem
     let rank = 0;
     for (const c of cards) {
       if (result.items.length >= maxItems) break;
-      if (!c.name) continue;
       rank++;
       try {
-        const tech = extractField(c.contentText, '技术');
-        const business = extractField(c.contentText, '商业');
-        const team = extractField(c.contentText, '团队');
-        const operations = extractField(c.contentText, '运营');
-        const funding = extractField(c.contentText, '融资');
-
-        const daysMatch = c.contentText.match(/(\d+)\s*天前/);
-        const hoursMatch = c.contentText.match(/(\d+)\s*小时前/);
+        // daysAgo 解析
+        const daysMatch = c.time.match(/(\d+)\s*天前/);
+        const hoursMatch = c.time.match(/(\d+)\s*小时前/);
         const daysAgo = daysMatch ? parseInt(daysMatch[1], 10) : hoursMatch ? 0 : 0;
 
-        // 把 nextbanker "银发科技" 归一成目标站口径的 "银发经济"
+        // category 归一：nextbanker "银发科技" → "银发经济"
         const category = c.section === '银发科技' ? '银发经济' : c.section;
 
         result.items.push({
-          id: `nb-${rank}-${c.name.slice(0, 20).replace(/\s+/g, '-')}`,
+          // 用站点自带 projectId 当 id 后缀，比 rank+name 更稳（重跑保 id 一致，便于合并）
+          id: c.projectId ? `nb-${c.projectId}` : `nb-${rank}-${c.name.slice(0, 20).replace(/\s+/g, '-')}`,
           rank,
           name: c.name,
-          tagline: c.tagline,
+          tagline: c.sourceBadge || c.summary.slice(0, 80) || '',
           category,
-          tech: tech.slice(0, 500),
-          business: business.slice(0, 500),
-          team: team.slice(0, 300),
-          operations: operations.slice(0, 300),
-          funding: funding.slice(0, 200),
+          tech: c.tech.slice(0, 500),
+          business: c.business.slice(0, 500),
+          team: c.team.slice(0, 300),
+          operations: c.operations.slice(0, 300),
+          funding: c.funding.slice(0, 200),
           daysAgo,
           source_url: BASE_URL,
           scrapedAt: new Date().toISOString(),
@@ -155,10 +180,12 @@ export async function scrapeNextbanker(maxItems = 1000): Promise<ScrapeResult<Ra
     }
 
     result.ok = result.items.length > 0;
-    // 统计每个板块抓到多少
     const bySection: Record<string, number> = {};
     for (const it of result.items) bySection[it.category] = (bySection[it.category] ?? 0) + 1;
-    log.ok('nextbanker', `extracted ${result.items.length} invest items: ${Object.entries(bySection).map(([k, v]) => `${k}=${v}`).join(', ')}`);
+    log.ok(
+      'nextbanker',
+      `extracted ${result.items.length} invest items: ${Object.entries(bySection).map(([k, v]) => `${k}=${v}`).join(', ')}`,
+    );
   } catch (err) {
     log.err('nextbanker', 'scrape failed', err);
     result.errors.push(err instanceof Error ? err.message : String(err));
@@ -168,12 +195,4 @@ export async function scrapeNextbanker(maxItems = 1000): Promise<ScrapeResult<Ra
 
   result.durationMs = Date.now() - t0;
   return result;
-}
-
-function extractField(text: string, field: string): string {
-  const re = new RegExp(
-    `\\*{0,2}${field}[：:]\\*{0,2}\\s*([\\s\\S]*?)(?=\\*{0,2}(?:技术|商业|团队|运营|融资|信号)[：:]|$)`,
-  );
-  const m = text.match(re);
-  return m ? m[1].trim().replace(/\n+/g, ' ').replace(/\s+/g, ' ') : '';
 }
