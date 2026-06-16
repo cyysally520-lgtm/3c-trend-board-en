@@ -87,11 +87,11 @@ export const CrowdCard: React.FC<CrowdCardProps> = ({ item }) => {
             <div className="flex items-center gap-1.5 min-w-0">
               <Clock className="w-3.5 h-3.5 text-slate-400 shrink-0" />
               <span className="truncate">
-                已筹集 <strong className="text-slate-800 font-bold font-mono">{formatRaised(item.raised, item.currencySymbol)}</strong>
+                Raised <strong className="text-slate-800 font-bold font-mono">{formatRaised(item.raised, item.currencySymbol)}</strong>
               </span>
             </div>
             <div className="flex items-center gap-1 shrink-0 pl-2">
-              <span className="text-slate-400 font-normal">进度</span>
+              <span className="text-slate-400 font-normal">Progress</span>
               <span className="text-[#10b981] font-bold font-mono">{item.progress_pct}%</span>
             </div>
           </div>
@@ -113,14 +113,14 @@ export const CrowdCard: React.FC<CrowdCardProps> = ({ item }) => {
             <div className="flex items-center gap-1.5">
               <Users className="w-3.5 h-3.5 text-slate-400 shrink-0" />
               <span>
-                <strong className="text-slate-800 font-bold font-mono">{item.backers.toLocaleString()}</strong> 支持者
+                <strong className="text-slate-800 font-bold font-mono">{item.backers.toLocaleString()}</strong> backers
               </span>
             </div>
 
             <div className="flex items-center gap-1.5 pl-2">
               <Coins className="w-3.5 h-3.5 text-slate-400 shrink-0" />
               <span>
-                起步 <strong className="text-slate-800 font-bold font-mono">{item.price}</strong>
+                From <strong className="text-slate-800 font-bold font-mono">{item.price}</strong>
               </span>
             </div>
           </div>
@@ -141,7 +141,7 @@ export const CrowdCard: React.FC<CrowdCardProps> = ({ item }) => {
           >
             <span className="flex items-center gap-1.5">
               <Sparkles className="w-3.5 h-3.5 text-[#10b981]" />
-              AI 深度解读手记
+              AI Insights
             </span>
             {showAiInsight ? <ChevronUp className="w-3.5 h-3.5" /> : <ChevronDown className="w-3.5 h-3.5" />}
           </button>
@@ -176,7 +176,7 @@ export const CrowdCard: React.FC<CrowdCardProps> = ({ item }) => {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1 text-[11px] font-bold text-slate-400 hover:text-emerald-700 transition cursor-pointer"
             >
-              访问官方众筹页
+              View on campaign page
               <ExternalLink className="w-3 h-3" />
             </a>
           </div>

@@ -32,7 +32,7 @@ export default function App() {
   const [investData, setInvestData] = useState<InvestItem[]>([]);
   
   const [isLoading, setIsLoading] = useState(false);
-  const [lastUpdated, setLastUpdated] = useState<string>('当前就绪');
+  const [lastUpdated, setLastUpdated] = useState<string>('Ready');
 
   // --- INVESTMENTS SEARCH ---
   const [investSearch, setInvestSearch] = useState('');
@@ -128,7 +128,7 @@ export default function App() {
               if (Array.isArray(data.crowdfunding)) setCrowdfundingData(data.crowdfunding);
               if (Array.isArray(data.news)) setNewsData(data.news);
               if (Array.isArray(data.startups)) setStartupData(data.startups);
-              setLastUpdated('实时已同步');
+              setLastUpdated('Live synced');
             }
           }
         } catch (e) {
@@ -340,7 +340,7 @@ export default function App() {
   const investCategories = useMemo(() => {
     const counter = new Map<string, number>();
     for (const it of investData) {
-      const c = it.category || '其它';
+      const c = it.category || 'Other';
       counter.set(c, (counter.get(c) ?? 0) + 1);
     }
     return Array.from(counter.entries())
@@ -356,7 +356,7 @@ export default function App() {
     }
 
     if (investCategory) {
-      result = result.filter((item) => (item.category || '其它') === investCategory);
+      result = result.filter((item) => (item.category || 'Other') === investCategory);
     }
 
     if (investSearch.trim()) {
@@ -405,7 +405,7 @@ export default function App() {
     }
     const map = new Map<string, InvestItem[]>();
     for (const it of filteredInvests) {
-      const k = it.category || '其它';
+      const k = it.category || 'Other';
       if (!map.has(k)) map.set(k, []);
       map.get(k)!.push(it);
     }
@@ -430,7 +430,7 @@ export default function App() {
             </div>
             <div>
               <h1 className="text-base sm:text-lg font-bold text-slate-900 tracking-tight">
-                Aidol 产品趋势扫描雷达——实时追踪 AI 硬件,创客/极客产品众筹与海外孵化初创名册
+                Aidol Product Trend Radar — tracking AI hardware, maker / hacker product crowdfunding, and overseas startup incubators
               </h1>
             </div>
           </div>
@@ -448,7 +448,7 @@ export default function App() {
               )}
             </span>
             <span className="text-slate-500 font-medium text-[10px]">
-              更新已完成 · <span className="text-slate-700 font-semibold font-mono">{lastUpdated}</span>
+              Updated · <span className="text-slate-700 font-semibold font-mono">{lastUpdated}</span>
             </span>
           </div>
 
@@ -470,7 +470,7 @@ export default function App() {
               }`}
             >
               <Sparkles className="w-4 h-4" />
-              AI 高潜
+              AI Trends
               <span className={`text-[10px] font-mono font-bold px-2 py-0.5 rounded-full transition-colors ${
                 currentTab === 'investments' ? 'bg-emerald-50 text-emerald-600' : 'bg-slate-100 text-slate-500'
               }`}>
@@ -488,7 +488,7 @@ export default function App() {
               }`}
             >
               <Rocket className="w-4 h-4" />
-              众筹热门
+              Crowdfunding
               <span className={`text-[10px] font-mono font-bold px-2 py-0.5 rounded-full transition-colors ${
                 currentTab === 'crowdfunding' ? 'bg-emerald-50 text-emerald-600' : 'bg-slate-100 text-slate-500'
               }`}>
@@ -506,7 +506,7 @@ export default function App() {
               }`}
             >
               <Building2 className="w-4 h-4" />
-              海外孵化
+              Incubators
               <span className={`text-[10px] font-mono font-bold px-2 py-0.5 rounded-full transition-colors ${
                 currentTab === 'startups' ? 'bg-emerald-50 text-emerald-600' : 'bg-slate-100 text-slate-500'
               }`}>
@@ -524,7 +524,7 @@ export default function App() {
               }`}
             >
               <Newspaper className="w-4 h-4" />
-              硅谷听见
+              Tech News
               <span className={`text-[10px] font-mono font-bold px-2 py-0.5 rounded-full transition-colors ${
                 currentTab === 'news' ? 'bg-emerald-50 text-emerald-600' : 'bg-slate-100 text-slate-500'
               }`}>
@@ -556,7 +556,7 @@ export default function App() {
                   Aidol · Deep-Sea Intelligence
                 </div>
                 <h2 className="text-xl sm:text-2xl font-bold text-white leading-snug">
-                  AI 驱动的水下高潜项目线索发现引擎
+                  AI-driven discovery engine for hidden high-potential projects
                 </h2>
               </div>
             </div>
@@ -571,21 +571,21 @@ export default function App() {
                     type="text"
                     value={investSearch}
                     onChange={(e) => setInvestSearch(e.target.value)}
-                    placeholder="搜索项目名/标签/技术/团队/商业模式..."
+                    placeholder="Search projects by name, tag, tech, team, business model..."
                     className="block w-full pl-9 pr-4 py-2 border border-slate-200 rounded-lg text-xs bg-slate-50 placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-emerald-500 focus:border-emerald-500 focus:bg-white transition"
                   />
                 </div>
                 <div className="text-xs text-slate-500 whitespace-nowrap">
-                  共 <span className="font-bold text-slate-800 font-mono">{filteredInvests.length}</span>
+                  <span className="font-bold text-slate-800 font-mono">{filteredInvests.length}</span>
                   {' / '}
-                  <span className="font-mono">{investData.length}</span> 项
+                  <span className="font-mono">{investData.length}</span>
                 </div>
               </div>
 
               {/* 第二行：赛道药丸 */}
               {investCategories.length > 0 && (
                 <div className="border-t border-slate-100 pt-4 flex flex-col sm:flex-row sm:items-center gap-3">
-                  <span className="text-[11px] text-slate-400 font-medium whitespace-nowrap shrink-0">赛道:</span>
+                  <span className="text-[11px] text-slate-400 font-medium whitespace-nowrap shrink-0">Track:</span>
                   <div className="flex flex-wrap items-center gap-2">
                     <button
                       onClick={() => setInvestCategory('')}
@@ -595,7 +595,7 @@ export default function App() {
                           : 'bg-slate-50 border-slate-200 text-slate-600 hover:bg-slate-100'
                       }`}
                     >
-                      全部
+                      All
                       <span className="text-[10px] font-mono text-slate-400">{investData.length}</span>
                     </button>
                     {investCategories.map((c) => (
@@ -623,9 +623,9 @@ export default function App() {
                 <div className="flex items-end justify-between">
                   <h3 className="flex items-center gap-2 text-sm font-bold text-slate-800">
                     <Sparkles className="w-4 h-4 text-emerald-500" />
-                    今日精选
+                    Featured Today
                   </h3>
-                  <span className="text-[11px] text-slate-400 font-medium">最新发现 + 热度榜首</span>
+                  <span className="text-[11px] text-slate-400 font-medium">Latest + most starred</span>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
                   {featuredInvests.map((it) => (
@@ -650,10 +650,10 @@ export default function App() {
                     ? 'bg-emerald-500 border-emerald-500 text-white shadow-sm hover:bg-emerald-600'
                     : 'bg-white border-slate-200 text-slate-700 hover:border-emerald-300'
                 }`}
-                title={showFavoritesOnly ? '退出收藏夹' : '只看已收藏'}
+                title={showFavoritesOnly ? 'Exit favorites' : 'Show favorites only'}
               >
                 <Sparkles className="w-3.5 h-3.5" />
-                {showFavoritesOnly ? '退出收藏夹' : '我的收藏'}
+                {showFavoritesOnly ? 'Exit favorites' : 'My favorites'}
                 <span className={`text-[10px] font-mono px-1.5 py-0.5 rounded-full ${
                   showFavoritesOnly ? 'bg-white/20 text-white' : 'text-slate-400 bg-slate-100'
                 }`}>
@@ -665,10 +665,10 @@ export default function App() {
                 <button
                   onClick={jumpToLastScroll}
                   className="inline-flex items-center gap-2 text-xs font-semibold px-3 py-1.5 rounded-full border cursor-pointer transition bg-white border-slate-200 text-slate-700 hover:border-emerald-300"
-                  title="滚动到上次浏览位置"
+                  title="Scroll back to last position"
                 >
                   <Calendar className="w-3.5 h-3.5" />
-                  跳到上次位置
+                  Resume scroll
                 </button>
               )}
             </div>
@@ -703,10 +703,10 @@ export default function App() {
               <div className="bg-white rounded-xl border border-slate-150 p-12 text-center max-w-lg mx-auto shadow-3xs">
                 <Sparkles className="mx-auto h-12 w-12 text-slate-300" />
                 <h3 className="mt-4 text-sm font-semibold text-slate-900">
-                  {showFavoritesOnly ? '收藏夹是空的' : 'AI 潜在项目数据加载中'}
+                  {showFavoritesOnly ? 'No favorites yet' : 'Loading projects'}
                 </h3>
                 <p className="mt-1 text-xs text-slate-400">
-                  {showFavoritesOnly ? '点卡片右上角 ⭐ 加入收藏' : '数据需要首次运行爬虫后才能显示，请等待每日自动更新。'}
+                  {showFavoritesOnly ? 'Click the ⭐ on any card to add it here' : 'Data populates after the first scrape; daily updates run automatically.'}
                 </p>
               </div>
             )}
@@ -730,27 +730,27 @@ export default function App() {
                   <span className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                     <Search className="h-4 w-4 text-slate-400" />
                   </span>
-                  <input 
-                    type="text" 
+                  <input
+                    type="text"
                     value={crowdSearch}
                     onChange={e => setCrowdSearch(e.target.value)}
-                    placeholder="输入众筹产品名称、中文翻译、发起人..." 
+                    placeholder="Search crowdfunding products by name, founder..."
                     className="block w-full pl-9 pr-4 py-2 border border-slate-200 rounded-lg text-xs bg-slate-50 placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-emerald-500 focus:border-emerald-500 focus:bg-white transition"
                   />
                 </div>
 
                 {/* 选项过滤器 */}
                 <div className="flex flex-wrap items-center gap-3">
-                  
+
                   {/* 分类过滤 */}
                   <div className="flex items-center gap-1.5">
-                    <span className="text-[11px] text-slate-400 font-medium">分类:</span>
-                    <select 
+                    <span className="text-[11px] text-slate-400 font-medium">Category:</span>
+                    <select
                       value={crowdCategory}
                       onChange={e => setCrowdCategory(e.target.value)}
                       className="bg-slate-50 border border-slate-200 rounded-md text-xs px-2.5 py-1.5 text-slate-700 outline-none focus:ring-1 focus:ring-emerald-500 cursor-pointer font-medium"
                     >
-                      <option value="">全部品类</option>
+                      <option value="">All categories</option>
                       {crowdCategories.map(cat => (
                         <option key={cat} value={cat}>{cat}</option>
                       ))}
@@ -759,15 +759,15 @@ export default function App() {
 
                   {/* 排序规则 */}
                   <div className="flex items-center gap-1.5">
-                    <span className="text-[11px] text-slate-400 font-medium">排序:</span>
-                    <select 
+                    <span className="text-[11px] text-slate-400 font-medium">Sort:</span>
+                    <select
                       value={crowdSortBy}
                       onChange={e => setCrowdSortBy(e.target.value)}
                       className="bg-slate-50 border border-slate-200 rounded-md text-xs px-2.5 py-1.5 text-slate-700 outline-none focus:ring-1 focus:ring-emerald-500 cursor-pointer font-medium"
                     >
-                      <option value="popular">热度优先 (按支持数)</option>
-                      <option value="raised">筹资额度 (按美元换算)</option>
-                      <option value="progress">筹款进度 (%比最高)</option>
+                      <option value="popular">Most popular (by backers)</option>
+                      <option value="raised">Most raised (USD equiv.)</option>
+                      <option value="progress">Highest progress (%)</option>
                     </select>
                   </div>
 
@@ -776,7 +776,7 @@ export default function App() {
 
               {/* 平台渠道选项 */}
               <div className="border-t border-slate-100 pt-4 flex flex-col sm:flex-row sm:items-center gap-3">
-                <span className="text-[11px] text-slate-400 font-medium whitespace-nowrap">平台渠道:</span>
+                <span className="text-[11px] text-slate-400 font-medium whitespace-nowrap">Platforms:</span>
                 <div className="flex flex-wrap items-center gap-2">
                   {['Kickstarter', 'Indiegogo', 'Makuake', 'Crowd Supply'].map(plat => {
                     const isSelected = selectedPlatforms.includes(plat);
@@ -803,12 +803,12 @@ export default function App() {
 
                 {/* 清空按钮 */}
                 {(crowdSearch || crowdCategory || selectedPlatforms.length > 0) && (
-                  <button 
+                  <button
                     onClick={resetCrowdFilters}
                     className="text-xs text-slate-400 hover:text-emerald-600 transition flex items-center gap-1 cursor-pointer select-none font-semibold ml-auto"
                   >
                     <RotateCcw className="w-3.5 h-3.5" />
-                    清除所有筛选
+                    Clear all filters
                   </button>
                 )}
               </div>
@@ -824,13 +824,13 @@ export default function App() {
             ) : (
               <div className="bg-white rounded-xl border border-slate-150 p-12 text-center max-w-lg mx-auto shadow-3xs">
                 <FilterX className="mx-auto h-12 w-12 text-slate-300" />
-                <h3 className="mt-4 text-sm font-semibold text-slate-900">无可显示的众筹商品</h3>
-                <p className="mt-1 text-xs text-slate-400">目前没有符合条件的商品，清空搜索检索词或重置品类筛选。</p>
-                <button 
+                <h3 className="mt-4 text-sm font-semibold text-slate-900">No crowdfunding products</h3>
+                <p className="mt-1 text-xs text-slate-400">Nothing matches your filters. Clear search or pick a different category.</p>
+                <button
                   onClick={resetCrowdFilters}
                   className="mt-4 inline-flex items-center px-4 py-2 bg-emerald-500 hover:bg-emerald-600 text-white text-xs font-semibold rounded-lg shadow-xs cursor-pointer transition"
                 >
-                  重置筛选重新加载
+                  Reset filters
                 </button>
               </div>
             )}
@@ -859,7 +859,7 @@ export default function App() {
                     type="text" 
                     value={newsSearch}
                     onChange={e => setNewsSearch(e.target.value)}
-                    placeholder="全盘检索英汉标题、要言要点摘要内容..." 
+                    placeholder="Search article titles, snippets, AI summary..."
                     className="block w-full pl-9 pr-4 py-2 border border-slate-200 rounded-lg text-xs bg-slate-50 placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-emerald-500 focus:border-emerald-500 focus:bg-white transition"
                   />
                 </div>
@@ -867,13 +867,13 @@ export default function App() {
                 {/* 右侧选项 */}
                 <div className="flex flex-wrap items-center gap-3">
                   <div className="flex items-center gap-1.5">
-                    <span className="text-[11px] text-slate-400 font-medium font-sans">资讯类型:</span>
-                    <select 
+                    <span className="text-[11px] text-slate-400 font-medium font-sans">Topic:</span>
+                    <select
                       value={newsCategory}
                       onChange={e => setNewsCategory(e.target.value)}
                       className="bg-slate-50 border border-slate-200 rounded-md text-xs px-2.5 py-1.5 text-slate-700 outline-none focus:ring-1 focus:ring-emerald-500 cursor-pointer font-medium"
                     >
-                      <option value="">全部类型</option>
+                      <option value="">All topics</option>
                       {newsCategories.map(cat => (
                         <option key={cat} value={cat}>{cat}</option>
                       ))}
@@ -884,7 +884,7 @@ export default function App() {
 
               {/* 源媒体多选 */}
               <div className="border-t border-slate-100 pt-4 flex flex-col sm:flex-row sm:items-center gap-3">
-                <span className="text-[11px] text-slate-400 font-medium whitespace-nowrap">媒体来源:</span>
+                <span className="text-[11px] text-slate-400 font-medium whitespace-nowrap">Sources:</span>
                 <div className="flex flex-wrap items-center gap-2">
                   {['The Verge', 'TechCrunch', 'Gizchina', 'Ventureburn'].map(src => {
                     const isSelected = selectedSources.includes(src);
@@ -916,7 +916,7 @@ export default function App() {
                     className="text-xs text-slate-400 hover:text-emerald-600 transition flex items-center gap-1 cursor-pointer select-none font-semibold ml-auto"
                   >
                     <RotateCcw className="w-3.5 h-3.5" />
-                    清除所有筛选
+                    Clear all filters
                   </button>
                 )}
               </div>
@@ -932,13 +932,13 @@ export default function App() {
             ) : (
               <div className="bg-white rounded-xl border border-slate-150 p-12 text-center max-w-lg mx-auto shadow-3xs">
                 <FilterX className="mx-auto h-12 w-12 text-slate-300" />
-                <h3 className="mt-4 text-sm font-semibold text-slate-900">未检索到任何快讯</h3>
-                <p className="mt-1 text-xs text-slate-400">目前暂无对应快讯报导，尝试缩减排除或者重置过滤器。</p>
-                <button 
+                <h3 className="mt-4 text-sm font-semibold text-slate-900">No articles found</h3>
+                <p className="mt-1 text-xs text-slate-400">No matching news right now. Try fewer keywords or reset the filters.</p>
+                <button
                   onClick={resetNewsFilters}
                   className="mt-4 inline-flex items-center px-4 py-2 bg-emerald-500 hover:bg-emerald-600 text-white text-xs font-semibold rounded-lg shadow-xs cursor-pointer transition"
                 >
-                  重设资讯过滤项
+                  Reset filters
                 </button>
               </div>
             )}
@@ -963,42 +963,42 @@ export default function App() {
                   <span className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                     <Search className="h-4 w-4 text-slate-400" />
                   </span>
-                  <input 
-                    type="text" 
+                  <input
+                    type="text"
                     value={startupSearch}
                     onChange={e => setStartupSearch(e.target.value)}
-                    placeholder="输入创业公司名" 
+                    placeholder="Search startups by name"
                     className="block w-full pl-9 pr-4 py-2 border border-slate-200 rounded-lg text-xs bg-slate-50 placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-emerald-500 focus:border-emerald-500 focus:bg-white transition"
                   />
                 </div>
 
                 {/* YC/a16z 批次限制过滤 */}
                 <div className="flex items-center gap-3 font-sans">
-                  <span className="text-[11px] text-slate-400 font-medium">批次:</span>
-                  <select 
+                  <span className="text-[11px] text-slate-400 font-medium">Batch:</span>
+                  <select
                     value={selectedBatch}
                     onChange={e => setSelectedBatch(e.target.value)}
                     className="bg-slate-50 border border-slate-200 rounded-md text-xs px-2.5 py-1.5 text-slate-700 outline-none focus:ring-1 focus:ring-emerald-500 cursor-pointer font-medium"
                   >
-                    <option value="">全部批次</option>
-                    <option value="Spring 2026">S26（Spring 2026）</option>
-                    <option value="Winter 2026">W26（Winter 2026）</option>
-                    <option value="Fall 2025">F25（Fall 2025）</option>
-                    <option value="Summer 2025">S25（Summer 2025）</option>
-                    <option value="Winter 2025">W25（Winter 2025）</option>
-                    <option value="Fall 2024">F24（Fall 2024）</option>
-                    <option value="Summer 2024">S24（Summer 2024）</option>
-                    <option value="Active">a16z Active（投后活跃）</option>
+                    <option value="">All batches</option>
+                    <option value="Spring 2026">S26 (Spring 2026)</option>
+                    <option value="Winter 2026">W26 (Winter 2026)</option>
+                    <option value="Fall 2025">F25 (Fall 2025)</option>
+                    <option value="Summer 2025">S25 (Summer 2025)</option>
+                    <option value="Winter 2025">W25 (Winter 2025)</option>
+                    <option value="Fall 2024">F24 (Fall 2024)</option>
+                    <option value="Summer 2024">S24 (Summer 2024)</option>
+                    <option value="Active">a16z Active</option>
                   </select>
 
                   {/* 重设 */}
                   {(startupSearch || selectedBatch) && (
-                    <button 
+                    <button
                       onClick={resetStartupFilters}
                       className="text-xs text-slate-400 hover:text-emerald-600 transition flex items-center gap-1 cursor-pointer select-none font-semibold ml-2"
                     >
                       <RotateCcw className="w-3.5 h-3.5" />
-                      重置
+                      Reset
                     </button>
                   )}
                 </div>
@@ -1016,13 +1016,13 @@ export default function App() {
             ) : (
               <div className="bg-white rounded-xl border border-slate-150 p-12 text-center max-w-lg mx-auto shadow-3xs">
                 <FilterX className="mx-auto h-12 w-12 text-slate-300" />
-                <h3 className="mt-4 text-sm font-semibold text-slate-900">无可检索展示的孵化计划</h3>
-                <p className="mt-1 text-xs text-slate-400">目前暂无符合相应学届批次的 YC/a16z 创始名单，请换关键词重试。</p>
-                <button 
+                <h3 className="mt-4 text-sm font-semibold text-slate-900">No startups match</h3>
+                <p className="mt-1 text-xs text-slate-400">No YC / a16z companies in this batch. Try a different keyword or batch.</p>
+                <button
                   onClick={resetStartupFilters}
                   className="mt-4 inline-flex items-center px-4 py-2 bg-emerald-500 hover:bg-emerald-600 text-white text-xs font-semibold rounded-lg shadow-xs cursor-pointer transition"
                 >
-                  清空筛选重新罗列
+                  Reset filters
                 </button>
               </div>
             )}
@@ -1038,8 +1038,8 @@ export default function App() {
             3C TREND ACQUISITION SYSTEM © 2026
           </p>
           <p className="max-w-md mx-auto leading-relaxed">
-            数据采集自全球核心开源接口与孵化名录，专为极客提供精巧视觉。
-            本平台全面使用 React 19 + Tailwind v4 架构打造而成。
+            Data sourced from global open-source feeds and incubator rosters, with a clean visual designed for makers.
+            Built with React 19 + Tailwind v4.
           </p>
           <div className="flex items-center justify-center gap-3 text-emerald-600 font-semibold mt-1 select-none">
             <a href="https://www.kickstarter.com" target="_blank" rel="noreferrer" className="hover:underline">Kickstarter</a>
