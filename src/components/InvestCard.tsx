@@ -11,13 +11,8 @@ interface Props {
 }
 
 export function InvestCard({ item, isFavorite, onToggleFavorite, variant = 'default' }: Props) {
-  // tagline 里通常含来源徽章（"GitHub 12★/4Fork"），切成多个 chips
-  // 把 "/" "·" 多种分隔符切开，每个非空 chunk 当独立标签
-  const taglineChips = (item.tagline || '')
-    .split(/[\s/·,]+/)
-    .map((s) => s.trim())
-    .filter((s) => s.length > 0 && s.length < 30)
-    .slice(0, 3);
+  // tagline 整体当一个药丸显示（不再用分隔符拆，避免破坏 "GitHub 2,795★" 这种含逗号数字）
+  const taglineChips = item.tagline ? [item.tagline.trim()] : [];
 
   // featured 变体：用于「今日精选」横排深色卡。仅显示头部 + 简短简介
   if (variant === 'featured') {
