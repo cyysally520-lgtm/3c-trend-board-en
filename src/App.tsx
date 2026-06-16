@@ -154,9 +154,9 @@ export default function App() {
   const [selectedPlatforms, setSelectedPlatforms] = useState<string[]>([]);
   const [crowdSortBy, setCrowdSortBy] = useState('popular');
 
-  // Available unique tags for crowdfunding items
+  // Available unique tags for crowdfunding items（EN 优先）
   const crowdCategories = useMemo(() => {
-    const list = crowdfundingData.map(item => item.category_tag_zh);
+    const list = crowdfundingData.map(item => item.category_tag_en || item.category_tag_zh).filter(Boolean);
     return Array.from(new Set(list));
   }, [crowdfundingData]);
 
@@ -175,7 +175,7 @@ export default function App() {
     }
 
     if (crowdCategory) {
-      result = result.filter(item => item.category_tag_zh === crowdCategory);
+      result = result.filter(item => (item.category_tag_en || item.category_tag_zh) === crowdCategory);
     }
 
     if (selectedPlatforms.length > 0) {
@@ -221,7 +221,7 @@ export default function App() {
   const [selectedSources, setSelectedSources] = useState<string[]>([]);
 
   const newsCategories = useMemo(() => {
-    const list = newsData.map(item => item.category_tag_zh);
+    const list = newsData.map(item => item.category_tag_en || item.category_tag_zh).filter(Boolean);
     return Array.from(new Set(list));
   }, [newsData]);
 
@@ -239,7 +239,7 @@ export default function App() {
     }
 
     if (newsCategory) {
-      result = result.filter(item => item.category_tag_zh === newsCategory);
+      result = result.filter(item => (item.category_tag_en || item.category_tag_zh) === newsCategory);
     }
 
     if (selectedSources.length > 0) {
