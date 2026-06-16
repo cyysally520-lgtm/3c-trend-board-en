@@ -1,53 +1,84 @@
 /**
  * Gemini AI 翻译模块
- * 批量翻译产品名称和生成中文摘要
  * 使用 REST API 直接调用，避免 SDK 版本兼容问题
+ *
+ * 多 key 轮询：从环境读 GEMINI_API_KEY / GEMINI_API_KEY_2 / GEMINI_API_KEY_3...
+ * 收到 429 自动切下一个 key 重试，全部 429 才放弃
  */
 import { log } from './logger';
 
 // 注意：不在模块顶部读 env，避免在 dotenv.config 之前就被冻结成空串
-function getApiKey(): string {
-  return process.env.GEMINI_API_KEY || '';
+function getApiKeys(): string[] {
+  const keys: string[] = [];
+  const primary = process.env.GEMINI_API_KEY;
+  if (primary) keys.push(primary);
+  // GEMINI_API_KEY_2 / _3 / _4 ... 依次扫
+  for (let i = 2; i <= 10; i++) {
+    const v = process.env[`GEMINI_API_KEY_${i}`];
+    if (v) keys.push(v);
+  }
+  return keys;
 }
 
+// 模块级状态：当前用哪个 key 索引（轮询起点），失败时累进
+let currentKeyIdx = 0;
+
 /**
- * 调用 Gemini REST API
+ * 调用 Gemini REST API（多 key 自动轮询 + 429 重试）
  */
 async function callGemini(prompt: string): Promise<string> {
-  const GEMINI_API_KEY = getApiKey();
-  if (!GEMINI_API_KEY) {
+  const keys = getApiKeys();
+  if (keys.length === 0) {
     log.warn('translate', 'GEMINI_API_KEY not set, skipping translation');
     return '';
   }
 
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API_KEY}`;
+  // 最多遍历每个 key 一次
+  let lastErr: Error | null = null;
+  for (let attempt = 0; attempt < keys.length; attempt++) {
+    const key = keys[currentKeyIdx % keys.length];
+    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${key}`;
+    try {
+      const response = await fetch(url, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          contents: [{ parts: [{ text: prompt }] }],
+          generationConfig: { temperature: 0.3, maxOutputTokens: 2048 },
+        }),
+      });
 
-  const response = await fetch(url, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      contents: [{ parts: [{ text: prompt }] }],
-      generationConfig: {
-        temperature: 0.3,
-        maxOutputTokens: 2048,
-      },
-    }),
-  });
+      if (response.status === 429) {
+        // 这个 key 配额耗尽，切下一个
+        log.info('translate', `key #${(currentKeyIdx % keys.length) + 1} hit 429, rotating...`);
+        currentKeyIdx++;
+        lastErr = new Error('429 rate limit');
+        continue;
+      }
 
-  if (!response.ok) {
-    const errText = await response.text().catch(() => '');
-    throw new Error(`Gemini API ${response.status}: ${errText.slice(0, 300)}`);
+      if (!response.ok) {
+        const errText = await response.text().catch(() => '');
+        throw new Error(`Gemini API ${response.status}: ${errText.slice(0, 300)}`);
+      }
+
+      const data = await response.json();
+      const candidates = data?.candidates || [];
+      if (candidates.length === 0) {
+        throw new Error('Gemini API returned no candidates');
+      }
+      const parts = candidates[0]?.content?.parts || [];
+      const text = parts.map((p: any) => p.text || '').join('');
+      return text.trim();
+    } catch (err) {
+      // 非 429 错误也切 key 试一次
+      lastErr = err instanceof Error ? err : new Error(String(err));
+      currentKeyIdx++;
+      continue;
+    }
   }
 
-  const data = await response.json();
-  // 从响应中提取文本
-  const candidates = data?.candidates || [];
-  if (candidates.length === 0) {
-    throw new Error('Gemini API returned no candidates');
-  }
-  const parts = candidates[0]?.content?.parts || [];
-  const text = parts.map((p: any) => p.text || '').join('');
-  return text.trim();
+  // 所有 key 都用过了仍失败
+  throw lastErr ?? new Error('all Gemini keys exhausted');
 }
 
 /**
