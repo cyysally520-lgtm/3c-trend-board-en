@@ -146,8 +146,17 @@ export async function scrapeNextbanker(maxItems = 1000): Promise<ScrapeResult<Ra
 
     // 转成 RawInvestItem
     let rank = 0;
+    let droppedNonGithub = 0;
     for (const c of cards) {
       if (result.items.length >= maxItems) break;
+
+      // EN 站独有过滤：只保留 GitHub 来源的项目（其他来源如 XHS / 清华校长杯 /
+      // 抖音等是中文社交媒体，对海外用户无意义；GitHub 项目通常英文 README 友好）
+      if (!/github/i.test(c.sourceBadge)) {
+        droppedNonGithub++;
+        continue;
+      }
+
       rank++;
       try {
         // daysAgo 解析
@@ -184,7 +193,7 @@ export async function scrapeNextbanker(maxItems = 1000): Promise<ScrapeResult<Ra
     for (const it of result.items) bySection[it.category] = (bySection[it.category] ?? 0) + 1;
     log.ok(
       'nextbanker',
-      `extracted ${result.items.length} invest items: ${Object.entries(bySection).map(([k, v]) => `${k}=${v}`).join(', ')}`,
+      `extracted ${result.items.length} invest items (GitHub-only, dropped ${droppedNonGithub} non-GitHub): ${Object.entries(bySection).map(([k, v]) => `${k}=${v}`).join(', ')}`,
     );
   } catch (err) {
     log.err('nextbanker', 'scrape failed', err);
