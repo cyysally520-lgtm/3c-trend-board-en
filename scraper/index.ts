@@ -15,7 +15,7 @@ import pLimit from 'p-limit';
 import { log } from './lib/logger';
 import { saveSnapshot, updateManifest, pruneOldSnapshots } from './lib/storage';
 import { closeBrowser } from './lib/browser';
-import { translateCrowdNames, generateCrowdSummaries, translateNewsTitles, translateStartupIntros } from './lib/translate';
+import { translateCrowdToEn, translateNewsToEn, translateStartupsToEn, translateInvestsToEn } from './lib/translate';
 import { scrapeCrowdSupply } from './sources/crowdsupply';
 import { scrapeKickstarter } from './sources/kickstarter';
 import { scrapeIndiegogo } from './sources/indiegogo';
@@ -76,12 +76,35 @@ async function main() {
     byKind[kind].push(...result.items);
   }
 
-  // AI 翻译：翻译众筹产品名称 + 生成中文摘要
+  // ==== EN 站 AI 翻译流水线：把已有/新增的中文字段反向译为英文 ====
+  // 顺序优先级：crowd > startup > invest > news（按用户要求 + Gemini 限流时的容错性）
+
+  // 1. 众筹：category_tag_zh → category_tag_en，summary_zh → summary_en
+  //    name 本来是英文（KS/CrowdSupply 数据），无需译
   if (byKind.crowdfunding.length > 0) {
-    log.info('translate', 'translating crowdfunding product names...');
-    await translateCrowdNames(byKind.crowdfunding);
-    log.info('translate', 'generating crowdfunding AI summaries...');
-    await generateCrowdSummaries(byKind.crowdfunding);
+    log.info('translate', 'translating crowdfunding tags + summaries to EN...');
+    await translateCrowdToEn(byKind.crowdfunding);
+  }
+
+  // 2. 海外孵化（startups）：intro_zh → intro_en
+  //    name / intro 本来是英文（YC/a16z 数据）
+  if (byKind.startups.length > 0) {
+    log.info('translate', 'translating startup intros to EN...');
+    await translateStartupsToEn(byKind.startups);
+  }
+
+  // 3. AI 高潜（investments，nextbanker 中文源）：所有字段 → *_en
+  //    最大 Gemini 消耗，放在前面以便用户重视
+  if (byKind.investments.length > 0) {
+    log.info('translate', 'translating invest items to EN (heavy)...');
+    await translateInvestsToEn(byKind.investments);
+  }
+
+  // 4. 新闻：category_tag_zh → category_tag_en
+  //    title / snippet 本来是英文，title_zh / snippet_zh 不需要回译
+  if (byKind.news.length > 0) {
+    log.info('translate', 'translating news category tags to EN...');
+    await translateNewsToEn(byKind.news);
   }
 
   // 新闻：丢弃没图片或图片是占位的条目（Ventureburn/TheVerge 懒加载占位 SVG）
@@ -101,19 +124,6 @@ async function main() {
     if (dropped > 0) {
       log.info('main', `news: dropped ${dropped} item(s) without valid image, ${byKind.news.length} remaining`);
     }
-  }
-
-  // AI 翻译：新闻标题 → 中文（参考目标站「硅谷听见」样式）
-  if (byKind.news.length > 0) {
-    log.info('translate', 'translating news titles...');
-    await translateNewsTitles(byKind.news);
-  }
-
-  // AI 翻译：YC / a16z 创业公司英文 intro → 中文要点 bullets
-  // 参考目标站「海外孵化」的「AI 独角兽企业分析」
-  if (byKind.startups.length > 0) {
-    log.info('translate', 'generating startup analysis (Chinese)...');
-    await translateStartupIntros(byKind.startups);
   }
 
   // 写盘（即使本次某 kind 无新数据也调用 saveSnapshot，触发合并保留旧数据）

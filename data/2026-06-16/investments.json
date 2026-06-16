@@ -16,7 +16,8 @@
       "funding": "未融资；datascale-ai为USTC学术实验室，有华为ICT学院合作背景",
       "daysAgo": 12,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.422Z"
+      "scrapedAt": "2026-06-16T08:37:19.422Z",
+      "name_en": "InkSight Cuttlefish AI E-ink Screen"
     },
     {
       "id": "nb-wuxx",
@@ -46,7 +47,8 @@
       "funding": "未融资（无已知融资）",
       "daysAgo": 20,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "name_en": "LinkAI Starlight AI Eyewear"
     },
     {
       "id": "nb-hgyzqxt",
@@ -91,7 +93,8 @@
       "funding": "Pre-A轮（投融界报道）",
       "daysAgo": 21,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "name_en": "FoloToy"
     },
     {
       "id": "nb-arxiv-2606-12372",
@@ -256,7 +259,8 @@
       "funding": "未融资",
       "daysAgo": 12,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "business_en": "Dual-track model of open-source infrastructure and enterprise services, planning a ClawHub skill marketplace, enterprise-grade physical AI deployment platform, and a robot manufacturer SDK certification ecosystem."
     },
     {
       "id": "nb-no-chicken",
@@ -271,7 +275,8 @@
       "funding": "未融资",
       "daysAgo": 12,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "business_en": "Hardware kits sold on Taobao, targeting the desktop AI assistant niche market, and has formed a product matrix including OV-Watch."
     },
     {
       "id": "nb-starvla",
@@ -286,7 +291,8 @@
       "funding": "学术项目，未融资",
       "daysAgo": 13,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "business_en": "Open-source community driven, actively operating WeChat communities, with future expansion into MaaS platforms or embodied AI development toolchains."
     },
     {
       "id": "nb-arxiv-2606-09777",
@@ -301,7 +307,8 @@
       "funding": "学术团队，未融资",
       "daysAgo": 7,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "business_en": "Providing haptic teaching"
     },
     {
       "id": "nb-nhwjxzxz",
@@ -361,7 +368,8 @@
       "funding": "未融资",
       "daysAgo": 21,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "name_en": "Mockway Shepherd Robot"
     },
     {
       "id": "nb-reall3d",
@@ -406,7 +414,8 @@
       "funding": "未融资",
       "daysAgo": 12,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "name_en": "Deep Inquiry Embodied AI 6-axis Robotic Arm (Driven X)"
     },
     {
       "id": "nb-openember",
@@ -1831,7 +1840,8 @@
       "funding": "未公开传统融资，已IDO发币",
       "daysAgo": 10,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Undisclosed traditional funding; tokens issued via IDO"
     },
     {
       "id": "nb-microclaw",
@@ -1846,7 +1856,8 @@
       "funding": "未融资",
       "daysAgo": 5,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded"
     },
     {
       "id": "nb-jztan",
@@ -1861,7 +1872,8 @@
       "funding": "未融资（个人项目，就职于上市公司GDC）",
       "daysAgo": 5,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded (personal project; employed at publicly listed company GDC)"
     },
     {
       "id": "nb-morrislu-taipei",
@@ -1876,7 +1888,8 @@
       "funding": "台科大校友种子投资，未机构融资",
       "daysAgo": 5,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Seed investment from NTUST alumni; no institutional funding"
     },
     {
       "id": "nb-onelevenvy",
@@ -1891,7 +1904,8 @@
       "funding": "未公开融资",
       "daysAgo": 5,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Undisclosed funding"
     },
     {
       "id": "nb-clawpanel",
@@ -1906,7 +1920,8 @@
       "funding": "未融资（Bootstrap，赞助商+内测平台营收）",
       "daysAgo": 25,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded (bootstrapped; revenue from sponsors and internal testing platform)"
     },
     {
       "id": "nb-evotown",
@@ -1921,7 +1936,8 @@
       "funding": "未融资，无公司实体",
       "daysAgo": 21,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded; no corporate entity"
     },
     {
       "id": "nb-aomi-labs",
@@ -1936,7 +1952,8 @@
       "funding": "未融资",
       "daysAgo": 6,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded"
     },
     {
       "id": "nb-gizclaw",
@@ -1951,7 +1968,8 @@
       "funding": "未融资",
       "daysAgo": 6,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded"
     },
     {
       "id": "nb-hehehai",
@@ -1966,7 +1984,8 @@
       "funding": "未融资",
       "daysAgo": 12,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded"
     },
     {
       "id": "nb-ipythoning",
@@ -1981,7 +2000,8 @@
       "funding": "未融资（个人创业）",
       "daysAgo": 12,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded (personal venture)"
     },
     {
       "id": "nb-lnc0831",
@@ -1996,7 +2016,8 @@
       "funding": "未融资",
       "daysAgo": 7,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded"
     },
     {
       "id": "nb-study8677",
@@ -2011,7 +2032,8 @@
       "funding": "未公开融资信息",
       "daysAgo": 7,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Funding information undisclosed"
     },
     {
       "id": "nb-peterfei",
@@ -2026,7 +2048,8 @@
       "funding": "未融资",
       "daysAgo": 8,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded"
     },
     {
       "id": "nb-vcptoolbox",
@@ -2041,7 +2064,8 @@
       "funding": "未融资（个人开源项目）",
       "daysAgo": 25,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded (personal open-source project)"
     },
     {
       "id": "nb-kooky",
@@ -2056,7 +2080,8 @@
       "funding": "未融资",
       "daysAgo": 22,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded"
     },
     {
       "id": "nb-mdyao",
@@ -2071,7 +2096,8 @@
       "funding": "未融资，纯学术背景",
       "daysAgo": 10,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded, pure academic background"
     },
     {
       "id": "nb-yao-beyond",
@@ -2086,7 +2112,8 @@
       "funding": "未融资",
       "daysAgo": 10,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded"
     },
     {
       "id": "nb-zhikuncode",
@@ -2101,7 +2128,8 @@
       "funding": "未融资",
       "daysAgo": 21,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded"
     },
     {
       "id": "nb-qiantongtech",
@@ -2116,7 +2144,8 @@
       "funding": "未融资",
       "daysAgo": 11,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded"
     },
     {
       "id": "nb-aix-db",
@@ -2131,7 +2160,8 @@
       "funding": "未融资（Bootstrap，技术服务收入）",
       "daysAgo": 25,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded (Bootstrap, technical service revenue)"
     },
     {
       "id": "nb-openmantis",
@@ -2146,7 +2176,8 @@
       "funding": "未融资",
       "daysAgo": 22,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded"
     },
     {
       "id": "nb-alookai",
@@ -2161,7 +2192,8 @@
       "funding": "未融资",
       "daysAgo": 12,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded"
     },
     {
       "id": "nb-yanyutin753",
@@ -2176,7 +2208,8 @@
       "funding": "未融资",
       "daysAgo": 12,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded"
     },
     {
       "id": "nb-feichai0017",
@@ -2191,7 +2224,8 @@
       "funding": "未融资",
       "daysAgo": 12,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded"
     },
     {
       "id": "nb-guiwu1",
@@ -2206,7 +2240,8 @@
       "funding": "未融资",
       "daysAgo": 12,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded"
     },
     {
       "id": "nb-edgebox",
@@ -2221,7 +2256,8 @@
       "funding": "未融资，无公司实体",
       "daysAgo": 21,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded, no company entity"
     },
     {
       "id": "nb-cchenax",
@@ -2236,7 +2272,8 @@
       "funding": "未融资",
       "daysAgo": 10,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded"
     },
     {
       "id": "nb-yuxi",
@@ -2251,7 +2288,8 @@
       "funding": "未融资（⚠️ 5000+星可能已有VC接触，需确认）",
       "daysAgo": 25,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded (5000+ stars may indicate VC outreach; requires confirmation)"
     },
     {
       "id": "nb-memex-lab",
@@ -2266,7 +2304,8 @@
       "funding": "未融资",
       "daysAgo": 12,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded"
     },
     {
       "id": "nb-gsv-tts-lite",
@@ -2281,7 +2320,8 @@
       "funding": "未融资（个人开源项目）",
       "daysAgo": 22,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded (personal open-source project)"
     },
     {
       "id": "nb-evoagentx",
@@ -2296,7 +2336,8 @@
       "funding": "未融资（学术项目）",
       "daysAgo": 25,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded (academic project)"
     },
     {
       "id": "nb-nageoffer-ragent",
@@ -2326,7 +2367,8 @@
       "funding": "未融资",
       "daysAgo": 11,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded"
     },
     {
       "id": "nb-leonting1010",
@@ -2341,7 +2383,8 @@
       "funding": "未融资",
       "daysAgo": 11,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded"
     },
     {
       "id": "nb-fim-ai-fim-one",
@@ -2371,7 +2414,8 @@
       "funding": "Pre-A轮已完成",
       "daysAgo": 27,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Pre-A round closed"
     },
     {
       "id": "nb-demondamon-agenticx",
@@ -2386,7 +2430,8 @@
       "funding": "未融资",
       "daysAgo": 27,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded"
     },
     {
       "id": "nb-ai-shifu",
@@ -2401,7 +2446,8 @@
       "funding": "未融资（初创，已上线SaaS）",
       "daysAgo": 12,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded (startup, SaaS launched)"
     },
     {
       "id": "nb-echo-loop",
@@ -2416,7 +2462,8 @@
       "funding": "未融资",
       "daysAgo": 12,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded"
     },
     {
       "id": "nb-steveyeow",
@@ -2431,7 +2478,8 @@
       "funding": "未融资（创始人为YC校友，但YC为前序项目）",
       "daysAgo": 12,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded (founder is a YC alumnus, but YC was for a prior project)"
     },
     {
       "id": "nb-dongzhang84",
@@ -2446,7 +2494,8 @@
       "funding": "未融资",
       "daysAgo": 11,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded"
     },
     {
       "id": "nb-educlaw-flysheep",
@@ -2461,7 +2510,8 @@
       "funding": "未融资（学术项目转产品化阶段）",
       "daysAgo": 22,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded (academic project transitioning to productization phase)"
     },
     {
       "id": "nb-arxiv-2606-08897",
@@ -2476,7 +2526,8 @@
       "funding": "未融资",
       "daysAgo": 7,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded"
     },
     {
       "id": "nb-thinkwee",
@@ -2491,7 +2542,8 @@
       "funding": "未融资",
       "daysAgo": 11,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded"
     },
     {
       "id": "nb-hougelangley",
@@ -2506,7 +2558,8 @@
       "funding": "未融资",
       "daysAgo": 11,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded"
     },
     {
       "id": "nb-liyiteng",
@@ -2521,7 +2574,8 @@
       "funding": "未找到融资消息",
       "daysAgo": 3,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "No funding information found"
     },
     {
       "id": "nb-liangsu8899",
@@ -2536,7 +2590,8 @@
       "funding": "未融资",
       "daysAgo": 4,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded"
     },
     {
       "id": "nb-zeroclaw-labs",
@@ -2566,7 +2621,8 @@
       "funding": "PolyU Micro Fund资助，未获机构投资",
       "daysAgo": 4,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Funded by PolyU Micro Fund, no institutional investment"
     },
     {
       "id": "nb-fb208",
@@ -2581,7 +2637,9 @@
       "funding": "未融资",
       "daysAgo": 3,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "name_en": "Easy Mark AI",
+      "funding_en": "Unfunded"
     },
     {
       "id": "nb-oaklight",
@@ -2596,7 +2654,8 @@
       "funding": "未融资，芝加哥大学学术项目",
       "daysAgo": 3,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded, University of Chicago academic project"
     },
     {
       "id": "nb-jeffstric",
@@ -2611,7 +2670,9 @@
       "funding": "未融资，同类竞品AniShort近期获近亿元融资",
       "daysAgo": 3,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "name_en": "Smart Script Hub",
+      "funding_en": "Unfunded; a similar competitor, AniShort, recently raised nearly 100 million RMB"
     },
     {
       "id": "nb-learnprompt",
@@ -2626,7 +2687,8 @@
       "funding": "未融资",
       "daysAgo": 4,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded"
     },
     {
       "id": "nb-moyangzhan",
@@ -2641,7 +2703,8 @@
       "funding": "未融资",
       "daysAgo": 4,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded"
     },
     {
       "id": "nb-aaswordman",
@@ -2656,7 +2719,8 @@
       "funding": "未融资",
       "daysAgo": 4,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded"
     },
     {
       "id": "nb-garyqlin",
@@ -2671,7 +2735,8 @@
       "funding": "未融资",
       "daysAgo": 3,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded"
     },
     {
       "id": "nb-gangtiser",
@@ -2686,7 +2751,8 @@
       "funding": "未公开融资，企查查显示有股权投资",
       "daysAgo": 4,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Undisclosed funding; Qichacha indicates equity investment"
     },
     {
       "id": "nb-linchangyi1",
@@ -2701,7 +2767,8 @@
       "funding": "未融资（在读博士，无公司实体）",
       "daysAgo": 2,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded (PhD candidate, no company entity)"
     },
     {
       "id": "nb-firmament-autopilot",
@@ -2716,7 +2783,8 @@
       "funding": "未融资，释云科技注册资本120万",
       "daysAgo": 2,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded; Shiyun Technology has a registered capital of 1.2 million RMB"
     },
     {
       "id": "nb-yanjieze",
@@ -2731,7 +2799,8 @@
       "funding": "未融资（在读博士）",
       "daysAgo": 2,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded (PhD candidate)"
     },
     {
       "id": "nb-tauricresearch",
@@ -2746,7 +2815,8 @@
       "funding": "未找到融资消息",
       "daysAgo": 2,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "No funding information found"
     },
     {
       "id": "nb-langbot-app",
@@ -2761,7 +2831,8 @@
       "funding": "项目未融资，创始人任职的Dify已获红杉领投3000万美元Pre-A轮",
       "daysAgo": 2,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Project unfunded; Dify, the founder's employer, has raised a $30 million Pre-A round led by Sequoia"
     },
     {
       "id": "nb-freestylefly",
@@ -2776,7 +2847,8 @@
       "funding": "未融资，武汉苍何智联科技已注册，可投早期",
       "daysAgo": 2,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded, Wuhan Canghe Zhilian Technology is registered and open to early-stage investment."
     },
     {
       "id": "nb-yym68686",
@@ -2791,7 +2863,8 @@
       "funding": "未融资，商业产品已上线",
       "daysAgo": 2,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded, commercial product launched."
     },
     {
       "id": "nb-codeking-ai",
@@ -2806,7 +2879,8 @@
       "funding": "未融资（个人开源项目）",
       "daysAgo": 2,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded (personal open-source project)."
     },
     {
       "id": "nb-worldwonderer",
@@ -2821,7 +2895,8 @@
       "funding": "未融资",
       "daysAgo": 2,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded."
     },
     {
       "id": "nb-xiaotonng",
@@ -2836,7 +2911,8 @@
       "funding": "未融资",
       "daysAgo": 2,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded."
     },
     {
       "id": "nb-notnotype",
@@ -2851,7 +2927,8 @@
       "funding": "未融资",
       "daysAgo": 2,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded."
     },
     {
       "id": "nb-konghayao",
@@ -2866,7 +2943,8 @@
       "funding": "未融资",
       "daysAgo": 2,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded."
     },
     {
       "id": "nb-huanchong-99",
@@ -2881,7 +2959,8 @@
       "funding": "未融资",
       "daysAgo": 3,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded."
     },
     {
       "id": "nb-ceilf6",
@@ -2896,7 +2975,8 @@
       "funding": "未融资",
       "daysAgo": 2,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded."
     },
     {
       "id": "nb-qufei1993",
@@ -2911,7 +2991,8 @@
       "funding": "未融资",
       "daysAgo": 2,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded."
     },
     {
       "id": "nb-timwuhaotian",
@@ -2926,7 +3007,8 @@
       "funding": "未融资",
       "daysAgo": 2,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded."
     },
     {
       "id": "nb-yiichuan",
@@ -2941,7 +3023,8 @@
       "funding": "未融资",
       "daysAgo": 2,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded."
     },
     {
       "id": "nb-zhou-shilin",
@@ -2956,7 +3039,8 @@
       "funding": "未融资",
       "daysAgo": 3,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded."
     },
     {
       "id": "nb-jianshuo",
@@ -2971,7 +3055,8 @@
       "funding": "当前项目未融资（创始人历史项目百姓网已完成D轮融资）。",
       "daysAgo": 2,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Current project unfunded (founder's previous project, Baixing.com, completed Series D funding)."
     },
     {
       "id": "nb-zleap-ai",
@@ -2986,7 +3071,8 @@
       "funding": "未融资，依托302.AI营收自给",
       "daysAgo": 1,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded, self-sustaining through revenue from 302.AI."
     },
     {
       "id": "nb-ekkolearnai",
@@ -3001,7 +3087,8 @@
       "funding": "未融资",
       "daysAgo": 1,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded"
     },
     {
       "id": "nb-astrbotdevs",
@@ -3016,7 +3103,8 @@
       "funding": "未融资，接受社区捐赠",
       "daysAgo": 1,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded, accepts community donations"
     },
     {
       "id": "nb-barry-ran",
@@ -3031,7 +3119,8 @@
       "funding": "未融资，济南快码科技2021年成立注册资本100万",
       "daysAgo": 1,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded. Jinan Kuaima Technology was established in 2021 with a registered capital of CNY 1 million."
     },
     {
       "id": "nb-liaohch3",
@@ -3046,7 +3135,8 @@
       "funding": "未融资",
       "daysAgo": 1,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded"
     },
     {
       "id": "nb-rexleimo",
@@ -3061,7 +3151,8 @@
       "funding": "个人项目未融资；任职公司Pollo AI已完成1400万美元A轮（高成资本领投）",
       "daysAgo": 1,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Personal project unfunded; my current company, Pollo AI, has completed a $14 million Series A round (led by Gaocheng Capital)."
     },
     {
       "id": "nb-fradser",
@@ -3076,7 +3167,8 @@
       "funding": "未融资",
       "daysAgo": 1,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded"
     },
     {
       "id": "nb-witchan",
@@ -3091,7 +3183,8 @@
       "funding": "未融资，独立开发",
       "daysAgo": 1,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded, independently developed"
     },
     {
       "id": "nb-panghim",
@@ -3106,7 +3199,8 @@
       "funding": "未融资",
       "daysAgo": 1,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded"
     },
     {
       "id": "nb-hongmaple0820",
@@ -3121,7 +3215,8 @@
       "funding": "未融资",
       "daysAgo": 1,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded"
     },
     {
       "id": "nb-sma1lboy",
@@ -3136,7 +3231,8 @@
       "funding": "未融资，个人项目",
       "daysAgo": 1,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded, personal project"
     },
     {
       "id": "nb-chubbyguan",
@@ -3151,7 +3247,8 @@
       "funding": "未融资",
       "daysAgo": 1,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded"
     },
     {
       "id": "nb-neuralbridge-sdk",
@@ -3166,7 +3263,8 @@
       "funding": "未融资",
       "daysAgo": 1,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded"
     },
     {
       "id": "nb-zhiweichen-coder",
@@ -3181,7 +3279,8 @@
       "funding": "未融资",
       "daysAgo": 1,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded"
     },
     {
       "id": "nb-dainsiahtill-dev",
@@ -3196,7 +3295,8 @@
       "funding": "未融资",
       "daysAgo": 2,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded"
     },
     {
       "id": "nb-hacklyc",
@@ -3211,7 +3311,8 @@
       "funding": "未融资",
       "daysAgo": 2,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded"
     },
     {
       "id": "nb-latitude-52n",
@@ -3226,7 +3327,8 @@
       "funding": "未融资（纯众筹）",
       "daysAgo": 22,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded (solely crowdfunded)"
     },
     {
       "id": "nb-omni-health-ring",
@@ -3256,7 +3358,8 @@
       "funding": "正在Kickstarter众筹中",
       "daysAgo": 20,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Currently crowdfunding on Kickstarter"
     },
     {
       "id": "nb-fange-ai-blind-glasses",
@@ -3271,7 +3374,9 @@
       "funding": "未融资（纯个人开源项目）",
       "daysAgo": 20,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "name_en": "Fange AI Guide Glasses",
+      "funding_en": "Unfunded (solely a personal open-source project)"
     },
     {
       "id": "nb-cybersight-hud",
@@ -3286,7 +3391,8 @@
       "funding": "未融资（KS自支撑）",
       "daysAgo": 20,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded (Kickstarter self-supported)"
     },
     {
       "id": "nb-memoket-gem",
@@ -3316,7 +3422,8 @@
       "funding": "未融资（纯众筹）",
       "daysAgo": 22,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded (solely crowdfunded)"
     },
     {
       "id": "nb-aivela-ring-pro",
@@ -3331,7 +3438,8 @@
       "funding": "未融资（KS众筹自支撑）",
       "daysAgo": 26,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded (self-supported through Kickstarter crowdfunding)"
     },
     {
       "id": "nb-bibo-leim",
@@ -3346,7 +3454,9 @@
       "funding": "需QCC确认(大概率未融资)",
       "daysAgo": 21,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "name_en": "bibo by Hangzhou",
+      "funding_en": "Requires QCC confirmation (most likely unfunded)"
     },
     {
       "id": "nb-eio-ai",
@@ -3376,7 +3486,8 @@
       "funding": "未融资（众筹+自营）",
       "daysAgo": 22,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded (crowdfunded and self-operated)"
     },
     {
       "id": "nb-flowtica-scribe",
@@ -3391,7 +3502,8 @@
       "funding": "未融资",
       "daysAgo": 27,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded"
     },
     {
       "id": "nb-joobie-hugbibi",
@@ -3406,7 +3518,8 @@
       "funding": "未融资",
       "daysAgo": 21,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded"
     },
     {
       "id": "nb-monoise-p-q13",
@@ -3421,7 +3534,8 @@
       "funding": "未融资（KS众筹）",
       "daysAgo": 25,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded (Kickstarter crowdfunded)"
     },
     {
       "id": "nb-neomix-beaverlab",
@@ -3436,7 +3550,8 @@
       "funding": "未融资（KS众筹自支撑）",
       "daysAgo": 25,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded (self-supported through Kickstarter crowdfunding)"
     },
     {
       "id": "nb-sein-pai",
@@ -3451,7 +3566,8 @@
       "funding": "未融资（众筹阶段）",
       "daysAgo": 22,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded (in crowdfunding phase)"
     },
     {
       "id": "nb-mutrics-aric",
@@ -3466,7 +3582,8 @@
       "funding": "未融资",
       "daysAgo": 26,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded"
     },
     {
       "id": "nb-maverick-ai",
@@ -3481,7 +3598,8 @@
       "funding": "未融资（KS众筹自支撑）",
       "daysAgo": 27,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded (self-supported through Kickstarter crowdfunding)"
     },
     {
       "id": "nb-looperrobotics-insight-9",
@@ -3496,7 +3614,8 @@
       "funding": "未融资",
       "daysAgo": 27,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded"
     },
     {
       "id": "nb-shenzhen-ai-mask",
@@ -3511,7 +3630,8 @@
       "funding": "未融资（公司名待DD）",
       "daysAgo": 25,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded (company name pending due diligence)"
     },
     {
       "id": "nb-l-ring-2",
@@ -3526,7 +3646,8 @@
       "funding": "未融资（纯众筹）",
       "daysAgo": 22,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded (purely crowdfunded)"
     },
     {
       "id": "nb-getter-x-standalone",
@@ -3541,7 +3662,8 @@
       "funding": "未融资（KS众筹）",
       "daysAgo": 20,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded (Kickstarter crowdfunded)"
     },
     {
       "id": "nb-hyper-ai-recorder-glasses",
@@ -3556,7 +3678,8 @@
       "funding": "未融资（KS众筹）",
       "daysAgo": 20,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded (Kickstarter crowdfunded)"
     },
     {
       "id": "nb-加南科技",
@@ -3571,7 +3694,8 @@
       "funding": "未融资（KS众筹自支撑）",
       "daysAgo": 27,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded (self-sustaining via Kickstarter crowdfunding)"
     },
     {
       "id": "nb-will-ai-cat",
@@ -3586,7 +3710,8 @@
       "funding": "未融资（KS众筹）",
       "daysAgo": 25,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded (Kickstarter crowdfunded)"
     },
     {
       "id": "nb-xiaomu-timu",
@@ -3601,7 +3726,8 @@
       "funding": "未融资",
       "daysAgo": 21,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded"
     },
     {
       "id": "nb-zensbuds-ai",
@@ -3616,7 +3742,8 @@
       "funding": "未融资（KS自支撑）",
       "daysAgo": 25,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded (self-sustaining via Kickstarter)"
     },
     {
       "id": "nb-ourobot",
@@ -3631,7 +3758,8 @@
       "funding": "未融资（KS自支撑）",
       "daysAgo": 25,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded (self-sustaining via Kickstarter)"
     },
     {
       "id": "nb-sparkbot-shanmao",
@@ -3646,7 +3774,8 @@
       "funding": "未确认（推测bootstrap）",
       "daysAgo": 22,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unconfirmed (presumed bootstrapped)"
     },
     {
       "id": "nb-pophie",
@@ -3661,7 +3790,8 @@
       "funding": "未融资（KS众筹自支撑）",
       "daysAgo": 27,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded (self-sustaining via Kickstarter crowdfunding)"
     },
     {
       "id": "nb-beyond-ai-zone-hss1",
@@ -3676,7 +3806,8 @@
       "funding": "未融资（KS自支撑）",
       "daysAgo": 20,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded (self-sustaining via Kickstarter)"
     },
     {
       "id": "nb-memomind-everyday-glasses",
@@ -3691,7 +3822,8 @@
       "funding": "未融资（QCC无中国实体匹配，极早期信号）",
       "daysAgo": 20,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Unfunded (no matching Chinese entity on Qichacha, very early stage indication)"
     },
     {
       "id": "nb-speakon",
@@ -3721,7 +3853,8 @@
       "funding": "母公司回车科技已有4轮VC融资",
       "daysAgo": 26,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "funding_en": "Parent company Huiche Technology has secured 4 rounds of VC funding"
     },
     {
       "id": "nb-vastnaut-one",

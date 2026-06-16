@@ -66,16 +66,10 @@ export const CrowdCard: React.FC<CrowdCardProps> = ({ item }) => {
         
         {/* Title and Founder Area */}
         <div>
-          {/* 产品英文名称 */}
+          {/* 产品名称（英文原文优先） */}
           <h3 className="text-[15px] font-bold text-[#1e293b] leading-snug font-sans tracking-tight line-clamp-2 group-hover:text-emerald-700 transition-colors">
             {item.name}
           </h3>
-          {/* 中文翻译（如果有） */}
-          {item.name_zh && item.name_zh !== item.name && (
-            <p className="text-[13px] text-emerald-600 mt-0.5 font-medium line-clamp-1">
-              {item.name_zh}
-            </p>
-          )}
           
           {/* Founder and Location line inline */}
           <div className="text-[13px] text-slate-400 mt-1.5 flex items-center gap-1.5 font-medium flex-wrap">
@@ -135,7 +129,7 @@ export const CrowdCard: React.FC<CrowdCardProps> = ({ item }) => {
         {/* Categories / Tag pills (Teal pill design: #Category) */}
         <div className="flex flex-wrap gap-1.5">
           <span className="bg-emerald-50 text-emerald-700 hover:bg-emerald-100/80 px-2.5 py-1 rounded-md text-xs font-semibold tracking-wide transition">
-            {item.category_tag_zh}
+            {item.category_tag_en || item.category_tag_zh}
           </span>
         </div>
 
@@ -163,7 +157,7 @@ export const CrowdCard: React.FC<CrowdCardProps> = ({ item }) => {
                 className="overflow-hidden"
               >
                 <div className="bg-gradient-to-br from-emerald-50/30 to-teal-50/10 border border-emerald-100/50 p-3 rounded-lg space-y-1.5 mt-1">
-                  {item.summary_zh.map((bullet, idx) => (
+                  {(item.summary_en && item.summary_en.length > 0 ? item.summary_en : item.summary_zh).map((bullet, idx) => (
                     <div key={idx} className="text-xs text-slate-600 leading-relaxed flex items-start gap-1.5">
                       <span className="text-[#10b981] font-extrabold select-none mt-0.5 shrink-0">•</span>
                       <span>{bullet}</span>

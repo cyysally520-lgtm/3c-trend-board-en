@@ -14,7 +14,9 @@ export interface CrowdfundingItem {
   price: string;
   campaign_url: string;
   category_tag_zh: string;
+  category_tag_en?: string;
   summary_zh: string[];
+  summary_en?: string[];
 }
 
 export interface NewsItem {
@@ -28,6 +30,7 @@ export interface NewsItem {
   snippet_zh: string[];
   url: string;
   category_tag_zh: string;
+  category_tag_en?: string;
 }
 
 export interface StartupItem {
@@ -37,6 +40,7 @@ export interface StartupItem {
   name_zh: string;
   intro: string;
   intro_zh: string[];
+  intro_en?: string[];
   founders: string;
   team_size: string;
   location: string;
@@ -48,13 +52,20 @@ export interface InvestItem {
   id: string;
   rank: number;
   name: string;
+  name_en?: string;
   tagline: string;
   category: string;
+  category_en?: string;
   tech: string;
+  tech_en?: string;
   business: string;
+  business_en?: string;
   team: string;
+  team_en?: string;
   operations: string;
+  operations_en?: string;
   funding: string;
+  funding_en?: string;
   daysAgo: number;
   source_url: string;
   scrapedAt: string;

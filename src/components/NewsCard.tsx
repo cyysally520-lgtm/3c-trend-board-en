@@ -7,18 +7,21 @@ interface NewsCardProps {
   item: NewsItem;
 }
 
-/** 根据 publishedAt 实时计算相对时间描述 */
+/** Compute a human-readable relative time string */
 function getRelativeTime(publishedAt: string): string {
   const now = Date.now();
   const then = new Date(publishedAt).getTime();
   const diffMs = now - then;
-  if (diffMs < 0) return '1天内';
+  if (diffMs < 0) return 'Just now';
   const diffHours = Math.floor(diffMs / 3600000);
-  if (diffHours < 24) return '1天内';
+  if (diffHours < 1) return 'Just now';
+  if (diffHours < 24) return `${diffHours}h ago`;
   const diffDays = Math.floor(diffHours / 24);
-  if (diffDays < 30) return `${diffDays}天前`;
+  if (diffDays === 1) return '1d ago';
+  if (diffDays < 30) return `${diffDays}d ago`;
   const diffMonths = Math.floor(diffDays / 30);
-  return `${diffMonths}个月前`;
+  if (diffMonths === 1) return '1mo ago';
+  return `${diffMonths}mo ago`;
 }
 
 export const NewsCard: React.FC<NewsCardProps> = ({ item }) => {
@@ -63,31 +66,24 @@ export const NewsCard: React.FC<NewsCardProps> = ({ item }) => {
 
         {/* Category Tag Overlay */}
         <div className="absolute bottom-3 left-3 bg-slate-900/65 backdrop-blur-xs text-emerald-300 text-[10px] font-bold px-2.5 py-0.5 rounded-xs">
-          {item.category_tag_zh}
+          {item.category_tag_en || item.category_tag_zh}
         </div>
       </div>
 
       {/* Content description column */}
       <div className="flex-grow flex flex-col justify-between gap-3">
         <div className="space-y-2">
-          
+
           {/* Time block */}
           <div className="flex items-center gap-1.5 text-slate-400 font-mono text-[11px]">
             <Calendar className="w-3.5 h-3.5 text-slate-400 shrink-0" />
-            <span>发布于 {relativeTime}</span>
+            <span>{relativeTime}</span>
           </div>
 
-          {/* Title (中文翻译) */}
+          {/* Title — EN 站直接显示英文原标题 */}
           <h3 className="text-base font-bold text-slate-900 leading-snug line-clamp-2 select-none group-hover:text-emerald-700 transition-colors">
-            {item.title_zh || item.title}
+            {item.title}
           </h3>
-
-          {/* English original title — 仅当有中文翻译时显示 */}
-          {item.title_zh && item.title_zh !== item.title && (
-            <p className="text-xs text-slate-400 italic line-clamp-2 leading-relaxed">
-              -{item.title}
-            </p>
-          )}
         </div>
 
         {/* AI Insight bullets list with solid emerald layout */}
@@ -98,7 +94,7 @@ export const NewsCard: React.FC<NewsCardProps> = ({ item }) => {
               className="flex items-center gap-1.5 text-xs font-bold text-emerald-800 hover:text-emerald-700 bg-emerald-50/60 hover:bg-emerald-100/50 px-2.5 py-1.5 rounded-lg transition select-none cursor-pointer"
             >
               <Sparkles className="w-3.5 h-3.5 text-[#10b981]" />
-              AI 智能摘要提炼
+              AI Summary
             </button>
             <button 
               onClick={() => setShowAiSummary(!showAiSummary)}
@@ -138,7 +134,7 @@ export const NewsCard: React.FC<NewsCardProps> = ({ item }) => {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-600 hover:text-emerald-700 hover:underline transition cursor-pointer"
           >
-            去阅读来源原文报道 →
+            Read full article →
           </a>
         </div>
 

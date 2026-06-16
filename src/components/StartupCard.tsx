@@ -49,7 +49,7 @@ export const StartupCard: React.FC<StartupCardProps> = ({ item }) => {
               className="flex items-center gap-1.5 text-xs font-bold text-emerald-800 hover:text-emerald-700 bg-emerald-50/65 hover:bg-emerald-100/50 px-2.5 py-1.5 rounded-lg transition select-none cursor-pointer"
             >
               <Trophy className="w-3.5 h-3.5 text-[#10b981]" />
-              AI 独角兽企业分析
+              AI Unicorn Analysis
             </button>
             <button 
               onClick={() => setShowAiAnalysis(!showAiAnalysis)}
@@ -69,7 +69,7 @@ export const StartupCard: React.FC<StartupCardProps> = ({ item }) => {
                 className="overflow-hidden"
               >
                 <div className="bg-gradient-to-br from-emerald-50/40 to-slate-50 border border-emerald-100/50 p-3.5 rounded-lg space-y-1.5 mt-1">
-                  {item.intro_zh.map((bullet, idx) => (
+                  {(item.intro_en && item.intro_en.length > 0 ? item.intro_en : item.intro_zh).map((bullet, idx) => (
                     <div key={idx} className="text-xs text-slate-600 leading-normal flex items-start gap-1.5">
                       <span className="text-[#10b981] font-extrabold select-none mt-0.5 shrink-0">•</span>
                       <span>{bullet}</span>
@@ -86,7 +86,7 @@ export const StartupCard: React.FC<StartupCardProps> = ({ item }) => {
           <div className="space-y-0.5">
             <span className="text-slate-400 flex items-center gap-1">
               <Users className="w-3 h-3 text-slate-400" />
-              团队人数
+              Team size
             </span>
             <p className="font-semibold text-slate-700 truncate" title={item.team_size || item.founders}>
               {item.team_size || item.founders || '—'}
@@ -95,7 +95,7 @@ export const StartupCard: React.FC<StartupCardProps> = ({ item }) => {
           <div className="space-y-0.5">
             <span className="text-slate-400 flex items-center gap-1">
               <MapPin className="w-3 h-3 text-slate-400" />
-              注册地
+              Location
             </span>
             <p className="font-semibold text-slate-700 truncate" title={item.location}>
               {item.location}
@@ -113,7 +113,7 @@ export const StartupCard: React.FC<StartupCardProps> = ({ item }) => {
             rel="noopener noreferrer"
             className="text-xs font-bold hover:underline inline-flex items-center gap-0.5 cursor-pointer text-orange-600 hover:text-orange-700"
           >
-            YC 产品介绍
+            YC profile
             <ArrowUpRight className="w-3.5 h-3.5" />
           </a>
         )}
@@ -125,7 +125,7 @@ export const StartupCard: React.FC<StartupCardProps> = ({ item }) => {
             item.source === 'a16z' ? 'text-sky-600 hover:text-sky-700' : 'text-orange-600 hover:text-orange-700'
           }`}
         >
-          {item.source === 'a16z' ? '查看 a16z 官网详情' : '公司官网'}
+          {item.source === 'a16z' ? 'View on a16z' : 'Company website'}
           <ArrowUpRight className="w-3.5 h-3.5" />
         </a>
       </div>

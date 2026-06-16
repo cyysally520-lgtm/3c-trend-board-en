@@ -246,3 +246,207 @@ ${descriptions.join('\n')}`;
     }
   }
 }
+
+// ===== 以下为 EN 站专用：把已有中文字段反向翻译为英文 =====
+
+const isMostlyEnglish = (s: string) => {
+  if (!s) return false;
+  const han = (s.match(/[一-龥]/g) || []).length;
+  return han / s.length < 0.1;
+};
+
+const isMostlyChinese = (s: string) => {
+  if (!s) return false;
+  const han = (s.match(/[一-龥]/g) || []).length;
+  return han / s.length > 0.3;
+};
+
+/**
+ * 通用：把任意中文字符串列表批量翻译成英文
+ * 返回新数组，对应位置；翻译失败/已是英文 的位置返回原字符串
+ */
+async function translateBatchToEn(texts: string[], hint: string): Promise<string[]> {
+  if (texts.length === 0) return [];
+  const numbered = texts.map((t, i) => `${i + 1}. ${t}`).join('\n');
+  const prompt = `Translate the following ${hint} from Chinese to natural, professional English. Keep technical terms accurate. Output one translation per line in the same numbered order. Output ONLY translations, no explanations or extra punctuation.
+
+${numbered}`;
+  try {
+    const text = await callGemini(prompt);
+    if (!text) return texts;
+    const lines = text
+      .split('\n')
+      .map((l) => l.replace(/^\s*\d+[\.\)、:：]\s*/, '').trim())
+      .filter(Boolean);
+    return texts.map((orig, i) => lines[i] || orig);
+  } catch (err) {
+    log.warn('translate', `batch-to-en failed (${hint}): ${err instanceof Error ? err.message : err}`);
+    return texts;
+  }
+}
+
+/**
+ * EN 站：把众筹产品的 name_zh / category_tag_zh / summary_zh 反向译成英文
+ * 写入 category_tag_en / summary_en
+ * 注意：name 通常本来就是英文（KS/CrowdSupply 数据），无需译
+ */
+export async function translateCrowdToEn(
+  items: Array<{
+    category_tag_zh?: string;
+    category_tag_en?: string;
+    summary_zh?: string[];
+    summary_en?: string[];
+    name?: string;
+  }>,
+): Promise<void> {
+  // 1) category_tag_zh → category_tag_en
+  const tagItems = items.filter((it) => it.category_tag_zh && !it.category_tag_en && isMostlyChinese(it.category_tag_zh));
+  if (tagItems.length > 0) {
+    log.info('translate', `translating ${tagItems.length} crowd category tags to EN...`);
+    const tags = tagItems.map((it) => it.category_tag_zh!);
+    const en = await translateBatchToEn(tags, 'category tags (short, like "#Hardware" "#AI Wearable")');
+    tagItems.forEach((it, i) => { it.category_tag_en = en[i]; });
+    log.ok('translate', `translated ${tagItems.length} crowd category tags`);
+  }
+
+  // 2) summary_zh → summary_en
+  // summary_zh 是 string[]，挨个译；只译那些至少有一条中文 bullet 的
+  const summaryItems = items.filter(
+    (it) => Array.isArray(it.summary_zh) && it.summary_zh.length > 0
+      && it.summary_zh.some((s) => isMostlyChinese(s))
+      && (!it.summary_en || it.summary_en.length === 0),
+  );
+  if (summaryItems.length > 0) {
+    log.info('translate', `translating ${summaryItems.length} crowd summaries to EN...`);
+    const BATCH = 10;
+    for (let i = 0; i < summaryItems.length; i += BATCH) {
+      const batch = summaryItems.slice(i, i + BATCH);
+      const flat = batch.flatMap((it, bi) => it.summary_zh!.map((s) => `[${bi}] ${s}`));
+      const en = await translateBatchToEn(flat, 'product summary bullets (concise, professional)');
+      // 重新分配回各项
+      const grouped: string[][] = batch.map(() => []);
+      en.forEach((line, idx) => {
+        const m = line.match(/^\[(\d+)\]\s*(.*)$/);
+        if (m) {
+          grouped[parseInt(m[1], 10)].push(m[2]);
+        } else {
+          // fallback：按原本顺序补
+          for (let k = 0; k < grouped.length; k++) {
+            if (grouped[k].length < (batch[k].summary_zh?.length ?? 0)) {
+              grouped[k].push(line);
+              break;
+            }
+          }
+        }
+      });
+      batch.forEach((it, bi) => {
+        if (grouped[bi].length > 0) it.summary_en = grouped[bi];
+      });
+      log.ok('translate', `translated crowd summaries (batch ${Math.floor(i / BATCH) + 1})`);
+    }
+  }
+}
+
+/**
+ * EN 站：把新闻 category_tag_zh 反向译为英文（title 本来是英文，title_zh 不用回译）
+ */
+export async function translateNewsToEn(
+  items: Array<{ category_tag_zh?: string; category_tag_en?: string; title?: string; title_zh?: string }>,
+): Promise<void> {
+  const tagItems = items.filter((it) => it.category_tag_zh && !it.category_tag_en && isMostlyChinese(it.category_tag_zh));
+  if (tagItems.length === 0) {
+    log.info('translate', 'all news category tags already in EN');
+    return;
+  }
+  log.info('translate', `translating ${tagItems.length} news category tags to EN...`);
+  const tags = tagItems.map((it) => it.category_tag_zh!);
+  const en = await translateBatchToEn(tags, 'news category tags (short, like "#Tech" "#AI" "#Startup")');
+  tagItems.forEach((it, i) => { it.category_tag_en = en[i]; });
+  log.ok('translate', `translated ${tagItems.length} news category tags`);
+}
+
+/**
+ * EN 站：把 startups 的 intro_zh（已是中文 bullet）反向译为英文 intro_en
+ * 如果 intro 本来是英文，可以直接拆为 bullet 不用译
+ */
+export async function translateStartupsToEn(
+  items: Array<{ intro?: string; intro_zh?: string[]; intro_en?: string[] }>,
+): Promise<void> {
+  const targets = items.filter(
+    (it) => Array.isArray(it.intro_zh) && it.intro_zh.length > 0
+      && it.intro_zh.some((s) => isMostlyChinese(s))
+      && (!it.intro_en || it.intro_en.length === 0),
+  );
+  if (targets.length === 0) {
+    log.info('translate', 'all startup intros already in EN');
+    return;
+  }
+  log.info('translate', `translating ${targets.length} startup intro bullets to EN...`);
+  const BATCH = 10;
+  for (let i = 0; i < targets.length; i += BATCH) {
+    const batch = targets.slice(i, i + BATCH);
+    const flat = batch.flatMap((it, bi) => it.intro_zh!.map((s) => `[${bi}] ${s}`));
+    const en = await translateBatchToEn(flat, 'startup analysis bullets (focus on tech / business / market)');
+    const grouped: string[][] = batch.map(() => []);
+    en.forEach((line) => {
+      const m = line.match(/^\[(\d+)\]\s*(.*)$/);
+      if (m) grouped[parseInt(m[1], 10)].push(m[2]);
+    });
+    batch.forEach((it, bi) => {
+      if (grouped[bi].length > 0) it.intro_en = grouped[bi];
+    });
+    log.ok('translate', `translated startup intros (batch ${Math.floor(i / BATCH) + 1})`);
+  }
+}
+
+/**
+ * EN 站：把 nextbanker 抓到的 invest 项目所有中文字段译为英文
+ * 写入 *_en 字段。每条 6 个字段：name / category / tech / business / team / operations / funding
+ */
+export async function translateInvestsToEn(
+  items: Array<{
+    name?: string; name_en?: string;
+    category?: string; category_en?: string;
+    tech?: string; tech_en?: string;
+    business?: string; business_en?: string;
+    team?: string; team_en?: string;
+    operations?: string; operations_en?: string;
+    funding?: string; funding_en?: string;
+  }>,
+): Promise<void> {
+  // 同一 batch 内统一翻译多个字段，但按字段类型分别 batch（提高准确性）
+  const FIELDS: Array<[keyof (typeof items)[number], keyof (typeof items)[number], string]> = [
+    ['name', 'name_en', 'product names (concise, brand-style)'],
+    ['category', 'category_en', 'industry category names (e.g. "AI Hardware", "Embodied AI", "AI Agent")'],
+    ['tech', 'tech_en', 'technical descriptions (concise, professional)'],
+    ['business', 'business_en', 'business model descriptions'],
+    ['team', 'team_en', 'team backgrounds'],
+    ['operations', 'operations_en', 'operations metrics'],
+    ['funding', 'funding_en', 'funding status descriptions'],
+  ];
+
+  for (const [zhKey, enKey, hint] of FIELDS) {
+    const targets = items.filter((it) => {
+      const zh = it[zhKey] as string | undefined;
+      const en = it[enKey] as string | undefined;
+      return zh && isMostlyChinese(zh) && !en;
+    });
+    if (targets.length === 0) {
+      log.info('translate', `all invest ${zhKey} already in EN`);
+      continue;
+    }
+    log.info('translate', `translating ${targets.length} invest ${zhKey} to EN...`);
+    const BATCH = 15;
+    for (let i = 0; i < targets.length; i += BATCH) {
+      const batch = targets.slice(i, i + BATCH);
+      const texts = batch.map((it) => String(it[zhKey] ?? ''));
+      const en = await translateBatchToEn(texts, hint);
+      batch.forEach((it, bi) => {
+        if (en[bi] && en[bi] !== texts[bi]) {
+          (it as any)[enKey] = en[bi];
+        }
+      });
+      log.ok('translate', `translated invest ${zhKey} (batch ${Math.floor(i / BATCH) + 1})`);
+    }
+  }
+}
