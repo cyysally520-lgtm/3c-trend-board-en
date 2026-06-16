@@ -1,5 +1,5 @@
 import React from 'react';
-import { Clock, Cpu, TrendingUp, Users, Banknote } from 'lucide-react';
+import { Clock, Cpu, TrendingUp, Users, Banknote, Star } from 'lucide-react';
 import { InvestItem } from '../types';
 
 interface Props {
@@ -8,33 +8,54 @@ interface Props {
 }
 
 export function InvestCard({ item }: Props) {
+  // tagline 里通常含来源徽章（"GitHub 12★/4Fork"），切成多个 chips
+  // 把 "/" "·" 多种分隔符切开，每个非空 chunk 当独立标签
+  const taglineChips = (item.tagline || '')
+    .split(/[\s/·,]+/)
+    .map((s) => s.trim())
+    .filter((s) => s.length > 0 && s.length < 30)
+    .slice(0, 3);
+
   return (
-    <div className="group bg-white rounded-xl border border-slate-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 overflow-hidden flex flex-col">
-      {/* 卡片内容 */}
-      <div className="p-4 flex-grow flex flex-col gap-3">
-        {/* 头部区域 */}
-        <div>
-          {/* 序号 + 分类 + 融资状态，右上角 时间 */}
-          <div className="flex items-center justify-between mb-1.5">
-            <div className="flex items-center gap-1.5 flex-wrap">
-              <span className="text-[10px] font-mono font-bold text-slate-400">#{item.rank}</span>
-              <span className="text-[10px] font-semibold px-1.5 py-0.5 rounded-full border border-emerald-200 text-emerald-700 bg-emerald-50">
+    <div className="group relative bg-gradient-to-br from-white to-slate-50 rounded-xl border border-slate-300 ring-1 ring-slate-200 shadow-sm hover:shadow-lg hover:ring-emerald-300/40 hover:-translate-y-0.5 transition-all duration-200 flex flex-col overflow-hidden">
+      <div className="px-4 pt-4 pb-3 flex flex-col gap-3 flex-grow">
+        {/* 头部：标签 chips + ⭐ 收藏 + 时间 */}
+        <div className="flex items-start justify-between gap-3">
+          <div className="flex-1 min-w-0">
+            <div className="flex items-center flex-wrap gap-1.5 mb-1.5">
+              <span className="text-[11px] font-mono font-bold text-slate-400">#{item.rank}</span>
+              <span className="inline-flex items-center text-[10px] font-semibold px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200">
                 {item.category}
               </span>
-              <span className="text-[10px] font-semibold px-1.5 py-0.5 rounded-full border border-slate-200 text-slate-600 bg-slate-50">
-                {item.funding.split('（')[0].slice(0, 10)}
-              </span>
+              {taglineChips.map((chip, i) => (
+                <span
+                  key={i}
+                  className="inline-flex items-center text-[10px] font-semibold px-2 py-0.5 rounded-full bg-slate-50 text-slate-600 border border-slate-200"
+                >
+                  {chip}
+                </span>
+              ))}
             </div>
-            <div className="flex items-center gap-1 text-slate-400 font-mono text-[10px] shrink-0 ml-2">
-              <Clock className="w-3 h-3 text-slate-400" />
+            {/* 项目名称 */}
+            <h3 className="font-bold text-slate-900 text-[14px] leading-snug group-hover:text-emerald-700 transition-colors">
+              {item.name}
+            </h3>
+          </div>
+
+          <div className="flex flex-col items-end gap-1.5 shrink-0">
+            <button
+              type="button"
+              className="p-1 rounded-full transition cursor-pointer text-slate-300 hover:text-emerald-500"
+              title="My Favorites"
+              aria-label="favorite"
+            >
+              <Star className="w-4 h-4" />
+            </button>
+            <div className="flex items-center gap-1 text-[11px] text-slate-400">
+              <Clock className="w-3 h-3" />
               <span>{item.daysAgo === 0 ? '今日更新' : `${item.daysAgo}天前`}</span>
             </div>
           </div>
-
-          {/* 项目名称 */}
-          <h3 className="font-bold text-slate-900 text-sm leading-snug group-hover:text-emerald-700 transition-colors">
-            {item.name}
-          </h3>
         </div>
 
         {/* 1. 技术 */}
