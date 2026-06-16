@@ -435,21 +435,31 @@ export default function App() {
             </div>
           </div>
 
-          {/* 数据状态 */}
-          <div className="flex items-center gap-2 bg-slate-50 border border-slate-100 rounded-lg px-3 py-1.5 shadow-3xs">
-            <span className="relative flex h-2 w-2">
-              {isLoading ? (
-                <span className="animate-spin inline-flex h-2 w-2 rounded-full border border-emerald-500 border-t-transparent"></span>
-              ) : (
-                <>
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-                </>
-              )}
-            </span>
-            <span className="text-slate-500 font-medium text-[10px]">
-              Updated · <span className="text-slate-700 font-semibold font-mono">{lastUpdated}</span>
-            </span>
+          {/* 数据状态 + 反馈联系 */}
+          <div className="flex flex-col items-end gap-1.5 text-xs w-full sm:w-auto">
+            <div className="flex items-center gap-2 bg-slate-50 border-slate-100 border rounded-lg px-3 py-1.5 shadow-3xs">
+              <span className="relative flex h-2 w-2">
+                {isLoading ? (
+                  <span className="animate-spin inline-flex h-2 w-2 rounded-full border border-emerald-500 border-t-transparent"></span>
+                ) : (
+                  <>
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full opacity-75 bg-emerald-400"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                  </>
+                )}
+              </span>
+              <span className="text-[10px] leading-tight">
+                <span className="text-slate-500 font-medium">Last updated: </span>
+                <span className="text-slate-700 font-semibold font-mono">{lastUpdated}</span>
+                <span className="text-slate-400 ml-1 font-normal">Beijing Time</span>
+                <br />
+                <span className="text-slate-400 ml-[5.4rem]">· just now</span>
+              </span>
+            </div>
+
+            <div className="text-[11px] font-semibold text-emerald-700 bg-emerald-50/60 border border-emerald-300/40 rounded-md px-2.5 py-1 shadow-2xs">
+              📩 Feedback <span className="text-slate-900">3C Digital Business Analytics - bjzhangshuts</span>
+            </div>
           </div>
 
         </div>
@@ -470,7 +480,7 @@ export default function App() {
               }`}
             >
               <Sparkles className="w-4 h-4" />
-              AI Trends
+              Product Hunt
               <span className={`text-[10px] font-mono font-bold px-2 py-0.5 rounded-full transition-colors ${
                 currentTab === 'investments' ? 'bg-emerald-50 text-emerald-600' : 'bg-slate-100 text-slate-500'
               }`}>
@@ -506,7 +516,7 @@ export default function App() {
               }`}
             >
               <Building2 className="w-4 h-4" />
-              Incubators
+              Startup Incubators
               <span className={`text-[10px] font-mono font-bold px-2 py-0.5 rounded-full transition-colors ${
                 currentTab === 'startups' ? 'bg-emerald-50 text-emerald-600' : 'bg-slate-100 text-slate-500'
               }`}>
