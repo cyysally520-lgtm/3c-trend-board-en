@@ -609,97 +609,96 @@ export default function App() {
               )}
             </div>
 
+            {/* 今日精选：仅默认状态下、且有结果时显示 */}
+            {filteredInvests.length > 0 && featuredInvests.length > 0 && (
+              <div className="space-y-3">
+                <div className="flex items-end justify-between">
+                  <h3 className="flex items-center gap-2 text-sm font-bold text-slate-800">
+                    <Sparkles className="w-4 h-4 text-emerald-500" />
+                    今日精选
+                  </h3>
+                  <span className="text-[11px] text-slate-400 font-medium">最新发现 + 热度榜首</span>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+                  {featuredInvests.map((it) => (
+                    <InvestCard
+                      key={`feat-${it.id}`}
+                      item={it}
+                      variant="featured"
+                      isFavorite={investFavorites.has(it.id)}
+                      onToggleFavorite={toggleFavorite}
+                    />
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* 快捷工具栏：我的收藏 + 跳到上次浏览位置（始终显示，便于在空收藏夹时也能退出） */}
+            <div className="flex flex-wrap items-center gap-2">
+              <button
+                onClick={() => setShowFavoritesOnly((v) => !v)}
+                className={`inline-flex items-center gap-2 text-xs font-semibold px-3 py-1.5 rounded-full border cursor-pointer transition ${
+                  showFavoritesOnly
+                    ? 'bg-emerald-500 border-emerald-500 text-white shadow-sm hover:bg-emerald-600'
+                    : 'bg-white border-slate-200 text-slate-700 hover:border-emerald-300'
+                }`}
+                title={showFavoritesOnly ? '退出收藏夹' : '只看已收藏'}
+              >
+                <Sparkles className="w-3.5 h-3.5" />
+                {showFavoritesOnly ? '退出收藏夹' : '我的收藏'}
+                <span className={`text-[10px] font-mono px-1.5 py-0.5 rounded-full ${
+                  showFavoritesOnly ? 'bg-white/20 text-white' : 'text-slate-400 bg-slate-100'
+                }`}>
+                  {investFavorites.size}
+                </span>
+              </button>
+
+              {hasLastScroll && (
+                <button
+                  onClick={jumpToLastScroll}
+                  className="inline-flex items-center gap-2 text-xs font-semibold px-3 py-1.5 rounded-full border cursor-pointer transition bg-white border-slate-200 text-slate-700 hover:border-emerald-300"
+                  title="滚动到上次浏览位置"
+                >
+                  <Calendar className="w-3.5 h-3.5" />
+                  跳到上次位置
+                </button>
+              )}
+            </div>
+
             {filteredInvests.length > 0 ? (
-              <>
-                {/* 今日精选：4 张深色横排卡（仅默认状态下显示） */}
-                {featuredInvests.length > 0 && (
-                  <div className="space-y-3">
-                    <div className="flex items-end justify-between">
-                      <h3 className="flex items-center gap-2 text-sm font-bold text-slate-800">
-                        <Sparkles className="w-4 h-4 text-emerald-500" />
-                        今日精选
-                      </h3>
-                      <span className="text-[11px] text-slate-400 font-medium">最新发现 + 热度榜首</span>
-                    </div>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-                      {featuredInvests.map((it) => (
-                        <InvestCard
-                          key={`feat-${it.id}`}
-                          item={it}
-                          variant="featured"
-                          isFavorite={investFavorites.has(it.id)}
-                          onToggleFavorite={toggleFavorite}
-                        />
-                      ))}
-                    </div>
-                  </div>
-                )}
-
-                {/* 快捷工具栏：我的收藏 + 跳到上次浏览位置 */}
-                <div className="flex flex-wrap items-center gap-2">
-                  <button
-                    onClick={() => setShowFavoritesOnly((v) => !v)}
-                    className={`inline-flex items-center gap-2 text-xs font-semibold px-3 py-1.5 rounded-full border cursor-pointer transition ${
-                      showFavoritesOnly
-                        ? 'bg-emerald-50 border-emerald-300 text-emerald-700'
-                        : 'bg-white border-slate-200 text-slate-700 hover:border-emerald-300'
-                    }`}
-                    title="只看已收藏"
-                  >
-                    <Sparkles className="w-3.5 h-3.5" />
-                    我的收藏
-                    <span className="text-[10px] font-mono text-slate-400 bg-slate-100 px-1.5 py-0.5 rounded-full">
-                      {investFavorites.size}
-                    </span>
-                  </button>
-
-                  {hasLastScroll && (
-                    <button
-                      onClick={jumpToLastScroll}
-                      className="inline-flex items-center gap-2 text-xs font-semibold px-3 py-1.5 rounded-full border cursor-pointer transition bg-white border-slate-200 text-slate-700 hover:border-emerald-300"
-                      title="滚动到上次浏览位置"
-                    >
-                      <Calendar className="w-3.5 h-3.5" />
-                      跳到上次位置
-                    </button>
-                  )}
-                </div>
-
-                {/* 按赛道分组渲染 */}
-                <div className="space-y-8">
-                  {groupedInvests.map((g) => {
-                    const total = investCategories.find((c) => c.name === g.category)?.count ?? g.items.length;
-                    return (
-                      <section key={g.category} className="space-y-3">
-                        <h2 className="text-base font-bold text-slate-800 flex items-baseline gap-2">
-                          {g.category}
-                          <span className="text-xs font-mono text-slate-400 font-normal">
-                            {g.items.length} <span className="text-slate-300">/</span> {total}
-                          </span>
-                        </h2>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-                          {g.items.map((item) => (
-                            <InvestCard
-                              key={item.id}
-                              item={item}
-                              isFavorite={investFavorites.has(item.id)}
-                              onToggleFavorite={toggleFavorite}
-                            />
-                          ))}
-                        </div>
-                      </section>
-                    );
-                  })}
-                </div>
-              </>
+              <div className="space-y-8">
+                {groupedInvests.map((g) => {
+                  const total = investCategories.find((c) => c.name === g.category)?.count ?? g.items.length;
+                  return (
+                    <section key={g.category} className="space-y-3">
+                      <h2 className="text-base font-bold text-slate-800 flex items-baseline gap-2">
+                        {g.category}
+                        <span className="text-xs font-mono text-slate-400 font-normal">
+                          {g.items.length} <span className="text-slate-300">/</span> {total}
+                        </span>
+                      </h2>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+                        {g.items.map((item) => (
+                          <InvestCard
+                            key={item.id}
+                            item={item}
+                            isFavorite={investFavorites.has(item.id)}
+                            onToggleFavorite={toggleFavorite}
+                          />
+                        ))}
+                      </div>
+                    </section>
+                  );
+                })}
+              </div>
             ) : (
               <div className="bg-white rounded-xl border border-slate-150 p-12 text-center max-w-lg mx-auto shadow-3xs">
                 <Sparkles className="mx-auto h-12 w-12 text-slate-300" />
                 <h3 className="mt-4 text-sm font-semibold text-slate-900">
-                  {showFavoritesOnly ? '还没有收藏' : 'AI 潜在项目数据加载中'}
+                  {showFavoritesOnly ? '收藏夹是空的' : 'AI 潜在项目数据加载中'}
                 </h3>
                 <p className="mt-1 text-xs text-slate-400">
-                  {showFavoritesOnly ? '点击卡片右上角 ⭐ 收藏感兴趣的项目' : '数据需要首次运行爬虫后才能显示，请等待每日自动更新。'}
+                  {showFavoritesOnly ? '点卡片右上角 ⭐ 加入收藏' : '数据需要首次运行爬虫后才能显示，请等待每日自动更新。'}
                 </p>
               </div>
             )}
