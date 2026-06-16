@@ -263,9 +263,10 @@ const isMostlyChinese = (s: string) => {
 
 /**
  * 通用：把任意中文字符串列表批量翻译成英文
- * 返回新数组，对应位置；翻译失败/已是英文 的位置返回原字符串
+ * 成功：返回与 texts 等长的翻译数组（每个位置都是英文）
+ * 失败 / 限流 / 单条对不上：返回 null，让调用方知道"这批整批失败"，不要污染 _en 字段
  */
-async function translateBatchToEn(texts: string[], hint: string): Promise<string[]> {
+async function translateBatchToEn(texts: string[], hint: string): Promise<string[] | null> {
   if (texts.length === 0) return [];
   const numbered = texts.map((t, i) => `${i + 1}. ${t}`).join('\n');
   const prompt = `Translate the following ${hint} from Chinese to natural, professional English. Keep technical terms accurate. Output one translation per line in the same numbered order. Output ONLY translations, no explanations or extra punctuation.
@@ -273,15 +274,17 @@ async function translateBatchToEn(texts: string[], hint: string): Promise<string
 ${numbered}`;
   try {
     const text = await callGemini(prompt);
-    if (!text) return texts;
+    if (!text) return null;
     const lines = text
       .split('\n')
       .map((l) => l.replace(/^\s*\d+[\.\)、:：]\s*/, '').trim())
       .filter(Boolean);
-    return texts.map((orig, i) => lines[i] || orig);
+    // 行数对不齐说明 LLM 输出格式问题，整批不可信
+    if (lines.length < texts.length) return null;
+    return texts.map((_, i) => lines[i]);
   } catch (err) {
     log.warn('translate', `batch-to-en failed (${hint}): ${err instanceof Error ? err.message : err}`);
-    return texts;
+    return null;
   }
 }
 
@@ -305,8 +308,10 @@ export async function translateCrowdToEn(
     log.info('translate', `translating ${tagItems.length} crowd category tags to EN...`);
     const tags = tagItems.map((it) => it.category_tag_zh!);
     const en = await translateBatchToEn(tags, 'category tags (short, like "#Hardware" "#AI Wearable")');
-    tagItems.forEach((it, i) => { it.category_tag_en = en[i]; });
-    log.ok('translate', `translated ${tagItems.length} crowd category tags`);
+    if (en) {
+      tagItems.forEach((it, i) => { if (en[i]) it.category_tag_en = en[i]; });
+      log.ok('translate', `translated ${tagItems.length} crowd category tags`);
+    }
   }
 
   // 2) summary_zh → summary_en
@@ -323,6 +328,7 @@ export async function translateCrowdToEn(
       const batch = summaryItems.slice(i, i + BATCH);
       const flat = batch.flatMap((it, bi) => it.summary_zh!.map((s) => `[${bi}] ${s}`));
       const en = await translateBatchToEn(flat, 'product summary bullets (concise, professional)');
+      if (!en) continue;
       // 重新分配回各项
       const grouped: string[][] = batch.map(() => []);
       en.forEach((line, idx) => {
@@ -361,8 +367,10 @@ export async function translateNewsToEn(
   log.info('translate', `translating ${tagItems.length} news category tags to EN...`);
   const tags = tagItems.map((it) => it.category_tag_zh!);
   const en = await translateBatchToEn(tags, 'news category tags (short, like "#Tech" "#AI" "#Startup")');
-  tagItems.forEach((it, i) => { it.category_tag_en = en[i]; });
-  log.ok('translate', `translated ${tagItems.length} news category tags`);
+  if (en) {
+    tagItems.forEach((it, i) => { if (en[i]) it.category_tag_en = en[i]; });
+    log.ok('translate', `translated ${tagItems.length} news category tags`);
+  }
 }
 
 /**
@@ -387,6 +395,7 @@ export async function translateStartupsToEn(
     const batch = targets.slice(i, i + BATCH);
     const flat = batch.flatMap((it, bi) => it.intro_zh!.map((s) => `[${bi}] ${s}`));
     const en = await translateBatchToEn(flat, 'startup analysis bullets (focus on tech / business / market)');
+    if (!en) continue;
     const grouped: string[][] = batch.map(() => []);
     en.forEach((line) => {
       const m = line.match(/^\[(\d+)\]\s*(.*)$/);
@@ -441,6 +450,7 @@ export async function translateInvestsToEn(
       const batch = targets.slice(i, i + BATCH);
       const texts = batch.map((it) => String(it[zhKey] ?? ''));
       const en = await translateBatchToEn(texts, hint);
+      if (!en) continue;
       batch.forEach((it, bi) => {
         if (en[bi] && en[bi] !== texts[bi]) {
           (it as any)[enKey] = en[bi];

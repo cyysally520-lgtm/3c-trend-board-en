@@ -3743,7 +3743,8 @@
       "daysAgo": 25,
       "source_url": "https://nextbanker.cn/",
       "scrapedAt": "2026-06-16T08:37:19.423Z",
-      "funding_en": "Unfunded (self-sustaining via Kickstarter)"
+      "funding_en": "Unfunded (self-sustaining via Kickstarter)",
+      "category_en": "AI Hardware"
     },
     {
       "id": "nb-ourobot",
@@ -3759,7 +3760,8 @@
       "daysAgo": 25,
       "source_url": "https://nextbanker.cn/",
       "scrapedAt": "2026-06-16T08:37:19.423Z",
-      "funding_en": "Unfunded (self-sustaining via Kickstarter)"
+      "funding_en": "Unfunded (self-sustaining via Kickstarter)",
+      "category_en": "AI Hardware"
     },
     {
       "id": "nb-sparkbot-shanmao",
@@ -3775,7 +3777,8 @@
       "daysAgo": 22,
       "source_url": "https://nextbanker.cn/",
       "scrapedAt": "2026-06-16T08:37:19.423Z",
-      "funding_en": "Unconfirmed (presumed bootstrapped)"
+      "funding_en": "Unconfirmed (presumed bootstrapped)",
+      "category_en": "AI Hardware"
     },
     {
       "id": "nb-pophie",
@@ -3791,7 +3794,8 @@
       "daysAgo": 27,
       "source_url": "https://nextbanker.cn/",
       "scrapedAt": "2026-06-16T08:37:19.423Z",
-      "funding_en": "Unfunded (self-sustaining via Kickstarter crowdfunding)"
+      "funding_en": "Unfunded (self-sustaining via Kickstarter crowdfunding)",
+      "category_en": "AI Hardware"
     },
     {
       "id": "nb-beyond-ai-zone-hss1",
@@ -3807,7 +3811,8 @@
       "daysAgo": 20,
       "source_url": "https://nextbanker.cn/",
       "scrapedAt": "2026-06-16T08:37:19.423Z",
-      "funding_en": "Unfunded (self-sustaining via Kickstarter)"
+      "funding_en": "Unfunded (self-sustaining via Kickstarter)",
+      "category_en": "AI Hardware"
     },
     {
       "id": "nb-memomind-everyday-glasses",
@@ -3823,7 +3828,8 @@
       "daysAgo": 20,
       "source_url": "https://nextbanker.cn/",
       "scrapedAt": "2026-06-16T08:37:19.423Z",
-      "funding_en": "Unfunded (no matching Chinese entity on Qichacha, very early stage indication)"
+      "funding_en": "Unfunded (no matching Chinese entity on Qichacha, very early stage indication)",
+      "category_en": "AI Hardware"
     },
     {
       "id": "nb-speakon",
@@ -3838,7 +3844,8 @@
       "funding": "Notta Inc.旗下产品",
       "daysAgo": 26,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "category_en": "AI Hardware"
     },
     {
       "id": "nb-looktech-ai眼镜",
@@ -3854,7 +3861,8 @@
       "daysAgo": 26,
       "source_url": "https://nextbanker.cn/",
       "scrapedAt": "2026-06-16T08:37:19.423Z",
-      "funding_en": "Parent company Huiche Technology has secured 4 rounds of VC funding"
+      "funding_en": "Parent company Huiche Technology has secured 4 rounds of VC funding",
+      "category_en": "AI Hardware"
     },
     {
       "id": "nb-vastnaut-one",
@@ -3869,7 +3877,8 @@
       "funding": "Pre-A轮数千万（高瓴创投+经纬创投）",
       "daysAgo": 27,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "category_en": "AI Hardware"
     },
     {
       "id": "nb-hengbot-sirius",
@@ -3884,7 +3893,8 @@
       "funding": "未融资（KS自支撑）",
       "daysAgo": 25,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "category_en": "Embodied AI"
     },
     {
       "id": "nb-ruka-v2",
@@ -3899,7 +3909,8 @@
       "funding": "未融资（学术项目，商业化潜力高）",
       "daysAgo": 25,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "category_en": "Embodied AI"
     },
     {
       "id": "nb-refaire",
@@ -3914,7 +3925,8 @@
       "funding": "未融资（PH早期上线，无VC背书信号）",
       "daysAgo": 25,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "category_en": "Embodied AI"
     },
     {
       "id": "nb-gausstwin",
@@ -3929,7 +3941,8 @@
       "funding": "无 — 学术论文开源",
       "daysAgo": 26,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "category_en": "Embodied AI"
     },
     {
       "id": "nb-dexrep-isaac",
@@ -3944,7 +3957,8 @@
       "funding": "",
       "daysAgo": 27,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "category_en": "Embodied AI"
     },
     {
       "id": "nb-airexo-2",
@@ -3959,7 +3973,8 @@
       "funding": "",
       "daysAgo": 27,
       "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
+      "scrapedAt": "2026-06-16T08:37:19.423Z",
+      "category_en": "Embodied AI"
     },
     {
       "id": "nb-flowhoi",
