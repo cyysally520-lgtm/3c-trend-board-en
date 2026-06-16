@@ -448,16 +448,14 @@ export default function App() {
                   </>
                 )}
               </span>
-              <span className="text-[10px] leading-tight">
+              <span className="text-[10px] leading-tight whitespace-nowrap">
                 <span className="text-slate-500 font-medium">Last updated: </span>
                 <span className="text-slate-700 font-semibold font-mono">{lastUpdated}</span>
                 <span className="text-slate-400 ml-1 font-normal">Beijing Time</span>
-                <br />
-                <span className="text-slate-400 ml-[5.4rem]">· just now</span>
               </span>
             </div>
 
-            <div className="text-[11px] font-semibold text-emerald-700 bg-emerald-50/60 border border-emerald-300/40 rounded-md px-2.5 py-1 shadow-2xs">
+            <div className="text-[11px] font-semibold text-emerald-700 bg-emerald-50/60 border border-emerald-300/40 rounded-md px-2.5 py-1 shadow-2xs whitespace-nowrap">
               📩 Feedback <span className="text-slate-900">3C Digital Business Analytics - bjzhangshuts</span>
             </div>
           </div>
