@@ -4,10 +4,13 @@ import { InvestItem } from '../types';
 
 interface Props {
   item: InvestItem;
+  isFavorite?: boolean;
+  onToggleFavorite?: (id: string) => void;
+  variant?: 'default' | 'featured';
   key?: React.Key;
 }
 
-export function InvestCard({ item }: Props) {
+export function InvestCard({ item, isFavorite, onToggleFavorite, variant = 'default' }: Props) {
   // tagline 里通常含来源徽章（"GitHub 12★/4Fork"），切成多个 chips
   // 把 "/" "·" 多种分隔符切开，每个非空 chunk 当独立标签
   const taglineChips = (item.tagline || '')
@@ -16,8 +19,42 @@ export function InvestCard({ item }: Props) {
     .filter((s) => s.length > 0 && s.length < 30)
     .slice(0, 3);
 
+  // featured 变体：用于「今日精选」横排深色卡。仅显示头部 + 简短简介
+  if (variant === 'featured') {
+    return (
+      <div
+        data-invest-id={item.id}
+        className="group relative bg-gradient-to-br from-slate-900 to-slate-950 rounded-xl border border-slate-700 ring-1 ring-emerald-500/10 shadow-md hover:ring-emerald-400/40 hover:-translate-y-0.5 transition-all duration-200 p-4 flex flex-col gap-2 text-white min-h-[180px]"
+      >
+        <div className="flex items-center flex-wrap gap-1.5">
+          <span className="text-[11px] font-mono font-bold text-slate-500">#{item.rank}</span>
+          <span className="inline-flex items-center text-[10px] font-semibold px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-400/30">
+            {item.category}
+          </span>
+          {taglineChips.slice(0, 1).map((chip, i) => (
+            <span
+              key={i}
+              className="inline-flex items-center text-[10px] font-semibold px-2 py-0.5 rounded-full bg-slate-700/60 text-slate-300 border border-slate-600"
+            >
+              {chip}
+            </span>
+          ))}
+        </div>
+        <h3 className="font-bold text-white text-base leading-snug">{item.name}</h3>
+        {(item.tagline || item.tech) && (
+          <p className="text-[12px] text-slate-300 leading-relaxed line-clamp-3">
+            {item.tech || item.business || item.tagline}
+          </p>
+        )}
+      </div>
+    );
+  }
+
   return (
-    <div className="group relative bg-gradient-to-br from-white to-slate-50 rounded-xl border border-slate-300 ring-1 ring-slate-200 shadow-sm hover:shadow-lg hover:ring-emerald-300/40 hover:-translate-y-0.5 transition-all duration-200 flex flex-col overflow-hidden">
+    <div
+      data-invest-id={item.id}
+      className="group relative bg-gradient-to-br from-white to-slate-50 rounded-xl border border-slate-300 ring-1 ring-slate-200 shadow-sm hover:shadow-lg hover:ring-emerald-300/40 hover:-translate-y-0.5 transition-all duration-200 flex flex-col overflow-hidden"
+    >
       <div className="px-4 pt-4 pb-3 flex flex-col gap-3 flex-grow">
         {/* 头部：标签 chips + ⭐ 收藏 + 时间 */}
         <div className="flex items-start justify-between gap-3">
@@ -45,11 +82,14 @@ export function InvestCard({ item }: Props) {
           <div className="flex flex-col items-end gap-1.5 shrink-0">
             <button
               type="button"
-              className="p-1 rounded-full transition cursor-pointer text-slate-300 hover:text-emerald-500"
-              title="My Favorites"
+              onClick={() => onToggleFavorite?.(item.id)}
+              className={`p-1 rounded-full transition cursor-pointer ${
+                isFavorite ? 'text-emerald-500' : 'text-slate-300 hover:text-emerald-500'
+              }`}
+              title={isFavorite ? 'Remove from favorites' : 'Add to favorites'}
               aria-label="favorite"
             >
-              <Star className="w-4 h-4" />
+              <Star className={`w-4 h-4 ${isFavorite ? 'fill-emerald-500' : ''}`} />
             </button>
             <div className="flex items-center gap-1 text-[11px] text-slate-400">
               <Clock className="w-3 h-3" />
