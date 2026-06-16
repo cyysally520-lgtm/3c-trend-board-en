@@ -1,6 +1,7 @@
 {
-  "updatedAt": "2026-06-15T18:19:24.655Z",
+  "updatedAt": "2026-06-16T08:37:19.459Z",
   "dates": [
+    "2026-06-16",
     "2026-06-15",
     "2026-06-14",
     "2026-06-13",
@@ -17,53 +18,59 @@
     "investments"
   ],
   "counts": {
+    "2026-06-16": {
+      "crowdfunding": 61,
+      "news": 361,
+      "startups": 8,
+      "investments": 272
+    },
     "2026-06-15": {
       "crowdfunding": 61,
       "news": 361,
       "startups": 8,
-      "investments": 600
+      "investments": 214
     },
     "2026-06-14": {
       "crowdfunding": 60,
       "news": 334,
       "startups": 8,
-      "investments": 584
+      "investments": 198
     },
     "2026-06-13": {
       "crowdfunding": 60,
       "news": 321,
       "startups": 8,
-      "investments": 556
+      "investments": 179
     },
     "2026-06-12": {
       "crowdfunding": 58,
       "news": 300,
       "startups": 8,
-      "investments": 544
+      "investments": 166
     },
     "2026-06-11": {
       "crowdfunding": 53,
       "news": 124,
       "startups": 8,
-      "investments": 96
+      "investments": 0
     },
     "2026-06-10": {
       "crowdfunding": 45,
       "news": 50,
       "startups": 8,
-      "investments": 96
+      "investments": 0
     },
     "2026-06-09": {
       "crowdfunding": 30,
       "news": 50,
       "startups": 8,
-      "investments": 96
+      "investments": 0
     },
     "2026-06-08": {
       "crowdfunding": 18,
       "news": 50,
       "startups": 8,
-      "investments": 96
+      "investments": 0
     }
   }
 }

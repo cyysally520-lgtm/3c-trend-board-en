@@ -147,12 +147,18 @@ export async function scrapeNextbanker(maxItems = 1000): Promise<ScrapeResult<Ra
     // 转成 RawInvestItem
     let rank = 0;
     let droppedNonGithub = 0;
+
+    // EN 站独有过滤：「海外用户友好来源」白名单
+    // 保留 GitHub / 开源 / arXiv / HuggingFace / Reddit / Kickstarter (KS) /
+    // Indiegogo / Product Hunt (PH) / CES / iF Design / 顶会论文 (ICRA/CoRL/T-RO/
+    // NeurIPS/ICLR/ICML/ACL) 等海外用户能找到对应英文资料的来源
+    // 丢弃：XHS / 小红书 / B站 / 抖音 等中文社交，「招聘中」「极早期」等无来源标签
+    const EN_FRIENDLY_RE = /(github|开源|arxiv|hugging\s*face|\bhf\b|reddit|\bks\b|kickstarter|indiegogo|product\s*hunt|\bph\b|\bces\b|if\s*design|icra|corl|t-ro|neurips|iclr|icml|\bacl\b|顶会|顶刊)/i;
     for (const c of cards) {
       if (result.items.length >= maxItems) break;
 
-      // EN 站独有过滤：只保留 GitHub 来源的项目（其他来源如 XHS / 清华校长杯 /
-      // 抖音等是中文社交媒体，对海外用户无意义；GitHub 项目通常英文 README 友好）
-      if (!/github/i.test(c.sourceBadge)) {
+      // 只保留 EN-friendly 来源
+      if (!EN_FRIENDLY_RE.test(c.sourceBadge)) {
         droppedNonGithub++;
         continue;
       }

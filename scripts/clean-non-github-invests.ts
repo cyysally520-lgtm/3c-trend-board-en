@@ -11,7 +11,9 @@ const ROOT = path.resolve(process.cwd(), 'data');
 
 function isGithub(it: any): boolean {
   const tagline = String(it?.tagline || '');
-  return /github/i.test(tagline);
+  // 同 scraper/sources/nextbanker.ts 的 EN_FRIENDLY_RE：保留 GitHub + 开源 +
+  // arXiv + HuggingFace + Reddit + KS + Indiegogo + PH + CES + iF Design + 顶会
+  return /(github|开源|arxiv|hugging\s*face|\bhf\b|reddit|\bks\b|kickstarter|indiegogo|product\s*hunt|\bph\b|\bces\b|if\s*design|icra|corl|t-ro|neurips|iclr|icml|\bacl\b|顶会|顶刊)/i.test(tagline);
 }
 
 async function cleanFile(filePath: string): Promise<{ before: number; after: number } | null> {
