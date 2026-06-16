@@ -393,19 +393,27 @@ export default function App() {
   }, [investData, investCategory, investSearch, showFavoritesOnly]);
 
   // 分组：按 category（仅当无 category 筛选时；筛选时直接平铺一组）
+  // 每组内按 daysAgo 升序（最新在前），并重新分配 rank 从 1 开始
   const groupedInvests = useMemo(() => {
-    if (investCategory) return [{ category: investCategory, items: filteredInvests }];
+    const sortAndRerank = (items: InvestItem[]): InvestItem[] =>
+      [...items]
+        .sort((a, b) => (a.daysAgo ?? 999) - (b.daysAgo ?? 999))
+        .map((it, i) => ({ ...it, rank: i + 1 }));
+
+    if (investCategory) {
+      return [{ category: investCategory, items: sortAndRerank(filteredInvests) }];
+    }
     const map = new Map<string, InvestItem[]>();
     for (const it of filteredInvests) {
       const k = it.category || '其它';
       if (!map.has(k)) map.set(k, []);
       map.get(k)!.push(it);
     }
-    // 排序：按该 category 总数倒序
+    // 板块顺序：按该 category 总数倒序
     const totalCount = new Map<string, number>(investCategories.map((c) => [c.name, c.count]));
     return Array.from(map.entries())
       .sort((a, b) => (totalCount.get(b[0]) ?? 0) - (totalCount.get(a[0]) ?? 0))
-      .map(([category, items]) => ({ category, items }));
+      .map(([category, items]) => ({ category, items: sortAndRerank(items) }));
   }, [filteredInvests, investCategory, investCategories]);
 
   return (
