@@ -244,7 +244,7 @@ async function extractFromCards(page: import('playwright').Page, maxItems: numbe
     raised: r.raised || 0,
     currency: r.currency || 'USD',
     currencySymbol: r.currencySymbol || '$',
-    progress_pct: r.progressPct ?? 0,
+    progress_pct: 0, // Indiegogo 不显示进度，前端 fallback 到 daysLeft
     backers: r.backers || 0,
     price: '',
     campaign_url: r.campaignUrl,
@@ -405,7 +405,7 @@ async function scrapeDetailsFromPages(items: RawCrowdfundingItem[], ctx: import(
         }
         if (detail.backers > 0) item.backers = detail.backers;
         if (detail.daysLeft > 0) (item as any).daysLeft = detail.daysLeft;
-        if (detail.progressPct > 0) item.progress_pct = detail.progressPct;
+        // Indiegogo 不显示 progress（用户决定）：保持 progress_pct=0，前端 fallback 到 daysLeft
         if (detail.founder || detail.location || detail.price) fetched++;
         log.info('indiegogo', `  founder=${detail.founder || item.founder}, loc=${detail.location || item.location}, price=${detail.price || 'N/A'}`);
 
