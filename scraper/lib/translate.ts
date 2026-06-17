@@ -351,7 +351,9 @@ const isMostlyEnglish = (s: string) => {
 const isMostlyChinese = (s: string) => {
   if (!s) return false;
   const han = (s.match(/[一-龥]/g) || []).length;
-  return han / s.length > 0.3;
+  // 旧阈值 30% 太高：「张嘉源(Jiayuan Zhang)，前 TikTok 工程师」中文占 27%
+  // 也应被翻译。改为「含至少 3 个汉字 OR 汉字占比 ≥ 5%」就触发翻译
+  return han >= 3 || han / s.length > 0.05;
 };
 
 /**

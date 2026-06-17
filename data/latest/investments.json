@@ -43,7 +43,8 @@
       "tech_en": "FPGA development boards based on Lattice iCE40/ECP5, nanoDLA logic analyzers, USB bridges, and other open-source hardware, paired with the openocd toolchain; product line covers entry-level to professional, with several popular community projects.",
       "business_en": "Open-source hardware + direct e-commerce sales, targeting the global maker market via Taobao/Tindie/AliExpress, with stable commercialization achieved",
       "team_en": "Wu Jianhua (wuxx), Northwestern Polytechnical University, founder of MuseLab, embedded engineer, Hangzhou.",
-      "funding_en": "No funding"
+      "funding_en": "No funding",
+      "operations_en": "GitHub 912★, 898 followers, actively maintained"
     },
     {
       "id": "nb-linkai-ai-glasses",
@@ -63,7 +64,9 @@
       "category_en": "AI Hardware",
       "tech_en": "AI voice-interactive AR smart glasses with a companion mobile control app; complete App code repository available on GitHub.",
       "business_en": "Intent to productize, with App + hardware supporting components",
-      "funding_en": "No funding (no known funding)"
+      "funding_en": "No funding (no known funding)",
+      "team_en": "gdyw1999 (GitHub), Chinese team, Chinese description",
+      "operations_en": "GitHub repository (linkai-ai-glasses), with companion app code"
     },
     {
       "id": "nb-hgyzqxt",
@@ -83,7 +86,8 @@
       "tech_en": "ESP32-S3 emulates HID keyboard/mouse + CDC serial port; LLM Web console autonomously plans, invokes tools, and iteratively executes tasks. Pioneering hardware form factor enables cross-platform desktop control with physically isolated security auditing.",
       "business_en": "Consumer-level pricing at $29-49 targeting AI developers; enterprise-level can serve as security audit/RPA replacement. Team has mass production experience at Seeed Studio",
       "team_en": "Li Jie (hurricane), hardware engineer at Seeed Studio, with experience in mass production and supply chain resources, also creator of the open-source reBot-DevArm project.",
-      "funding_en": "No funding (personal open-source project)"
+      "funding_en": "No funding (personal open-source project)",
+      "operations_en": "★15/♥7/1270 views, 58 commits with continuous iteration, last updated 2026-06-01"
     },
     {
       "id": "nb-looki",
@@ -124,7 +128,9 @@
       "category_en": "AI Hardware",
       "tech_en": "DeepSeek-driven AI chip module, embeddable into any plush toy for AI conversational companionship.",
       "team_en": "CEO Wang Le and CTO Guo Xinghua, both from Tianjin University.",
-      "funding_en": "Pre-A round (reported by Toujierong)"
+      "funding_en": "Pre-A round (reported by Toujierong)",
+      "business_en": "13-year Bootstrap (founded in 2013), 20,000+ units sold on Tmall/Amazon, CES 2026 new product \"AI Sunflower,\" covered by WIRED.",
+      "operations_en": "814★, explicitly marked as Unfunded by Tracxn"
     },
     {
       "id": "nb-arxiv-2606-12372",
@@ -144,7 +150,8 @@
       "tech_en": "Original architecture based on future conditional action value estimation and temporal value risk critic, reducing human intervention by 57% and improving success rate by 8.6%.",
       "business_en": "Targeting industrial robot deployment, providing training efficiency optimization middleware to reduce human supervision costs and accelerate deployment",
       "team_en": "Deng Haoyuan (Bachelor's from Wuhan University, first-year PhD at NTU, multiple papers at ICCV/CoRL/IROS/ICRA) + advisor Wang Ziwei (Assistant Professor at NTU, Tsinghua + CMU, 30+ top-tier conferences).",
-      "funding_en": "No funding"
+      "funding_en": "No funding",
+      "operations_en": "arXiv cs.RO, top-tier conference papers IROS/CoRL/ICRA"
     },
     {
       "id": "nb-arxiv-2606-12403",
@@ -163,7 +170,9 @@
       "category_en": "Embodied AI",
       "business_en": "Short-term provision of control SDK/model licensing to robot manufacturers, addressing pain points in new scenario deployment and debugging",
       "operations_en": "arXiv 2026.6, full code/weights/website/demo video, continuously updated",
-      "funding_en": "No funding information found"
+      "funding_en": "No funding information found",
+      "tech_en": "Based on OpenVLA/Cosmos, dual-pathway world priors via Latent Steering + Action Steering achieve 84.7% SOTA in zero-shot OOD manipulation, with optimal performance across all four real-world robotic arm tasks.",
+      "team_en": "Zefu Lin (Institute of Automation, Chinese Academy of Sciences + Nanjing University), Lue Fan (Assistant Professor at Institute of Automation, CAS / advised by Zhaoxiang Zhang), Zhaoxiang Zhang (Changjiang Scholar), Rongxu Cui, Junjia Xu (Beihang University)"
     },
     {
       "id": "nb-unilabsim",
@@ -183,7 +192,8 @@
       "tech_en": "Heterogeneous architecture combining CPU parallel simulation and GPU policy training, supporting CUDA/Apple/AMD/Intel across all platforms, achieving 3–10x end-to-end training acceleration; deployed across 6 types of real-world robot tasks including humanoids, quadrupeds, and dexterous hands.",
       "business_en": "Open-source framework + enterprise service model, with deep cooperation with Motphys and others, targeting embodied intelligence companies",
       "team_en": "Jia Yufei (PhD student at Tsinghua AIR), leading over 40 co-authors from Tsinghua, SJTU, Shanghai Innovation Institute, and Mou Xian Fei.",
-      "funding_en": "Open-source project from Tsinghua AIR Lab, no funding"
+      "funding_en": "Open-source project from Tsinghua AIR Lab, no funding",
+      "operations_en": "GitHub 713★, PR #600+, daily active development, Discord + WeChat community"
     },
     {
       "id": "nb-arxiv-2606-10818",
@@ -202,7 +212,9 @@
       "category_en": "Embodied AI",
       "tech_en": "Online learning of environment dynamics as an internal model + Model Predictive Control (MPC), enabling feedforward force compensation without force/torque sensors, distinct from imitation learning + impedance control.",
       "business_en": "Providing force control software modules to collaborative robot/humanoid robot manufacturers, reducing hardware costs",
-      "funding_en": "No funding"
+      "funding_en": "No funding",
+      "team_en": "Jiawei Gao (Tsinghua BS / CMU + Harvard research, co-founder of HumanoidVerse) & Yilun Du (Harvard Assistant Professor, formerly at OpenAI/DeepMind)",
+      "operations_en": "HumanoidVerse 459★, arXiv paper & Demo video, Harvard + Tsinghua collaboration"
     },
     {
       "id": "nb-mint-sjtu",
@@ -222,7 +234,8 @@
       "tech_en": "From VLA pre-training (Evo-0 → Evo-1, CVPR'26) to reproducible real-world offline RL (Evo-RL, dual platforms), to model pruning, embodied assistant (RoboClaw), and teleoperation hardware starting at $60 (LeRobot-Anything-U-Arm), full-stack coverage from brain to body.",
       "business_en": "Open-source + enterprise version VLA model licensing/RL platform private deployment + hardware kit direct sales (starting at 360 yuan), WeChat community operations",
       "team_en": "Lin Tao (first author) leads the MINT Lab at SJTU, jointly operated with Shanghai Wuzhi Evolution Technology (EvoMind Tech). The team includes multiple PhDs including Zou Yanwen.",
-      "funding_en": "No funding; company established in 2025 with a registered capital of 100,000 RMB"
+      "funding_en": "No funding; company established in 2025 with a registered capital of 100,000 RMB",
+      "operations_en": "GitHub 2,091★/221 Fork, high-frequency iteration in June 2026"
     },
     {
       "id": "nb-arxiv-2606-12352",
@@ -242,7 +255,8 @@
       "tech_en": "Vision-motor priors based on pre-trained VLA models, decentralized architecture requiring no central controller or inter-robot communication; first demonstration that pre-trained VLA alone suffices for multi-robot collaboration (64% performance improvement, 40% responsiveness improvement).",
       "business_en": "B2B collaborative software license, targeting warehouse logistics robot companies, reducing communication infrastructure costs",
       "operations_en": "arXiv cs.RO cs.AI (2026.06), validated in real-world experiments (mobile measurement, library handover, laundry basket搬运)",
-      "funding_en": "No funding information found"
+      "funding_en": "No funding information found",
+      "team_en": "Tian Gao (Tsinghua Yao Class → Stanford CS PhD), advisor Chelsea Finn (co-founder of Physical Intelligence), published works in RA-L, CoRL, etc."
     },
     {
       "id": "nb-arxiv-2606-10808",
@@ -325,7 +339,8 @@
       "tech_en": "Specifier-Designer-Inspector three-layer architecture; LLM handles language understanding and reasoning, while all safety-critical operations rely on deterministic symbolic systems; Unity3D digital twin for pre-validation.",
       "business_en": "Targeting Chinese manufacturing enterprises such as Foxconn and BYD, providing industrial robot intelligent programming SaaS + deployment services, also able to cooperate with ABB and other manufacturers",
       "team_en": "Zhihao Liu (Postdoc at KTH, Bachelor's and Master's from Wuhan University of Technology, 42 papers / 1800+ citations / h-index 17), co-authors include KTH Chair Professor Lihui Wang.",
-      "funding_en": "Unfunded"
+      "funding_en": "Unfunded",
+      "operations_en": "arXiv cs.RO | IROS 2026 | KTH Royal Institute of Technology, continuously active"
     },
     {
       "id": "nb-ros-claw",
@@ -345,7 +360,8 @@
       "business_en": "Dual-track model of open-source infrastructure and enterprise services, planning a ClawHub skills marketplace, an enterprise-grade physical AI deployment platform, and a robot manufacturer SDK certification ecosystem.",
       "team_en": "Shaoxiang (Shanghai), active in the Unitree robot ecosystem, extensively uses AI-assisted development (Claude Opus 4.8 co-author).",
       "operations_en": "140★, ★, v1.0 official release, all 2,163 tests passed, supports MCP protocol for external Agent integration",
-      "funding_en": "Unfunded"
+      "funding_en": "Unfunded",
+      "tech_en": "Full-stack Physical Intelligence infrastructure: 12 modules including Runtime, Sandbox, Memory, How Intervention, Know Compilation, Auto Self-Evolution, Darwin Evaluation, Forge, and Dashboard. Passed all 8/8 Darwin benchmarks, with performance improvements ranging from +29% to +396%."
     },
     {
       "id": "nb-no-chicken",
@@ -365,7 +381,8 @@
       "tech_en": "Rockchip RV1106 Linux SoC + 1 TOPS NPU, YOLO-based visual detection and local voice dialogue, not an ESP32 toy, real edge AI inference with full int4/int8/int16 precision support.",
       "business_en": "Hardware kits sold on Taobao, targeting the desktop AI assistant niche market, with a product matrix including OV-Watch already formed.",
       "team_en": "Xu Qinghan (Kingham Xu), student in Shenzhen, embedded enthusiast, creator of the OV-Watch smartwatch (3.5K★), sold via Taobao store fry-oshw, full-stack from design to mass production.",
-      "funding_en": "Unfunded"
+      "funding_en": "Unfunded",
+      "operations_en": "3,172★, ★/422♥/131,565 views, 164 commits with continuous iteration"
     },
     {
       "id": "nb-starvla",
@@ -406,7 +423,8 @@
       "tech_en": "Integrated visual-tactile-force multimodal perception with proprietary GelSlim-MiniFab visuotactile sensor, resistive pressure sensor, and custom PCB; 100% data usability and a collection window 4x longer than UMI.",
       "business_en": "Providing tactile teaching hardware kits and learning software licenses to industrial robot manufacturers/integrators, targeting contact-intensive scenarios such as 3C electronics assembly and food sorting.",
       "team_en": "Yong-Lu Li (Associate Professor at SJTU/AI100 Young Pioneer/ICRA 2025 Best Paper) + Hong Li (PhD Student), RHOS Lab",
-      "funding_en": "Academic team, unfunded"
+      "funding_en": "Academic team, unfunded",
+      "operations_en": "arXiv cs.RO | Released June 2026, ongoing research"
     },
     {
       "id": "nb-nhwjxzxz",
@@ -426,7 +444,8 @@
       "tech_en": "Proprietary ROS2 software stack hy_ros with custom binary communication protocol; RK3588S NPU-accelerated YOLOv8 real-time inference + MPP hardware-encoded zero-copy streaming; integrated SLAM, voice, and motion control. The only full-featured ROS2 robot on RK3588S.",
       "business_en": "Hardware kits already listed on Xianyu, supporting customization; targeting ROS2 development education and inspection/service robot scenarios.",
       "team_en": "Hongchen Zhang (Hongchen Ke), background in Automation from Qingdao University, embedded systems and robotics engineer, with sustained output of multiple hardware projects",
-      "funding_en": "Unfunded"
+      "funding_en": "Unfunded",
+      "operations_en": "GitHub 14★ / 1,536👁 / 7♥, comprehensive documentation (ReadtheDocs + blog) support"
     },
     {
       "id": "nb-vectoros-robotics",
@@ -445,7 +464,9 @@
       "category_en": "Embodied AI",
       "tech_en": "Open-source robot OS enabling natural language robot control via Claude Code reverse engineering (vibecode paradigm).",
       "business_en": "An open-source operating system for robot developers, lowering the barrier to robot programming.",
-      "funding_en": "Unfunded"
+      "funding_en": "Unfunded",
+      "team_en": "GitHub: VectorRobotics, individual developer yusenthebot",
+      "operations_en": "GitHub open-source project vector-os-nano, with personal homepage yusenthebot.github.io"
     },
     {
       "id": "nb-vlarlkit",
@@ -487,7 +508,8 @@
       "tech_en": "Fully open-source 6-axis collaborative robotic arm with parametric CAD tool JellyCAD; BOM cost of 4,200 RMB.",
       "business_en": "Full replication path via Taobao BOM and MakerWorld 3D printing, offering extreme cost-effectiveness for the education/research market.",
       "operations_en": "GitHub 130★, dual ecosystem (hardware + software)",
-      "funding_en": "Unfunded"
+      "funding_en": "Unfunded",
+      "team_en": "Individual / bootstrap project"
     },
     {
       "id": "nb-reall3d",
@@ -507,7 +529,8 @@
       "tech_en": "Enterprise-grade 3D Gaussian splatting Web rendering engine based on Three.js, supporting .ply/.splat/.spx formats, adaptive LOD, and spherical harmonic rendering; tested at 60 FPS on desktop and 25 FPS on mobile with 150 million points; includes SPX high-compression format (>95% size reduction) and gsbox cross-platform conversion tool.",
       "business_en": "Providing Web rendering SDKs and toolchains for digital twin, smart city, and GIS domains, monetized through enterprise customization and technical support.",
       "team_en": "gotoeasy (Qingsong), researcher at Beijing Digital Origin Digital City Research Center (led by Dr. Qi Lu), collaborating with Anhui Yucheng Data Technology Company (100–199 employees)",
-      "funding_en": "Unfunded; Anhui Yucheng Data Technology Co., Ltd. has not disclosed any funding"
+      "funding_en": "Unfunded; Anhui Yucheng Data Technology Co., Ltd. has not disclosed any funding",
+      "operations_en": "GitHub 494★, continuously active"
     },
     {
       "id": "nb-renforce-genesislab",
@@ -525,7 +548,10 @@
       "scrapedAt": "2026-06-17T01:57:03.934Z",
       "category_en": "Embodied AI",
       "business_en": "WeChat community operations; reducing the migration cost for Isaac Lab.",
-      "funding_en": "Unfunded"
+      "funding_en": "Unfunded",
+      "tech_en": "Lightweight RL framework based on the Genesis physics engine, with API alignment to IsaacLab. Product matrix includes TrackerLab, MultiModalWBC, and SoccerLab.",
+      "team_en": "Ziang Zheng",
+      "operations_en": "GitHub 112★ (created 2026-03-04, rapid growth in 3 months); active as of 2026-05-18"
     },
     {
       "id": "nb-gshaoburuchuan",
@@ -546,7 +572,8 @@
       "tech_en": "Proprietary cycloidal pinwheel reducer (not harmonic drive) + FOC closed-loop drive (chopped wave current control algorithm) + fully integrated 3D-printed stack with over 10 custom development boards; multimodal interaction fusion (3D gesture, millimeter-wave radar, voice, vision, laser projection) with vertical integration from perception to execution.",
       "business_en": "Desktop AI assistant hardware products for education/research/personal assistant use, or exporting reducer and multimodal solution licenses to robot companies.",
       "team_en": "Shaoburuchuan (oshwhub), JLCPCB EDA campus lecturer, 480 followers / 574 likes, likely a senior embedded hardware engineer",
-      "funding_en": "Unfunded"
+      "funding_en": "Unfunded",
+      "operations_en": "★130 / 11,751 views / replication cost only 2,000 RMB"
     },
     {
       "id": "nb-openember",
@@ -566,7 +593,8 @@
       "tech_en": "Embedded edge robot middleware framework with pluggable communication layers (ZeroMQ/LCM/NNG/iceoryx) and significantly lower resource usage than ROS2.",
       "business_en": "Already has real industrial customers (industrial control, wheeled/legged robots, smart sensors).",
       "team_en": "Team not disclosed",
-      "funding_en": "Unfunded"
+      "funding_en": "Unfunded",
+      "operations_en": "10★, Chinese documentation site, 6 GitHub stars"
     },
     {
       "id": "nb-gsbox",
@@ -586,7 +614,8 @@
       "tech_en": "Cross-platform 3DGS file format conversion CLI (implemented in Go).",
       "business_en": "Addressing fragmentation in the 3D Gaussian Splatting pipeline, 178 stars.",
       "operations_en": "Active updates",
-      "funding_en": "Unfunded"
+      "funding_en": "Unfunded",
+      "team_en": "Developer gotoeasy"
     },
     {
       "id": "nb-vlink",
@@ -605,7 +634,9 @@
       "category_en": "Embodied AI",
       "tech_en": "Pure C++ architecture supporting 12 transport backends, zero-copy communication, and no ROS2 dependency (solving ROS2 slow compilation and DDS instability issues).",
       "business_en": "Open-source under Apache 2.0, a shovel-layer infrastructure—every company working on robotics or autonomous driving needs a communication middleware.",
-      "funding_en": "Unfunded (personal open-source project)"
+      "funding_en": "Unfunded (personal open-source project)",
+      "team_en": "Thun Lu, Chinese developer (GitHub org: thun-res)",
+      "operations_en": "6★, GitHub ★/Fork, active commits as of 2026-05-22"
     },
     {
       "id": "nb-mosshell",
@@ -625,7 +656,9 @@
       "business_en": "Can serve as the cognitive layer of an embodied intelligence operating system (the middle layer between the robot brain and actuators), supporting direct connection with Claude Code.",
       "team_en": "Ghost In Shells team, a Chinese team (operating via Feishu Docs)",
       "operations_en": "GitHub 17★, Beta version, actively updated today",
-      "funding_en": "No funding raised"
+      "funding_en": "No funding raised",
+      "name_en": "MOSShell / Lingshu",
+      "tech_en": "Model-oriented Operating System Shell that directly converts LLM inference outputs into executable structured system calls, supporting ChannelApp, Realtime-Actions, and MCP servers."
     },
     {
       "id": "nb-openfigure",
@@ -665,7 +698,9 @@
       "category_en": "Embodied AI",
       "business_en": "Developer platform positioning, extremely low BOM cost, rapid community growth (1,715★ in 5 months)",
       "team_en": "RoboParty team, founded in February 2025, all documentation in Chinese confirms it is a domestic team",
-      "funding_en": "No funding raised (community open-source driven)"
+      "funding_en": "No funding raised (community open-source driven)",
+      "tech_en": "22-DOF full-body humanoid, IsaacLab RL sim-to-real walking and running, OrangePi main controller, full 3D-printed parts plus Taobao BOM, licensed under GPLv3.",
+      "operations_en": "GitHub 2,340★/456 Fork, bilingual documentation, consistently active"
     },
     {
       "id": "nb-dataelement",
@@ -684,7 +719,8 @@
       "tech_en": "Proprietary full-stack LLM application development platform with high-precision OCR document parsing engine and SOP-driven multi-agent collaboration framework.",
       "business_en": "Open-source community edition for lead generation, enterprise commercial edition subscription + private deployment, penetrating financial and state-owned enterprise markets through Alibaba Cloud",
       "team_en": "Siyang Cai (DataElem), core team from 4Paradigm, independently spun off in 2022",
-      "funding_en": "No disclosed institutional funding; member of Alibaba Cloud Startup Program"
+      "funding_en": "No disclosed institutional funding; member of Alibaba Cloud Startup Program",
+      "operations_en": "16,000★ total (Bisheng 11,450★ + Clawith 3,980★), continuously active with iterations"
     },
     {
       "id": "nb-cocoindex-io",
@@ -701,7 +737,10 @@
       "source_url": "https://nextbanker.cn/",
       "scrapedAt": "2026-06-17T01:57:03.934Z",
       "tech_en": "Python declarative API for defining target states + Rust engine computing only incremental deltas, achieving sub-second data synchronization; supports SQL, vector, and graph data sources; built-in CI/CD with a complete Rust+Python dual stack.",
-      "business_en": "Open-source core is free, enterprise edition targets PB-level RAG scenarios, following a Confluent-like path, with a dedicated Enterprise page already live"
+      "business_en": "Open-source core is free, enterprise edition targets PB-level RAG scenarios, following a Confluent-like path, with a dedicated Enterprise page already live",
+      "team_en": "Jiangzhou He (former Google Infrastructure Tech Lead, Tsinghua BS) + Linghua Jin (former Google Staff SE/TL)",
+      "operations_en": "GitHub 12,000★/14 repos, multiple commits daily, Discord community operations",
+      "funding_en": "Received GitHub Secure Open Source Fund grant, not funded"
     },
     {
       "id": "nb-panniantong",
@@ -719,7 +758,9 @@
       "scrapedAt": "2026-06-17T01:57:03.934Z",
       "tech_en": "Node.js CLI tool designed for AI Agents, with deep integration into Chinese platforms such as Xiaohongshu, Douyin, and Bilibili, at zero API cost.",
       "business_en": "Open-source for customer acquisition, with paid API relay stations and enterprise-grade Agent already promoted, one-click deployment via Tencent Cloud",
-      "funding_en": "No funding raised"
+      "funding_en": "No funding raised",
+      "team_en": "Neo Reid (Panniantong), independent Chinese developer, vibe coding full-stack, WeChat community operator",
+      "operations_en": "GitHub 26,000★, consistently active, v1.4.1 in development"
     },
     {
       "id": "nb-thetahealth",
@@ -738,7 +779,9 @@
       "category_en": "AI Healthcare",
       "tech_en": "FHIR integrates 400+ health indicators, with MCP remote deployment and multi-Agent (Deep/Mix/Base) privacy-first analysis.",
       "team_en": "Tianqiao Chen, founder of Shanda, former richest person in China, invested nearly 10 billion RMB in brain science, founder of Theta Health",
-      "funding_en": "Self-funded by founder; strong financial position with no need for external funding"
+      "funding_en": "Self-funded by founder; strong financial position with no need for external funding",
+      "business_en": "Open-source Mirobody + commercial Theta Wellness dual-track, App Store subscription (Pro $199.99/year), integrated with top-tier institutions such as Mayo Clinic.",
+      "operations_en": "GitHub 1,049★, 5 repos, consistently active in 2026, one-click Docker deployment"
     },
     {
       "id": "nb-jackwener",
@@ -757,7 +800,8 @@
       "tech_en": "Chrome extension-based browser bridging with user login state operations, compatible with cutting-edge models like Gemini and Manus, featuring Apache PMC-level engineering architecture.",
       "business_en": "Open-source tool ecosystem, potentially evolving into a BaaS platform for AI Agents, targeting enterprise payment APIs",
       "operations_en": "OpenCLI ★ / ecosystem 33,000★, systematically covering over ten platforms including WeChat, Xiaohongshu, BOSS, etc.",
-      "funding_en": "Project has not raised funding; the author's employer MegaETH raised $20 million in seed round"
+      "funding_en": "Project has not raised funding; the author's employer MegaETH raised $20 million in seed round",
+      "team_en": "jakevin (Kabi Kabi), Apache Arrow/DataFusion/Doris PMC member, formerly at ByteDance/Tencent/Microsoft, now core team at MegaETH"
     },
     {
       "id": "nb-iofficeai",
@@ -775,7 +819,9 @@
       "scrapedAt": "2026-06-17T01:57:03.934Z",
       "tech_en": "Frontend interaction layer + OfficeCLI for office document read/write + AionCore (Rust backend engine) + plugin marketplace, providing unified interaction, collaborative scheduling, and Office document generation for 20+ AI programming Agents.",
       "business_en": "OfficeCLI enterprise licensing + AionUi enterprise SaaS, subscription-based collaboration platform for AI developer teams",
-      "funding_en": "No funding raised"
+      "funding_en": "No funding raised",
+      "team_en": "Founder IceyLiu (Waili), X: @WailiVery, former product manager turned AI developer, focused on gaming/smart hardware/fintech → now building AI Agent desktop tools. Core team: kuishou68 (685 commits, architecture), kaizhou-lab, piorpua, etc., primarily Chinese developers",
+      "operations_en": "35,000★, ★/AionUi surpassed 27k stars in under a year / Forks / 608 open issues / high-frequency iteration"
     },
     {
       "id": "nb-yishentu",
@@ -834,7 +880,8 @@
       "tech_en": "Tauri 2 + Rust + Vue 3 desktop application, with full coverage of agent delegation, long-term memory compression, MCP support, and tool review chain, tested for 20 hours of unattended autonomous programming.",
       "business_en": "Core user validation in financial analysis, academic writing, and content production scenarios, with remote access via WeCom, Feishu, and DingTalk for enterprise IM distribution",
       "team_en": "Yokami (independent Chinese developer), full-stack Rust + Tauri desktop + AI Agent engineering capabilities",
-      "funding_en": "No funding raised"
+      "funding_en": "No funding raised",
+      "operations_en": "GitHub 358★/0 Fork, consistently active (multiple commits daily, multiple releases within two weeks)"
     },
     {
       "id": "nb-xuzhougeng",
@@ -853,7 +900,8 @@
       "tech_en": "Zig-built terminal engine WispTerm + Go-based Agent Control orchestration layer, using cc-proxy to unify Claude Code, Codex, and Gemini CLI, providing enterprise-grade multi-tenant control plane, skill marketplace, and approval gate.",
       "business_en": "PLG: WispTerm for free lead generation, Agent Control charged per team seat + skill marketplace commission, already listed on the App Store with a SaaS registration page in operation",
       "team_en": "Zhougeng Xu, postdoctoral fellow at the Chinese Academy of Sciences, background in single-cell genomics, transitioning to independent full-stack development",
-      "funding_en": "No funding raised"
+      "funding_en": "No funding raised",
+      "operations_en": "315★/27 Repos, WispTerm daily-level iteration"
     },
     {
       "id": "nb-nevamind-ai",
@@ -872,7 +920,8 @@
       "tech_en": "Full stack including memory engine, backend, frontend, and enterprise assistant, solving LLM long-term memory loss, achieving 10x token cost reduction, and standing alongside Mem0 and Letta as mainstream frameworks.",
       "business_en": "Cloud-hosted / enterprise / self-hosted PLG roadmap, targeting AI companionship, assistant, and education scenarios, with a companion enterprise-grade AI assistant memUBot",
       "team_en": "Chen Hong, former Head of Algorithms for ByteDance's Doubao and Catbox Memory; Co-founder Shen Jiayi; NevaMind",
-      "funding_en": "No funding raised"
+      "funding_en": "No funding raised",
+      "operations_en": "Core memU ★, ecosystem includes memUBot with 14,000★ and 5+ repos, total stars 14,420, recently active"
     },
     {
       "id": "nb-arxiv-2606-10875",
@@ -890,7 +939,8 @@
       "scrapedAt": "2026-06-17T01:57:03.934Z",
       "tech_en": "Three-stage framework of knowledge acquisition → activation → internalization, with parallel sampling + aggregation (breadth expansion) outperforming depth expansion, RL for knowledge internalization, and integration of BFCL/AppWorld benchmarks with multi-model handlers.",
       "business_en": "Can provide Tool-Calling-as-a-Service, targeting enterprise Agent platforms, charged by call volume",
-      "funding_en": "No funding raised (academic team from the Chinese Academy of Sciences)"
+      "funding_en": "No funding raised (academic team from the Chinese Academy of Sciences)",
+      "team_en": "Yupu Hao, Zhuoran Jin, Huanxuan Liao (ACL 2026×4/AAAI 2025) et al., NLP group at Institute of Automation, CAS (Kang Liu & Jun Zhao lab)"
     },
     {
       "id": "nb-himself65",
@@ -908,7 +958,9 @@
       "scrapedAt": "2026-06-17T01:57:03.934Z",
       "tech_en": "Modular Agent Skills framework, covering the full chain from low-level auth-spec and skill-lint infrastructure to high-level financial analysis (finance-skills) and trading (trade-skills). The most popular open-source skill collection for financial analysis in the AI Agent ecosystem.",
       "business_en": "Open-source Agent skill suite, skills.himself65.com launched, can be SaaS-ified or turned into an independent product line, targeting the Agent skill marketplace / paid subscriptions, already attracting institutional interest",
-      "funding_en": "No disclosed personal funding; employer Funda AI (founder Mo Zhou) has engaged with Granite Asia, potentially received support"
+      "funding_en": "No disclosed personal funding; employer Funda AI (founder Mo Zhou) has engaged with Granite Asia, potentially received support",
+      "team_en": "Alex Yang (@himself65), Chinese AI engineer, currently based in Mountain View, core member of Funda AI, 6,312 GitHub followers",
+      "operations_en": "3,114★, total stars 3,078, core ★, 6,312 followers, still actively committing recently"
     },
     {
       "id": "nb-arxiv-2606-11632",
@@ -926,7 +978,9 @@
       "scrapedAt": "2026-06-17T01:57:03.934Z",
       "tech_en": "Policy gating (OPA/Cedar) + encrypted execution contracts + consensus auditing, providing a full lifecycle cryptographic evidence chain for Agent operations.",
       "business_en": "Targeting enterprise and government customers using AI Agents to operate cloud infrastructure, similar to a WAF for Agent operations",
-      "funding_en": "No funding raised, self-funded through an LLC"
+      "funding_en": "No funding raised, self-funded through an LLC",
+      "team_en": "Jun He (USTC → iFlytek → Princeton → AWS) & Deying Yu (Princeton), 20+ years of experience in systems, cloud, and AI infrastructure.",
+      "operations_en": "Accepted at NeurIPS 2026, OpenKedge LLC registered, under continuous development for 2.5 months"
     },
     {
       "id": "nb-arxiv-2606-12142",
@@ -945,7 +999,8 @@
       "tech_en": "LLM-driven brain-skill-runtime three-layer architecture, with 16 atomic skills and soft skill strategies, 4-layer memory, dual-layer VLM perception, and security envelope verification, alongside a PX4 dual simulation system.",
       "business_en": "The demand-driven market for autonomous drone inspection (power, oil & gas, wind energy) can evolve into a PaaS or licensing model charged by flight hours or API usage.",
       "operations_en": "Continuously active on GitHub (intensive iterations from March to May 2026), published on arXiv in 2026",
-      "funding_en": "No funding raised (pure academic open-source project)"
+      "funding_en": "No funding raised (pure academic open-source project)",
+      "team_en": "Jianfei Yang (NTU AP / Forbes 30 Under 30, 9,800+ citations), Ke Li (Ph.D. from Xidian University), ROBOTY Lab team, 11 Chinese authors."
     },
     {
       "id": "nb-avibe-bot",
@@ -964,7 +1019,8 @@
       "tech_en": "Three-layer architecture (Agent scheduling + skill reuse + interaction runtime), deeply integrated with WeChat and Feishu, with local execution and remote Agent control via chat tools.",
       "business_en": "Open-source under MIT license, free to use, with planned SaaS one-click hosting and cloud relay, similar to the GitLab/MongoDB model, targeting the Chinese market.",
       "operations_en": "GitHub 476 stars, systematic development across 3 repos, ongoing iteration",
-      "funding_en": "Funding information not publicly disclosed"
+      "funding_en": "Funding information not publicly disclosed",
+      "team_en": "Alex (@alex_metacraft), Chinese team, background to be disclosed."
     },
     {
       "id": "nb-zhu1090093659",
@@ -981,7 +1037,10 @@
       "source_url": "https://nextbanker.cn/",
       "scrapedAt": "2026-06-17T01:57:03.934Z",
       "tech_en": "Multi-browser extension (Chrome/Edge/Firefox) integrating MCP tools, four types of memory, a Skill system, and cron/RRULE scheduled automation, upgrading DeepSeek's web interface into a full Agent workbench.",
-      "funding_en": "No funding raised, independently developed"
+      "funding_en": "No funding raised, independently developed",
+      "business_en": "Freemium subscription distributed via Chrome Web Store, enterprise SaaS billing on Feishu (minister).",
+      "team_en": "Solitude (developer surnamed Zhu), former member of DeepWisdom/MetaGPT, now independently developing Gentrack.ai.",
+      "operations_en": "GitHub 1,932★, deepseek-pp published on Chrome Web Store, iterated to version 0.6.5"
     },
     {
       "id": "nb-zeweihan",
@@ -1019,7 +1078,9 @@
       "scrapedAt": "2026-06-17T01:57:03.934Z",
       "business_en": "Personal Pro subscription + team SaaS + enterprise private deployment, competing with Cursor/Windsurf, with infinite canvas as the core differentiator.",
       "team_en": "Yiliu Shen-Burke (Chinese surname Shen), Master's from Harvard GSD, based in Berlin, serial entrepreneur (previously developed VR/AR knowledge management tools)",
-      "funding_en": "Funding information not publicly disclosed"
+      "funding_en": "Funding information not publicly disclosed",
+      "tech_en": "Desktop application (macOS/Windows/Linux) built with Electron, React, and Monaco Editor, featuring a three-layer architecture (core IDE, plugin system, MCP protocol) and an infinite canvas for side-by-side collaboration of terminal, code editor, Markdown notes, and AI Agent.",
+      "operations_en": "2,537★, 4 repos, actively maintained (latest push 2026-06-11)"
     },
     {
       "id": "nb-browser-act",
@@ -1097,7 +1158,9 @@
       "scrapedAt": "2026-06-17T01:57:03.934Z",
       "tech_en": "Based on OIDC/OAuth 2.1, covering the full chain of login, SSO, RBAC, and multi-tenancy. Full-stack SDK supports 13+ languages and frameworks including TypeScript, Go, PHP, and Kotlin, with native enterprise-grade multi-tenancy and RBAC.",
       "business_en": "Open-source core + cloud hosting, free self-deployment for customer acquisition, Pro/Enterprise paid versions (SSO/RBAC/multi-tenancy), clients include listed companies like AF Gruppen.",
-      "funding_en": "No funding raised"
+      "funding_en": "No funding raised",
+      "team_en": "Silverhand Inc., Beijing, founded in 2021, 6-person team. Core developers: Charles Zhao and Xiao Yijun.",
+      "operations_en": "GitHub ★, 27 repos total with 359★, multiple daily commits recently"
     },
     {
       "id": "nb-chenhg5",
@@ -1116,7 +1179,8 @@
       "tech_en": "Golang-based AI Agent bridge layer, integrating 9+ AI Agents (Claude Code, Codex, Cursor, etc.) and 8 major communication platforms (Feishu, DingTalk, Slack, etc.), enabling on-demand local AI programming via mobile devices anytime, anywhere.",
       "team_en": "Chen Honggui (chenhg5), former core developer at Kingsoft Office (WPS listed on STAR Market), renowned Golang open-source author (go-admin with 8600+ ⭐)",
       "operations_en": "cc-connect stars, 12K new stars in 7 days, multiple daily commits in recent iterations",
-      "funding_en": "No funding raised"
+      "funding_en": "No funding raised",
+      "business_en": "Enterprise paid version + IM Connector fees, existing Enterprise/Pricing page, SaaS-hosted gateway aigocode.com under development."
     },
     {
       "id": "nb-arxiv-2606-07812",
@@ -1135,7 +1199,8 @@
       "tech_en": "Multi-model orchestration toolkit integrating 26+ collaboration algorithms, with a participatory AI paradigm outperforming monolithic models by 15.4%, supporting one-stop development and evaluation.",
       "business_en": "Enterprise AI orchestration middleware/SaaS, helping finance, healthcare, and other clients combine specialized models, reducing inference costs by 30-40%.",
       "operations_en": "GitHub 0 stars, 115+ PRs, multiple external contributors, continuously active",
-      "funding_en": "No funding raised (currently a PhD student, no company entity)"
+      "funding_en": "No funding raised (currently a PhD student, no company entity)",
+      "team_en": "Shangbin Feng, B.S. from Xi’an Jiaotong University, Ph.D. candidate at UW, ACL 2023 Best Paper, Fellow at IBM, NVIDIA, and Jane Street."
     },
     {
       "id": "nb-arxiv-2606-09032",
@@ -1173,7 +1238,8 @@
       "scrapedAt": "2026-06-17T01:57:03.934Z",
       "tech_en": "Proposes the HQRE equilibrium concept, combining formal game theory and ML to provide theoretical guarantees for multi-agent coordination stability, with uniqueness and convergence proofs.",
       "business_en": "Targeting enterprise-grade multi-agent middleware, differentiated from frameworks like AutoGen by formal stability guarantees.",
-      "funding_en": "No funding raised"
+      "funding_en": "No funding raised",
+      "team_en": "Yi Xie (Ph.D. from Arizona, M.S. from Fudan), Associate Professor Bo Han, and team, deeply engaged in multi-agent LLM theory."
     },
     {
       "id": "nb-arxiv-2606-09900",
@@ -1192,7 +1258,8 @@
       "tech_en": "Dual temporal data model + hybrid retrieval (semantic, lexical, graph, temporal) + non-destructive conflict resolution, achieving 83.6% on LongMemEval with 9.6k token retrieval context, outperforming full-context 73.2% (+10.4 points), with approximately 8x token reduction.",
       "business_en": "Open-source core under AGPL + commercial license, targeting all enterprises deploying AI agents, charged by token savings or seat, with potential to evolve into Agent Memory-as-a-Service infrastructure.",
       "team_en": "Liuyin Wang, background from Tsinghua University's PBC School of Finance, interned at BOCI, Yuncui Capital, etc., completed projects independently",
-      "funding_en": "No funding raised"
+      "funding_en": "No funding raised",
+      "operations_en": "arXiv cs.CL/cs.AI/cs.IR/cs.LG, Live Demo online, MCP/TypeScript SDK/OpenAI-compatible API, bilingual Chinese-English interface"
     },
     {
       "id": "nb-arxiv-2606-11176",
@@ -1211,7 +1278,8 @@
       "tech_en": "Multi-agent collaboration framework with Inspector evidence chain tracing ensuring every statement is verifiable, supporting multimodal automatic report generation.",
       "business_en": "Short-term SaaS for media, mid-to-long-term auditable report platform for finance/consulting/enterprises, with Inspector generalizable into enterprise-grade verifiable AI infrastructure.",
       "operations_en": "Continuously active, Oxford × Stanford collaboration, online demo available",
-      "funding_en": "No funding, angel window"
+      "funding_en": "No funding, angel window",
+      "team_en": "Kevin Qinghong Lin (Forbes 30 Under 30, 10K+ GitHub stars), James Zou (Associate Professor at Stanford, Co-founder of Gradio), Philip Torr (Professor at Oxford)."
     },
     {
       "id": "nb-op7418",
@@ -1290,7 +1358,8 @@
       "tech_en": "6-stage repair pipeline (perception → construction → evaluation → submission → verification → memory), achieving 99.9% self-healing rate on-chain, far exceeding blind retry at 81.9%, compatible with mainstream payment APIs, and released as mature engineering packages on npm, PyPI, and Docker.",
       "business_en": "Dual-track SaaS/open-source model targeting AI Agent developers for on-chain transactions and API calls, monetized based on fix volume or number of Agents.",
       "operations_en": "GitHub 822★, 553+ test cases, continuously active",
-      "funding_en": "No funding"
+      "funding_en": "No funding",
+      "team_en": "Haimo Bai, currently an engineer at xAI, formerly at DoorDash."
     },
     {
       "id": "nb-usewhale",
@@ -1329,7 +1398,8 @@
       "tech_en": "Complete knowledge-to-skill compilation pipeline: evidence window construction → skill tree prior extraction → structured contract generation → taxonomy merging → version management. Automatically compiles executable Agent skills from unstructured documents, supporting Docker deployment and Web UI.",
       "business_en": "Agent skill management SaaS for developers/enterprises, with a validated SkillBank template in the vertical domain of psychological counseling.",
       "team_en": "Qianjun Pan and an all-Chinese academic team (East China Normal University + Shanghai AI Lab), led by Associate Professor Jie Zhou",
-      "funding_en": "No funding, academic project"
+      "funding_en": "No funding, academic project",
+      "operations_en": "Actively maintained until 2026-05, 212 commits, Docker/Web UI/MIT, external contributor PRs"
     },
     {
       "id": "nb-arxiv-2606-07649",
@@ -1347,7 +1417,9 @@
       "scrapedAt": "2026-06-17T01:57:03.934Z",
       "tech_en": "Multi-agent orchestration (Director/Screenwriter/Producer/Video Generation Agent) for end-to-end long-form video generation with coherent narrative and consistent characters, supporting four pipelines: Idea2Video/Novel2Video/Script2Video/AutoCameo.",
       "business_en": "Planned SaaS model targeting content creators, marketing teams, e-commerce, and educational institutions; billed by video duration or monthly subscription, with potential conversion from open-source community to paid enterprise version.",
-      "funding_en": "No funding (purely academic open-source project)"
+      "funding_en": "No funding (purely academic open-source project)",
+      "team_en": "Lingxuan Huang (Xavier Huang), M.S. from the University of Hong Kong; Chao Huang, Assistant Professor at HKU / Head of Data Intelligence Lab, 14,000+ citations, WAIC Cloud Sail Award, leading open-source projects with 77K+ stars.",
+      "operations_en": "GitHub 9,300+★, four pipelines runnable, demo available"
     },
     {
       "id": "nb-arxiv-2606-07636",
@@ -1366,7 +1438,8 @@
       "tech_en": "Three-stage Agent architecture orchestrated by LangGraph with 21 tools (Material Preparation → Editing Research → Tool Execution). The entire process is auditable, and failed segments can be locally repaired.",
       "business_en": "Open-source + enterprise subscription model targeting YouTube creators and corporate video departments, replacing outsourced editors at a hundredfold cost reduction.",
       "operations_en": "GitHub 100★, v0.1.0 release, bilingual documentation in Chinese and English, active multi-contributor collaboration",
-      "funding_en": "No funding, purely academic open-source project"
+      "funding_en": "No funding, purely academic open-source project",
+      "team_en": "Lecheng Yan (Xinjiang University), Wenxi Li (joint Ph.D. from East China Normal University and Tsinghua University), Chenyang Lyu (Ph.D. from Dublin City University, interned at Huawei/IBM), Yichong Zhang."
     },
     {
       "id": "nb-chrischen667788",
@@ -1385,7 +1458,8 @@
       "tech_en": "Collaboration of 8 professional agents (Screenwriter/Director/Character Designer/Storyboard Artist/Dubbing Artist/Editor), competitive selection among 12+ video engines, lip-sync, template marketplace, cost attribution, real-time multi-user collaborative timeline. The v10 loop enables complete short dramas from a single sentence to full audio and lip-sync.",
       "business_en": "AI short-video production SaaS for short-drama studios and marketing teams, billed per project or via subscription; simultaneously incubating office-zoo (AI workplace game) with Stripe integration to validate willingness to pay.",
       "team_en": "Chen Haorui (Chris Chen), former AI solutions architect at Tencent/SenseTime/Hikvision, contracted photographer for Visual China and Tuchong, based in Shanghai",
-      "funding_en": "No funding"
+      "funding_en": "No funding",
+      "operations_en": "GitHub total 333★, wind-comic 168★/office-zoo 102★, v10 in high-frequency iteration, wind-comic 2135 tests all green, office-zoo 426 tests all green"
     },
     {
       "id": "nb-farion1231",
@@ -1444,7 +1518,8 @@
       "tech_en": "A lightweight Rust-based web page packaging framework that rapidly converts any web page into macOS/Windows/Linux desktop applications. Lightweight and high-performance, ranking first in stars across all categories.",
       "business_en": "Large open-source community; can pivot into an enterprise-grade PWA packaging platform or an AI-era desktop tool suite subscription.",
       "team_en": "Tw93, an independent developer with over 10,000 GitHub followers, one of the most influential individuals in the Chinese open-source community.",
-      "funding_en": "No funding"
+      "funding_en": "No funding",
+      "operations_en": "GitHub total stars over 130K, Pake ★, Mole 126K★, single-person maintenance, continuously active"
     },
     {
       "id": "nb-yetone",
@@ -1463,7 +1538,8 @@
       "tech_en": "Native AI coding assistant for Neovim, providing context-aware completions, inline editing, and intelligent chat. Performance rivals Cursor but is fully open-source; the most popular AI project in the Neovim ecosystem.",
       "business_en": "Open-source AI coding + multi-product matrix of desktop AI orchestration, targeting independent developers and small-to-medium teams; Alma desktop app planned as subscription-based.",
       "team_en": "Guan Xipeng (yetone), from Huazhong University of Science and Technology Wenhua College, founder of Isoform, independent developer, currently based in Beijing.",
-      "funding_en": "No funding"
+      "funding_en": "No funding",
+      "operations_en": "5,070★, avante.nvim ★ / total stars 23,417, 19 repos, top AI plugin in Neovim ecosystem, continuously active"
     },
     {
       "id": "nb-arxiv-2606-11440",
@@ -1481,7 +1557,9 @@
       "scrapedAt": "2026-06-17T01:57:03.934Z",
       "tech_en": "Based on hierarchical constrained MDP and end-to-end RL, it perceives GPU cluster queuing, KV-cache pressure, and latency in real-time, dynamically optimizing inference topology and request scheduling to achieve a 7x latency reduction.",
       "business_en": "Embeddable into cloud provider inference platforms or as a standalone SaaS, addressing multi-agent system inference costs and SLA challenges.",
-      "funding_en": "No funding, purely academic project"
+      "funding_en": "No funding, purely academic project",
+      "team_en": "Qian Lou (Assistant Professor at UCF, former Senior Researcher at Samsung), Mengxin Zheng (Assistant Professor at UCF), Jiaqi Xue, Ahasan Kabir (Ph.D. students at UCF).",
+      "operations_en": "arXiv preprint cs.AI, published in 2026"
     },
     {
       "id": "nb-openkursar",
@@ -1519,7 +1597,9 @@
       "scrapedAt": "2026-06-17T01:57:03.934Z",
       "business_en": "Open-source framework entering the enterprise-grade Agent training platform space; team has experience from DeepMind and Ant Group.",
       "operations_en": "5,835★, GitHub ★, 7 repos forming a toolchain, recently continuously updated",
-      "funding_en": "No funding raised (Berkeley lab project, not yet incorporated)"
+      "funding_en": "No funding raised (Berkeley lab project, not yet incorporated)",
+      "tech_en": "RL-based post-training framework for LLM Agents, producing multiple SOTA models. DeepSWE-32B achieves 59% on SWE-Bench, topping the open-source leaderboard; DeepCoder-14B achieves 60.6% on LiveCodeBench, surpassing o3-mini.",
+      "team_en": "Sijun Tan, Ph.D. in CS at UC Berkeley, former intern at Meta AI and Ant Group; Michael Luo, former Research Scientist at Google DeepMind."
     },
     {
       "id": "nb-arxiv-2606-10694",
@@ -1538,7 +1618,8 @@
       "tech_en": "Temporal property graph storage + non-destructive updates + counterfactual reasoning to repair missing memories, with confidence awareness.",
       "business_en": "Memory middleware for AI Agent developers, billed by usage; can be integrated via Agent framework plugins.",
       "operations_en": "arXiv cs.CL preprint, team-related repos have accumulated thousands of stars",
-      "funding_en": "No funding raised (academic team)"
+      "funding_en": "No funding raised (academic team)",
+      "team_en": "Keer Lu (Peking University), Wentao Zhang (Assistant Professor at Peking University, ~15,000 citations), Yunhuai Liu (Professor at Peking University)."
     },
     {
       "id": "nb-yaoapp",
@@ -1577,7 +1658,8 @@
       "tech_en": "Complete Agent system integrating MCP tools/filesystem/terminal/browser, supporting sub-agent dispatch, automatic screen context awareness, compatibility with multiple LLMs (OpenAI/Zhipu/Claude, etc.), and internationalization for 10+ languages.",
       "business_en": "Targeting general users and developers, positioned as a desktop Copilot, with 6K stars on GitHub and organic promotion from the tech community; can pursue a subscription/enterprise plan route.",
       "operations_en": "6,043★, GitHub ★, recent high-frequency iterations, spontaneous promotion in Chinese communities (Zhihu, Juejin, etc.) remains active",
-      "funding_en": "No funding raised"
+      "funding_en": "No funding raised",
+      "team_en": "DearVa (student at Fudan University) + Qiao Siyuan (Fudan University), Sylinko team, based in Shanghai."
     },
     {
       "id": "nb-arxiv-2606-09365",
@@ -1597,7 +1679,8 @@
       "tech_en": "Training-agnostic Read-Write-Assess-Govern closed-loop memory lifecycle. Distills interaction trajectories into reusable skills + utility evaluation to automatically eliminate harmful memories.",
       "business_en": "Providing Agent memory middleware (B2B SaaS/licensing) to medical AI companies and hospital IT departments, or directly building clinical decision Agent products.",
       "team_en": "Haoran Sun (Fudan University), Yankai Jiang (Shanghai AI Lab), Lei Liu (Professor at Fudan University), deeply engaged in medical reasoning and medical image analysis.",
-      "funding_en": "No funding raised"
+      "funding_en": "No funding raised",
+      "operations_en": "arXiv cs.AI / cs.CL 2026 academic paper, commits to open-source code"
     },
     {
       "id": "nb-arxiv-2606-08539",
@@ -1616,7 +1699,8 @@
       "tech_en": "Rule engine + LLM Judge dual-storage architecture, lexical/semantic threat classification, rule distillation + controlled RAG self-evolution, shell deobfuscation normalizer, MCP server integration, 96.7% verdict accuracy",
       "business_en": "Runtime security middleware for AI Agent enterprises, integrated via MCP server, targeting enterprises using Claude Code, Devin, etc., as well as security and compliance teams.",
       "operations_en": "45,000 action end-to-end replay validations, 96.7% accuracy, single-author system paper, AGPL-3.0 open source",
-      "funding_en": "No funding raised"
+      "funding_en": "No funding raised",
+      "team_en": "Chenglin Yang (Chenglin-Yang), PhD in CS at JHU, previously interned at Google DeepMind and Adobe, currently Seed Research Scientist at ByteDance."
     },
     {
       "id": "nb-arxiv-2606-09738",
@@ -1655,7 +1739,8 @@
       "tech_en": "Covers prompt injection, model identity substitution, tool call rewriting, SSE stream anomaly detection, full-chain auditing from request to streaming response, web product page now live",
       "business_en": "Targeting operators of AI API relay stations; the open-source tool can be transformed into a SaaS security audit platform, with potential to enter Web3 security auditing.",
       "team_en": "Independent developer Li Jiu'er, active in Wuhan/Hangzhou, X @li9292.",
-      "funding_en": "No funding raised"
+      "funding_en": "No funding raised",
+      "operations_en": "GitHub 642★ / 106 commits, recently active with continuous iteration"
     },
     {
       "id": "nb-kromiose",
@@ -1674,7 +1759,8 @@
       "tech_en": "Sandbox execution + long-term memory + MCP management + multimodal interaction, forming a complete Agent framework. Targets social platforms like QQ/WeChat, supports plugin ecosystem including drawing, webapp, and virtual character dialogue",
       "business_en": "Agent hosting cloud service is already live, targeting developers on social platforms and enterprise-level customized deployment solutions.",
       "team_en": "KroMiose (founder of NekroAI), independent developer, based in Fujian.",
-      "funding_en": "No funding raised"
+      "funding_en": "No funding raised",
+      "operations_en": "1,179★, total stars 1,713, core nekro-agent ★, single-person continuous active iteration"
     },
     {
       "id": "nb-yomorun",
@@ -1713,7 +1799,8 @@
       "tech_en": "Multi-model API aggregation, supports load balancing, circuit breaking, and built-in pricing module. Organically shared on Juejin and SSPAI, high community recognition",
       "business_en": "Pricing module already in place, can evolve into an enterprise-grade LLM API gateway SaaS, targeting developers and productivity tool users.",
       "team_en": "Independent developer RUI, real name RUI, with no publicly disclosed company background.",
-      "funding_en": "No funding raised"
+      "funding_en": "No funding raised",
+      "operations_en": "octopus ★, total stars 4,778 (including Alle 4,823★, BestSub 2,082★), single-person continuously active"
     },
     {
       "id": "nb-cubezhao",
@@ -1752,7 +1839,8 @@
       "tech_en": "PhoneClawEngine self-developed Metal-accelerated inference engine + PhoneClaw on-device Agent based on Gemma 4, enabling autonomous iOS app operation with no cloud dependency, forming a complete closed loop from inference engine to Agent application",
       "business_en": "Already listed on TestFlight, targeting global iOS users with on-device AI assistant; future monetization via subscription or enterprise licensing.",
       "team_en": "Independent developer kellyvv, full-stack technical, with deep expertise in iOS Metal acceleration and WeChat protocol interaction.",
-      "funding_en": "No funding raised"
+      "funding_en": "No funding raised",
+      "operations_en": "1,362★, GitHub ★ / single-person development / daily active commits / TestFlight live"
     },
     {
       "id": "nb-nexu-io",
@@ -1791,7 +1879,8 @@
       "tech_en": "Laravel open-source e-commerce system, full-chain coverage including plugin marketplace, privatized SaaS, and cross-platform apps. v3.0 new AI Agent supports MCP protocol, natural language management of products and orders, first standalone store to support Laravel AI SDK",
       "business_en": "Plugin marketplace revenue sharing + private SaaS subscription + enterprise customization, forming a multi-layer monetization system targeting foreign trade and cross-border e-commerce independent site building needs.",
       "team_en": "Chengdu Guangda Network Technology Co., Ltd., deeply深耕 in cross-border e-commerce for years, with extensive expertise in the Laravel technology stack.",
-      "funding_en": "No funding raised"
+      "funding_en": "No funding raised",
+      "operations_en": "1,914★, total stars 1.9K, core beikeshop ★, 4 years of deep development, last push 2026-06-05"
     },
     {
       "id": "nb-the-open-agent",
@@ -1830,7 +1919,8 @@
       "tech_en": "Built on a Rust cross-platform desktop framework, integrates AI Agent capabilities, supports background daemon and cloud-based deployment. Distributed via 4 system package managers (apt/dnf/yum/scoop/homebrew tap), one-click installation for users",
       "business_en": "Open-source community for customer acquisition, can pursue a dual-track model of personal AI assistant + enterprise deployment; competitors like Simular have already secured tens of millions in funding.",
       "team_en": "Shi Wenwen, a current student at Peking University and an independent developer.",
-      "funding_en": "No funding raised"
+      "funding_en": "No funding raised",
+      "operations_en": "980 stars, GitHub stars, active iteration, recent push 2026-06-06"
     },
     {
       "id": "nb-dora-rs",
@@ -1848,7 +1938,9 @@
       "scrapedAt": "2026-06-17T01:57:03.934Z",
       "tech_en": "Rust-native dataflow middleware, zero-copy shared memory IPC, 10-17x performance over ROS2 Python, supports distributed clusters and fault tolerance, multi-language SDK, complete robot application ecosystem (navigation, motion planning, visualization)",
       "business_en": "Open-source establishes a robotics middleware standard; 1ms.ai offers enterprise edition/cloud hosting, similar to the RedHat model, selected for GSOC 2026.",
-      "funding_en": "No funding raised"
+      "funding_en": "No funding raised",
+      "team_en": "Haixuan Xavier Tao (Tao Haixuan), graduate of CentraleSupélec, a top French engineering school, co-founder with Philipp Oppermann, built a Chinese contributor network through OSPP/GSOC.",
+      "operations_en": "224 stars, core dora stars / 24 supporting repos, total stars 3996, recently active, selected for GSOC 2026"
     },
     {
       "id": "nb-sxhxliang",
@@ -1887,7 +1979,8 @@
       "tech_en": "Desktop app integrates multiple Agents including Claude Code/Codex, unifies tasks, terminal, code editing, and Git workflows, enables cross-project parallel Agent collaboration, allowing multiple AIs to process different codebases simultaneously",
       "business_en": "Target users are heavy developers using AI-assisted programming; monetized via subscription/team-based commercial model.",
       "team_en": "Han Shu (independent developer), runs the self-media account \"Han Shu Tong Xue,\" with a tech stack covering TypeScript, Rust, Vue, Go, and Python.",
-      "funding_en": "No funding raised"
+      "funding_en": "No funding raised",
+      "operations_en": "Total stars 7787, three projects with over 1,000 stars (Nezha stars / AI-Media2Doc 7,856 stars / NBping 2195 stars), continuous iteration until 2026-06-04"
     },
     {
       "id": "nb-grapeot",
@@ -1946,7 +2039,8 @@
       "tech_en": "A cloud-native converged message queue implemented in Rust. One binary + one Broker + one storage layer supports any protocol, replacing traditional middleware like Kafka/RabbitMQ as communication infrastructure for AI scenarios.",
       "business_en": "Open-source community for customer acquisition + enterprise commercial license/cloud hosting services, following the path of AutoMQ, which has secured nearly 100 million RMB in funding.",
       "team_en": "Xu Wenqiang, former Technical Lead for Tencent Cloud Kafka, author on Geek Time, speaker at Rust China Conference, and sole creator of RobustMQ.",
-      "funding_en": "No funding raised"
+      "funding_en": "No funding raised",
+      "operations_en": "Core repo robustmq stars / total 1,676 stars, product matrix formed (Agent message mq9 + ops platform copilot), continuously active and iterating as of 2026-06-04"
     },
     {
       "id": "nb-seemseam",
@@ -2125,7 +2219,8 @@
       "tech_en": "A cross-turn intent-aware KV cache pruning system based on SGLang/vLLM. It maintains a QueryMemory to track session intent, combines memory-attention rules and residual cross-attention for dynamic pruning, and uses slot-map redirection for prefix cache compatibility.",
       "business_en": "Provides KV optimization plugins/licenses to LLM inference service providers, with revenue sharing based on GPU costs; or builds its own Agent inference hosting. The sector has gained capital recognition (Tensormesh $24.5M, Inferact $150M).",
       "team_en": "Junjie Li, Jiong Lou (corresponding author, Assistant Professor at Shanghai Jiao Tong University), and Jie Li — all affiliated with Shanghai Jiao Tong University. Jiong Lou's research focuses on edge computing and LLM inference systems.",
-      "funding_en": "No funding raised (academic team)"
+      "funding_en": "No funding raised (academic team)",
+      "operations_en": "arXiv cs.LG cs.AI, full system implementation based on SGLang/vLLM, code to be open-sourced soon (MIT)."
     },
     {
       "id": "nb-platonai",
@@ -2204,7 +2299,8 @@
       "tech_en": "Aggregates mainstream AI coding agent sessions including Claude Code, Codex, Gemini CLI, and OpenClaw, supporting ACP protocol, MCP management, and multi-agent collaboration. Full-scenario deployment: Tauri desktop + server + Docker + multi-platform binaries.",
       "business_en": "Dual-track open-source and enterprise edition, with sponsors including Compshare (under UCloud) and MyClaw.ai; monetized through enterprise deployment and cloud platform.",
       "team_en": "XinTaoFei, an independent developer based in Wuhan, consistently active.",
-      "funding_en": "No funding raised"
+      "funding_en": "No funding raised",
+      "operations_en": "1,642 stars, GitHub stars, 2 repos, sponsors Compshare/MyClaw.ai, last updated 2026-06-04"
     },
     {
       "id": "nb-itmisx",
@@ -2223,7 +2319,8 @@
       "tech_en": "Go single binary with zero dependencies, built-in code graph (go/types), local PaddleOCR screenshot recognition, low token consumption with high cache hit rate, native DeepSeek ecosystem integration, and MCP ecosystem support.",
       "business_en": "Free open-source community edition for customer acquisition, with potential future enterprise edition or cloud services targeting DeepSeek developers.",
       "team_en": "itmisx (individual developer from Shenzhen), with 23 Go repositories on GitHub, solid engineering skills, and a LV2 level on Juejin.",
-      "funding_en": "No funding raised"
+      "funding_en": "No funding raised",
+      "operations_en": "GitHub 251 stars, core deepx-code 164 stars, continuously active, has a release version"
     },
     {
       "id": "nb-pollyreach",
@@ -2241,7 +2338,9 @@
       "scrapedAt": "2026-06-17T01:57:03.934Z",
       "tech_en": "Full-duplex voice agent supporting 50+ languages, interruption handling, and emotion recognition, built on OpenClaw + Nano Banana 2 + Claude Code.",
       "business_en": "B-side has real customers (a client managing 80+ rental properties), SaaS model covering both outbound and inbound.",
-      "funding_en": "No funding raised (no record on Crunchbase)"
+      "funding_en": "No funding raised (no record on Crunchbase)",
+      "team_en": "Gia Xu (co-founder, graduated from South China University of Technology), Sandy Liu, Billy Chen, Justin Jincaid.",
+      "operations_en": "30 stars, stars, PH #1 (759 votes, launched 2026-05-19)"
     },
     {
       "id": "nb-zhaojiaqi",
@@ -2299,7 +2398,9 @@
       "scrapedAt": "2026-06-17T01:57:03.934Z",
       "tech_en": "AI gateway built with Rust (Pingora), natively supporting MCP protocol, multi-vendor LLM adaptation, automatic HTTPS, K8s deployment, and Prometheus + OTLP observability.",
       "business_en": "Open-source FerroGate drives traffic to commercial SaaS Token4AI Cloud, providing team-level AI API usage control and billing.",
-      "funding_en": "No funding raised, ICP-licensed individual studio"
+      "funding_en": "No funding raised, ICP-licensed individual studio",
+      "team_en": "James Duan (Duan Lin), independent developer, based in Hubei, X: @JamesDuanL.",
+      "operations_en": "GitHub 14 stars / 0 forks, active development, full deployment with Docker/Helm/K8s"
     },
     {
       "id": "nb-haiwen-yin",
@@ -2318,7 +2419,8 @@
       "tech_en": "Extends PostgreSQL with vector embedding generation (pg-embedding-gen) and JSON mapping (pg-aje), transforming traditional databases like OracleDB and PostgreSQL into AI agent memory engines, integrating 5-Signal hybrid search, context branching, and multi-agent collaboration.",
       "business_en": "Open-core model: community edition under Apache 2.0, enterprise edition (BSL 1.1) offers paid features like LDAP and encrypted CLI, targeting mid-to-large enterprise Agent infrastructure.",
       "operations_en": "GitHub 44 stars, consistently active, recently released v3.5.0",
-      "funding_en": "Personal project with no funding raised; author employed at Wangsi Technology (Series A+)"
+      "funding_en": "Personal project with no funding raised; author employed at Wangsi Technology (Series A+)",
+      "team_en": "Haiwen Yin, dual expert in Oracle ACE and PostgreSQL ACE, DBA Director at Wangsi Technology."
     },
     {
       "id": "nb-deadwavewave",
@@ -2337,7 +2439,8 @@
       "tech_en": "Electron + React desktop application for managing multiple AI agent sessions, terminals, tasks, and notes. Infinite canvas eliminates context confusion in multi-agent collaboration. Includes Demo2APK for one-click APK generation.",
       "business_en": "Open-source for customer acquisition, with plans for team SaaS and enterprise private deployment; Demo2APK free service as an acquisition entry point.",
       "team_en": "DeadWave (independent Chinese developer based in Beijing), refers to themselves as the \"OpenCove Team,\" operates with a small team.",
-      "funding_en": "No funding raised"
+      "funding_en": "No funding raised",
+      "operations_en": "GitHub 1,433 stars (OpenCove), +618 stars (Demo2APK), total 2,113 stars, 85 releases, continuously active"
     },
     {
       "id": "nb-harnessclaw",
@@ -2416,7 +2519,8 @@
       "tech_en": "Built on MCP protocol, implements pdf-mcp for reading large PDFs, redmine-mcp for integrating legacy systems, and Blueclaw observability suite, forming a complete capability chain: agent file processing → system integration → runtime monitoring.",
       "business_en": "Open-source freemium + enterprise edition, targeting mid-to-large enterprises with AI Agent needs, can be packaged as an MCP middleware platform.",
       "operations_en": "108 stars total, pdf-mcp continuously released up to v1.15.0, consistently active",
-      "funding_en": "No funding raised (personal project; employed at publicly listed company GDC)"
+      "funding_en": "No funding raised (personal project; employed at publicly listed company GDC)",
+      "team_en": "Kevin Tan (Tan Jingzheng), currently Deputy R&D Director at publicly listed company GDC Technology, leading teams in Singapore and China, focused on AI Agents and cloud architecture."
     },
     {
       "id": "nb-morrislu-taipei",
@@ -2434,7 +2538,9 @@
       "scrapedAt": "2026-06-17T01:57:03.934Z",
       "tech_en": "n8n Skills + AI code migration engine, 14 skill modules, 2061 reference workflows, converting natural language into auditable enterprise workflows.",
       "business_en": "Enterprise-grade n8n consulting + government AI training, with 3 delivered cases including Google Workspace management, using open-source Skill Packs for lead generation.",
-      "funding_en": "Seed investment from NTUST alumni; no institutional funding"
+      "funding_en": "Seed investment from NTUST alumni; no institutional funding",
+      "team_en": "Morris Lu (Lu Yexing), CEO of Huzhi Technology, n8n Taipei Ambassador, incubated by National Taiwan University of Science and Technology.",
+      "operations_en": "GitHub 86 stars, actively updated in the past two weeks to v0.22.2"
     },
     {
       "id": "nb-onelevenvy",
@@ -2474,7 +2580,8 @@
       "business_en": "Registered company (Wuhan Qingchen Tianxia Network Technology Co., Ltd.), official website at claw.qt.cool, beta platform at gpt.qt.cool, sponsor partnership with Ciyun Data, and multi-channel community presence.",
       "team_en": "Qingchen Cloud team (qingchencloud), based in Wuhan, company entity has been registered.",
       "operations_en": "GitHub 2,747 stars / 338 forks (created in 2026-02, explosive growth in 3 months), user-generated tutorials on Xiaohongshu",
-      "funding_en": "No funding raised (bootstrap; revenue from sponsors and closed beta platform)"
+      "funding_en": "No funding raised (bootstrap; revenue from sponsors and closed beta platform)",
+      "name_en": "Qingchen Cloud · ClawPanel"
     },
     {
       "id": "nb-evotown",
@@ -2493,7 +2600,8 @@
       "tech_en": "Enterprise multi-agent unified governance layer, with one-click IT deployment and two-line employee configuration for access, supporting observability, cost attribution, approval workflows, and private skill distribution.",
       "business_en": "Addresses the governance gap after enterprises adopt multi-agent systems, with explosive growth to 693 stars in 3 months validating market demand.",
       "operations_en": "Daily active commits on GitHub, mixed license (multi-tenant isolation) suggests SaaS intent",
-      "funding_en": "No funding raised; no corporate entity"
+      "funding_en": "No funding raised; no corporate entity",
+      "team_en": "Developer \"Xiao Cai Yi Die\" (EXboys), solo developer."
     },
     {
       "id": "nb-aomi-labs",
@@ -2592,7 +2700,8 @@
       "tech_en": "MCP protocol-based AI Agent, using natural language to drive Vivado through the entire process from project creation and RTL writing to hardware flashing, with over 500 tools covering complete FPGA development.",
       "business_en": "Distributed via PyPI with a Free/Pro/Max three-tier pricing model, targeting FPGA developers and chip design teams.",
       "team_en": "Xiaochuan, independent developer with experience in FPGA engineering and AI toolchain integration",
-      "funding_en": "No funding raised"
+      "funding_en": "No funding raised",
+      "operations_en": "GitHub 86 stars / 0 forks, continuously active recently"
     },
     {
       "id": "nb-study8677",
@@ -2631,7 +2740,8 @@
       "tech_en": "Tauri cross-platform desktop editor with an AI Agent team (Product Manager / Frontend / Backend / QA / DevOps), covering the full process from code generation to automated testing, with code migration, long-term memory, and CSS layout engine.",
       "business_en": "AI code editor with paid subscription comparable to Cursor/Trae, enterprise billing for AI agent team tools, with continuous updates on the Juejin community.",
       "team_en": "peterfei, independent developer based in Xi'an, founder of IfAI, active contributor on the Juejin community, distributes via npm and Homebrew",
-      "funding_en": "No funding raised"
+      "funding_en": "No funding raised",
+      "operations_en": "GitHub total 539 stars, core ai-agent-team 523 stars, continuously active, v0.4.8 released on Juejin community"
     },
     {
       "id": "nb-vcptoolbox",
@@ -2649,7 +2759,9 @@
       "scrapedAt": "2026-06-17T01:57:03.934Z",
       "tech_en": "TagMemo V8.2 biomimetic memory algorithm (multi-level persistent memory + agent autonomous timeline planning), VCP unified instruction protocol, distributed plugin engine, 300+ official plugins, 6 major plugin protocols, with the underlying Rust rewrite in progress.",
       "business_en": "Licensed under CC BY-NC-SA 4.0 (commercial use requires authorization), with official website vcptoolbox.com, serving as the official front-end for VCPChat with a distributed solution, and enterprise customization licensing model.",
-      "funding_en": "No funding raised (personal open-source project)"
+      "funding_en": "No funding raised (personal open-source project)",
+      "team_en": "Ryan Lain (lioensky), Chinese independent developer, WeChat: luanpeng1234.",
+      "operations_en": "GitHub 2,078 stars / 325 forks (daily updates), 3 sub-project ecosystems"
     },
     {
       "id": "nb-kooky",
@@ -2668,7 +2780,8 @@
       "tech_en": "Swift + Ghostty GPU-accelerated rendering macOS native terminal, integrating over ten AI Agents including Claude Code and Codex, supporting multi-session, code split-screen, and Git worktrees.",
       "business_en": "MIT open-source and free, with potential future monetization through enterprise editions or team collaboration subscriptions (following the Warp model).",
       "team_en": "Corey Chiu, B.S. in Computer Science from Southern University of Science and Technology, currently a software engineer at China Construction Bank, part-time independent developer",
-      "funding_en": "No funding raised"
+      "funding_en": "No funding raised",
+      "operations_en": "GitHub 375 stars, 75 releases, still actively updated as of June 2026"
     },
     {
       "id": "nb-mdyao",
@@ -2686,7 +2799,9 @@
       "scrapedAt": "2026-06-17T01:57:03.934Z",
       "business_en": "Can evolve into a smart photo editing app or API, targeting general consumers, e-commerce platforms, and smartphone manufacturers, with ISP technology already developed.",
       "team_en": "Yao Mingde (Mingde Yao), postdoctoral researcher at MMLab, Chinese University of Hong Kong; Ph.D. from University of Science and Technology of China; top conference reviewer; ICCV AIM champion",
-      "funding_en": "No funding raised, purely academic background"
+      "funding_en": "No funding raised, purely academic background",
+      "tech_en": "Full-stack computational photography: image restoration (NDR-Restore), polarization-based reflection removal (PolarFree), and autonomous multi-step agent editing (PhotoAgent). Agent planning and editing capabilities presented as ICML 2026 Oral (top 0.7%).",
+      "operations_en": "Total 602★ (PhotoAgent 54★, CSNorm 86★, PolarFree 65★), accepted as ICML 2026 Oral (top 0.7%)"
     },
     {
       "id": "nb-yao-beyond",
@@ -2724,7 +2839,9 @@
       "scrapedAt": "2026-06-17T01:57:03.934Z",
       "business_en": "Targeting domestic developers who cannot use Claude Code/Cursor, addressing the gap in the market for domestic large model programming assistants.",
       "operations_en": "MIT open source, self-deployed web UI.",
-      "funding_en": "No funding raised"
+      "funding_en": "No funding raised",
+      "tech_en": "Multi-agent architecture AI programming assistant, natively supporting domestic LLMs such as Qwen, DeepSeek, and Moonshot. Achieves 56% verified performance on SWE-bench Lite.",
+      "team_en": "Developer zhikunqingtao, solo developer."
     },
     {
       "id": "nb-qiantongtech",
@@ -2743,7 +2860,8 @@
       "tech_en": "Open-source ETL / data development / asset catalog, with unified LLM access + RAG + agents, covering the full chain from data collection and governance to knowledge agents and model management.",
       "business_en": "Open-source community edition for free user acquisition; Pro edition with private deployment subscription, targeting industries such as government, manufacturing, water conservancy, and industrial parks.",
       "team_en": "Jiangsu Qiantong Technology Co., Ltd., founded in Nanjing in 2021, legal representative Tang Chaohui, 20–99 employees",
-      "funding_en": "No funding raised"
+      "funding_en": "No funding raised",
+      "operations_en": "Cumulative 733 stars, qData 741★ + qKnow 236★, 7 repos, mirrored on Gitee/AtomGit, continuous community operation"
     },
     {
       "id": "nb-aix-db",
@@ -2761,7 +2879,9 @@
       "scrapedAt": "2026-06-17T01:57:03.934Z",
       "business_en": "Existing paying users: technical consulting at 365 RMB/year, custom development starting from 1,000 RMB, business inquiries via WeChat weber812.",
       "team_en": "apconw, independent developer of Chinese origin, with established business cooperation channels",
-      "funding_en": "No funding raised (Bootstrapped, revenue from technical services)"
+      "funding_en": "No funding raised (Bootstrapped, revenue from technical services)",
+      "tech_en": "MCP Skills multi-agent collaboration + LangChain/LangGraph framework, Text2SQL + ChatBI, supporting 8+ database types and Neo4j knowledge graphs.",
+      "operations_en": "GitHub 2124★/414 Forks (created in 2024-11, continuously updated)"
     },
     {
       "id": "nb-openmantis",
@@ -2780,7 +2900,8 @@
       "tech_en": "Four types of memory based on cognitive science (semantic / procedural / episodic / prospective); LLM conflict detection; Bun single-file cross-platform distribution.",
       "business_en": "Single deployment covering Feishu, WeCom, and QQ across all channels as an Agent; 112-star growth rate in one month.",
       "team_en": "LiangNiang, independent developer from China",
-      "funding_en": "No funding raised"
+      "funding_en": "No funding raised",
+      "operations_en": "1★, GitHub ★/ Forks (created on 2026-04-11, updated on 2026-05-16)"
     },
     {
       "id": "nb-alookai",
@@ -2838,7 +2959,9 @@
       "scrapedAt": "2026-06-17T01:57:03.934Z",
       "tech_en": "Systematically building the AI storage infrastructure stack from the underlying LSM engine (Adaptive Radix Tree) → metadata control plane (NoKV) → query compiler (QuillSQL MLIR JIT). Read/write performance is 2-3 times that of Badger/Pebble, and it has been listed in the CNCF Landscape under the cloud-native storage category.",
       "business_en": "Open-source under Apache-2.0 with enterprise-grade support and managed cloud services, serving as a metadata backend for distributed file systems like JuiceFS and CubeFS, targeting AI training pipelines and object storage namespace markets.",
-      "funding_en": "No funding raised"
+      "funding_en": "No funding raised",
+      "team_en": "Guocheng Song (Eric Song), Master's student in Computer Science at University of Sydney / UNSW, member of UNSW Database Group, 922 followers on LinkedIn.",
+      "operations_en": "NoKV 216★, total 621 stars, solo full-stack development, listed in CNCF Landscape and CMU-DB dbdb.io, recent continuous iteration"
     },
     {
       "id": "nb-guiwu1",
@@ -2876,7 +2999,9 @@
       "scrapedAt": "2026-06-17T01:57:03.934Z",
       "tech_en": "A local-first desktop LLM Agent sandbox with full MCP protocol support and Computer Use capabilities (browser/terminal control), built on E2B.",
       "business_en": "Privacy-first scenario (data never leaves the local device) Agent execution environment.",
-      "funding_en": "No funding raised, no legal entity"
+      "funding_en": "No funding raised, no legal entity",
+      "team_en": "Developer BIGPPWONG / Huang Weiwen, solo developer.",
+      "operations_en": "3★, 202 GitHub stars, consistently active"
     },
     {
       "id": "nb-cchenax",
@@ -2894,7 +3019,9 @@
       "scrapedAt": "2026-06-17T01:57:03.934Z",
       "tech_en": "px-kvstore provides a Redis-compatible deterministic caching KV store, supporting WAL/snapshots/master-slave replication/multi-tenancy/clustering, specifically optimized for LLM inference; streamforge-ai is a real-time AI data pipeline based on Kafka + Flink + MinIO, covering the entire chain from CDC ingestion to feature generation, with a recent addition of real-time feature drift detection.",
       "business_en": "Two complementary projects forming an AI data infrastructure suite, separately commercializable as a caching middleware and an enterprise data platform.",
-      "funding_en": "No funding raised"
+      "funding_en": "No funding raised",
+      "team_en": "Chao Chen, based in Shanghai, 160 followers on GitHub, independent developer.",
+      "operations_en": "Total ★1181 (px-kvstore 1,171★ + streamforge-ai 307★), solo continuous contribution, latest push on 2026-06-06"
     },
     {
       "id": "nb-yuxi",
@@ -2912,7 +3039,10 @@
       "scrapedAt": "2026-06-17T01:57:03.934Z",
       "business_en": "Open-source for user acquisition, with enterprise edition and cloud service roadmap, targeting private deployment for AI knowledge management; multi-tenant architecture suitable for SaaS.",
       "team_en": "Zhang Wenzhen (xerrors), Ph.D. student in Computer Science at Jiangnan University, high daily commitment",
-      "funding_en": "No funding raised (⚠️ 5000+ stars may have already attracted VC interest; needs confirmation)"
+      "funding_en": "No funding raised (⚠️ 5000+ stars may have already attracted VC interest; needs confirmation)",
+      "name_en": "Yuxi Language Analytics",
+      "tech_en": "LangGraph + FastAPI + Milvus + Neo4j, multi-tenant RBAC, knowledge graph reasoning. Agents can mount Skills, MCP, and sub-agents, supporting LightRAG knowledge base engine and DeepAgents/MinerU PDF.",
+      "operations_en": "GitHub 5,560★, continuously active with iterative updates"
     },
     {
       "id": "nb-memex-lab",
@@ -2931,7 +3061,8 @@
       "tech_en": "Cross-platform Flutter/Dart, with the underlying dart_agent_core providing AI agent tool use, planning, and streaming capabilities. Full-modal intelligent recording for text, photos, and voice, with a local-first memory retrieval engine.",
       "business_en": "Subscription-based global C-end AI diary, already listed on App Store and Google Play; the dart_agent_core framework monetized independently.",
       "operations_en": "Available on both major app stores, 445 stars on GitHub, recent active commits.",
-      "funding_en": "No funding raised"
+      "funding_en": "No funding raised",
+      "team_en": "Chinese independent developer team (tigerlaibao, eecslijidong), active on GitHub."
     },
     {
       "id": "nb-gsv-tts-lite",
@@ -2948,7 +3079,10 @@
       "source_url": "https://nextbanker.cn/",
       "scrapedAt": "2026-06-17T01:57:03.935Z",
       "tech_en": "A dedicated inference engine for GPT-SoVITS models, offering 3-4x speedup and halved VRAM usage. Features include timbre and style decoupling, character-level timestamp alignment, and timbre transfer, supporting Chinese, Japanese, and English.",
-      "funding_en": "Unfunded (personal open-source project)"
+      "funding_en": "Unfunded (personal open-source project)",
+      "business_en": "PyPI package released (pip install gsv-tts-lite), AGPL/MIT dual license indicating commercialization considerations.",
+      "team_en": "chinokikiss (GitHub ID), Chinese developer, personal project.",
+      "operations_en": "GitHub 103★/11 Forks (created in January 2026, still active as of May 23)"
     },
     {
       "id": "nb-evoagentx",
@@ -2965,7 +3099,10 @@
       "source_url": "https://nextbanker.cn/",
       "scrapedAt": "2026-06-17T01:57:03.935Z",
       "business_en": "Open-source framework, academic-to-commercialization window open, endorsed by an EMNLP 2025 Demo paper.",
-      "funding_en": "Unfunded (academic project)"
+      "funding_en": "Unfunded (academic project)",
+      "tech_en": "Self-evolving Agent Workflow (AFlow + MCTS/RL), paradigm shift from hand-written workflows to AI-automated design, integrated with TextGrad.",
+      "team_en": "Songtao Lin (Core Developer) + Penn State Chinese Researcher",
+      "operations_en": "5,288★, GitHub 1000+ Stars, continuously active with updates"
     },
     {
       "id": "nb-nageoffer-ragent",
@@ -2982,7 +3119,8 @@
       "source_url": "https://nextbanker.cn/",
       "scrapedAt": "2026-06-17T01:57:03.935Z",
       "tech_en": "Enterprise-grade architecture with full-chain document parsing, multi-path retrieval, graph recognition, and MCP tool invocation.",
-      "business_en": "Large Java enterprise market (banking, insurance, government), with Agentic RAG being the most certain commercialization direction."
+      "business_en": "Large Java enterprise market (banking, insurance, government), with Agentic RAG being the most certain commercialization direction.",
+      "team_en": "Core developer \"Martin\" (magestacks), Apache Committer, daily contributor. Email: machen@apache.org"
     },
     {
       "id": "nb-longlivey96",
@@ -3021,7 +3159,8 @@
       "tech_en": "A local MCP Server based on a Chrome extension, allowing Claude Code/Cursor to directly control the user's browser. Retains personal login state, covers 60+ websites (including WeChat, Zhihu, Bilibili), with 200+ skill packs that are plug-and-play.",
       "business_en": "Targeting enterprise private deployment and customized skill packages, with a subscribable skill marketplace and a Chrome extension already launched.",
       "team_en": "Leon (independent developer), full-stack Rust/Go/TS, deep understanding of the Chinese internet ecosystem (WeChat/ Zhihu/ Bilibili)",
-      "funding_en": "Unfunded"
+      "funding_en": "Unfunded",
+      "operations_en": "GitHub 12★ (tap 8★), solo development, latest push on 2026-06-05, consistently active"
     },
     {
       "id": "nb-fim-ai-fim-one",
@@ -3037,7 +3176,8 @@
       "daysAgo": 28,
       "source_url": "https://nextbanker.cn/",
       "scrapedAt": "2026-06-17T01:57:03.935Z",
-      "tech_en": "A unified Agent core supporting any LLM, with built-in commercial features such as guardrails, V4A editing, and Stripe billing."
+      "tech_en": "A unified Agent core supporting any LLM, with built-in commercial features such as guardrails, V4A editing, and Stripe billing.",
+      "team_en": "Tony (tao-hpu), Website: one.fim.ai | Email: tony@fim.com.cn"
     },
     {
       "id": "nb-scrumball",
@@ -3054,7 +3194,8 @@
       "source_url": "https://nextbanker.cn/",
       "scrapedAt": "2026-06-17T01:57:03.935Z",
       "tech_en": "Multi-Agent collaboration (Lillian for brand analysis + Hunter for influencer matching + Charlie for outreach), with a core barrier of a 120M+ influencer database.",
-      "funding_en": "Pre-A round completed"
+      "funding_en": "Pre-A round completed",
+      "operations_en": "1★, #1 on Product Hunt Daily, #3 on Weekly, 1200 Followers. Chris Messina participated in the discussion."
     },
     {
       "id": "nb-demondamon-agenticx",
@@ -3073,7 +3214,8 @@
       "tech_en": "Full-platform support via Python SDK/CLI/Studio/Electron, integrating 17 modules including CEO scheduling, graph orchestration, hierarchical memory, and GUI Agent. Supports A2A and MCP dual protocol stacks, plus IM gateways for Feishu, WeCom, DingTalk, and WeChat.",
       "business_en": "Apache 2.0 open source, with enterprise security sandbox/multi-tenant value-added subscriptions, desktop Pro/Lite freemium model, commission-based skill marketplace, and IM gateway targeting the Chinese enterprise ecosystem.",
       "team_en": "Li Bingzhen (Damon Li), student at IIT, interdisciplinary in Math/Physics/CS/Finance, focusing on AI Agent",
-      "funding_en": "Unfunded"
+      "funding_en": "Unfunded",
+      "operations_en": "GitHub 1,745★/0 Forks, 28 repos forming a comprehensive ecosystem, daily-level active iteration"
     },
     {
       "id": "nb-ai-shifu",
@@ -3093,7 +3235,8 @@
       "tech_en": "ChatALL multi-model concurrent engine + self-developed MarkdownFlow interactive document framework. AI dynamically adjusts the teaching path based on the learner's level, achieving a personalized teaching closed loop.",
       "business_en": "Serving C-end learners and B-end educational institutions with AI-powered interactive course SaaS, with pricing and enterprise plans already live.",
       "team_en": "Sun Zhigang (Sunner Sun), former Associate Professor at HIT → VP at Dedao → Chief Product Architect for Education at NetEase; team affiliated with HIT Intelligent Software Engineering Research Center",
-      "funding_en": "Unfunded (startup, SaaS launched)"
+      "funding_en": "Unfunded (startup, SaaS launched)",
+      "operations_en": "ChatALL ★, a phenomenal LLM tool, 17,000★ on AI-Shifu platform, multiple repos continuously active"
     },
     {
       "id": "nb-echo-loop",
@@ -3133,7 +3276,9 @@
       "category_en": "AI Education",
       "tech_en": "AI Agent simulates the perspectives of historical thinkers for interactive reading, integrating the noosphere knowledge layer and the mneme personal memory layer to build a personal knowledge management ecosystem for the AI era.",
       "business_en": "B2C AI education/knowledge payment platform, extendable to enterprise knowledge management SaaS.",
-      "funding_en": "Unfunded (founder is a YC alumnus, but YC was for a previous project)"
+      "funding_en": "Unfunded (founder is a YC alumnus, but YC was for a previous project)",
+      "team_en": "Steve Yeow, Y Combinator W2019 Alumnus, Forbes 30 Under 30, Three-Time Serial Entrepreneur, CEO of OriginX AI, based in California",
+      "operations_en": "154★, GitHub ★, product website feynman.wiki launched, last updated on 2026-06-04"
     },
     {
       "id": "nb-dongzhang84",
@@ -3153,7 +3298,8 @@
       "tech_en": "A personalized math tutoring system based on large language models, covering problem-solving guidance, error analysis, and adaptive practice, built by former Amazon/IBM engineers and an astrophysics PhD.",
       "business_en": "Targeting U.S. high school students and international school markets, with SaaS subscription or B2C payment models, and the official website already live.",
       "operations_en": "23 repos totaling 120 stars, Vibe-Reading has launched an independent product page, with multiple projects under continuous iteration.",
-      "funding_en": "Unfunded"
+      "funding_en": "Unfunded",
+      "team_en": "Dong Zhang, PhD in Astrophysics from Ohio State University, former Amazon and IBM engineer, 10+ years of ML experience"
     },
     {
       "id": "nb-educlaw-flysheep",
@@ -3173,7 +3319,8 @@
       "tech_en": "Proposes the Agent Scaling Law for Education theoretical framework, with 330+ educational agents covering all K-12 subjects, including skill modules such as a college entrance exam science tutor.",
       "business_en": "Clear academic-to-commercialization pathway; Claude Code Skills format (education agent as a service).",
       "team_en": "First author Wu Mengsong (Mengsong Wu), Chinese",
-      "funding_en": "Unfunded (academic project transitioning to product stage)"
+      "funding_en": "Unfunded (academic project transitioning to product stage)",
+      "operations_en": "GitHub 36★/8 Fork (created 2026-01); arXiv paper published 2026-03-12"
     },
     {
       "id": "nb-arxiv-2606-08897",
@@ -3192,7 +3339,9 @@
       "category_en": "AI Healthcare",
       "tech_en": "A multi-sequence MRI foundation model (T1/T2 dual encoder + continuous training), with 37 specialized agents collaborating, trained on 13.44 million slices, evaluated by 5 radiologists and achieving leading performance.",
       "business_en": "Targeting hospitals and imaging centers with annual or per-use billing, differentiated from competitors by focusing on report generation rather than detection.",
-      "funding_en": "Unfunded"
+      "funding_en": "Unfunded",
+      "team_en": "Zhiping Xiao: Peking University → UC Berkeley → UCLA → UW. Sheng Wang: Peking University → UW Assistant Professor",
+      "operations_en": "Published on arXiv cs.CV, cs.AI, q-bio.QM; not open-sourced"
     },
     {
       "id": "nb-thinkwee",
@@ -3212,7 +3361,8 @@
       "tech_en": "Based on an LLM Agent architecture, it unifies data from Apple Health and wearable devices, providing multi-dimensional health analysis and recommendations including exercise, sleep, and heart metrics, designed in compliance with HF/E standards.",
       "business_en": "Already listed on the App Store, integrated with WeChat and Feishu, with C-end health management subscription or API integration for medical institutions.",
       "operations_en": "Although HiMe has few stars, the founder has 2,524 total GitHub stars, and hit projects like AgentsMeetRL (1.5K stars) demonstrate strong community influence, with recent active iteration.",
-      "funding_en": "Unfunded"
+      "funding_en": "Unfunded",
+      "team_en": "Wei Liu (thinkwee), Tsinghua CS + BUPT background, PhD from KCL, multiple papers at top conferences including NeurIPS/EMNLP/ACL, focusing on LLM reasoning and Agentic AI"
     },
     {
       "id": "nb-hougelangley",
@@ -3253,7 +3403,8 @@
       "tech_en": "Open-source CAD/URDF/software stack, self-developed AM-ARM200 6-DOF robotic arm, 6+1 DOF dual-arm mobile platform based on Raspberry Pi 5, with 70kg chassis payload and 30kg lifting capacity, complete dual-arm mobile platform solution, compatible with LeRobot v3.0/Pi 0.5 cutting-edge models, BOM cost $950.",
       "business_en": "Open-source hardware community-driven, selling kits and complete units via Taobao and overseas e-commerce, with Community/Pro tiers, targeting university labs, STEAM education, and global embodied AI developers.",
       "team_en": "Li Yiteng (liyiteng) and Wu Zhiyong, Aloha Embodied Intelligence (Beijing) Technology Co., Ltd.",
-      "funding_en": "No funding information found"
+      "funding_en": "No funding information found",
+      "operations_en": "GitHub 951★/2 Fork; frequent commits after AlohaMini2 release in June 2026; external community contributions"
     },
     {
       "id": "nb-liangsu8899",
@@ -3273,7 +3424,8 @@
       "business_en": "Open-source engine + enterprise-level technical support/cloud hosting/hardware licensing, with HuggingFace Kernel Hub distribution channel ready, targeting robot developers.",
       "team_en": "Liang Su (LiangSu8899), Master's from PolyU/Bachelor's from UC Irvine, former researcher at Hikvision Research Institute & 4Paradigm, CTO of Dark Horse Robotics, serial entrepreneur",
       "operations_en": "343 stars on GitHub, consistently active, with rapid iteration for new model support.",
-      "funding_en": "No funding raised"
+      "funding_en": "No funding raised",
+      "tech_en": "Hand-written CUDA kernels + CUDA Graph, supporting FP8/NVFP4 quantization. Directly loads safetensors/Orbax weights without compilation. Covers mainstream models including Pi0, Pi0.5, and GROOT. Pi0.5 runs at only 44ms (23Hz) on Jetson AGX Thor and 17.6ms (57Hz) on RTX 5090. Distributed via Docker images + HuggingFace Kernel Hub, with an OpenAI-compatible serving layer."
     },
     {
       "id": "nb-zeroclaw-labs",
@@ -3292,7 +3444,8 @@
       "tech_en": "Rust ultra-lightweight kernel (<5MB runtime), connecting 50+ AI models and 20+ communication channels (including WeChat, QQ, DingTalk, Feishu), with a full skill marketplace and plugin registration.",
       "business_en": "Open-source community + enterprise edition route, targeting privacy-sensitive enterprises and individuals.",
       "team_en": "Jordan Tian (Master's in Data Science from Harvard) and two others, Wix Ventures Foundry accelerator, Boston cohort",
-      "operations_en": "32,000 stars on GitHub, highly active, with weekly online community discussions."
+      "operations_en": "32,000 stars on GitHub, highly active, with weekly online community discussions.",
+      "funding_en": "Participated only in Wix Ventures Foundry accelerator, not funded"
     },
     {
       "id": "nb-boris-dotv",
@@ -3351,7 +3504,9 @@
       "scrapedAt": "2026-06-17T01:57:03.934Z",
       "business_en": "Currently an MIT open-source academic project, commercially viable: enterprise-grade LLM tool management middleware / managed API gateway service, targeting multi-vendor large enterprise customers.",
       "team_en": "Ding Peng (Peng Ding), first undergraduate cohort at ShanghaiTech University, Ph.D. student in Computer Science at the University of Chicago, advised by Rick Stevens (Deputy Director of Argonne National Laboratory)",
-      "funding_en": "No funding raised, academic project at the University of Chicago"
+      "funding_en": "No funding raised, academic project at the University of Chicago",
+      "tech_en": "Python-based LLM tool-calling middleware stack: ToolRegistry for protocol-agnostic tool registration, llm-rosetta for Hub-and-Spoke bidirectional API translation (OpenAI/Anthropic/Google), and argo-proxy for unified gateway. Currently only 1 similar project on GitHub for ToolRegistry and only 2 for API translation.",
+      "operations_en": "GitHub 268★; core ToolRegistry 59★/llm-rosetta 40★/argo-proxy 24★; continuously active with iterations"
     },
     {
       "id": "nb-jeffstric",
@@ -3371,7 +3526,8 @@
       "tech_en": "8 AI agents covering scriptwriting, storyboarding, and video synthesis, reducing short drama production time from 38-62 hours to 1-2 hours, supporting 10+ LLM switching and team collaborative editing, with a complete Web UI and Docker support across three platforms.",
       "business_en": "Open-source core with commercial licensing, monetized through compute packages (WeChat Pay), enterprise private deployment, and education/training procurement.",
       "team_en": "Hangzhou Perseids Technology Co., Ltd. (perseids), founded by jeffstric, based in Hangzhou.",
-      "funding_en": "No funding raised, competitor AniShort recently secured nearly 100 million RMB in funding"
+      "funding_en": "No funding raised, competitor AniShort recently secured nearly 100 million RMB in funding",
+      "operations_en": "GitHub 165★/0 Fork; continuously active (still updated as of June 2026)"
     },
     {
       "id": "nb-learnprompt",
@@ -3390,7 +3546,8 @@
       "tech_en": "Driven by the Agent Skills chain (cc-harness-skills/luban-skill), it enables a closed loop of case tracking, method extraction, and reuse tools. The GoodCase platform facilitates AI case community accumulation and method package monetization.",
       "business_en": "Creator-first community, paid subscriptions for case method packages, LearnPrompt courses for lead generation, and Agent Skills toolchain for enterprise services.",
       "team_en": "Karl (Karl's AI Watts), former Alibaba algorithm engineer, independent developer, well-known KOL in Chinese AI communities (Jike/Zhihu/X).",
-      "funding_en": "No funding raised"
+      "funding_en": "No funding raised",
+      "operations_en": "GitHub 4,539★; LearnPrompt 2,431★; ai-news-radar 1,110★; recently continuously active"
     },
     {
       "id": "nb-moyangzhan",
@@ -3489,7 +3646,9 @@
       "category_en": "Embodied AI",
       "tech_en": "Three generations of tactile sensor hardware iteration (DTact → 9DTact → LightTact), combined with LocoMan quadruped dexterous manipulation and LocoTouch tactile-driven transport, with multiple top-tier conference papers (RSS/CoRL/ICRA/IROS) and coverage by IEEE Spectrum.",
       "business_en": "Open-source sensor hardware sales (9DTact commercially available) + robot manipulation solution licensing, already adopted by multiple labs.",
-      "funding_en": "No funding raised (PhD candidate, no registered company)"
+      "funding_en": "No funding raised (PhD candidate, no registered company)",
+      "team_en": "Changyi Lin, PhD from CMU Safe AI Lab, Student Researcher at Google DeepMind, Huazhong University of Science and Technology + Tsinghua background",
+      "operations_en": "GitHub total 372★; 9DTact {stars_9dtact:168}★/LocoMan 97★/LocoTouch 58★; continuously active"
     },
     {
       "id": "nb-firmament-autopilot",
@@ -3529,7 +3688,9 @@
       "category_en": "Embodied AI",
       "tech_en": "3D visual motion policy (DP3) → humanoid manipulation (iDP3) → teleoperation (TWIST) → motion retargeting (GMR) → visual imitation (VisualMimic), with top-tier conference papers (ICRA/CoRL/RSS) and a systematic open-source codebase.",
       "business_en": "Research outcomes directly convertible into core software layers for commercial humanoid robots, with high entrepreneurial potential.",
-      "funding_en": "No funding raised (PhD candidate)"
+      "funding_en": "No funding raised (PhD candidate)",
+      "team_en": "Yanjie Ze, PhD student in CS at Stanford, advised by Jiajun Wu and C. Karen Liu, previously interned at Figure AI",
+      "operations_en": "GitHub 8,528★; 16 repos; primarily Python; actively maintained"
     },
     {
       "id": "nb-tauricresearch",
@@ -3548,7 +3709,8 @@
       "tech_en": "Multi-agent LLM framework supporting GPT-5.5, DeepSeek, Qwen, GLM, MiniMax, and other models, deployed via Docker, enabling full-chain collaboration among simulated analysts, researchers, traders, and risk managers.",
       "business_en": "Open-source free + enterprise private deployment + SaaS Dashboard + Chinese training (500 RMB/session), a three-tier monetization path.",
       "operations_en": "GitHub 86,000 stars, extremely active, continuous iteration",
-      "funding_en": "No funding information found"
+      "funding_en": "No funding information found",
+      "team_en": "Yijia Xiao (student of Tang Jie at Tsinghua, PhD from UCLA, Google Research, Jump Trading), Edward Sun (UCLA), Di Luo (MIT), Wei Wang (UCLA)"
     },
     {
       "id": "nb-langbot-app",
@@ -3587,7 +3749,8 @@
       "tech_en": "Desktop-side unified management of multiple agents (Claude Code, Codex, OpenClaw, etc.), with openclaw-wechat bridging the WeChat ecosystem for AI-powered group message monitoring.",
       "business_en": "WeSight invitation-only beta testing, targeting community operations scenarios via SaaS subscription; enterprise version / managed services charged separately.",
       "team_en": "He Cang, former Alibaba/Ant Group engineer, Microsoft MVP, founder of Wuhan Canghe Zhilian, leading AI blogger.",
-      "funding_en": "No funding raised; Wuhan Canghe Zhilian Technology has been registered and is open to early-stage investment."
+      "funding_en": "No funding raised; Wuhan Canghe Zhilian Technology has been registered and is open to early-stage investment.",
+      "operations_en": "GitHub 12,000★/946 Fork; continuously active"
     },
     {
       "id": "nb-yym68686",
@@ -3605,7 +3768,9 @@
       "scrapedAt": "2026-06-17T01:57:03.934Z",
       "business_en": "0-0.pro SaaS charges based on API usage credits ($1 = 1 credit), a multi-model cost management tool for enterprises and development teams.",
       "team_en": "yym68686 (Zhejiang University developer), independent developer in Hangzhou, multilingual engineering capabilities.",
-      "funding_en": "No funding raised; commercial product has been launched."
+      "funding_en": "No funding raised; commercial product has been launched.",
+      "tech_en": "Full-stack Python/TypeScript, complete matrix from API gateway (uni-api) → Agent deployment (Fugue) → frameworks (architext/aient) → terminal applications (Cerebr/Telegram Bot). Commercial version 0-0.pro provides usage auditing and team management.",
+      "operations_en": "GitHub 3,194★; actively under development"
     },
     {
       "id": "nb-codeking-ai",
@@ -3644,7 +3809,8 @@
       "tech_en": "Claude Code ecosystem with 7 collaborative writing agents (architecture, role, narrative, consistency checking, etc.), built-in knowledge base of 100+ writing methodologies, covering the full workflow from trend scanning and story deconstruction to long/short-form creation, AI-style removal, and cover generation.",
       "business_en": "zenstory.ai already has a paid subscription page targeting web novel authors, with a community of 2400+ stars serving as the seed user pool.",
       "team_en": "Chen (xtchen), independent developer, in career transition, maintains a Telegram user group.",
-      "funding_en": "No funding raised."
+      "funding_en": "No funding raised.",
+      "operations_en": "GitHub 2,552★; continuously active"
     },
     {
       "id": "nb-xiaotonng",
@@ -3661,7 +3827,10 @@
       "source_url": "https://nextbanker.cn/",
       "scrapedAt": "2026-06-17T01:57:03.934Z",
       "business_en": "Community edition monetizes through MIT open-source acquisition, while enterprise SaaS/private deployment is charged, deeply positioning as an Agent console scenario within China's IM ecosystem (Feishu/DingTalk/WeCom).",
-      "funding_en": "No funding raised."
+      "funding_en": "No funding raised.",
+      "tech_en": "Agent orchestration engine integrating Claude Code/Codex/Gemini/Doubao/DeepSeek, supporting 7 IM platforms (WeChat, WeCom, Feishu, DingTalk, Telegram, etc.) + Web Dashboard, multi-agent parallel driving, self-bootstrapping development闭环.",
+      "team_en": "Xiaotong Shi (xiaotonng), based in Shanghai, AI Engineer, personal side project",
+      "operations_en": "GitHub 343★/0 Fork; continuously active"
     },
     {
       "id": "nb-notnotype",
@@ -3680,7 +3849,8 @@
       "business_en": "A subscription-based IDE for web novel authors and AI role-playing communities, supporting SillyTavern character card import.",
       "team_en": "Notype (anonymous), independent developer, frontend engineer/student, background in reverse engineering.",
       "operations_en": "GitHub 88 stars, consistently active recently, multiple deployment methods",
-      "funding_en": "No funding raised."
+      "funding_en": "No funding raised.",
+      "tech_en": "Self-developed NeuroAgentHarness multi-agent framework, with Leader orchestrating Writer/Retrieval/RP profiles, Sidecar Context and TSX Profile type-safe context templates, addressing long-form consistency challenges."
     },
     {
       "id": "nb-konghayao",
@@ -3718,7 +3888,9 @@
       "scrapedAt": "2026-06-17T01:57:03.934Z",
       "business_en": "Apache-2.0 open-source plus enterprise SaaS, targeting small and medium teams, entering the collaboration ecosystem via Feishu and Telegram dual entry points.",
       "team_en": "Huang Chong (huanchong-99), independent developer, full-stack AI agent orchestration capabilities.",
-      "funding_en": "No funding raised."
+      "funding_en": "No funding raised.",
+      "tech_en": "Rust + React full-stack orchestration engine, supporting 9 AI CLIs (Claude Code, Gemini CLI, Codex, etc.), event-driven design reducing token consumption by 98%+.",
+      "operations_en": "GitHub 199★/0 Fork; recently active (continuously iterating as of June 2026)"
     },
     {
       "id": "nb-ceilf6",
@@ -3737,7 +3909,8 @@
       "tech_en": "TypeScript monorepo architecture with a two-stage Planner + Executor design, MCP protocol, RAG knowledge base, and self-healing error recovery, supporting SDD specification-driven development, published as an npm package and VS Code extension.",
       "business_en": "An AI coding agent for frontend teams, with dual monetization models of npm package enterprise subscriptions and VS Code paid extensions, enabling PLG bottom-up penetration.",
       "team_en": "ceilf6 (born 2005, Shanghai University class of 2027), formerly at Qiniu Cloud, now at Meituan, founder of FrontAgent.",
-      "funding_en": "No funding raised."
+      "funding_en": "No funding raised.",
+      "operations_en": "GitHub 778★/14 Fork; core repo has had continuous commits in the past week"
     },
     {
       "id": "nb-qufei1993",
@@ -3756,7 +3929,8 @@
       "tech_en": "Rust + Tauri cross-platform desktop application, achieving non-intrusive synchronization via symlink/junction, compatible with Skills directories of 40+ AI coding tools.",
       "business_en": "Positioned as an Agent Skills distribution platform, analogous to npm, potentially monetized through hosting/SaaS/enterprise editions.",
       "team_en": "Wuyue Jun (independent developer / tech blogger), runs the \"Nodejs Tech Stack\" WeChat account, based in Shanghai.",
-      "funding_en": "No funding raised."
+      "funding_en": "No funding raised.",
+      "operations_en": "GitHub 5,147★; skills-hub recently active with iterations"
     },
     {
       "id": "nb-timwuhaotian",
@@ -3836,7 +4010,8 @@
       "tech_en": "Supports 10+ mainstream AI coding tools including Claude Code, Codex, Kimi, and DeepSeek, with real-time capture of full system prompts and requests sent by AI agents to models, providing a visual traffic panel. Includes the claude-skills package for video production scenarios.",
       "business_en": "ccglass follows a developer tool SaaS model (team/enterprise paid plans, similar to Postman), while incubating Cathier, an emotion awareness training app (C-end subscription), leveraging Alibaba Cloud DashScope for AI insights.",
       "team_en": "Jian Shuo Wang, founder and CEO of Baixing.com (listed on the NEEQ, Series D ~$100M), graduate of Shanghai Jiao Tong University, former Microsoft and eBay employee, serial entrepreneur.",
-      "funding_en": "Current project has not raised funding (the founder’s previous project, Baixing.com, has completed Series D financing)."
+      "funding_en": "Current project has not raised funding (the founder’s previous project, Baixing.com, has completed Series D financing).",
+      "operations_en": "GitHub 492★, claude-skills 82★, Cathier 5★, still under frequent iteration as of June 2026."
     },
     {
       "id": "nb-zleap-ai",
@@ -3855,7 +4030,8 @@
       "tech_en": "Self-developed SAG™ multi-hop RAG engine achieves SOTA on HotpotQA/2WikiMultiHop/MuSiQue benchmarks (Recall@2 79.30%), outperforming HippoRAG 2 by 11.16 percentage points. Supports offline private deployment and integrates multi-source information from Feishu, code repositories, and documents.",
       "business_en": "Integrated hardware-software appliance Zleap-D1 (¥68,000 one-time purchase) plus enterprise SaaS subscription and a personal free tier, targeting SME CEO decision-making scenarios.",
       "team_en": "Jomy, founder and CEO of 302.AI, 10 years of serial entrepreneurship, former programmer.",
-      "funding_en": "No funding raised; self-sustaining through revenue from 302.AI."
+      "funding_en": "No funding raised; self-sustaining through revenue from 302.AI.",
+      "operations_en": "GitHub 1,143★ / 0 Fork, under intensive iteration as of June 2026 (WebUI multilingual support, Benchmark integration, etc.)"
     },
     {
       "id": "nb-ekkolearnai",
@@ -3874,7 +4050,8 @@
       "tech_en": "Full-stack multi-model AI Agent console with streaming chat, Kanban board, token analysis, and scheduled tasks. Natively supports 8 major instant messaging platforms including WeChat, Feishu, and WeCom.",
       "business_en": "BSL-1.1 open-source core plus commercial licensing, with desktop PLG acquisition, targeting private AI Agent management for mid-to-large enterprises.",
       "team_en": "EKKOLearnAI (anonymous independent developer), full-stack, active in the Chinese developer community.",
-      "funding_en": "No funding raised"
+      "funding_en": "No funding raised",
+      "operations_en": "GitHub 7,908★, v0.6.7, continuously and actively maintained"
     },
     {
       "id": "nb-astrbotdevs",
@@ -3912,7 +4089,9 @@
       "scrapedAt": "2026-06-17T01:57:03.934Z",
       "business_en": "MIT open-source plus self-hosted signaling server, with potential routes for enterprise SaaS/private deployment.",
       "operations_en": "30,000 stars, active development, QuickDesk continuously iterating MCP toolchain and product features",
-      "funding_en": "No funding raised; Jinan Kuaima Technology, established in 2021 with a registered capital of 1 million RMB"
+      "funding_en": "No funding raised; Jinan Kuaima Technology, established in 2021 with a registered capital of 1 million RMB",
+      "tech_en": "Pure C++ full-stack, leveraging Google's decade-refined Chromium Remoting engine at the base, with built-in MCP Server providing 40+ tools for AI agents (Claude, GPT, Cursor) to remotely control any computer worldwide.",
+      "team_en": "Barry Ran (barry-ran), 769 GitHub followers, Founder of Jinan Kuaima Technology, Creator of QtScrcpy"
     },
     {
       "id": "nb-liaohch3",
@@ -3931,7 +4110,8 @@
       "tech_en": "Python CLI proxy that intercepts API interactions of 13+ AI coding agents (Claude Code, Codex, Gemini, etc.), parsing system prompts, tool call chains, and token consumption for full-link tracing. It is the only open-source tool in this niche.",
       "business_en": "Open-source customer acquisition targeting AI programming agent developers, with a small ecosystem forming (downstream project Phistory). Contributors include engineers from Meituan and Seismic; monetization strategy to be determined.",
       "team_en": "Liao Haochun (independent developer, Sun Yat-sen University background), runs SoTALab-ai, with 9 contributors including engineers from Meituan and Seismic.",
-      "funding_en": "No funding raised"
+      "funding_en": "No funding raised",
+      "operations_en": "GitHub 1,756★, highly active (nearly daily commits in June 2026, 327 PRs submitted)"
     },
     {
       "id": "nb-rexleimo",
@@ -3950,7 +4130,8 @@
       "business_en": "Targeting AI-native development teams, exploring local agent workflow SaaS or enterprise-level developer tool subscriptions.",
       "team_en": "rexleimo, core developer at Pollo AI, runs the \"Mengshou Programming\" tech blog, independently builds AI agent infrastructure stacks in spare time.",
       "operations_en": "3 core repos with 143 stars total, still actively committing and iterating as of June 2026",
-      "funding_en": "Personal project, no funding raised; employer company Pollo AI has completed a $14 million Series A round (led by Gaocheng Capital)"
+      "funding_en": "Personal project, no funding raised; employer company Pollo AI has completed a $14 million Series A round (led by Gaocheng Capital)",
+      "tech_en": "Go multi-agent framework (agno-Go) + Rust long-running agent OS (LoopForge) + developer CLI (harness-cli), integrating Playwright browser MCP, ContextDB cross-session memory, and Agent Team parallel collaboration."
     },
     {
       "id": "nb-fradser",
@@ -3968,7 +4149,9 @@
       "scrapedAt": "2026-06-17T01:57:03.934Z",
       "business_en": "Entering via an open-source toolchain, with potential to shift toward Agent-as-a-Service or enterprise AI-assisted development tool subscriptions.",
       "operations_en": "1,135 stars total, multiple projects running in parallel, consistently active",
-      "funding_en": "No funding raised"
+      "funding_en": "No funding raised",
+      "tech_en": "TypeScript + Python full-stack, Claude Code 13 plugin ecosystem marketplace (dotclaude 557★), MCP protocol servers (Apple Events, Chain of Thought), tree-search adversarial reasoning engine dialectica, and GAN-style adversarial evaluation mechanism.",
+      "team_en": "Frad LEE (FradSer), AI Engineer at RayNeo (Thunderbird Innovation), Designer who codes, based in Shenzhen"
     },
     {
       "id": "nb-witchan",
@@ -4007,7 +4190,8 @@
       "tech_en": "Frontend tax workbench (Tax-Ai framework) + backend AstrBot plugin connecting WeChat → DeepSeek → Feishu multidimensional tables, covering the complete tax AI collaboration system from invoice collection to cross-border tax review.",
       "business_en": "A tax SaaS for Chinese SMEs, distributed through Feishu, DingTalk, and WeChat ecosystem plugins, charging based on invoice volume or subscription.",
       "operations_en": "GitHub 35 stars / 2 forks, recently active (continuous updates after v0.2.0 release)",
-      "funding_en": "No funding raised"
+      "funding_en": "No funding raised",
+      "team_en": "HIM PANG (presumed independent Chinese developer), co-maintainer of loyputh"
     },
     {
       "id": "nb-hongmaple0820",
@@ -4045,7 +4229,9 @@
       "scrapedAt": "2026-06-17T01:57:03.934Z",
       "tech_en": "Terminal-based AI agent parallel orchestration IDE supporting SSH to simultaneously launch Claude Code, Codex, Copilot, and other agents into independent git worktrees. Starts 5 agents at once for parallel attempts, retains the best branch after detachment. Includes Web dashboard and fan-out batch distribution.",
       "business_en": "Free customer acquisition via an open-source npm package, with monetization through enterprise SaaS or team collaboration management panels, modeled after Cline's business model.",
-      "funding_en": "No funding raised; personal project"
+      "funding_en": "No funding raised; personal project",
+      "team_en": "Jackson Chen (Sma1lboy), Engineer at TikTok, based in San Jose",
+      "operations_en": "kobe 33★ / npm v0.7.30, extremely fast daily iteration"
     },
     {
       "id": "nb-chubbyguan",
@@ -4064,7 +4250,8 @@
       "tech_en": "14 Agent Skill modules covering mainstream Chinese platforms such as Douyin, Bilibili, Xiaohongshu, WeChat Official Accounts, Weibo, and Zhihu. Full pipeline from auto-collection, transcription, processing, to knowledge base storage, with an MCP Server for any AI Agent to query.",
       "business_en": "Customer acquisition via open-source tools targeting content creators and e-commerce practitioners, exploring SaaS-based knowledge management or vertical distribution of agent skills.",
       "team_en": "Guan Deyu (Chubby Guan), independent developer in Hangzhou, exploring AI + e-commerce for global markets, multi-platform content creator and technologist.",
-      "funding_en": "No funding raised"
+      "funding_en": "No funding raised",
+      "operations_en": "GitHub 321★, continuously active"
     },
     {
       "id": "nb-neuralbridge-sdk",
@@ -4083,7 +4270,8 @@
       "tech_en": "Three-layer embedded protection: fault diagnosis P50 at only 22µs, LLM fault tolerance + Agent self-healing + MCP guardian, with SmartRouter for automatic switching.",
       "business_en": "Dual licensing with open-source APIs and a commercial engine, targeting Chinese AI developers at ¥699/year for individuals and ¥3,999/year for enterprises, positioned as a competitor to LiteLLM.",
       "team_en": "Anonymous independent developer of Chinese descent, identity kept confidential.",
-      "funding_en": "No funding raised"
+      "funding_en": "No funding raised",
+      "operations_en": "GitHub 4★ / 0 Fork, v5.2.6 published on PyPI, under intensive iteration"
     },
     {
       "id": "nb-zhiweichen-coder",
@@ -4102,7 +4290,8 @@
       "tech_en": "Multi-model access (DeepSeek, GPT-4o, Claude, Qwen, etc.) with single-stock analysis, market news feed, position monitoring, and Agent research memory linkage. Supports private deployment and data sovereignty.",
       "business_en": "Targeting A-share investors and small to medium-sized private funds, offering subscription-based APIs or on-premise deployment licenses.",
       "team_en": "Zhiwei Chen (current student at the University of Queensland), independent developer with experience in multiple products including a podcast copy editor.",
-      "funding_en": "No funding raised"
+      "funding_en": "No funding raised",
+      "operations_en": "GitHub 52★ / 0 Fork, continuously active"
     },
     {
       "id": "nb-dainsiahtill-dev",
@@ -4121,7 +4310,8 @@
       "tech_en": "FastAPI + Electron/React with self-developed KernelOne runtime and ContextOS four-layer context. TransactionKernel transactional kernel prevents infinite Agent loops. Multi-role collaboration separated across three provinces and six departments.",
       "business_en": "Targeting compliance-heavy scenarios such as finance and government, providing auditable AI agent governance infrastructure, building an ecosystem through open source, with potential for an Agent Runtime as a Service model.",
       "team_en": "Anonymous Chinese developer (dainsiahtill-dev), commit email linked to the OpenHands project, presumed to have hands-on experience in AI agent system engineering.",
-      "funding_en": "No funding raised"
+      "funding_en": "No funding raised",
+      "operations_en": "GitHub 103★ / 0 Fork, continuously active and under iteration as of June 2026"
     },
     {
       "id": "nb-hacklyc",
@@ -4140,7 +4330,8 @@
       "tech_en": "Tauri v2 + Rust + React 19 desktop client with embedded MCP protocol, Skills system, scheduled tasks, and full-text search. Supports 10+ domestic models including DeepSeek, Zhipu, and MiniMax, as well as WeChat, DingTalk, Feishu, and Telegram Bot interactions.",
       "business_en": "An open-source desktop product targeting non-technical users in China, with a community of 870 stars validating demand. Potential business models include enterprise subscriptions or model distribution commissions.",
       "operations_en": "GitHub 870 stars, 55 releases, 240,000 lines of code, highly active",
-      "funding_en": "No funding raised"
+      "funding_en": "No funding raised",
+      "team_en": "EthanL, independent developer based in Beijing, with a background in Product Manager, Prompter, and Builder."
     },
     {
       "id": "nb-latitude-52n",
@@ -4158,7 +4349,10 @@
       "scrapedAt": "2026-06-17T01:57:03.934Z",
       "category_en": "AI Hardware",
       "tech_en": "12MP 107° FOV (with portrait/landscape switching), AI voice assistant Goya, real-time translation, Hi-Fi open audio. A camera-first AI glasses product built by a former smartphone camera engineering team.",
-      "funding_en": "Unfunded (pure crowdfunding)"
+      "funding_en": "Unfunded (pure crowdfunding)",
+      "business_en": "Retail price $399, Kickstarter over $400K (goal only €10K), already shipped; IFA Berlin Best of NEXT.",
+      "team_en": "Gary Chen + Hsiaohua, formerly of the HTC/OnePlus/OPPO imaging teams; registered in Berlin.",
+      "operations_en": "KS $400K+ / CES 2026 / Featured by WIRED"
     },
     {
       "id": "nb-omni-health-ring",
@@ -4175,7 +4369,10 @@
       "source_url": "https://nextbanker.cn/",
       "scrapedAt": "2026-06-17T01:57:03.934Z",
       "category_en": "AI Hardware",
-      "tech_en": "PPG + AI photo-based nutrition analysis + gesture-controlled gamified fitness. Pioneers EnerQi dynamic energy metrics and Duolingo for Health gamification."
+      "tech_en": "PPG + AI photo-based nutrition analysis + gesture-controlled gamified fitness. Pioneers EnerQi dynamic energy metrics and Duolingo for Health gamification.",
+      "business_en": "MSRP $399, crowdfunding at $149; 1,400+ backers; first batch delivered; CES 2026 launching Ring Pro + AI Pin.",
+      "team_en": "Jony Sun, designer Yihan Hong; Boulder, CO, 11-50 employees.",
+      "funding_en": "Not funded (LinkedIn: Last Round N/A)"
     },
     {
       "id": "nb-xynavo-ar-glasses",
@@ -4194,7 +4391,10 @@
       "category_en": "AI Hardware",
       "team_en": "A Chinese factory team building their own brand (KS Chinese page + self-described small factory team), specific names pending verification.",
       "operations_en": "Kickstarter crowdfunding successfully delivered",
-      "funding_en": "Currently crowdfunding on Kickstarter"
+      "funding_en": "Currently crowdfunding on Kickstarter",
+      "name_en": "Xynavo AR Glasses",
+      "tech_en": "Lightweight AR glasses, 70° FOV / dual 4K Micro-OLED / 95g, cinema-scale immersive experience.",
+      "business_en": "Kickstarter 4028% oversubscribed (592 backers, starting at $269), transitioning from Chinese OEM background to own brand."
     },
     {
       "id": "nb-fange-ai-blind-glasses",
@@ -4236,7 +4436,8 @@
       "tech_en": "Sports HUD smart glasses, 39g ultra-lightweight, waveguide display technology + real-time safety system.",
       "team_en": "Singapore-based team, founder George (likely of Chinese Singaporean background), established in 2024.",
       "operations_en": "Kickstarter oversubscribed successfully",
-      "funding_en": "Unfunded (Kickstarter self-sustaining)"
+      "funding_en": "Unfunded (Kickstarter self-sustaining)",
+      "business_en": "Kickstarter S$1,061,872 oversubscribed (2,100 backers), vertical focus on cycling/sports safety."
     },
     {
       "id": "nb-memoket-gem",
@@ -4253,7 +4454,11 @@
       "source_url": "https://nextbanker.cn/",
       "scrapedAt": "2026-06-17T01:57:03.934Z",
       "category_en": "AI Hardware",
-      "tech_en": "Wrist-worn AI wearable recorder with physical buttons and LED privacy design, long-term cross-conversation memory (distinct from simple transcription)."
+      "tech_en": "Wrist-worn AI wearable recorder with physical buttons and LED privacy design, long-term cross-conversation memory (distinct from simple transcription).",
+      "business_en": "$199 hardware + subscription, 50 Founding Member slots for validation. Differentiated competition against Limitless/Plaud.",
+      "team_en": "Terrence Wang (CEO, formerly at Anker), Alice Lee. Team from Anker/Bosch/Siemens/P&G/Lenovo.",
+      "operations_en": "PH #1 of the day (307 upvotes / 518 followers), Chris Messina involved. Mass production in August 2026.",
+      "funding_en": "Not funded (Bootstrap, no external VC)"
     },
     {
       "id": "nb-hooti",
@@ -4271,7 +4476,10 @@
       "scrapedAt": "2026-06-17T01:57:03.934Z",
       "category_en": "AI Hardware",
       "tech_en": "Bone conduction audio + AI snoring detection + dynamic airbag system + app monitoring; AI and bone conduction integrated into a pillow form factor, on-device AI for sleep scenarios.",
-      "funding_en": "Unfunded (pure crowdfunding)"
+      "funding_en": "Unfunded (pure crowdfunding)",
+      "name_en": "HOOTI AI Anti-Snoring Pillow",
+      "business_en": "Kickstarter HK$622K (goal HK$10K, 62x oversubscribed), 296 backers.",
+      "team_en": "Registered under the Hardware category in Hong Kong."
     },
     {
       "id": "nb-aivela-ring-pro",
@@ -4311,7 +4519,8 @@
       "tech_en": "AI desktop robot with NFC wardrobe system—changing physical outfits alters the AI personality.",
       "team_en": "Hangzhou Laimu Technology (entity confirmed), spokesperson James Lee.",
       "operations_en": "Product design drives differentiation",
-      "funding_en": "Pending QCC confirmation (likely unfunded)"
+      "funding_en": "Pending QCC confirmation (likely unfunded)",
+      "business_en": "Won 3 Best of CES 2026 awards (Gamereactor, The Outerhaven, etc.)."
     },
     {
       "id": "nb-eio-ai",
@@ -4328,7 +4537,11 @@
       "source_url": "https://nextbanker.cn/",
       "scrapedAt": "2026-06-17T01:57:03.934Z",
       "category_en": "AI Hardware",
-      "business_en": "Currently crowdfunding on Kickstarter, with delivery expected in Q4 2026; targeting the developer community."
+      "business_en": "Currently crowdfunding on Kickstarter, with delivery expected in Q4 2026; targeting the developer community.",
+      "tech_en": "Full-color MicroLED waveguide + on-device AI inference; open SDK / open-source platform roadmap.",
+      "team_en": "CEO Leo He, Ruixin Dai; San Francisco/Toronto; 2-10 employees.",
+      "operations_en": "Kickstarter online / LinkedIn 168 followers / Xiaohongshu @EIO Future",
+      "funding_en": "Not funded (LinkedIn: N/A)"
     },
     {
       "id": "nb-tqsky",
@@ -4348,7 +4561,9 @@
       "tech_en": "Dual-Mode (audio glasses + 220-inch UHD near-eye display), one-click 2D→3D switching; dual-mode design solves the dilemma of whether to wear a display.",
       "business_en": "Priced at $599 officially, with KS at HK$282K; official store sales have launched.",
       "team_en": "Jessie Wang, 20 years in the XR industry, launched China's first mass-produced VR headset in 2014, based in Shenzhen.",
-      "funding_en": "Unfunded (crowdfunding + self-operated)"
+      "funding_en": "Unfunded (crowdfunding + self-operated)",
+      "name_en": "TQSKY T2 (Tianqu)",
+      "operations_en": "Kickstarter HK$282K / Official store: store.tqsky.com"
     },
     {
       "id": "nb-flowtica-scribe",
@@ -4368,7 +4583,8 @@
       "tech_en": "Physical AI pen form factor, real-time voice-to-structured notes, dual-mode with physical writing and AI transcription, iterative charging case design.",
       "business_en": "Positioned as \"Physical Granola\"—a physical entry point for offline meeting AI recording, differentiated from Plaud Note in form factor.",
       "team_en": "Zac Zuo (surname Zuo, of Chinese descent), active on Product Hunt as both a hunter and maker, with interactions from Zhiqi Shi in the comments.",
-      "funding_en": "Unfunded"
+      "funding_en": "Unfunded",
+      "operations_en": "iF Design Award 2026 winner / Featured in PH newsletter. Founder of nference (backed by Doerr/Khosla) proactively reached out"
     },
     {
       "id": "nb-joobie-hugbibi",
@@ -4389,7 +4605,8 @@
       "business_en": "Debuted at CES 2026, covered in-depth by Digital Trends, with a seasonal limited strategy.",
       "team_en": "Shenzhen Xingyuan Yuezhi Technology (entity confirmed).",
       "operations_en": "Planning Kickstarter crowdfunding (not yet launched)",
-      "funding_en": "Unfunded"
+      "funding_en": "Unfunded",
+      "name_en": "Joobie by Hugbibi (Shenzhen Xingyuan Yuezhi)"
     },
     {
       "id": "nb-monoise-p-q13",
@@ -4409,7 +4626,8 @@
       "tech_en": "Dual large model driven by DeepSeek R1 × GPT-5, AI real-time multilingual translation, on-device inference optimization.",
       "business_en": "KS priced at $79 (53% off the original $169), currently crowdfunding.",
       "team_en": "MONOISE TECH, with an official Xiaohongshu account \"摩因MONOiSE,\" integrates DeepSeek—highly likely a Shenzhen-based team.",
-      "funding_en": "Unfunded (Kickstarter crowdfunding)"
+      "funding_en": "Unfunded (Kickstarter crowdfunding)",
+      "operations_en": "KS Live, Xiaohongshu official account @摩因MONOiSE (launched in 2026)"
     },
     {
       "id": "nb-neomix-beaverlab",
@@ -4428,7 +4646,9 @@
       "category_en": "AI Hardware",
       "tech_en": "Integrated with Minimax multimodal AI (China large model), 2K video recording, nod-to-shoot gesture interaction, world’s largest CMOS sensor.",
       "team_en": "Beaverlab brand, uses China's Minimax large model as a core signal, highly likely a Shenzhen-based hardware team.",
-      "funding_en": "Unfunded (Kickstarter crowdfunding self-sustaining)"
+      "funding_en": "Unfunded (Kickstarter crowdfunding self-sustaining)",
+      "business_en": "Kickstarter pricing $379–$529, positioned as an upgrade to Ray-Ban Meta.",
+      "operations_en": "KS Live (2026)"
     },
     {
       "id": "nb-sein-pai",
@@ -4446,7 +4666,10 @@
       "scrapedAt": "2026-06-17T01:57:03.934Z",
       "category_en": "AI Hardware",
       "business_en": "KS crowdfunding active, starting from HK$699.",
-      "funding_en": "Unfunded (crowdfunding stage)"
+      "funding_en": "Unfunded (crowdfunding stage)",
+      "tech_en": "Necklace/clip-on form factor, with camera version + Clip No-Cam version; positioned as AI Journal That Indexes Your Mind—an external memory for the brain.",
+      "team_en": "Hong Kong team.",
+      "operations_en": "Kickstarter crowdfunding / Xiaohongshu: 259 likes, 51 comments"
     },
     {
       "id": "nb-mutrics-aric",
@@ -4466,7 +4689,9 @@
       "tech_en": "Open-source full-featured AR glasses for developers.",
       "business_en": "Positioned with open-source + developer focus, leveraging Shenzhen's hardware mass production capabilities.",
       "team_en": "VanNess Lee (former VP at Makeblock / CEO of Shenzhen Open Innovation Lab), partner Gary (former AAC Technologies).",
-      "funding_en": "Unfunded"
+      "funding_en": "Unfunded",
+      "name_en": "Mutrics ARiC (Open-Source AR Glasses)",
+      "operations_en": "KS exceeded 3x funding goal / PH 104 followers"
     },
     {
       "id": "nb-maverick-ai",
@@ -4528,7 +4753,9 @@
       "category_en": "AI Hardware",
       "tech_en": "Wearable face mask for real-time voice translation (Chinese to English), scenario innovation: parents speaking Chinese → children hearing English.",
       "business_en": "Viral spread on Reddit, with an 86% positive rating.",
-      "funding_en": "No funding raised (company name pending DD)"
+      "funding_en": "No funding raised (company name pending DD)",
+      "team_en": "Confirmed as a company in Shenzhen, specifically serving Chinese families.",
+      "operations_en": "Reddit 181 upvotes / 125 comments / 307 shares"
     },
     {
       "id": "nb-l-ring-2",
@@ -4567,7 +4794,8 @@
       "tech_en": "Standalone AI smart glasses (no phone required), supports direct app installation + real-time translation, Android-based independent operation",
       "business_en": "KS crowdfunding active, consumer-grade pricing.",
       "team_en": "Unknown brand, product form points to a Shenzhen-based hardware team.",
-      "funding_en": "No funding raised (Kickstarter crowdfunding)"
+      "funding_en": "No funding raised (Kickstarter crowdfunding)",
+      "operations_en": "KS Live crowdfunding in progress"
     },
     {
       "id": "nb-hyper-ai-recorder-glasses",
@@ -4587,7 +4815,8 @@
       "tech_en": "AI recording and transcription glasses with on-device real-time bidirectional translation",
       "business_en": "KS oversubscribed by 1028%, in the audio glasses category.",
       "team_en": "Possible Chinese team (price/form factor suggest Shenzhen), to be confirmed",
-      "funding_en": "No funding raised (Kickstarter crowdfunding)"
+      "funding_en": "No funding raised (Kickstarter crowdfunding)",
+      "operations_en": "KS Live crowdfunding in progress"
     },
     {
       "id": "nb-加南科技",
@@ -4626,7 +4855,9 @@
       "category_en": "AI Hardware",
       "tech_en": "Large model-driven emotion recognition + emotional companion AI, robot cat form, personalized interactive dialogue",
       "team_en": "Founder Lucy Yuan, Hong Kong",
-      "funding_en": "No funding raised (Kickstarter crowdfunding)"
+      "funding_en": "No funding raised (Kickstarter crowdfunding)",
+      "business_en": "Kickstarter pricing HK$460–3,654 (~$59–$470), multiple SKU tiers, estimated delivery April 2026.",
+      "operations_en": "KS Live (2026)"
     },
     {
       "id": "nb-xiaomu-timu",
@@ -4647,7 +4878,8 @@
       "business_en": "KS successfully delivered (HK$87,802 / 51 backers), validating a privacy-first AI companion.",
       "team_en": "TIMU (registered in Hong Kong)",
       "operations_en": "Product delivered",
-      "funding_en": "No funding raised"
+      "funding_en": "No funding raised",
+      "name_en": "XiaoMu by TIMU"
     },
     {
       "id": "nb-zensbuds-ai",
@@ -4666,7 +4898,8 @@
       "category_en": "AI Hardware",
       "tech_en": "Real-time call translation, meeting recording, instant summary generation, AI-powered earphones",
       "business_en": "KS 1014% oversubscribed, actively crowdfunding (deadline: June 1, 2026).",
-      "funding_en": "No funding raised (Kickstarter self-sustaining)"
+      "funding_en": "No funding raised (Kickstarter self-sustaining)",
+      "team_en": "ZENSBUDS LIMITED (registered in Hong Kong)."
     },
     {
       "id": "nb-ourobot",
@@ -4729,7 +4962,8 @@
       "tech_en": "Multimodal perception AI desktop companion, neither robot nor pure AI—positioned as a new \"AI Lifeform\" category, with an autonomous personality growth system",
       "business_en": "KS 2052% oversubscription validates demand, intersecting desktop companion and affective computing.",
       "team_en": "InsBotics (founded in 2024), HQ in Singapore, R&D center in Beijing, team with decades of AI experience",
-      "funding_en": "No funding raised (Kickstarter crowdfunding, self-sustaining)"
+      "funding_en": "No funding raised (Kickstarter crowdfunding, self-sustaining)",
+      "operations_en": "KS 2052% funded, 27 days remaining, active crowdfunding"
     },
     {
       "id": "nb-beyond-ai-zone-hss1",
@@ -4770,7 +5004,8 @@
       "tech_en": "Everyday AI smart glasses for daily wear, specific technical approach to be confirmed",
       "business_en": "Consumer-grade positioning; CES 2026 exhibition confirms prototype readiness.",
       "operations_en": "First public亮相 at CES 2026, LinkedIn hiring to expand team, very early stage",
-      "funding_en": "No funding raised (QCC no matching China entity, very early-stage signal)"
+      "funding_en": "No funding raised (QCC no matching China entity, very early-stage signal)",
+      "team_en": "Chongyang Zhang, graduated from the University of Electronic Science and Technology of China, very early-stage LinkedIn (only 8 connections)."
     },
     {
       "id": "nb-speakon",
@@ -4788,7 +5023,9 @@
       "scrapedAt": "2026-06-17T01:57:03.934Z",
       "category_en": "AI Hardware",
       "tech_en": "MagSafe magnetic AI voice input device, replacing the keyboard, with local storage + end-to-end encryption",
-      "business_en": "New category with no competitors, addressing mobile typing efficiency pain points."
+      "business_en": "New category with no competitors, addressing mobile typing efficiency pain points.",
+      "operations_en": "PH #1 of the week, #4 of the day, 1.1K followers, 482 comments. Chris Messina called it \"Genius\"",
+      "funding_en": "Product under Notta Inc."
     },
     {
       "id": "nb-looktech-ai眼镜",
@@ -4809,7 +5046,8 @@
       "business_en": "Leveraging China's eyewear supply chain advantages (Wenzhou Ouhai 30+ years of eyewear manufacturing experience), extreme cost-performance ratio.",
       "team_en": "CEO Yi Haoxiang, CTO Tong Luyao (both from Zhejiang University) / Parent company Entertech (founded in 2014, biosensors)",
       "operations_en": "Kickstarter campaign ended and shipped / Shopify store operational / Real unboxing reviews on YouTube",
-      "funding_en": "Parent company Enter Technology has completed 4 rounds of VC funding"
+      "funding_en": "Parent company Enter Technology has completed 4 rounds of VC funding",
+      "name_en": "Looktech AI Glasses"
     },
     {
       "id": "nb-vastnaut-one",
@@ -4829,7 +5067,8 @@
       "tech_en": "86% carbon fiber + IP54 + 4-motor hip-knee joint AI-driven, adaptive gait AI algorithm, designed for outdoor hiking and load-bearing scenarios",
       "business_en": "AI + exoskeleton cross-sector, consumer-grade pricing starting at $1,399 (vs. industrial exoskeletons at $10K+), 2239% oversubscription validates strong demand.",
       "team_en": "Vastnaut, registered in Hong Kong, settled in HKD, high probability of Chinese team",
-      "funding_en": "Tens of millions in Pre-A round (Hillhouse Ventures + Matrix Partners China)"
+      "funding_en": "Tens of millions in Pre-A round (Hillhouse Ventures + Matrix Partners China)",
+      "operations_en": "KS 2239% funded, 22 days remaining"
     },
     {
       "id": "nb-hengbot-sirius",
@@ -4849,7 +5088,8 @@
       "tech_en": "Bionic quadruped, 5 TOPS AI processor, 1000+ action library, trainable/teachable new actions, OTA continuous updates.",
       "business_en": "Strong KS validation ($910K+), EDU version + open SDK ecosystem, now in delivery phase.",
       "team_en": "Hengbot team, Chongqing, shipped from Hong Kong",
-      "funding_en": "No funding (KS self-sustained)"
+      "funding_en": "No funding (KS self-sustained)",
+      "operations_en": "KS $912,768 / 1,150 backers, crowdfunding completed, now shipping"
     },
     {
       "id": "nb-ruka-v2",
@@ -4868,7 +5108,9 @@
       "category_en": "Embodied AI",
       "tech_en": "Tendon-driven dexterous hand with wrist and abduction degrees of freedom. Paired with Franka Arm teleoperation + BAKU behavior cloning framework; hardware, code, and teleoperation solution fully open-sourced.",
       "business_en": "Addressing the need for low-cost, learnable dexterous hands, comparable to LEAP Hand but with added wrist degrees of freedom.",
-      "funding_en": "No funding (academic project, high commercialization potential)"
+      "funding_en": "No funding (academic project, high commercialization potential)",
+      "team_en": "Xinqi Liu (NYU Shanghai) + Ruoxi Hu (NYU), Lerrel Pinto Lab.",
+      "operations_en": "GitHub 6 stars / arXiv paper 2603.26660 published"
     },
     {
       "id": "nb-refaire",
@@ -4887,7 +5129,9 @@
       "category_en": "Embodied AI",
       "tech_en": "Multimodal real-time input (camera stream + voice + image + text) → CV + LLM fusion diagnosis → Human handoff.",
       "business_en": "B2B SaaS targeting technical support/maintenance teams; vertical physical-world scenarios avoid the general AI red ocean.",
-      "funding_en": "No funding (PH early launch, no VC endorsement signal)"
+      "funding_en": "No funding (PH early launch, no VC endorsement signal)",
+      "team_en": "Brett (co-founder) + Vivien Zhang (Chinese co-founder, presumed background in Canva/Linear), China-US hybrid team.",
+      "operations_en": "Product Hunt (46 followers, launching soon)"
     },
     {
       "id": "nb-gausstwin",
@@ -4908,7 +5152,8 @@
       "tech_en": "Enables robots to train in virtual worlds and directly transfer to the real world using Gaussian splatting + digital twins.",
       "business_en": "Sim2Real is one of the biggest bottlenecks in embodied intelligence. Gaussian splatting + digital twins represent a cutting-edge direction for bridging the simulation-to-reality gap.",
       "team_en": "6cyc6 (suspected Chinese team, ICRA 2026 paper)",
-      "funding_en": "None — open-source academic paper"
+      "funding_en": "None — open-source academic paper",
+      "operations_en": "GitHub ⭐12 | Updated 2026-03-06"
     },
     {
       "id": "nb-dexrep-isaac",
@@ -4943,7 +5188,8 @@
       "source_url": "https://nextbanker.cn/",
       "scrapedAt": "2026-06-17T01:57:03.934Z",
       "name_en": "AirExo-2 (Low-Cost Exoskeleton Teleoperation)",
-      "category_en": "Embodied AI"
+      "category_en": "Embodied AI",
+      "operations_en": "GitHub ⭐39 | Updated 2026-04-03 | Funding: None (academic project)"
     },
     {
       "id": "nb-flowhoi",
@@ -4964,7 +5210,8 @@
       "tech_en": "Solves the problem of \"how robots can grasp objects with complex shapes like humans.\"",
       "business_en": "Solving the core \"grasp planning\" problem in dexterous manipulation. All dexterous hand companies require such algorithms.",
       "team_en": "Hua Jianzeng (huajian-zeng, Chinese pinyin name, confirmed Chinese team)",
-      "funding_en": "None — purely open-source academic paper"
+      "funding_en": "None — purely open-source academic paper",
+      "operations_en": "GitHub ⭐27 | Updated to 2026-02-17"
     },
     {
       "id": "nb-robonix",
@@ -4999,7 +5246,9 @@
       "scrapedAt": "2026-06-17T01:57:03.934Z",
       "tech_en": "Neutral collaboration layer supporting 12 mainstream programming agents (Claude Code, Cursor, etc.), with task allocation, progress tracking, and skill reuse. Architecture has transitioned to a team collaboration platform; cloud-based Agent Runtime coming soon.",
       "business_en": "Open source under Apache 2.0 for free; cloud-hosted Agent Runtime is monetized, with $330K ARR validating willingness to pay.",
-      "funding_en": "Accelerated by MiraclePlus F23, currently bootstrapped with $330K ARR, new funding round starting in May"
+      "funding_en": "Accelerated by MiraclePlus F23, currently bootstrapped with $330K ARR, new funding round starting in May",
+      "team_en": "Jiayuan Zhang, former TikTok engineer, serial entrepreneur (Devv AI, DevCode), MiraclePlus F23; 4-person engineering team with AI Agent collaboration.",
+      "operations_en": "GitHub 213K stars, ~3,000 forks, extremely active (still updated as of June 2026)"
     },
     {
       "id": "nb-jnmetacode",
@@ -5019,7 +5268,8 @@
       "tech_en": "Includes 215 plug-and-play AI expert role library (50 original to the Chinese market), orchestrator multi-agent orchestration CLI, security middleware shellward, and local agent toolchain (engram memory layer, skillet skill manager, tracelet debugger), covering the full AI Agent development lifecycle.",
       "business_en": "npm tool + sponsorships + content monetization, targeting AI Agent developers and enterprises, with a PLG growth model.",
       "team_en": "jnMetaCode (independent developer), WeChat public account \"AI不止语\", focused on AI programming and agent toolchains",
-      "operations_en": "GitHub 22,000 stars, continuously active, intensive releases in the past two weeks including desktop builds and bilingual website"
+      "operations_en": "GitHub 22,000 stars, continuously active, intensive releases in the past two weeks including desktop builds and bilingual website",
+      "funding_en": "Not funded, agency-agents-zh sponsored by UCloud"
     },
     {
       "id": "nb-opensolon",
@@ -5038,7 +5288,8 @@
       "tech_en": "Java lightweight framework + full-stack AI Agent, providing a complete product matrix from underlying framework to AI application development (solon-ai supports MCP protocol, Team-Agent), including soloncode programming agent and solon-flow process orchestration.",
       "business_en": "Open-source core free + enterprise edition paid (SolonCode Enterprise) + technical support, targeting Java enterprises in China as a Spring alternative.",
       "team_en": "Xie Yuejia (Noear team), Hangzhou Wu'er Technology founded in January 2024, registered capital of 1 million RMB",
-      "funding_en": "No funding"
+      "funding_en": "No funding",
+      "operations_en": "GitHub 3,375 stars, approximately 6,800 stars combined on GitHub and Gitee, actively developed"
     },
     {
       "id": "nb-0xranx",
@@ -5057,7 +5308,8 @@
       "tech_en": "Desktop GUI + MCP Server + CLI + Web UI four-piece suite. MCP Server standard protocol enables multi-IDE compatibility, combined with golembot for one-stop deployment to Feishu, DingTalk, WeCom, and WeChat.",
       "business_en": "OpenContext desktop paid subscription + Golembot enterprise SaaS, with clear willingness among Chinese enterprises to pay for AI assistants within IM, plus commission from ClawHub skill marketplace.",
       "team_en": "0xranx (Independent Developer, China), focused on AI agent toolchains, deeply adapted to China's IM ecosystem",
-      "funding_en": "No funding"
+      "funding_en": "No funding",
+      "operations_en": "GitHub 934 stars, OpenContext (587 stars) + golembot (300 stars) under continuous iteration"
     },
     {
       "id": "nb-hexagon-codes",
@@ -5076,7 +5328,8 @@
       "tech_en": "13-repo system: L0 general libraries → L1 multi-model interfaces → L2 Agent reasoning framework (hexagon, Go ecosystem LangChain + LangGraph) → L3 enterprise backend (RAG/Feishu-DingTalk integration) → L4 desktop client (Tauri + Vue3). All data processed locally, zero cloud dependency, enterprise-grade security.",
       "business_en": "Desktop free and open-source for user acquisition, with paid private deployment for enterprises (integrated with Feishu/DingTalk/Telegram), and paid distribution via the Skill marketplace.",
       "team_en": "Guo Yanjun, Independent Developer in Hangzhou, presumed background in major tech companies",
-      "funding_en": "No funding"
+      "funding_en": "No funding",
+      "operations_en": "GitHub 30 stars, 13 repos systematically built, dense commits in June 2026"
     },
     {
       "id": "nb-advaitalabs",
@@ -5095,7 +5348,8 @@
       "tech_en": "DAG-BFT consensus protocol (aegean-consensus) + distributed ledger Setu + payment gateway atara-pay + benchmark Aegeanbench. Uses causal work events instead of physical time for block generation, TEE trusted execution instead of public VM, and a gas-free auction design.",
       "business_en": "A underlying clearing and payment network for the AI Agent economy, potentially monetized through token economics or B2B API service fees. Already has hetu.org website and Discord community; testnet planned for Q3 2026.",
       "team_en": "Jialin Li, Assistant Professor at NUS School of Computing, expert in distributed systems and blockchain consensus protocols, co-founded Advaita Labs in 2020",
-      "funding_en": "No public funding information"
+      "funding_en": "No public funding information",
+      "operations_en": "GitHub 48 stars, actively developed in June 2026, Discord/Twitter community management ongoing"
     },
     {
       "id": "nb-junkai-li",
@@ -5114,7 +5368,8 @@
       "tech_en": ".NET 9 microservices architecture, integrating Qdrant vector database, AgentFramework, Ollama local models, and Zhipu AI. Multi-tenant and dynamic Skill management. Rare AI middleware in the .NET ecosystem, filling the gap for rapid deployment in government and enterprise settings.",
       "business_en": "Open-source community acquisition → enterprise private deployment → SaaS subscription, targeting the urgent AI knowledge base needs of Chinese government and manufacturing IT departments.",
       "team_en": "Li Junkai (kevin_li), Independent Developer in Guangzhou, .NET full-stack engineer",
-      "funding_en": "No funding"
+      "funding_en": "No funding",
+      "operations_en": "GitHub 486 stars / 4 forks, continuously active and iterating as of June 2026"
     },
     {
       "id": "nb-lightagent",
@@ -5133,7 +5388,8 @@
       "tech_en": "Adaptive tool mechanism (intelligently filters from a vast pool of tools, reducing token consumption by 80%); Agent self-learning; LightSwarm multi-agent.",
       "business_en": "Validated by arXiv paper (2509.09292), installable via PyPI, with a viable industry-academia-research commercialization path.",
       "team_en": "Shanghai Wanxing AI + Professor Zhang Liwen's research group at Shanghai University of Finance and Economics",
-      "funding_en": "No funding (industry-academia collaboration)"
+      "funding_en": "No funding (industry-academia collaboration)",
+      "operations_en": "GitHub 989 stars / 127 forks (created 2025-01-20, updated 2026-04-26)"
     },
     {
       "id": "nb-rorolee",
@@ -5151,7 +5407,9 @@
       "scrapedAt": "2026-06-17T01:57:03.934Z",
       "tech_en": "Portable AI Agent device that captures tasks, remembers context, and assists with work. Integrates multiple large models, ready to use out of the box.",
       "business_en": "Consumer-grade entry point for agent hardware—a portable Agent independent of phones/PCs, with 493% excess demand validation.",
-      "funding_en": "No VC funding observed"
+      "funding_en": "No VC funding observed",
+      "team_en": "Deotaland, registered in Hong Kong.",
+      "operations_en": "KS 493%+ funded, 191 backers, 44 days remaining"
     },
     {
       "id": "nb-topoclaw",
@@ -5170,7 +5428,8 @@
       "tech_en": "Cross-device GUI Agent OS (unified Android + Windows operation interface) with social collaboration features",
       "business_en": "Supported by arXiv paper, with a complete product form (APK + EXE + communication backend).",
       "team_en": "Academic/research background",
-      "funding_en": "No funding"
+      "funding_en": "No funding",
+      "operations_en": "GitHub 21 stars, very early stage"
     },
     {
       "id": "nb-aios",
@@ -5186,7 +5445,11 @@
       "daysAgo": 26,
       "source_url": "https://nextbanker.cn/",
       "scrapedAt": "2026-06-17T01:57:03.935Z",
-      "funding_en": "No funding raised (academic, with technology transfer endorsement)"
+      "funding_en": "No funding raised (academic, with technology transfer endorsement)",
+      "tech_en": "OS-level agent infrastructure (scheduling, memory, tool management) + Cerebrum SDK + Agent Store.",
+      "business_en": "Open-source OS + SDK, Agent Store concept (similar to App Store for Agents), supported by Rutgers Technology Transfer Office.",
+      "team_en": "Yongfeng Zhang (Professor at Rutgers) + Kai Mei and other Chinese team members.",
+      "operations_en": "COLM 2025 / ICLR 2025 dual top conferences, active open source on GitHub"
     },
     {
       "id": "nb-tate-a-tate",
@@ -5203,7 +5466,9 @@
       "source_url": "https://nextbanker.cn/",
       "scrapedAt": "2026-06-17T01:57:03.935Z",
       "tech_en": "No-code build of commercializable Agents, with built-in Stripe payments, user authentication, and Agent Marketplace — a one-stop Agent SaaS factory",
-      "funding_en": "No known funding rounds reported"
+      "funding_en": "No known funding rounds reported",
+      "team_en": "Zepeng She, Beijing, 8-person all-Chinese team (Lisa Liu, Mooyan, xWang, etc.)",
+      "operations_en": "PH daily ranking #2, 1,100 followers; derivative product Surgeflow (browser agent) in Beta"
     },
     {
       "id": "nb-hilbert-agentic-computer",
@@ -5220,7 +5485,8 @@
       "source_url": "https://nextbanker.cn/",
       "scrapedAt": "2026-06-17T01:57:03.935Z",
       "business_en": "Defines a new product category \"Agentic Computer,\" with 1556% oversubscribed crowdfunding validating strong demand.",
-      "funding_en": "Angel+ round completed"
+      "funding_en": "Angel+ round completed",
+      "tech_en": "Locally running DeepSeek-R1 235B + OpenClaw Agent workflow."
     },
     {
       "id": "nb-super-brain-clone",
@@ -5239,7 +5505,10 @@
       "category_en": "Silver Economy",
       "tech_en": "Photos/voice/chat logs → multimodal interactive digital twin",
       "team_en": "Zhang Zewei, small studio in Jiangsu",
-      "operations_en": "Paid customers on Taobao and WeChat"
+      "operations_en": "Paid customers on Taobao and WeChat",
+      "name_en": "Super Brain",
+      "business_en": "Reddit 1.2K upvotes, reported by NPR/China Daily, \"$3 AI Clone\" goes viral (April 2026)",
+      "funding_en": "Not funded (solo operator)"
     },
     {
       "id": "nb-youdehuo",
@@ -5260,7 +5529,8 @@
       "tech_en": "Elderly companion robot (fall detection + health monitoring + AI voice)",
       "team_en": "Hardware team in Shenzhen",
       "operations_en": "Proactively seeking B2B partners for nursing homes",
-      "funding_en": "No funding raised"
+      "funding_en": "No funding raised",
+      "business_en": "CES 2026 Twice Picks Award, 16 units sold via XHS store"
     },
     {
       "id": "nb-memohai",
@@ -5277,7 +5547,10 @@
       "source_url": "https://nextbanker.cn/",
       "scrapedAt": "2026-06-17T01:57:03.934Z",
       "business_en": "Open-source community edition for user acquisition, paid enterprise private deployment/cloud hosting, and ecosystem commission from the skill marketplace, targeting Chinese developers.",
-      "funding_en": "No funding raised"
+      "funding_en": "No funding raised",
+      "tech_en": "Memoh core engine + Go AI SDK twilight-ai + skill marketplace supermarket + Android automation Autofish, each agent running in an independent Docker container desktop, with MCP native toolchain.",
+      "team_en": "Liu (Acbox Liu), Founder of MEMOH AI PTE. LTD., a company registered in Singapore",
+      "operations_en": "GitHub 2,074 stars, multiple commits active in the past week"
     },
     {
       "id": "nb-yzfly",
@@ -5315,7 +5588,9 @@
       "scrapedAt": "2026-06-17T01:57:03.934Z",
       "business_en": "AIBotPublic monetized via aibotpro.cn subscription, with snow-cli open-source for acquisition and enterprise hosting services.",
       "team_en": "MayDay-wpf, Independent Developer in China, active promoter on V2EX and Linux.do",
-      "funding_en": "No funding raised"
+      "funding_en": "No funding raised",
+      "tech_en": "TypeScript terminal agentic coding (snow-cli) + .NET 8 AI aggregation client (AIBotPublic), dual products covering developer tools and consumer markets.",
+      "operations_en": "GitHub 0 stars total, primarily snow-cli + AIBotPublic, continuously active"
     },
     {
       "id": "nb-n2ns",
@@ -5333,7 +5608,9 @@
       "scrapedAt": "2026-06-17T01:57:03.934Z",
       "tech_en": "TypeScript/Node.js MCP full stack, covering low-level protocol adaptation → mid-level collaborative memory → high-level AI content publishing, forming a complete product matrix with project-level knowledge graph memory and multi-Agent collaboration hub",
       "business_en": "Open-source lab for traffic generation + Datafrog commercial paid products (integrated with Stripe), targeting AI developers and enterprise infrastructure.",
-      "funding_en": "No disclosed funding"
+      "funding_en": "No disclosed funding",
+      "team_en": "James Guan & Michael Wu, Datafrog LLC (Wyoming, USA), Chinese team",
+      "operations_en": "GitHub 0 stars, flagship antigravity-panel 619 stars, 251K downloads on VS Code Marketplace, recently active with iterations"
     },
     {
       "id": "nb-huangjunsen0406",
@@ -5352,7 +5629,8 @@
       "tech_en": "Python port of xiaozhi-esp32, enabling voice dialogue, visual recognition, and IoT control on PC/Mac, integrating MCP toolchain with Electron + Live2D desktop client",
       "business_en": "Driven by an open-source ecosystem, building a developer community through desktop applications and MCP toolkits, with commercialization path under exploration.",
       "team_en": "Huang Junsen, frontend engineer at an AI subsidiary of China Southern Power Grid, independent developer",
-      "funding_en": "No funding raised"
+      "funding_en": "No funding raised",
+      "operations_en": "GitHub 3,621★, core py-xiaozhi 3,361★, actively maintained recently"
     },
     {
       "id": "nb-hetaobackend",
@@ -5371,7 +5649,8 @@
       "tech_en": "Native macOS application orchestrating AI agents such as Claude Code and OpenAI Codex, supporting Kanban boards, DAG workflow pipelines, skill library accumulation, and multi-IM remote triggering",
       "business_en": "Targeting AI coding agent developers, with potential monetization through macOS paid app/subscription model.",
       "team_en": "He Tao (DanielWalnut), Peking University graduate, Android engineer at ByteDance, contributor to DeerFlow",
-      "operations_en": "GitHub 180 stars, recently active with iterations"
+      "operations_en": "GitHub 180 stars, recently active with iterations",
+      "funding_en": "Not funded, still a side project"
     },
     {
       "id": "nb-cklxx",
@@ -5390,7 +5669,8 @@
       "business_en": "Open-core model: Arle community edition is free, while high-performance features are gate-licensed under commercial terms; the ELI Agent framework charges for enterprise private deployment.",
       "team_en": "Chen Kailun, AI infrastructure engineer at ByteDance Beijing, solo full-stack developer",
       "operations_en": "GitHub 26 stars, 0 forks, frequent recent iterations, solo continuous development",
-      "funding_en": "No funding raised"
+      "funding_en": "No funding raised",
+      "tech_en": "Pure Rust LLM inference runtime arle + agent framework eli, fully self-developed from CUDA kernels to serving, with measured DeepSeek-V4-Flash decoding at 64.2 tok/s on 8×H20, supporting continuous batching, paged KV, speculative decoding, and other full optimization suites."
     },
     {
       "id": "nb-bytedesk",
@@ -5409,7 +5689,8 @@
       "business_en": "Open-source free + private deployment for customer acquisition, monetized through custom development, enterprise edition licensing, and SaaS; positioned as a domestic alternative to Zendesk/Intercom.",
       "team_en": "Ning Jinpeng (jackning), founder of Beijing Weiyu Tianxia Technology, continuously invested in open-source customer service products since 2013",
       "operations_en": "GitHub 543 stars, 29 repos across the entire ecosystem, actively iterating",
-      "funding_en": "No funding raised; registered capital only 30,000 RMB, lean team"
+      "funding_en": "No funding raised; registered capital only 30,000 RMB, lean team",
+      "tech_en": "Java full-stack + full-platform SDK (Web, Android, iOS, Flutter, Uniapp), Docker private deployment, integrating large models like Ollama and DeepSeek, RAG knowledge base Q&A + Function Calling."
     },
     {
       "id": "nb-eggbrid2",
@@ -5428,7 +5709,8 @@
       "tech_en": "VLM screen reading + coordinate clicking, low-level control via AccessibilityService, a three-level injection skill registration system, and multi-agent group chat, integrating local Gemma models, VPN/Clash proxy, and AI-generated Mini Apps",
       "business_en": "Open-source project targeting mobile AI Agent developers, with potential to evolve into an RPA or automated testing platform in the future.",
       "team_en": "xus (Independent Developer), registered via QQ email",
-      "funding_en": "No funding raised"
+      "funding_en": "No funding raised",
+      "operations_en": "GitHub 340★/0 Fork, recently active"
     }
   ]
 }

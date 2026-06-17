@@ -388,7 +388,7 @@ export default function App() {
   const investCategories = useMemo(() => {
     const counter = new Map<string, number>();
     for (const it of investData) {
-      const c = it.category || 'Other';
+      const c = (it.category_en || it.category || 'Other').trim();
       counter.set(c, (counter.get(c) ?? 0) + 1);
     }
     return Array.from(counter.entries())
@@ -404,20 +404,23 @@ export default function App() {
     }
 
     if (investCategory) {
-      result = result.filter((item) => (item.category || 'Other') === investCategory);
+      result = result.filter(
+        (item) => ((item.category_en || item.category || 'Other').trim()) === investCategory
+      );
     }
 
     if (investSearch.trim()) {
       const q = investSearch.toLowerCase();
       result = result.filter(
         item =>
+          (item.name_en || item.name).toLowerCase().includes(q) ||
           item.name.toLowerCase().includes(q) ||
           item.tagline.toLowerCase().includes(q) ||
-          item.tech.toLowerCase().includes(q) ||
-          item.business.toLowerCase().includes(q) ||
-          item.team.toLowerCase().includes(q) ||
-          item.funding.toLowerCase().includes(q) ||
-          item.category.toLowerCase().includes(q)
+          (item.tech_en || item.tech).toLowerCase().includes(q) ||
+          (item.business_en || item.business).toLowerCase().includes(q) ||
+          (item.team_en || item.team).toLowerCase().includes(q) ||
+          (item.funding_en || item.funding).toLowerCase().includes(q) ||
+          (item.category_en || item.category).toLowerCase().includes(q)
       );
     }
 
@@ -453,7 +456,7 @@ export default function App() {
     }
     const map = new Map<string, InvestItem[]>();
     for (const it of filteredInvests) {
-      const k = it.category || 'Other';
+      const k = (it.category_en || it.category || 'Other').trim();
       if (!map.has(k)) map.set(k, []);
       map.get(k)!.push(it);
     }
