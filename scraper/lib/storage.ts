@@ -53,8 +53,60 @@ export async function saveSnapshot<T>(kind: DataKind, items: T[], date?: string)
 }
 
 /**
+ * 字段级深合并：当新值是「无效空值」时保留旧值
+ *
+ * 关键设计：只对**容易抓取失败的字符串/数组字段**做兜底。
+ * 数字字段（raised / progress_pct / backers / daysLeft）即使新值为 0
+ * 也直接采用新值——众筹真的结束 / 项目下架时数字就该归零。
+ *
+ * 兜底字段：
+ *   - 空字符串：name / price / tagline / image / category 等所有 string 字段
+ *   - 已翻译：所有 *_en 后缀字段（重抓时若为空说明翻译失败，不要覆盖）
+ *   - 空数组：summary_zh / summary_en / intro_zh / intro_en 等
+ */
+function mergeFields<T extends Record<string, any>>(oldItem: T, newItem: T): T {
+  const result: Record<string, any> = { ...oldItem };
+  for (const key of Object.keys(newItem)) {
+    const newVal = newItem[key];
+    const oldVal = oldItem[key];
+
+    // 数字字段：新值原样采用（0 也是合法值）
+    if (typeof newVal === 'number' || typeof newVal === 'boolean') {
+      result[key] = newVal;
+      continue;
+    }
+
+    // 字符串：新值为空字符串且旧值非空 → 保留旧值
+    if (typeof newVal === 'string') {
+      if (newVal.trim() === '' && typeof oldVal === 'string' && oldVal.trim() !== '') {
+        continue; // 保留旧值
+      }
+      result[key] = newVal;
+      continue;
+    }
+
+    // 数组：新值为空且旧值非空 → 保留旧值
+    if (Array.isArray(newVal)) {
+      if (newVal.length === 0 && Array.isArray(oldVal) && oldVal.length > 0) {
+        continue; // 保留旧值
+      }
+      result[key] = newVal;
+      continue;
+    }
+
+    // null / undefined：保留旧值
+    if (newVal === null || newVal === undefined) {
+      if (oldVal !== null && oldVal !== undefined) continue;
+    }
+
+    result[key] = newVal;
+  }
+  return result as T;
+}
+
+/**
  * 将本次新抓取的 items 与 latest/ 已有数据按 id 合并
- * - 同 id：新条目覆盖旧条目（数据更新）
+ * - 同 id：字段级深合并（新值空 → 保留旧值；非空 → 覆盖）
  * - 旧有但本次未抓到的条目：保留（防止部分源失败导致数据丢失）
  */
 async function mergeWithExisting<T>(kind: DataKind, newItems: T[], latestDir: string): Promise<T[]> {
@@ -79,18 +131,20 @@ async function mergeWithExisting<T>(kind: DataKind, newItems: T[], latestDir: st
     if (id) mergedMap.set(String(id), item);
   }
 
-  // 新数据覆盖同 id 旧数据
+  // 新数据：同 id 做字段级合并；新 id 直接加入
   let newCount = 0;
   let updateCount = 0;
   for (const item of newItems) {
     const id = (item as any).id;
-    if (id) {
-      if (mergedMap.has(String(id))) {
-        updateCount++;
-      } else {
-        newCount++;
-      }
-      mergedMap.set(String(id), item);
+    if (!id) continue;
+    const key = String(id);
+    const existing = mergedMap.get(key);
+    if (existing) {
+      mergedMap.set(key, mergeFields(existing as any, item as any));
+      updateCount++;
+    } else {
+      mergedMap.set(key, item);
+      newCount++;
     }
   }
 
