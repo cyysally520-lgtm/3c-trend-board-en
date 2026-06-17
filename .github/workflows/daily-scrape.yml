@@ -63,7 +63,13 @@ jobs:
           git config --local user.name "GitHub Actions Bot"
           git add data/
           git commit -m "chore: daily scrape $(date -u +%Y-%m-%d)"
-          git push
+          # 跑爬虫期间 main 可能有新 commit，先 rebase 再 push
+          # 重试 3 次以防 push 同时被其他动作领先
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push && break
+            echo "push attempt $i failed, retrying in 5s..."
+            sleep 5
+          done
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         # Railway 监听 main 分支，commit push 后会自动重新部署，无需额外 webhook
