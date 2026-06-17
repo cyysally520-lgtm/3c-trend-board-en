@@ -22,7 +22,8 @@
       "summary_zh": [
         "A fully local, open-source replacement board that brings Home Assistant voice to the 1st Gen Google Home Mini"
       ],
-      "scrapedAt": "2026-06-17T01:53:23.273Z"
+      "scrapedAt": "2026-06-17T01:53:23.273Z",
+      "category_tag_en": "#Hardware"
     },
     {
       "id": "cs-modos-tech-modos-flow",
@@ -43,7 +44,8 @@
       "summary_zh": [
         "A paper-like monitor for reading, writing, and focused work"
       ],
-      "scrapedAt": "2026-06-17T01:53:23.274Z"
+      "scrapedAt": "2026-06-17T01:53:23.274Z",
+      "category_tag_en": "#Hardware"
     },
     {
       "id": "cs-wafer-space-gf180mcu-run-2",
@@ -64,7 +66,8 @@
       "summary_zh": [
         "Fabricate 1,000 chips of your own design"
       ],
-      "scrapedAt": "2026-06-17T01:53:23.274Z"
+      "scrapedAt": "2026-06-17T01:53:23.274Z",
+      "category_tag_en": "#Hardware"
     },
     {
       "id": "cs-leafkvm-leafkvm",
@@ -85,7 +88,8 @@
       "summary_zh": [
         "A flexible KVM remote control with support for wireless connectivity"
       ],
-      "scrapedAt": "2026-06-17T01:53:23.274Z"
+      "scrapedAt": "2026-06-17T01:53:23.274Z",
+      "category_tag_en": "#Hardware"
     },
     {
       "id": "cs-meatpi-electronics-wican-pro",
@@ -106,7 +110,8 @@
       "summary_zh": [
         "Advanced OBD scanner for next-generation vehicle diagnostics and Home Assistant integration"
       ],
-      "scrapedAt": "2026-06-17T01:53:23.275Z"
+      "scrapedAt": "2026-06-17T01:53:23.275Z",
+      "category_tag_en": "#Hardware"
     },
     {
       "id": "cs-meatpi-electronics-ollie-v2",
@@ -127,7 +132,8 @@
       "summary_zh": [
         "An even better all-in-one USB to isolated-UARTx2/CAN/RS485/RS232 converter"
       ],
-      "scrapedAt": "2026-06-17T01:53:23.275Z"
+      "scrapedAt": "2026-06-17T01:53:23.275Z",
+      "category_tag_en": "#Hardware"
     },
     {
       "id": "cs-meatpi-electronics-wican",
@@ -148,7 +154,8 @@
       "summary_zh": [
         "Open source, ESP32-C3 CAN adapter with USB, Wi-Fi, and BLE support"
       ],
-      "scrapedAt": "2026-06-17T01:53:23.275Z"
+      "scrapedAt": "2026-06-17T01:53:23.275Z",
+      "category_tag_en": "#Hardware"
     },
     {
       "id": "cs-bela-bela-gem-stereo-and-multi",
@@ -169,7 +176,8 @@
       "summary_zh": [
         "A high-performance audio and sensor system for the PocketBeagle 2"
       ],
-      "scrapedAt": "2026-06-17T01:53:23.276Z"
+      "scrapedAt": "2026-06-17T01:53:23.276Z",
+      "category_tag_en": "#Hardware"
     },
     {
       "id": "cs-sitron-labs-solder-ninja-pen",
@@ -190,7 +198,8 @@
       "summary_zh": [
         "A 45 W USB-powered soldering iron compatible with Weller RT Micro tips"
       ],
-      "scrapedAt": "2026-06-17T01:53:23.276Z"
+      "scrapedAt": "2026-06-17T01:53:23.276Z",
+      "category_tag_en": "#Hardware"
     },
     {
       "id": "cs-aerio-solutions-usb-insight-hub",
@@ -211,7 +220,8 @@
       "summary_zh": [
         "A USB interfacing tool for developers & tech enthusiasts"
       ],
-      "scrapedAt": "2026-06-17T01:53:23.276Z"
+      "scrapedAt": "2026-06-17T01:53:23.276Z",
+      "category_tag_en": "#Hardware"
     },
     {
       "id": "cs-icy-electronics-icepi-zero",
@@ -232,7 +242,8 @@
       "summary_zh": [
         "A powerful FPGA dev board in a familiar, pint-sized package"
       ],
-      "scrapedAt": "2026-06-17T01:53:23.277Z"
+      "scrapedAt": "2026-06-17T01:53:23.277Z",
+      "category_tag_en": "#Hardware"
     },
     {
       "id": "cs-saraai-sarakit",
@@ -253,7 +264,8 @@
       "summary_zh": [
         "Raspberry Pi CM4 expansion board with ChatGPT-based voice control, motor control, powerful sensors, and tons of tutorials"
       ],
-      "scrapedAt": "2026-06-17T01:53:23.277Z"
+      "scrapedAt": "2026-06-17T01:53:23.277Z",
+      "category_tag_en": "#Hardware"
     },
     {
       "id": "cs-apfaudio-tiliqua",
@@ -274,7 +286,8 @@
       "summary_zh": [
         "A powerful, hackable FPGA-based audio multitool for Eurorack"
       ],
-      "scrapedAt": "2026-06-17T01:53:23.277Z"
+      "scrapedAt": "2026-06-17T01:53:23.277Z",
+      "category_tag_en": "#Hardware"
     },
     {
       "id": "cs-silicognition-lifepo4wered-pi-plus",
@@ -295,7 +308,8 @@
       "summary_zh": [
         "A full-featured LiFePO4 battery, power manager, and UPS for the Raspberry Pi"
       ],
-      "scrapedAt": "2026-06-17T01:53:23.277Z"
+      "scrapedAt": "2026-06-17T01:53:23.277Z",
+      "category_tag_en": "#Hardware"
     },
     {
       "id": "cs-techxartisan-openterface-mini-kvm",
@@ -316,7 +330,8 @@
       "summary_zh": [
         "Your Laptop as a KVM Console"
       ],
-      "scrapedAt": "2026-06-17T01:53:23.277Z"
+      "scrapedAt": "2026-06-17T01:53:23.277Z",
+      "category_tag_en": "#Hardware"
     },
     {
       "id": "cs-mnt-pocket-reform",
@@ -337,7 +352,8 @@
       "summary_zh": [
         "A newer, smaller, lighter, more-affordable, seven-inch mini Reform laptop that remains fully open source"
       ],
-      "scrapedAt": "2026-06-17T01:53:23.278Z"
+      "scrapedAt": "2026-06-17T01:53:23.278Z",
+      "category_tag_en": "#Hardware"
     },
     {
       "id": "cs-securinghw-tigard",
@@ -358,7 +374,8 @@
       "summary_zh": [
         "An open source FT2232H-based, multi-protocol, multi-voltage tool for hardware hacking"
       ],
-      "scrapedAt": "2026-06-17T01:53:23.278Z"
+      "scrapedAt": "2026-06-17T01:53:23.278Z",
+      "category_tag_en": "#Hardware"
     },
     {
       "id": "cs-newae-chipwhisperer-husky",
@@ -379,7 +396,8 @@
       "summary_zh": [
         "The power-analysis and fault-injection tool you can hold in your paw"
       ],
-      "scrapedAt": "2026-06-17T01:53:23.278Z"
+      "scrapedAt": "2026-06-17T01:53:23.278Z",
+      "category_tag_en": "#Hardware"
     },
     {
       "id": "mk-s111pro",
@@ -398,7 +416,8 @@
       "campaign_url": "https://www.makuake.com/project/s111pro",
       "category_tag_zh": "#科技",
       "summary_zh": [],
-      "scrapedAt": "2026-06-17T01:55:33.330Z"
+      "scrapedAt": "2026-06-17T01:55:33.330Z",
+      "category_tag_en": "#Technology"
     },
     {
       "id": "mk-kadobin",
@@ -417,7 +436,8 @@
       "campaign_url": "https://www.makuake.com/project/kadobin",
       "category_tag_zh": "#科技",
       "summary_zh": [],
-      "scrapedAt": "2026-06-17T01:55:33.330Z"
+      "scrapedAt": "2026-06-17T01:55:33.330Z",
+      "category_tag_en": "#Technology"
     },
     {
       "id": "mk-duraas3",
@@ -436,7 +456,8 @@
       "campaign_url": "https://www.makuake.com/project/duraas3",
       "category_tag_zh": "#科技",
       "summary_zh": [],
-      "scrapedAt": "2026-06-17T01:55:33.330Z"
+      "scrapedAt": "2026-06-17T01:55:33.330Z",
+      "category_tag_en": "#Technology"
     },
     {
       "id": "mk-keychronk3-he-ultra",
@@ -455,7 +476,8 @@
       "campaign_url": "https://www.makuake.com/project/keychronk3-he-ultra",
       "category_tag_zh": "#科技",
       "summary_zh": [],
-      "scrapedAt": "2026-06-17T01:55:33.330Z"
+      "scrapedAt": "2026-06-17T01:55:33.330Z",
+      "category_tag_en": "#Technology"
     },
     {
       "id": "mk-lunada_t2",
@@ -474,7 +496,8 @@
       "campaign_url": "https://www.makuake.com/project/lunada_t2",
       "category_tag_zh": "#科技",
       "summary_zh": [],
-      "scrapedAt": "2026-06-17T01:55:33.330Z"
+      "scrapedAt": "2026-06-17T01:55:33.330Z",
+      "category_tag_en": "#Technology"
     },
     {
       "id": "mk-daynight-scope2",
@@ -493,7 +516,8 @@
       "campaign_url": "https://www.makuake.com/project/daynight-scope2",
       "category_tag_zh": "#科技",
       "summary_zh": [],
-      "scrapedAt": "2026-06-17T01:55:33.330Z"
+      "scrapedAt": "2026-06-17T01:55:33.330Z",
+      "category_tag_en": "#Technology"
     },
     {
       "id": "mk-jiffy75",
@@ -701,7 +725,8 @@
       "summary_zh": [
         "USB-C wall charger 60% smaller than Apple's 30W | Fast charge your phone | Foldable prongs | USB-C cable included | Always on your keys"
       ],
-      "scrapedAt": "2026-06-17T01:54:04.336Z"
+      "scrapedAt": "2026-06-17T01:54:04.336Z",
+      "category_tag_en": "#Technology"
     },
     {
       "id": "ks-skysphere-building-an-intelligent-all-sky-camera-network",
@@ -722,7 +747,8 @@
       "summary_zh": [
         "Real-time sky monitoring powered by intelligent cameras and continuous, trusted observational data."
       ],
-      "scrapedAt": "2026-06-17T01:54:04.336Z"
+      "scrapedAt": "2026-06-17T01:54:04.336Z",
+      "category_tag_en": "#Technology"
     },
     {
       "id": "ks-sond-dreambuds",
@@ -743,7 +769,8 @@
       "summary_zh": [
         "A new category in sleep tech. Helps you fall asleep, stay asleep, & wake up refreshed. No subscription fees. Watch video to learn more"
       ],
-      "scrapedAt": "2026-06-17T01:54:04.336Z"
+      "scrapedAt": "2026-06-17T01:54:04.336Z",
+      "category_tag_en": "#Technology"
     },
     {
       "id": "ks-lumos-sonorus-mesh-intercom-helmet-with-360-visibility",
@@ -764,7 +791,8 @@
       "summary_zh": [
         "Full-Duplex Mesh Intercom | Up to 15 Riders | Open-Ear Audio | E-Bike Safety | 360° Visibility | Turn Signals & Brake Light"
       ],
-      "scrapedAt": "2026-06-17T01:54:04.336Z"
+      "scrapedAt": "2026-06-17T01:54:04.336Z",
+      "category_tag_en": "#Technology"
     },
     {
       "id": "ks-airox-145-psi-cordless-dual-compressor-station-just-99-lb",
@@ -807,7 +835,8 @@
       "summary_zh": [
         "Monitors your nervous system, detects when sleep fragments and intervenes using vagus and vestibular nerve stimulation. Non-invasively."
       ],
-      "scrapedAt": "2026-06-17T01:54:04.336Z"
+      "scrapedAt": "2026-06-17T01:54:04.336Z",
+      "category_tag_en": "#Technology"
     },
     {
       "id": "ks-dojo-air-smarter-breathwork-with-real-time-volume-feedback",
@@ -828,7 +857,8 @@
       "summary_zh": [
         "Improve your breathing and track your results using guided training exercises, precise volumetric measurement, and real time data."
       ],
-      "scrapedAt": "2026-06-17T01:54:04.336Z"
+      "scrapedAt": "2026-06-17T01:54:04.336Z",
+      "category_tag_en": "#Technology"
     },
     {
       "id": "ks-comet-q",
@@ -849,7 +879,8 @@
       "summary_zh": [
         "The World's First Cross-OS Remote Control for Your Mobile Device, including Laptop, Phones, Macmini, Tablet, and more over USB-C Cable."
       ],
-      "scrapedAt": "2026-06-17T01:54:04.336Z"
+      "scrapedAt": "2026-06-17T01:54:04.336Z",
+      "category_tag_en": "#Technology"
     },
     {
       "id": "ks-xtool-wonderpress-the-most-creative-3d-auto-heat-press-ever",
@@ -870,7 +901,8 @@
       "summary_zh": [
         "All-in-One Modular | Auto Heat Press | 3D Sublimation | Vacuum Forming | DTF Curing | Craft Baking"
       ],
-      "scrapedAt": "2026-06-17T01:54:04.336Z"
+      "scrapedAt": "2026-06-17T01:54:04.336Z",
+      "category_tag_en": "#Technology"
     },
     {
       "id": "ks-inkwon-tag-worlds-1st-4-in-1-pocket-color-inkjet-printer",
@@ -891,7 +923,8 @@
       "summary_zh": [
         "Tattoo Sticker | Heat Transfer | Sticker | HD Image - Tag your life with Creativity"
       ],
-      "scrapedAt": "2026-06-17T01:54:04.336Z"
+      "scrapedAt": "2026-06-17T01:54:04.336Z",
+      "category_tag_en": "#Technology"
     },
     {
       "id": "ks-the-omara-scent-display-for-gaming",
@@ -974,7 +1007,8 @@
       "campaign_url": "https://www.indiegogo.com/en/projects/skwheel/skwheel-peak",
       "category_tag_zh": "#科技",
       "summary_zh": [],
-      "scrapedAt": "2026-06-17T01:54:24.133Z"
+      "scrapedAt": "2026-06-17T01:54:24.133Z",
+      "category_tag_en": "#Technology"
     },
     {
       "id": "igo-vitesy-vitesy-fruit-bowl",
@@ -993,7 +1027,8 @@
       "campaign_url": "https://www.indiegogo.com/en/projects/vitesy/vitesy-fruit-bowl",
       "category_tag_zh": "#科技",
       "summary_zh": [],
-      "scrapedAt": "2026-06-17T01:54:24.133Z"
+      "scrapedAt": "2026-06-17T01:54:24.133Z",
+      "category_tag_en": "#Technology"
     },
     {
       "id": "igo-roe-network-original-sin-prelude-to-biohazard",
@@ -1012,7 +1047,8 @@
       "campaign_url": "https://www.indiegogo.com/en/projects/roe-network/original-sin-prelude-to-biohazard",
       "category_tag_zh": "#科技",
       "summary_zh": [],
-      "scrapedAt": "2026-06-17T01:54:24.133Z"
+      "scrapedAt": "2026-06-17T01:54:24.133Z",
+      "category_tag_en": "#Technology"
     },
     {
       "id": "igo-luminanrg-fat-iron-core",
@@ -1031,7 +1067,8 @@
       "campaign_url": "https://www.indiegogo.com/en/projects/luminanrg/fat-iron-core",
       "category_tag_zh": "#科技",
       "summary_zh": [],
-      "scrapedAt": "2026-06-17T01:54:24.133Z"
+      "scrapedAt": "2026-06-17T01:54:24.133Z",
+      "category_tag_en": "#Technology"
     },
     {
       "id": "igo-mission-first-marines-always-mission-first-marines-always",
@@ -1075,7 +1112,12 @@
         "视觉叙事情感张力"
       ],
       "scrapedAt": "2026-06-12T12:41:02.796Z",
-      "category_tag_en": "#Technology"
+      "category_tag_en": "#Technology",
+      "summary_en": [
+        "Feature-length revenge-themed narrative film",
+        "Crowdfunding project for film production",
+        "Emotional tension through visual storytelling"
+      ]
     },
     {
       "id": "igo-edenluxotus-eyeary-your-personal-ai-eye-focus-coach",
@@ -1099,7 +1141,12 @@
         "智能眼部健康管理"
       ],
       "scrapedAt": "2026-06-12T12:41:02.796Z",
-      "category_tag_en": "#Technology"
+      "category_tag_en": "#Technology",
+      "summary_en": [
+        "AI-powered focus training",
+        "Enhanced visual cognitive abilities",
+        "Intelligent eye health management"
+      ]
     },
     {
       "id": "mk-omibo",
@@ -1118,7 +1165,8 @@
       "campaign_url": "https://www.makuake.com/project/omibo",
       "category_tag_zh": "#科技",
       "summary_zh": [],
-      "scrapedAt": "2026-06-17T01:55:33.330Z"
+      "scrapedAt": "2026-06-17T01:55:33.330Z",
+      "category_tag_en": "#Technology"
     },
     {
       "id": "ks-iron-fleet-the-diy-rc-tank-that-teaches-real-engineering",
@@ -1181,7 +1229,8 @@
       "campaign_url": "https://www.makuake.com/project/voicecard",
       "category_tag_zh": "#科技",
       "summary_zh": [],
-      "scrapedAt": "2026-06-17T01:55:33.330Z"
+      "scrapedAt": "2026-06-17T01:55:33.330Z",
+      "category_tag_en": "#Technology"
     },
     {
       "id": "igo-damla-ozoral-nefes-2026-a-short-film-by-damla-ozoral",
@@ -1205,7 +1254,12 @@
         "电影项目众筹支持"
       ],
       "scrapedAt": "2026-06-12T12:41:02.796Z",
-      "category_tag_en": "#Technology"
+      "category_tag_en": "#Technology",
+      "summary_en": [
+        "Independent short film artistic creation",
+        "Emotional expression through visual storytelling",
+        "Crowdfunding support for film projects"
+      ]
     },
     {
       "id": "igo-volk-volk-2nd-album-crowdfund",
@@ -1275,7 +1329,8 @@
       "campaign_url": "https://www.makuake.com/project/powerbank_01",
       "category_tag_zh": "#科技",
       "summary_zh": [],
-      "scrapedAt": "2026-06-17T01:55:33.330Z"
+      "scrapedAt": "2026-06-17T01:55:33.330Z",
+      "category_tag_en": "#Technology"
     },
     {
       "id": "mk-ontap_roam",
@@ -1294,7 +1349,8 @@
       "campaign_url": "https://www.makuake.com/project/ontap_roam",
       "category_tag_zh": "#科技",
       "summary_zh": [],
-      "scrapedAt": "2026-06-17T01:55:33.330Z"
+      "scrapedAt": "2026-06-17T01:55:33.330Z",
+      "category_tag_en": "#Technology"
     },
     {
       "id": "ks-craftphilia-worlds-first-fully-automated-tufting-machine",
@@ -1315,7 +1371,8 @@
       "summary_zh": [
         "All-In-One Frame & Tufting System | Expandable Tufting Area up to 70×140 cm | Smart Automation, Unlimited Freedom"
       ],
-      "scrapedAt": "2026-06-17T01:54:04.336Z"
+      "scrapedAt": "2026-06-17T01:54:04.336Z",
+      "category_tag_en": "#Technology"
     },
     {
       "id": "ks-jaye-band-the-worlds-most-discreet-minimalist-smartwatch",
@@ -1336,7 +1393,8 @@
       "summary_zh": [
         "Built to Keep You Focused"
       ],
-      "scrapedAt": "2026-06-17T01:54:04.336Z"
+      "scrapedAt": "2026-06-17T01:54:04.336Z",
+      "category_tag_en": "#Technology"
     },
     {
       "id": "ks-senso-smart-and-gamified-plant-sensor",
@@ -1357,7 +1415,8 @@
       "summary_zh": [
         "A Gift to your plants, turns plant care into a fun game—for all plants, Tracks moisture, temp & sunlight in real time."
       ],
-      "scrapedAt": "2026-06-17T01:54:04.336Z"
+      "scrapedAt": "2026-06-17T01:54:04.336Z",
+      "category_tag_en": "#Technology"
     },
     {
       "id": "mk-3in1coolingstation",
@@ -1376,7 +1435,8 @@
       "campaign_url": "https://www.makuake.com/project/3in1coolingstation",
       "category_tag_zh": "#科技",
       "summary_zh": [],
-      "scrapedAt": "2026-06-17T01:55:33.330Z"
+      "scrapedAt": "2026-06-17T01:55:33.330Z",
+      "category_tag_en": "#Technology"
     },
     {
       "id": "mk-emoka",
@@ -1395,7 +1455,8 @@
       "campaign_url": "https://www.makuake.com/project/emoka",
       "category_tag_zh": "#科技",
       "summary_zh": [],
-      "scrapedAt": "2026-06-17T01:55:33.330Z"
+      "scrapedAt": "2026-06-17T01:55:33.330Z",
+      "category_tag_en": "#Technology"
     },
     {
       "id": "igo-one-netbook-onexplayer-x2-mini-prothe-ultimate-3-in-1-oled-gaming-handheld",
@@ -1414,7 +1475,8 @@
       "campaign_url": "https://www.indiegogo.com/en/projects/one-netbook/onexplayer-x2-mini-prothe-ultimate-3-in-1-oled-gaming-handheld",
       "category_tag_zh": "#科技",
       "summary_zh": [],
-      "scrapedAt": "2026-06-17T01:54:24.133Z"
+      "scrapedAt": "2026-06-17T01:54:24.133Z",
+      "category_tag_en": "#Technology"
     },
     {
       "id": "igo-gpdhk-gpdg2",
@@ -1433,7 +1495,8 @@
       "campaign_url": "https://www.indiegogo.com/en/projects/gpdhk/gpdg2",
       "category_tag_zh": "#科技",
       "summary_zh": [],
-      "scrapedAt": "2026-06-17T01:54:24.133Z"
+      "scrapedAt": "2026-06-17T01:54:24.133Z",
+      "category_tag_en": "#Technology"
     },
     {
       "id": "igo-gpdhk-gpdbox",
@@ -1452,7 +1515,8 @@
       "campaign_url": "https://www.indiegogo.com/en/projects/gpdhk/gpdbox",
       "category_tag_zh": "#科技",
       "summary_zh": [],
-      "scrapedAt": "2026-06-17T01:54:24.133Z"
+      "scrapedAt": "2026-06-17T01:54:24.133Z",
+      "category_tag_en": "#Technology"
     },
     {
       "id": "igo-zaidkhan-38242911-quieto-snore-less-sleep-better--2",
@@ -1471,7 +1535,8 @@
       "campaign_url": "https://www.indiegogo.com/en/projects/zaidkhan-38242911/quieto-snore-less-sleep-better--2",
       "category_tag_zh": "#科技",
       "summary_zh": [],
-      "scrapedAt": "2026-06-17T01:54:24.133Z"
+      "scrapedAt": "2026-06-17T01:54:24.133Z",
+      "category_tag_en": "#Technology"
     },
     {
       "id": "igo-replicaking-the-first-justice-machine-112-scale-deluxe-action-figure-box-setcrowdfund-exclusive",
@@ -1490,7 +1555,8 @@
       "campaign_url": "https://www.indiegogo.com/en/projects/replicaking/the-first-justice-machine-112-scale-deluxe-action-figure-box-setcrowdfund-exclusive",
       "category_tag_zh": "#科技",
       "summary_zh": [],
-      "scrapedAt": "2026-06-17T01:54:24.133Z"
+      "scrapedAt": "2026-06-17T01:54:24.133Z",
+      "category_tag_en": "#Technology"
     },
     {
       "id": "igo-kelliemadison-nenuthemagicalwizard",
@@ -1509,7 +1575,8 @@
       "campaign_url": "https://www.indiegogo.com/en/projects/kelliemadison/nenuthemagicalwizard",
       "category_tag_zh": "#科技",
       "summary_zh": [],
-      "scrapedAt": "2026-06-17T01:54:24.133Z"
+      "scrapedAt": "2026-06-17T01:54:24.133Z",
+      "category_tag_en": "#Technology"
     },
     {
       "id": "igo-augustgraygall-your-eyes-look-a-lot-like-mine",
@@ -1528,7 +1595,8 @@
       "campaign_url": "https://www.indiegogo.com/en/projects/augustgraygall/your-eyes-look-a-lot-like-mine",
       "category_tag_zh": "#科技",
       "summary_zh": [],
-      "scrapedAt": "2026-06-17T01:54:24.133Z"
+      "scrapedAt": "2026-06-17T01:54:24.133Z",
+      "category_tag_en": "#Technology"
     }
   ]
 }
