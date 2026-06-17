@@ -10,6 +10,7 @@ export interface CrowdfundingItem {
   currency: string;
   currencySymbol: string;
   progress_pct: number;
+  daysLeft?: number;
   backers: number;
   price: string;
   campaign_url: string;

@@ -15,6 +15,7 @@ export interface RawCrowdfundingItem {
   currency: string;          // 三字母代码 USD/JPY/EUR
   currencySymbol: string;
   progress_pct: number;
+  daysLeft?: number;         // 距 deadline 剩余天数（KS 才准，0 = 已结束 / 未知）
   backers: number;
   price: string;             // 保留原始字符串，如 "$199"
   campaign_url: string;

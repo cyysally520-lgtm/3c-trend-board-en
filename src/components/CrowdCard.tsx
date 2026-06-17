@@ -82,7 +82,7 @@ export const CrowdCard: React.FC<CrowdCardProps> = ({ item }) => {
         {/* High Precision Stats Rows (Lucide Icons, clean bullets, colored metrics) */}
         <div className="space-y-3 bg-[#f8fafc]/80 p-4 rounded-xl border border-slate-100">
           
-          {/* Row 1: Raised + Progress %（同行靠两端，字小不截断） */}
+          {/* Row 1: Raised + (KS: Days left, 其他: Progress %) */}
           <div className="flex items-center justify-between text-[12px] sm:text-[13px] text-slate-600 gap-2">
             <div className="flex items-center gap-1.5 min-w-0 flex-1">
               <Clock className="w-3.5 h-3.5 text-slate-400 shrink-0" />
@@ -90,16 +90,23 @@ export const CrowdCard: React.FC<CrowdCardProps> = ({ item }) => {
                 Raised <strong className="text-slate-800 font-bold font-mono">{formatRaised(item.raised, item.currencySymbol)}</strong>
               </span>
             </div>
-            {item.progress_pct > 0 && (
+            {item.platform === 'Kickstarter' && typeof item.daysLeft === 'number' ? (
+              <div className="flex items-center gap-1 shrink-0">
+                <span className="text-slate-400 font-normal">Days left</span>
+                <span className={`font-bold font-mono ${item.daysLeft === 0 ? 'text-slate-400' : 'text-[#10b981]'}`}>
+                  {item.daysLeft === 0 ? 'Ended' : item.daysLeft}
+                </span>
+              </div>
+            ) : item.progress_pct > 0 ? (
               <div className="flex items-center gap-1 shrink-0">
                 <span className="text-slate-400 font-normal">Progress</span>
                 <span className="text-[#10b981] font-bold font-mono">{item.progress_pct}%</span>
               </div>
-            )}
+            ) : null}
           </div>
 
-          {/* Progress bar（只有有进度才显示） */}
-          {item.progress_pct > 0 && (
+          {/* Progress bar（KS 不显示，其他平台有进度时显示） */}
+          {item.platform !== 'Kickstarter' && item.progress_pct > 0 && (
             <div className="py-0.5">
               <div className="w-full bg-slate-100 rounded-full h-[6px] overflow-hidden">
                 <div

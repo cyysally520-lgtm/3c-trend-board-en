@@ -158,12 +158,19 @@ async function extractFromDataProject(page: import('playwright').Page, maxItems:
         const pledgedSymbol = typeof p.pledged === 'object' ? p.pledged.currency_symbol : (p.currency_symbol || '$');
         const goalAmount = typeof p.goal === 'object' ? p.goal.amount : p.goal;
         const rawPct = p.percent_funded || (goalAmount && goalAmount > 0 ? (pledgedAmount / goalAmount) * 100 : 0);
+        // 剩余天数：deadline 是 unix 秒
+        let daysLeft = 0;
+        if (typeof p.deadline === 'number' && p.deadline > 0) {
+          const diffSec = p.deadline - Math.floor(Date.now() / 1000);
+          daysLeft = Math.max(0, Math.ceil(diffSec / 86400));
+        }
         items.push({
           slug: p.slug || p.id, name: p.name, blurb: p.blurb,
           campaignUrl: p.urls?.web?.project || 'https://www.kickstarter.com/projects/' + (p.creator?.slug || '') + '/' + p.slug,
           image: p.photo?.ed || p.photo?.full || p.photo?.med || '',
           pledgedAmount, pledgedCurrency, pledgedSymbol, goalAmount,
           progressPct: Math.round(rawPct), backers: p.backers_count || 0,
+          daysLeft,
           founder: p.creator?.name || 'Unknown',
           rawLocation: p.location?.displayable_name || p.location?.name || 'Unknown',
           locationCountry: p.location?.country || '', catSlug: p.category?.slug || '',
@@ -178,6 +185,7 @@ async function extractFromDataProject(page: import('playwright').Page, maxItems:
     founder: r.founder, location: simplifyLocation(r.rawLocation, r.locationCountry),
     raised: r.pledgedAmount || 0, currency: r.pledgedCurrency || 'USD', currencySymbol: r.pledgedSymbol || '$',
     progress_pct: r.progressPct, backers: r.backers, price: '', campaign_url: r.campaignUrl,
+    daysLeft: r.daysLeft,
     category_tag_zh: r.catSlug.includes('tech') || r.catSlug.includes('hardware') ? '#科技' : r.catSlug.includes('design') || r.catSlug.includes('product') ? '#设计' : '#科技',
     summary_zh: r.blurb ? [r.blurb.slice(0, 200)] : [], scrapedAt: new Date().toISOString(),
   }));
