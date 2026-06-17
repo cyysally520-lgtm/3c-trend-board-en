@@ -115,32 +115,71 @@ export const StartupCard: React.FC<StartupCardProps> = ({ item }) => {
           </AnimatePresence>
         </div>
 
-        {/* Founders and location details rows */}
+        {/* Meta row: a16z 用 Posted/Feature；YC 用 Team size/Location */}
         <div className="pt-3 grid grid-cols-2 gap-4 text-[11px] border-t border-slate-100/85">
-          <div className="space-y-0.5">
-            <span className="text-slate-400 flex items-center gap-1">
-              <Users className="w-3 h-3 text-slate-400" />
-              Team size
-            </span>
-            <p className="font-semibold text-slate-700 truncate" title={item.team_size || item.founders}>
-              {item.team_size || item.founders || '—'}
-            </p>
-          </div>
-          <div className="space-y-0.5">
-            <span className="text-slate-400 flex items-center gap-1">
-              <MapPin className="w-3 h-3 text-slate-400" />
-              Location
-            </span>
-            <p className="font-semibold text-slate-700 truncate" title={item.location}>
-              {item.location}
-            </p>
-          </div>
+          {item.source === 'a16z' ? (
+            <>
+              <div className="space-y-0.5">
+                <span className="text-slate-400 flex items-center gap-1">
+                  <Users className="w-3 h-3 text-slate-400" />
+                  Posted
+                </span>
+                <p className="font-semibold text-slate-700 truncate">
+                  {item.team_size || '—'}
+                </p>
+              </div>
+              <div className="space-y-0.5">
+                <span className="text-slate-400 flex items-center gap-1">
+                  <MapPin className="w-3 h-3 text-slate-400" />
+                  Feature
+                </span>
+                {item.location ? (
+                  <span className="inline-flex items-center text-[11px] font-semibold px-2 py-0.5 rounded-full bg-blue-50 text-blue-700 border border-blue-200 truncate max-w-full" title={item.location}>
+                    {item.location}
+                  </span>
+                ) : (
+                  <p className="font-semibold text-slate-700 truncate">—</p>
+                )}
+              </div>
+            </>
+          ) : (
+            <>
+              <div className="space-y-0.5">
+                <span className="text-slate-400 flex items-center gap-1">
+                  <Users className="w-3 h-3 text-slate-400" />
+                  Team size
+                </span>
+                <p className="font-semibold text-slate-700 truncate" title={item.team_size || item.founders}>
+                  {item.team_size || item.founders || '—'}
+                </p>
+              </div>
+              <div className="space-y-0.5">
+                <span className="text-slate-400 flex items-center gap-1">
+                  <MapPin className="w-3 h-3 text-slate-400" />
+                  Location
+                </span>
+                <p className="font-semibold text-slate-700 truncate" title={item.location}>
+                  {item.location}
+                </p>
+              </div>
+            </>
+          )}
         </div>
       </div>
 
-      {/* Footer link to company profiles */}
+      {/* Footer：左 source 链接 + 右 公司官网 */}
       <div className="mt-4 pt-3 border-t border-slate-50 flex items-center justify-between">
-        {item.source !== 'a16z' && (
+        {item.source === 'a16z' ? (
+          <a
+            href={item.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs font-bold hover:underline inline-flex items-center gap-0.5 cursor-pointer text-sky-600 hover:text-sky-700"
+          >
+            View on a16z
+            <ArrowUpRight className="w-3.5 h-3.5" />
+          </a>
+        ) : (
           <a
             href={`https://www.ycombinator.com/companies/${item.id.replace('yc-', '')}`}
             target="_blank"
@@ -151,17 +190,19 @@ export const StartupCard: React.FC<StartupCardProps> = ({ item }) => {
             <ArrowUpRight className="w-3.5 h-3.5" />
           </a>
         )}
-        <a
-          href={item.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className={`text-xs font-bold hover:underline inline-flex items-center gap-0.5 cursor-pointer ${
-            item.source === 'a16z' ? 'text-sky-600 hover:text-sky-700' : 'text-orange-600 hover:text-orange-700'
-          }`}
-        >
-          {item.source === 'a16z' ? 'View on a16z' : 'Company website'}
-          <ArrowUpRight className="w-3.5 h-3.5" />
-        </a>
+        {(item.source === 'a16z' ? item.company_url : item.url) && (
+          <a
+            href={item.source === 'a16z' ? item.company_url : item.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`text-xs font-bold hover:underline inline-flex items-center gap-0.5 cursor-pointer ${
+              item.source === 'a16z' ? 'text-sky-600 hover:text-sky-700' : 'text-orange-600 hover:text-orange-700'
+            }`}
+          >
+            Company website
+            <ArrowUpRight className="w-3.5 h-3.5" />
+          </a>
+        )}
       </div>
     </div>
   );

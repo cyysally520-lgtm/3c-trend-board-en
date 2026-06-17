@@ -118,19 +118,43 @@ export async function scrapeA16z(maxItems = 30): Promise<ScrapeResult<RawStartup
         }
         const intro = (ogDesc || e.intro || '').trim().slice(0, 500);
 
-        // 公司 logo：详情页第一个 <img>（实测固定规律 logo_xxx.svg）
-        const allImgs = $$('img').toArray();
+        // 公司 logo + 公司官网：详情页里 <a href="{company_url}"><img src="{logo_xxx.svg}">
+        // 用 cheerio 找含 logo_ 的 svg img + 它的父 a 链接
         let logo = '';
-        for (const img of allImgs) {
+        let companyUrl = '';
+        $$('img').each((_, img) => {
+          if (logo) return;
           const src = $$(img).attr('src') || '';
           if (src.includes('/uploads/') && /logo_/.test(src)) {
             logo = src;
-            break;
+            // 父链接
+            const parentA = $$(img).closest('a');
+            const href = parentA.attr('href') || '';
+            if (href && /^https?:\/\//.test(href) && !href.includes('a16z.com')) {
+              companyUrl = href;
+            }
           }
-        }
-        // fallback: og:image
+        });
+        // fallback logo: og:image
         if (!logo) {
           logo = $$('meta[property="og:image"]').attr('content') || '';
+        }
+
+        // Feature 分类：a16z 顶部小标签 <span class="component-hero--subtitle">
+        const feature = $$('span.component-hero--subtitle').first().text().trim();
+
+        // 发布年份：JSON-LD datePublished 优先，回退到 meta，再回退到 "Posted XXX, YYYY" 文本
+        let postedYear = '';
+        const jsonLdMatch = detailHtml.match(/"datePublished"\s*:\s*"(\d{4})/);
+        if (jsonLdMatch) postedYear = jsonLdMatch[1];
+        if (!postedYear) {
+          const ogDate = $$('meta[property="article:published_time"]').attr('content') || '';
+          const m = ogDate.match(/^(\d{4})/);
+          if (m) postedYear = m[1];
+        }
+        if (!postedYear) {
+          const postedMatch = detailHtml.match(/Posted\s+[A-Z][a-z]+\s+\d{1,2},?\s+(\d{4})/);
+          if (postedMatch) postedYear = postedMatch[1];
         }
 
         result.items.push({
@@ -141,10 +165,11 @@ export async function scrapeA16z(maxItems = 30): Promise<ScrapeResult<RawStartup
           intro,
           intro_zh: intro ? [intro] : [],
           logo,
+          company_url: companyUrl,
           // 列表页解析作者太脆弱，固定写 "a16z" 避免脏数据；卡片有 source 徽章足矣
           founders: 'a16z',
-          team_size: '',
-          location: '',
+          team_size: postedYear,    // 复用字段：装"Posted year"，前端 label 改为 Posted
+          location: feature,         // 复用字段：装"Feature 分类"，前端 label 改为 Feature
           batch: 'Active',
           url: e.url,
           scrapedAt: new Date().toISOString(),

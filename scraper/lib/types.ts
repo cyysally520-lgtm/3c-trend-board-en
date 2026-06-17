@@ -47,6 +47,7 @@ export interface RawStartupItem {
   intro_zh: string[];
   intro_en?: string[];
   logo?: string;             // 公司 logo URL（YC small_logo_thumb_url）
+  company_url?: string;      // 公司官网（a16z 用，footer 右下角 link）
   founders: string;
   team_size: string;           // 如 "11-50" / "1-10"
   location: string;

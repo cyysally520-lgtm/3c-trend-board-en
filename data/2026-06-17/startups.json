@@ -190,16 +190,17 @@
       ],
       "logo": "https://d1lamhf6l6yk6d.cloudfront.net/uploads/2026/05/logo_001Up00000M2aAoIAJ-20260514182743.svg",
       "founders": "a16z",
-      "team_size": "",
-      "location": "",
+      "team_size": "2026",
+      "location": "Growth",
       "batch": "Active",
       "url": "https://a16z.com/announcement/investing-in-exa/",
-      "scrapedAt": "2026-06-17T07:47:25.833Z",
+      "scrapedAt": "2026-06-17T08:17:04.678Z",
       "intro_en": [
         "Massive greenfield market for AI-native search, enabling autonomous agents to find and process information.",
         "Proprietary indexing and retrieval methods for machine-consumable data could create a strong technical moat.",
         "Differentiates from human-centric search giants by optimizing for AI agent queries and machine-readable results."
-      ]
+      ],
+      "company_url": "https://exa.ai"
     },
     {
       "id": "a16z-glif",
@@ -212,16 +213,17 @@
       ],
       "logo": "https://d1lamhf6l6yk6d.cloudfront.net/uploads/2025/07/logo_0018b00002OISWMAA5-20250729142616.svg",
       "founders": "a16z",
-      "team_size": "",
-      "location": "",
+      "team_size": "2026",
+      "location": "Infra",
       "batch": "Active",
       "url": "https://a16z.com/announcement/investing-in-glif/",
-      "scrapedAt": "2026-06-17T07:47:26.829Z",
+      "scrapedAt": "2026-06-17T08:17:05.982Z",
       "intro_en": [
         "Untapped professional creator market needs integrated, intuitive AI tools.",
         "Strong differentiation if it truly solves workflow friction for professional AI creators.",
         "Specific solution and its defensibility against incumbents remain an open question."
-      ]
+      ],
+      "company_url": "https://glif.app/chat"
     },
     {
       "id": "a16z-gitbutler",
@@ -234,16 +236,17 @@
       ],
       "logo": "https://d1lamhf6l6yk6d.cloudfront.net/uploads/2026/03/logo_001Up00000MAMU1IAP-20260317134546.svg",
       "founders": "a16z",
-      "team_size": "",
-      "location": "",
+      "team_size": "2026",
+      "location": "Infra",
       "batch": "Active",
       "url": "https://a16z.com/announcement/investing-in-gitbutler/",
-      "scrapedAt": "2026-06-17T07:47:28.030Z",
+      "scrapedAt": "2026-06-17T08:17:07.319Z",
       "intro_en": [
         "Massive, timely market for AI-native dev tools as roles shift. Early mover advantage.",
         "Differentiated by purpose-building for AI agent orchestration, not adapting legacy dev tools.",
         "Risk if AI agent orchestration becomes an integrated feature, not a standalone product."
-      ]
+      ],
+      "company_url": "https://www.gitbutler.com"
     },
     {
       "id": "a16z-deeptune",
@@ -256,16 +259,17 @@
       ],
       "logo": "https://d1lamhf6l6yk6d.cloudfront.net/uploads/2026/03/logo_0018b00002IYHeaAAH-20260317134041.svg",
       "founders": "a16z",
-      "team_size": "",
-      "location": "",
+      "team_size": "2026",
+      "location": "Infra",
       "batch": "Active",
       "url": "https://a16z.com/announcement/investing-in-deeptune/",
-      "scrapedAt": "2026-06-17T07:47:29.233Z",
+      "scrapedAt": "2026-06-17T08:17:08.594Z",
       "intro_en": [
         "Huge market opportunity in enabling advanced AI systems where RL is critical.",
         "Solving core RL bottlenecks requires deep technical IP, creating a strong defensible moat.",
         "Can their RL solution generalize beyond specific use cases to unlock broad \"next-gen AI\" applications?"
-      ]
+      ],
+      "company_url": "https://deeptune.com/"
     },
     {
       "id": "a16z-nexthop",
@@ -278,16 +282,17 @@
       ],
       "logo": "https://d1lamhf6l6yk6d.cloudfront.net/uploads/2026/02/logo_001Up00000Dns3HIAR-20260219144907-1.svg",
       "founders": "a16z",
-      "team_size": "",
-      "location": "",
+      "team_size": "2026",
+      "location": "Growth",
       "batch": "Active",
       "url": "https://a16z.com/announcement/investing-in-nexthop/",
-      "scrapedAt": "2026-06-17T07:47:29.957Z",
+      "scrapedAt": "2026-06-17T08:17:09.823Z",
       "intro_en": [
         "AI infrastructure shift creates a generational networking opportunity for hyperscalers.",
         "Anshul Sadana's implied deep domain expertise is a critical competitive advantage.",
         "High $500M Series B valuation requires immense future growth for significant returns."
-      ]
+      ],
+      "company_url": "https://nexthop.ai"
     },
     {
       "id": "a16z-quiverai",
@@ -300,16 +305,17 @@
       ],
       "logo": "https://d1lamhf6l6yk6d.cloudfront.net/uploads/2026/02/logo_001Up00000JveVeIAJ-20260115185420.svg",
       "founders": "a16z",
-      "team_size": "",
-      "location": "",
+      "team_size": "2026",
+      "location": "Infra",
       "batch": "Active",
       "url": "https://a16z.com/announcement/investing-in-quiverai/",
-      "scrapedAt": "2026-06-17T07:47:31.285Z",
+      "scrapedAt": "2026-06-17T08:17:10.635Z",
       "intro_en": [
         "Massive market opportunity in AI-driven tools for scalable, adaptable digital design systems.",
         "Proprietary AI for intelligent SVG generation, optimization, or componentization could be a strong moat.",
         "Specific product offering and its unique value proposition are not yet clear from this description."
-      ]
+      ],
+      "company_url": "https://quiver.ai/"
     },
     {
       "id": "a16z-shizuku-ai",
@@ -322,16 +328,17 @@
       ],
       "logo": "https://d1lamhf6l6yk6d.cloudfront.net/uploads/2026/02/logo_001Up000005ZaAeIAK-20260204144945-1.svg",
       "founders": "a16z",
-      "team_size": "",
-      "location": "",
+      "team_size": "2026",
+      "location": "Infra",
       "batch": "Active",
       "url": "https://a16z.com/announcement/investing-in-shizuku-ai/",
-      "scrapedAt": "2026-06-17T07:47:31.770Z",
+      "scrapedAt": "2026-06-17T08:17:11.615Z",
       "intro_en": [
         "Market opportunity: Real-time AI companion content on YouTube targets a massive, underserved global anime/gaming audience craving interactive entertainment.",
         "Technical moat: Proprietary low-latency Live2D integration with bilingual real-time chat and singing creates a hard-to-replicate immersive experience.",
         "Key risk: Sustaining viewer engagement and monetization beyond novelty, given rising competition from larger AI avatar platforms and content saturation."
-      ]
+      ],
+      "company_url": "https://shizuku.ai/"
     },
     {
       "id": "a16z-inferact",
@@ -344,16 +351,17 @@
       ],
       "logo": "https://d1lamhf6l6yk6d.cloudfront.net/uploads/2026/02/logo_001Up00000Kflc9IAB-20260121232932.svg",
       "founders": "a16z",
-      "team_size": "",
-      "location": "",
+      "team_size": "2026",
+      "location": "Infra",
       "batch": "Active",
       "url": "https://a16z.com/announcement/investing-in-inferact/",
-      "scrapedAt": "2026-06-17T07:47:32.586Z",
+      "scrapedAt": "2026-06-17T08:17:12.377Z",
       "intro_en": [
         "Massive market opportunity in making AI reliable and programmable for enterprise-grade applications.",
         "Strong technical moat if they truly solve AI unpredictability and enable reliable control flow integration.",
         "Key risk: Can they truly deliver on \"predictable AI\" and achieve broad developer adoption for complex use cases?"
-      ]
+      ],
+      "company_url": "https://Inferact.ai"
     },
     {
       "id": "a16z-mirelo",
@@ -366,16 +374,17 @@
       ],
       "logo": "https://d1lamhf6l6yk6d.cloudfront.net/uploads/2025/12/logo_001Up00000QAupxIAD-20251212001136.svg",
       "founders": "a16z",
-      "team_size": "",
-      "location": "",
+      "team_size": "2025",
+      "location": "Infra",
       "batch": "Active",
       "url": "https://a16z.com/announcement/investing-in-mirelo/",
-      "scrapedAt": "2026-06-17T07:47:34.112Z",
+      "scrapedAt": "2026-06-17T08:17:13.159Z",
       "intro_en": [
         "Massive global media production market, from film to gaming, offers significant growth for sound innovation.",
         "Proprietary AI for sound generation or enhancement could create a strong, defensible position in media production.",
         "Risk of slow adoption by entrenched studios or difficulty displacing existing, specialized professional audio workflows."
-      ]
+      ],
+      "company_url": "https://mirelo.ai"
     },
     {
       "id": "a16z-unconventional",
@@ -388,16 +397,17 @@
       ],
       "logo": "https://d1lamhf6l6yk6d.cloudfront.net/uploads/2025/12/logo_001Up00000R9itWIAR-20251202200746.svg",
       "founders": "a16z",
-      "team_size": "",
-      "location": "",
+      "team_size": "2025",
+      "location": "Infra",
       "batch": "Active",
       "url": "https://a16z.com/announcement/investing-in-unconventional/",
-      "scrapedAt": "2026-06-17T07:47:35.310Z",
+      "scrapedAt": "2026-06-17T08:17:14.355Z",
       "intro_en": [
         "Massive market for reducing AI compute costs; timing is critical as demand outstrips supply.",
         "Implied deep tech solution to fundamental compute efficiency problem suggests strong IP potential.",
         "Unclear how they tackle GPU compute costs; execution risk high for such a fundamental problem."
-      ]
+      ],
+      "company_url": "https://unconv.ai/"
     },
     {
       "id": "a16z-keycard",
@@ -410,16 +420,17 @@
       ],
       "logo": "https://d1lamhf6l6yk6d.cloudfront.net/uploads/2025/10/logo_0018b00002SCzXBAA1-20251016133145.svg",
       "founders": "a16z",
-      "team_size": "",
-      "location": "",
+      "team_size": "2025",
+      "location": "Infra",
       "batch": "Active",
       "url": "https://a16z.com/announcement/investing-in-keycard/",
-      "scrapedAt": "2026-06-17T07:47:36.354Z",
+      "scrapedAt": "2026-06-17T08:17:15.722Z",
       "intro_en": [
         "Massive, early market for AI agent security; foundational layer for the next computing platform.",
         "Risk: AI agent adoption speed or if security challenges are truly novel, not just extensions.",
         "Differentiation hinges on truly novel AI agent threat models, not just adapting existing security."
-      ]
+      ],
+      "company_url": "https://www.keycard.ai/"
     },
     {
       "id": "a16z-reducto",
@@ -431,17 +442,18 @@
         "a16z leads Reducto’s $75M Series B to reimagine OCR for the AI era. Reducto transforms static documents into live, structured, editable digital objects—turning contracts, forms, and filings into data AI can reason over."
       ],
       "logo": "https://d1lamhf6l6yk6d.cloudfront.net/uploads/2025/10/logo_001Up000009j0UwIAI-20251013181240.svg",
-      "founders": "Jennifer Li and Yoko Li a",
-      "team_size": "",
-      "location": "",
+      "founders": "a16z",
+      "team_size": "2025",
+      "location": "Infra",
       "batch": "Active",
       "url": "https://a16z.com/announcement/investing-in-reducto/",
-      "scrapedAt": "2026-06-17T07:47:37.658Z",
+      "scrapedAt": "2026-06-17T08:17:16.440Z",
       "intro_en": [
         "Massive, untapped enterprise market for AI-ready document data, critical for automation and intelligence.",
         "Proprietary AI models transforming unstructured documents into truly actionable, semantic data objects.",
         "Key risk: Ensuring robust accuracy and seamless integration into diverse, complex enterprise AI stacks."
-      ]
+      ],
+      "company_url": "https://reducto.ai"
     },
     {
       "id": "a16z-relace",
@@ -454,16 +466,17 @@
       ],
       "logo": "https://d1lamhf6l6yk6d.cloudfront.net/uploads/2025/10/logo_001Up00000LRoHbIAL-20251002184034.svg",
       "founders": "a16z",
-      "team_size": "",
-      "location": "",
+      "team_size": "2025",
+      "location": "Infra",
       "batch": "Active",
       "url": "https://a16z.com/announcement/investing-in-relace/",
-      "scrapedAt": "2026-06-17T07:47:38.239Z",
+      "scrapedAt": "2026-06-17T08:17:17.825Z",
       "intro_en": [
         "Massive, greenfield market for AI-native code infrastructure. Timely disruption of traditional dev tooling.",
         "Proprietary AI models or novel infrastructure for managing AI-generated code could create a strong moat.",
         "Unclear product execution; significant risk in developer adoption and trust for AI-generated code quality."
-      ]
+      ],
+      "company_url": "https://relace.ai"
     },
     {
       "id": "a16z-periodic-labs",
@@ -476,16 +489,17 @@
       ],
       "logo": "https://d1lamhf6l6yk6d.cloudfront.net/uploads/2025/09/logo_001Up00000KXjJ0IAL-20250923124340.svg",
       "founders": "a16z",
-      "team_size": "",
-      "location": "",
+      "team_size": "2025",
+      "location": "Infra",
       "batch": "Active",
       "url": "https://a16z.com/announcement/investing-in-periodic-labs/",
-      "scrapedAt": "2026-06-17T07:47:39.448Z",
+      "scrapedAt": "2026-06-17T08:17:19.082Z",
       "intro_en": [
         "Massive, nascent market for AI-driven scientific discovery. Timing is critical for early movers.",
         "Product and monetization remain undefined. Long, uncertain path from models to impact.",
         "Lack of specific technical or domain focus makes differentiation challenging among peers."
-      ]
+      ],
+      "company_url": "https://periodiclabs.ai"
     },
     {
       "id": "a16z-phota-labs",
@@ -498,16 +512,17 @@
       ],
       "logo": "https://d1lamhf6l6yk6d.cloudfront.net/uploads/2025/09/logo_001Up00000DlH5xIAF-20250910140813.svg",
       "founders": "a16z",
-      "team_size": "",
-      "location": "",
+      "team_size": "2025",
+      "location": "Infra",
       "batch": "Active",
       "url": "https://a16z.com/announcement/investing-in-phota-labs/",
-      "scrapedAt": "2026-06-17T07:47:40.241Z",
+      "scrapedAt": "2026-06-17T08:17:19.649Z",
       "intro_en": [
         "Massive market opportunity in photo editing and AI trust, as consumers demand authenticity over manipulated images.",
         "Technical moat from proprietary generative AI that preserves identity and context, unlike diffusion models that hallucinate.",
         "Key risk is balancing photorealism with creative flexibility; overcorrection could limit appeal to casual users."
-      ]
+      ],
+      "company_url": "https://www.photalabs.com/"
     }
   ]
 }
