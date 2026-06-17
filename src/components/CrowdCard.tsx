@@ -90,8 +90,17 @@ export const CrowdCard: React.FC<CrowdCardProps> = ({ item }) => {
                 Raised <strong className="text-slate-800 font-bold font-mono">{formatRaised(item.raised, item.currencySymbol)}</strong>
               </span>
             </div>
-            {/* 优先 progress %，没有再 fallback daysLeft */}
-            {item.progress_pct > 0 ? (
+            {/* 显示规则：
+                - KS 强制显示 Days left（progress 4611% 这种数字不直观，跳过）
+                - 其他平台优先 progress %，缺则 fallback Days left */}
+            {item.platform === 'Kickstarter' && typeof item.daysLeft === 'number' ? (
+              <div className="flex items-center gap-1 shrink-0">
+                <span className="text-slate-400 font-normal">Days left</span>
+                <span className={`font-bold font-mono ${item.daysLeft === 0 ? 'text-slate-400' : 'text-[#10b981]'}`}>
+                  {item.daysLeft === 0 ? 'Ended' : item.daysLeft}
+                </span>
+              </div>
+            ) : item.progress_pct > 0 ? (
               <div className="flex items-center gap-1 shrink-0">
                 <span className="text-slate-400 font-normal">Progress</span>
                 <span className="text-[#10b981] font-bold font-mono">{item.progress_pct}%</span>
