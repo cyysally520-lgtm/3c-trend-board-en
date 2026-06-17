@@ -32,11 +32,8 @@ function isSeniorEconomy(it: any): boolean {
 
 function isChineseSocialOnly(it: any): boolean {
   const tag = String(it.tagline ?? '');
-  // 仅当 tagline 是中文社交来源时删除（不要误删带 GitHub 又有小红书的）
-  if (!/(XHS|小红书|B站|B 站|抖音)/i.test(tag)) return false;
-  // 如果同时有 GitHub 等 EN-friendly 来源，保留
-  if (/(github|开源|arxiv|hugging|kickstarter|\bks\b|product\s*hunt|\bph\b|\bces\b|顶会|顶刊)/i.test(tag)) return false;
-  return true;
+  // 黑名单（硬规则）：B 站 / XHS / 小红书 / 抖音等，即使含"开源"/GitHub 也删
+  return /(B\s*站|bilibili|XHS|小红书|抖音|tiktok|kuaishou|快手)/i.test(tag);
 }
 
 async function cleanFile(filePath: string): Promise<{ before: number; after: number; reasons: Record<string, number> } | null> {

@@ -1,7 +1,7 @@
 {
   "date": "2026-06-17",
   "kind": "investments",
-  "count": 277,
+  "count": 276,
   "items": [
     {
       "id": "nb-qq173972819",
@@ -4395,28 +4395,6 @@
       "name_en": "Xynavo AR Glasses",
       "tech_en": "Lightweight AR glasses, 70° FOV / dual 4K Micro-OLED / 95g, cinema-scale immersive experience.",
       "business_en": "Kickstarter 4028% oversubscribed (592 backers, starting at $269), transitioning from Chinese OEM background to own brand."
-    },
-    {
-      "id": "nb-fange-ai-blind-glasses",
-      "rank": 9,
-      "name": "帆哥AI导盲眼镜",
-      "tagline": "B站12万播/开源",
-      "category": "AI硬件",
-      "tech": "基于ESP32+摄像头+大模型API的低成本AI视觉辅助方案，百元BOM全开源（MIT协议），支持实时场景描述+避障语音提示",
-      "business": "开源免费，社区驱动，潜在商业化路径为助盲辅具定制服务或套件销售",
-      "team": "帆哥（B站：AI研究室-帆哥，XHS同名），95后，上海，独立开发者",
-      "operations": "B站多条视频合计30万+播放，评论区大量讨论量产可行性；XHS持续更新进展；多个二创团队（WelooAI实验室等）基于其方案开发",
-      "funding": "未融资（纯个人开源项目）",
-      "daysAgo": 21,
-      "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-17T01:57:03.934Z",
-      "name_en": "FanGe AI Navigation Glasses for the Blind",
-      "category_en": "AI Hardware",
-      "tech_en": "Low-cost AI vision assistant solution based on ESP32 + camera + large model API, full open-source BOM under $100 (MIT license), supporting real-time scene description and obstacle avoidance voice prompts.",
-      "business_en": "Open-source and free, community-driven, with potential commercialization through customized assistive tools for the visually impaired or kit sales.",
-      "team_en": "Fan Ge (Bilibili: AI Research Lab - Fan Ge, same handle on Xiaohongshu), post-95s, based in Shanghai, independent developer.",
-      "operations_en": "Multiple Bilibili videos totaling 300,000+ views, active discussions on mass production feasibility in comments; continuous updates on Xiaohongshu; multiple derivative teams (e.g., WelooAI Lab) developing based on the solution",
-      "funding_en": "Unfunded (pure personal open-source project)"
     },
     {
       "id": "nb-cybersight-hud",

@@ -154,10 +154,18 @@ export async function scrapeNextbanker(maxItems = 1000): Promise<ScrapeResult<Ra
     // NeurIPS/ICLR/ICML/ACL) 等海外用户能找到对应英文资料的来源
     // 丢弃：XHS / 小红书 / B站 / 抖音 等中文社交，「招聘中」「极早期」等无来源标签
     const EN_FRIENDLY_RE = /(github|开源|arxiv|hugging\s*face|\bhf\b|reddit|\bks\b|kickstarter|indiegogo|product\s*hunt|\bph\b|\bces\b|if\s*design|icra|corl|t-ro|neurips|iclr|icml|\bacl\b|顶会|顶刊)/i;
+    // 黑名单（用户硬性要求）：B 站 / XHS / 小红书 / 抖音 即使有"开源"字样也丢
+    const BLACKLIST_RE = /(B\s*站|bilibili|XHS|小红书|抖音|tiktok|kuaishou|快手)/i;
     for (const c of cards) {
       if (result.items.length >= maxItems) break;
 
-      // 只保留 EN-friendly 来源
+      // 1. 黑名单优先（中文社交即使含 GitHub/开源 也丢）
+      if (BLACKLIST_RE.test(c.sourceBadge)) {
+        droppedNonGithub++;
+        continue;
+      }
+
+      // 2. EN-friendly 来源白名单
       if (!EN_FRIENDLY_RE.test(c.sourceBadge)) {
         droppedNonGithub++;
         continue;

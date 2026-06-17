@@ -1,7 +1,7 @@
 {
   "date": "2026-06-16",
   "kind": "investments",
-  "count": 268,
+  "count": 267,
   "items": [
     {
       "id": "nb-qq173972819",
@@ -3360,23 +3360,6 @@
       "source_url": "https://nextbanker.cn/",
       "scrapedAt": "2026-06-16T08:37:19.423Z",
       "funding_en": "Currently crowdfunding on Kickstarter"
-    },
-    {
-      "id": "nb-fange-ai-blind-glasses",
-      "rank": 9,
-      "name": "帆哥AI导盲眼镜",
-      "tagline": "B站12万播/开源",
-      "category": "AI硬件",
-      "tech": "基于ESP32+摄像头+大模型API的低成本AI视觉辅助方案，百元BOM全开源（MIT协议），支持实时场景描述+避障语音提示",
-      "business": "开源免费，社区驱动，潜在商业化路径为助盲辅具定制服务或套件销售",
-      "team": "帆哥（B站：AI研究室-帆哥，XHS同名），95后，上海，独立开发者",
-      "operations": "B站多条视频合计30万+播放，评论区大量讨论量产可行性；XHS持续更新进展；多个二创团队（WelooAI实验室等）基于其方案开发",
-      "funding": "未融资（纯个人开源项目）",
-      "daysAgo": 20,
-      "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z",
-      "name_en": "Fange AI Guide Glasses",
-      "funding_en": "Unfunded (solely a personal open-source project)"
     },
     {
       "id": "nb-cybersight-hud",
