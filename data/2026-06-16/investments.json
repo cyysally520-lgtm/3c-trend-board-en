@@ -1,7 +1,7 @@
 {
   "date": "2026-06-16",
   "kind": "investments",
-  "count": 272,
+  "count": 268,
   "items": [
     {
       "id": "nb-qq173972819",
@@ -3961,22 +3961,6 @@
       "category_en": "Embodied AI"
     },
     {
-      "id": "nb-airexo-2",
-      "rank": 82,
-      "name": "AirExo-2（低成本外骨骼遥操作）",
-      "tagline": "CoRL 2025 Oral",
-      "category": "具身智能",
-      "tech": "",
-      "business": "",
-      "team": "",
-      "operations": "GitHub ⭐39 | 更新至2026-04-03 | 融资：无（学术项目）",
-      "funding": "",
-      "daysAgo": 27,
-      "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z",
-      "category_en": "Embodied AI"
-    },
-    {
       "id": "nb-flowhoi",
       "rank": 83,
       "name": "FlowHOI（手-物交互生成）",
@@ -3987,21 +3971,6 @@
       "team": "华建增（huajian-zeng，中文拼音名，中国团队确认）",
       "operations": "GitHub ⭐27 | 更新至2026-02-17",
       "funding": "无 — 纯学术论文开源",
-      "daysAgo": 27,
-      "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
-    },
-    {
-      "id": "nb-robonix",
-      "rank": 84,
-      "name": "Robonix（具身智能操作系统）",
-      "tagline": "开源社区",
-      "category": "具身智能",
-      "tech": "",
-      "business": "",
-      "team": "",
-      "operations": "",
-      "funding": "",
       "daysAgo": 27,
       "source_url": "https://nextbanker.cn/",
       "scrapedAt": "2026-06-16T08:37:19.423Z"
@@ -4198,36 +4167,6 @@
       "operations": "KS $496,920 / 151 backers / Project We Love标记。Infplane Computing (HK)",
       "funding": "天使+轮已完成",
       "daysAgo": 26,
-      "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
-    },
-    {
-      "id": "nb-super-brain-clone",
-      "rank": 276,
-      "name": "Super Brain 超级大脑",
-      "tagline": "Reddit 1.2K赞",
-      "category": "银发经济",
-      "tech": "照片/语音/聊天记录→多模态交互式数字分身",
-      "business": "Reddit 1.2K upvotes，NPR/中国日报报道，\"$3 AI克隆\"病毒式传播(2026.04)",
-      "team": "张泽伟，江苏小工作室",
-      "operations": "淘宝+微信已有付费客户",
-      "funding": "未融资(solo operator)",
-      "daysAgo": 21,
-      "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-16T08:37:19.423Z"
-    },
-    {
-      "id": "nb-youdehuo",
-      "rank": 277,
-      "name": "优得护 / 拓普智造",
-      "tagline": "CES Picks",
-      "category": "银发经济",
-      "tech": "老年陪伴机器人(跌倒检测+健康监测+AI语音)",
-      "business": "CES 2026 Twice Picks大奖，XHS店铺16台销售",
-      "team": "深圳硬件团队",
-      "operations": "主动招养老院B2B合作伙伴",
-      "funding": "未融资",
-      "daysAgo": 21,
       "source_url": "https://nextbanker.cn/",
       "scrapedAt": "2026-06-16T08:37:19.423Z"
     }

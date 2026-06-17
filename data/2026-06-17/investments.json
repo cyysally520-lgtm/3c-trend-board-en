@@ -1,7 +1,7 @@
 {
   "date": "2026-06-17",
   "kind": "investments",
-  "count": 281,
+  "count": 277,
   "items": [
     {
       "id": "nb-qq173972819",
@@ -5174,24 +5174,6 @@
       "team_en": "Suspected Tsinghua/top domestic university (GitHub ID \"LQTS\" pinyin style) | ⭐33 | Funding: None"
     },
     {
-      "id": "nb-airexo-2",
-      "rank": 82,
-      "name": "AirExo-2（低成本外骨骼遥操作）",
-      "tagline": "CoRL 2025 Oral",
-      "category": "具身智能",
-      "tech": "",
-      "business": "",
-      "team": "",
-      "operations": "GitHub ⭐39 | 更新至2026-04-03 | 融资：无（学术项目）",
-      "funding": "",
-      "daysAgo": 28,
-      "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-17T01:57:03.934Z",
-      "name_en": "AirExo-2 (Low-Cost Exoskeleton Teleoperation)",
-      "category_en": "Embodied AI",
-      "operations_en": "GitHub ⭐39 | Updated 2026-04-03 | Funding: None (academic project)"
-    },
-    {
       "id": "nb-flowhoi",
       "rank": 83,
       "name": "FlowHOI（手-物交互生成）",
@@ -5212,23 +5194,6 @@
       "team_en": "Hua Jianzeng (huajian-zeng, Chinese pinyin name, confirmed Chinese team)",
       "funding_en": "None — purely open-source academic paper",
       "operations_en": "GitHub ⭐27 | Updated to 2026-02-17"
-    },
-    {
-      "id": "nb-robonix",
-      "rank": 84,
-      "name": "Robonix（具身智能操作系统）",
-      "tagline": "开源社区",
-      "category": "具身智能",
-      "tech": "",
-      "business": "",
-      "team": "",
-      "operations": "",
-      "funding": "",
-      "daysAgo": 28,
-      "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-17T01:57:03.934Z",
-      "name_en": "Robonix (Embodied AI Operating System)",
-      "category_en": "Embodied AI"
     },
     {
       "id": "nb-multica-ai",
@@ -5487,50 +5452,6 @@
       "business_en": "Defines a new product category \"Agentic Computer,\" with 1556% oversubscribed crowdfunding validating strong demand.",
       "funding_en": "Angel+ round completed",
       "tech_en": "Locally running DeepSeek-R1 235B + OpenClaw Agent workflow."
-    },
-    {
-      "id": "nb-super-brain-clone",
-      "rank": 285,
-      "name": "Super Brain 超级大脑",
-      "tagline": "Reddit 1.2K赞",
-      "category": "银发经济",
-      "tech": "照片/语音/聊天记录→多模态交互式数字分身",
-      "business": "Reddit 1.2K upvotes，NPR/中国日报报道，\"$3 AI克隆\"病毒式传播(2026.04)",
-      "team": "张泽伟，江苏小工作室",
-      "operations": "淘宝+微信已有付费客户",
-      "funding": "未融资(solo operator)",
-      "daysAgo": 22,
-      "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-17T01:57:03.935Z",
-      "category_en": "Silver Economy",
-      "tech_en": "Photos/voice/chat logs → multimodal interactive digital twin",
-      "team_en": "Zhang Zewei, small studio in Jiangsu",
-      "operations_en": "Paid customers on Taobao and WeChat",
-      "name_en": "Super Brain",
-      "business_en": "Reddit 1.2K upvotes, reported by NPR/China Daily, \"$3 AI Clone\" goes viral (April 2026)",
-      "funding_en": "Not funded (solo operator)"
-    },
-    {
-      "id": "nb-youdehuo",
-      "rank": 286,
-      "name": "优得护 / 拓普智造",
-      "tagline": "CES Picks",
-      "category": "银发经济",
-      "tech": "老年陪伴机器人(跌倒检测+健康监测+AI语音)",
-      "business": "CES 2026 Twice Picks大奖，XHS店铺16台销售",
-      "team": "深圳硬件团队",
-      "operations": "主动招养老院B2B合作伙伴",
-      "funding": "未融资",
-      "daysAgo": 22,
-      "source_url": "https://nextbanker.cn/",
-      "scrapedAt": "2026-06-17T01:57:03.935Z",
-      "name_en": "Youdehu / Top Intelligent Manufacturing",
-      "category_en": "Silver Economy",
-      "tech_en": "Elderly companion robot (fall detection + health monitoring + AI voice)",
-      "team_en": "Hardware team in Shenzhen",
-      "operations_en": "Proactively seeking B2B partners for nursing homes",
-      "funding_en": "No funding raised",
-      "business_en": "CES 2026 Twice Picks Award, 16 units sold via XHS store"
     },
     {
       "id": "nb-memohai",

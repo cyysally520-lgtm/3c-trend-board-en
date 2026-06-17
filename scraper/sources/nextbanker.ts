@@ -28,13 +28,12 @@ import type { RawInvestItem, ScrapeResult } from '../lib/types';
 const BASE_URL = 'https://nextbanker.cn/';
 
 // 白名单：只保留这些 nextbanker 板块（对齐目标站「AI 高潜」赛道）
-// 注意 nextbanker 上是"银发科技"，会归一为"银发经济"
+// 注：用户决定不要银发经济板块，从白名单移除
 const ALLOWED_SECTIONS = [
   'AI硬件',
   '具身智能',
   'AI Agent',
   'AI教育',
-  '银发科技',
   'AI医疗',
 ];
 
@@ -147,6 +146,7 @@ export async function scrapeNextbanker(maxItems = 1000): Promise<ScrapeResult<Ra
     // 转成 RawInvestItem
     let rank = 0;
     let droppedNonGithub = 0;
+    let droppedBlank = 0;
 
     // EN 站独有过滤：「海外用户友好来源」白名单
     // 保留 GitHub / 开源 / arXiv / HuggingFace / Reddit / Kickstarter (KS) /
@@ -163,6 +163,15 @@ export async function scrapeNextbanker(maxItems = 1000): Promise<ScrapeResult<Ra
         continue;
       }
 
+      // 视觉空白过滤：5 个核心字段 (tech/business/team/operations/funding)
+      // 至少要有 2 个有内容，否则卡片在前端显示几乎空白
+      const fillCount = [c.tech, c.business, c.team, c.operations, c.funding]
+        .filter((v) => (v || '').trim().length > 0).length;
+      if (fillCount < 2) {
+        droppedBlank++;
+        continue;
+      }
+
       rank++;
       try {
         // daysAgo 解析
@@ -170,8 +179,8 @@ export async function scrapeNextbanker(maxItems = 1000): Promise<ScrapeResult<Ra
         const hoursMatch = c.time.match(/(\d+)\s*小时前/);
         const daysAgo = daysMatch ? parseInt(daysMatch[1], 10) : hoursMatch ? 0 : 0;
 
-        // category 归一：nextbanker "银发科技" → "银发经济"
-        const category = c.section === '银发科技' ? '银发经济' : c.section;
+        // category 直接用板块名（白名单里都是 nextbanker 原值，无需映射）
+        const category = c.section;
 
         result.items.push({
           // 用站点自带 projectId 当 id 后缀，比 rank+name 更稳（重跑保 id 一致，便于合并）
@@ -199,7 +208,7 @@ export async function scrapeNextbanker(maxItems = 1000): Promise<ScrapeResult<Ra
     for (const it of result.items) bySection[it.category] = (bySection[it.category] ?? 0) + 1;
     log.ok(
       'nextbanker',
-      `extracted ${result.items.length} invest items (GitHub-only, dropped ${droppedNonGithub} non-GitHub): ${Object.entries(bySection).map(([k, v]) => `${k}=${v}`).join(', ')}`,
+      `extracted ${result.items.length} invest items (EN-friendly source, dropped ${droppedNonGithub} non-EN-source / ${droppedBlank} blank): ${Object.entries(bySection).map(([k, v]) => `${k}=${v}`).join(', ')}`,
     );
   } catch (err) {
     log.err('nextbanker', 'scrape failed', err);
