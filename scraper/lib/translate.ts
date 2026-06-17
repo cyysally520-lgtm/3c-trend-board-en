@@ -1,18 +1,20 @@
 /**
- * Gemini AI 翻译模块
- * 使用 REST API 直接调用，避免 SDK 版本兼容问题
+ * AI 翻译模块（双 provider 容错）
  *
- * 多 key 轮询：从环境读 GEMINI_API_KEY / GEMINI_API_KEY_2 / GEMINI_API_KEY_3...
- * 收到 429 自动切下一个 key 重试，全部 429 才放弃
+ * 顺序：
+ *   1. Gemini 多 key 轮询（GEMINI_API_KEY / _2 / _3 ...）
+ *   2. Gemini 全部 429 / 失败 → fallback 到 Deepseek（DEEPSEEK_API_KEY）
+ *   3. Deepseek 也失败 → 抛错，本轮翻译跳过
+ *
+ * Deepseek 当前用 deepseek-chat 模型，OpenAI 兼容接口，无日免费限。
  */
 import { log } from './logger';
 
 // 注意：不在模块顶部读 env，避免在 dotenv.config 之前就被冻结成空串
-function getApiKeys(): string[] {
+function getGeminiKeys(): string[] {
   const keys: string[] = [];
   const primary = process.env.GEMINI_API_KEY;
   if (primary) keys.push(primary);
-  // GEMINI_API_KEY_2 / _3 / _4 ... 依次扫
   for (let i = 2; i <= 10; i++) {
     const v = process.env[`GEMINI_API_KEY_${i}`];
     if (v) keys.push(v);
@@ -20,21 +22,21 @@ function getApiKeys(): string[] {
   return keys;
 }
 
-// 模块级状态：当前用哪个 key 索引（轮询起点），失败时累进
+function getDeepseekKey(): string {
+  return process.env.DEEPSEEK_API_KEY || '';
+}
+
+// 模块级状态：当前用哪个 Gemini key（轮询起点），失败时累进
 let currentKeyIdx = 0;
 
 /**
  * 调用 Gemini REST API（多 key 自动轮询 + 429 重试）
+ * 全部 key 都失败时返回 null（让上层 fallback 到 Deepseek）
  */
-async function callGemini(prompt: string): Promise<string> {
-  const keys = getApiKeys();
-  if (keys.length === 0) {
-    log.warn('translate', 'GEMINI_API_KEY not set, skipping translation');
-    return '';
-  }
+async function callGeminiOnly(prompt: string): Promise<string | null> {
+  const keys = getGeminiKeys();
+  if (keys.length === 0) return null;
 
-  // 最多遍历每个 key 一次
-  let lastErr: Error | null = null;
   for (let attempt = 0; attempt < keys.length; attempt++) {
     const key = keys[currentKeyIdx % keys.length];
     const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${key}`;
@@ -49,36 +51,96 @@ async function callGemini(prompt: string): Promise<string> {
       });
 
       if (response.status === 429) {
-        // 这个 key 配额耗尽，切下一个
-        log.info('translate', `key #${(currentKeyIdx % keys.length) + 1} hit 429, rotating...`);
+        log.info('translate', `gemini key #${(currentKeyIdx % keys.length) + 1} hit 429, rotating...`);
         currentKeyIdx++;
-        lastErr = new Error('429 rate limit');
         continue;
       }
 
       if (!response.ok) {
         const errText = await response.text().catch(() => '');
-        throw new Error(`Gemini API ${response.status}: ${errText.slice(0, 300)}`);
+        log.warn('translate', `gemini ${response.status}: ${errText.slice(0, 200)}`);
+        currentKeyIdx++;
+        continue;
       }
 
       const data = await response.json();
-      const candidates = data?.candidates || [];
-      if (candidates.length === 0) {
-        throw new Error('Gemini API returned no candidates');
-      }
-      const parts = candidates[0]?.content?.parts || [];
-      const text = parts.map((p: any) => p.text || '').join('');
-      return text.trim();
-    } catch (err) {
-      // 非 429 错误也切 key 试一次
-      lastErr = err instanceof Error ? err : new Error(String(err));
+      const parts = data?.candidates?.[0]?.content?.parts || [];
+      const text = parts.map((p: any) => p.text || '').join('').trim();
+      if (text) return text;
       currentKeyIdx++;
-      continue;
+    } catch (err) {
+      log.warn('translate', `gemini fetch failed: ${err instanceof Error ? err.message : err}`);
+      currentKeyIdx++;
     }
   }
+  return null;
+}
 
-  // 所有 key 都用过了仍失败
-  throw lastErr ?? new Error('all Gemini keys exhausted');
+/**
+ * 调用 Deepseek API（OpenAI 兼容）
+ */
+async function callDeepseek(prompt: string): Promise<string | null> {
+  const key = getDeepseekKey();
+  if (!key) return null;
+
+  try {
+    const response = await fetch('https://api.deepseek.com/chat/completions', {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${key}`,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        model: 'deepseek-chat',
+        messages: [{ role: 'user', content: prompt }],
+        temperature: 0.3,
+        max_tokens: 2048,
+      }),
+    });
+
+    if (!response.ok) {
+      const errText = await response.text().catch(() => '');
+      log.warn('translate', `deepseek ${response.status}: ${errText.slice(0, 200)}`);
+      return null;
+    }
+
+    const data = await response.json();
+    const text = data?.choices?.[0]?.message?.content?.trim() || '';
+    return text || null;
+  } catch (err) {
+    log.warn('translate', `deepseek fetch failed: ${err instanceof Error ? err.message : err}`);
+    return null;
+  }
+}
+
+/**
+ * 综合调用：先 Gemini，全限流/失败就切 Deepseek
+ * 两边都失败返回空串
+ */
+async function callGemini(prompt: string): Promise<string> {
+  const geminiKeys = getGeminiKeys();
+  const dsKey = getDeepseekKey();
+
+  if (geminiKeys.length === 0 && !dsKey) {
+    log.warn('translate', 'no API keys configured (GEMINI_API_KEY / DEEPSEEK_API_KEY), skipping');
+    return '';
+  }
+
+  // 1. Gemini 优先
+  if (geminiKeys.length > 0) {
+    const text = await callGeminiOnly(prompt);
+    if (text) return text;
+  }
+
+  // 2. fallback: Deepseek
+  if (dsKey) {
+    log.info('translate', 'falling back to deepseek...');
+    const text = await callDeepseek(prompt);
+    if (text) return text;
+  }
+
+  // 两边都失败
+  throw new Error('both Gemini and Deepseek failed');
 }
 
 /**

@@ -45,8 +45,12 @@ jobs:
       - name: Run scraper
         run: npm run scrape
         env:
-          # 如果你需要 Gemini 翻译，在 GitHub → Settings → Secrets 里配置
+          # AI 翻译 keys（在 GitHub → Settings → Secrets 里配置）
+          # Gemini 优先（免费），全部限流 → fallback 到 Deepseek
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY_2: ${{ secrets.GEMINI_API_KEY_2 }}
+          GEMINI_API_KEY_3: ${{ secrets.GEMINI_API_KEY_3 }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           # 使用 headed 模式绕过 Cloudflare（通过 Xvfb 虚拟显示）
           PLAYWRIGHT_HEADED: '1'
           DISPLAY: ':99'
