@@ -21,6 +21,54 @@ import { CrowdfundingItem, NewsItem, StartupItem, InvestItem } from './types';
 
 type TabType = 'investments' | 'crowdfunding' | 'news' | 'startups';
 
+const SECTION_PAGE = 30;
+
+interface InvestSectionProps {
+  category: string;
+  items: InvestItem[];
+  total: number;
+  isFavorite: (id: string) => boolean;
+  onToggleFavorite: (id: string) => void;
+}
+
+const InvestSection: React.FC<InvestSectionProps> = ({ category, items, total, isFavorite, onToggleFavorite }) => {
+  const [visibleCount, setVisibleCount] = useState(SECTION_PAGE);
+  const shown = items.slice(0, visibleCount);
+  const remaining = items.length - shown.length;
+
+  return (
+    <section className="space-y-3">
+      <h2 className="text-base font-bold text-slate-800 flex items-baseline gap-2">
+        {category}
+        <span className="text-xs font-mono text-slate-400 font-normal">
+          {shown.length} <span className="text-slate-300">/</span> {total}
+        </span>
+      </h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+        {shown.map((item) => (
+          <InvestCard
+            key={item.id}
+            item={item}
+            isFavorite={isFavorite(item.id)}
+            onToggleFavorite={onToggleFavorite}
+          />
+        ))}
+      </div>
+      {remaining > 0 && (
+        <div className="flex justify-center pt-2">
+          <button
+            onClick={() => setVisibleCount((v) => v + SECTION_PAGE)}
+            className="inline-flex items-center gap-2 text-xs font-semibold text-emerald-700 bg-emerald-50/60 hover:bg-emerald-100 border border-emerald-200 px-4 py-1.5 rounded-full transition cursor-pointer"
+          >
+            Show {Math.min(SECTION_PAGE, remaining)} more
+            <span className="text-[10px] font-mono text-slate-500">({remaining} left)</span>
+          </button>
+        </div>
+      )}
+    </section>
+  );
+};
+
 export default function App() {
   // Tab control state
   const [currentTab, setCurrentTab] = useState<TabType>('investments');
@@ -686,24 +734,14 @@ export default function App() {
                 {groupedInvests.map((g) => {
                   const total = investCategories.find((c) => c.name === g.category)?.count ?? g.items.length;
                   return (
-                    <section key={g.category} className="space-y-3">
-                      <h2 className="text-base font-bold text-slate-800 flex items-baseline gap-2">
-                        {g.category}
-                        <span className="text-xs font-mono text-slate-400 font-normal">
-                          {g.items.length} <span className="text-slate-300">/</span> {total}
-                        </span>
-                      </h2>
-                      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-                        {g.items.map((item) => (
-                          <InvestCard
-                            key={item.id}
-                            item={item}
-                            isFavorite={investFavorites.has(item.id)}
-                            onToggleFavorite={toggleFavorite}
-                          />
-                        ))}
-                      </div>
-                    </section>
+                    <InvestSection
+                      key={g.category}
+                      category={g.category}
+                      items={g.items}
+                      total={total}
+                      isFavorite={(id: string): boolean => investFavorites.has(id)}
+                      onToggleFavorite={toggleFavorite}
+                    />
                   );
                 })}
               </div>
