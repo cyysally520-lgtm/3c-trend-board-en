@@ -83,9 +83,9 @@ export const CrowdCard: React.FC<CrowdCardProps> = ({ item }) => {
         <div className="space-y-3 bg-[#f8fafc]/80 p-4 rounded-xl border border-slate-100">
           
           {/* Row 1: Raised + Progress %（同行靠两端，字小不截断） */}
-          <div className="flex items-center justify-between text-[10px] sm:text-[11px] text-slate-600 gap-2">
+          <div className="flex items-center justify-between text-[12px] sm:text-[13px] text-slate-600 gap-2">
             <div className="flex items-center gap-1.5 min-w-0 flex-1">
-              <Clock className="w-3 h-3 text-slate-400 shrink-0" />
+              <Clock className="w-3.5 h-3.5 text-slate-400 shrink-0" />
               <span className="whitespace-nowrap">
                 Raised <strong className="text-slate-800 font-bold font-mono">{formatRaised(item.raised, item.currencySymbol)}</strong>
               </span>
@@ -109,16 +109,16 @@ export const CrowdCard: React.FC<CrowdCardProps> = ({ item }) => {
           </div>
 
           {/* Row 2: Backers & Price */}
-          <div className="flex items-center justify-between text-[10px] sm:text-[11px] text-slate-600 gap-2">
+          <div className="flex items-center justify-between text-[12px] sm:text-[13px] text-slate-600 gap-2">
             <div className="flex items-center gap-1.5 min-w-0">
-              <Users className="w-3 h-3 text-slate-400 shrink-0" />
+              <Users className="w-3.5 h-3.5 text-slate-400 shrink-0" />
               <span className="whitespace-nowrap">
                 <strong className="text-slate-800 font-bold font-mono">{item.backers.toLocaleString()}</strong> backers
               </span>
             </div>
 
             <div className="flex items-center gap-1.5 shrink-0">
-              <Coins className="w-3 h-3 text-slate-400 shrink-0" />
+              <Coins className="w-3.5 h-3.5 text-slate-400 shrink-0" />
               <span className="whitespace-nowrap">
                 From <strong className="text-slate-800 font-bold font-mono">{item.price}</strong>
               </span>
@@ -128,7 +128,7 @@ export const CrowdCard: React.FC<CrowdCardProps> = ({ item }) => {
 
         {/* Categories / Tag pills (Teal pill design: #Category) */}
         <div className="flex flex-wrap gap-1.5">
-          <span className="bg-emerald-50 text-emerald-700 hover:bg-emerald-100/80 px-2.5 py-1 rounded-md text-xs font-semibold tracking-wide transition">
+          <span className="bg-emerald-50 text-emerald-700 hover:bg-emerald-100/80 px-2 py-0.5 rounded-md text-[10px] font-semibold tracking-wide transition">
             {item.category_tag_en || item.category_tag_zh}
           </span>
         </div>
