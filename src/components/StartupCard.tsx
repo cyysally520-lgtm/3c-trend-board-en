@@ -22,9 +22,28 @@ export const StartupCard: React.FC<StartupCardProps> = ({ item }) => {
         {/* Header: logo + name + batch + YC/a16z badge */}
         <div className="flex items-start justify-between gap-3">
           <div className="flex items-start gap-3 min-w-0 flex-1">
-            {/* Logo 方块（首字母占位） */}
-            <div className="shrink-0 w-12 h-12 rounded-lg border border-slate-200 bg-white flex items-center justify-center font-mono font-black text-[13px] tracking-tight text-slate-700 select-none">
-              {logoLetters}
+            {/* Logo 方块：有 URL 用图，没有就用首字母占位；图加载失败也回退字母 */}
+            <div className="shrink-0 w-12 h-12 rounded-lg border border-slate-200 bg-white flex items-center justify-center overflow-hidden relative">
+              {item.logo ? (
+                <img
+                  src={item.logo}
+                  alt={item.name}
+                  className="w-full h-full object-contain"
+                  referrerPolicy="no-referrer"
+                  onError={(e) => {
+                    const img = e.currentTarget;
+                    img.style.display = 'none';
+                    const sibling = img.nextElementSibling as HTMLElement | null;
+                    if (sibling) sibling.style.display = 'flex';
+                  }}
+                />
+              ) : null}
+              <span
+                className="absolute inset-0 items-center justify-center font-mono font-black text-[13px] tracking-tight text-slate-700 select-none"
+                style={{ display: item.logo ? 'none' : 'flex' }}
+              >
+                {logoLetters}
+              </span>
             </div>
             <div className="min-w-0 flex-1">
               <div className="flex flex-wrap items-center gap-1.5">

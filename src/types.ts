@@ -42,6 +42,7 @@ export interface StartupItem {
   intro: string;
   intro_zh: string[];
   intro_en?: string[];
+  logo?: string;
   founders: string;
   team_size: string;
   location: string;

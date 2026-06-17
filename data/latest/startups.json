@@ -17,7 +17,13 @@
       "location": "Unspecified",
       "batch": "Spring 2026",
       "url": "https://www.anoria.com",
-      "scrapedAt": "2026-06-17T01:56:56.841Z"
+      "scrapedAt": "2026-06-17T07:06:42.316Z",
+      "logo": "https://bookface-images.s3.amazonaws.com/small_logos/da4a14a3baf739d13d28c4b5fd536756215a6801.png",
+      "intro_en": [
+        "Massive self-improvement market, especially for actionable EQ tools. Strong timing for mental wellness tech.",
+        "Proprietary, accurate emotion sensing and AI algorithms are critical for a defensible moat.",
+        "Accuracy and ethical implications of emotion reading are significant technical and adoption risks."
+      ]
     },
     {
       "id": "yc-fort",
@@ -33,7 +39,13 @@
       "location": "San Francisco, USA",
       "batch": "Winter 2026",
       "url": "https://fort.cx",
-      "scrapedAt": "2026-06-17T01:56:56.841Z"
+      "scrapedAt": "2026-06-17T07:06:42.316Z",
+      "logo": "https://bookface-images.s3.amazonaws.com/small_logos/942d9dd9102b9fef3579d0744c11a1afd6e01de3.png",
+      "intro_en": [
+        "Massive, growing fitness market, specifically strength training, lacks dedicated, accurate tracking solutions.",
+        "Current wearables lack robust strength tracking; Fort could dominate with superior accuracy and insights.",
+        "Key risk: Can it deliver truly accurate, actionable strength data consistently across diverse exercises?"
+      ]
     },
     {
       "id": "yc-tornyol",
@@ -49,7 +61,13 @@
       "location": "Paris, France",
       "batch": "Fall 2025",
       "url": "https://tornyol.com/",
-      "scrapedAt": "2026-06-17T01:56:56.841Z"
+      "scrapedAt": "2026-06-17T07:06:42.316Z",
+      "logo": "https://bookface-images.s3.amazonaws.com/small_logos/32e3f0b4a6932eaa071b0b63031b269de4048c47.png",
+      "intro_en": [
+        "Massive global market for disease vector control, current solutions are inefficient or harmful.",
+        "AI-powered precision targeting and swarm autonomy could create a strong technical moat.",
+        "High regulatory hurdles and public acceptance for autonomous killing drones are significant risks."
+      ]
     },
     {
       "id": "yc-vassar-robotics",
@@ -65,7 +83,13 @@
       "location": "Los Angeles, USA",
       "batch": "Spring 2025",
       "url": "https://www.vassarrobotics.com",
-      "scrapedAt": "2026-06-17T01:56:56.841Z"
+      "scrapedAt": "2026-06-17T07:06:42.316Z",
+      "logo": "https://bookface-images.s3.amazonaws.com/small_logos/298de1df0e98ea832138177668c9cea22705e3fb.png",
+      "intro_en": [
+        "Open-source semi-humanoid hardware risks commoditization before achieving the autonomy needed for a 20-hour work week, a massive technical leap.",
+        "The home data flywheel is a potential moat, but collecting diverse, real-world training data at scale is notoriously slow and expensive for hardware startups.",
+        "Market timing is strong for domestic robotics, but the path from dev kit to a profitable, high-utility product faces intense competition from established players like Tesla and Figure."
+      ]
     },
     {
       "id": "yc-pickle-2",
@@ -81,7 +105,13 @@
       "location": "San Francisco, USA",
       "batch": "Winter 2025",
       "url": "https://www.pickle.com",
-      "scrapedAt": "2026-06-17T01:56:56.841Z"
+      "scrapedAt": "2026-06-17T07:06:42.316Z",
+      "logo": "https://bookface-images.s3.amazonaws.com/small_logos/ad757e8400d1148cc83fb94eb774347a9fe0f4ad.png",
+      "intro_en": [
+        "Market opportunity: AI-powered life context aggregation addresses a massive underserved need across productivity, health, and personalization markets.",
+        "Technical moat: Unique IP likely lies in real-time multimodal data fusion and inference across fragmented personal data sources.",
+        "Key risk: Privacy and data integration complexity could stall adoption if users resist sharing sensitive life context or platforms block access."
+      ]
     },
     {
       "id": "yc-innate",
@@ -97,7 +127,13 @@
       "location": "San Francisco, USA",
       "batch": "Fall 2024",
       "url": "https://innate.bot",
-      "scrapedAt": "2026-06-17T01:56:56.841Z"
+      "scrapedAt": "2026-06-17T07:06:42.316Z",
+      "logo": "https://bookface-images.s3.amazonaws.com/small_logos/374e6b2cd282f5fe31c64fcc82aaebb3105153c9.png",
+      "intro_en": [
+        "Market opportunity: Consumer robotics market projected at $30B+ by 2030, but personal AI robots remain nascent with no dominant player yet.",
+        "Technical moat: Proprietary on-device LLM inference for low-latency, privacy-preserving interaction without cloud dependency, a key differentiator.",
+        "Key risk: High hardware costs and consumer skepticism around utility could limit adoption to early enthusiasts, stalling mass-market traction."
+      ]
     },
     {
       "id": "yc-k-scale-labs",
@@ -113,7 +149,13 @@
       "location": "Palo Alto, USA",
       "batch": "Winter 2024",
       "url": "https://kscale.dev/",
-      "scrapedAt": "2026-06-17T01:56:56.841Z"
+      "scrapedAt": "2026-06-17T07:06:42.316Z",
+      "logo": "https://bookface-images.s3.amazonaws.com/small_logos/9a76d2d8803d634b3e622a584f55e531a3e72f45.png",
+      "intro_en": [
+        "Open-source humanoid robots could capture developer mindshare and accelerate adoption, but monetization remains unproven against proprietary giants like Tesla and Boston Dynamics.",
+        "Hardware commoditization via open-source lowers barriers to entry, yet manufacturing at scale requires massive capital and supply chain expertise that few startups possess.",
+        "The timing is favorable as AI advances create demand for physical labor automation, but regulatory hurdles and safety certification for humanoids pose existential risks."
+      ]
     },
     {
       "id": "yc-tuesday-labs",
@@ -129,7 +171,13 @@
       "location": "New York, USA",
       "batch": "Winter 2024",
       "url": "https://www.tuesdaylabs.com",
-      "scrapedAt": "2026-06-17T01:56:56.841Z"
+      "scrapedAt": "2026-06-17T07:06:42.316Z",
+      "logo": "https://bookface-images.s3.amazonaws.com/small_logos/bb7c6f660a8e21354833989c609687d7125a07b0.png",
+      "intro_en": [
+        "Consumer robotics market is nascent but massive; timing aligns with falling hardware costs and rising AI expectations for home automation.",
+        "Proprietary software stack for natural human-robot interaction could create a defensible moat if it achieves low-latency, context-aware responses.",
+        "Key risk is commoditization; without a clear subscription or service revenue model, hardware margins alone may not justify a unicorn valuation."
+      ]
     }
   ]
 }

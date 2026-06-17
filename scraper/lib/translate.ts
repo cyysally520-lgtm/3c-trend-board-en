@@ -469,37 +469,71 @@ export async function translateNewsToEn(
 }
 
 /**
- * EN 站：把 startups 的 intro_zh（已是中文 bullet）反向译为英文 intro_en
- * 如果 intro 本来是英文，可以直接拆为 bullet 不用译
+ * EN 站：基于 intro 生成 startup 的「AI Unicorn Analysis」差异化分析 bullet
+ * 写入 intro_en（覆盖之前的简单翻译），刻意**不重复 intro 内容**：
+ * 而是从「市场机会 / 技术壁垒 / 商业模式 / 团队优势 / 风险点」等独立角度写。
+ * 已有 intro_en 的项目会强制重新生成（旧版是简单翻译，需要升级）。
  */
 export async function translateStartupsToEn(
-  items: Array<{ intro?: string; intro_zh?: string[]; intro_en?: string[] }>,
+  items: Array<{ name?: string; intro?: string; batch?: string; intro_zh?: string[]; intro_en?: string[] }>,
 ): Promise<void> {
-  const targets = items.filter(
-    (it) => Array.isArray(it.intro_zh) && it.intro_zh.length > 0
-      && it.intro_zh.some((s) => isMostlyChinese(s))
-      && (!it.intro_en || it.intro_en.length === 0),
-  );
+  // 旧版 intro_en 内容如果只是 intro 改写（含 intro 关键短语 60% 字符），算"低质量"重新生成
+  const isLowQuality = (it: { intro?: string; intro_en?: string[] }): boolean => {
+    if (!it.intro_en || it.intro_en.length === 0) return true;
+    const introLow = (it.intro || '').toLowerCase();
+    if (!introLow) return false;
+    // bullet 平均一半内容是 intro 的子串 → 算重复
+    let dupCount = 0;
+    for (const b of it.intro_en) {
+      const bLow = b.toLowerCase();
+      // 取 intro 前 30 字符当主题词，看是否被 bullet 包含
+      const seed = introLow.slice(0, 30).replace(/[^a-z\s]/g, '').trim();
+      if (seed && bLow.includes(seed.split(' ')[0])) dupCount++;
+    }
+    return dupCount >= it.intro_en.length / 2;
+  };
+
+  const targets = items.filter((it) => it.intro && it.intro.trim().length > 0 && isLowQuality(it));
   if (targets.length === 0) {
-    log.info('translate', 'all startup intros already in EN');
+    log.info('translate', 'all startup analyses already generated');
     return;
   }
-  log.info('translate', `translating ${targets.length} startup intro bullets to EN...`);
-  const BATCH = 10;
+  log.info('translate', `generating startup analysis for ${targets.length} items (differentiated, no intro repetition)...`);
+
+  const BATCH = 8;
   for (let i = 0; i < targets.length; i += BATCH) {
     const batch = targets.slice(i, i + BATCH);
-    const flat = batch.flatMap((it, bi) => it.intro_zh!.map((s) => `[${bi}] ${s}`));
-    const en = await translateBatchToEn(flat, 'startup analysis bullets (focus on tech / business / market)');
-    if (!en) continue;
-    const grouped: string[][] = batch.map(() => []);
-    en.forEach((line) => {
-      const m = line.match(/^\[(\d+)\]\s*(.*)$/);
-      if (m) grouped[parseInt(m[1], 10)].push(m[2]);
-    });
-    batch.forEach((it, bi) => {
-      if (grouped[bi].length > 0) it.intro_en = grouped[bi];
-    });
-    log.ok('translate', `translated startup intros (batch ${Math.floor(i / BATCH) + 1})`);
+    // 每个项目独立调用以保证质量；批太大会让模型混淆
+    for (const it of batch) {
+      const prompt = `You are a YC analyst. The startup "${it.name}" (batch ${it.batch || 'N/A'}) describes itself as:
+
+"${(it.intro || '').trim()}"
+
+Write 3 short bullets (max 18 words each) analyzing this startup's unicorn potential. Each bullet must focus on a DIFFERENT angle and MUST NOT just rephrase the intro. Pick 3 from these angles:
+- Market opportunity (size / timing / underserved segment)
+- Technical moat or unique IP
+- Business model strength
+- Founding team or domain advantage (if known)
+- Competitive landscape / differentiation
+- Key risk or open question
+
+Output exactly 3 lines, one bullet per line, no numbering, no leading dashes, no preamble.`;
+
+      try {
+        const text = await callGemini(prompt);
+        if (!text) continue;
+        const lines = text
+          .split('\n')
+          .map((l) => l.replace(/^[-•*]\s*/, '').replace(/^\s*\d+[\.\)、:：]\s*/, '').trim())
+          .filter((l) => l.length > 5);
+        if (lines.length >= 2) {
+          it.intro_en = lines.slice(0, 3);
+        }
+      } catch (err) {
+        log.warn('translate', `analysis failed for ${it.name}: ${err instanceof Error ? err.message : err}`);
+      }
+    }
+    log.ok('translate', `analyzed ${batch.length} startups (batch ${Math.floor(i / BATCH) + 1})`);
   }
 }
 

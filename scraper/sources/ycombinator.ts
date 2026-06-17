@@ -90,6 +90,8 @@ export async function scrapeYCombinator(maxItems = 100): Promise<ScrapeResult<Ra
           name_zh: hit.name || 'Unknown',
           intro: hit.one_liner || hit.long_description?.slice(0, 240) || '',
           intro_zh: [hit.one_liner || hit.long_description?.slice(0, 240) || ''],
+          // YC 公司 logo: small_logo_thumb_url 是 YC Algolia 标准字段
+          logo: hit.small_logo_thumb_url || hit.logo_thumb_url || hit.logo_url || '',
           founders: (hit.founders_names || []).join(', ') || 'Unknown',
           team_size: hit.team_size ? String(hit.team_size) : '',
           location: (() => {
@@ -133,4 +135,7 @@ interface YCHit {
   all_locations?: string;
   founders_names?: string[];
   team_size?: number;
+  small_logo_thumb_url?: string;
+  logo_thumb_url?: string;
+  logo_url?: string;
 }
