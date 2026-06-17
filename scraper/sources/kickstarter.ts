@@ -158,11 +158,19 @@ async function extractFromDataProject(page: import('playwright').Page, maxItems:
         const pledgedSymbol = typeof p.pledged === 'object' ? p.pledged.currency_symbol : (p.currency_symbol || '$');
         const goalAmount = typeof p.goal === 'object' ? p.goal.amount : p.goal;
         const rawPct = p.percent_funded || (goalAmount && goalAmount > 0 ? (pledgedAmount / goalAmount) * 100 : 0);
-        // 剩余天数：deadline 是 unix 秒
+        // 剩余天数：deadline 是 unix 秒。用 floor 取真实剩余整天数（22.x → 22）
         let daysLeft = 0;
         if (typeof p.deadline === 'number' && p.deadline > 0) {
           const diffSec = p.deadline - Math.floor(Date.now() / 1000);
-          daysLeft = Math.max(0, Math.ceil(diffSec / 86400));
+          daysLeft = Math.max(0, Math.floor(diffSec / 86400));
+        }
+        // 起始价格：尝试从 KS list JSON 提取最低 reward 价
+        // p.reward 字段在 list payload 里通常不存在；只有从 DOM 上 .ksr-card__data 等元素抓的卡片有
+        // 所以这里如果 p.minimum_pledge_amount / p.lowest_reward_amount 存在就用，否则空
+        let priceStr = '';
+        const minRaw = p.minimum_pledge_amount ?? p.lowest_reward_amount ?? p.minimum_pledge ?? null;
+        if (typeof minRaw === 'number' && minRaw > 0) {
+          priceStr = pledgedSymbol + Math.round(minRaw).toLocaleString();
         }
         items.push({
           slug: p.slug || p.id, name: p.name, blurb: p.blurb,
@@ -171,6 +179,7 @@ async function extractFromDataProject(page: import('playwright').Page, maxItems:
           pledgedAmount, pledgedCurrency, pledgedSymbol, goalAmount,
           progressPct: Math.round(rawPct), backers: p.backers_count || 0,
           daysLeft,
+          price: priceStr,
           founder: p.creator?.name || 'Unknown',
           rawLocation: p.location?.displayable_name || p.location?.name || 'Unknown',
           locationCountry: p.location?.country || '', catSlug: p.category?.slug || '',
@@ -184,7 +193,7 @@ async function extractFromDataProject(page: import('playwright').Page, maxItems:
     id: 'ks-' + r.slug, platform: 'Kickstarter', image: r.image, name: r.name, name_zh: r.name,
     founder: r.founder, location: simplifyLocation(r.rawLocation, r.locationCountry),
     raised: r.pledgedAmount || 0, currency: r.pledgedCurrency || 'USD', currencySymbol: r.pledgedSymbol || '$',
-    progress_pct: r.progressPct, backers: r.backers, price: '', campaign_url: r.campaignUrl,
+    progress_pct: r.progressPct, backers: r.backers, price: r.price || '', campaign_url: r.campaignUrl,
     daysLeft: r.daysLeft,
     category_tag_zh: r.catSlug.includes('tech') || r.catSlug.includes('hardware') ? '#科技' : r.catSlug.includes('design') || r.catSlug.includes('product') ? '#设计' : '#科技',
     summary_zh: r.blurb ? [r.blurb.slice(0, 200)] : [], scrapedAt: new Date().toISOString(),
