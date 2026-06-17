@@ -27,6 +27,7 @@ import { scrapeTheVerge } from './sources/theverge';
 import { scrapeYCombinator } from './sources/ycombinator';
 import { scrapeNextbanker } from './sources/nextbanker';
 import { scrapeHFPapers } from './sources/hf-papers';
+import { scrapeA16z } from './sources/a16z';
 import type { ScrapeResult } from './lib/types';
 
 type Runner = () => Promise<ScrapeResult<any>>;
@@ -46,6 +47,7 @@ const REGISTRY: Record<string, { kind: 'crowdfunding' | 'news' | 'startups' | 'i
   ventureburn: { kind: 'news',          run: () => scrapeVentureburn(PER_SOURCE_LIMIT) },
   theverge:    { kind: 'news',          run: () => scrapeTheVerge(PER_SOURCE_LIMIT) },
   ycombinator: { kind: 'startups',      run: () => scrapeYCombinator(PER_SOURCE_LIMIT) },
+  a16z:        { kind: 'startups',      run: () => scrapeA16z(30) },
   nextbanker:  { kind: 'investments',   run: () => scrapeNextbanker(NO_LIMIT) },
   hfpapers:    { kind: 'investments',   run: () => scrapeHFPapers(100) },
 };
