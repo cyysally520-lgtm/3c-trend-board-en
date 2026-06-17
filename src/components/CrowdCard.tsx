@@ -90,39 +90,47 @@ export const CrowdCard: React.FC<CrowdCardProps> = ({ item }) => {
                 Raised <strong className="text-slate-800 font-bold font-mono">{formatRaised(item.raised, item.currencySymbol)}</strong>
               </span>
             </div>
-            <div className="flex items-center gap-1 shrink-0">
-              <span className="text-slate-400 font-normal">Progress</span>
-              <span className="text-[#10b981] font-bold font-mono">{item.progress_pct}%</span>
-            </div>
+            {item.progress_pct > 0 && (
+              <div className="flex items-center gap-1 shrink-0">
+                <span className="text-slate-400 font-normal">Progress</span>
+                <span className="text-[#10b981] font-bold font-mono">{item.progress_pct}%</span>
+              </div>
+            )}
           </div>
 
-          {/* Progress bar */}
-          <div className="py-0.5">
-            <div className="w-full bg-slate-100 rounded-full h-[6px] overflow-hidden">
-              <div
-                style={{ width: `${Math.min(item.progress_pct, 100)}%` }}
-                className={`h-full rounded-full transition-all duration-500 ${
-                  item.progress_pct >= 100 ? 'bg-gradient-to-r from-emerald-500 to-teal-500' : 'bg-emerald-500'
-                }`}
-              ></div>
+          {/* Progress bar（只有有进度才显示） */}
+          {item.progress_pct > 0 && (
+            <div className="py-0.5">
+              <div className="w-full bg-slate-100 rounded-full h-[6px] overflow-hidden">
+                <div
+                  style={{ width: `${Math.min(item.progress_pct, 100)}%` }}
+                  className={`h-full rounded-full transition-all duration-500 ${
+                    item.progress_pct >= 100 ? 'bg-gradient-to-r from-emerald-500 to-teal-500' : 'bg-emerald-500'
+                  }`}
+                ></div>
+              </div>
             </div>
-          </div>
+          )}
 
           {/* Row 2: Backers & Price */}
           <div className="flex items-center justify-between text-[12px] sm:text-[13px] text-slate-600 gap-2">
-            <div className="flex items-center gap-1.5 min-w-0">
-              <Users className="w-3.5 h-3.5 text-slate-400 shrink-0" />
-              <span className="whitespace-nowrap">
-                <strong className="text-slate-800 font-bold font-mono">{item.backers.toLocaleString()}</strong> backers
-              </span>
-            </div>
+            {item.backers > 0 ? (
+              <div className="flex items-center gap-1.5 min-w-0">
+                <Users className="w-3.5 h-3.5 text-slate-400 shrink-0" />
+                <span className="whitespace-nowrap">
+                  <strong className="text-slate-800 font-bold font-mono">{item.backers.toLocaleString()}</strong> backers
+                </span>
+              </div>
+            ) : <div />}
 
-            <div className="flex items-center gap-1.5 shrink-0">
-              <Coins className="w-3.5 h-3.5 text-slate-400 shrink-0" />
-              <span className="whitespace-nowrap">
-                From <strong className="text-slate-800 font-bold font-mono">{item.price}</strong>
-              </span>
-            </div>
+            {item.price ? (
+              <div className="flex items-center gap-1.5 shrink-0">
+                <Coins className="w-3.5 h-3.5 text-slate-400 shrink-0" />
+                <span className="whitespace-nowrap">
+                  From <strong className="text-slate-800 font-bold font-mono">{item.price}</strong>
+                </span>
+              </div>
+            ) : null}
           </div>
         </div>
 

@@ -186,10 +186,9 @@ async function extractFromPage(page: import('playwright').Page, maxItems: number
             if (progressMatch) {
               progressPct = parseInt(progressMatch[1], 10) || 0;
             }
-            
-            if (raised > 0 && raised < 1000000000) {
-              price = '￥' + raised.toLocaleString();
-            }
+
+            // 注：Makuake 列表卡片不含真正的「最低支援价」，
+            // price 留空让前端自动隐藏「From XXX」更老实
           }
         }
         

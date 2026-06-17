@@ -186,6 +186,29 @@ async function extractFromCards(page: import('playwright').Page, maxItems: numbe
             backers = parseInt(s, 10) || 0;
           }
         }
+        // backers 兜底：扫所有行找含 "backers" / "backer" / "supporters" 的
+        if (backers === 0) {
+          for (const line of lines) {
+            const m = line.match(/([\d,.]+[kK]?)\s*(?:backers?|supporters?|funders?)/i);
+            if (m) {
+              let s = m[1].replace(/,/g, '');
+              backers = s.endsWith('k') || s.endsWith('K')
+                ? Math.round(parseFloat(s.slice(0, -1)) * 1000)
+                : parseInt(s, 10) || 0;
+              if (backers > 0) break;
+            }
+          }
+        }
+
+        // progress %：从所有行扫，找形如 "100% funded" / "7298% funded" / "raised XXX%"
+        let progressPct = 0;
+        for (const line of lines) {
+          const m = line.match(/(\d{1,5})\s*%\s*(?:funded|raised)?/i);
+          if (m) {
+            const v = parseInt(m[1], 10);
+            if (v > 0 && v <= 99999) { progressPct = v; break; }
+          }
+        }
 
         // slug
         const slugMatch = href.match(/\/projects\/([^?/]+\/[^?/]+)/);
@@ -200,6 +223,7 @@ async function extractFromCards(page: import('playwright').Page, maxItems: numbe
           currency,
           currencySymbol,
           backers,
+          progressPct,
           slug,
         });
       } catch (e) {
@@ -220,7 +244,7 @@ async function extractFromCards(page: import('playwright').Page, maxItems: numbe
     raised: r.raised || 0,
     currency: r.currency || 'USD',
     currencySymbol: r.currencySymbol || '$',
-    progress_pct: r.raised > 0 ? 100 : 0,
+    progress_pct: r.progressPct ?? 0,
     backers: r.backers || 0,
     price: '',
     campaign_url: r.campaignUrl,
