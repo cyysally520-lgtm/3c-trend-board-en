@@ -153,9 +153,50 @@ async function extractFromDataProject(page: import('playwright').Page, maxItems:
       if (!rawJson) continue;
       try {
         const p = JSON.parse(rawJson);
-        const pledgedAmount = typeof p.pledged === 'object' ? p.pledged.amount : p.pledged;
-        const pledgedCurrency = typeof p.pledged === 'object' ? p.pledged.currency : p.currency;
-        const pledgedSymbol = typeof p.pledged === 'object' ? p.pledged.currency_symbol : (p.currency_symbol || '$');
+        // 关键修复：KS 列表 JSON 里 `p.currency` 是项目**原始币种**（如 SGD/USD/EUR）
+        // `p.pledged` 字段：
+        //   - 数字 → 原币种已筹金额（例如 5,919,596 SGD）
+        //   - 对象 → 按访客 IP 折算后的（`{amount, currency, currency_symbol}`，amount 是 USD/欧元等折算值）
+        // 想显示"原网址数字"必须用顶层 p.currency + 反算原币金额：
+        //   原币金额 = p.usd_pledged / p.static_usd_rate（如 SGD = USD / 0.78）
+        // 优先 p.usd_pledged + p.static_usd_rate 反算；失败再退到 pledged.amount
+        const projectCurrency = p.currency || 'USD';                     // 原币种代码
+        // currency_symbol 修正：KS API 给的 "$" 不区分 USD/HKD/SGD/CAD/AUD/MXN 等
+        // 按 currency 字符串映射成专用前缀符号（HKD → HK$）
+        const symbolMap: Record<string, string> = {
+          USD: '$',
+          HKD: 'HK$',
+          SGD: 'S$',
+          CAD: 'CA$',
+          AUD: 'A$',
+          NZD: 'NZ$',
+          MXN: 'MX$',
+          EUR: '€',
+          GBP: '£',
+          JPY: '¥',
+          CNY: '¥',
+        };
+        const projectSymbol = symbolMap[projectCurrency] || p.currency_symbol || '$';
+
+        let pledgedAmount: number;
+        if (typeof p.usd_pledged === 'number' && typeof p.static_usd_rate === 'number' && p.static_usd_rate > 0) {
+          // 反算原币 = USD 总额 / 汇率（static_usd_rate = "1 项目币 = X USD"）
+          pledgedAmount = Math.round(p.usd_pledged / p.static_usd_rate);
+        } else if (typeof p.pledged === 'number') {
+          // p.pledged 是数字 = 原币种值，直接用
+          pledgedAmount = p.pledged;
+        } else if (p.pledged?.amount !== undefined && p.pledged?.currency === projectCurrency) {
+          // pledged 对象的 currency 跟项目原币相同 → 也是原币值
+          pledgedAmount = p.pledged.amount;
+        } else if (p.pledged?.amount !== undefined) {
+          // 兜底：用 pledged 对象（虽然可能是折算后）
+          pledgedAmount = p.pledged.amount;
+        } else {
+          pledgedAmount = 0;
+        }
+
+        const pledgedCurrency = projectCurrency;
+        const pledgedSymbol = projectSymbol;
         const goalAmount = typeof p.goal === 'object' ? p.goal.amount : p.goal;
         const rawPct = p.percent_funded || (goalAmount && goalAmount > 0 ? (pledgedAmount / goalAmount) * 100 : 0);
         // 剩余天数：deadline 是 unix 秒。用 floor 取真实剩余整天数（22.x → 22）
