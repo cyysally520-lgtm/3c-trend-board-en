@@ -258,7 +258,9 @@ async function extractFromCards(page: import('playwright').Page, maxItems: numbe
  * 从详情页补充 founder/location/price
  */
 async function scrapeDetailsFromPages(items: RawCrowdfundingItem[], ctx: import('playwright').BrowserContext): Promise<void> {
-  const itemsNeedingDetail = items.filter(it => !it.founder || it.founder === 'Unknown' || !it.price);
+  // 所有 Indiegogo 条目都跑详情页：列表卡的金额是 USD 折算/backers 不准/缺 days_left
+  // 详情页才有原货币真实金额、真实 backers、剩余天数
+  const itemsNeedingDetail = items.slice();
   if (itemsNeedingDetail.length === 0) return;
 
   log.info('indiegogo', `fetching detail pages for ${itemsNeedingDetail.length} projects...`);
@@ -285,6 +287,11 @@ async function scrapeDetailsFromPages(items: RawCrowdfundingItem[], ctx: import(
           let founder = '';
           let location = '';
           let price = '';
+          let raised = 0;
+          let currencySymbol = '';
+          let backers = 0;
+          let daysLeft = 0;
+          let progressPct = 0;
 
           // 创始人：查找 "by" 模式或 creator 元素
           const creatorEl = document.querySelector('[class*="creator"], [class*="owner"], [class*="campaigner"], a[href*="/people/"]');
@@ -303,6 +310,34 @@ async function scrapeDetailsFromPages(items: RawCrowdfundingItem[], ctx: import(
             const locMatch = allText.match(/([A-Z][a-z]+(?:\s*,\s*[A-Z][a-z]+)+)/);
             if (locMatch) location = locMatch[1].trim();
           }
+
+          // === 关键金额字段（按行尝试多种模式）===
+          // Indiegogo 详情页关键字符串通常是：
+          //   "HK$ 2,942,977 raised" / "HK$2,942,977"
+          //   "USD $ 376,847 USD raised"
+          //   "145 backers"
+          //   "23 days left"
+          // 先找带 "raised" 的金额，提取货币 + 数值
+          const raisedMatch = allText.match(/((?:HK\$|S\$|A\$|CA\$|NZ\$|US\$|USD|EUR|GBP|JPY|CNY|HKD|SGD|AUD)?\s*[€£¥$]?)\s*([\d,]+(?:\.\d+)?)\s*(?:raised|of\s+\$|funded)/i);
+          if (raisedMatch) {
+            const symRaw = raisedMatch[1].trim().toUpperCase().replace(/\s+/g, '');
+            currencySymbol = symRaw || '$';
+            raised = parseFloat(raisedMatch[2].replace(/,/g, '')) || 0;
+          }
+
+          // backers：找 "X backers"
+          const backersMatch = allText.match(/([\d,]+)\s+backers/i);
+          if (backersMatch) backers = parseInt(backersMatch[1].replace(/,/g, ''), 10) || 0;
+
+          // days left
+          const daysMatch = allText.match(/(\d+)\s+days?\s+left/i);
+          if (daysMatch) daysLeft = parseInt(daysMatch[1], 10) || 0;
+          const hoursMatch = allText.match(/(\d+)\s+hours?\s+left/i);
+          if (!daysLeft && hoursMatch) daysLeft = 0; // 不到 1 天
+
+          // progress %
+          const pctMatch = allText.match(/(\d{1,5})\s*%\s*(?:funded|raised|of\s+goal)/i);
+          if (pctMatch) progressPct = parseInt(pctMatch[1], 10) || 0;
 
           // 价格：从 perk/reward 区域提取最低价格
           let minPrice = Infinity;
@@ -346,12 +381,31 @@ async function scrapeDetailsFromPages(items: RawCrowdfundingItem[], ctx: import(
             price = String.fromCharCode(36) + formatted; // "$" + formatted
           }
 
-          return { founder, location, price };
+          return { founder, location, price, raised, currencySymbol, backers, daysLeft, progressPct };
         });
 
         if (detail.founder && item.founder === 'Unknown') item.founder = detail.founder;
         if (detail.location && item.location === 'Unknown') item.location = detail.location;
         if (detail.price) item.price = detail.price;
+        // 用详情页的真实数字覆盖列表页的 USD 折算值
+        if (detail.raised > 0) {
+          item.raised = detail.raised;
+          // 货币符号映射：HK$ → HK$，US$ → $，等等
+          const sym = detail.currencySymbol;
+          if (sym) {
+            if (/HK\$|HKD/i.test(sym)) { item.currency = 'HKD'; item.currencySymbol = 'HK$'; }
+            else if (/S\$|SGD/i.test(sym)) { item.currency = 'SGD'; item.currencySymbol = 'S$'; }
+            else if (/A\$|AUD/i.test(sym)) { item.currency = 'AUD'; item.currencySymbol = 'A$'; }
+            else if (/CA\$|CAD/i.test(sym)) { item.currency = 'CAD'; item.currencySymbol = 'CA$'; }
+            else if (/€|EUR/i.test(sym)) { item.currency = 'EUR'; item.currencySymbol = '€'; }
+            else if (/£|GBP/i.test(sym)) { item.currency = 'GBP'; item.currencySymbol = '£'; }
+            else if (/¥|JPY|CNY/i.test(sym)) { item.currency = 'JPY'; item.currencySymbol = '¥'; }
+            else { item.currency = 'USD'; item.currencySymbol = '$'; }
+          }
+        }
+        if (detail.backers > 0) item.backers = detail.backers;
+        if (detail.daysLeft > 0) (item as any).daysLeft = detail.daysLeft;
+        if (detail.progressPct > 0) item.progress_pct = detail.progressPct;
         if (detail.founder || detail.location || detail.price) fetched++;
         log.info('indiegogo', `  founder=${detail.founder || item.founder}, loc=${detail.location || item.location}, price=${detail.price || 'N/A'}`);
 

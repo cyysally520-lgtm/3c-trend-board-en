@@ -90,17 +90,18 @@ export const CrowdCard: React.FC<CrowdCardProps> = ({ item }) => {
                 Raised <strong className="text-slate-800 font-bold font-mono">{formatRaised(item.raised, item.currencySymbol)}</strong>
               </span>
             </div>
-            {item.platform === 'Kickstarter' && typeof item.daysLeft === 'number' ? (
+            {/* 优先 progress %，没有再 fallback daysLeft */}
+            {item.progress_pct > 0 ? (
+              <div className="flex items-center gap-1 shrink-0">
+                <span className="text-slate-400 font-normal">Progress</span>
+                <span className="text-[#10b981] font-bold font-mono">{item.progress_pct}%</span>
+              </div>
+            ) : typeof item.daysLeft === 'number' ? (
               <div className="flex items-center gap-1 shrink-0">
                 <span className="text-slate-400 font-normal">Days left</span>
                 <span className={`font-bold font-mono ${item.daysLeft === 0 ? 'text-slate-400' : 'text-[#10b981]'}`}>
                   {item.daysLeft === 0 ? 'Ended' : item.daysLeft}
                 </span>
-              </div>
-            ) : item.progress_pct > 0 ? (
-              <div className="flex items-center gap-1 shrink-0">
-                <span className="text-slate-400 font-normal">Progress</span>
-                <span className="text-[#10b981] font-bold font-mono">{item.progress_pct}%</span>
               </div>
             ) : null}
           </div>
