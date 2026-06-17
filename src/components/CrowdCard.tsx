@@ -82,15 +82,15 @@ export const CrowdCard: React.FC<CrowdCardProps> = ({ item }) => {
         {/* High Precision Stats Rows (Lucide Icons, clean bullets, colored metrics) */}
         <div className="space-y-3 bg-[#f8fafc]/80 p-4 rounded-xl border border-slate-100">
           
-          {/* First row: Coin icon + raised & progress */}
-          <div className="flex items-center justify-between text-[11px] sm:text-xs text-slate-600">
-            <div className="flex items-center gap-1.5 min-w-0">
-              <Clock className="w-3.5 h-3.5 text-slate-400 shrink-0" />
-              <span className="truncate">
+          {/* Row 1: Raised + Progress %（同行靠两端，字小不截断） */}
+          <div className="flex items-center justify-between text-[10px] sm:text-[11px] text-slate-600 gap-2">
+            <div className="flex items-center gap-1.5 min-w-0 flex-1">
+              <Clock className="w-3 h-3 text-slate-400 shrink-0" />
+              <span className="whitespace-nowrap">
                 Raised <strong className="text-slate-800 font-bold font-mono">{formatRaised(item.raised, item.currencySymbol)}</strong>
               </span>
             </div>
-            <div className="flex items-center gap-1 shrink-0 pl-2">
+            <div className="flex items-center gap-1 shrink-0">
               <span className="text-slate-400 font-normal">Progress</span>
               <span className="text-[#10b981] font-bold font-mono">{item.progress_pct}%</span>
             </div>
@@ -99,8 +99,8 @@ export const CrowdCard: React.FC<CrowdCardProps> = ({ item }) => {
           {/* Progress bar */}
           <div className="py-0.5">
             <div className="w-full bg-slate-100 rounded-full h-[6px] overflow-hidden">
-              <div 
-                style={{ width: `${Math.min(item.progress_pct, 100)}%` }} 
+              <div
+                style={{ width: `${Math.min(item.progress_pct, 100)}%` }}
                 className={`h-full rounded-full transition-all duration-500 ${
                   item.progress_pct >= 100 ? 'bg-gradient-to-r from-emerald-500 to-teal-500' : 'bg-emerald-500'
                 }`}
@@ -108,18 +108,18 @@ export const CrowdCard: React.FC<CrowdCardProps> = ({ item }) => {
             </div>
           </div>
 
-          {/* Second row: Users icon + Backers & Price */}
-          <div className="flex items-center justify-between text-[11px] sm:text-xs text-slate-600">
-            <div className="flex items-center gap-1.5">
-              <Users className="w-3.5 h-3.5 text-slate-400 shrink-0" />
-              <span>
+          {/* Row 2: Backers & Price */}
+          <div className="flex items-center justify-between text-[10px] sm:text-[11px] text-slate-600 gap-2">
+            <div className="flex items-center gap-1.5 min-w-0">
+              <Users className="w-3 h-3 text-slate-400 shrink-0" />
+              <span className="whitespace-nowrap">
                 <strong className="text-slate-800 font-bold font-mono">{item.backers.toLocaleString()}</strong> backers
               </span>
             </div>
 
-            <div className="flex items-center gap-1.5 pl-2">
-              <Coins className="w-3.5 h-3.5 text-slate-400 shrink-0" />
-              <span>
+            <div className="flex items-center gap-1.5 shrink-0">
+              <Coins className="w-3 h-3 text-slate-400 shrink-0" />
+              <span className="whitespace-nowrap">
                 From <strong className="text-slate-800 font-bold font-mono">{item.price}</strong>
               </span>
             </div>
