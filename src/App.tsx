@@ -331,7 +331,9 @@ export default function App() {
     }
 
     if (selectedBatch) {
-      result = result.filter(item => item.batch === selectedBatch);
+      // 按 source 筛选：'YC' → 'Y Combinator'；'a16z' → 'a16z'
+      const wantSource = selectedBatch === 'YC' ? 'Y Combinator' : 'a16z';
+      result = result.filter(item => item.source === wantSource);
     }
 
     return result;
@@ -364,25 +366,8 @@ export default function App() {
     });
   };
 
-  // 「跳到上次浏览位置」：scrollY 持久化
-  const [hasLastScroll, setHasLastScroll] = useState(false);
-  useEffect(() => {
-    const onScroll = () => {
-      try { localStorage.setItem('invest-scroll-y', String(window.scrollY)); } catch {}
-    };
-    window.addEventListener('scroll', onScroll, { passive: true });
-    try {
-      const v = localStorage.getItem('invest-scroll-y');
-      if (v && parseInt(v, 10) > 200) setHasLastScroll(true);
-    } catch {}
-    return () => window.removeEventListener('scroll', onScroll);
-  }, []);
-  const jumpToLastScroll = () => {
-    try {
-      const v = localStorage.getItem('invest-scroll-y');
-      if (v) window.scrollTo({ top: parseInt(v, 10), behavior: 'smooth' });
-    } catch {}
-  };
+  // 「跳到上次浏览位置」：之前实现的 scrollY 持久化没区分 tab，
+  // 跨 tab 跳转会跳错位置。简单方案干扰大于价值，移除。
 
   // 赛道列表（按出现频次倒序）
   const investCategories = useMemo(() => {
@@ -712,17 +697,6 @@ export default function App() {
                   {investFavorites.size}
                 </span>
               </button>
-
-              {hasLastScroll && (
-                <button
-                  onClick={jumpToLastScroll}
-                  className="inline-flex items-center gap-2 text-xs font-semibold px-3 py-1.5 rounded-full border cursor-pointer transition bg-white border-slate-200 text-slate-700 hover:border-emerald-300"
-                  title="Scroll back to last position"
-                >
-                  <Calendar className="w-3.5 h-3.5" />
-                  Resume scroll
-                </button>
-              )}
             </div>
 
             {filteredInvests.length > 0 ? (
@@ -820,7 +794,7 @@ export default function App() {
               <div className="border-t border-slate-100 pt-4 flex flex-col sm:flex-row sm:items-center gap-3">
                 <span className="text-[11px] text-slate-400 font-medium whitespace-nowrap">Platforms:</span>
                 <div className="flex flex-wrap items-center gap-2">
-                  {['Kickstarter', 'Indiegogo', 'Makuake', 'Crowd Supply'].map(plat => {
+                  {['Kickstarter', 'Crowd Supply', 'Indiegogo', 'Makuake'].map(plat => {
                     const isSelected = selectedPlatforms.includes(plat);
                     return (
                       <button
@@ -1016,21 +990,15 @@ export default function App() {
 
                 {/* YC/a16z 批次限制过滤 */}
                 <div className="flex items-center gap-3 font-sans">
-                  <span className="text-[11px] text-slate-400 font-medium">Batch:</span>
+                  <span className="text-[11px] text-slate-400 font-medium">Source:</span>
                   <select
                     value={selectedBatch}
                     onChange={e => setSelectedBatch(e.target.value)}
                     className="bg-slate-50 border border-slate-200 rounded-md text-xs px-2.5 py-1.5 text-slate-700 outline-none focus:ring-1 focus:ring-emerald-500 cursor-pointer font-medium"
                   >
-                    <option value="">All batches</option>
-                    <option value="Spring 2026">S26 (Spring 2026)</option>
-                    <option value="Winter 2026">W26 (Winter 2026)</option>
-                    <option value="Fall 2025">F25 (Fall 2025)</option>
-                    <option value="Summer 2025">S25 (Summer 2025)</option>
-                    <option value="Winter 2025">W25 (Winter 2025)</option>
-                    <option value="Fall 2024">F24 (Fall 2024)</option>
-                    <option value="Summer 2024">S24 (Summer 2024)</option>
-                    <option value="Active">a16z Active</option>
+                    <option value="">All sources</option>
+                    <option value="YC">YC (Y Combinator)</option>
+                    <option value="a16z">a16z</option>
                   </select>
 
                   {/* 重设 */}
