@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Trophy, MapPin, Users, ChevronDown, ChevronUp, ArrowUpRight, TrendingUp } from 'lucide-react';
+import { Trophy, MapPin, Users, ChevronDown, ChevronUp, ArrowUpRight } from 'lucide-react';
 import { StartupItem } from '../types';
 import { motion, AnimatePresence } from 'motion/react';
 
@@ -73,14 +73,6 @@ export const StartupCard: React.FC<StartupCardProps> = ({ item }) => {
           }`} title={item.source === 'a16z' ? 'Andreessen Horowitz Portfolio' : 'Y Combinator Incubation'}>
             {item.source === 'a16z' ? 'a16z' : 'YC'}
           </div>
-        </div>
-
-        {/* Stage chip：Early stage / Active 等。YC 全为 Early；a16z 用 Active */}
-        <div className="flex flex-wrap items-center gap-1.5">
-          <span className="inline-flex items-center gap-1 text-[11px] font-mono font-semibold px-2.5 py-0.5 rounded-full border border-amber-200 text-amber-700 bg-amber-50/70">
-            <TrendingUp className="w-3 h-3" />
-            {item.source === 'a16z' ? 'Active' : 'Early'}
-          </span>
         </div>
 
         {/* AI Insight deep analysis */}
