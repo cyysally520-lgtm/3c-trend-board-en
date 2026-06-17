@@ -105,14 +105,16 @@ export const CrowdCard: React.FC<CrowdCardProps> = ({ item }) => {
             ) : null}
           </div>
 
-          {/* Progress bar（KS 不显示，其他平台有进度时显示） */}
-          {item.platform !== 'Kickstarter' && item.progress_pct > 0 && (
+          {/* Progress bar：所有非 KS 卡片都画一根线，没真实进度时画满格当视觉分隔 */}
+          {item.platform !== 'Kickstarter' && (
             <div className="py-0.5">
               <div className="w-full bg-slate-100 rounded-full h-[6px] overflow-hidden">
                 <div
-                  style={{ width: `${Math.min(item.progress_pct, 100)}%` }}
+                  style={{ width: `${item.progress_pct > 0 ? Math.min(item.progress_pct, 100) : 100}%` }}
                   className={`h-full rounded-full transition-all duration-500 ${
-                    item.progress_pct >= 100 ? 'bg-gradient-to-r from-emerald-500 to-teal-500' : 'bg-emerald-500'
+                    item.progress_pct >= 100 || item.progress_pct === 0
+                      ? 'bg-gradient-to-r from-emerald-500 to-teal-500'
+                      : 'bg-emerald-500'
                   }`}
                 ></div>
               </div>
