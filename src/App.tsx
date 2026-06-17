@@ -444,17 +444,21 @@ export default function App() {
   }, [investData, investCategory, investSearch, showFavoritesOnly]);
 
   // 分组：
-  //  - 选中某个 category（赛道筛选）：单组，按时间排序
-  //  - All（无筛选）：一组混合所有板块，按时间排序，#1 = 全局最新
+  //  - 全局序号（rank）以 All 视图（无筛选）的时间排序为准，所有视图保持一致
+  //  - 切到某 category：用全局排序后的卡片，filter 当前 category，rank 不变
   const groupedInvests = useMemo(() => {
-    const sortAndRerank = (items: InvestItem[]): InvestItem[] =>
-      [...items]
-        .sort((a, b) => (a.daysAgo ?? 999) - (b.daysAgo ?? 999))
-        .map((it, i) => ({ ...it, rank: i + 1 }));
+    // 第一步：基于全部 investData 按时间排序，分配全局 rank
+    const ranked = [...investData]
+      .sort((a, b) => (a.daysAgo ?? 999) - (b.daysAgo ?? 999))
+      .map((it, i) => ({ ...it, rank: i + 1 }));
+
+    // 第二步：对照 filteredInvests 的 id 集合（搜索/赛道筛选/收藏后剩下的）
+    const visibleIds = new Set(filteredInvests.map((it) => it.id));
+    const visibleRanked = ranked.filter((it) => visibleIds.has(it.id));
 
     const heading = investCategory || 'All';
-    return [{ category: heading, items: sortAndRerank(filteredInvests) }];
-  }, [filteredInvests, investCategory]);
+    return [{ category: heading, items: visibleRanked }];
+  }, [investData, filteredInvests, investCategory]);
 
   return (
     <div className="min-h-screen bg-[#f9fafb] text-slate-800 font-sans flex flex-col antialiased relative">
