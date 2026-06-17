@@ -105,21 +105,28 @@ export const CrowdCard: React.FC<CrowdCardProps> = ({ item }) => {
             ) : null}
           </div>
 
-          {/* Progress bar：所有非 KS 卡片都画一根线，没真实进度时画满格当视觉分隔 */}
-          {item.platform !== 'Kickstarter' && (
-            <div className="py-0.5">
-              <div className="w-full bg-slate-100 rounded-full h-[6px] overflow-hidden">
-                <div
-                  style={{ width: `${item.progress_pct > 0 ? Math.min(item.progress_pct, 100) : 100}%` }}
-                  className={`h-full rounded-full transition-all duration-500 ${
-                    item.progress_pct >= 100 || item.progress_pct === 0
-                      ? 'bg-gradient-to-r from-emerald-500 to-teal-500'
-                      : 'bg-emerald-500'
-                  }`}
-                ></div>
-              </div>
+          {/* Progress bar：所有卡片都画一根绿线作视觉分隔
+              KS 不显示百分比（数字过大），但仍画满格作为视觉一致；其他平台按真实 progress 填充 */}
+          <div className="py-0.5">
+            <div className="w-full bg-slate-100 rounded-full h-[6px] overflow-hidden">
+              <div
+                style={{
+                  width: `${
+                    item.platform === 'Kickstarter' || item.progress_pct === 0
+                      ? 100
+                      : Math.min(item.progress_pct, 100)
+                  }%`,
+                }}
+                className={`h-full rounded-full transition-all duration-500 ${
+                  item.progress_pct >= 100
+                    || item.progress_pct === 0
+                    || item.platform === 'Kickstarter'
+                    ? 'bg-gradient-to-r from-emerald-500 to-teal-500'
+                    : 'bg-emerald-500'
+                }`}
+              ></div>
             </div>
-          )}
+          </div>
 
           {/* Row 2: Backers & Price */}
           <div className="flex items-center justify-between text-[12px] sm:text-[13px] text-slate-600 gap-2">
