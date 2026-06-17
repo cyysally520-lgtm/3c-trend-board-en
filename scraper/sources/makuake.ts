@@ -83,6 +83,9 @@ export async function scrapeMakuake(maxItems = 30): Promise<ScrapeResult<RawCrow
       scrapedAt: new Date().toISOString(),
     }));
 
+    // 从详情页抓取真实金额/支持者/起始价（列表页字段不准/缺失）
+    await enrichFromDetailPages(result.items, ctx);
+
     result.ok = result.items.length > 0;
     log.ok('makuake', `extracted ${result.items.length} items`);
   } catch (err) {
@@ -259,6 +262,102 @@ async function extractFromPage(page: import('playwright').Page, maxItems: number
     }
     return items;
   }, maxItems as any) as Promise<RawMakuakeItem[]>;
+}
+
+/**
+ * 详情页抓真值：Makuake 详情页 head 里有 <meta property="note:current_amount" />
+ * 等系列字段，比列表页文本拆分稳定多。每条加上：
+ *   - raised (note:current_amount)
+ *   - target (note:target_amount) → progress_pct = current/target * 100
+ *   - backers (note:supporters)
+ *   - price = JSON-LD product price 最低值（最便宜 reward）
+ */
+async function enrichFromDetailPages(
+  items: RawCrowdfundingItem[],
+  ctx: import('playwright').BrowserContext,
+): Promise<void> {
+  if (items.length === 0) return;
+  log.info('makuake', `fetching detail pages for ${items.length} projects...`);
+  const detailPage = await ctx.newPage();
+  let fetched = 0;
+  try {
+    for (const item of items) {
+      try {
+        if (!item.campaign_url) continue;
+        await detailPage.goto(item.campaign_url, { waitUntil: 'domcontentloaded', timeout: 30000 });
+        await detailPage.waitForTimeout(800);
+        const detail = await detailPage.evaluate(() => {
+          // 完全 inline 避开 tsx __name 坑（箭头函数也会被注入）
+          let current = 0;
+          let target = 0;
+          let supporters = 0;
+          const elCur = document.querySelector('meta[property="note:current_amount"]');
+          if (elCur) current = parseInt((elCur.getAttribute('content') || '').replace(/,/g, ''), 10) || 0;
+          const elTar = document.querySelector('meta[property="note:target_amount"]');
+          if (elTar) target = parseInt((elTar.getAttribute('content') || '').replace(/,/g, ''), 10) || 0;
+          const elSup = document.querySelector('meta[property="note:supporters"]');
+          if (elSup) supporters = parseInt((elSup.getAttribute('content') || '').replace(/,/g, ''), 10) || 0;
+
+          // 最低 price：JSON-LD 里 product offers price 最小值
+          let minPrice = Infinity;
+          const ldNodes = document.querySelectorAll('script[type="application/ld+json"]');
+          for (let i = 0; i < ldNodes.length; i++) {
+            try {
+              const data: any = JSON.parse(ldNodes[i].textContent || '{}');
+              const arr = Array.isArray(data) ? data : [data];
+              for (let j = 0; j < arr.length; j++) {
+                const obj = arr[j];
+                const offers = obj && obj.offers;
+                if (Array.isArray(offers)) {
+                  for (let k = 0; k < offers.length; k++) {
+                    const v = parseFloat(offers[k] && offers[k].price);
+                    if (!isNaN(v) && v > 0 && v < minPrice) minPrice = v;
+                  }
+                } else if (offers && offers.price) {
+                  const v = parseFloat(offers.price);
+                  if (!isNaN(v) && v > 0 && v < minPrice) minPrice = v;
+                }
+              }
+            } catch (e) { /* skip */ }
+          }
+          // fallback：找带 "円" 字样的 reward 价
+          if (minPrice === Infinity) {
+            const bodyText = (document.body && document.body.innerText) || '';
+            const re = /(\d{3,7})\s*円/g;
+            let m;
+            while ((m = re.exec(bodyText)) !== null) {
+              const v = parseInt(m[1], 10);
+              if (v >= 1000 && v < 200000 && v < minPrice) minPrice = v;
+            }
+          }
+          return {
+            current,
+            target,
+            supporters,
+            price: minPrice === Infinity ? 0 : minPrice,
+          };
+        });
+
+        if (detail.current > 0) item.raised = detail.current;
+        if (detail.target > 0 && detail.current > 0) {
+          item.progress_pct = Math.round((detail.current / detail.target) * 100);
+        }
+        if (detail.supporters > 0) item.backers = detail.supporters;
+        if (detail.price > 0) item.price = '￥' + detail.price.toLocaleString();
+        fetched++;
+        log.info(
+          'makuake',
+          `  ${item.name.slice(0, 30)} → ¥${item.raised.toLocaleString()} / ${item.progress_pct}% / ${item.backers} bk / price=${item.price}`,
+        );
+        await detailPage.waitForTimeout(500 + Math.random() * 500);
+      } catch (err) {
+        log.warn('makuake', `detail failed for ${item.name.slice(0, 30)}: ${err instanceof Error ? err.message : err}`);
+      }
+    }
+  } finally {
+    await detailPage.close();
+  }
+  log.ok('makuake', `enriched ${fetched}/${items.length} items from detail pages`);
 }
 
 if (process.argv[1]?.includes('makuake')) {
