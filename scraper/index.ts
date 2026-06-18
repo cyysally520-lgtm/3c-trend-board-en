@@ -80,36 +80,21 @@ async function main() {
     byKind[kind].push(...result.items);
   }
 
-  // ==== EN 站 AI 翻译流水线：把已有/新增的中文字段反向译为英文 ====
-  // 顺序优先级：crowd > startup > invest > news（按用户要求 + Gemini 限流时的容错性）
+  // ==== EN 站 AI 翻译流水线 ====
+  // 用户决策（2026-06-18）：只翻译 tab1 (investments)，把全部 Gemini/Deepseek 配额留给它。
+  // 其余 3 个 tab 的英文字段已稳定（crowd/news 原文就是英文，startup 已翻完），
+  // 增量条目即使没 _en 也回退中文/原文，不影响主体英文化。
 
-  // 1. 众筹：category_tag_zh → category_tag_en，summary_zh → summary_en
-  //    name 本来是英文（KS/CrowdSupply 数据），无需译
-  if (byKind.crowdfunding.length > 0) {
-    log.info('translate', 'translating crowdfunding tags + summaries to EN...');
-    await translateCrowdToEn(byKind.crowdfunding);
-  }
-
-  // 2. 海外孵化（startups）：intro_zh → intro_en
-  //    name / intro 本来是英文（YC/a16z 数据）
-  if (byKind.startups.length > 0) {
-    log.info('translate', 'translating startup intros to EN...');
-    await translateStartupsToEn(byKind.startups);
-  }
-
-  // 3. AI 高潜（investments，nextbanker 中文源）：所有字段 → *_en
-  //    最大 Gemini 消耗，放在前面以便用户重视
+  // tab1 (AI 高潜，nextbanker 中文源)：所有字段 → *_en（耗配额最大）
   if (byKind.investments.length > 0) {
-    log.info('translate', 'translating invest items to EN (heavy)...');
+    log.info('translate', 'translating invest items to EN (only tab translated, full quota dedicated)...');
     await translateInvestsToEn(byKind.investments);
   }
 
-  // 4. 新闻：category_tag_zh → category_tag_en
-  //    title / snippet 本来是英文，title_zh / snippet_zh 不需要回译
-  if (byKind.news.length > 0) {
-    log.info('translate', 'translating news category tags to EN...');
-    await translateNewsToEn(byKind.news);
-  }
+  // tab2/3/4 翻译已永久禁用（用户要求）。如需恢复打开下方注释。
+  // if (byKind.crowdfunding.length > 0) await translateCrowdToEn(byKind.crowdfunding);
+  // if (byKind.startups.length > 0) await translateStartupsToEn(byKind.startups);
+  // if (byKind.news.length > 0) await translateNewsToEn(byKind.news);
 
   // 新闻：丢弃没图片或图片是占位的条目（Ventureburn/TheVerge 懒加载占位 SVG）
   if (byKind.news.length > 0) {
