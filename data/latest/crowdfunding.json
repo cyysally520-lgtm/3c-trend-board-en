@@ -1,7 +1,7 @@
 {
   "date": "2026-06-18",
   "kind": "crowdfunding",
-  "count": 88,
+  "count": 100,
   "items": [
     {
       "id": "cs-micimike-rev-devices-micimike-home-mini-drop-in-pcb",
@@ -22,7 +22,7 @@
       "summary_zh": [
         "A fully local, open-source replacement board that brings Home Assistant voice to the 1st Gen Google Home Mini"
       ],
-      "scrapedAt": "2026-06-18T12:33:27.995Z",
+      "scrapedAt": "2026-06-18T13:54:07.188Z",
       "category_tag_en": "#Hardware"
     },
     {
@@ -44,7 +44,7 @@
       "summary_zh": [
         "A paper-like monitor for reading, writing, and focused work"
       ],
-      "scrapedAt": "2026-06-18T12:33:27.996Z",
+      "scrapedAt": "2026-06-18T13:54:07.188Z",
       "category_tag_en": "#Hardware"
     },
     {
@@ -66,7 +66,7 @@
       "summary_zh": [
         "Fabricate 1,000 chips of your own design"
       ],
-      "scrapedAt": "2026-06-18T12:33:27.996Z",
+      "scrapedAt": "2026-06-18T13:54:07.188Z",
       "category_tag_en": "#Hardware"
     },
     {
@@ -88,7 +88,7 @@
       "summary_zh": [
         "A flexible KVM remote control with support for wireless connectivity"
       ],
-      "scrapedAt": "2026-06-18T12:33:27.997Z",
+      "scrapedAt": "2026-06-18T13:54:07.189Z",
       "category_tag_en": "#Hardware"
     },
     {
@@ -99,18 +99,18 @@
       "name_zh": "WiCAN Pro",
       "founder": "MeatPi Electronics",
       "location": "Melbourne, Australia",
-      "raised": 181428,
+      "raised": 181606,
       "currency": "USD",
       "currencySymbol": "$",
       "progress_pct": 100,
-      "backers": 1835,
+      "backers": 1837,
       "price": "$89",
       "campaign_url": "https://www.crowdsupply.com/meatpi-electronics/wican-pro",
       "category_tag_zh": "#硬件",
       "summary_zh": [
         "Advanced OBD scanner for next-generation vehicle diagnostics and Home Assistant integration"
       ],
-      "scrapedAt": "2026-06-18T12:33:27.998Z",
+      "scrapedAt": "2026-06-18T13:54:07.190Z",
       "category_tag_en": "#Hardware"
     },
     {
@@ -132,7 +132,7 @@
       "summary_zh": [
         "An even better all-in-one USB to isolated-UARTx2/CAN/RS485/RS232 converter"
       ],
-      "scrapedAt": "2026-06-18T12:33:27.998Z",
+      "scrapedAt": "2026-06-18T13:54:07.190Z",
       "category_tag_en": "#Hardware"
     },
     {
@@ -143,18 +143,18 @@
       "name_zh": "WiCAN",
       "founder": "MeatPi Electronics",
       "location": "Melbourne, Australia",
-      "raised": 55147,
+      "raised": 55231,
       "currency": "USD",
       "currencySymbol": "$",
       "progress_pct": 100,
-      "backers": 1040,
+      "backers": 1041,
       "price": "$42",
       "campaign_url": "https://www.crowdsupply.com/meatpi-electronics/wican",
       "category_tag_zh": "#硬件",
       "summary_zh": [
         "Open source, ESP32-C3 CAN adapter with USB, Wi-Fi, and BLE support"
       ],
-      "scrapedAt": "2026-06-18T12:33:27.999Z",
+      "scrapedAt": "2026-06-18T13:54:07.190Z",
       "category_tag_en": "#Hardware"
     },
     {
@@ -176,7 +176,7 @@
       "summary_zh": [
         "A high-performance audio and sensor system for the PocketBeagle 2"
       ],
-      "scrapedAt": "2026-06-18T12:33:27.999Z",
+      "scrapedAt": "2026-06-18T13:54:07.190Z",
       "category_tag_en": "#Hardware"
     },
     {
@@ -198,7 +198,7 @@
       "summary_zh": [
         "A 45 W USB-powered soldering iron compatible with Weller RT Micro tips"
       ],
-      "scrapedAt": "2026-06-18T12:33:28.000Z",
+      "scrapedAt": "2026-06-18T13:54:07.191Z",
       "category_tag_en": "#Hardware"
     },
     {
@@ -220,7 +220,7 @@
       "summary_zh": [
         "A USB interfacing tool for developers & tech enthusiasts"
       ],
-      "scrapedAt": "2026-06-18T12:33:28.000Z",
+      "scrapedAt": "2026-06-18T13:54:07.191Z",
       "category_tag_en": "#Hardware"
     },
     {
@@ -242,7 +242,7 @@
       "summary_zh": [
         "A powerful FPGA dev board in a familiar, pint-sized package"
       ],
-      "scrapedAt": "2026-06-18T12:33:28.000Z",
+      "scrapedAt": "2026-06-18T13:54:07.191Z",
       "category_tag_en": "#Hardware"
     },
     {
@@ -264,7 +264,7 @@
       "summary_zh": [
         "Raspberry Pi CM4 expansion board with ChatGPT-based voice control, motor control, powerful sensors, and tons of tutorials"
       ],
-      "scrapedAt": "2026-06-18T12:33:28.001Z",
+      "scrapedAt": "2026-06-18T13:54:07.192Z",
       "category_tag_en": "#Hardware"
     },
     {
@@ -286,7 +286,7 @@
       "summary_zh": [
         "A powerful, hackable FPGA-based audio multitool for Eurorack"
       ],
-      "scrapedAt": "2026-06-18T12:33:28.001Z",
+      "scrapedAt": "2026-06-18T13:54:07.192Z",
       "category_tag_en": "#Hardware"
     },
     {
@@ -308,7 +308,7 @@
       "summary_zh": [
         "A full-featured LiFePO4 battery, power manager, and UPS for the Raspberry Pi"
       ],
-      "scrapedAt": "2026-06-18T12:33:28.001Z",
+      "scrapedAt": "2026-06-18T13:54:07.192Z",
       "category_tag_en": "#Hardware"
     },
     {
@@ -330,7 +330,7 @@
       "summary_zh": [
         "Your Laptop as a KVM Console"
       ],
-      "scrapedAt": "2026-06-18T12:33:28.002Z",
+      "scrapedAt": "2026-06-18T13:54:07.192Z",
       "category_tag_en": "#Hardware"
     },
     {
@@ -352,7 +352,7 @@
       "summary_zh": [
         "A newer, smaller, lighter, more-affordable, seven-inch mini Reform laptop that remains fully open source"
       ],
-      "scrapedAt": "2026-06-18T12:33:28.002Z",
+      "scrapedAt": "2026-06-18T13:54:07.193Z",
       "category_tag_en": "#Hardware"
     },
     {
@@ -363,18 +363,18 @@
       "name_zh": "Tigard",
       "founder": "SecuringHardware.com",
       "location": "Portland, OR",
-      "raised": 165012,
+      "raised": 165061,
       "currency": "USD",
       "currencySymbol": "$",
       "progress_pct": 100,
-      "backers": 1742,
+      "backers": 1743,
       "price": "$35",
       "campaign_url": "https://www.crowdsupply.com/securinghw/tigard",
       "category_tag_zh": "#硬件",
       "summary_zh": [
         "An open source FT2232H-based, multi-protocol, multi-voltage tool for hardware hacking"
       ],
-      "scrapedAt": "2026-06-18T12:33:28.002Z",
+      "scrapedAt": "2026-06-18T13:54:07.193Z",
       "category_tag_en": "#Hardware"
     },
     {
@@ -396,7 +396,7 @@
       "summary_zh": [
         "The power-analysis and fault-injection tool you can hold in your paw"
       ],
-      "scrapedAt": "2026-06-18T12:33:28.003Z",
+      "scrapedAt": "2026-06-18T13:54:07.193Z",
       "category_tag_en": "#Hardware"
     },
     {
@@ -416,7 +416,7 @@
       "campaign_url": "https://www.makuake.com/project/s111pro",
       "category_tag_zh": "#科技",
       "summary_zh": [],
-      "scrapedAt": "2026-06-18T12:35:17.929Z",
+      "scrapedAt": "2026-06-18T13:55:58.037Z",
       "category_tag_en": "#Technology"
     },
     {
@@ -436,7 +436,7 @@
       "campaign_url": "https://www.makuake.com/project/kadobin",
       "category_tag_zh": "#科技",
       "summary_zh": [],
-      "scrapedAt": "2026-06-18T12:35:17.929Z",
+      "scrapedAt": "2026-06-18T13:55:58.037Z",
       "category_tag_en": "#Technology"
     },
     {
@@ -456,7 +456,7 @@
       "campaign_url": "https://www.makuake.com/project/duraas3",
       "category_tag_zh": "#科技",
       "summary_zh": [],
-      "scrapedAt": "2026-06-18T12:35:17.929Z",
+      "scrapedAt": "2026-06-18T13:55:58.037Z",
       "category_tag_en": "#Technology"
     },
     {
@@ -467,16 +467,16 @@
       "name_zh": "Keychron最新薄型キーボード 天然木デザイン×磁気スイッチ / 8KHz",
       "founder": "Unknown",
       "location": "Japan",
-      "raised": 8644800,
+      "raised": 8697100,
       "currency": "JPY",
       "currencySymbol": "￥",
-      "progress_pct": 1729,
-      "backers": 514,
+      "progress_pct": 1739,
+      "backers": 518,
       "price": "￥2,400",
       "campaign_url": "https://www.makuake.com/project/keychronk3-he-ultra",
       "category_tag_zh": "#科技",
       "summary_zh": [],
-      "scrapedAt": "2026-06-18T12:35:17.929Z",
+      "scrapedAt": "2026-06-18T13:55:58.037Z",
       "category_tag_en": "#Technology"
     },
     {
@@ -496,7 +496,7 @@
       "campaign_url": "https://www.makuake.com/project/lunada_t2",
       "category_tag_zh": "#科技",
       "summary_zh": [],
-      "scrapedAt": "2026-06-18T12:35:17.929Z",
+      "scrapedAt": "2026-06-18T13:55:58.037Z",
       "category_tag_en": "#Technology"
     },
     {
@@ -1169,16 +1169,16 @@
       "name_zh": "制限のない”好き”。動画も、枚数も、思いのまま、高自由度デジタルバッジOmibo",
       "founder": "Unknown",
       "location": "Japan",
-      "raised": 722640,
+      "raised": 723620,
       "currency": "JPY",
       "currencySymbol": "￥",
-      "progress_pct": 723,
-      "backers": 114,
+      "progress_pct": 724,
+      "backers": 115,
       "price": "￥500",
       "campaign_url": "https://www.makuake.com/project/omibo",
       "category_tag_zh": "#科技",
       "summary_zh": [],
-      "scrapedAt": "2026-06-18T12:35:17.929Z",
+      "scrapedAt": "2026-06-18T13:55:58.037Z",
       "category_tag_en": "#Technology"
     },
     {
@@ -1242,7 +1242,7 @@
       "campaign_url": "https://www.makuake.com/project/voicecard",
       "category_tag_zh": "#科技",
       "summary_zh": [],
-      "scrapedAt": "2026-06-18T12:35:17.929Z",
+      "scrapedAt": "2026-06-18T13:55:58.037Z",
       "category_tag_en": "#Technology"
     },
     {
@@ -1342,7 +1342,7 @@
       "campaign_url": "https://www.makuake.com/project/powerbank_01",
       "category_tag_zh": "#科技",
       "summary_zh": [],
-      "scrapedAt": "2026-06-18T12:35:17.929Z",
+      "scrapedAt": "2026-06-18T13:55:58.037Z",
       "category_tag_en": "#Technology"
     },
     {
@@ -1362,7 +1362,7 @@
       "campaign_url": "https://www.makuake.com/project/ontap_roam",
       "category_tag_zh": "#科技",
       "summary_zh": [],
-      "scrapedAt": "2026-06-18T12:35:17.929Z",
+      "scrapedAt": "2026-06-18T13:55:58.037Z",
       "category_tag_en": "#Technology"
     },
     {
@@ -1451,7 +1451,7 @@
       "campaign_url": "https://www.makuake.com/project/3in1coolingstation",
       "category_tag_zh": "#科技",
       "summary_zh": [],
-      "scrapedAt": "2026-06-18T12:35:17.929Z",
+      "scrapedAt": "2026-06-18T13:55:58.037Z",
       "category_tag_en": "#Technology"
     },
     {
@@ -1471,7 +1471,7 @@
       "campaign_url": "https://www.makuake.com/project/emoka",
       "category_tag_zh": "#科技",
       "summary_zh": [],
-      "scrapedAt": "2026-06-18T12:35:17.929Z",
+      "scrapedAt": "2026-06-18T13:55:58.037Z",
       "category_tag_en": "#Technology"
     },
     {
@@ -1629,16 +1629,16 @@
       "name_zh": "【1本で4役】４in1多機能ケーブル｜急速充電対応・持ち運び便利・毎日活躍",
       "founder": "Unknown",
       "location": "Japan",
-      "raised": 300971,
+      "raised": 309606,
       "currency": "JPY",
       "currencySymbol": "￥",
-      "progress_pct": 602,
-      "backers": 104,
+      "progress_pct": 619,
+      "backers": 107,
       "price": "￥2,825",
       "campaign_url": "https://www.makuake.com/project/4in1-cable",
       "category_tag_zh": "#科技",
       "summary_zh": [],
-      "scrapedAt": "2026-06-18T12:35:17.929Z"
+      "scrapedAt": "2026-06-18T13:55:58.037Z"
     },
     {
       "id": "mk-cio_cerberus",
@@ -1908,6 +1908,258 @@
         "No bulky gantry. Compact size. Big workspace. Hands-free precision. Metal-ready power."
       ],
       "scrapedAt": "2026-06-18T12:34:05.335Z"
+    },
+    {
+      "id": "ks-asaptechnologies-miko?ref=discover_saved_projects&category_id=337",
+      "platform": "Kickstarter",
+      "image": "https://i.kickstarter.com/assets/054/095/396/5958ff471ff39c90580e641f15912402_original.png?anim=false&fit=cover&gravity=auto&height=153&origin=ugc&q=92&v=1781358255&width=272&sig=rQWiQlXe1wtRT4kjCFY0aFy3HevRPWKD7vG%2BJ1FEKc8%3D",
+      "name": "Miko- World's Smallest 30W GaN Wall Charger For Your Keys",
+      "name_zh": "Miko- World's Smallest 30W GaN Wall Charger For Your Keys",
+      "founder": "asap Technologies",
+      "location": "Unknown",
+      "raised": 0,
+      "currency": "USD",
+      "currencySymbol": "$",
+      "progress_pct": 0,
+      "backers": 0,
+      "price": "",
+      "campaign_url": "https://www.kickstarter.com/projects/asaptechnologies/miko?ref=discover_saved_projects&category_id=337",
+      "category_tag_zh": "#科技",
+      "summary_zh": [
+        "asap Technologies"
+      ],
+      "scrapedAt": "2026-06-18T13:55:49.068Z"
+    },
+    {
+      "id": "ks-allplanets-skysphere-building-an-intelligent-all-sky-camera-network?ref=discover_saved_projects&category_id=340",
+      "platform": "Kickstarter",
+      "image": "https://i.kickstarter.com/assets/053/810/002/ed54ab8a25289edc90f51e2d1349be05_original.png?anim=false&fit=cover&gravity=auto&height=153&origin=ugc&q=92&v=1779314992&width=272&sig=nE4Zn67C4Zj4AcdJOEWqYaaK9XHIX9dtMPQYJGruu2Y%3D",
+      "name": "SkySphere: Building an Intelligent All-Sky Camera Network",
+      "name_zh": "SkySphere: Building an Intelligent All-Sky Camera Network",
+      "founder": "Franck Marchis",
+      "location": "Unknown",
+      "raised": 0,
+      "currency": "USD",
+      "currencySymbol": "$",
+      "progress_pct": 0,
+      "backers": 0,
+      "price": "",
+      "campaign_url": "https://www.kickstarter.com/projects/allplanets/skysphere-building-an-intelligent-all-sky-camera-network?ref=discover_saved_projects&category_id=340",
+      "category_tag_zh": "#科技",
+      "summary_zh": [
+        "Franck Marchis"
+      ],
+      "scrapedAt": "2026-06-18T13:55:49.068Z"
+    },
+    {
+      "id": "ks-lumoshelmet-lumos-sonorus-mesh-intercom-helmet-with-360-visibility?ref=discover_saved_projects&category_id=52",
+      "platform": "Kickstarter",
+      "image": "https://i.kickstarter.com/assets/053/772/144/648e60b318ec2ea19bcf3e9fcb7c009f_original.png?anim=false&fit=cover&gravity=auto&height=153&origin=ugc&q=92&v=1779108217&width=272&sig=wbD3jWdququIbfrfi4ZDoKQeuljgqAlEcXL5vaw4Zjo%3D",
+      "name": "Lumos Sonorus: Mesh Intercom Helmet with 360° Visibility",
+      "name_zh": "Lumos Sonorus: Mesh Intercom Helmet with 360° Visibility",
+      "founder": "Lumos Helmet",
+      "location": "Unknown",
+      "raised": 0,
+      "currency": "USD",
+      "currencySymbol": "$",
+      "progress_pct": 0,
+      "backers": 0,
+      "price": "",
+      "campaign_url": "https://www.kickstarter.com/projects/lumoshelmet/lumos-sonorus-mesh-intercom-helmet-with-360-visibility?ref=discover_saved_projects&category_id=52",
+      "category_tag_zh": "#科技",
+      "summary_zh": [
+        "Lumos Helmet"
+      ],
+      "scrapedAt": "2026-06-18T13:55:49.069Z"
+    },
+    {
+      "id": "ks-cubiio-gordix-large-format-desktop-cnc-without-rails?ref=discover_saved_projects&category_id=335",
+      "platform": "Kickstarter",
+      "image": "https://i.kickstarter.com/assets/053/730/690/2491e8b460c9ac12e6a7787441f55f20_original.jpg?anim=false&fit=cover&gravity=auto&height=153&origin=ugc&q=92&v=1778775211&width=272&sig=2Min%2Fr%2FmMyHbKWtAN5zYEA8lgaPH1P4jpgJeK5%2BRsBA%3D",
+      "name": "GORDIX: The First 3-in-1 Portable CNC That Fits Your Space",
+      "name_zh": "GORDIX: The First 3-in-1 Portable CNC That Fits Your Space",
+      "founder": "Muherz",
+      "location": "Unknown",
+      "raised": 0,
+      "currency": "USD",
+      "currencySymbol": "$",
+      "progress_pct": 0,
+      "backers": 0,
+      "price": "",
+      "campaign_url": "https://www.kickstarter.com/projects/cubiio/gordix-large-format-desktop-cnc-without-rails?ref=discover_saved_projects&category_id=335",
+      "category_tag_zh": "#科技",
+      "summary_zh": [
+        "Muherz"
+      ],
+      "scrapedAt": "2026-06-18T13:55:49.070Z"
+    },
+    {
+      "id": "ks-207408103-craftphilia-worlds-first-fully-automated-tufting-machine?ref=discover_saved_projects&category_id=334",
+      "platform": "Kickstarter",
+      "image": "https://i.kickstarter.com/assets/054/139/139/4fa3911d7ddcf49efed01819e2d8b76e_original.jpg?anim=false&fit=cover&gravity=auto&height=153&origin=ugc&q=92&v=1781684894&width=272&sig=9hIcMvQDgZlyX4OGsrfJdNBikhzhVEsKjwoqqGwZxcg%3D",
+      "name": "Craftphilia: World's First Fully Automated Tufting Machine",
+      "name_zh": "Craftphilia: World's First Fully Automated Tufting Machine",
+      "founder": "Craftphilia",
+      "location": "Unknown",
+      "raised": 0,
+      "currency": "USD",
+      "currencySymbol": "$",
+      "progress_pct": 0,
+      "backers": 0,
+      "price": "",
+      "campaign_url": "https://www.kickstarter.com/projects/207408103/craftphilia-worlds-first-fully-automated-tufting-machine?ref=discover_saved_projects&category_id=334",
+      "category_tag_zh": "#科技",
+      "summary_zh": [
+        "Craftphilia"
+      ],
+      "scrapedAt": "2026-06-18T13:55:49.070Z"
+    },
+    {
+      "id": "ks-dusq-dusq-the-worlds-only-sleep-regulation-system?ref=discover_saved_projects&category_id=341",
+      "platform": "Kickstarter",
+      "image": "https://i.kickstarter.com/assets/054/070/655/40333b8f3d878d1c64bd468d4f94c74e_original.png?anim=false&fit=cover&gravity=auto&height=153&origin=ugc&q=92&v=1781170241&width=272&sig=eLnHC%2BevUaDbAXceNiQG%2FPFjf8TiPirW8fnaTflOvj0%3D",
+      "name": "DUSQ - The World’s Only Sleep Regulation System",
+      "name_zh": "DUSQ - The World’s Only Sleep Regulation System",
+      "founder": "DUSQ",
+      "location": "Unknown",
+      "raised": 0,
+      "currency": "USD",
+      "currencySymbol": "$",
+      "progress_pct": 0,
+      "backers": 0,
+      "price": "",
+      "campaign_url": "https://www.kickstarter.com/projects/dusq/dusq-the-worlds-only-sleep-regulation-system?ref=discover_saved_projects&category_id=341",
+      "category_tag_zh": "#科技",
+      "summary_zh": [
+        "DUSQ"
+      ],
+      "scrapedAt": "2026-06-18T13:55:49.070Z"
+    },
+    {
+      "id": "ks-jaye-band-jaye-band-the-worlds-most-discreet-minimalist-smartwatch?ref=discover_saved_projects&category_id=341",
+      "platform": "Kickstarter",
+      "image": "https://i.kickstarter.com/assets/054/126/288/e223e7f11be47784f5887adcbdbd36c0_original.png?anim=false&fit=cover&gravity=auto&height=153&origin=ugc&q=92&v=1781604577&width=272&sig=Aoqf5OtB9a%2B0G9KXfrL54ixAFZyvASkyIo%2FzoNxu3jU%3D",
+      "name": "Jaye Band: The world’s most discreet minimalist smartwatch",
+      "name_zh": "Jaye Band: The world’s most discreet minimalist smartwatch",
+      "founder": "Jaye",
+      "location": "Unknown",
+      "raised": 0,
+      "currency": "USD",
+      "currencySymbol": "$",
+      "progress_pct": 0,
+      "backers": 0,
+      "price": "",
+      "campaign_url": "https://www.kickstarter.com/projects/jaye-band/jaye-band-the-worlds-most-discreet-minimalist-smartwatch?ref=discover_saved_projects&category_id=341",
+      "category_tag_zh": "#科技",
+      "summary_zh": [
+        "Jaye"
+      ],
+      "scrapedAt": "2026-06-18T13:55:49.071Z"
+    },
+    {
+      "id": "ks-glinet-comet-q?ref=discover_saved_projects&category_id=337",
+      "platform": "Kickstarter",
+      "image": "https://i.kickstarter.com/assets/053/528/492/d8084aafa8b40a2ba3ec9beee0ecad30_original.jpg?anim=false&fit=cover&gravity=auto&height=153&origin=ugc&q=92&v=1777446985&width=272&sig=OA5TZo0J2Abdy0i5KbW1sD8%2FjtSakYCVROQVy5BSMKk%3D",
+      "name": "GL.iNet Comet Q: Wake, Unlock & Control Remotely",
+      "name_zh": "GL.iNet Comet Q: Wake, Unlock & Control Remotely",
+      "founder": "GL.iNet",
+      "location": "Unknown",
+      "raised": 0,
+      "currency": "USD",
+      "currencySymbol": "$",
+      "progress_pct": 0,
+      "backers": 0,
+      "price": "",
+      "campaign_url": "https://www.kickstarter.com/projects/glinet/comet-q?ref=discover_saved_projects&category_id=337",
+      "category_tag_zh": "#科技",
+      "summary_zh": [
+        "GL.iNet"
+      ],
+      "scrapedAt": "2026-06-18T13:55:49.071Z"
+    },
+    {
+      "id": "ks-makeblock-xtool-wonderpress-the-most-creative-3d-auto-heat-press-ever?ref=discover_saved_projects&category_id=334",
+      "platform": "Kickstarter",
+      "image": "https://i.kickstarter.com/assets/053/190/423/03ecd9cb9ab0cf4999dbfcda4aded8f4_original.jpg?anim=false&fit=cover&gravity=auto&height=153&origin=ugc&q=92&v=1775122328&width=272&sig=c%2Fe0P2mSXSDehENTxhHFNTuqazDydKl%2BBJiUAOt%2F9wc%3D",
+      "name": "xTool WonderPress: The Most Creative 3D Auto Heat Press Ever",
+      "name_zh": "xTool WonderPress: The Most Creative 3D Auto Heat Press Ever",
+      "founder": "xTool",
+      "location": "Unknown",
+      "raised": 0,
+      "currency": "USD",
+      "currencySymbol": "$",
+      "progress_pct": 0,
+      "backers": 0,
+      "price": "",
+      "campaign_url": "https://www.kickstarter.com/projects/makeblock/xtool-wonderpress-the-most-creative-3d-auto-heat-press-ever?ref=discover_saved_projects&category_id=334",
+      "category_tag_zh": "#科技",
+      "summary_zh": [
+        "xTool"
+      ],
+      "scrapedAt": "2026-06-18T13:55:49.072Z"
+    },
+    {
+      "id": "ks-inkwonprinting-inkwon-tag-worlds-1st-4-in-1-pocket-color-inkjet-printer?ref=discover_saved_projects&category_id=334",
+      "platform": "Kickstarter",
+      "image": "https://i.kickstarter.com/assets/054/123/876/e3ff20b5fe9f8fd077902e96716eda20_original.png?anim=false&fit=cover&gravity=auto&height=153&origin=ugc&q=92&v=1781590199&width=272&sig=MqhHQx3QRTeiKv5wgs3%2B2CZiy120p4FWto21IC19Wqk%3D",
+      "name": "INKWON Tag - World's 1st 4-in-1 Pocket Creative Studio",
+      "name_zh": "INKWON Tag - World's 1st 4-in-1 Pocket Creative Studio",
+      "founder": "INKWON Printing",
+      "location": "Unknown",
+      "raised": 0,
+      "currency": "USD",
+      "currencySymbol": "$",
+      "progress_pct": 0,
+      "backers": 0,
+      "price": "",
+      "campaign_url": "https://www.kickstarter.com/projects/inkwonprinting/inkwon-tag-worlds-1st-4-in-1-pocket-color-inkjet-printer?ref=discover_saved_projects&category_id=334",
+      "category_tag_zh": "#科技",
+      "summary_zh": [
+        "INKWON Printing"
+      ],
+      "scrapedAt": "2026-06-18T13:55:49.072Z"
+    },
+    {
+      "id": "ks-sensoplantsensor-senso-smart-and-gamified-plant-sensor?ref=discover_saved_projects&category_id=337",
+      "platform": "Kickstarter",
+      "image": "https://i.kickstarter.com/assets/054/151/300/fae306939f5f9c4ce5a2dd46d783095e_original.png?anim=false&fit=cover&gravity=auto&height=153&origin=ugc&q=92&v=1781759089&width=272&sig=KnWgdADoITSRZEN6J7%2FwDd4eeA6uLiYIvIyivs4rKXc%3D",
+      "name": "PlantSenso — A Digital Companion That Grows With Your Plants",
+      "name_zh": "PlantSenso — A Digital Companion That Grows With Your Plants",
+      "founder": "soildtech",
+      "location": "Unknown",
+      "raised": 0,
+      "currency": "USD",
+      "currencySymbol": "$",
+      "progress_pct": 0,
+      "backers": 0,
+      "price": "",
+      "campaign_url": "https://www.kickstarter.com/projects/sensoplantsensor/senso-smart-and-gamified-plant-sensor?ref=discover_saved_projects&category_id=337",
+      "category_tag_zh": "#科技",
+      "summary_zh": [
+        "soildtech"
+      ],
+      "scrapedAt": "2026-06-18T13:55:49.073Z"
+    },
+    {
+      "id": "ks-twelvetooo-twelvetooo-smart-projection-bulb-light-and-motion-anywhere?ref=discover_saved_projects&category_id=337",
+      "platform": "Kickstarter",
+      "image": "https://i.kickstarter.com/assets/054/154/655/6ce78c88f95d46841386e754de565fab_original.png?anim=false&fit=cover&gravity=auto&height=153&origin=ugc&q=92&v=1781780023&width=272&sig=J%2Fx9fgPeJUbUxFHb9tUpm7j9njBe0fV6y6HKQSsyq2g%3D",
+      "name": "Twelvetooo Smart Projection Bulb: Light & Motion Anywhere",
+      "name_zh": "Twelvetooo Smart Projection Bulb: Light & Motion Anywhere",
+      "founder": "Twelvetooo",
+      "location": "Unknown",
+      "raised": 0,
+      "currency": "USD",
+      "currencySymbol": "$",
+      "progress_pct": 0,
+      "backers": 0,
+      "price": "",
+      "campaign_url": "https://www.kickstarter.com/projects/twelvetooo/twelvetooo-smart-projection-bulb-light-and-motion-anywhere?ref=discover_saved_projects&category_id=337",
+      "category_tag_zh": "#科技",
+      "summary_zh": [
+        "Twelvetooo"
+      ],
+      "scrapedAt": "2026-06-18T13:55:49.073Z"
     }
   ]
 }
