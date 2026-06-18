@@ -116,7 +116,9 @@ export async function scrapeKickstarter(maxItems = 30): Promise<ScrapeResult<Raw
         const progress_pct = pctMatch ? parseInt(pctMatch[1], 10) : (raised > 0 ? 100 : 0);
         const founder = $card.find('[class*="creator"], [class*="author"], [class*="by"]').text().trim().replace(/^by\s+/i, '') || 'Unknown';
         const location = $card.find('[class*="location"]').text().trim() || 'Unknown';
-        const slug = href.split('/projects/')[1]?.replace(/\//g, '-') || name.toLowerCase().replace(/\s+/g, '-');
+        // slug：去 query string 再用，否则会变成 "creator-slug?ref=..." 跟主路径产生 id 冲突 → 重复卡片
+        const cleanHref = href.split('?')[0].split('#')[0];
+        const slug = cleanHref.split('/projects/')[1]?.replace(/\/+$/, '').replace(/\//g, '-') || name.toLowerCase().replace(/\s+/g, '-');
         seenIds.add(campaignUrl);
         result.items.push({
           id: `ks-${slug}`, platform: 'Kickstarter', image, name, name_zh: name,
